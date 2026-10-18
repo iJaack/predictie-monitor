@@ -1,14 +1,14 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-18T15:04:21+02:00",
+ "generatedAt": "2026-10-18T15:13:51+02:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 25,
+  "active": 43,
   "resolved": 0,
   "byDomain": {
    "Enterprise": 2,
    "Macro": 4,
-   "Crypto": 9,
+   "Crypto": 27,
    "Geopolitics": 8,
    "AI": 2
   }
@@ -233,6 +233,67 @@
       28.0
      ],
      "reason": "Oct 16 added −$82.4M (Farside), so October MTD is ≈ −$615M after 12 sessions (BullishStation −$614.7M, Oct 17). About +$615M is now needed over the ~10 remaining sessions (Oct 19–30), roughly +$62M/day vs a month-to-date average of about −$51M/day, with ETH ETFs also bleeding and the 10y at 5.09%. Still possible (one Sept week was +$2.39B), mainly via a dovish Oct 28 hold."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "1724c9be83",
+   "question": "Will Alpenglow consensus be live on Solana mainnet-beta by Oct 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 85.0,
+   "probHigh": 93.0,
+   "midpoint": 89.0,
+   "horizon": "2026-10-31",
+   "staleAfter": "2026-10-22",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Solana is switching to a new consensus system, Alpenglow, on Oct 21, aiming for transactions that are final in about 150 milliseconds. This asks whether the switch is live and holding by the end of October.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "activation set for epoch 1064 (~15:00 UTC Oct 21) with migrations already completed on a community cluster, testnet (Sep 24) and devnet (Sep 25); BLS keys and the Validator Admission Ticket live on mainnet since July; 25,000+ SOL bug bounty and nine simulated migrations."
+    },
+    {
+     "label": "Toward no",
+     "text": "the switch needs 82% of stake to sign the Alpenglow genesis block; Firedancer/Frankendancer validators unsupported during migration; a failed handoff or rollback that reverts to TowerBFT."
+    }
+   ],
+   "resolution": "Resolves YES if Solana mainnet-beta is producing blocks under Alpenglow consensus (TowerBFT retired) at any time by 23:59 UTC Oct 31, 2026 and remains on it at that time, per Anza/Solana announcements or the Alpenglow genesis certificate being set. Resolves NO if activation is postponed past Oct 31 or the network reverts to TowerBFT and is still on it at that time.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "Solana",
+     "date": "Oct 2026",
+     "note": "Alpenglow mainnet in epoch 1064 starting ~15:00 UTC Oct 21; devnet activated Sep 25",
+     "url": "https://solana.com/upgrades/alpenglow"
+    },
+    {
+     "publisher": "CoinDesk",
+     "date": "Oct 14 2026",
+     "note": "Solana sets Oct 21 for Alpenglow targeting 150ms finality",
+     "url": "https://www.coindesk.com/tech/2026/10/14/solana-sets-oct-21-for-alpenglow-upgrade-targeting-150-millisecond-finality"
+    },
+    {
+     "publisher": "CoinMarketCap Academy",
+     "date": "Oct 2026",
+     "note": "Anza: go-live ~14:50 UTC Oct 21; 82% stake signs Alpenglow genesis; migrations done on community cluster, testnet, devnet",
+     "url": "https://coinmarketcap.com/academy/article/solana-alpenglow-mainnet-oct-21-anza"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      85.0,
+      93.0
+     ],
+     "reason": "Forecast opened."
     }
    ],
    "outcome": null,
@@ -674,6 +735,55 @@
    "resolvedOn": null
   },
   {
+   "id": "51c028c075",
+   "question": "Will Zcash's NU7 network upgrade activate on mainnet by Nov 30, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 55.0,
+   "probHigh": 70.0,
+   "midpoint": 62.5,
+   "horizon": "2026-11-30",
+   "staleAfter": "2026-10-21",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Zcash's NU7 upgrade cuts block time from 75 to 25 seconds and adds a fee reserve. Developers set the mainnet date on Oct 20, with Nov 5 pencilled in; this asks whether it goes live by Nov 30.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "code complete Sept 30; live on public testnet since Oct 4 (block 4,465,026); go/no-go and mainnet activation height due Oct 20 with Nov 5 tentative, leaving ~3 weeks of slack."
+    },
+    {
+     "label": "Toward no",
+     "text": "Zebra 7.0.0-rc.0 notes say no mainnet height set yet; the upgrade is large (75s→25s block time, Network Sustainability Mechanism, v4 transactions disabled and Sprout funds stranded), so exchanges and wallets may ask for more time; past Zcash upgrades (NU5) slipped."
+    }
+   ],
+   "resolution": "Resolves YES if NU7 activates on Zcash mainnet (activation block height reached) at or before 23:59 UTC Nov 30, 2026, per Electric Coin Co./Zcash Foundation/Zcash Community Forum announcements or block explorers. Resolves NO if the activation height falls after that time or the Oct 20 decision is no-go without a new height before Nov 30.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "Blockchain Reporter",
+     "date": "Oct 16 2026",
+     "note": "NU7 timeline: code complete Sep 30, testnet Oct 4, decision and activation height Oct 20, mainnet Nov 5 tentative; Zebra 7.0.0-rc.0 sets no mainnet height",
+     "url": "https://blockchainreporter.net/zcash-news-today/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      55.0,
+      70.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
    "id": "b8455bbcb9",
    "question": "Will AVAX's CoinGecko USD price for Dec 1, 2026 (00:00 UTC daily data point) be between $8.00 and $12.00 inclusive?",
    "domain": "Crypto",
@@ -1088,6 +1198,231 @@
    "resolvedOn": null
   },
   {
+   "id": "12fc7063da",
+   "question": "Will Aave's TVL fall below $10B on any finalized daily datapoint by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 3.0,
+   "probHigh": 7.0,
+   "midpoint": 5.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-15",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Aave is the largest crypto lending app, holding about $18B. This asks whether a crash cuts that below $10B on any day this year.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "ETH falling toward ~$1,400 (TVL is mostly ETH and LST collateral); a major exploit or bad-debt event; deleveraging after a liquidation cascade."
+    },
+    {
+     "label": "Toward no",
+     "text": "Aave TVL ~$17–18B on DefiLlama (needs −41%); TVL only −2% on the week despite the selloff; Aave V3 is the largest lending market by far."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any finalized Aave TVL datapoint is below $10B on any day between market creation (Apr 20 2026) and Dec 31 2026; otherwise NO. Tracked on DefiLlama's Aave protocol TVL (Oct 18: ~$18.0B; Aave V3 $16.97B).",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will the AAVE TVL go below $10B in 2026?",
+    "url": "https://polymarket.com/event/will-the-aave-tvl-go-below-10b-in-2026/will-the-aave-tvl-go-below-10b-in-2026",
+    "yesPrice": 8.0,
+    "asOf": "2026-10-18T15:12:00+02:00",
+    "gapPts": -3.0,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "Oct 18 2026",
+     "note": "rules + Yes 0.08 (bid 0.07/ask 0.09), read via Gamma API Oct 18 2026 15:12 Rome",
+     "url": "https://polymarket.com/event/will-the-aave-tvl-go-below-10b-in-2026/will-the-aave-tvl-go-below-10b-in-2026"
+    },
+    {
+     "publisher": "DefiLlama API",
+     "date": "Oct 18 2026",
+     "note": "Aave TVL $18.0B",
+     "url": "https://api.llama.fi/tvl/aave"
+    },
+    {
+     "publisher": "DefiLlama API",
+     "date": "Oct 18 2026",
+     "note": "Aave V3 TVL $16.97B, −2.1% 7d",
+     "url": "https://api.llama.fi/tvl/aave-v3"
+    },
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "ETH $2,413; 90d realized vol ~52%",
+     "url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=180&interval=daily"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      3.0,
+      7.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "73aa535778",
+   "question": "Will BNB trade at or above $1,000 on Binance BNB/USDT (any 1-minute high) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 4.0,
+   "probHigh": 9.0,
+   "midpoint": 6.5,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "BNB trades near $722 and is one of the calmer large coins. This asks whether it can rally almost 40% to $1,000 by year end.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "broad crypto rally with BTC above $95k; BNB Chain activity spike (PancakeSwap volumes); exchange-token bid."
+    },
+    {
+     "label": "Toward no",
+     "text": "needs +38% from $722 at 31–36% realized vol (lowest-vol large cap after TRX); high since Nov 24 2025 is $959.5; PancakeSwap TVL −12% on the week; hawkish macro."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance BNB/USDT 1-minute candle between Nov 24 2025 16:10 ET and Dec 31 2026 23:59 ET has a High ≥ $1,000. Otherwise NO. Re-score if BNB closes above $850.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will BNB reach $1000 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-bnb-hit-before-2027/will-bnb-reach-1000-by-december-31-2026",
+    "yesPrice": 17.5,
+    "asOf": "2026-10-18T15:12:00+02:00",
+    "gapPts": -11.0,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules + Yes 0.175 (bid 0.16/ask 0.19), read via Gamma API Oct 18 2026 15:12 Rome",
+     "url": "https://polymarket.com/event/what-price-will-bnb-hit-before-2027/will-bnb-reach-1000-by-december-31-2026"
+    },
+    {
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 18 2026",
+     "note": "BNB/USDT high since Nov 24 2025 $959.52; close ~$722.9",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=BNBUSDT&interval=1d&startTime=1764000000000&limit=1000"
+    },
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "BNB $722.24, 30d −3.5%; 30d vol ~31%, 90d ~36%",
+     "url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=180&interval=daily"
+    },
+    {
+     "publisher": "DefiLlama API",
+     "date": "Oct 18 2026",
+     "note": "BSC chain TVL ~$5.5B; PancakeSwap AMM $1.56B (−12% 7d), Venus $1.25B",
+     "url": "https://api.llama.fi/protocols"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      4.0,
+      9.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "08c33e99f1",
+   "question": "Will Bitcoin trade at or above $100,000 on Binance BTC/USDT (any 1-minute high) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 15.0,
+   "probHigh": 23.0,
+   "midpoint": 19.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Bitcoin trades near $82k after hot US inflation data and steady ETF outflows. This asks whether it can still reach $100k before the year ends.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "Fed holds Oct 28 and softens the December hike signal; spot BTC ETF flows turn positive after six October outflow days; BTC reclaims $86.6k (30-day high) then $90k."
+    },
+    {
+     "label": "Toward no",
+     "text": "Sept CPI 3.7% y/y and PPI surprise keep a December hike priced; ETF outflows continue (BTC funds −$228M week of Oct 12–16); listed BTC-holder selling (Hut 8 moving ~1,589 BTC to exchanges); MSCI deletions of BTC-holding companies after Nov 30."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance BTC/USDT 1-minute candle between Nov 24 2025 14:00 ET and Dec 31 2026 23:59 ET has a High ≥ $100,000; only Binance BTC/USDT counts (high since Nov 24 2025 is $97,924, so not yet hit). Otherwise NO. Re-score if BTC closes above $90k or below $72k.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Bitcoin reach $100,000 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-reach-100000-by-december-31-2026-571-361-361",
+    "yesPrice": 20.5,
+    "asOf": "2026-10-18T15:12:00+02:00",
+    "gapPts": -1.5,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules + Yes 0.205 (bid 0.2/ask 0.21), read via Gamma API Oct 18 2026 15:12 Rome",
+     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-reach-100000-by-december-31-2026-571-361-361"
+    },
+    {
+     "publisher": "CoinGabbar",
+     "date": "Oct 17 2026",
+     "note": "Sept CPI 3.7% y/y vs 3.6% est.; PPI surprise; BTC ETFs sixth outflow day of October (−$82.4M Oct 16); Hut 8-linked wallet moved 1,589 BTC to exchanges",
+     "url": "https://www.coingabbar.com/en/crypto-etf-news-today-bitcoin-ethereum-xrp-sol-outflow"
+    },
+    {
+     "publisher": "crypto.news",
+     "date": "Oct 17 2026",
+     "note": "US crypto ETFs −$610.7M Oct 12–16; BTC funds −$228.4M, ETH funds −$320.1M",
+     "url": "https://crypto.news/crypto-etfs-weekly-outflows-ethereum-bitcoin/"
+    },
+    {
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 18 2026",
+     "note": "BTC/USDT high since Nov 24 2025 $97,924, low $57,800; close ~$81.9k",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=1764000000000&limit=1000"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      15.0,
+      23.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
    "id": "d696382907",
    "question": "Will Bitcoin trade at or below $70,000 on Binance BTC/USDT (any 1-minute low) by Dec 31, 2026?",
    "domain": "Crypto",
@@ -1154,6 +1489,499 @@
      "to": [
       33.0,
       43.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "272c656e88",
+   "question": "Will Chainlink (LINK) trade at or below $8 on Binance LINK/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 17.0,
+   "probHigh": 27.0,
+   "midpoint": 22.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Chainlink, the price-feed network much of DeFi relies on, trades near $12. This asks whether it drops a third to $8 before year end.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "LINK at its 30-day low ($12.0) after failing at $15.4 in late September; 30/90-day vol ~70%; risk-off macro."
+    },
+    {
+     "label": "Toward no",
+     "text": "needs −33% from here; low since market creation is $10.62; oracle/CCIP usage tied to tokenization keeps a bid."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance LINK/USDT 1-minute candle between market creation (Aug 25 2026) and Dec 31 2026 23:59 ET has a Low ≤ $8. Otherwise NO. Re-score if LINK closes below $9.5 or above $15.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Chainlink dip to $8 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-chainlink-hit-before-2027/will-chainlink-dip-to-8-by-december-31-2026-from-august-25",
+    "yesPrice": 60.5,
+    "asOf": "2026-10-18T15:12:00+02:00",
+    "gapPts": -38.5,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules + Yes 0.605 (bid 0.4/ask 0.81), read via Gamma API Oct 18 2026 15:12 Rome",
+     "url": "https://polymarket.com/event/what-price-will-chainlink-hit-before-2027/will-chainlink-dip-to-8-by-december-31-2026-from-august-25"
+    },
+    {
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 18 2026",
+     "note": "LINK/USDT low since Aug 25 2026 $10.617, high $15.777",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=LINKUSDT&interval=1d&startTime=1787630400000&limit=1000"
+    },
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "LINK $12.00, 7d −6.7%; 30d vol ~70%, 90d ~69%",
+     "url": "https://api.coingecko.com/api/v3/coins/chainlink/market_chart?vs_currency=usd&days=180&interval=daily"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      17.0,
+      27.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "bf63e042f5",
+   "question": "Will Dogecoin trade at or below $0.06 on Binance DOGE/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 30.0,
+   "probHigh": 40.0,
+   "midpoint": 35.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Dogecoin is at a one-month low near $0.079. This asks whether it breaks its cycle low and touches $0.06 before year end.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "DOGE at its 30-day low ($0.079) and −7% on the week; 30-day realized vol ~70%; risk-off macro."
+    },
+    {
+     "label": "Toward no",
+     "text": "lowest Binance print since Nov 2025 is $0.0677, so $0.06 would be a new cycle low; meme-coin rebounds tend to be sharp when BTC turns."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance DOGE/USDT 1-minute candle between Nov 24 2025 15:45 ET and Dec 31 2026 23:59 ET has a Low ≤ $0.06 (low since Nov 24 2025 is $0.06766). Otherwise NO. Re-score if DOGE closes above $0.10 or below $0.065.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Dogecoin dip to $0.06 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-dogecoin-hit-before-2027/will-dogecoin-dip-to-0pt06-by-december-31-2026",
+    "yesPrice": 37.0,
+    "asOf": "2026-10-18T15:12:00+02:00",
+    "gapPts": -2.0,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules + Yes 0.37 (bid 0.25/ask 0.49), read via Gamma API Oct 18 2026 15:12 Rome",
+     "url": "https://polymarket.com/event/what-price-will-dogecoin-hit-before-2027/will-dogecoin-dip-to-0pt06-by-december-31-2026"
+    },
+    {
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 18 2026",
+     "note": "DOGE/USDT low since Nov 24 2025 $0.06766, high $0.15681",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=DOGEUSDT&interval=1d&startTime=1764000000000&limit=1000"
+    },
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "DOGE $0.0793, 30d −6.9%; 30d vol ~70%, 90d ~66%",
+     "url": "https://api.coingecko.com/api/v3/coins/dogecoin/market_chart?vs_currency=usd&days=180&interval=daily"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      30.0,
+      40.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "805ac27b86",
+   "question": "Will Ethena USDe depeg (all Pyth 1-minute USDE-USD candles below $0.98 for a full 24 hours) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 1.0,
+   "probHigh": 3.0,
+   "midpoint": 2.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-15",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Ethena's USDe is a synthetic dollar backed by hedged crypto positions. This asks whether it loses its $1 peg badly, below $0.98 for a full day, before year end.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "deeply negative perp funding for weeks forcing basis-trade unwinds; a custodian or exchange failure holding hedges; mass redemptions faster than collateral can be unwound."
+    },
+    {
+     "label": "Toward no",
+     "text": "USDe trades at $0.9994; supply already shrank to ~$4.7B, lowering run risk; redemptions have held through past drawdowns; a 24-hour sub-$0.98 condition is strict."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES immediately if all Pyth 1-minute candles for USDE-USD for any 24-hour period are below $0.98, for candles between Oct 27 2025 15:00 ET and Dec 31 2026 23:59 ET. Otherwise NO.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "USDE depeg by December 31?",
+    "url": "https://polymarket.com/event/stablecoins-depeg-before-2027/usde-depeg-by-december-31-434",
+    "yesPrice": 1.95,
+    "asOf": "2026-10-18T15:12:00+02:00",
+    "gapPts": 0.1,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "Oct 18 2026",
+     "note": "rules + Yes 0.0195 (bid 0.004/ask 0.035), read via Gamma API Oct 18 2026 15:12 Rome",
+     "url": "https://polymarket.com/event/stablecoins-depeg-before-2027/usde-depeg-by-december-31-434"
+    },
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "USDe $0.99936, market cap $4.68B",
+     "url": "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=25"
+    },
+    {
+     "publisher": "DefiLlama API",
+     "date": "Oct 18 2026",
+     "note": "Ethena USDe TVL $4.68B, −1.7% 7d",
+     "url": "https://api.llama.fi/protocols"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      1.0,
+      3.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "8b275b0b89",
+   "question": "Will Ethereum trade at or above $3,000 on Binance ETH/USDT (any 1-minute high) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 26.0,
+   "probHigh": 36.0,
+   "midpoint": 31.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "The upside case for Ether: a December network upgrade and a turn in ETF flows could lift it. This asks whether it reaches $3,000 before year end.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "Glamsterdam forks Hoodi cleanly on Oct 26 and gets a Dec 1 or Dec 8 mainnet date; ETH ETF outflows reverse; Fed sounds less hawkish on Oct 28; ETH reclaims $2,807 (high since late August)."
+    },
+    {
+     "label": "Toward no",
+     "text": "11 ETF outflow days in October; hot CPI/PPI keep a December hike priced; Glamsterdam slips to 2027."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance ETH/USDT 1-minute candle from market creation (Jun 8 2026) through Dec 31 2026 23:59 ET has a High ≥ $3,000; earlier price action ignored (high since creation is $2,807). Otherwise NO. Re-score if ETH closes below $2,000.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Ethereum reach $3,000 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-reach-3000-by-december-31-2026-from-june-8",
+    "yesPrice": 36.5,
+    "asOf": "2026-10-18T15:12:00+02:00",
+    "gapPts": -5.5,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules + Yes 0.365 (bid 0.36/ask 0.37), read via Gamma API Oct 18 2026 15:12 Rome",
+     "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-reach-3000-by-december-31-2026-from-june-8"
+    },
+    {
+     "publisher": "Ethereum Foundation blog",
+     "date": "Oct 16 2026",
+     "note": "Glamsterdam scheduled for Hoodi Oct 26 17:42 UTC; mainnet date not yet decided",
+     "url": "https://blog.ethereum.org/2026/10/16/glamsterdam-hoodi-announcement"
+    },
+    {
+     "publisher": "crypto.news",
+     "date": "Oct 17 2026",
+     "note": "ETH ETFs −$320.1M Oct 12–16",
+     "url": "https://crypto.news/crypto-etfs-weekly-outflows-ethereum-bitcoin/"
+    },
+    {
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 18 2026",
+     "note": "ETH/USDT high since Jun 8 2026 $2,807",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=ETHUSDT&interval=1d&startTime=1780876800000&limit=1000"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      26.0,
+      36.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "0c2e62195a",
+   "question": "Will Ethereum trade at or below $2,250 on Binance ETH/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 68.0,
+   "probHigh": 78.0,
+   "midpoint": 73.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Ether sits near $2,400, at its lowest in a month, while US ether ETFs keep losing money. This asks whether it slips another ~7% to $2,250 before year end.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "ETH is ~6.8% above the line and sitting at its 30-day low (~$2,400); spot ETH ETFs logged 11 outflow days in October (−$320M Oct 12–16, almost all ETHA); a hawkish Fed on Oct 28 or a December hike; Glamsterdam mainnet slipping into 2027."
+    },
+    {
+     "label": "Toward no",
+     "text": "ETF flows flip positive; a clean Glamsterdam Hoodi fork on Oct 26 and a December mainnet date lift sentiment; BTC reclaims $90k."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance ETH/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $2,250; earlier price action ignored (low since creation is $2,318). Otherwise NO. Re-score if ETH closes above $2,800.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Ethereum dip to $2,250 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-dip-to-2250-by-december-31-2026",
+    "yesPrice": 60.5,
+    "asOf": "2026-10-18T15:12:00+02:00",
+    "gapPts": 12.5,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules + Yes 0.605 (bid 0.6/ask 0.61), read via Gamma API Oct 18 2026 15:12 Rome",
+     "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-dip-to-2250-by-december-31-2026"
+    },
+    {
+     "publisher": "crypto.news",
+     "date": "Oct 17 2026",
+     "note": "ETH ETFs −$320.1M Oct 12–16, BlackRock ETHA −$299M; weekly crypto ETF outflows $610.7M",
+     "url": "https://crypto.news/crypto-etfs-weekly-outflows-ethereum-bitcoin/"
+    },
+    {
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 18 2026",
+     "note": "ETH/USDT low since Aug 25 2026 $2,318, high $2,807; close ~$2,415",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=ETHUSDT&interval=1d&startTime=1787630400000&limit=1000"
+    },
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "ETH $2,413, 30d −3.6%; 30d realized vol ~36%, 90d ~52%",
+     "url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=180&interval=daily"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      68.0,
+      78.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "6153be4ceb",
+   "question": "Will Ethereum's Glamsterdam upgrade activate on mainnet by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 55.0,
+   "probHigh": 70.0,
+   "midpoint": 62.5,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-10-30",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Glamsterdam is Ethereum's next major upgrade, raising capacity roughly threefold. Its final test runs Oct 26 and developers have floated Dec 1 or Dec 8 for launch; this asks whether it ships in 2026.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "Hoodi forks cleanly on Oct 26 17:42 UTC; core devs pick Dec 1 (epoch 493,056) or Dec 8 (epoch 494,592) on the calls after Hoodi; client releases ship on time (Sepolia forked and finalized on Oct 6 as planned)."
+    },
+    {
+     "label": "Toward no",
+     "text": "Hoodi finality or ePBS/builder problems (Lido asked for Dec 8 because builders need more testing); the schedule already slipped from H1 to Q3 to Q4 2026; holiday freeze pushes any slip past Dec 8 into January."
+    }
+   ],
+   "resolution": "Resolves YES if the Glamsterdam (Amsterdam + Gloas) hard fork activates on Ethereum mainnet at or before 23:59 UTC Dec 31, 2026, as confirmed by an Ethereum Foundation blog post or the fork epoch being reached on mainnet. Resolves NO if activation is scheduled for or happens after that time, or the fork is postponed.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "Ethereum Foundation blog",
+     "date": "Oct 16 2026",
+     "note": "Hoodi activation Oct 26 2026 17:42:48 UTC; mainnet date not decided",
+     "url": "https://blog.ethereum.org/2026/10/16/glamsterdam-hoodi-announcement"
+    },
+    {
+     "publisher": "ChainGate",
+     "date": "Oct 16 2026",
+     "note": "ACDC #189: Dec 1 or Dec 8 mainnet proposed, conditional on Hoodi; Lido prefers Dec 8; schedule moved H1→Q3→Q4 this year",
+     "url": "https://chaingate.dev/learn/ethereum-glamsterdam-upgrade"
+    },
+    {
+     "publisher": "ethereum.org",
+     "date": "Sep 14 2026",
+     "note": "roadmap: expected on mainnet Q4 2026, date not confirmed",
+     "url": "https://ethereum.org/roadmap/glamsterdam/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      55.0,
+      70.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "ebf3dd19ab",
+   "question": "Will Hyperliquid (HYPE) trade at or above $100 on Binance HYPE/USDT (any 1-minute high) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 34.0,
+   "probHigh": 44.0,
+   "midpoint": 39.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Hyperliquid's token trades near $79, below its September high of about $97, even as new real-world-asset markets launch on the exchange. This asks whether it reaches $100 this year.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "HIP-3 growth (builder-deployed markets near $3.9B open interest; Ripple Prime opening 100+ RWA perps on Hyperliquid); buybacks from fee revenue; HYPE retakes $97 (Sept high)."
+    },
+    {
+     "label": "Toward no",
+     "text": "HYPE −12% over 30 days and at its 30-day low; Hyperliquid ETF products saw outflows Oct 12–16; ~$7M long liquidations on hot CPI; US regulatory debate over perps venues."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance HYPE/USDT 1-minute candle between Nov 24 2025 16:00 ET and Dec 31 2026 23:59 ET has a High ≥ $100 (Binance high since listing is $95.25). Otherwise NO. Re-score if HYPE closes below $65 or above $95.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Hyperliquid reach $100 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-hyperliquid-hit-before-2027/will-hyperliquid-reach-100-by-december-31-2026",
+    "yesPrice": 39.5,
+    "asOf": "2026-10-18T15:12:00+02:00",
+    "gapPts": -0.5,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules + Yes 0.395 (bid 0.39/ask 0.4), read via Gamma API Oct 18 2026 15:12 Rome",
+     "url": "https://polymarket.com/event/what-price-will-hyperliquid-hit-before-2027/will-hyperliquid-reach-100-by-december-31-2026"
+    },
+    {
+     "publisher": "FXStreet",
+     "date": "Oct 16 2026",
+     "note": "Ripple Prime opens 100+ RWA perp markets on Hyperliquid; HYPE rebounds to $82",
+     "url": "https://www.fxstreet.com/cryptocurrencies/news/ripple-prime-opens-100-rwa-perp-markets-on-hyperliquid-as-hype-rebounds-202610160445"
+    },
+    {
+     "publisher": "crypto.news",
+     "date": "Oct 17 2026",
+     "note": "Solana, Zcash and Hyperliquid ETF products −$62.2M combined Oct 12–16",
+     "url": "https://crypto.news/crypto-etfs-weekly-outflows-ethereum-bitcoin/"
+    },
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "HYPE $78.59, 30d −12.3%, ATH $97.96; 30d vol ~52%, 90d ~71%",
+     "url": "https://api.coingecko.com/api/v3/coins/hyperliquid/market_chart?vs_currency=usd&days=180&interval=daily"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      34.0,
+      44.0
      ],
      "reason": "Forecast opened."
     }
@@ -1463,6 +2291,67 @@
    "resolvedOn": null
   },
   {
+   "id": "4026328865",
+   "question": "Will NEAR's House of Stake approve the proposal to cut maximum issuance from 2.5% to 1.6% by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 45.0,
+   "probHigh": 62.0,
+   "midpoint": 53.5,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "NEAR has more than doubled since August on a new US ETF and rising usage. This asks whether its governance body approves cutting new token issuance from 2.5% to 1.6% a year before year end.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "a single-parameter change with a 90-day grace period; the 2025 halving (5%→2.5%) passed with 68.41% validator approval; 57% of NEAR is unstaked and benefits directly; NEAR Intents revenue already funds buybacks."
+    },
+    {
+     "label": "Toward no",
+     "text": "Supermajority track; staking yield falls from ~4.8–5.3% toward 3.1–3.4%, so validators and stakers may resist; the vote planned for the week of Oct 11 did not happen; the proposer (SVRN) is a large holder, which may draw governance pushback."
+    }
+   ],
+   "resolution": "Resolves YES if the House of Stake proposal 'Establish a 24-Month Issuance Ramp to a 1.6% Target Rate of NEAR Token Emissions' (or a successor with the same 1.6% target) is approved in a House of Stake vote by 23:59 UTC Dec 31, 2026, per House of Stake / gov.near.org. Validator adoption is not required. Resolves NO if it is rejected, withdrawn or not voted on by then.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "NEAR Governance forum",
+     "date": "Oct 7 2026",
+     "note": "HSP draft: 2.5%→1.6% over 24 months, Supermajority type, needs validator adoption after HoS vote; 2025 halving passed with 68.41%",
+     "url": "https://gov.near.org/t/hsp-xxx-establish-a-24-month-issuance-ramp-to-a-1-6-target-rate-of-near-token-emissions/42644"
+    },
+    {
+     "publisher": "CryptoCodes",
+     "date": "Oct 13 2026",
+     "note": "proposal listed as submitted, no on-chain vote yet; NRR held $81.7M on Oct 11",
+     "url": "https://www.cryptocodes.eu/news/near-protocol-etf-issuance-intents-12-october-2026"
+    },
+    {
+     "publisher": "The Motley Fool",
+     "date": "Oct 12 2026",
+     "note": "NEAR +15.8% weekend; Intents $4.8B Sept swaps; issuance vote pending; Bitwise ETF Sept 29",
+     "url": "https://www.fool.com/investing/2026/10/12/why-near-protocol-jumped-16-over-the-weekend/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      45.0,
+      62.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
    "id": "90aa3924c7",
    "question": "Will OpenAI publicly release a GPT Astra model versioned 6.1 or higher by Dec 31, 2026?",
    "domain": "AI",
@@ -1598,6 +2487,381 @@
       78.0
      ],
      "reason": "Correction. On the Oct 15 call Wurster said 'three new coins by the end of the year' without naming them; SOL/AVAX/LINK come only from Schwab's Aug 27 release. No go-live date; Schwab reserves the right to delay/withdraw; transfers cover only BTC/ETH. Band moved for the small chance the unnamed coins differ from the Aug list (~5%)."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "2de1662150",
+   "question": "Will Solana trade at or below $80 on Binance SOL/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 28.0,
+   "probHigh": 38.0,
+   "midpoint": 33.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Solana trades near $104 ahead of its biggest-ever upgrade. This asks whether a weak market drags it down to $80 before year end.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "SOL at its 30-day low (~$104) with SOL ETF outflows; a rough Alpenglow migration on Oct 21 (outage or rollback); hawkish Fed; BTC below $75k."
+    },
+    {
+     "label": "Toward no",
+     "text": "Alpenglow goes live cleanly and 150ms finality draws flow; ETF flows turn positive; BTC above $90k."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance SOL/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $80; earlier price action ignored (low since creation is $94.95). Otherwise NO. Re-score if SOL closes above $125 or below $90.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Solana dip to $80 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24",
+    "yesPrice": 30.5,
+    "asOf": "2026-10-18T15:12:00+02:00",
+    "gapPts": 2.5,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules + Yes 0.305 (bid 0.26/ask 0.35), read via Gamma API Oct 18 2026 15:12 Rome",
+     "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24"
+    },
+    {
+     "publisher": "Solana",
+     "date": "Oct 2026",
+     "note": "Alpenglow activates on mainnet in epoch 1064, ~15:00 UTC Oct 21 2026",
+     "url": "https://solana.com/upgrades/alpenglow"
+    },
+    {
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 18 2026",
+     "note": "SOL/USDT low since Aug 25 2026 $94.95, high $124.95",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=SOLUSDT&interval=1d&startTime=1787630400000&limit=1000"
+    },
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "SOL $103.85, 30d −1.5%; 30d vol ~46%, 90d ~56%",
+     "url": "https://api.coingecko.com/api/v3/coins/solana/market_chart?vs_currency=usd&days=180&interval=daily"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      28.0,
+      38.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "0b7511a83d",
+   "question": "Will USDT's market cap reach $200B on any day by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 2.0,
+   "probHigh": 7.0,
+   "midpoint": 4.5,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-15",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Tether's supply has stalled around $183–190B since spring, a sign of little new money entering crypto. This asks whether it jumps to $200B by year end.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "a sharp risk-on turn with large Tether mints (+$16.5B needed in 74 days; the largest 74-day increase since 2023 was ~$21B)."
+    },
+    {
+     "label": "Toward no",
+     "text": "USDT supply has been flat at $182–190B since April (peak $190.4B on May 20; $183.5B now); total stablecoin supply flat near $305B; ETF outflows and hawkish rates."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES immediately if USDT market cap is ≥ $200B on any day by Dec 31 2026; otherwise NO. Checked against DefiLlama USDT circulating and CoinGecko USDT market cap; peak since market creation (Dec 30 2025) is $190.4B.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will USDT market cap hit $200B before 2027?",
+    "url": "https://polymarket.com/event/will-usdt-market-cap-hit-by-december-31/will-usdt-market-cap-hit-200b-before-2027",
+    "yesPrice": 43.0,
+    "asOf": "2026-10-18T15:12:00+02:00",
+    "gapPts": -38.5,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "Oct 18 2026",
+     "note": "rules + Yes 0.43 (bid 0.304/ask 0.556), read via Gamma API Oct 18 2026 15:12 Rome",
+     "url": "https://polymarket.com/event/will-usdt-market-cap-hit-by-december-31/will-usdt-market-cap-hit-200b-before-2027"
+    },
+    {
+     "publisher": "DefiLlama stablecoins API",
+     "date": "Oct 18 2026",
+     "note": "USDT circulating $183.55B; $190.4B peak May 20; flat since April",
+     "url": "https://stablecoins.llama.fi/stablecoin/1"
+    },
+    {
+     "publisher": "DefiLlama stablecoins API",
+     "date": "Oct 18 2026",
+     "note": "total stablecoins $304.6B vs $315.5B May peak",
+     "url": "https://stablecoins.llama.fi/stablecoincharts/all"
+    },
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "USDT market cap $183.48B",
+     "url": "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=25"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      2.0,
+      7.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "e8609ae5a6",
+   "question": "Will Uniswap (UNI) trade at or above $11.00 on Binance UNI/USDT (any 1-minute high) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 24.0,
+   "probHigh": 34.0,
+   "midpoint": 29.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Uniswap's token now benefits from protocol fees that fund token burns, and briefly hit $10.94 in September. This asks whether it reaches $11 this year after falling back to about $7.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "fee switch live on v4 since Jul 27 with annualised buyback-and-burn above $250M (early Sept); record $14.8M protocol revenue in September; fee expansion to Circle's Arc chain; UNI already printed $10.94 on Sept 23."
+    },
+    {
+     "label": "Toward no",
+     "text": "53–65% of revenue came from Robinhood Chain, whose daily transactions have fallen 40%+; UNI −16% over 30 days to $7.24; needs +52%."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance UNI/USDT 1-minute candle between Nov 24 2025 17:25 ET and Dec 31 2026 23:59 ET has a High ≥ $11.00 (high since Nov 24 2025 is $10.942). Otherwise NO. Re-score if UNI closes above $9.5 or below $5.5.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will UNI reach $11.00 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-uniswap-hit-before-2027/will-uni-reach-11pt00-by-december-31-2026",
+    "yesPrice": 31.5,
+    "asOf": "2026-10-18T15:12:00+02:00",
+    "gapPts": -2.5,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules + Yes 0.315 (bid 0.31/ask 0.32), read via Gamma API Oct 18 2026 15:12 Rome",
+     "url": "https://polymarket.com/event/what-price-will-uniswap-hit-before-2027/will-uni-reach-11pt00-by-december-31-2026"
+    },
+    {
+     "publisher": "Gate Blog",
+     "date": "Sep 23 2026",
+     "note": "UNI hit $10.93; fee switch on v4 since Jul 27; annualised burn >$250M; Robinhood Chain 65.5% of Sept revenue; Arc fee-expansion temperature check",
+     "url": "https://www.gate.com/blog/uni-breaks-10-dollars-fee-switch-protocol-revenue-rally-outlook"
+    },
+    {
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 18 2026",
+     "note": "UNI/USDT high since Nov 24 2025 $10.942",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=UNIUSDT&interval=1d&startTime=1764000000000&limit=1000"
+    },
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "UNI $7.24, 30d −16.2%; 30d vol ~101%, 90d ~106%",
+     "url": "https://api.coingecko.com/api/v3/coins/uniswap/market_chart?vs_currency=usd&days=180&interval=daily"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      24.0,
+      34.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "6d1d4f12c6",
+   "question": "Will XRP trade at or below $1.00 on Binance XRP/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 36.0,
+   "probHigh": 46.0,
+   "midpoint": 41.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "XRP is near $1.29, down 7% in a week, with its ETFs seeing outflows. This asks whether it falls to $1.00, a level that held as support over the summer.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "XRP at its 30-day low (~$1.29) and −7% on the week; XRP ETFs posting October outflows; 90-day realized vol ~68%; BTC below $75k."
+    },
+    {
+     "label": "Toward no",
+     "text": "XRP held ~$1.00–1.03 in July–August (90-day low $0.99 on CoinGecko); ETF flows recover; risk-on after the Fed."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance XRP/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $1.00; earlier price action ignored (low since creation is $1.2468). Otherwise NO. Re-score if XRP closes above $1.55 or below $1.10.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will XRP dip to $1.00 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-xrp-hit-before-2027/will-xrp-dip-to-1pt00-by-december-31-2026-from-august-24",
+    "yesPrice": 30.0,
+    "asOf": "2026-10-18T15:12:00+02:00",
+    "gapPts": 11.0,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules + Yes 0.3 (bid 0.28/ask 0.32), read via Gamma API Oct 18 2026 15:12 Rome",
+     "url": "https://polymarket.com/event/what-price-will-xrp-hit-before-2027/will-xrp-dip-to-1pt00-by-december-31-2026-from-august-24"
+    },
+    {
+     "publisher": "CoinGabbar",
+     "date": "Oct 17 2026",
+     "note": "BTC, ETH, XRP and SOL ETFs all posted outflows on Oct 16; XRP ETFs third outflow of October",
+     "url": "https://www.coingabbar.com/en/crypto-etf-news-today-bitcoin-ethereum-xrp-sol-outflow"
+    },
+    {
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 18 2026",
+     "note": "XRP/USDT low since Aug 25 2026 $1.2468, high $1.6581",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=XRPUSDT&interval=1d&startTime=1787630400000&limit=1000"
+    },
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "XRP $1.29, 7d −7.0%; 30d vol ~49%, 90d ~68%",
+     "url": "https://api.coingecko.com/api/v3/coins/ripple/market_chart?vs_currency=usd&days=180&interval=daily"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      36.0,
+      46.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "47ceb79370",
+   "question": "Will Zcash (ZEC) trade at or below $700 on Binance ZEC/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 33.0,
+   "probHigh": 45.0,
+   "midpoint": 39.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Zcash has become a top-10 coin but has fallen about 23% in a month amid ETF outflows. This asks whether its extreme swings take it down to $700 before year end.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "ZEC −22.6% over 30 days in a descending channel from the $1,697 Sept 27 peak; Grayscale ZCSH outflows (~$124M over the two weeks before Oct 12–16); 90-day realized vol ~120%; NU7 delayed or Sprout funds stranded."
+    },
+    {
+     "label": "Toward no",
+     "text": "NU7 activation (tentative Nov 5) and Zcon late October; a cheaper Winklevoss ETF (WINK, 0.25%) moving toward effectiveness; ZCSH flows turning positive."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance ZEC/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $700; earlier price action ignored (low since creation is $758, set before the September rally). Otherwise NO. Re-score if ZEC closes above $1,500 or below $850.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Zcash dip to $700 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-zcash-hit-before-2027/will-zcash-dip-to-700-by-december-31-2026",
+    "yesPrice": 25.5,
+    "asOf": "2026-10-18T15:12:00+02:00",
+    "gapPts": 13.5,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules + Yes 0.255 (bid 0.25/ask 0.26), read via Gamma API Oct 18 2026 15:12 Rome",
+     "url": "https://polymarket.com/event/what-price-will-zcash-hit-before-2027/will-zcash-dip-to-700-by-december-31-2026"
+    },
+    {
+     "publisher": "Blockchain Reporter",
+     "date": "Oct 16 2026",
+     "note": "ZEC ~$1,234 after a 13% drop on CPI; ZCSH net outflows $17.9M that week after $30.7M and $93.6M; NU7 activation height decision Oct 20, Nov 5 tentative; Winklevoss WINK S-1 filed Oct 6",
+     "url": "https://blockchainreporter.net/zcash-news-today/"
+    },
+    {
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 18 2026",
+     "note": "ZEC/USDT low since Aug 25 2026 $758, high $1,698",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=ZECUSDT&interval=1d&startTime=1787630400000&limit=1000"
+    },
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "ZEC $1,121, 30d −22.6%; 30d vol ~97%, 90d ~120%",
+     "url": "https://api.coingecko.com/api/v3/coins/zcash/market_chart?vs_currency=usd&days=180&interval=daily"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      33.0,
+      45.0
+     ],
+     "reason": "Forecast opened."
     }
    ],
    "outcome": null,
