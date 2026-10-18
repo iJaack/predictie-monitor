@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Predictie — World Intelligence Monitor</title>
+<meta name="description" content="Live probabilistic forecasts on geopolitics, macro, crypto, enterprise and AI, with calibration tracking.">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#07090d">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="bg-grid" aria-hidden="true"></div>
+<header class="top">
+  <div class="wrap top-inner">
+    <div class="brand">
+      <span class="pulse" aria-hidden="true"></span>
+      <div>
+        <h1>Predictie <span class="dash">—</span> <span class="sub">World Intelligence Monitor</span></h1>
+        <p class="tagline">Calibrated forecasts on the questions that move the world.</p>
+      </div>
+    </div>
+    <div class="updated">
+      <span class="label">Last updated</span>
+      <span id="updated" class="mono">—</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="strip" id="strip" aria-label="Summary"></section>
+
+  <section class="soon" id="soon" aria-label="Resolving soon"></section>
+
+  <section class="controls" aria-label="Filters">
+    <div class="ctl-group" id="domainFilter" role="group" aria-label="Domain"></div>
+    <div class="ctl-row">
+      <div class="ctl-group" id="confFilter" role="group" aria-label="Confidence"></div>
+      <div class="ctl-right">
+        <label class="search"><input id="q" type="search" placeholder="Search questions…" autocomplete="off"></label>
+        <label class="select">
+          <span>Sort</span>
+          <select id="sort">
+            <option value="horizon">Horizon · soonest</option>
+            <option value="horizon-desc">Horizon · latest</option>
+            <option value="prob-desc">Probability · high→low</option>
+            <option value="prob">Probability · low→high</option>
+            <option value="gap">Gap vs market · largest</option>
+            <option value="reviewed">Recently reviewed</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <p class="resultline" id="resultline"></p>
+  <section class="grid" id="grid" aria-live="polite"></section>
+
+  <section class="resolved" aria-labelledby="resolvedTitle">
+    <div class="section-head">
+      <h2 id="resolvedTitle">Resolved</h2>
+      <span class="muted" id="resolvedMeta"></span>
+    </div>
+    <div id="resolved"></div>
+  </section>
+
+  <section class="method">
+    <h2>How to read this</h2>
+    <div class="method-grid">
+      <div><b>Band</b><p>Each forecast is a probability range for YES, not a point. The tick is the midpoint, which is what calibration is scored on.</p></div>
+      <div><b>Market</b><p>Where a liquid prediction market exists, its YES price is marked with a diamond. The gap is my midpoint minus the market price.</p></div>
+      <div><b>Confidence</b><p>How much I trust the band itself: Low means thin evidence or fast-moving facts; High means well-anchored data.</p></div>
+      <div><b>Scoring</b><p>Resolved forecasts are scored with the Brier score (0 is perfect, 0.25 is a coin flip) against the band midpoint.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span><b>Forecasts only. Not financial advice.</b></span>
+    <span class="muted">Predictie · data refreshed from the forecast book · <a href="data/predictions.json">raw JSON</a></span>
+  </div>
+</footer>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>

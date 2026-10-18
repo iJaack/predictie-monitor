@@ -1,0 +1,1816 @@
+{
+ "schemaVersion": 1,
+ "generatedAt": "2026-10-18T15:04:21+02:00",
+ "timezone": "Europe/Rome",
+ "counts": {
+  "active": 25,
+  "resolved": 0,
+  "byDomain": {
+   "Enterprise": 2,
+   "Macro": 4,
+   "Crypto": 9,
+   "Geopolitics": 8,
+   "AI": 2
+  }
+ },
+ "predictions": [
+  {
+   "id": "05b7a22d0a",
+   "question": "In its Q3 2026 results on Oct 21, 2026, will Meta raise the low end of its 2026 capex outlook above $130B?",
+   "domain": "Enterprise",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 55.0,
+   "probHigh": 70.0,
+   "midpoint": 62.5,
+   "horizon": "2026-10-21",
+   "staleAfter": "2026-10-21",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-16",
+   "summary": "Meta reports Q3 results on Oct 21 and currently guides 2026 capex at $130–145B. This asks whether it lifts the bottom of that range, an early read on whether hyperscaler AI spending keeps accelerating as borrowing costs rise.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "Q3 capex well above Q2's $31.08B (roughly $38B+ keeps $130B+ in reach); management reaffirming AI build-out despite the CoreWeave-led selloff; Muse launch momentum."
+    },
+    {
+     "label": "Toward no",
+     "text": "H1 capex only ~$50.9B (needs ~$79B in H2 just to hit $130B); rising cost of capital and record hyperscaler credit spreads; Meta narrowing by cutting the high end only or keeping $130–145B unchanged."
+    }
+   ],
+   "resolution": "Resolves YES if Meta's Q3 2026 earnings release/CFO outlook states a 2026 capex range (incl. finance-lease principal) with a low end above $130B. Resolves NO if the range is unchanged, lowered, or narrowed only from the top. If Meta stops giving a 2026 range, resolves NO.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "Meta Q2 2026 results",
+     "date": "Jul 29 2026",
+     "note": "2026 capex outlook $130–145B; Q2 capex incl. finance leases $31.08B; H1 PP&E purchases $49.1B + lease principal $1.8B",
+     "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx"
+    },
+    {
+     "publisher": "Meta",
+     "date": "Oct 12 2026",
+     "note": "Q3 2026 results after market close Wed Oct 21",
+     "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-to-Announce-Third-Quarter-2026-Results/default.aspx"
+    },
+    {
+     "publisher": "Proactive Investors",
+     "date": "Oct 16 2026",
+     "note": "BofA expects Meta to narrow 2026 capex guidance to $140–145B; 2027 capex est. raised to $205B; ~$10B legal charge in Q3",
+     "url": "https://www.proactiveinvestors.com/companies/news/1100253/meta-expected-to-beat-revenue-forecasts-as-ai-boosts-advertising-says-bank-of-america-1100253.html"
+    },
+    {
+     "publisher": "Pepperstone",
+     "date": "Oct 16 2026",
+     "note": "Q3 capex est. $40.97B, FCF −$9.14B; 'another sharp capex upgrade' flagged as a risk",
+     "url": "https://pepperstone.com/en/insights/market-analysis/equities/q3-2026-earnings-preview-can-ai-deliver-the-next-breakout"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-16",
+     "from": null,
+     "to": [
+      40.0,
+      55.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-18",
+     "from": [
+      40.0,
+      55.0
+     ],
+     "to": [
+      55.0,
+      70.0
+     ],
+     "reason": "Bloomberg median Q3 capex $40.97B (Pepperstone, Oct 16) is above the ~$38B level in Triggers; H1 ~$50.9B + Q3 ~$41B ≈ $92B leaves only ~$38B needed in Q4 to reach $130B, so the current $130B floor looks too low. BofA (Oct 16) explicitly expects narrowing to $140–145B, which would resolve YES. Not higher because one bank's call ≠ guidance, and Meta could keep $130–145B unchanged amid record hyperscaler credit spreads."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "f0d92a8ce1",
+   "question": "Will the FOMC hold the fed funds target range at 3.75–4.00% at its Oct 27–28, 2026 meeting?",
+   "domain": "Macro",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 80.0,
+   "probHigh": 90.0,
+   "midpoint": 85.0,
+   "horizon": "2026-10-28",
+   "staleAfter": "2026-10-23",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-16",
+   "summary": "After hiking in September, the Fed meets again on Oct 27–28. This tracks whether it pauses at 3.75–4.00% or moves again, with inflation still hot and oil above $100.",
+   "triggers": [
+    {
+     "label": "Toward hike",
+     "text": "another hot data print before the meeting (core CPI/PCE ≥0.3% m/m, strong payrolls), oil staying >$100, FedWatch October hike odds back above 50%, hawkish Fed-speak before blackout."
+    },
+    {
+     "label": "Toward hold",
+     "text": "Warsh/leadership signalling patience, energy prices rolling over, FedWatch hold odds staying ≥80%."
+    }
+   ],
+   "resolution": "Resolves NO if the Oct 28 FOMC statement announces any change to the 3.75–4.00% target range (hike or cut), or an intermeeting move happens before Oct 28. Thesis invalidated if FedWatch October hike odds rise back above 50% before the blackout.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "Invezz",
+     "date": "Oct 16 2026",
+     "note": "CME FedWatch 85.1% October hold; range 3.75–4.00% after Sept hike; Warsh 'I don't prejudge meetings'",
+     "url": "https://invezz.com/news/2026/10/16/fed-rate-hold-odds-jump-to-85-even-as-warsh-offers-no-clues-on-policy-path/"
+    },
+    {
+     "publisher": "CNBC",
+     "date": "Oct 14 2026",
+     "note": "Sept CPI 3.7% y/y, core 2.6%; October hike odds briefly 53.7%",
+     "url": "https://www.cnbc.com/2026/10/14/fed-may-now-have-to-hike-twice-or-increase-by-a-half-point-in-december-traders-bet.html"
+    },
+    {
+     "publisher": "Federal Reserve FOMC calendar",
+     "date": "Oct 16 2026",
+     "note": "meetings Oct 27–28 and Dec 8–9",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+     "publisher": "Federal Reserve",
+     "date": "Sept 15–16 2026",
+     "note": "unanimous 25bp hike to 3.75–4.00%",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-16",
+     "from": null,
+     "to": [
+      80.0,
+      90.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "8b2b3fa149",
+   "question": "Will US spot Bitcoin ETFs finish October 2026 with positive aggregate net flows?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 15.0,
+   "probHigh": 28.0,
+   "midpoint": 21.5,
+   "horizon": "2026-10-30",
+   "staleAfter": "2026-10-23",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-16",
+   "summary": "US spot Bitcoin ETFs have seen net outflows for most of October. This asks whether a late-month turnaround pushes the monthly total back above zero, a gauge of institutional crypto demand.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "BTC reclaiming $84k (where the post-CPI spike stalled) with consecutive inflow days; Oct 28 FOMC hold read as dovish; IBIT inflow streak."
+    },
+    {
+     "label": "Toward no",
+     "text": "further hot data or an October hike; BTC losing the ~$80k support; continued outflows from FBTC/ARKB; AI-credit stress spilling into risk assets."
+    }
+   ],
+   "resolution": "Resolution: month-to-date total of US spot Bitcoin ETF daily net flows for October 2026 (TFTC table, cross-check Farside/SoSoValue) after the Oct 30 session. Resolves YES if > $0. As of Oct 15 the month total was −$534.8M, so roughly +$535M is needed over the remaining sessions.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "Farside Investors BTC ETF flow table",
+     "date": "Oct 16 2026",
+     "note": "Oct 16 −$82.4M (IBIT −$71.8M, FBTC −$10.6M); Oct 15 +$5.1M",
+     "url": "https://farside.co.uk/BTC/"
+    },
+    {
+     "publisher": "BullishStation ETF tracker",
+     "date": "Oct 17 2026",
+     "note": "October MTD −$614.7M; week Oct 12–16 −$228.4M; ETH ETFs 11 outflow days in 12 sessions; US 10y 5.09% on Oct 16",
+     "url": "https://bullishstation.com/bitcoin-etf-flows-tracker"
+    },
+    {
+     "publisher": "TFTC Bitcoin ETF Flows",
+     "date": "October 2026",
+     "note": "MTD −$534.8M over 11 sessions",
+     "url": "https://www.tftc.io/bitcoin-etf-flows/october-2026"
+    },
+    {
+     "publisher": "CoinDesk",
+     "date": "Oct 16 2026",
+     "note": "BTC briefly below $80k (~$79,800), back near $82,500; $84k is the level to reclaim",
+     "url": "https://www.coindesk.com/markets/2026/10/16/bitcoin-buyers-snap-up-a-brief-drop-below-usd80-000-as-asian-stocks-rebound"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-16",
+     "from": null,
+     "to": [
+      20.0,
+      35.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-18",
+     "from": [
+      20.0,
+      35.0
+     ],
+     "to": [
+      15.0,
+      28.0
+     ],
+     "reason": "Oct 16 added −$82.4M (Farside), so October MTD is ≈ −$615M after 12 sessions (BullishStation −$614.7M, Oct 17). About +$615M is now needed over the ~10 remaining sessions (Oct 19–30), roughly +$62M/day vs a month-to-date average of about −$51M/day, with ETH ETFs also bleeding and the 10y at 5.09%. Still possible (one Sept week was +$2.39B), mainly via a dovish Oct 28 hold."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "d2193f324e",
+   "question": "Will the US refrain from any qualifying air or missile strike on Iranian territory through Nov 3, 2026?",
+   "domain": "Geopolitics",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 80.0,
+   "probHigh": 88.0,
+   "midpoint": 84.0,
+   "horizon": "2026-11-03",
+   "staleAfter": "2026-10-27",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "The US has paused strikes on Iran ahead of the midterms while indirect talks continue. This tracks whether that pause actually holds through Election Day on Nov 3.",
+   "triggers": [
+    {
+     "label": "Toward NO (strike happens)",
+     "text": "Trump reversing his pre-midterm pledge; an Iranian attack on US forces or Gulf shipping that invites retaliation; Houthi/Iran escalation against Saudi Arabia; a 'fireworks show' off-ramp strike timed before Election Day; Pickaxe Mountain strike."
+    },
+    {
+     "label": "Toward YES",
+     "text": "indirect talks via Qatar/Oman; Trump: 'They've asked us to please stop. And we do, because we're negotiating'; Netanyahu wary before Oct 27; political cost of an unpopular war days before the vote."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves NO if the US initiates an air strike (bombs, air-to-surface missiles, air-launched drones) or surface-to-surface missile/one-way drone strike that directly impacts Iran's terrestrial territory (incl. internal waters) by Nov 3, 2026 11:59 PM ET. Intercepted munitions, cyber, naval gunfire, artillery, ground incursions, threats and strikes only in Iran's maritime territory/airspace do not count. Otherwise YES.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "US-Iran ceasefire continues through the midterms?",
+    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms",
+    "yesPrice": 78.5,
+    "asOf": "2026-10-18T14:56:00+02:00",
+    "gapPts": 5.5,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "Oct 18 2026",
+     "note": "rules + Yes 0.785 (bid 0.78/ask 0.79), read via Gamma API Oct 18 2026 14:56 Rome",
+     "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms"
+    },
+    {
+     "publisher": "CNN",
+     "date": "Oct 15 2026",
+     "note": "new strike plans incl. MOAB on energy and nuclear sites 'before or after the midterms'; Trump announced no new actions before the midterms but advisers unsure it is definitive",
+     "url": "https://www.cnn.com/2026/10/15/politics/us-considering-mother-of-all-bombs-iran"
+    },
+    {
+     "publisher": "Ynet News",
+     "date": "Oct 2026",
+     "note": "Israel raised alert but Netanyahu reluctant to initiate before Oct 27 election; Trump on Newsmax re Pickaxe Mountain and 'we're negotiating'",
+     "url": "https://www.ynetnews.com/article/s1ryxf13fx"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      80.0,
+      88.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "60986b388a",
+   "question": "Will the Democratic Party win control of the US House in the Nov 3, 2026 midterms?",
+   "domain": "Geopolitics",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 82.0,
+   "probHigh": 90.0,
+   "midpoint": 86.0,
+   "horizon": "2026-11-04",
+   "staleAfter": "2026-11-02",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Which party controls the House after the Nov 3 midterms. Polling averages and public forecast models currently favour the Democrats.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "generic-ballot average holding D+7 or better; special-election environment D+9; Trump approval ~34–40%; Iran war unpopularity."
+    },
+    {
+     "label": "Toward NO",
+     "text": "late polling-error shift toward Republicans (models show R+2/R+3 error scenarios); a rally-round-the-flag event; redistricting effects in toss-ups (OH-7, NC-11, PA-8, TX-15 all near 50–55%)."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves to the party winning a majority of voting House seats in the 2026 midterms (runoffs count; seats attributed to party elected under; independents counted with the party they caucus/announce caucusing with); if no majority, the party of the first elected Speaker of the 120th Congress. NO if Republicans control. May resolve after Nov 3 if counts are slow.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will the Democratic Party control the House after the 2026 Midterm elections?",
+    "url": "https://polymarket.com/event/which-party-will-win-the-house-in-2026/will-the-democratic-party-control-the-house-after-the-2026-midterm-elections",
+    "yesPrice": 90.5,
+    "asOf": "2026-10-18T14:56:00+02:00",
+    "gapPts": -4.5,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "Oct 18 2026",
+     "note": "rules + Yes 0.905, read via Gamma API Oct 18 2026 14:56 Rome",
+     "url": "https://polymarket.com/event/which-party-will-win-the-house-in-2026/will-the-democratic-party-control-the-house-after-the-2026-midterm-elections"
+    },
+    {
+     "publisher": "Decision Desk HQ forecast",
+     "date": "Oct 17 2026",
+     "note": "Democrats 77% House (236 seats), 56% Senate",
+     "url": "https://votes.decisiondeskhq.com/forecast/2026"
+    },
+    {
+     "publisher": "Poliwave forecast",
+     "date": "Oct 18 2026",
+     "note": "Democrats 85% House (median 229), 61% Senate; generic ballot D 50.8 / R 43.3",
+     "url": "https://www.poliwave.com/us/fed/projection"
+    },
+    {
+     "publisher": "FutureBallot",
+     "date": "Oct 17 2026",
+     "note": "House 80% Democratic (232 expected); Senate 53–63% depending on independents",
+     "url": "https://futureballot.com/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      82.0,
+      90.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "0572484a66",
+   "question": "Will the Democratic Party win control of the US Senate in the Nov 3, 2026 midterms?",
+   "domain": "Geopolitics",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 52.0,
+   "probHigh": 62.0,
+   "midpoint": 57.0,
+   "horizon": "2026-11-04",
+   "staleAfter": "2026-11-02",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Which party controls the Senate after the Nov 3 midterms. The map is much tighter than the House and hinges on a handful of close races and how independents caucus.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "Democrats hold leads in Texas (D+2.0), Maine (D+2.1), Alaska (D+1.9), Michigan (D+2.6) polling averages; generic ballot D+7.7 or better."
+    },
+    {
+     "label": "Toward NO",
+     "text": "Iowa/Ohio toss-ups break Republican; independent winners (NE, SD, ID, MT) refuse to caucus with Democrats; late polling error toward Republicans; Kansas (lean R) and South Carolina hold."
+    }
+   ],
+   "resolution": "Per Polymarket rules: party with a majority of voting seats after all Nov 2026 regular and special elections (runoffs count, even after November); if 50–50, the party holding the Vice Presidency (currently Republican); independents counted with the party they formally caucus/announce caucusing with; fallback is the party of the first President pro tempore. NO if Republicans control.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will the Democratic Party control the Senate after the 2026 Midterm elections?",
+    "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026/will-the-democratic-party-control-the-senate-after-the-2026-midterm-elections",
+    "yesPrice": 64.5,
+    "asOf": "2026-10-18T14:56:00+02:00",
+    "gapPts": -7.5,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "Oct 18 2026",
+     "note": "rules + Yes 0.645 (bid 0.64/ask 0.65), read via Gamma API Oct 18 2026 14:56 Rome",
+     "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026/will-the-democratic-party-control-the-senate-after-the-2026-midterm-elections"
+    },
+    {
+     "publisher": "Decision Desk HQ forecast",
+     "date": "Oct 17 2026",
+     "note": "Democrats 56% Senate; Iowa 51%, Ohio 53%, Maine 54%, Texas 55% toss-ups",
+     "url": "https://votes.decisiondeskhq.com/forecast/2026"
+    },
+    {
+     "publisher": "Poliwave forecast",
+     "date": "Oct 18 2026",
+     "note": "Democrats 61%, Republicans 30%, 10% independents decide",
+     "url": "https://www.poliwave.com/us/fed/projection"
+    },
+    {
+     "publisher": "FutureBallot",
+     "date": "Oct 17 2026",
+     "note": "Senate 53–63% Democratic depending on 4 independents; Iowa is seat 51 at 54%",
+     "url": "https://futureballot.com/"
+    },
+    {
+     "publisher": "Call the Map polls",
+     "date": "Oct 18 2026",
+     "note": "generic ballot D+7.7; Senate averages AK D+1.9, KS D+0.6, ME D+2.1, MI D+2.6, TX D+2.0",
+     "url": "https://www.callthemap.com/polls"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      52.0,
+      62.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "37cc34ac5c",
+   "question": "By Nov 30, 2026, will the US government officially confirm a suspension of intelligence sharing with Ukraine or of PURL weapons purchases for Ukraine?",
+   "domain": "Geopolitics",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 20.0,
+   "probHigh": 35.0,
+   "midpoint": 27.5,
+   "horizon": "2026-11-30",
+   "staleAfter": "2026-10-30",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-16",
+   "summary": "Washington has threatened to cut intelligence sharing and PURL weapons purchases if Kyiv keeps striking Russian energy. This asks whether the US officially confirms such a cut, not just anonymous reports, by end of November.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "Ukraine keeps striking Russian refineries after Zelensky ended the energy-strike pause (Oct 14); Trump escalates rhetoric ('disgrace', calls for a new Ukrainian leader); NATO says PURL deliveries halted; on-record US confirmation of withheld missile warnings."
+    },
+    {
+     "label": "Toward no",
+     "text": "a working energy ceasefire accepted by both sides; diesel/oil prices easing; US officials continuing to say intel is flowing; EU-brokered de-escalation."
+    }
+   ],
+   "resolution": "Resolves YES only on an on-the-record confirmation by the White House, Pentagon, State Department, ODNI or the President that intelligence sharing or PURL purchases for Ukraine are suspended/paused (full or a named category). Anonymous-source reports or Ukrainian claims alone do not count. Resolves NO otherwise by Nov 30, 2026.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "CNN",
+     "date": "Oct 11 2026",
+     "note": "US warned it could suspend intel sharing and PURL purchases if Kyiv keeps hitting Russian energy; precedent: March 2025 suspension",
+     "url": "https://www.cnn.com/2026/10/11/politics/ukraine-us-weapons-intelligence"
+    },
+    {
+     "publisher": "Defense News",
+     "date": "Oct 15 2026",
+     "note": "Ukrainian officials say missile warnings and Starshield access curtailed; Trump denies interruption; Zelensky ends strike pause ('We're done')",
+     "url": "https://www.defensenews.com/global/2026/10/15/ukrainian-officials-blame-pentagon-for-withholding-life-saving-intel-from-kyiv/"
+    },
+    {
+     "publisher": "Defense News",
+     "date": "Oct 16 2026",
+     "note": "two US officials + a Western official (anonymous): Starshield slowdown order came from inside the White House; senior US official: 'No such request was ever made by the president'; US officials threatened to stop missile-launch intel, Trump said Tuesday intel still shared",
+     "url": "https://www.defensenews.com/pentagon/2026/10/16/order-to-limit-starshield-for-ukraine-came-from-inside-white-house-sources-say/"
+    },
+    {
+     "publisher": "CNBC",
+     "date": "Oct 16 2026",
+     "note": "Trump on record: 'it wasn't me… it's the same as it's always been'; restrictions cut connectivity above 160 kph",
+     "url": "https://www.cnbc.com/2026/10/16/trump-denies-musk-claim-he-ordered-starlink-restrictions-in-ukraine.html"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-16",
+     "from": null,
+     "to": [
+      25.0,
+      40.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-18",
+     "from": [
+      25.0,
+      40.0
+     ],
+     "to": [
+      20.0,
+      35.0
+     ],
+     "reason": "The Oct 16 Reuters/Defense News report (order to throttle Starshield came from inside the White House) shows the US is willing to curb support quietly, but (a) a Starshield throttle is not intel sharing or PURL, so it doesn't count under the resolution rules, (b) it rests on anonymous officials, which also doesn't count, and (c) the on-record line is denial: Trump on Oct 16 ('it wasn't me… same as it's always been') and earlier that intel is still being shared. The administration is choosing deniable curbs over announced suspensions, so on-record confirmation by Nov 30 looks a bit less likely, even as pressure on Kyiv rises."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "488c42e11a",
+   "question": "Will Google publicly release its next Gemini 'Pro' model by Nov 30, 2026?",
+   "domain": "AI",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 20.0,
+   "probHigh": 35.0,
+   "midpoint": 27.5,
+   "horizon": "2026-11-30",
+   "staleAfter": "2026-11-09",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Google just shipped Gemini 4 Argon and says the rest of the Gemini 4 family is coming. This asks whether a new public 'Pro' model lands by Nov 30.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "Google announces Gemini 4 Pro (or any '-pro' model, incl. a GA promotion of a Pro preview) with public access; Argon's introductory pricing ends Nov 30, a natural point for a lineup refresh; competitive pressure from OpenAI/Anthropic launches."
+    },
+    {
+     "label": "Toward NO",
+     "text": "Google spacing launches after Argon; Pro reserved for early 2027; closed or trusted-tester-only previews (don't count)."
+    }
+   ],
+   "resolution": "Per Polymarket rules: YES if any Gemini model released after market creation and labelled 'Pro' (e.g. gemini-4.0-pro-preview, or a GA promotion of an existing Pro preview) is made available to the general public, incl. open beta/open waitlist, by Nov 30, 2026 ET. Flash, Flash-Lite, Argon or other non-Pro labels and closed betas do not count. Otherwise NO.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will the next Google Gemini Pro model be released by November 30, 2026?",
+    "url": "https://polymarket.com/event/next-google-gemini-pro-model-released-byptptpt/will-the-next-google-gemini-pro-model-be-released-by-november-30-2026",
+    "yesPrice": 25.0,
+    "asOf": "2026-10-18T14:56:00+02:00",
+    "gapPts": 2.5,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "November 30, 2026",
+     "note": "rules + Yes 0.25 (bid 0.24/ask 0.26), read via Gamma API Oct 18 2026 14:56 Rome",
+     "url": "https://polymarket.com/event/next-google-gemini-pro-model-released-byptptpt/will-the-next-google-gemini-pro-model-be-released-by-november-30-2026"
+    },
+    {
+     "publisher": "Google blog",
+     "date": "Oct 13 2026",
+     "note": "Gemini 4 Argon generally available; 'just the beginning… the rest of the Gemini 4 family'; introductory pricing to Nov 30",
+     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      20.0,
+      35.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "489740bc45",
+   "question": "Will US spot AVAX ETFs (BAVA, VAVX, GAVA) reach cumulative net inflows of at least $36.6M since launch (SoSoValue) by Nov 30, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 35.0,
+   "probHigh": 50.0,
+   "midpoint": 42.5,
+   "horizon": "2026-11-30",
+   "staleAfter": "2026-11-09",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "US spot AVAX ETFs have drawn about $31.6M in cumulative net inflows since launch, with most days flat. This asks whether demand picks up enough to add another ~$5M by end of November.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "Schwab AVAX go-live or a confirmed date (broader retail attention); AVAX rallying back above $11; staking yield marketing (VAVX net staking yield 4.24%); more single-day prints like Oct 8."
+    },
+    {
+     "label": "Toward NO",
+     "text": "most sessions print $0 (every session Oct 9–16); largest recent outflow −$0.595M (Sep 16); Schwab direct trading could substitute for ETF demand; broad crypto ETF outflows and risk-off into Fed Dec 9."
+    }
+   ],
+   "resolution": "Resolves YES if SoSoValue's US spot AVAX ETF 'cumulative total net inflow' (or the same series as relayed by kryptoliczby.pl) is ≥ $36.6M for any trading day up to and including Nov 30, 2026 data; NO otherwise. If a new US spot AVAX ETF launches, its flows count. If SoSoValue stops publishing, sum issuer-reported daily flows.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "Kryptoliczby",
+     "date": "Oct 16 2026",
+     "note": "$0 flow Oct 16; week $0 / month +$4.5M; AUM $56.1M; 5.77M AVAX (~1.3% of mcap); cumulative +$31.6M; BAVA $26.6M, VAVX $20.6M, GAVA $8.9M",
+     "url": "https://kryptoliczby.pl/etf-avalanche/"
+    },
+    {
+     "publisher": "BSCN",
+     "date": "Oct 2026",
+     "note": "Oct 8 +$2.52M (best since April); VanEck launched first US spot AVAX ETF Jan 2026; Bitwise BAVA launched NYSE Apr 15 2026; 3.49M AVAX staked",
+     "url": "https://bsc.news/news/avax-spot-etf-inflow-october"
+    },
+    {
+     "publisher": "VanEck VAVX page",
+     "date": "Oct 16 2026",
+     "note": "80.01% staked, net staking yield 4.24%",
+     "url": "https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/"
+    },
+    {
+     "publisher": "Hokanews",
+     "date": "Oct 10 2026",
+     "note": "confirms Oct 8 $2.52M inflow and 1.26% of supply held",
+     "url": "https://www.hokanews.com/2026/10/avax-spot-etfs-record-biggest-net.html"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      35.0,
+      50.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "b8455bbcb9",
+   "question": "Will AVAX's CoinGecko USD price for Dec 1, 2026 (00:00 UTC daily data point) be between $8.00 and $12.00 inclusive?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 48.0,
+   "probHigh": 60.0,
+   "midpoint": 54.0,
+   "horizon": "2026-12-01",
+   "staleAfter": "2026-11-13",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "AVAX trades near $10. This asks whether it is still between $8 and $12 on Dec 1, a measure of whether the market stays range-bound or breaks out either way.",
+   "triggers": [
+    {
+     "label": "Toward YES (stays in range)",
+     "text": "quiet alt market, ETF flows near zero (most Oct sessions $0), no Schwab date before December."
+    },
+    {
+     "label": "Toward NO (breaks out)",
+     "text": "Schwab AVAX go-live (upside); BTC below $70k or above $95k; MSCI Nov 11 deletion list shocks crypto equities; US/Israel strikes on Iran after Nov 3 with an oil spike (downside)."
+    }
+   ],
+   "resolution": "Resolves on the CoinGecko AVAX (avalanche-2) USD daily price data point stamped 2026-12-01 00:00 UTC from the market_chart endpoint (equivalent to the Nov 30 UTC close). YES if $8.00 ≤ price ≤ $12.00; NO otherwise. If CoinGecko is unavailable, use CoinMarketCap's Nov 30 UTC close.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "AVAX $9.76; 30d vol ~111%, 90d ~80%, 180d ~69%",
+     "url": "https://api.coingecko.com/api/v3/coins/avalanche-2/market_chart?vs_currency=usd&days=180&interval=daily"
+    },
+    {
+     "publisher": "CoinMarketCap",
+     "date": "Oct 16–17 2026",
+     "note": "$9.85 pivot, $10.85 resistance, $9.01 support; key trigger Schwab's late-2026 launch",
+     "url": "https://coinmarketcap.com/cmc-ai/avalanche/price-analysis/"
+    },
+    {
+     "publisher": "CoinMarketCap",
+     "date": "Oct 2026",
+     "note": "Helicon upgrade (Sep 22) lowers issuance; weak fee burn a structural risk",
+     "url": "https://coinmarketcap.com/cmc-ai/avalanche/price-prediction/"
+    },
+    {
+     "publisher": "VanEck VAVX page",
+     "date": "Oct 16 2026",
+     "note": "80.01% of holdings staked, net staking yield 4.24%",
+     "url": "https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      48.0,
+      60.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "ab9b34b2bd",
+   "question": "Will the FOMC raise the fed funds target range by at least 25bp at its Dec 8–9, 2026 meeting?",
+   "domain": "Macro",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 72.0,
+   "probHigh": 85.0,
+   "midpoint": 78.5,
+   "horizon": "2026-12-09",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-16",
+   "summary": "Futures price a high chance of another Fed hike in December. This tracks whether the FOMC actually raises rates at its Dec 8–9 meeting.",
+   "triggers": [
+    {
+     "label": "Toward hike",
+     "text": "Oct 28 statement/presser signalling more tightening; continued hot CPI/PPI (Sept PPI +6.3% y/y); Brent holding >$100; FedWatch December hike odds staying ≥85%."
+    },
+    {
+     "label": "Toward no hike",
+     "text": "an October hike that pulls the move forward, a sharp growth/labour slowdown, energy ceasefire or Middle East de-escalation pulling oil down, AI-credit stress (e.g. CoreWeave) tightening financial conditions."
+    }
+   ],
+   "resolution": "Resolves NO if the Dec 9 statement leaves the range unchanged or cuts. Note: if the Fed hikes on Oct 28 instead, December odds should be re-scored that day (pulled-forward move), not left stale.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "Invezz",
+     "date": "Oct 16 2026",
+     "note": "CME FedWatch ~88.9% odds of a hike at Dec 9 meeting (83% a week earlier); UBS expects Dec and Mar 2027 hikes; Sept PPI +6.3% y/y",
+     "url": "https://invezz.com/news/2026/10/16/fed-rate-hold-odds-jump-to-85-even-as-warsh-offers-no-clues-on-policy-path/"
+    },
+    {
+     "publisher": "CNBC",
+     "date": "Oct 14 2026",
+     "note": ">95% odds of at least one hike by year-end, 40% odds of +50bp",
+     "url": "https://www.cnbc.com/2026/10/14/fed-may-now-have-to-hike-twice-or-increase-by-a-half-point-in-december-traders-bet.html"
+    },
+    {
+     "publisher": "Federal Reserve FOMC calendar",
+     "date": "Oct 16 2026",
+     "note": "Dec 8–9 meeting",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+     "publisher": "Reuters via Investing.com",
+     "date": "Oct 16 2026",
+     "note": "futures suggest most expect the Fed to wait until December for its second hike",
+     "url": "https://www.investing.com/news/stock-market-news/as-ai-rally-wobbles-stock-markets-spotlight-turns-to-earnings-4953575"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-16",
+     "from": null,
+     "to": [
+      72.0,
+      85.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "3bd3b3efcb",
+   "question": "Will BENQI sAVAX trade more than 3% below its on-chain redemption rate on any CoinGecko daily data point between Oct 19 and Dec 15, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 3.0,
+   "probHigh": 8.0,
+   "midpoint": 5.5,
+   "horizon": "2026-12-15",
+   "staleAfter": "2026-11-13",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "sAVAX is BENQI's liquid-staked AVAX token and normally trades very close to its on-chain redemption value. This measures the risk of a meaningful depeg (more than 3%) before mid-December.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "AVAX falling >30% within days (e.g. via a $7 print, ~28–38% chance by year end); a BENQI smart-contract, oracle or validator incident; mass liquidations of sAVAX loops on lending markets; thinning sAVAX/WAVAX DEX liquidity; a large unstake queue."
+    },
+    {
+     "label": "Toward NO",
+     "text": "steady arbitrage keeps the peg within ~1%; totalPooledAvax ~23.3M AVAX backs 18.06M sAVAX; calm alt market."
+    }
+   ],
+   "resolution": "Measure each day as (CoinGecko daily USD price of benqi-liquid-staked-avax ÷ CoinGecko daily USD price of avalanche-2) ÷ sAVAX getPooledAvaxByShares(1e18) read on-chain the same day (C-Chain contract 0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE). YES if that ratio is < 0.97 on any daily data point from Oct 19 to Dec 15, 2026 inclusive; NO otherwise. If CoinGecko data are missing or plainly erroneous for a day, use the sAVAX/WAVAX TWAP on the deepest Avalanche DEX pool for that day. If BENQI changes redemption mechanics, re-scope rather than resolve.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "Avalanche C-Chain public RPC",
+     "date": "Oct 18 2026",
+     "note": "getPooledAvaxByShares(1e18) = 1.290641; totalPooledAvax = 23,305,228 AVAX; totalSupply = 18,057,093 sAVAX",
+     "url": "https://api.avax.network/ext/bc/C/rpc"
+    },
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "sAVAX $12.59, AVAX $9.76 (ratio 1.2897); 365d daily ratio history, worst deviation vs trend −1.44% (Sep 10 2026)",
+     "url": "https://api.coingecko.com/api/v3/coins/benqi-liquid-staked-avax/market_chart?vs_currency=usd&days=365&interval=daily"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      3.0,
+      8.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "c24e3b8364",
+   "question": "Will the ECB raise the deposit facility rate by exactly 25bp at its Dec 16–17, 2026 meeting?",
+   "domain": "Macro",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 74.0,
+   "probHigh": 86.0,
+   "midpoint": 80.0,
+   "horizon": "2026-12-17",
+   "staleAfter": "2026-10-30",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Most economists expect the ECB to hike in December with euro-area inflation near 4%. This tracks whether it delivers exactly a 25bp increase on Dec 16–17.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "Reuters poll (Oct 5–8) – 64 of 73 economists expect a December hike to 2.75%; policymakers in Bangkok (Oct 15–17) prefer a quarterly pace with December forecasts; HICP 3.8% in September heading toward 4%; Brent hit $110 on Oct 16."
+    },
+    {
+     "label": "Toward NO",
+     "text": "an October 29 hike (market ~3.7%) that pulls the move forward; Lagarde/SocGen argument that the bond selloff and higher market rates are 'doing some of the job'; French fiscal stress forcing caution; oil relief from a Hormuz reopening; a 50bp move if second-round effects appear."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves on the change in the ECB deposit facility rate announced at the December 2026 meeting (Dec 16–17) vs its level before the meeting, per the official ECB statement. This market (25 bps increase) is YES only for an increase that rounds to 25bp (changes <25bp round to 25bp; >25bp round to nearest 25bp, away from zero on ties). Hold, cut or 50bp+ hike = NO. Re-score immediately after the Oct 29 decision.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will the ECB announce a 25 bps increase at the December 2026 meeting?",
+    "url": "https://polymarket.com/event/ecb-interest-rates-december-2026/will-the-ecb-announce-a-25-bps-increase-at-the-december-2026-meeting",
+    "yesPrice": 82.5,
+    "asOf": "2026-10-18T14:56:00+02:00",
+    "gapPts": -2.5,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 2026",
+     "note": "rules + Yes 0.825 (bid 0.82/ask 0.83), read via Gamma API Oct 18 2026 14:56 Rome",
+     "url": "https://polymarket.com/event/ecb-interest-rates-december-2026/will-the-ecb-announce-a-25-bps-increase-at-the-december-2026-meeting"
+    },
+    {
+     "publisher": "Reuters poll via Yahoo Finance",
+     "date": "Oct 8 2026",
+     "note": "70 of 73 see Oct 29 hold at 2.50%; 64 of 73 see a 25bp December hike; September inflation 3.8%",
+     "url": "https://finance.yahoo.com/economy/policy/articles/ecb-hike-rates-again-december-095610436.html"
+    },
+    {
+     "publisher": "Bloomberg via Business Standard",
+     "date": "Oct 17 2026",
+     "note": "officials point to December as likeliest timing, preference for quarterly pace; Brent $110 on Oct 16; unease over bond yields and French finances",
+     "url": "https://www.business-standard.com/world-news/ecb-officials-see-december-rate-hike-as-uncertainty-clouds-2027-outlook-126101700453_1.html"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      74.0,
+      86.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "766e79955f",
+   "question": "Will AVAX trade at or above $13 on Binance AVAX/USDT (any 1-minute high) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 30.0,
+   "probHigh": 40.0,
+   "midpoint": 35.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "AVAX trades near $10. This asks whether it rallies to at least $13 at any point before year end.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "Schwab confirms or launches AVAX trading (Schwab plans SOL/AVAX/LINK by end-2026; AVAX +5.36% on that news Oct 16 per CMC); spot AVAX ETF inflows resume (Oct 8 +$2.52M, best day since April); BTC reclaims $90k+; Helicon (Sep 22) lowering issuance."
+    },
+    {
+     "label": "Toward NO",
+     "text": "alt weakness (AVAX −3.9% to $9.88 Oct 17, CMC) and a break of $9.79/$9.50 support; BTC losing $80k; Fed Dec hike and ECB Dec hike tightening conditions; Schwab delay or withdrawal of AVAX."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES immediately if any Binance AVAX/USDT 1-minute candle has a High ≥ $13.00 between market creation and Dec 31, 2026 23:59 ET. Only the Binance AVAX/USDT feed counts; other exchanges/pairs ignored. Otherwise NO. Re-score immediately if AVAX closes below $8 (band likely 15–25%) or above $11.50 (band up), or on a Schwab AVAX go-live date.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will AVAX reach $13 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-reach-13-by-december-31-2026",
+    "yesPrice": 25.5,
+    "asOf": "2026-10-18T14:56:00+02:00",
+    "gapPts": 9.5,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules + Yes 0.255 (bid 0.25/ask 0.26), read via Gamma API Oct 18 2026 14:56 Rome",
+     "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-reach-13-by-december-31-2026"
+    },
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "AVAX $9.76; 90d realized vol ~80%, 180d ~69%; 365d range $5.89–$20.83",
+     "url": "https://api.coingecko.com/api/v3/coins/avalanche-2/market_chart?vs_currency=usd&days=365&interval=daily"
+    },
+    {
+     "publisher": "CoinMarketCap",
+     "date": "Oct 17 2026",
+     "note": "AVAX −3.90% to $9.88, underperforming BTC; supports $9.79 / $9.50",
+     "url": "https://coinmarketcap.com/cmc-ai/avalanche/price-analysis/"
+    },
+    {
+     "publisher": "CoinMarketCap top story",
+     "date": "Oct 16 2026",
+     "note": "AVAX +5.36% on Schwab plan to add SOL/AVAX/LINK by end-2026",
+     "url": "https://coinmarketcap.com/top-stories/6ad1a27031381a2cec7b0490/"
+    },
+    {
+     "publisher": "BSCN",
+     "date": "Oct 2026",
+     "note": "spot AVAX ETFs' $2.52M inflow on Oct 8, holdings 1.26% of supply",
+     "url": "https://bsc.news/news/avax-spot-etf-inflow-october"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      30.0,
+      40.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "3b74327666",
+   "question": "Will AVAX trade at or below $7 on Binance AVAX/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 28.0,
+   "probHigh": 38.0,
+   "midpoint": 33.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "AVAX trades near $10. This asks whether it drops to $7 or lower at any point before year end.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "BTC breaks $70k (Polymarket ~37.5%); MSCI Nov 11 list triggers crypto-treasury equity selling and risk-off; Fed hike Dec 9 + ECB hike Dec 17; Schwab delays AVAX; renewed US/Israel strikes on Iran with oil spike."
+    },
+    {
+     "label": "Toward NO",
+     "text": "Schwab AVAX go-live; spot AVAX ETF inflows (cumulative +$31.6M, AUM $56.1M on Oct 16); AVAX holds the $9.50–$9.79 support zone; Aug low $6.77 already marked the cycle floor."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES immediately if any Binance AVAX/USDT 1-minute candle has a Low ≤ $7.00 between market creation and Dec 31, 2026 23:59 ET. Only the Binance AVAX/USDT feed counts. Otherwise NO. Re-score if AVAX closes below $8.50 (band up sharply) or above $11.50 (band down).",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will AVAX dip to $7 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-dip-to-7-by-december-31-2026",
+    "yesPrice": 40.5,
+    "asOf": "2026-10-18T14:56:00+02:00",
+    "gapPts": -7.5,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules + displayed Yes 0.405, bid 0.10/ask 0.71, last 0.40, read via Gamma API Oct 18 2026 14:56 Rome",
+     "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-dip-to-7-by-december-31-2026"
+    },
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "AVAX $9.76; 90d realized vol ~80%; Aug 20 close $6.77",
+     "url": "https://api.coingecko.com/api/v3/coins/avalanche-2/market_chart?vs_currency=usd&days=365&interval=daily"
+    },
+    {
+     "publisher": "CoinMarketCap",
+     "date": "Oct 17 2026",
+     "note": "AVAX $9.88, technical breakdown below key MAs; break of $9.79 risks $9.50",
+     "url": "https://coinmarketcap.com/cmc-ai/avalanche/price-analysis/"
+    },
+    {
+     "publisher": "Kryptoliczby",
+     "date": "Oct 16 2026",
+     "note": "US spot AVAX ETFs: $0 flow Oct 16, AUM $56.1M, 5.77M AVAX, cumulative +$31.6M",
+     "url": "https://kryptoliczby.pl/etf-avalanche/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      28.0,
+      38.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "d696382907",
+   "question": "Will Bitcoin trade at or below $70,000 on Binance BTC/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 33.0,
+   "probHigh": 43.0,
+   "midpoint": 38.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Bitcoin trades around $80–84k. This asks whether it falls to $70,000 or lower at any point before year end.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "MSCI Nov 11 list confirms Strategy/Metaplanet deletions (JPMorgan est. ~$2.8B MSTR outflows; weaker equity-issuance window for BTC buying); Fed hikes Dec 9; renewed US/Israel strikes on Iran after Nov 3 with Brent >$110; ETF outflows continue."
+    },
+    {
+     "label": "Toward NO",
+     "text": "Fed pause; Hormuz reopening/oil easing; ETF inflows resume; Democrats' midterm win priced as neutral for crypto."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance BTC/USDT 1-minute candle has a Low ≤ $70,000 from market creation through Dec 31, 2026 23:59 ET; price action before market creation is ignored; only Binance BTC/USDT counts. Otherwise NO. Re-score if BTC closes below $75k or above $90k.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Bitcoin dip to $70,000 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-dip-to-70000-by-december-31-2026-from-august-24",
+    "yesPrice": 37.5,
+    "asOf": "2026-10-18T14:56:00+02:00",
+    "gapPts": 0.5,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules + Yes 0.375 (bid 0.37/ask 0.38), read via Gamma API Oct 18 2026 14:56 Rome",
+     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-dip-to-70000-by-december-31-2026-from-august-24"
+    },
+    {
+     "publisher": "CoinGecko API",
+     "date": "Oct 18 2026",
+     "note": "BTC $81,890; 30d vol ~32%, 90d ~38%",
+     "url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=180&interval=daily"
+    },
+    {
+     "publisher": "CoinDesk",
+     "date": "Oct 16 2026",
+     "note": "MSCI finalized non-operating-company rules; affected firms named Nov 11, effective after Nov 30 close; JPMorgan ~$2.8B MSTR outflow estimate",
+     "url": "https://www.coindesk.com/markets/2026/10/16/msci-approves-rules-that-could-eject-strategy-metaplanet-from-equity-indexes"
+    },
+    {
+     "publisher": "CNN",
+     "date": "Oct 15 2026",
+     "note": "US strike plans incl. MOAB on Iranian energy/nuclear sites before or after the midterms",
+     "url": "https://www.cnn.com/2026/10/15/politics/us-considering-mother-of-all-bombs-iran"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      33.0,
+      43.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "79595ab700",
+   "question": "Will IMF PortWatch show a 7-day average of at least 60 ship transits through the Strait of Hormuz on any date by Dec 31, 2026?",
+   "domain": "Geopolitics",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 7.0,
+   "probHigh": 14.0,
+   "midpoint": 10.5,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-13",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Tanker traffic through the Strait of Hormuz has collapsed after repeated attacks on shipping. This asks whether transits recover to near-normal levels by year end.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "a US–Iran agreement starting with reopening the strait (the off-ramp CNN says officials are pursuing); Trump's stated aim to end the war after Nov 3; AIS crossings trending up from ~21/day."
+    },
+    {
+     "label": "Toward NO",
+     "text": "continued attacks on shipping; US strikes after the midterms; Houthi strikes on Saudi Arabia (Brent $110 on Oct 16); insurers and shipowners slow to return even after a deal."
+    }
+   ],
+   "resolution": "Per Polymarket rules: YES as soon as IMF PortWatch publishes a 7-day moving average of transit calls ('Arrivals of Ships': container, dry bulk, ro-ro, general cargo, tanker) for the Strait of Hormuz ≥ 60 for any date between market creation and Dec 31, 2026; revisions within the window count. NO once Dec 31 data are published without such a value (14-day grace for publication). Other trackers (e.g. AIS monitors) are context only.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Strait of Hormuz traffic returns to normal by December 31?",
+    "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31/strait-of-hormuz-traffic-returns-to-normal-by-december-31",
+    "yesPrice": 12.5,
+    "asOf": "2026-10-18T14:56:00+02:00",
+    "gapPts": -2.0,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "Oct 18 2026",
+     "note": "rules + Yes 0.125 (bid 0.12/ask 0.13), read via Gamma API Oct 18 2026 14:56 Rome",
+     "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
+    },
+    {
+     "publisher": "hormuz.data-tracking.net",
+     "date": "October 2026",
+     "note": "386 AIS-detected crossings, 21.4/day, ~1.32M bbl/d oil (~7% of pre-war ~20M); busiest day Oct 13 with 33",
+     "url": "https://hormuz.data-tracking.net/stats/2026-10"
+    },
+    {
+     "publisher": "CNN",
+     "date": "Oct 15 2026",
+     "note": "officials seeking an off-ramp 'starting with an agreement to reopen the Strait of Hormuz'; strike options still prepared",
+     "url": "https://www.cnn.com/2026/10/15/politics/us-considering-mother-of-all-bombs-iran"
+    },
+    {
+     "publisher": "Bloomberg via Business Standard",
+     "date": "Oct 17 2026",
+     "note": "Brent hit $110 on Oct 16 after Houthi strikes on Saudi Arabia",
+     "url": "https://www.business-standard.com/world-news/ecb-officials-see-december-rate-hike-as-uncertainty-clouds-2027-outlook-126101700453_1.html"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      7.0,
+      14.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "1f08b1f816",
+   "question": "Will Israel and Iran both refrain from any qualifying strike on each other's territory through Dec 31, 2026?",
+   "domain": "Geopolitics",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 40.0,
+   "probHigh": 55.0,
+   "midpoint": 47.5,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Israel and Iran are in an uneasy ceasefire. This asks whether neither side strikes the other's territory through year end.",
+   "triggers": [
+    {
+     "label": "Toward NO (strike)",
+     "text": "post-midterm US decision to strike Pickaxe Mountain / energy sites with Israeli coordination; Israeli preemption if Iran's rebuild looks threatening; miscalculation under raised alert levels; Hezbollah front reopening."
+    },
+    {
+     "label": "Toward YES",
+     "text": "no clear strategic objective for another Israeli campaign (Ynet); US–Iran indirect talks producing a Hormuz reopening deal; Trump seeking a 'symbolic' off-ramp rather than a renewed war; new Israeli coalition caution after the election."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves NO if Israel or Iran initiates an air strike or surface-to-surface missile/one-way drone strike that directly impacts the other country between market creation and Dec 31, 2026 11:59 PM IRST. Intercepted munitions, cyber, artillery, ground incursions, threats, and minor short-range strikes do not count. Otherwise YES. Re-score after Oct 27 and Nov 3.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Israel x Iran ceasefire continues through December 31?",
+    "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963/israel-x-iran-ceasefire-continues-through-december-31-415",
+    "yesPrice": 50.5,
+    "asOf": "2026-10-18T14:56:00+02:00",
+    "gapPts": -3.0,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "Oct 18 2026",
+     "note": "rules + Yes 0.505 (bid 0.50/ask 0.51) and term structure, read via Gamma API Oct 18 2026 14:53–14:56 Rome",
+     "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963/israel-x-iran-ceasefire-continues-through-december-31-415"
+    },
+    {
+     "publisher": "Ynet News",
+     "date": "Oct 2026",
+     "note": "IDF raised alert and preparing for renewed fighting at short notice; Netanyahu reluctant before Oct 27; a new round would likely be coordinated with the US",
+     "url": "https://www.ynetnews.com/article/s1ryxf13fx"
+    },
+    {
+     "publisher": "CNN",
+     "date": "Oct 15 2026",
+     "note": "US strike packages incl. MOAB for energy/nuclear sites; off-ramp options incl. a 'fireworks show'; talks focused on reopening Hormuz",
+     "url": "https://www.cnn.com/2026/10/15/politics/us-considering-mother-of-all-bombs-iran"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      40.0,
+      55.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "d090868e05",
+   "question": "Will MSCI remove Strategy (MSTR) from the MSCI World or MSCI USA Index by Dec 31, 2026?",
+   "domain": "Enterprise",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 88.0,
+   "probHigh": 95.0,
+   "midpoint": 91.5,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-11",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "MSCI finalised rules that can drop companies that are mainly bitcoin holdings from its indexes, and Strategy is on the potential-deletion list. This asks whether MSCI removes it by year end; the Nov 11 review is the key date.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "MSCI's Nov 11 November Index Review list names Strategy (an official announcement alone resolves YES); MSCI's current potential-deletions list (Sept 30 2026 data) still shows Strategy, Metaplanet and Yellow Cake; August test on May 2026 data flagged the same three."
+    },
+    {
+     "label": "Toward NO",
+     "text": "Strategy passes the core 'substantial operating assets' screen or is flagged on fewer than 4 of 5 ratios; current constituents are removed only if they fail in EACH of the two most recent annual filing periods (MSCI may use interim filings); late methodology tweaks or a delay."
+    }
+   ],
+   "resolution": "Per Polymarket rules: YES if MicroStrategy/Strategy is removed from either the MSCI World Index or the MSCI USA Index (or transferred to another MSCI index) at any point by Dec 31, 2026 11:59 PM ET; an official MSCI announcement of removal/transfer suffices. Source: MSCI communications or consensus credible reporting. Otherwise NO. Re-score on Nov 11.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Microstrategy delisted from MSCI index by December 31?",
+    "url": "https://polymarket.com/event/will-microstrategy-be-delisted-from-the-msci-index-by-march-31/microstrategy-delisted-from-msci-index-by-december-31",
+    "yesPrice": 93.5,
+    "asOf": "2026-10-18T14:56:00+02:00",
+    "gapPts": -2.0,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "Oct 18 2026",
+     "note": "rules + Yes 0.935 (bid 0.92/ask 0.95), read via Gamma API Oct 18 2026 14:56 Rome",
+     "url": "https://polymarket.com/event/will-microstrategy-be-delisted-from-the-msci-index-by-march-31/microstrategy-delisted-from-msci-index-by-december-31"
+    },
+    {
+     "publisher": "MSCI announcement",
+     "date": "Oct 15 2026",
+     "note": "non-operating companies ineligible from the November 2026 Index Review, effective close Nov 30; current constituents removed only if they fail in each of the two most recent annual filing periods; final list Nov 11",
+     "url": "https://app2.msci.com/webapp/index_ann/DocGet?format=html&lang=en&pub_key=aq0wbkjxPgo"
+    },
+    {
+     "publisher": "Unchained via Yahoo Finance",
+     "date": "Oct 16 2026",
+     "note": "August test flagged Strategy, Yellow Cake, Metaplanet; current list (Sept 30 data) still puts all three in line for deletion",
+     "url": "https://finance.yahoo.com/markets/crypto/articles/strategy-metaplanet-face-exit-msci-102636581.html"
+    },
+    {
+     "publisher": "CoinDesk",
+     "date": "Oct 16 2026",
+     "note": "JPMorgan ~$2.8B outflow estimate; Strategy holds 848,250 BTC",
+     "url": "https://www.coindesk.com/markets/2026/10/16/msci-approves-rules-that-could-eject-strategy-metaplanet-from-equity-indexes"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      88.0,
+      95.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "fed4649e42",
+   "question": "Will Mojtaba Khamenei cease to be Iran's de facto leader by Dec 31, 2026?",
+   "domain": "Geopolitics",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 7.0,
+   "probHigh": 13.0,
+   "midpoint": 10.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "Mojtaba Khamenei became Iran's de facto leader in March but has rarely been seen since. This asks whether he is removed, incapacitated or replaced by year end, a risk concentrated around possible renewed strikes after the US midterms.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "Trump resumes military action after the Nov 3 midterms (ABC, Oct 17: options incl. MOAB prepared; Trump says no strike before midterms); decapitation strikes; credible reports that Mojtaba is dead/incapacitated (he has not been seen or heard since his March elevation per Cipher Brief Oct 16); open elite challenges to his authority (NCRI Oct 13, partisan opposition source: impeachment request vs. FM Araghchi registered Oct 6 despite a leader adviser saying he approves talks; Bahonar 'no sheikh and savior' remarks); Assembly of Experts moves; mass unrest from fuel-price reform."
+    },
+    {
+     "label": "Toward NO",
+     "text": "regime has incentive to keep him as a figurehead because collective security-led rule (SNSC/IRGC) works without his visible presence (Cipher Brief); 7+ months of invisibility have not triggered YES under 'consensus of credible reporting'; indirect US-Iran talks via Qatar/Oman continuing under SNSC oversight, and an Iranian MP does not expect war before US and Israeli elections (AA, Oct 17); only ~74 days left. Market term structure on Oct 18: Oct 31 ~2%, Nov 30 ~7%, Dec 31 ~11.5%, Jun 30 2027 ~25%."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if Mojtaba Khamenei ceases to be Iran's de facto leader between market creation (Mar 9, 2026) and Dec 31, 2026 ET, i.e. is removed from power, detained, otherwise loses his position, or is prevented from acting as de facto leader; an official announcement of his resignation/removal counts even if the departure takes effect later. Resolution source: consensus of credible reporting. Otherwise NO. Forecast is invalidated (re-score immediately) if: US/Israel resume strikes on Iran, especially on leadership targets; credible reporting of his death, incapacity or detention; an Assembly of Experts session on leadership; or a durable US-Iran ceasefire/deal (pushes toward the low end).",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Iran leadership change by December 31?",
+    "url": "https://polymarket.com/event/iran-leadership-change-by/iran-leadership-change-by-december-31-974-976-658-482-568-685-996-469-827",
+    "yesPrice": 11.5,
+    "asOf": "2026-10-18T14:41:00+02:00",
+    "gapPts": -1.5,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "Oct 18 2026",
+     "note": "Market rules and price",
+     "url": "https://polymarket.com/event/iran-leadership-change-by/iran-leadership-change-by-december-31-974-976-658-482-568-685-996-469-827"
+    },
+    {
+     "publisher": "The Cipher Brief",
+     "date": "Oct 16 2026",
+     "note": "",
+     "url": "https://www.thecipherbrief.com/who-really-makes-decisions-in-tehran"
+    },
+    {
+     "publisher": "ABC News live updates",
+     "date": "Oct 17 2026",
+     "note": "",
+     "url": "https://abcnews.com/International/live-updates/iran-live-updates-trump-us-attack-iran-ahead/?id=137063637"
+    },
+    {
+     "publisher": "Anadolu Agency",
+     "date": "Oct 17 2026",
+     "note": "",
+     "url": "https://www.aa.com.tr/en/middle-east/iranian-lawmaker-says-indirect-talks-with-us-continuing-through-qatar-oman-report/4092082"
+    },
+    {
+     "publisher": "NCRI",
+     "date": "Oct 13 2026",
+     "note": "",
+     "url": "https://www.ncr-iran.org/en/news/iran-a-world/factional-feuds-are-eroding-mojtaba-khameneis-authority/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      7.0,
+      13.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "90aa3924c7",
+   "question": "Will OpenAI publicly release a GPT Astra model versioned 6.1 or higher by Dec 31, 2026?",
+   "domain": "AI",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 50.0,
+   "probHigh": 70.0,
+   "midpoint": 60.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-13",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "OpenAI's next GPT Astra release (6.1 or later) was shelved in late September over safety problems and has no new date. This asks whether it ships publicly by Dec 31.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "OpenAI says more Astra models are coming and that models which cleared its safety bar will arrive 'very soon'; a fixed GPT-6.1/6.2 Astra or GPT-7 Astra announced; a government-preview window starting by mid-November (30 days before partners)."
+    },
+    {
+     "label": "Toward NO",
+     "text": "further alignment failures (scope/authorization, deception); OpenAI shipping only Sol/Luna-tier or Codex models (do not count); regulatory or incident-driven delays; the looped-transformer flagship slipping into 2027."
+    }
+   ],
+   "resolution": "Per Polymarket rules: YES if OpenAI makes a model designated version 6.1 or higher with 'Astra' in its name/identifier generally available to the public (incl. open beta or open rolling waitlist) between market creation and Dec 31, 2026 ET. GPT-6 Astra variants/snapshots, Sol/Terra/Luna tiers, Cyber, Codex, Image, Realtime and closed betas do NOT count. Otherwise NO. Re-score on any OpenAI Astra announcement.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Next Astra Model (6.1+) released by December 31, 2026?",
+    "url": "https://polymarket.com/event/gpt-astra-6pt1-released-byptptpt/next-astra-model-6pt1-released-by-december-31-2026",
+    "yesPrice": 91.5,
+    "asOf": "2026-10-18T14:56:00+02:00",
+    "gapPts": -31.5,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules + Yes 0.915 (bid 0.91/ask 0.92); Oct 23 0.151, Oct 31 0.315; read via Gamma API Oct 18 2026 14:53–14:56 Rome",
+     "url": "https://polymarket.com/event/gpt-astra-6pt1-released-byptptpt/next-astra-model-6pt1-released-by-december-31-2026"
+    },
+    {
+     "publisher": "The Register",
+     "date": "Sep 29 2026",
+     "note": "OpenAI confirms GPT-6.1 Astra will not get its planned October release after failing scope/authorization and reporting bars; more Astra models coming; other models 'very soon'",
+     "url": "https://www.theregister.com/ai-and-ml/2026/09/29/openai-benches-gpt-61-astra-for-overstepping-the-mark/5299743"
+    },
+    {
+     "publisher": "The Decoder",
+     "date": "Oct 14 2026",
+     "note": "'one or two new models' likely by year end, unclear if the major upgraded model is among them; flagship needs alignment work; up to 30 days of US government pre-release access",
+     "url": "https://the-decoder.com/openai-will-reportedly-ship-at-least-one-model-this-year-but-its-flagship-still-needs-alignment-work/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      50.0,
+      70.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "62b94bc398",
+   "question": "Will Schwab Crypto clients be able to buy and sell AVAX by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 62.0,
+   "probHigh": 78.0,
+   "midpoint": 70.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-30",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-16",
+   "summary": "Schwab announced in August plans to add SOL, AVAX and LINK to Schwab Crypto, and its CEO has since promised 'three new coins by the end of the year' without naming them. This asks whether AVAX is actually live for Schwab clients by Dec 31.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "Schwab press release or client notice naming the three new coins and/or a go-live date; SOL/LINK going live first (same Aug 27 batch); Paxos (execution/sub-custodian) announcing AVAX support for Schwab; AVAX appearing in Schwab.com/thinkorswim."
+    },
+    {
+     "label": "Toward no",
+     "text": "no go-live date by late Nov; Schwab language slipping to 'early 2027' or 'coming months'; the unnamed 'three new coins' turning out not to include AVAX; regulatory or custody issue (transfers currently cover only BTC and ETH); batch launch with SOL/LINK only."
+    }
+   ],
+   "resolution": "Resolves YES only if AVAX buy/sell is live for (at least generally available) Schwab Crypto clients by Dec 31, 2026, confirmed by Schwab or credible press. Resolves NO if not live by then, or if Schwab withdraws/delays AVAX support (the Aug 27 release reserves the right to delay, modify or withdraw).",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "Charles Schwab press release",
+     "date": "Aug 27 2026",
+     "note": "the only Schwab source naming the coins: SOL, AVAX, LINK coming to Schwab Crypto 'in the coming months'; Schwab may delay, modify or withdraw support for any announced asset",
+     "url": "https://pressroom.aboutschwab.com/press-releases/press-release/2026/Charles-Schwab-Announces-Plans-to-Expand-Digital-Assets-Available-in-Schwab-Crypto-Accounts/default.aspx"
+    },
+    {
+     "publisher": "TSN Media",
+     "date": "Oct 15 2026",
+     "note": "Wurster on Fall Business Update call: 'launching access to three new coins by the end of the year'; he did not name the coins; no date beyond year-end; $13.33T client assets",
+     "url": "https://tsnmedia.org/schwab-crypto-all-clients-ai-agents-blocked/"
+    },
+    {
+     "publisher": "Bitcoin.com News",
+     "date": "Oct 15 2026",
+     "note": "same Wurster quote; crypto transfers currently support only BTC and ETH; 40.3M active brokerage accounts (its SOL/AVAX/LINK year-end attribution is the reporter's link to the Aug release, not a CEO statement)",
+     "url": "https://news.bitcoin.com/finance/charles-schwab-ceo-sees-crypto-new-revenue-engine/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-16",
+     "from": null,
+     "to": [
+      65.0,
+      80.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-16",
+     "from": [
+      65.0,
+      80.0
+     ],
+     "to": [
+      62.0,
+      78.0
+     ],
+     "reason": "Correction. On the Oct 15 call Wurster said 'three new coins by the end of the year' without naming them; SOL/AVAX/LINK come only from Schwab's Aug 27 release. No go-live date; Schwab reserves the right to delay/withdraw; transfers cover only BTC/ETH. Band moved for the small chance the unnamed coins differ from the Aug list (~5%)."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "c325a931ae",
+   "question": "Will a general Russia–Ukraine ceasefire take effect by Dec 31, 2026 and hold at least 10 days?",
+   "domain": "Geopolitics",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 4.0,
+   "probHigh": 9.0,
+   "midpoint": 6.5,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-13",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "This asks whether a general Russia–Ukraine ceasefire takes effect by year end and holds for at least ten days. Fighting and long-range strikes are currently intensifying.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "resumed trilateral talks with a concrete proposal ('in the coming weeks'); US leverage on Kyiv (intel/Starshield curbs) forcing acceptance; Russian economic strain from refinery strikes."
+    },
+    {
+     "label": "Toward NO",
+     "text": "Trump's unilateral 'energy ceasefire' collapsed within days (Oct 15); Putin says resumption of talks unlikely after drone attacks on Moscow (Oct 10); Zelensky ended the refinery-strike pause ('We're done'); record Russian drone swarms; only ~74 days left and the 'general suspension across the primary theatre' bar is high."
+    }
+   ],
+   "resolution": "Per Polymarket rules: YES if a mutually agreed ceasefire (announced by both or confirmed by credible consensus) that constitutes a general suspension of direct kinetic engagement across the primary theatre goes into effect by Dec 31, 2026 11:59 PM EET and remains continuously in effect for at least 10 calendar days. Energy-only or location-limited deals, unilateral pauses and informal de-escalation do not count. Otherwise NO.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Russia x Ukraine ceasefire by December 31, 2026?",
+    "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-by/russia-x-ukraine-ceasefire-by-december-31-2026",
+    "yesPrice": 9.5,
+    "asOf": "2026-10-18T14:56:00+02:00",
+    "gapPts": -3.0,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules + Yes 0.095 (bid 0.09/ask 0.10), read via Gamma API Oct 18 2026 14:56 Rome",
+     "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-by/russia-x-ukraine-ceasefire-by-december-31-2026"
+    },
+    {
+     "publisher": "The Guardian",
+     "date": "Oct 15 2026",
+     "note": "Trump's 'energy ceasefire' collapses; Zelensky resumes refinery strikes; 360+ Russian drones on Kirovohrad",
+     "url": "https://www.theguardian.com/world/2026/oct/15/us-effort-to-get-russia-ukraine-energy-ceasefire-collapses"
+    },
+    {
+     "publisher": "Al Jazeera",
+     "date": "Oct 10 2026",
+     "note": "Putin tells Trump immediate resumption of talks unlikely; negotiators aim to present a proposal to Russia in coming weeks",
+     "url": "https://www.aljazeera.com/news/2026/10/10/putin-tells-trump-peace-talks-are-unlikely-cites-ukraine-drone-attacks"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      4.0,
+      9.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "0c2e7c4253",
+   "question": "Will the Digital Asset Market Clarity Act (H.R.3633) be passed by both chambers and signed into law by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 2.0,
+   "probHigh": 6.0,
+   "midpoint": 4.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-13",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "The Clarity Act would set the main US market-structure rules for crypto. It stalled in the Senate in September; this asks whether it still becomes law in 2026.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "a lame-duck deal after Nov 3 (Tillis's motion to reconsider keeps a revote possible); several Democrats flipping to reach 60; quick House concurrence with the Senate text."
+    },
+    {
+     "label": "Toward NO",
+     "text": "cloture failed 49–50 on Sep 15 with 0 of 44 Democrats in favour; no new floor vote scheduled as of mid-October; Senate committee text differs from the House-passed bill and would need reconciling; a Democratic midterm win reduces Republican leverage in the lame duck, and the floor calendar is crowded (funding, nominations)."
+    }
+   ],
+   "resolution": "Per Polymarket rules: YES if H.R.3633 is passed by both chambers and signed into law by Dec 31, 2026 11:59 PM ET (Congress.gov tracker primary). A different market-structure bill becoming law does NOT resolve this market YES. Otherwise NO. Re-score if a Senate cloture vote is scheduled.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Clarity Act (H.R.3633) signed into law in 2026?",
+    "url": "https://polymarket.com/event/clarity-act-signed-into-law-in-2026/clarity-act-signed-into-law-in-2026",
+    "yesPrice": 5.05,
+    "asOf": "2026-10-18T14:56:00+02:00",
+    "gapPts": -1.0,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "Oct 18 2026",
+     "note": "rules + Yes 0.0505, read via Gamma API Oct 18 2026 14:56 Rome",
+     "url": "https://polymarket.com/event/clarity-act-signed-into-law-in-2026/clarity-act-signed-into-law-in-2026"
+    },
+    {
+     "publisher": "Suffragium",
+     "date": "Sep 15 2026",
+     "note": "cloture on motion to proceed to H.R.3633 failed 49–50 (R 49–4, D 0–44)",
+     "url": "https://suffragium.com/vote/senate/119/2026/234"
+    },
+    {
+     "publisher": "U.S. Senate cloture motions list",
+     "date": "Oct 1 2026",
+     "note": "Aug 8 filing, Sep 15 vote 49–50 'F'",
+     "url": "https://www.senate.gov/legislative/cloture/119.htm"
+    },
+    {
+     "publisher": "Coin Edition",
+     "date": "Oct 2026",
+     "note": "no new floor vote scheduled; Lummis vs Democrats dispute on digital-commodity protections",
+     "url": "https://coinedition.com/clarity-act-lummis-slams-democrats-over-digital-commodity-protections/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      2.0,
+      6.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "2a4f6af91e",
+   "question": "Will the US meet Polymarket's 'recession by end of 2026' test (two consecutive negative GDP quarters Q2 2025–Q4 2026, or an NBER recession call by the Q4 2026 advance GDP release)?",
+   "domain": "Macro",
+   "status": "Active",
+   "confidence": "High",
+   "probLow": 1.0,
+   "probHigh": 4.0,
+   "midpoint": 2.5,
+   "horizon": "2027-01-29",
+   "staleAfter": "2026-10-30",
+   "lastReviewed": "2026-10-18",
+   "created": "2026-10-18",
+   "summary": "This asks whether the US meets a technical recession test in 2026: two straight quarters of negative GDP or an official NBER call. Current growth tracking is strongly positive.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "Q3 advance GDP (Oct 29) negative against a +3.6% nowcast (a ~3-sigma miss given GDPNow RMSE ~1.2pp); a severe Q4 shock (oil >$130 on renewed Iran war, AI-credit crunch); an NBER announcement."
+    },
+    {
+     "label": "Toward NO",
+     "text": "GDPNow +3.6% (Oct 15); NBER usually calls recessions with a long lag; the window closes at the Q4 advance release."
+    }
+   ],
+   "resolution": "Per Polymarket rules: YES if BEA SAAR real GDP growth is < 0 for two consecutive quarters between Q2 2025 and Q4 2026 inclusive (advance estimates count), or if NBER announces a US recession occurring in 2025 or 2026 by the time BEA releases the Q4 2026 advance estimate. Otherwise NO when the Q4 2026 advance estimate is released (fallback deadline Jun 30, 2027). Re-score on the Q3 advance print.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "US recession by end of 2026?",
+    "url": "https://polymarket.com/event/us-recession-by-end-of-2026/us-recession-by-end-of-2026",
+    "yesPrice": 6.5,
+    "asOf": "2026-10-18T14:56:00+02:00",
+    "gapPts": -4.0,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "Oct 18 2026",
+     "note": "rules + Yes 0.065 (bid 0.06/ask 0.07), read via Gamma API Oct 18 2026 14:56 Rome",
+     "url": "https://polymarket.com/event/us-recession-by-end-of-2026/us-recession-by-end-of-2026"
+    },
+    {
+     "publisher": "Atlanta Fed GDPNow",
+     "date": "Oct 15 2026",
+     "note": "Q3 2026 nowcast +3.6% SAAR; next update Oct 20; final Q3 nowcast Oct 28, Q3 advance estimate Oct 29; historical RMSE 1.17pp",
+     "url": "https://www.atlantafed.org/research-and-data/data/gdpnow"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      1.0,
+      4.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  }
+ ],
+ "resolved": []
+}

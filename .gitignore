@@ -1,0 +1,5 @@
+.raw-notion.json
+screenshot.png
+node_modules/
+__pycache__/
+scripts/.private-terms
