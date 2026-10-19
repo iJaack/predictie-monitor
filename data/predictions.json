@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-19T08:57:13+02:00",
+ "generatedAt": "2026-10-19T18:33:02+02:00",
  "timezone": "Europe/Rome",
  "counts": {
   "active": 43,
@@ -306,52 +306,58 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 80.0,
-   "probHigh": 88.0,
-   "midpoint": 84.0,
+   "probLow": 50.0,
+   "probHigh": 63.0,
+   "midpoint": 56.5,
    "horizon": "2026-11-03",
-   "staleAfter": "2026-10-27",
-   "lastReviewed": "2026-10-18",
+   "staleAfter": "2026-10-21",
+   "lastReviewed": "2026-10-19",
    "created": "2026-10-18",
    "summary": "The US has paused strikes on Iran ahead of the midterms while indirect talks continue. This tracks whether that pause actually holds through Election Day on Nov 3.",
    "triggers": [
     {
-     "label": "Toward NO (strike happens)",
-     "text": "Trump reversing his pre-midterm pledge; an Iranian attack on US forces or Gulf shipping that invites retaliation; Houthi/Iran escalation against Saudi Arabia; a 'fireworks show' off-ramp strike timed before Election Day; Pickaxe Mountain strike."
+     "label": "Toward NO (strike already happened or soon)",
+     "text": "Iranian Navy claim that the US hit Konarak with two light projectiles (Al Jazeera via Newsquawk, ~18:12 Rome 19 Oct) — if confirmed as air-to-surface / air-launched drone munitions that impacted terrestrial Iran, market resolves No under the 3-day conflict rule (~22 Oct Iran time); Taghvaee claim of MQ-9 Hellfire would clearly qualify; Erem News / Israel Hayom 19 Oct that Trump is weighing Kharg Island oil-hub strikes before the 3 Nov midterms; Trump 18 Oct 'finish the job' rhetoric; Iranian attack on US forces inviting retaliation."
     },
     {
      "label": "Toward YES",
-     "text": "indirect talks via Qatar/Oman; Trump: 'They've asked us to please stop. And we do, because we're negotiating'; Netanyahu wary before Oct 27; political cost of an unpopular war days before the vote."
+     "text": "US has not confirmed or acknowledged any Konarak strike; GlobalSecurity Day-234 note found no American/Israeli strike on Iranian territory located for 16–19 Oct (may predate the Al Jazeera item); conflicting accounts (Artesh vs IRGC, Hellfire vs 'light projectiles', 2 wounded vs killed); 'light projectiles' could be ruled minor SSM / naval gunfire (excluded); Trump's 8 Oct public pledge not to strike before midterms; political cost of an oil-spike war days before the vote."
     }
    ],
-   "resolution": "Per Polymarket rules: resolves NO if the US initiates an air strike (bombs, air-to-surface missiles, air-launched drones) or surface-to-surface missile/one-way drone strike that directly impacts Iran's terrestrial territory (incl. internal waters) by Nov 3, 2026 11:59 PM ET. Intercepted munitions, cyber, naval gunfire, artillery, ground incursions, threats and strikes only in Iran's maritime territory/airspace do not count. Otherwise YES.",
+   "resolution": "Per Polymarket rules: resolves NO if the US initiates an air strike (bombs, air-to-surface missiles, air-launched drones) or surface-to-surface missile/one-way drone strike that directly impacts Iran's terrestrial territory (incl. internal waters) by Nov 3, 2026 11:59 PM ET. Intercepted munitions, cyber, naval gunfire, artillery, ground incursions, threats, and minor surface-to-surface strikes (short-range loitering munitions, FPV, ATGM) do not count. Where sources conflict on occurrence/attribution/timing, market stays open until consensus or 3 full calendar days Iran Standard Time from first credibly reported evidence, then adjudicates on totality of official US/Iran + credible reporting. Do NOT mark this row Resolved until those conditions are met. Re-score immediately on: US/CENTCOM confirm or deny; Reuters/AP/IRNA corroboration; resolution source consensus that Konarak qualifies; or a Kharg / energy-infrastructure strike.",
    "market": {
     "venue": "Polymarket",
     "name": "US-Iran ceasefire continues through the midterms?",
     "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms",
-    "yesPrice": 78.5,
-    "asOf": "2026-10-18T14:56:00+02:00",
-    "gapPts": 5.5,
+    "yesPrice": 66.0,
+    "asOf": "2026-10-19T18:30:00+02:00",
+    "gapPts": -9.5,
     "insideBand": false
    },
    "sources": [
     {
-     "publisher": "Polymarket",
-     "date": "Oct 18 2026",
-     "note": "rules + Yes 0.785 (bid 0.78/ask 0.79), read via Gamma API Oct 18 2026 14:56 Rome",
+     "publisher": "Polymarket Gamma",
+     "date": "Oct 19 2026",
+     "note": "Yes 0.66 (bid 0.65 / ask 0.67, last 0.64; ~15pt drop on the day), conditionId 0x613613192c69d90cee89758c260a019368fc1f4a596b4d300c39b6235d2b643f, rules re-read Oct 19 2026 ~18:30 Rome",
      "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms"
     },
     {
-     "publisher": "CNN",
-     "date": "Oct 15 2026",
-     "note": "new strike plans incl. MOAB on energy and nuclear sites 'before or after the midterms'; Trump announced no new actions before the midterms but advisers unsure it is definitive",
-     "url": "https://www.cnn.com/2026/10/15/politics/us-considering-mother-of-all-bombs-iran"
+     "publisher": "Newsquawk",
+     "date": "Oct 2026",
+     "note": "Iranian Navy says US hit Konarak naval base with 'two light projectiles'; two soldiers injured; cites Al Jazeera",
+     "url": "https://www.newsquawk.com/headlines/iranian-navy-says-that-the-us-military-attacked-the-konarak-naval-base-with-two-light-projectiles-early-this-morning-reports-al-jazeera"
     },
     {
-     "publisher": "Ynet News",
+     "publisher": "Israel Hayom",
      "date": "Oct 2026",
-     "note": "Israel raised alert but Netanyahu reluctant to initiate before Oct 27 election; Trump on Newsmax re Pickaxe Mountain and 'we're negotiating'",
-     "url": "https://www.ynetnews.com/article/s1ryxf13fx"
+     "note": "Trump weighing targeted strikes on Kharg Island oil hub before 3 Nov midterms; unnamed diplomatic sources; no final decision",
+     "url": "https://www.israelhayom.com/2026/10/19/trump-weighs-strike-on-irans-oil-lifeline/"
+    },
+    {
+     "publisher": "GlobalSecurity.org Iran War Day 234 update",
+     "date": "Oct 2026",
+     "note": "no American or Israeli strike on Iranian territory located for 16–19 Oct (campaign pause narrative; may predate Al Jazeera item)",
+     "url": "https://www.globalsecurity.org/military/ops/iran-war-20261019.htm"
     }
    ],
    "history": [
@@ -363,6 +369,18 @@
       88.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-19",
+     "from": [
+      80.0,
+      88.0
+     ],
+     "to": [
+      50.0,
+      63.0
+     ],
+     "reason": "Urgent re-score after Iranian Navy claim via Al Jazeera (~18:12 Rome) that the US hit Konarak with two light projectiles and wounded 2; market Yes fell from ~0.815 to ~0.64–0.67. Qualifying risk is material if Hellfire/air-launched ASM is confirmed (rules include air-to-surface missiles and air-launched drones), but US has not confirmed, accounts conflict, and 'light projectiles' could fail the minor-SSM / naval-gunfire exclusions. 3-day conflict clock likely running to ~22 Oct Iran time — do not resolve the row yet; looks possible but not certain to resolve No. Separate Erem/Israel Hayom Kharg-weighing report raises residual strike risk through Nov 3 even if Konarak fails to qualify. Midpoint 56.5% is BELOW live market Yes (~66%). Stale After shortened to 2026-10-21."
     }
    ],
    "outcome": null,
@@ -2215,64 +2233,58 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 7.0,
-   "probHigh": 13.0,
-   "midpoint": 10.0,
+   "probLow": 8.0,
+   "probHigh": 15.0,
+   "midpoint": 11.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "staleAfter": "2026-10-27",
+   "lastReviewed": "2026-10-19",
    "created": "2026-10-18",
    "summary": "Mojtaba Khamenei became Iran's de facto leader in March but has rarely been seen since. This asks whether he is removed, incapacitated or replaced by year end, a risk concentrated around possible renewed strikes after the US midterms.",
    "triggers": [
     {
      "label": "Toward YES",
-     "text": "Trump resumes military action after the Nov 3 midterms (ABC, Oct 17: options incl. MOAB prepared; Trump says no strike before midterms); decapitation strikes; credible reports that Mojtaba is dead/incapacitated (he has not been seen or heard since his March elevation per Cipher Brief Oct 16); open elite challenges to his authority (NCRI Oct 13, partisan opposition source: impeachment request vs. FM Araghchi registered Oct 6 despite a leader adviser saying he approves talks; Bahonar 'no sheikh and savior' remarks); Assembly of Experts moves; mass unrest from fuel-price reform."
+     "text": "confirmed US strike on Konarak (Iranian Navy claim via Al Jazeera 19 Oct) if it opens a broader pre-midterm campaign; Erem News / Israel Hayom 19 Oct that Trump is weighing Kharg Island oil-hub strikes before 3 Nov — a major energy strike would raise regime-stress and elite-fracture odds; Trump 18 Oct 'finish the job' rhetoric; post-midterm MOAB / leadership-target options; credible reports Mojtaba dead/incapacitated (unseen since March elevation per Cipher Brief); Assembly of Experts moves; mass unrest."
     },
     {
      "label": "Toward NO",
-     "text": "regime has incentive to keep him as a figurehead because collective security-led rule (SNSC/IRGC) works without his visible presence (Cipher Brief); 7+ months of invisibility have not triggered YES under 'consensus of credible reporting'; indirect US-Iran talks via Qatar/Oman continuing under SNSC oversight, and an Iranian MP does not expect war before US and Israeli elections (AA, Oct 17); only ~74 days left. Market term structure on Oct 18: Oct 31 ~2%, Nov 30 ~7%, Dec 31 ~11.5%, Jun 30 2027 ~25%."
+     "text": "a limited Konarak incident (even if it qualifies for the ceasefire market) does not by itself remove Mojtaba; regime incentive to keep him as figurehead under collective SNSC/IRGC rule; 7+ months of invisibility have not triggered YES; only ~73 days left; market term structure still low for Dec 31."
     }
    ],
-   "resolution": "Per Polymarket rules: resolves YES if Mojtaba Khamenei ceases to be Iran's de facto leader between market creation (Mar 9, 2026) and Dec 31, 2026 ET, i.e. is removed from power, detained, otherwise loses his position, or is prevented from acting as de facto leader; an official announcement of his resignation/removal counts even if the departure takes effect later. Resolution source: consensus of credible reporting. Otherwise NO. Forecast is invalidated (re-score immediately) if: US/Israel resume strikes on Iran, especially on leadership targets; credible reporting of his death, incapacity or detention; an Assembly of Experts session on leadership; or a durable US-Iran ceasefire/deal (pushes toward the low end).",
+   "resolution": "Per Polymarket rules: resolves YES if Mojtaba Khamenei ceases to be Iran's de facto leader between market creation (Mar 9, 2026) and Dec 31, 2026 ET (removed, detained, loses position, or prevented from acting); official resignation/removal announcement counts even if departure is later. Resolution: consensus of credible reporting. Otherwise NO. Re-score immediately if: US/CENTCOM confirm Konarak or execute a Kharg/energy strike; credible reporting of Mojtaba's death, incapacity or detention; Assembly of Experts leadership session; or a durable US-Iran ceasefire/deal (pushes toward the low end).",
    "market": {
     "venue": "Polymarket",
     "name": "Iran leadership change by December 31?",
     "url": "https://polymarket.com/event/iran-leadership-change-by/iran-leadership-change-by-december-31-974-976-658-482-568-685-996-469-827",
-    "yesPrice": 11.5,
-    "asOf": "2026-10-18T14:41:00+02:00",
-    "gapPts": -1.5,
+    "yesPrice": 12.5,
+    "asOf": "2026-10-19T18:30:00+02:00",
+    "gapPts": -1.0,
     "insideBand": true
    },
    "sources": [
     {
-     "publisher": "Polymarket",
-     "date": "Oct 18 2026",
-     "note": "Market rules and price",
+     "publisher": "Polymarket Gamma",
+     "date": "Oct 19 2026",
+     "note": "Yes 0.125 (bid 0.12 / ask 0.13), conditionId 0x377e…5607, read Oct 19 2026 ~18:30 Rome",
      "url": "https://polymarket.com/event/iran-leadership-change-by/iran-leadership-change-by-december-31-974-976-658-482-568-685-996-469-827"
+    },
+    {
+     "publisher": "Newsquawk",
+     "date": "Oct 2026",
+     "note": "Iranian Navy says US hit Konarak with two light projectiles; 2 injured; cites Al Jazeera",
+     "url": "https://www.newsquawk.com/headlines/iranian-navy-says-that-the-us-military-attacked-the-konarak-naval-base-with-two-light-projectiles-early-this-morning-reports-al-jazeera"
+    },
+    {
+     "publisher": "Israel Hayom",
+     "date": "Oct 2026",
+     "note": "Trump weighing Kharg Island strikes before midterms",
+     "url": "https://www.israelhayom.com/2026/10/19/trump-weighs-strike-on-irans-oil-lifeline/"
     },
     {
      "publisher": "The Cipher Brief",
      "date": "Oct 16 2026",
-     "note": "",
+     "note": "collective security-led rule; Mojtaba unseen since elevation; striking him alone would not collapse regime",
      "url": "https://www.thecipherbrief.com/who-really-makes-decisions-in-tehran"
-    },
-    {
-     "publisher": "ABC News live updates",
-     "date": "Oct 17 2026",
-     "note": "",
-     "url": "https://abcnews.com/International/live-updates/iran-live-updates-trump-us-attack-iran-ahead/?id=137063637"
-    },
-    {
-     "publisher": "Anadolu Agency",
-     "date": "Oct 17 2026",
-     "note": "",
-     "url": "https://www.aa.com.tr/en/middle-east/iranian-lawmaker-says-indirect-talks-with-us-continuing-through-qatar-oman-report/4092082"
-    },
-    {
-     "publisher": "NCRI",
-     "date": "Oct 13 2026",
-     "note": "",
-     "url": "https://www.ncr-iran.org/en/news/iran-a-world/factional-feuds-are-eroding-mojtaba-khameneis-authority/"
     }
    ],
    "history": [
@@ -2284,6 +2296,18 @@
       13.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-19",
+     "from": [
+      7.0,
+      13.0
+     ],
+     "to": [
+      8.0,
+      15.0
+     ],
+     "reason": "Urgent re-score linked to Konarak/Kharg. Slight upward nudge only: a limited Konarak naval-base claim does not itself remove Mojtaba, but confirmed US kinetic action plus reported Kharg deliberations raise the escalation path to elite fracture. Market Yes 0.12/0.13 sits inside the new band (midpoint 11.5% slightly BELOW market Yes 12.5%). No material edge either way. Do not treat Konarak as leadership-change evidence."
     }
    ],
    "outcome": null,
@@ -2362,7 +2386,7 @@
    "midpoint": 60.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-19",
    "created": "2026-10-18",
    "summary": "OpenAI's next GPT Astra release (6.1 or later) was shelved in late September over safety problems and has no new date. This asks whether it ships publicly by Dec 31.",
    "triggers": [
