@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-18T15:13:51+02:00",
+ "generatedAt": "2026-10-19T08:57:13+02:00",
  "timezone": "Europe/Rome",
  "counts": {
   "active": 43,
@@ -25,7 +25,7 @@
    "midpoint": 62.5,
    "horizon": "2026-10-21",
    "staleAfter": "2026-10-21",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-19",
    "created": "2026-10-16",
    "summary": "Meta reports Q3 results on Oct 21 and currently guides 2026 capex at $130–145B. This asks whether it lifts the bottom of that range, an early read on whether hyperscaler AI spending keeps accelerating as borrowing costs rise.",
    "triggers": [
@@ -745,7 +745,7 @@
    "midpoint": 62.5,
    "horizon": "2026-11-30",
    "staleAfter": "2026-10-21",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-19",
    "created": "2026-10-18",
    "summary": "Zcash's NU7 upgrade cuts block time from 75 to 25 seconds and adds a fee reserve. Developers set the mainnet date on Oct 20, with Nov 5 pencilled in; this asks whether it goes live by Nov 30.",
    "triggers": [
@@ -2431,7 +2431,7 @@
    "midpoint": 70.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-19",
    "created": "2026-10-16",
    "summary": "Schwab announced in August plans to add SOL, AVAX and LINK to Schwab Crypto, and its CEO has since promised 'three new coins by the end of the year' without naming them. This asks whether AVAX is actually live for Schwab clients by Dec 31.",
    "triggers": [
