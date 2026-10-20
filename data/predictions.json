@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-19T18:33:02+02:00",
+ "generatedAt": "2026-10-20T08:50:44+02:00",
  "timezone": "Europe/Rome",
  "counts": {
   "active": 43,
@@ -25,7 +25,7 @@
    "midpoint": 62.5,
    "horizon": "2026-10-21",
    "staleAfter": "2026-10-21",
-   "lastReviewed": "2026-10-19",
+   "lastReviewed": "2026-10-20",
    "created": "2026-10-16",
    "summary": "Meta reports Q3 results on Oct 21 and currently guides 2026 capex at $130–145B. This asks whether it lifts the bottom of that range, an early read on whether hyperscaler AI spending keeps accelerating as borrowing costs rise.",
    "triggers": [
@@ -250,7 +250,7 @@
    "midpoint": 89.0,
    "horizon": "2026-10-31",
    "staleAfter": "2026-10-22",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-20",
    "created": "2026-10-18",
    "summary": "Solana is switching to a new consensus system, Alpenglow, on Oct 21, aiming for transactions that are final in about 150 milliseconds. This asks whether the switch is live and holding by the end of October.",
    "triggers": [
@@ -306,22 +306,22 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 50.0,
-   "probHigh": 63.0,
-   "midpoint": 56.5,
+   "probLow": 62.0,
+   "probHigh": 74.0,
+   "midpoint": 68.0,
    "horizon": "2026-11-03",
-   "staleAfter": "2026-10-21",
-   "lastReviewed": "2026-10-19",
+   "staleAfter": "2026-10-23",
+   "lastReviewed": "2026-10-20",
    "created": "2026-10-18",
    "summary": "The US has paused strikes on Iran ahead of the midterms while indirect talks continue. This tracks whether that pause actually holds through Election Day on Nov 3.",
    "triggers": [
     {
-     "label": "Toward NO (strike already happened or soon)",
-     "text": "Iranian Navy claim that the US hit Konarak with two light projectiles (Al Jazeera via Newsquawk, ~18:12 Rome 19 Oct) — if confirmed as air-to-surface / air-launched drone munitions that impacted terrestrial Iran, market resolves No under the 3-day conflict rule (~22 Oct Iran time); Taghvaee claim of MQ-9 Hellfire would clearly qualify; Erem News / Israel Hayom 19 Oct that Trump is weighing Kharg Island oil-hub strikes before the 3 Nov midterms; Trump 18 Oct 'finish the job' rhetoric; Iranian attack on US forces inviting retaliation."
+     "label": "Toward NO (strike happened or comes soon)",
+     "text": "Konarak claim (Iranian Navy via Al Jazeera, 19 Oct: two projectiles hit a 35mm gun, 2 wounded; Gooya News claims F/A-18s from USS George H.W. Bush) still inside the 3-day adjudication window (~22 Oct Iran time) and would qualify if credibly shown to be air-launched; Axios (via Gulf News, 20 Oct) that Hegseth met Netanyahu in Israel amid talks on resuming major combat and the Pentagon has strike plans ready; Erem News / Israel Hayom (19 Oct) that Trump is weighing Kharg Island oil-hub strikes before the 3 Nov midterms; IRGC threats to Hormuz undersea cables or a new attack on US forces inviting retaliation."
     },
     {
      "label": "Toward YES",
-     "text": "US has not confirmed or acknowledged any Konarak strike; GlobalSecurity Day-234 note found no American/Israeli strike on Iranian territory located for 16–19 Oct (may predate the Al Jazeera item); conflicting accounts (Artesh vs IRGC, Hellfire vs 'light projectiles', 2 wounded vs killed); 'light projectiles' could be ruled minor SSM / naval gunfire (excluded); Trump's 8 Oct public pledge not to strike before midterms; political cost of an oil-spike war days before the vote."
+     "text": "a US official told CNN the Konarak claim is 'inaccurate, as usual' and CENTCOM has not confirmed it, with no independent corroboration; last confirmed US strikes on Iran were 1 Sep; Trump said 19 Oct the US 'could leave right now' and has pledged no strikes before the midterms; political cost of an oil spike (Brent ~$110) days before the vote."
     }
    ],
    "resolution": "Per Polymarket rules: resolves NO if the US initiates an air strike (bombs, air-to-surface missiles, air-launched drones) or surface-to-surface missile/one-way drone strike that directly impacts Iran's terrestrial territory (incl. internal waters) by Nov 3, 2026 11:59 PM ET. Intercepted munitions, cyber, naval gunfire, artillery, ground incursions, threats, and minor surface-to-surface strikes (short-range loitering munitions, FPV, ATGM) do not count. Where sources conflict on occurrence/attribution/timing, market stays open until consensus or 3 full calendar days Iran Standard Time from first credibly reported evidence, then adjudicates on totality of official US/Iran + credible reporting. Do NOT mark this row Resolved until those conditions are met. Re-score immediately on: US/CENTCOM confirm or deny; Reuters/AP/IRNA corroboration; resolution source consensus that Konarak qualifies; or a Kharg / energy-infrastructure strike.",
@@ -329,16 +329,16 @@
     "venue": "Polymarket",
     "name": "US-Iran ceasefire continues through the midterms?",
     "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms",
-    "yesPrice": 66.0,
-    "asOf": "2026-10-19T18:30:00+02:00",
-    "gapPts": -9.5,
+    "yesPrice": 76.5,
+    "asOf": "2026-10-20T08:49:00+02:00",
+    "gapPts": -8.5,
     "insideBand": false
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma",
-     "date": "Oct 19 2026",
-     "note": "Yes 0.66 (bid 0.65 / ask 0.67, last 0.64; ~15pt drop on the day), conditionId 0x613613192c69d90cee89758c260a019368fc1f4a596b4d300c39b6235d2b643f, rules re-read Oct 19 2026 ~18:30 Rome",
+     "date": "Oct 20 2026",
+     "note": "Yes 0.765 (bid 0.76 / ask 0.77, last 0.77), conditionId 0x613613192c69d90cee89758c260a019368fc1f4a596b4d300c39b6235d2b643f, read Oct 20 2026 08:49 Rome",
      "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms"
     },
     {
@@ -348,16 +348,16 @@
      "url": "https://www.newsquawk.com/headlines/iranian-navy-says-that-the-us-military-attacked-the-konarak-naval-base-with-two-light-projectiles-early-this-morning-reports-al-jazeera"
     },
     {
-     "publisher": "Israel Hayom",
+     "publisher": "Hindustan Times",
      "date": "Oct 2026",
-     "note": "Trump weighing targeted strikes on Kharg Island oil hub before 3 Nov midterms; unnamed diplomatic sources; no final decision",
-     "url": "https://www.israelhayom.com/2026/10/19/trump-weighs-strike-on-irans-oil-lifeline/"
+     "note": "US official to CNN: Iran's Konarak claim 'inaccurate ... as usual'; no independent confirmation; Gooya News F/A-18 claim unverified",
+     "url": "https://www.hindustantimes.com/world-news/us-news/us-official-denies-irans-claim-that-american-forces-targeted-konarak-naval-base-inaccurate-as-usual-101792442169949.html"
     },
     {
-     "publisher": "GlobalSecurity.org Iran War Day 234 update",
+     "publisher": "Gulf News",
      "date": "Oct 2026",
-     "note": "no American or Israeli strike on Iranian territory located for 16–19 Oct (campaign pause narrative; may predate Al Jazeera item)",
-     "url": "https://www.globalsecurity.org/military/ops/iran-war-20261019.htm"
+     "note": "CENTCOM has not confirmed Konarak; last US strikes on Iran 1 Sep (IranWire); Axios: Hegseth met Netanyahu amid talks on resuming major combat; Trump 'we could leave right now'; IRGC cable threats",
+     "url": "https://gulfnews.com/uae/us-israel-iran-war-lull-nears-breaking-point-us-israel-weighing-new-strikes-what-to-know-oct-20-2026-1.500716736"
     }
    ],
    "history": [
@@ -381,6 +381,18 @@
       63.0
      ],
      "reason": "Urgent re-score after Iranian Navy claim via Al Jazeera (~18:12 Rome) that the US hit Konarak with two light projectiles and wounded 2; market Yes fell from ~0.815 to ~0.64–0.67. Qualifying risk is material if Hellfire/air-launched ASM is confirmed (rules include air-to-surface missiles and air-launched drones), but US has not confirmed, accounts conflict, and 'light projectiles' could fail the minor-SSM / naval-gunfire exclusions. 3-day conflict clock likely running to ~22 Oct Iran time — do not resolve the row yet; looks possible but not certain to resolve No. Separate Erem/Israel Hayom Kharg-weighing report raises residual strike risk through Nov 3 even if Konarak fails to qualify. Midpoint 56.5% is BELOW live market Yes (~66%). Stale After shortened to 2026-10-21."
+    },
+    {
+     "date": "2026-10-20",
+     "from": [
+      50.0,
+      63.0
+     ],
+     "to": [
+      62.0,
+      74.0
+     ],
+     "reason": "A US official told CNN the Konarak claim is 'inaccurate, as usual'; CENTCOM has not confirmed and nothing independent corroborates it, so the chance Konarak is adjudicated as a qualifying US strike drops sharply. Market Yes recovered to ~0.765. Not raised to market because escalation talk is live (Axios: Hegseth–Netanyahu talks on resuming major combat; Kharg-weighing report) with 14 days left, and the 3-day adjudication window runs to ~22 Oct Iran time. Midpoint 68% is ~8.5 pts BELOW market. Stale After set to 2026-10-23 (day after the window closes)."
     }
    ],
    "outcome": null,
@@ -763,7 +775,7 @@
    "midpoint": 62.5,
    "horizon": "2026-11-30",
    "staleAfter": "2026-10-21",
-   "lastReviewed": "2026-10-19",
+   "lastReviewed": "2026-10-20",
    "created": "2026-10-18",
    "summary": "Zcash's NU7 upgrade cuts block time from 75 to 25 seconds and adds a fee reserve. Developers set the mainnet date on Oct 20, with Nov 5 pencilled in; this asks whether it goes live by Nov 30.",
    "triggers": [
@@ -2455,7 +2467,7 @@
    "midpoint": 70.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-10-19",
+   "lastReviewed": "2026-10-20",
    "created": "2026-10-16",
    "summary": "Schwab announced in August plans to add SOL, AVAX and LINK to Schwab Crypto, and its CEO has since promised 'three new coins by the end of the year' without naming them. This asks whether AVAX is actually live for Schwab clients by Dec 31.",
    "triggers": [
