@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-20T08:50:44+02:00",
+ "generatedAt": "2026-10-20T18:05:37+02:00",
  "timezone": "Europe/Rome",
  "counts": {
   "active": 43,
@@ -1815,22 +1815,22 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 68.0,
-   "probHigh": 78.0,
-   "midpoint": 73.0,
+   "probLow": 62.0,
+   "probHigh": 72.0,
+   "midpoint": 67.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-20",
    "created": "2026-10-18",
    "summary": "Ether sits near $2,400, at its lowest in a month, while US ether ETFs keep losing money. This asks whether it slips another ~7% to $2,250 before year end.",
    "triggers": [
     {
      "label": "Toward yes",
-     "text": "ETH is ~6.8% above the line and sitting at its 30-day low (~$2,400); spot ETH ETFs logged 11 outflow days in October (−$320M Oct 12–16, almost all ETHA); a hawkish Fed on Oct 28 or a December hike; Glamsterdam mainnet slipping into 2027."
+     "text": "ETH is ~7.8% above the line (~$2,441 on Oct 20 after a spike to $2,478); spot ETH ETFs keep bleeding (−$103M Oct 19, −$363M since Oct 14, mostly ETHA); $801M of long liquidations sit below $2,279; a hawkish Fed on Oct 28 or a December hike; Glamsterdam mainnet slipping into 2027."
     },
     {
      "label": "Toward no",
-     "text": "ETF flows flip positive; a clean Glamsterdam Hoodi fork on Oct 26 and a December mainnet date lift sentiment; BTC reclaims $90k."
+     "text": "ETH holds above $2,517 and squeezes shorts; ETF flows flip positive; a clean Glamsterdam Hoodi fork on Oct 26 and a December mainnet date lift sentiment; BTC reclaims $90k."
     }
    ],
    "resolution": "Per Polymarket rules: resolves YES if any Binance ETH/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $2,250; earlier price action ignored (low since creation is $2,318). Otherwise NO. Re-score if ETH closes above $2,800.",
@@ -1838,35 +1838,35 @@
     "venue": "Polymarket",
     "name": "Will Ethereum dip to $2,250 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-dip-to-2250-by-december-31-2026",
-    "yesPrice": 60.5,
-    "asOf": "2026-10-18T15:12:00+02:00",
-    "gapPts": 12.5,
+    "yesPrice": 59.0,
+    "asOf": "2026-10-20T18:04:00+02:00",
+    "gapPts": 8.0,
     "insideBand": false
    },
    "sources": [
     {
-     "publisher": "Polymarket",
+     "publisher": "Polymarket Gamma API + CLOB midpoint",
      "date": "December 31, 2026",
-     "note": "rules + Yes 0.605 (bid 0.6/ask 0.61), read via Gamma API Oct 18 2026 15:12 Rome",
+     "note": "rules (any Binance ETH/USDT 1-minute Low ≤ $2,250 from creation through Dec 31 2026 23:59 ET) + Yes 0.59 (bid 0.58/ask 0.60, mid 0.585), read Oct 20 2026 18:04 Rome",
      "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-dip-to-2250-by-december-31-2026"
     },
     {
-     "publisher": "crypto.news",
-     "date": "Oct 17 2026",
-     "note": "ETH ETFs −$320.1M Oct 12–16, BlackRock ETHA −$299M; weekly crypto ETF outflows $610.7M",
-     "url": "https://crypto.news/crypto-etfs-weekly-outflows-ethereum-bitcoin/"
-    },
-    {
-     "publisher": "Binance klines via data-api.binance.vision",
-     "date": "Oct 18 2026",
-     "note": "ETH/USDT low since Aug 25 2026 $2,318, high $2,807; close ~$2,415",
+     "publisher": "Binance ETH/USDT klines via data-api.binance.vision",
+     "date": "Oct 20 2026",
+     "note": "spot $2,440.76; low since Aug 25 $2,318; 14/30/56-day realized vol ~42%/36%/41%; intraday high $2,478",
      "url": "https://data-api.binance.vision/api/v3/klines?symbol=ETHUSDT&interval=1d&startTime=1787630400000&limit=1000"
     },
     {
-     "publisher": "CoinGecko API",
-     "date": "Oct 18 2026",
-     "note": "ETH $2,413, 30d −3.6%; 30d realized vol ~36%, 90d ~52%",
-     "url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=180&interval=daily"
+     "publisher": "Deribit ETH DVOL",
+     "date": "Oct 20 2026",
+     "note": "~52.8",
+     "url": "https://www.deribit.com/api/v2/public/get_volatility_index_data?currency=ETH&resolution=43200"
+    },
+    {
+     "publisher": "FinanceFeeds",
+     "date": "Oct 20 2026",
+     "note": "Ether ETFs −$103.28M Oct 19, −$362.8M since Oct 14; $801M long liquidations below $2,279, $727M shorts above $2,517",
+     "url": "https://financefeeds.com/ethereum-price-under-2400-ether-etf-outflows/"
     }
    ],
    "history": [
@@ -1878,6 +1878,18 @@
       78.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-20",
+     "from": [
+      68.0,
+      78.0
+     ],
+     "to": [
+      62.0,
+      72.0
+     ],
+     "reason": "ETH spiked from ~$2,385 to $2,478 on Binance between 16:00 and 17:00 Rome and sits at ~$2,441, 7.8% above the line (was 6.8%); ~72.5 days left. Touch model 61–68% at realized vol, 73–76% at implied; band centered ~67%. Still above market 0.585 (gap ~+8 pts) because Ether ETF outflows continue (−$103M on Oct 19, −$363M since Oct 14) and $801M of long liquidations sit below $2,279. Re-check if ETH holds above $2,517 (short-squeeze level) or after FOMC Oct 28."
     }
    ],
    "outcome": null,
