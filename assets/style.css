@@ -11,8 +11,7 @@ body{-webkit-font-smoothing:antialiased}
 /* Wordmark is an anchor; keep the h1 off-screen. Top bar stays one line. */
 @media (max-width:480px){
   .jk-top{padding-left:12px;gap:8px}
-  .jk-top .jk-mark{font-size:16px}
-  .jk-top .jk-mark .dom{display:none}
+  .jk-top .jk-mark{font-size:15px}
 }
 @media (max-width:760px){
   .jk-dock .jk-pill button{padding:12px 14px}
