@@ -56,7 +56,7 @@
 
   function paintChrome() {
     const meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute("content", document.documentElement.dataset.theme === "dark" ? "#121314" : "#f7f5f0");
+    if (meta) meta.setAttribute("content", document.documentElement.dataset.theme === "dark" ? "#07090d" : "#f2f5f6");
   }
 
   function domainCounts() {
@@ -231,17 +231,24 @@
     const lo = +p.probLow || 0, hi = +p.probHigh || 0, mid = p.midpoint == null ? (lo + hi) / 2 : +p.midpoint;
     const mkt = p.market && p.market.yesPrice != null ? +p.market.yesPrice : null;
     const X = (v) => Math.max(0, Math.min(1000, (v / 100) * 1000));
-    const gid = "warm-" + String(p.id || "x").replace(/[^a-z0-9]/gi, "");
+    const gid = "band-" + String(p.id || "x").replace(/[^a-z0-9]/gi, "");
     const width = Math.max(X(hi) - X(lo), 8);
     const label = `Band ${fmtP(lo)} to ${fmtP(hi)}, midpoint ${fmtP(mid)}${mkt != null ? `, market ${fmtP(mkt)}` : ""}`;
     return `<svg class="band" viewBox="0 0 1000 46" role="img" aria-label="${esc(label)}">
-      <defs><linearGradient id="${gid}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="var(--jk-c-yellow)"/><stop offset="1" stop-color="var(--jk-c-orange)"/></linearGradient></defs>
+      <defs><linearGradient id="${gid}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="var(--pd-band-0)"/><stop offset="1" stop-color="var(--pd-band-1)"/></linearGradient></defs>
       <line x1="8" x2="992" y1="16" y2="16" stroke="var(--jk-hair)" stroke-width="8" stroke-linecap="round"/>
       <rect x="${X(lo).toFixed(1)}" y="10" width="${width.toFixed(1)}" height="12" rx="6" fill="url(#${gid})" stroke="var(--jk-ink)" stroke-width="1"/>
       <line x1="${X(mid).toFixed(1)}" x2="${X(mid).toFixed(1)}" y1="4" y2="28" stroke="var(--jk-ink)" stroke-width="2" stroke-linecap="round"/>
       ${mkt != null ? `<rect x="${(X(mkt) - 5).toFixed(1)}" y="11" width="10" height="10" rx="1" transform="rotate(45 ${X(mkt).toFixed(1)} 16)" fill="var(--jk-bg)" stroke="var(--jk-ink)" stroke-width="1.6"/>` : ""}
       ${[0, 25, 50, 75, 100].map((t) => `<text x="${X(t)}" y="42" text-anchor="${t === 0 ? "start" : t === 100 ? "end" : "middle"}" font-size="11" fill="var(--jk-t2)">${t}</text>`).join("")}
     </svg>`;
+  }
+
+  function outcomeClass(outcome) {
+    const o = String(outcome || "").toLowerCase();
+    if (o === "yes" || o.endsWith("-yes")) return "ok";
+    if (o === "no" || o.endsWith("-no")) return "fail";
+    return "";
   }
 
   function trigClass(label) {
@@ -266,8 +273,8 @@
         <span class="t"><i class="chev" aria-hidden="true"></i>${esc(fmtShort(p.horizon))}</span>
         <span class="m jk-opt">${dot(p.domain)}${esc(p.domain)}</span>
         <span class="q">${esc(p.question)}</span>
+        <span class="c jk-opt">${confBars(p.confidence)}</span>
         <span class="r">${fmtP(p.midpoint)}</span>
-        <span class="p jk-opt">${fmtP(p.probLow)}–${fmtP(p.probHigh)}</span>
       </summary>
       <div class="fc-body">
         <p class="prob-line">Band <b>${fmtP(p.probLow)}–${fmtP(p.probHigh)}</b> · midpoint <b>${fmtP(p.midpoint)}</b> · ${marketLine}</p>
@@ -363,7 +370,7 @@
     $("#resolved").innerHTML = `<ul class="jk-rows rows-res">
       ${R.map((r) => `<li>
         <span class="c-q">${esc(r.question)}</span>
-        <span class="c-out">${esc(r.outcome || String(r.status || "").replace("Resolved-", ""))}</span>
+        <span class="c-out ${outcomeClass(r.outcome)}">${esc(r.outcome || String(r.status || "").replace("Resolved-", ""))}</span>
         <span class="c-brier r">${r.brier != null ? Number(r.brier).toFixed(3) : "—"}</span>
         <span class="c-dom m jk-opt">${dot(r.domain)}${esc(r.domain)}</span>
         <span class="c-band p jk-opt">${fmtP(r.probLow)}–${fmtP(r.probHigh)}</span>

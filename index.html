@@ -7,9 +7,9 @@
 <title>Predictie — World Intelligence Monitor</title>
 <meta name="description" content="Live probabilistic forecasts on geopolitics, macro, crypto, enterprise and AI, with calibration tracking.">
 <meta name="referrer" content="no-referrer">
-<meta name="theme-color" content="#f7f5f0">
+<meta name="theme-color" content="#f2f5f6">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<!-- jaack design system 2026-10-22. Provenance and file hashes: vendor/jaack/VENDOR.md -->
+<!-- Forma, adapted for Predictie. Shared package: vendor/jaack/. Site palette: assets/style.css. -->
 <script src="vendor/jaack/theme.js" data-light-from="7" data-light-to="19" data-key="jaack.theme"></script>
 <link rel="stylesheet" href="vendor/jaack/jaack.css">
 <link rel="stylesheet" href="assets/style.css">
@@ -21,8 +21,8 @@
 
 <header class="jk-top jk-glass">
   <a class="jk-mark" href="#c-book">predictie<span class="dot">.</span><span class="dom">jaack.me</span></a>
-  <span class="jk-tag">Forecast book</span>
-  <nav class="jk-links" aria-label="Sections"><a class="jk-sw keep" href="#c-open">Open</a><a class="jk-sw" href="#c-resolved">Settled</a></nav>
+  <span class="jk-tag">Intelligence monitor</span>
+  <nav class="jk-links" aria-label="Sections"><a class="jk-sw keep" href="#c-open">Open</a><a class="jk-sw" href="#c-resolved">Resolved</a></nav>
   <span data-jk-theme-switch></span>
 </header>
 
@@ -33,9 +33,9 @@
     <section class="jk-ch" id="c-book" aria-labelledby="t-book">
       <header class="jk-ct">
         <span class="jk-deco" aria-hidden="true">01</span>
-        <div class="jk-eb"><b>01</b> Today · book</div>
-        <h2 class="jk-q" id="t-book">How is the book?</h2>
-        <p class="jk-lede">Calibrated ranges for geopolitics, macro, crypto, enterprise and AI.</p>
+        <div class="jk-eb"><b>01</b> Live · monitor</div>
+        <h2 class="jk-q" id="t-book">What is live?</h2>
+        <p class="jk-lede">Calibrated forecasts on the questions that move the world.</p>
       </header>
       <div class="jk-cb">
         <div class="jk-hero jk-fx"><div class="jk-hc">
@@ -65,8 +65,8 @@
       <header class="jk-ct">
         <span class="jk-deco" aria-hidden="true">02</span>
         <div class="jk-eb"><b>02</b> Markets · gap</div>
-        <h2 class="jk-q" id="t-market">Where do the markets sit?</h2>
-        <p class="jk-lede">A diamond marks a liquid YES price. The gap is my midpoint minus that price.</p>
+        <h2 class="jk-q" id="t-market">Where do we disagree?</h2>
+        <p class="jk-lede">The gap is my midpoint minus the market's YES price.</p>
       </header>
       <div class="jk-cb">
         <div class="jk-split">
@@ -85,16 +85,16 @@
             </div></div>
           </div>
           <aside class="jk-aside jk-glass jk-panel jk-fx" aria-labelledby="how-t">
-            <div class="jk-lab" id="how-t">How to read a forecast</div>
-            <p class="jk-cmp"><b>Band.</b> A range for YES, not a point. The tick is the midpoint, and that is what gets scored.</p>
-            <p class="jk-cmp"><b>Market.</b> The diamond is the YES price. The gap is my midpoint minus that price.</p>
-            <p class="jk-cmp"><b>Confidence.</b> Low, Medium or High trust in the band itself. Low means thin or fast-moving evidence.</p>
-            <p class="jk-cmp"><b>Score.</b> Resolved forecasts get a Brier score on the midpoint. 0 is perfect, 0.25 is a coin flip.</p>
+            <div class="jk-lab" id="how-t">How to read this</div>
+            <p class="jk-cmp"><b>Band.</b> A probability range for YES, not a point. The tick is the midpoint, which is what calibration is scored on.</p>
+            <p class="jk-cmp"><b>Market.</b> Where a liquid market exists, its YES price is a diamond. The gap is my midpoint minus that price.</p>
+            <p class="jk-cmp"><b>Confidence.</b> How much I trust the band. Low means thin evidence or fast-moving facts. High means well-anchored data.</p>
+            <p class="jk-cmp"><b>Scoring.</b> Resolved forecasts get a Brier score on the midpoint. 0 is perfect, 0.25 is a coin flip.</p>
             <p class="jk-note">Forecasts only. Not financial advice.</p>
           </aside>
         </div>
         <div class="jk-group jk-fx">
-          <h3 class="jk-lab">Book checks</h3>
+          <h3 class="jk-lab">Calibration</h3>
           <div class="jk-stats">
             <div class="jk-cell">
               <div class="jk-lab">Due for review</div>
@@ -126,9 +126,9 @@
   <section class="jk-ch jk-follow" id="c-open" aria-labelledby="t-open">
     <header class="jk-ct">
       <span class="jk-deco" aria-hidden="true">03</span>
-      <div class="jk-eb"><b>03</b> Open · active</div>
+      <div class="jk-eb"><b>03</b> Open · book</div>
       <h2 class="jk-q" id="t-open">What is still open?</h2>
-      <p class="jk-lede">Every active forecast. Open a row for the band, the signals and the sources.</p>
+      <p class="jk-lede">Every active forecast. Open a row for the band, the confidence and the sources.</p>
     </header>
     <div class="jk-cb">
       <div class="jk-hero jk-fx"><div class="jk-hc">
@@ -147,7 +147,7 @@
         <div class="ctl-row" id="domainFilter" role="group" aria-label="Domain"></div>
         <div class="ctl-row" id="confFilter" role="group" aria-label="Confidence"></div>
         <div class="ctl-row ctl-tools">
-          <label class="search grow"><span class="vh">Search questions</span><input id="q" type="search" placeholder="Search questions" autocomplete="off"></label>
+          <label class="search grow"><span class="vh">Search questions</span><input id="q" type="search" placeholder="Search questions…" autocomplete="off"></label>
           <label class="select">Sort
             <select id="sort">
               <option value="horizon">Horizon · soonest</option>
@@ -170,8 +170,8 @@
   <section class="jk-ch jk-follow" id="c-resolved" aria-labelledby="t-resolved">
     <header class="jk-ct">
       <span class="jk-deco" aria-hidden="true">04</span>
-      <div class="jk-eb"><b>04</b> Resolved · score</div>
-      <h2 class="jk-q" id="t-resolved">What has settled?</h2>
+      <div class="jk-eb"><b>04</b> Resolved · Brier</div>
+      <h2 class="jk-q" id="t-resolved">What has resolved?</h2>
       <p class="jk-lede">Scored with the Brier score on the midpoint. 0 is perfect and 0.25 is a coin flip.</p>
     </header>
     <div class="jk-cb">
@@ -191,16 +191,16 @@
 
   <footer class="jk-end">
     <p class="disclaimer">Forecasts only. Not financial advice.</p>
-    <p>Predictie · public forecast book · <a href="data/predictions.json">raw JSON</a></p>
+    <p>Predictie · data refreshed from the forecast book · <a href="data/predictions.json">raw JSON</a></p>
   </footer>
 </main>
 
 <nav class="jk-dock" aria-label="Chapters">
   <div class="jk-pill jk-glass" id="chap-nav" role="group" aria-label="Chapters">
-    <button type="button" aria-pressed="true" data-v="c-book">Book</button>
+    <button type="button" aria-pressed="true" data-v="c-book">Live</button>
     <button type="button" aria-pressed="false" data-v="c-market">Markets</button>
     <button type="button" aria-pressed="false" data-v="c-open">Open</button>
-    <button type="button" aria-pressed="false" data-v="c-resolved">Settled</button>
+    <button type="button" aria-pressed="false" data-v="c-resolved">Resolved</button>
   </div>
 </nav>
 <noscript><p class="noscript">This page needs JavaScript to show the forecast book.</p></noscript>

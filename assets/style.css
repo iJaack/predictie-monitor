@@ -1,10 +1,65 @@
-/* Predictie presentation on the jaack design system.
-   Tokens, type, glass, chapters and rows come from vendor/jaack/jaack.css.
-   This file only adds the forecast-book pieces. */
+/* Predictie on Forma.
+   Shared structure — token names, type scale, spacing, glass, chapters, and
+   theme.js — stays in vendor/jaack/. This file is the forecasting version:
+   a cool ground, the monitor's teal signal, teal–cyan probability bands,
+   monospace readings, and the domain colours this book already used. */
+
+:root{
+  --pd-mono:ui-monospace,SFMono-Regular,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+  --pd-band-0:#0f766e;
+  --pd-band-1:#0369a1;
+}
+
+/* Light paper is cool so the teal signal does not sit on warm ivory.
+   Text pairs below were checked at ≥ 4.5:1. Marks are not text. */
+html[data-theme="light"]{
+  --jk-bg:#f2f5f6;--jk-surface:#ffffff;--jk-surface-2:#e6eef1;
+  --jk-ink:#101416;--jk-ink-2:#3c494d;
+  --jk-t2:rgba(16,20,22,.70);--jk-t3:rgba(16,20,22,.64);--jk-hair:rgba(16,20,22,.12);
+  --jk-accent:#0f766e;--jk-accent-text:#0c5c56;--jk-on-accent:#fff;--jk-accent-wash:rgba(15,118,110,.12);
+  --jk-amb:#8a5300;--jk-ok:#1b6b30;--jk-fail:#a33a22;--jk-info:#1d5c86;
+  --jk-drop:0 24px 60px -28px rgba(8,24,28,.32),0 2px 6px -2px rgba(8,24,28,.10);
+  --jk-glow:rgba(15,118,110,.20);
+  --jk-bg-1:rgba(94,234,212,.16);--jk-bg-1b:rgba(94,234,212,.06);
+  --jk-bg-2:rgba(56,189,248,.16);--jk-bg-2b:rgba(56,189,248,.06);
+  --jk-bg-3:rgba(120,150,170,.12);--jk-bg-3b:rgba(120,150,170,.05);
+  --jk-c-red:#dc4545;--jk-c-blue:#3b78e0;--jk-c-orange:#e07a12;--jk-c-green:#1f9d55;--jk-c-purple:#9a62e0;--jk-c-cyan:#0e8aaa;
+  --pd-band-0:#0f766e;--pd-band-1:#0369a1;
+}
+/* Dark field is the original monitor ground, not Forma's warm charcoal. */
+html[data-theme="dark"]{
+  --jk-bg:#07090d;--jk-surface:#0c1118;--jk-surface-2:#121926;
+  --jk-ink:#e7eef2;--jk-ink-2:#b7c3cb;
+  --jk-t2:rgba(231,238,242,.72);--jk-t3:rgba(231,238,242,.58);--jk-hair:rgba(231,238,242,.14);
+  --jk-accent:#5eead4;--jk-accent-text:#5eead4;--jk-on-accent:#06211e;--jk-accent-wash:rgba(94,234,212,.14);
+  --jk-amb:#e9b44c;--jk-ok:#8fbf8a;--jk-fail:#e07a5f;--jk-info:#8fb3d9;
+  --jk-glow:rgba(94,234,212,.16);
+  --jk-bg-1:rgba(94,234,212,.10);--jk-bg-1b:rgba(94,234,212,.04);
+  --jk-bg-2:rgba(56,189,248,.10);--jk-bg-2b:rgba(56,189,248,.04);
+  --jk-bg-3:rgba(120,150,170,.08);--jk-bg-3b:rgba(120,150,170,.03);
+  --jk-c-red:#f87171;--jk-c-blue:#60a5fa;--jk-c-orange:#fb923c;--jk-c-green:#4ade80;--jk-c-purple:#c084fc;--jk-c-cyan:#38bdf8;
+  --pd-band-0:#5eead4;--pd-band-1:#38bdf8;
+}
 
 html{scroll-padding-top:84px;scroll-padding-bottom:108px}
-html:not([data-theme]){background:#f7f5f0;color:#121210}
+html:not([data-theme]){background:#f2f5f6;color:#101416}
 body{-webkit-font-smoothing:antialiased}
+
+/* Readings are measurements: counts, probabilities, gaps, Brier. Prose stays sans. */
+.jk-big,.jk-mid,.rowbtn .r,.fc-line .r,.c-brier,.jk-rows .r,.prob-line b,.chip .n,.band text{
+  font-family:var(--pd-mono);font-variant-numeric:tabular-nums;
+}
+.jk-u{font-family:var(--jk-font)}
+
+/* The wordmark dot is the live signal. A soft pulse, off when motion is reduced. */
+.jk-top .jk-mark .dot{animation:pd-live 2.4s ease-out infinite}
+@keyframes pd-live{
+  0%{text-shadow:0 0 0 currentColor}
+  70%{text-shadow:0 0 10px transparent}
+  100%{text-shadow:0 0 0 transparent}
+}
+@media (prefers-reduced-motion:reduce){.jk-top .jk-mark .dot{animation:none}}
+html.jk-rm .jk-top .jk-mark .dot{animation:none}
 .vh{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .noscript{margin:24px;font:16px/1.4 var(--jk-font,system-ui,sans-serif)}
 
@@ -90,7 +145,8 @@ button.chip{
   appearance:none;border:0;background:var(--jk-tint-hi);color:var(--jk-ink-2);
   font:600 13px/1 var(--jk-font);padding:0 12px;min-height:40px;border-radius:var(--jk-r-pill);cursor:pointer;
 }
-button.chip[aria-pressed="true"]{background:var(--jk-bg);color:var(--jk-ink);box-shadow:0 0 0 1.5px var(--jk-ink)}
+button.chip[aria-pressed="true"]{background:var(--jk-bg);color:var(--jk-ink);box-shadow:0 0 0 1.5px var(--jk-accent)}
+button.chip .n{color:var(--jk-t2);font-weight:650}
 button.chip:focus-visible{outline:2px solid var(--jk-accent);outline-offset:2px}
 .search{display:flex;align-items:center;min-height:40px;border-bottom:1px solid var(--jk-hair)}
 .search input{
@@ -109,7 +165,7 @@ button.chip:focus-visible{outline:2px solid var(--jk-accent);outline-offset:2px}
 .fc{border-top:1px solid var(--jk-hair)}
 .fc-list{border-bottom:1px solid var(--jk-hair)}
 .fc-line{
-  display:grid;grid-template-columns:92px 124px minmax(0,1fr) 72px 88px;column-gap:var(--jk-s4);align-items:baseline;
+  display:grid;grid-template-columns:92px 118px minmax(0,1fr) 108px 68px;column-gap:var(--jk-s4);align-items:baseline;
   width:100%;min-height:40px;padding:var(--jk-row-pad) 0;cursor:pointer;list-style:none;color:inherit;
 }
 .fc-line::-webkit-details-marker{display:none}
@@ -118,6 +174,7 @@ button.chip:focus-visible{outline:2px solid var(--jk-accent);outline-offset:2px}
 .fc-line .t{color:var(--jk-t3);font-size:var(--jk-fs-note)}
 .fc-line .m{font-size:var(--jk-fs-xs);font-weight:700;letter-spacing:var(--jk-track-label);text-transform:uppercase;color:var(--jk-t2)}
 .fc-line .q{font-weight:600}
+.fc-line .c{font-size:var(--jk-fs-note);color:var(--jk-t2)}
 .fc-line .r{text-align:right;font-weight:650}
 .fc-line .p{text-align:right;color:var(--jk-t3);font-size:var(--jk-fs-note)}
 .fc-line:focus-visible{outline:2px solid var(--jk-accent);outline-offset:3px;border-radius:var(--jk-r-xs)}
@@ -141,15 +198,19 @@ details[open] > .fc-line .chev{transform:rotate(45deg) translateY(-2px)}
 .fc-body .prob-line b{color:var(--jk-ink);font-weight:650}
 .gap.ok{color:var(--jk-ok);font-weight:650}
 .gap.fail{color:var(--jk-fail);font-weight:650}
+/* Sign of the widest gap. The words still say above or below the market. */
+.jk-sec .jk-mark.neg{background:var(--jk-fail)}
+.jk-sec .jk-mark.pos{background:var(--jk-ok)}
 .band{display:block;width:100%;height:auto}
-.band text{font-family:var(--jk-font)}
 .summary{margin:0;font-size:var(--jk-fs-body);line-height:var(--jk-lh);max-width:68ch}
 .meta{display:flex;flex-wrap:wrap;gap:6px 16px;margin:0;font-size:var(--jk-fs-note);color:var(--jk-t2)}
 .meta .due{color:var(--jk-amb);font-weight:650}
 .meta a,.srcs a,.jk-end a{text-decoration:underline;text-underline-offset:2px}
 .conf{display:inline-flex;align-items:center;gap:5px;color:var(--jk-ink)}
 .conf i{display:inline-block;width:6px;height:10px;border-radius:2px;background:var(--jk-hair)}
-.conf i.on{background:var(--jk-ink)}
+.conf i.on{background:var(--jk-accent)}
+.c-out.ok{color:var(--jk-ok);font-weight:650}
+.c-out.fail{color:var(--jk-fail);font-weight:650}
 
 .fc-body details{border-top:1px solid var(--jk-hair)}
 .fc-body summary{

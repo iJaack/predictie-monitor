@@ -3,6 +3,10 @@
 Presentation package for jaack.me pages. Copied into this repo unchanged so the
 forecast monitor can be styled without a build dependency.
 
+Predictie does not edit these files. The forecasting palette — accent, ground,
+gradient and domain marks — is overridden in `assets/style.css` after `jaack.css`,
+so the hashes below stay the shared Forma drop.
+
 | | |
 |---|---|
 | Package | jaack design system |

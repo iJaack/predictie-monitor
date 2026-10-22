@@ -5,15 +5,18 @@ https://predictie.jaack.me. No build step: `index.html` + `assets/` + `data/pred
 
 ## Design
 
-The page uses the vendored jaack design system in `vendor/jaack/` (see `VENDOR.md`
-for the package date and the zip sha256). `theme.js` loads blocking in `<head>`:
-light from 07:00–18:59 on the visitor's clock, otherwise dark, with an
-Auto / Chiaro / Scuro override. `?theme=light` or `?theme=dark` previews a theme
-when no override is saved.
+Forma is vendored in `vendor/jaack/` and left unmodified (see `VENDOR.md` for the
+package date and the zip sha256). Predictie uses the shared foundations only:
+the token structure, the type scale, the spacing, and `theme.js`. Light runs
+from 07:00–18:59 on the visitor's clock, otherwise dark, with an Auto / Chiaro /
+Scuro override. `?theme=light` or `?theme=dark` previews a theme when no
+override is saved.
 
-`assets/app.js` only changes how forecasts are drawn. `data/predictions.json`,
-`scripts/export.py` and `scripts/summaries.json` are the data pipeline and stay
-on their own schedule.
+The forecasting layer is `assets/style.css`. It keeps the monitor's teal signal
+instead of Forma's gold, cools the ground, draws probability bands teal to cyan,
+sets readings in monospace, and restores the original domain colours. `assets/app.js`
+only changes how forecasts are drawn. `data/predictions.json`, `scripts/export.py`
+and `scripts/summaries.json` are the data pipeline and stay on their own schedule.
 
 ## Refreshing data
 
