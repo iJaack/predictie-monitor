@@ -63,14 +63,26 @@ html.jk-rm .jk-top .jk-mark .dot{animation:none}
 .vh{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .noscript{margin:24px;font:16px/1.4 var(--jk-font,system-ui,sans-serif)}
 
-/* Wordmark is an anchor; keep the h1 off-screen. Top bar stays one line. */
+/* The shared bar lets the wordmark shrink and keeps each theme button at 36px.
+   Here the full wordmark still fits on one line at 320 and 390. */
 @media (max-width:480px){
-  .jk-top{padding-left:12px;gap:8px}
-  .jk-top .jk-mark{font-size:15px}
+  .jk-top{padding:6px 6px 6px 10px;gap:6px}
+  .jk-top .jk-mark{font-size:13px;letter-spacing:-.03em}
+  .jk-top a.jk-sw{display:inline-flex;align-items:center;min-height:36px;padding:0 8px}
+}
+@media (max-width:340px){
+  .jk-top{padding:6px 4px 6px 8px;gap:4px}
+  .jk-top a.jk-sw{padding:0 6px}
+  .jk-thsw{padding:0}
 }
 @media (max-width:760px){
-  .jk-dock .jk-pill button{padding:12px 14px}
+  .jk-dock .jk-pill button{padding:12px 14px;min-height:40px}
 }
+@media (max-width:390px){
+  .jk-dock{max-width:calc(100% - 12px)}
+  .jk-dock .jk-pill button{padding:8px 6px;font-size:13px;min-height:40px}
+}
+#chap-nav button{min-height:40px}
 
 /* Two lead chapters sit side by side from 1920. A third empty track at 2560
    would be a blank column, so this page stays on two. */
@@ -229,7 +241,7 @@ details[open] > .fc-line .chev{transform:rotate(45deg) translateY(-2px)}
 .trig.neu b{color:var(--jk-t2)}
 .srcs,.hist{list-style:none;margin:0;padding:0}
 .srcs li,.hist li{padding:var(--jk-row-pad) 0;border-top:1px solid var(--jk-hair)}
-.srcs .pub{font-weight:650;color:var(--jk-ink)}
+.srcs a.pub{display:inline-flex;align-items:center;min-height:40px;padding:0 2px;font-weight:650;color:var(--jk-ink)}
 .srcs .dt{color:var(--jk-t3);margin-left:6px}
 .srcs .note,.hist .why{display:block;color:var(--jk-t2);margin-top:2px}
 .hist .hd{font-weight:650}

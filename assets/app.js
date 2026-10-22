@@ -131,7 +131,7 @@
     [0, 0.5, 1].forEach((f) => {
       const y = pt + (h - pt - pb) * (1 - f);
       svg.appendChild(el("line", { x1: 0, x2: w - right, y1: y, y2: y, stroke: "var(--jk-hair)" }));
-      const t = el("text", { x: w - right + 6, y: y + 4, "font-size": 11, fill: "var(--jk-t2)" });
+      const t = el("text", { x: w - right + 6, y: y + 4, "font-size": 12, fill: "var(--jk-t2)" });
       t.textContent = String(Math.round(top * f));
       svg.appendChild(t);
     });
@@ -145,7 +145,7 @@
         x, y: h - pb - bh, width: barW, height: Math.max(bh, v ? 2 : 0), rx: Math.min(6, barW / 2),
         fill: DCOLOR[DOMAINS[i]], stroke: "var(--jk-ink)", "stroke-width": 1
       }));
-      const t = el("text", { x: i * bw + bw / 2, y: h - 6, "text-anchor": "middle", "font-size": 11, fill: "var(--jk-t2)" });
+      const t = el("text", { x: i * bw + bw / 2, y: h - 6, "text-anchor": "middle", "font-size": 12, fill: "var(--jk-t2)" });
       t.textContent = short[i];
       svg.appendChild(t);
     });
@@ -240,7 +240,7 @@
       <rect x="${X(lo).toFixed(1)}" y="10" width="${width.toFixed(1)}" height="12" rx="6" fill="url(#${gid})" stroke="var(--jk-ink)" stroke-width="1"/>
       <line x1="${X(mid).toFixed(1)}" x2="${X(mid).toFixed(1)}" y1="4" y2="28" stroke="var(--jk-ink)" stroke-width="2" stroke-linecap="round"/>
       ${mkt != null ? `<rect x="${(X(mkt) - 5).toFixed(1)}" y="11" width="10" height="10" rx="1" transform="rotate(45 ${X(mkt).toFixed(1)} 16)" fill="var(--jk-bg)" stroke="var(--jk-ink)" stroke-width="1.6"/>` : ""}
-      ${[0, 25, 50, 75, 100].map((t) => `<text x="${X(t)}" y="42" text-anchor="${t === 0 ? "start" : t === 100 ? "end" : "middle"}" font-size="11" fill="var(--jk-t2)">${t}</text>`).join("")}
+      ${[0, 25, 50, 75, 100].map((t) => `<text x="${X(t)}" y="42" text-anchor="${t === 0 ? "start" : t === 100 ? "end" : "middle"}" font-size="12" fill="var(--jk-t2)">${t}</text>`).join("")}
     </svg>`;
   }
 
