@@ -3,9 +3,11 @@
 Presentation package for jaack.me pages. Copied into this repo unchanged so the
 forecast monitor can be styled without a build dependency.
 
-Predictie does not edit these files. The forecasting palette — accent, ground,
-gradient and domain marks — is overridden in `assets/style.css` after `jaack.css`,
-so the hashes below stay the shared Forma drop.
+Predictie overrides the forecasting palette in `assets/style.css`. The hashes
+below are the files in this repo. `topbar.css`, `themeswitch.css` and the
+`jaack.css` bundle also carry a narrow-header patch: the bar's children may
+shrink, and the theme switch stays at least 36px instead of overflowing at 320px.
+The zip sha256 above is still the original drop.
 
 | | |
 |---|---|
@@ -44,16 +46,16 @@ f445bf4b2c955f4fdbe833608075d87db0c78531d45fa2e39da2d644330f61d1  components/row
 9300d779c944011d2091557b4da0427f326ab5cdbbe1759ad870471cbc7012c0  components/sheet.js
 5ac2de6f1e64a19386db600706b13b655fa9e4921d8c0392dc013f57c39cc4ca  components/stats.css
 fadc665aa5cb59d16fcf55cd323c3d9ed3a3104341c2d75c9a7b47709aa9bbe9  components/stats.html
-96ea1e851136360e49b3f1bf99faa2d48f5e8e1f6bfc5ca63cadd4ec6169a0a5  components/themeswitch.css
+b7f68182d2452e0c2b4e1dad9b76004d8b16ac6bab77a9cd8c70cd5ddb4c65f6  components/themeswitch.css
 e7f264a6affe5db299051870b0d694fe079bf3d1fb3e355195f4c4ce99a28cb4  components/themeswitch.html
 44576fdd60b5f6035f1d217aad922eb01c28ecc476cf265d70863b5e1e316c88  components/tooltip.css
 4587c3b3f01638b900f3aec1292a24b2ec65c3461ce54f9c223dfa14c43f9b79  components/tooltip.html
 b960dcab8ffecf16118b9e1f19c3549e60a679535c1c5f23a56208839a6eb6d0  components/tooltip.js
-730924891c5d3e52cde1d98eaf9a38573461e2b9f9492d6216872f530855c94b  components/topbar.css
+400bf6cfc164e898d3514c48cd5e5c47d5faa787a3c7cac71f567ecbf08524ef  components/topbar.css
 db0dcd133bf692a5ff9b5c8037be5c9c709abe80b97ade2a6fa7d757719d2467  components/topbar.html
 669bf4522e8276f64732b7db36454afec183997092c7204edf615a072fec35cd  demo.html
 65c0a7f60e08a617be676e0416506944b778a8707bf5f09138fec345b2ade3e3  demo.js
-851ddfee589baec6b338dc2316835fc9315cdb5333dd5d5539dcaa0217273aba  jaack.css
+0f620dcd81a90500fea852a8bb503a12ae0f3f1dfd7bfa41369ac22fc8bc0d69  jaack.css
 ae7b50a6e19ac602101b0a8cf2094aa5466efabff2a952bf7785832c9062a622  jaack.js
 202adb97c0a021d3d3e52184997098a1709f00b4b8564856031a58e0be65209c  README.md
 dac5df08bd80274badb4b58b603b7153d2842387dc134bed060c1ab8a998666a  theme.js
