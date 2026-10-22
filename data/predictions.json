@@ -1,98 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-21T08:56:35+02:00",
+ "generatedAt": "2026-10-22T08:51:39+02:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 43,
-  "resolved": 0,
+  "active": 42,
+  "resolved": 1,
   "byDomain": {
-   "Enterprise": 2,
    "Macro": 4,
    "Crypto": 27,
    "Geopolitics": 8,
-   "AI": 2
+   "AI": 2,
+   "Enterprise": 1
   }
  },
  "predictions": [
-  {
-   "id": "05b7a22d0a",
-   "question": "In its Q3 2026 results on Oct 21, 2026, will Meta raise the low end of its 2026 capex outlook above $130B?",
-   "domain": "Enterprise",
-   "status": "Active",
-   "confidence": "Low",
-   "probLow": 55.0,
-   "probHigh": 70.0,
-   "midpoint": 62.5,
-   "horizon": "2026-10-21",
-   "staleAfter": "2026-10-21",
-   "lastReviewed": "2026-10-21",
-   "created": "2026-10-16",
-   "summary": "Meta reports Q3 results on Oct 21 and currently guides 2026 capex at $130–145B. This asks whether it lifts the bottom of that range, an early read on whether hyperscaler AI spending keeps accelerating as borrowing costs rise.",
-   "triggers": [
-    {
-     "label": "Toward yes",
-     "text": "Q3 capex well above Q2's $31.08B (roughly $38B+ keeps $130B+ in reach); management reaffirming AI build-out despite the CoreWeave-led selloff; Muse launch momentum."
-    },
-    {
-     "label": "Toward no",
-     "text": "H1 capex only ~$50.9B (needs ~$79B in H2 just to hit $130B); rising cost of capital and record hyperscaler credit spreads; Meta narrowing by cutting the high end only or keeping $130–145B unchanged."
-    }
-   ],
-   "resolution": "Resolves YES if Meta's Q3 2026 earnings release/CFO outlook states a 2026 capex range (incl. finance-lease principal) with a low end above $130B. Resolves NO if the range is unchanged, lowered, or narrowed only from the top. If Meta stops giving a 2026 range, resolves NO.",
-   "market": null,
-   "sources": [
-    {
-     "publisher": "Meta Q2 2026 results",
-     "date": "Jul 29 2026",
-     "note": "2026 capex outlook $130–145B; Q2 capex incl. finance leases $31.08B; H1 PP&E purchases $49.1B + lease principal $1.8B",
-     "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx"
-    },
-    {
-     "publisher": "Meta",
-     "date": "Oct 12 2026",
-     "note": "Q3 2026 results after market close Wed Oct 21",
-     "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-to-Announce-Third-Quarter-2026-Results/default.aspx"
-    },
-    {
-     "publisher": "Proactive Investors",
-     "date": "Oct 16 2026",
-     "note": "BofA expects Meta to narrow 2026 capex guidance to $140–145B; 2027 capex est. raised to $205B; ~$10B legal charge in Q3",
-     "url": "https://www.proactiveinvestors.com/companies/news/1100253/meta-expected-to-beat-revenue-forecasts-as-ai-boosts-advertising-says-bank-of-america-1100253.html"
-    },
-    {
-     "publisher": "Pepperstone",
-     "date": "Oct 16 2026",
-     "note": "Q3 capex est. $40.97B, FCF −$9.14B; 'another sharp capex upgrade' flagged as a risk",
-     "url": "https://pepperstone.com/en/insights/market-analysis/equities/q3-2026-earnings-preview-can-ai-deliver-the-next-breakout"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-16",
-     "from": null,
-     "to": [
-      40.0,
-      55.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-10-18",
-     "from": [
-      40.0,
-      55.0
-     ],
-     "to": [
-      55.0,
-      70.0
-     ],
-     "reason": "Bloomberg median Q3 capex $40.97B (Pepperstone, Oct 16) is above the ~$38B level in Triggers; H1 ~$50.9B + Q3 ~$41B ≈ $92B leaves only ~$38B needed in Q4 to reach $130B, so the current $130B floor looks too low. BofA (Oct 16) explicitly expects narrowing to $140–145B, which would resolve YES. Not higher because one bank's call ≠ guidance, and Meta could keep $130–145B unchanged amid record hyperscaler credit spreads."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
   {
    "id": "f0d92a8ce1",
    "question": "Will the FOMC hold the fed funds target range at 3.75–4.00% at its Oct 27–28, 2026 meeting?",
@@ -104,7 +25,7 @@
    "midpoint": 85.0,
    "horizon": "2026-10-28",
    "staleAfter": "2026-10-23",
-   "lastReviewed": "2026-10-21",
+   "lastReviewed": "2026-10-22",
    "created": "2026-10-16",
    "summary": "After hiking in September, the Fed meets again on Oct 27–28. This tracks whether it pauses at 3.75–4.00% or moves again, with inflation still hot and oil above $100.",
    "triggers": [
@@ -165,13 +86,13 @@
    "question": "Will US spot Bitcoin ETFs finish October 2026 with positive aggregate net flows?",
    "domain": "Crypto",
    "status": "Active",
-   "confidence": "Low",
-   "probLow": 45.0,
-   "probHigh": 58.0,
-   "midpoint": 51.5,
+   "confidence": "Medium",
+   "probLow": 70.0,
+   "probHigh": 82.0,
+   "midpoint": 76.0,
    "horizon": "2026-10-30",
-   "staleAfter": "2026-10-24",
-   "lastReviewed": "2026-10-21",
+   "staleAfter": "2026-10-27",
+   "lastReviewed": "2026-10-22",
    "created": "2026-10-16",
    "summary": "US spot Bitcoin ETFs have seen net outflows for most of October. This asks whether a late-month turnaround pushes the monthly total back above zero, a gauge of institutional crypto demand.",
    "triggers": [
@@ -189,27 +110,27 @@
    "sources": [
     {
      "publisher": "Farside Investors BTC ETF flow table",
-     "date": "Oct 20 2026",
-     "note": "Oct 19 +$526.7M (IBIT +$665.2M), Oct 20 +$23.2M; Oct 2–20 daily rows sum to −$167.5M",
+     "date": "Oct 21 2026",
+     "note": "Oct 19 +$526.7M, Oct 20 +$23.2M, Oct 21 +$524.8M (IBIT +$235.0M, FBTC +$212.7M); Oct 2–21 rows sum to ≈ +$357.3M",
      "url": "https://farside.co.uk/BTC/"
     },
     {
      "publisher": "Alpha Finance BTC ETF tracker",
      "date": null,
-     "note": "Oct 1 +$102.7M; 7-session flow +$321.5M; 2nd straight inflow day",
+     "note": "Oct 1 +$102.7M",
      "url": "https://alphafinance.io/etf/bitcoin/"
     },
     {
-     "publisher": "TFTC Bitcoin ETF Flows",
-     "date": "October 2026",
-     "note": "MTD −$534.8M over 11 sessions",
-     "url": "https://www.tftc.io/bitcoin-etf-flows/october-2026"
+     "publisher": "CoinLab ETF flows",
+     "date": null,
+     "note": "Oct 21 +$289.84M on SoSoValue (IBIT reported 0 there, so sources differ on IBIT), 2-day inflow streak",
+     "url": "https://coinlab.info/en/indicators/etf-flows/"
     },
     {
      "publisher": "CoinDesk",
-     "date": "Oct 21 2026",
-     "note": "BTC ~$82,700–83,000; needs to reclaim $84k before the Oct 27–28 FOMC",
-     "url": "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11"
+     "date": "Oct 22 2026",
+     "note": "BTC gave back its run at $85k, back toward ~$82.5–83k as Tesla and Meta fail to calm AI nerves",
+     "url": "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves"
     }
    ],
    "history": [
@@ -245,6 +166,18 @@
       58.0
      ],
      "reason": "Oct 19 +$526.7M (largest day in a month, all IBIT) and Oct 20 +$23.2M take October MTD to ≈ −$64.8M after 14 sessions (Farside rows + Alpha Finance Oct 1). Only ≈ +$65M is needed over the 8 remaining sessions (Oct 21–30). FedWatch hold odds rose to ~84% (hike 16%). Daily flows swing ±$200–500M, so this is close to a coin flip with a slight lean to YES on momentum."
+    },
+    {
+     "date": "2026-10-22",
+     "from": [
+      45.0,
+      58.0
+     ],
+     "to": [
+      70.0,
+      82.0
+     ],
+     "reason": "(confidence Low → Medium). Farside shows Oct 21 +$524.8M, so October MTD is now ≈ +$460M after 15 sessions (Farside Oct 2–21 + Alpha Finance Oct 1). The month now stays positive unless the 7 remaining sessions (Oct 22–30) lose more than ~$460M net. SoSoValue shows a smaller Oct 21 figure (+$289.8M), so the cushion may be thinner on other trackers. Not higher because BTC slipped back toward $82.5k on Oct 22, the Oct 28 FOMC (16% hike odds) is a two-sided risk, and single outflow days of −$250M to −$485M happened earlier this month."
     }
    ],
    "outcome": null,
@@ -256,13 +189,13 @@
    "question": "Will Alpenglow consensus be live on Solana mainnet-beta by Oct 31, 2026?",
    "domain": "Crypto",
    "status": "Active",
-   "confidence": "Medium",
-   "probLow": 85.0,
-   "probHigh": 93.0,
-   "midpoint": 89.0,
+   "confidence": "High",
+   "probLow": 96.0,
+   "probHigh": 99.0,
+   "midpoint": 97.5,
    "horizon": "2026-10-31",
-   "staleAfter": "2026-10-22",
-   "lastReviewed": "2026-10-21",
+   "staleAfter": "2026-10-31",
+   "lastReviewed": "2026-10-22",
    "created": "2026-10-18",
    "summary": "Solana is switching to a new consensus system, Alpenglow, on Oct 21, aiming for transactions that are final in about 150 milliseconds. This asks whether the switch is live and holding by the end of October.",
    "triggers": [
@@ -280,21 +213,27 @@
    "sources": [
     {
      "publisher": "Solana",
-     "date": "Oct 2026",
-     "note": "Alpenglow mainnet in epoch 1064 starting ~15:00 UTC Oct 21; devnet activated Sep 25",
+     "date": "Oct 22 2026",
+     "note": "live on mainnet; activated epoch 1064 Oct 21 ~13:36 UTC; genesis block slot 459,652,999 certified by 446 of 654 validators; Alpenglow consensus from slot 459,653,000",
      "url": "https://solana.com/upgrades/alpenglow"
     },
     {
-     "publisher": "CoinDesk",
-     "date": "Oct 14 2026",
-     "note": "Solana sets Oct 21 for Alpenglow targeting 150ms finality",
-     "url": "https://www.coindesk.com/tech/2026/10/14/solana-sets-oct-21-for-alpenglow-upgrade-targeting-150-millisecond-finality"
+     "publisher": "Anza / PR Newswire",
+     "date": "Oct 21 2026",
+     "note": "'Alpenglow is Live on Solana'",
+     "url": "https://www.prnewswire.com/news-releases/alpenglow-is-live-on-solana-the-worlds-fastest-finality-on-a-global-network-302915579.html"
     },
     {
-     "publisher": "CoinMarketCap Academy",
-     "date": "Oct 2026",
-     "note": "Anza: go-live ~14:50 UTC Oct 21; 82% stake signs Alpenglow genesis; migrations done on community cluster, testnet, devnet",
-     "url": "https://coinmarketcap.com/academy/article/solana-alpenglow-mainnet-oct-21-anza"
+     "publisher": "CoinDesk",
+     "date": "Oct 22 2026",
+     "note": "Solana completes Alpenglow upgrade; ~900ms handoff from TowerBFT",
+     "url": "https://www.coindesk.com/tech/2026/10/22/solana-completes-alpenglow-upgrade-here-s-what-it-means-for-users"
+    },
+    {
+     "publisher": "Anza Alpenglow page",
+     "date": "Oct 22 2026",
+     "note": "mainnet-beta migration 'Completed'",
+     "url": "https://www.anza.xyz/alpenglow"
     }
    ],
    "history": [
@@ -306,6 +245,18 @@
       93.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-22",
+     "from": [
+      85.0,
+      93.0
+     ],
+     "to": [
+      96.0,
+      99.0
+     ],
+     "reason": "(confidence Medium → High). Alpenglow activated on mainnet-beta Oct 21 ~13:36 UTC (Solana, Anza, CoinDesk); TowerBFT retired after the 5,000-slot window, handoff ~900ms. Not marked resolved because the row requires the network still be on Alpenglow at 23:59 UTC Oct 31; the only residual risk is a revert to TowerBFT, which looks very unlikely. Resolve YES on Oct 31/Nov 1 if still live."
     }
    ],
    "outcome": null,
@@ -323,7 +274,7 @@
    "midpoint": 68.0,
    "horizon": "2026-11-03",
    "staleAfter": "2026-10-23",
-   "lastReviewed": "2026-10-21",
+   "lastReviewed": "2026-10-22",
    "created": "2026-10-18",
    "summary": "The US has paused strikes on Iran ahead of the midterms while indirect talks continue. This tracks whether that pause actually holds through Election Day on Nov 3.",
    "triggers": [
@@ -781,13 +732,13 @@
    "question": "Will Zcash's NU7 network upgrade activate on mainnet by Nov 30, 2026?",
    "domain": "Crypto",
    "status": "Active",
-   "confidence": "Low",
-   "probLow": 62.0,
-   "probHigh": 75.0,
-   "midpoint": 68.5,
+   "confidence": "Medium",
+   "probLow": 85.0,
+   "probHigh": 92.0,
+   "midpoint": 88.5,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-10-23",
-   "lastReviewed": "2026-10-21",
+   "staleAfter": "2026-11-04",
+   "lastReviewed": "2026-10-22",
    "created": "2026-10-18",
    "summary": "Zcash's NU7 upgrade cuts block time from 75 to 25 seconds and adds a fee reserve. Developers set the mainnet date on Oct 20, with Nov 5 pencilled in; this asks whether it goes live by Nov 30.",
    "triggers": [
@@ -804,28 +755,28 @@
    "market": null,
    "sources": [
     {
-     "publisher": "Blockchain Reporter",
-     "date": "Oct 16 2026",
-     "note": "NU7 timeline: code complete Sep 30, testnet Oct 4, decision and activation height Oct 20, mainnet Nov 5 tentative; Zebra 7.0.0-rc.0 sets no mainnet height",
-     "url": "https://blockchainreporter.net/zcash-news-today/"
-    },
-    {
-     "publisher": "CoinDesk",
-     "date": "Oct 21 2026",
-     "note": "ZEC +11% to ~$1,260 'after Zcash developers set the mainnet activation height for NU7'",
-     "url": "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11"
-    },
-    {
-     "publisher": "Blockhead",
-     "date": "Oct 21 2026",
-     "note": "says the go/no-go and height decision is 'today', no mainnet height yet; Nov 5 target",
-     "url": "https://www.blockhead.co/2026/10/21/zcash-decides-today-whether-nu7-goes-live-in-november/"
-    },
-    {
      "publisher": "ZIP 259",
-     "date": "Oct 21 2026",
-     "note": "Mainnet ACTIVATION_HEIGHT still 'TBD (To be set on OCT 20)'; forum NU7 Timeline thread has no height post after Oct 18 testnet stats (median 17.0s vs 17.3s expected)",
+     "date": "Oct 22 2026",
+     "note": "NU7 ACTIVATION_HEIGHT Mainnet: 3543405; Testnet: 4465026",
      "url": "https://zips.z.cash/zip-0259"
+    },
+    {
+     "publisher": "GitHub zcash/zips PR #1405",
+     "date": "Oct 21 2026",
+     "note": "'Set the NU7 mainnet activation height to 3543405', agreed by ZIP editors",
+     "url": "https://github.com/zcash/zips/pull/1405"
+    },
+    {
+     "publisher": "crypto.news",
+     "date": "Oct 21 2026",
+     "note": "block 3,543,405 expected ~Nov 5; 75s→25s blocks; Sprout funds become unspendable",
+     "url": "https://crypto.news/zcash-nu7-activation-november-5-25-second-blocks/"
+    },
+    {
+     "publisher": "Zcash Foundation Zebra 'NU7 Network upgrade' milestone",
+     "date": "Oct 22 2026",
+     "note": "mainnet activation at 3543405 and the 7.0.0 release that carries it, 89% complete",
+     "url": "https://github.com/ZcashFoundation/zebra/milestone/42"
     }
    ],
    "history": [
@@ -849,6 +800,18 @@
       75.0
      ],
      "reason": "CoinDesk reports the mainnet height has been set and ZEC rallied 11%, and testnet stats are clean, but primary sources (ZIP 259, forum thread) still show no height and Blockhead says the decision is due Oct 21. Not raised further until the height is confirmed in ZIP 259 / forum; if confirmed for ~Nov 5, move to ~0.85–0.92."
+    },
+    {
+     "date": "2026-10-22",
+     "from": [
+      62.0,
+      75.0
+     ],
+     "to": [
+      85.0,
+      92.0
+     ],
+     "reason": "(confidence Low → Medium). Primary source now confirms: ZIP 259 lists Mainnet activation height 3,543,405 (PR #1405 merged Oct 21 20:06 UTC), expected ~Nov 5, leaving ~25 days of slack before Nov 30. Residual risk: final Zebra/zcashd 7.0.0 mainnet releases (milestone 89% done), a late bug forcing a height change past Nov 30, or exchanges/miners not upgrading in time. Stale After set to Nov 4, the day before the expected activation."
     }
    ],
    "outcome": null,
@@ -2521,7 +2484,7 @@
    "midpoint": 70.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-10-21",
+   "lastReviewed": "2026-10-22",
    "created": "2026-10-16",
    "summary": "Schwab announced in August plans to add SOL, AVAX and LINK to Schwab Crypto, and its CEO has since promised 'three new coins by the end of the year' without naming them. This asks whether AVAX is actually live for Schwab clients by Dec 31.",
    "triggers": [
@@ -3166,5 +3129,85 @@
    "resolvedOn": null
   }
  ],
- "resolved": []
+ "resolved": [
+  {
+   "id": "05b7a22d0a",
+   "question": "In its Q3 2026 results on Oct 21, 2026, will Meta raise the low end of its 2026 capex outlook above $130B?",
+   "domain": "Enterprise",
+   "status": "Resolved-Yes",
+   "confidence": "Low",
+   "probLow": 55.0,
+   "probHigh": 70.0,
+   "midpoint": 62.5,
+   "horizon": "2026-10-21",
+   "staleAfter": "2026-10-21",
+   "lastReviewed": "2026-10-22",
+   "created": "2026-10-16",
+   "summary": "Meta reports Q3 results on Oct 21 and currently guides 2026 capex at $130–145B. This asks whether it lifts the bottom of that range, an early read on whether hyperscaler AI spending keeps accelerating as borrowing costs rise.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "Q3 capex well above Q2's $31.08B (roughly $38B+ keeps $130B+ in reach); management reaffirming AI build-out despite the CoreWeave-led selloff; Muse launch momentum."
+    },
+    {
+     "label": "Toward no",
+     "text": "H1 capex only ~$50.9B (needs ~$79B in H2 just to hit $130B); rising cost of capital and record hyperscaler credit spreads; Meta narrowing by cutting the high end only or keeping $130–145B unchanged."
+    }
+   ],
+   "resolution": "Resolves YES if Meta's Q3 2026 earnings release/CFO outlook states a 2026 capex range (incl. finance-lease principal) with a low end above $130B. Resolves NO if the range is unchanged, lowered, or narrowed only from the top. If Meta stops giving a 2026 range, resolves NO.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "Meta Q3 2026 results",
+     "date": "Oct 21 2026",
+     "note": "Q3 capex incl. finance-lease principal $34.91B; CFO outlook: 2026 capex incl. finance-lease principal $135–145B",
+     "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx"
+    },
+    {
+     "publisher": "AP News",
+     "date": "Oct 21 2026",
+     "note": "Meta narrowed 2026 capex to $135–145B from $130–145B",
+     "url": "https://apnews.com/article/meta-earnings-facebook-instagram-muse-capex-13ecd6c459e39a3602f302bcc2412fe9"
+    },
+    {
+     "publisher": "Business Insider",
+     "date": "Oct 2026",
+     "note": "2026 capex $135–145B, narrowed from $130–145B; consensus $139.79B",
+     "url": "https://www.businessinsider.com/meta-capex-narrows-ai-agent-wars-quarter-3-earnings-2026-10"
+    },
+    {
+     "publisher": "Meta Q2 2026 results",
+     "date": "Jul 29 2026",
+     "note": "prior 2026 capex outlook $130–145B",
+     "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-16",
+     "from": null,
+     "to": [
+      40.0,
+      55.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-18",
+     "from": [
+      40.0,
+      55.0
+     ],
+     "to": [
+      55.0,
+      70.0
+     ],
+     "reason": "Bloomberg median Q3 capex $40.97B (Pepperstone, Oct 16) is above the ~$38B level in Triggers; H1 ~$50.9B + Q3 ~$41B ≈ $92B leaves only ~$38B needed in Q4 to reach $130B, so the current $130B floor looks too low. BofA (Oct 16) explicitly expects narrowing to $140–145B, which would resolve YES. Not higher because one bank's call ≠ guidance, and Meta could keep $130–145B unchanged amid record hyperscaler credit spreads."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.140625,
+   "resolvedOn": "2026-10-21"
+  }
+ ]
 }
