@@ -41,12 +41,12 @@ html[data-theme="dark"]{
   --pd-band-0:#5eead4;--pd-band-1:#38bdf8;
 }
 
-html{scroll-padding-top:84px;scroll-padding-bottom:108px}
+html{scroll-padding-top:calc(84px + env(safe-area-inset-top,0px));scroll-padding-bottom:calc(108px + env(safe-area-inset-bottom,0px))}
 html:not([data-theme]){background:#f2f5f6;color:#101416}
 body{-webkit-font-smoothing:antialiased}
 
 /* Readings are measurements: counts, probabilities, gaps, Brier. Prose stays sans. */
-.jk-big,.jk-mid,.rowbtn .r,.fc-line .r,.c-brier,.jk-rows .r,.prob-line b,.chip .n,.band text{
+.jk-big,.jk-mid,.rowbtn .r,.fc-line .r,.c-brier,.jk-rows .r,.prob-line b,.chip .n,.band-scale,.chartbox text{
   font-family:var(--pd-mono);font-variant-numeric:tabular-nums;
 }
 .jk-u{font-family:var(--jk-font)}
@@ -84,6 +84,35 @@ html.jk-rm .jk-top .jk-mark .dot{animation:none}
 }
 #chap-nav button{min-height:40px}
 
+/* The fold changes the viewport while the page is open. Size from the window
+   and from each chapter, and keep the fixed bar and dock inside the rounded
+   corners and the Dynamic Island. */
+body{min-height:100dvh}
+.jk-bg{bottom:-30dvh}
+.jk-page{
+  padding-left:max(var(--jk-page-x),env(safe-area-inset-left,0px));
+  padding-right:max(var(--jk-page-x),env(safe-area-inset-right,0px));
+}
+.jk-top{
+  top:calc(10px + env(safe-area-inset-top,0px));
+  left:calc(50% + (env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px))/2);
+  width:min(1180px,calc(100% - 20px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)));
+}
+.jk-dock{
+  bottom:calc(16px + env(safe-area-inset-bottom,0px));
+  left:calc(50% + (env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px))/2);
+  max-width:calc(100% - 16px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px));
+}
+.jk-ch,.fc,.jk-fig,.jk-aside{scroll-margin-top:calc(96px + env(safe-area-inset-top,0px));scroll-margin-bottom:calc(96px + env(safe-area-inset-bottom,0px))}
+/* Inner portrait is wide enough for the words Auto / Chiaro / Scuro. Icons stay
+   on the folded display, where the wordmark, section link and switch share one row. */
+@media (min-width:620px) and (max-width:760px){
+  .jk-thsw .i{display:none}
+  .jk-thsw .l{display:inline}
+  .jk-thsw{gap:2px;padding:2px}
+  .jk-thsw button{width:auto;min-width:36px;padding:6px 9px;flex:0 1 auto}
+}
+
 /* Two lead chapters sit side by side from 1920. A third empty track at 2560
    would be a blank column, so this page stays on two. */
 @media (min-width:2560px){
@@ -97,9 +126,11 @@ html.jk-rm .jk-top .jk-mark .dot{animation:none}
 }
 .jk-ch,.fc{scroll-margin-top:96px}
 
-/* Domain chart. Height is set in JS before draw so the page does not jump. */
-.chartbox{position:relative;min-height:160px}
-.chartbox svg{display:block;width:100%;height:100%}
+/* Domain chart. Height is set in JS from the container width and the visual
+   viewport, and redrawn on every size change (fold, rotate, split). */
+.chartbox{position:relative;min-height:124px;max-width:100%}
+.chartbox .plot{height:100%}
+.chartbox svg{display:block;width:100%;height:100%;max-width:100%}
 .legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:8px;font-size:var(--jk-fs-note);color:var(--jk-t2)}
 .legend b{color:var(--jk-ink);font-weight:650;margin-left:4px}
 
@@ -127,7 +158,7 @@ html.jk-rm .jk-top .jk-mark .dot{animation:none}
 .rowbtn .m{font-size:var(--jk-fs-xs);font-weight:700;letter-spacing:var(--jk-track-label);text-transform:uppercase;color:var(--jk-t2)}
 .rowbtn .r{text-align:right;font-weight:650}
 .rowbtn:hover .q,.fc-line:hover .q{text-decoration:underline;text-underline-offset:3px}
-@container (max-width:560px){
+@container (max-width:520px){
   .jk-rows.rows-soon{--jk-cols:76px minmax(0,1fr) auto !important}
   .jk-rows.rows-soon .jk-opt{display:none}
 }
@@ -196,6 +227,22 @@ details[open] > .fc-line .q{white-space:normal;overflow:visible}
   .fc-line{grid-template-columns:76px minmax(0,1fr) auto}
   .fc-line .jk-opt{display:none}
 }
+/* Tall inner display: keep domain and confidence, on a second line, so the
+   question still has a full row. Short landscape stays one line. */
+@media (min-height:700px){
+  @container (min-width:480px) and (max-width:760px){
+    .fc-line{
+      grid-template-columns:84px minmax(0,1fr) auto;
+      grid-template-areas:"when domain mid" "question question conf";
+      row-gap:2px;align-items:center;min-height:52px;
+    }
+    .fc-line .t{grid-area:when}
+    .fc-line .m.jk-opt{grid-area:domain;display:block}
+    .fc-line .q{grid-area:question}
+    .fc-line .r{grid-area:mid;align-self:center}
+    .fc-line .c.jk-opt{grid-area:conf;display:flex;justify-content:flex-end;align-self:center}
+  }
+}
 
 .chev{
   display:inline-block;width:7px;height:7px;margin-right:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;
@@ -213,7 +260,15 @@ details[open] > .fc-line .chev{transform:rotate(45deg) translateY(-2px)}
 /* Sign of the widest gap. The words still say above or below the market. */
 .jk-sec .jk-mark.neg{background:var(--jk-fail)}
 .jk-sec .jk-mark.pos{background:var(--jk-ok)}
-.band{display:block;width:100%;height:auto}
+/* Probability band. The track stretches with the row; the scale is CSS type
+   so 0–100 stays readable when the fold changes the width. */
+.band{display:block;width:100%;max-width:100%;min-width:0}
+.band-track{position:relative;height:28px;margin:0 2px}
+.band-track::before{content:"";position:absolute;left:0;right:0;top:10px;height:8px;border-radius:999px;background:var(--jk-hair)}
+.band-range{position:absolute;top:8px;height:12px;border-radius:6px;background:linear-gradient(90deg,var(--pd-band-0),var(--pd-band-1));box-shadow:0 0 0 1px var(--jk-ink)}
+.band-mid{position:absolute;top:2px;width:2px;height:24px;margin-left:-1px;border-radius:1px;background:var(--jk-ink)}
+.band-mkt{position:absolute;top:9px;width:10px;height:10px;margin-left:-5px;background:var(--jk-bg);border:1.6px solid var(--jk-ink);transform:rotate(45deg)}
+.band-scale{display:flex;justify-content:space-between;margin:0 2px;font-size:12px;line-height:1.2;color:var(--jk-t2)}
 .summary{margin:0;font-size:var(--jk-fs-body);line-height:var(--jk-lh);max-width:68ch}
 .meta{display:flex;flex-wrap:wrap;gap:6px 16px;margin:0;font-size:var(--jk-fs-note);color:var(--jk-t2)}
 .meta .due{color:var(--jk-amb);font-weight:650}
@@ -251,3 +306,76 @@ details[open] > .fc-line .chev{transform:rotate(45deg) translateY(-2px)}
 .jk-end a{color:inherit}
 
 .empty-note{margin:8px 0 0}
+
+/* 400–819px chapters (folded portrait through the inner portrait): the two
+   readings share a row so the chart can sit above the dock. From 820px the
+   shared hero rule takes back over. Desktop windows are outside this query. */
+@media (max-width:960px){
+  @container (min-width:400px) and (max-width:819px){
+    .jk-hero:has(.jk-sec)>.jk-hc{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:var(--jk-s5);row-gap:2px;align-items:end}
+    .jk-hero:has(.jk-sec)>.jk-hc>.jk-hm,.jk-hero:has(.jk-sec)>.jk-hc>.jk-sec{display:contents}
+    .jk-hero:has(.jk-sec) .jk-hm .jk-lab{grid-column:1;grid-row:1}
+    .jk-hero:has(.jk-sec) .jk-hm .jk-big{grid-column:1;grid-row:2;font-size:clamp(40px,11cqi,64px)}
+    .jk-hero:has(.jk-sec) .jk-hm .jk-cmp{grid-column:1;grid-row:3;min-width:0}
+    .jk-hero:has(.jk-sec) .jk-sec .jk-lab{grid-column:2;grid-row:1;padding-left:var(--jk-s5);box-shadow:inset 1px 0 0 var(--jk-hair)}
+    .jk-hero:has(.jk-sec) .jk-sec .jk-mid{grid-column:2;grid-row:2;padding-left:var(--jk-s5);box-shadow:inset 1px 0 0 var(--jk-hair);font-size:clamp(32px,8cqi,48px)}
+    .jk-hero:has(.jk-sec) .jk-sec .jk-cmp{grid-column:2;grid-row:3;padding-left:var(--jk-s5);min-width:0}
+  }
+  @container (max-width:480px){
+    .jk-hero:has(.jk-sec) .jk-hm .jk-cmp,.jk-hero:has(.jk-sec) .jk-sec .jk-cmp{grid-column:1 / -1;padding-left:0;max-width:68ch}
+    .jk-hero:has(.jk-sec) .jk-sec .jk-cmp{grid-row:4}
+  }
+}
+
+/* Inner landscape: the glass note sits beside the market readings once the
+   chapter is wider than a folded phone, and it stays inside the visible
+   viewport when the fold changes the height. */
+@container (min-width:740px){
+  .jk-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,34%);column-gap:var(--jk-s8);align-items:start}
+  .jk-split>.jk-aside{
+    position:sticky;
+    top:calc(env(safe-area-inset-top,0px) + var(--jk-topbar-h) + 12px);
+    max-height:calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px) - var(--jk-topbar-h) - 28px);
+    overflow:auto;
+    margin-top:var(--jk-hero-gap);
+  }
+}
+@container (min-width:860px){
+  .jk-split{grid-template-columns:minmax(0,1fr) minmax(300px,36%);column-gap:var(--jk-s12)}
+  .jk-split>.jk-aside{top:calc(env(safe-area-inset-top,0px) + var(--jk-topbar-h) + 12px)}
+}
+
+/* Calibration cells: 2×2 on the folded portrait (just under the 440px stack),
+   one row on the inner landscape. */
+.jk-cell{container-type:inline-size}
+@container (min-width:360px) and (max-width:439px){
+  .jk-stats{--n:2!important;row-gap:var(--jk-s6)}
+  .jk-stats>.jk-cell:nth-child(odd){border-left:0;padding-left:0}
+  .jk-stats>.jk-cell:nth-child(even){border-left:1px solid var(--jk-hair);padding-left:var(--jk-s4);border-top:0;padding-top:4px}
+  .jk-stats>.jk-cell:nth-child(n+3){border-top:1px solid var(--jk-hair);padding-top:var(--jk-s6)}
+}
+@container (min-width:760px){
+  .jk-stats:not(.two){--n:4;row-gap:0}
+  .jk-stats:not(.two)>.jk-cell:nth-child(3),
+  .jk-stats:not(.two)>.jk-cell:nth-child(4){border-left:1px solid var(--jk-hair);padding-left:var(--jk-s6);border-top:0;padding-top:4px}
+  .jk-stats:not(.two)>.jk-cell:nth-child(n+3){border-top:0;padding-top:4px}
+}
+@container (max-width:210px){
+  .jk-cell .jk-mid{font-size:clamp(26px,20cqi,36px)}
+}
+
+/* Folded portrait: the domain chart ends just above the chapter dock. */
+@media (min-width:420px) and (max-width:520px) and (min-height:560px){
+  #c-book .jk-fig{margin-top:var(--jk-s3)}
+  #c-book .jk-hero{margin-top:var(--jk-s4)}
+}
+
+/* Folded landscape is short. The chart and the glass note take the second
+   column so neither sits entirely below the first screen. */
+@media (max-height:520px) and (min-width:640px){
+  #c-book .jk-cb{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(200px,.95fr);column-gap:var(--jk-s5);align-items:start}
+  #c-book .jk-hero,#c-book .jk-fig{margin-top:var(--jk-s5)}
+  #c-book .jk-group{grid-column:1 / -1}
+  .jk-split{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(200px,.85fr);column-gap:var(--jk-s5);align-items:start}
+  .jk-split>.jk-aside{position:static;max-height:none;overflow:visible;margin-top:var(--jk-hero-gap)}
+}
