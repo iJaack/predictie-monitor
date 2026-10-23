@@ -10,7 +10,6 @@
   const TZ = "Europe/Rome";
   const state = { domain: "All", conf: "All", sort: "horizon", q: "" };
   let DATA = null;
-  let chartReady = false;
 
   const $ = (s) => document.querySelector(s);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -89,34 +88,53 @@
     renderChart();
   }
 
+  function viewportHeight() {
+    return (window.visualViewport && window.visualViewport.height) || window.innerHeight;
+  }
+
   function chartHeight(w) {
-    return Math.round(Math.max(160, Math.min(innerHeight * 0.27, w * 0.24, 300)));
+    const vh = viewportHeight();
+    const short = vh <= 520;
+    const byWidth = w * (w >= 720 ? 0.32 : 0.42);
+    const byHeight = vh * (short ? 0.46 : 0.3);
+    return Math.round(Math.max(short ? 124 : 168, Math.min(byWidth, byHeight, short ? 210 : 260)));
+  }
+
+  let chartFrame = 0;
+  function scheduleChart() {
+    if (chartFrame) return;
+    chartFrame = requestAnimationFrame(() => {
+      chartFrame = 0;
+      layoutChart();
+    });
+  }
+
+  function watchChart() {
+    const box = $("#domainChart");
+    if (!box || box.dataset.watch) return;
+    box.dataset.watch = "1";
+    if ("ResizeObserver" in window) new ResizeObserver(scheduleChart).observe(box);
+    addEventListener("resize", scheduleChart);
+    if (window.visualViewport) window.visualViewport.addEventListener("resize", scheduleChart);
+  }
+
+  function layoutChart() {
+    const box = $("#domainChart");
+    if (!box || !DATA) return;
+    const w = Math.round(box.clientWidth);
+    if (w < 40) return;
+    const h = chartHeight(w);
+    if (box.dataset.cw === String(w) && box.dataset.ch === String(h) && box.querySelector("svg")) return;
+    box.style.height = h + "px";
+    box.dataset.cw = String(w);
+    box.dataset.ch = String(h);
+    const by = domainCounts();
+    box.setAttribute("aria-label", "Active forecasts by domain. " + DOMAINS.map((d) => `${d} ${by[d] || 0}`).join(", ") + ".");
+    drawDomains(box, by, w, h);
   }
 
   function renderChart() {
-    const box = $("#domainChart");
-    if (!box) return;
-    const w = box.clientWidth || box.parentElement.clientWidth || 640;
-    const h = chartHeight(w);
-    box.style.height = h + "px";
-    const by = domainCounts();
-    const label = "Active forecasts by domain. " + DOMAINS.map((d) => `${d} ${by[d] || 0}`).join(", ") + ".";
-    box.setAttribute("aria-label", label);
-    const draw = () => {
-      chartReady = true;
-      const w2 = box.clientWidth || w;
-      const h2 = chartHeight(w2);
-      box.style.height = h2 + "px";
-      drawDomains(box, by, w2, h2);
-    };
-    if (chartReady) { draw(); return; }
-    if (reduced() || !("IntersectionObserver" in window)) { draw(); return; }
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => {
-        if (e.intersectionRatio >= 0.3) { draw(); io.disconnect(); }
-      });
-    }, { threshold: [0.3] });
-    io.observe(box);
+    layoutChart();
   }
 
   function drawDomains(box, by, w, h) {
@@ -125,9 +143,9 @@
     const vals = DOMAINS.map((d) => by[d] || 0);
     const max = Math.max(...vals, 1);
     const top = Math.max(max, 1);
-    const pb = 22, pt = 8, right = 36;
+    const pb = 22, pt = 18, right = 30;
     const plot = box.querySelector(".plot") || box;
-    const svg = el("svg", { viewBox: `0 0 ${w} ${h}`, width: w, height: h, role: "img", "aria-hidden": "true" });
+    const svg = el("svg", { viewBox: `0 0 ${w} ${h}`, preserveAspectRatio: "xMinYMin meet", role: "img", "aria-hidden": "true" });
     [0, 0.5, 1].forEach((f) => {
       const y = pt + (h - pt - pb) * (1 - f);
       svg.appendChild(el("line", { x1: 0, x2: w - right, y1: y, y2: y, stroke: "var(--jk-hair)" }));
@@ -136,17 +154,26 @@
       svg.appendChild(t);
     });
     const bw = (w - right) / vals.length;
-    const barW = Math.min(36, bw * 0.46);
-    const short = ["Geo", "Macro", "Crypto", "Ent", "AI"];
+    const cap = w >= 1000 ? 40 : 56;
+    const barW = Math.max(10, Math.min(bw * 0.58, cap));
+    const names = bw < 44 ? ["Geo", "Mac", "Cry", "Ent", "AI"] : ["Geo", "Macro", "Crypto", "Ent", "AI"];
+    const fs = bw < 64 ? 11 : 12;
     vals.forEach((v, i) => {
       const bh = (h - pt - pb) * (v / top);
       const x = i * bw + (bw - barW) / 2;
+      const y = h - pb - bh;
       svg.appendChild(el("rect", {
-        x, y: h - pb - bh, width: barW, height: Math.max(bh, v ? 2 : 0), rx: Math.min(6, barW / 2),
+        x, y, width: barW, height: Math.max(bh, v ? 2 : 0), rx: Math.min(6, barW / 2),
         fill: DCOLOR[DOMAINS[i]], stroke: "var(--jk-ink)", "stroke-width": 1
       }));
-      const t = el("text", { x: i * bw + bw / 2, y: h - 6, "text-anchor": "middle", "font-size": 12, fill: "var(--jk-t2)" });
-      t.textContent = short[i];
+      const count = el("text", {
+        x: i * bw + bw / 2, y: Math.max(13, y - 5), "text-anchor": "middle",
+        "font-size": fs, "font-weight": "650", fill: "var(--jk-ink)"
+      });
+      count.textContent = String(v);
+      svg.appendChild(count);
+      const t = el("text", { x: i * bw + bw / 2, y: h - 6, "text-anchor": "middle", "font-size": fs, fill: "var(--jk-t2)" });
+      t.textContent = names[i];
       svg.appendChild(t);
     });
     plot.textContent = "";
@@ -230,18 +257,17 @@
   function bandSvg(p) {
     const lo = +p.probLow || 0, hi = +p.probHigh || 0, mid = p.midpoint == null ? (lo + hi) / 2 : +p.midpoint;
     const mkt = p.market && p.market.yesPrice != null ? +p.market.yesPrice : null;
-    const X = (v) => Math.max(0, Math.min(1000, (v / 100) * 1000));
-    const gid = "band-" + String(p.id || "x").replace(/[^a-z0-9]/gi, "");
-    const width = Math.max(X(hi) - X(lo), 8);
+    const left = Math.max(0, Math.min(100, lo));
+    const width = Math.max(Math.max(0, Math.min(100, hi)) - left, 0.8);
     const label = `Band ${fmtP(lo)} to ${fmtP(hi)}, midpoint ${fmtP(mid)}${mkt != null ? `, market ${fmtP(mkt)}` : ""}`;
-    return `<svg class="band" viewBox="0 0 1000 46" role="img" aria-label="${esc(label)}">
-      <defs><linearGradient id="${gid}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="var(--pd-band-0)"/><stop offset="1" stop-color="var(--pd-band-1)"/></linearGradient></defs>
-      <line x1="8" x2="992" y1="16" y2="16" stroke="var(--jk-hair)" stroke-width="8" stroke-linecap="round"/>
-      <rect x="${X(lo).toFixed(1)}" y="10" width="${width.toFixed(1)}" height="12" rx="6" fill="url(#${gid})" stroke="var(--jk-ink)" stroke-width="1"/>
-      <line x1="${X(mid).toFixed(1)}" x2="${X(mid).toFixed(1)}" y1="4" y2="28" stroke="var(--jk-ink)" stroke-width="2" stroke-linecap="round"/>
-      ${mkt != null ? `<rect x="${(X(mkt) - 5).toFixed(1)}" y="11" width="10" height="10" rx="1" transform="rotate(45 ${X(mkt).toFixed(1)} 16)" fill="var(--jk-bg)" stroke="var(--jk-ink)" stroke-width="1.6"/>` : ""}
-      ${[0, 25, 50, 75, 100].map((t) => `<text x="${X(t)}" y="42" text-anchor="${t === 0 ? "start" : t === 100 ? "end" : "middle"}" font-size="12" fill="var(--jk-t2)">${t}</text>`).join("")}
-    </svg>`;
+    return `<div class="band" role="img" aria-label="${esc(label)}">
+      <div class="band-track">
+        <div class="band-range" style="left:${left.toFixed(2)}%;width:${width.toFixed(2)}%"></div>
+        <div class="band-mid" style="left:${Math.max(0, Math.min(100, mid)).toFixed(2)}%"></div>
+        ${mkt != null ? `<div class="band-mkt" style="left:${Math.max(0, Math.min(100, mkt)).toFixed(2)}%"></div>` : ""}
+      </div>
+      <div class="band-scale" aria-hidden="true"><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div>
+    </div>`;
   }
 
   function outcomeClass(outcome) {
@@ -389,6 +415,11 @@
     $("#q").addEventListener("input", (e) => { state.q = e.target.value; renderOpen(); });
   }
 
+  function scrollOffset() {
+    const top = document.querySelector(".jk-top");
+    return top ? Math.ceil(top.getBoundingClientRect().bottom + 12) : 84;
+  }
+
   function jump(id) {
     state.domain = "All"; state.conf = "All"; state.q = "";
     const q = $("#q"); if (q) q.value = "";
@@ -396,6 +427,7 @@
     const el = document.getElementById("f-" + id);
     if (!el) return;
     if ("open" in el) el.open = true;
+    el.style.scrollMarginTop = scrollOffset() + "px";
     el.scrollIntoView({ behavior: reduced() ? "auto" : "smooth", block: "start" });
     el.classList.add("flash");
     setTimeout(() => el.classList.remove("flash"), 1600);
@@ -408,7 +440,7 @@
     const P = JaackPill.init(nav, (v) => {
       const s = document.getElementById(v);
       if (!s) return;
-      scrollTo({ top: s.getBoundingClientRect().top + scrollY - 76, behavior: reduced() ? "auto" : "smooth" });
+      scrollTo({ top: s.getBoundingClientRect().top + scrollY - scrollOffset(), behavior: reduced() ? "auto" : "smooth" });
     });
     if (!P) return;
     addEventListener("scroll", () => {
@@ -422,21 +454,10 @@
     requestAnimationFrame(() => P.place());
   }
 
-  function onResize() {
-    if (!DATA) return;
-    const box = $("#domainChart");
-    if (!box) return;
-    const w = box.clientWidth || 640;
-    const h = chartHeight(w);
-    if (chartReady) drawDomains(box, domainCounts(), w, h);
-    else box.style.height = h + "px";
-  }
-
   paintChrome();
   addEventListener("jaacktheme", paintChrome);
   initNav();
-  let resizeLock = 0;
-  addEventListener("resize", () => { clearTimeout(resizeLock); resizeLock = setTimeout(onResize, 150); });
+  watchChart();
 
   fetch("data/predictions.json", { cache: "no-cache" })
     .then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.json(); })
