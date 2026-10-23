@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-22T08:51:39+02:00",
+ "generatedAt": "2026-10-23T08:54:18+02:00",
  "timezone": "Europe/Rome",
  "counts": {
   "active": 42,
@@ -19,13 +19,13 @@
    "question": "Will the FOMC hold the fed funds target range at 3.75–4.00% at its Oct 27–28, 2026 meeting?",
    "domain": "Macro",
    "status": "Active",
-   "confidence": "Medium",
-   "probLow": 80.0,
-   "probHigh": 90.0,
-   "midpoint": 85.0,
+   "confidence": "High",
+   "probLow": 88.0,
+   "probHigh": 95.0,
+   "midpoint": 91.5,
    "horizon": "2026-10-28",
-   "staleAfter": "2026-10-23",
-   "lastReviewed": "2026-10-22",
+   "staleAfter": "2026-10-27",
+   "lastReviewed": "2026-10-23",
    "created": "2026-10-16",
    "summary": "After hiking in September, the Fed meets again on Oct 27–28. This tracks whether it pauses at 3.75–4.00% or moves again, with inflation still hot and oil above $100.",
    "triggers": [
@@ -42,16 +42,16 @@
    "market": null,
    "sources": [
     {
-     "publisher": "Invezz",
-     "date": "Oct 16 2026",
-     "note": "CME FedWatch 85.1% October hold; range 3.75–4.00% after Sept hike; Warsh 'I don't prejudge meetings'",
-     "url": "https://invezz.com/news/2026/10/16/fed-rate-hold-odds-jump-to-85-even-as-warsh-offers-no-clues-on-policy-path/"
+     "publisher": "Frenzy Capital Fed Watch",
+     "date": "Oct 23 2026",
+     "note": "Oct 28 FOMC: hold 92% / 25bp hike 8% from fed funds futures; Kalshi hold ~94%, Polymarket hike 6%; 2026 core PCE 3.0%, CPI 3.7%",
+     "url": "https://www.frenzycap.com/fedwatch"
     },
     {
-     "publisher": "CNBC",
-     "date": "Oct 14 2026",
-     "note": "Sept CPI 3.7% y/y, core 2.6%; October hike odds briefly 53.7%",
-     "url": "https://www.cnbc.com/2026/10/14/fed-may-now-have-to-hike-twice-or-increase-by-a-half-point-in-december-traders-bet.html"
+     "publisher": "MacroOdds",
+     "date": "Oct 23 2026",
+     "note": "Polymarket October FOMC: hold 93.5%, hike 5.9%, cut 0.3% ($57.4M volume)",
+     "url": "https://macroodds.com/fomc/october-2026"
     },
     {
      "publisher": "Federal Reserve FOMC calendar",
@@ -75,6 +75,18 @@
       90.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-23",
+     "from": [
+      80.0,
+      90.0
+     ],
+     "to": [
+      88.0,
+      95.0
+     ],
+     "reason": "(confidence Medium → High). Fed is in the pre-meeting blackout with five days to the Oct 28 decision. Futures-implied hold odds rose from ~86% a week earlier to 92% (hike 8%); Kalshi hold ~94% and Polymarket hold 93.5% agree. Hike pricing has moved to December (~82–90%). Residual NO risk = surprise hike on oil (>$110) / sticky inflation (core PCE 3.0%, CPI 3.7%). Midpoint 91.5% sits just below the futures/prediction-market consensus (92–94%). Stale After 2026-10-27 (day before decision)."
     }
    ],
    "outcome": null,
@@ -269,22 +281,18 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 62.0,
-   "probHigh": 74.0,
-   "midpoint": 68.0,
+   "probLow": 66.0,
+   "probHigh": 78.0,
+   "midpoint": 72.0,
    "horizon": "2026-11-03",
-   "staleAfter": "2026-10-23",
-   "lastReviewed": "2026-10-22",
+   "staleAfter": "2026-10-27",
+   "lastReviewed": "2026-10-23",
    "created": "2026-10-18",
    "summary": "The US has paused strikes on Iran ahead of the midterms while indirect talks continue. This tracks whether that pause actually holds through Election Day on Nov 3.",
    "triggers": [
     {
-     "label": "Toward NO (strike happened or comes soon)",
-     "text": "Konarak claim (Iranian Navy via Al Jazeera, 19 Oct: two projectiles hit a 35mm gun, 2 wounded; Gooya News claims F/A-18s from USS George H.W. Bush) still inside the 3-day adjudication window (~22 Oct Iran time) and would qualify if credibly shown to be air-launched; Axios (via Gulf News, 20 Oct) that Hegseth met Netanyahu in Israel amid talks on resuming major combat and the Pentagon has strike plans ready; Erem News / Israel Hayom (19 Oct) that Trump is weighing Kharg Island oil-hub strikes before the 3 Nov midterms; IRGC threats to Hormuz undersea cables or a new attack on US forces inviting retaliation."
-    },
-    {
      "label": "Toward YES",
-     "text": "a US official told CNN the Konarak claim is 'inaccurate, as usual' and CENTCOM has not confirmed it, with no independent corroboration; last confirmed US strikes on Iran were 1 Sep; Trump said 19 Oct the US 'could leave right now' and has pledged no strikes before the midterms; political cost of an oil spike (Brent ~$110) days before the vote."
+     "text": "White House on-record pledge (22 Oct) of no attack before the midterms; Israeli sources say renewed strikes come after the vote; political cost of oil >$110 days before the election; CENTCOM says Hormuz remains open; no confirmed US strike on Iran since 1 Sep."
     }
    ],
    "resolution": "Per Polymarket rules: resolves NO if the US initiates an air strike (bombs, air-to-surface missiles, air-launched drones) or surface-to-surface missile/one-way drone strike that directly impacts Iran's terrestrial territory (incl. internal waters) by Nov 3, 2026 11:59 PM ET. Intercepted munitions, cyber, naval gunfire, artillery, ground incursions, threats, and minor surface-to-surface strikes (short-range loitering munitions, FPV, ATGM) do not count. Where sources conflict on occurrence/attribution/timing, market stays open until consensus or 3 full calendar days Iran Standard Time from first credibly reported evidence, then adjudicates on totality of official US/Iran + credible reporting. Do NOT mark this row Resolved until those conditions are met. Re-score immediately on: US/CENTCOM confirm or deny; Reuters/AP/IRNA corroboration; resolution source consensus that Konarak qualifies; or a Kharg / energy-infrastructure strike.",
@@ -292,35 +300,35 @@
     "venue": "Polymarket",
     "name": "US-Iran ceasefire continues through the midterms?",
     "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms",
-    "yesPrice": 76.5,
-    "asOf": "2026-10-20T08:49:00+02:00",
-    "gapPts": -8.5,
-    "insideBand": false
+    "yesPrice": 73.5,
+    "asOf": "2026-10-23T08:51:00+02:00",
+    "gapPts": -1.5,
+    "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma",
-     "date": "Oct 20 2026",
-     "note": "Yes 0.765 (bid 0.76 / ask 0.77, last 0.77), conditionId 0x613613192c69d90cee89758c260a019368fc1f4a596b4d300c39b6235d2b643f, read Oct 20 2026 08:49 Rome",
+     "date": "Oct 23 2026",
+     "note": "Yes 0.735 (bid 0.73 / ask 0.74, last 0.73, liquidity ~$198k), active, conditionId 0x613613192c69d90cee89758c260a019368fc1f4a596b4d300c39b6235d2b643f, read Oct 23 2026 08:51 Rome",
      "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms"
     },
     {
-     "publisher": "Newsquawk",
+     "publisher": "ABC News",
      "date": "Oct 2026",
-     "note": "Iranian Navy says US hit Konarak naval base with 'two light projectiles'; two soldiers injured; cites Al Jazeera",
-     "url": "https://www.newsquawk.com/headlines/iranian-navy-says-that-the-us-military-attacked-the-konarak-naval-base-with-two-light-projectiles-early-this-morning-reports-al-jazeera"
+     "note": "White House: 'The United States will not be attacking Iran at any time prior to the midterm elections'; Israeli sources: US/Israel plans to renew joint strikes, 'almost certainly' after the midterms; US repositioning forces",
+     "url": "https://abcnews.com/Politics/us-israel-drawing-plans-resume-attacks-iran-post/story?id=137479897"
+    },
+    {
+     "publisher": "Al Jazeera",
+     "date": "Oct 2026",
+     "note": "IRGC claims seven tankers hit in Hormuz (unverified); warns conflict will extend to US bases if escorts continue; CENTCOM disputes mine claims, says strait open",
+     "url": "https://www.aljazeera.com/news/2026/10/22/iran-says-seven-ships-hit-in-hormuz-strait-warns-us-of-wider-response"
     },
     {
      "publisher": "Hindustan Times",
      "date": "Oct 2026",
      "note": "US official to CNN: Iran's Konarak claim 'inaccurate ... as usual'; no independent confirmation; Gooya News F/A-18 claim unverified",
      "url": "https://www.hindustantimes.com/world-news/us-news/us-official-denies-irans-claim-that-american-forces-targeted-konarak-naval-base-inaccurate-as-usual-101792442169949.html"
-    },
-    {
-     "publisher": "Gulf News",
-     "date": "Oct 2026",
-     "note": "CENTCOM has not confirmed Konarak; last US strikes on Iran 1 Sep (IranWire); Axios: Hegseth met Netanyahu amid talks on resuming major combat; Trump 'we could leave right now'; IRGC cable threats",
-     "url": "https://gulfnews.com/uae/us-israel-iran-war-lull-nears-breaking-point-us-israel-weighing-new-strikes-what-to-know-oct-20-2026-1.500716736"
     }
    ],
    "history": [
@@ -356,6 +364,18 @@
       74.0
      ],
      "reason": "A US official told CNN the Konarak claim is 'inaccurate, as usual'; CENTCOM has not confirmed and nothing independent corroborates it, so the chance Konarak is adjudicated as a qualifying US strike drops sharply. Market Yes recovered to ~0.765. Not raised to market because escalation talk is live (Axios: Hegseth–Netanyahu talks on resuming major combat; Kharg-weighing report) with 14 days left, and the 3-day adjudication window runs to ~22 Oct Iran time. Midpoint 68% is ~8.5 pts BELOW market. Stale After set to 2026-10-23 (day after the window closes)."
+    },
+    {
+     "date": "2026-10-23",
+     "from": [
+      62.0,
+      74.0
+     ],
+     "to": [
+      66.0,
+      78.0
+     ],
+     "reason": "Konarak: the ~3-day adjudication window has passed with no CENTCOM confirmation and no independent corroboration (US official to CNN: 'inaccurate, as usual'), so it is very unlikely to be counted as a qualifying strike. New: White House on the record to ABC News (22 Oct): 'The United States will not be attacking Iran at any time prior to the midterm elections'; Israeli sources (ABC/NYT, 22 Oct) say renewed joint strikes are planned but 'almost certainly' after the Nov 3 vote. Offsetting risk: IRGC claims seven tankers hit in Hormuz (22 Oct, unverified; CENTCOM disputes) and threatens US bases if escorts continue — an attack on US forces could force retaliation before Nov 3; US is repositioning forces in the region; Trump: 'something one way or the other that'll happen fairly soon'. Window ends Nov 3 11:59 PM ET, so a strike on election night itself is a small tail. Market Yes 0.735 (bid 0.73 / ask 0.74, liquidity ~$198k) read Oct 23 2026 08:51 Rome. Midpoint 72% is ~1.5 pts BELOW market. Stale After 2026-10-27 (Israeli election)."
     }
    ],
    "outcome": null,
