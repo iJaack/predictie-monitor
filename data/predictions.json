@@ -1,14 +1,14 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-24T08:48:22+02:00",
+ "generatedAt": "2026-10-25T08:52:01+01:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 42,
+  "active": 43,
   "resolved": 1,
   "byDomain": {
    "Macro": 4,
+   "Geopolitics": 9,
    "Crypto": 27,
-   "Geopolitics": 8,
    "AI": 2,
    "Enterprise": 1
   }
@@ -25,7 +25,7 @@
    "midpoint": 91.5,
    "horizon": "2026-10-28",
    "staleAfter": "2026-10-27",
-   "lastReviewed": "2026-10-23",
+   "lastReviewed": "2026-10-25",
    "created": "2026-10-16",
    "summary": "After hiking in September, the Fed meets again on Oct 27–28. This tracks whether it pauses at 3.75–4.00% or moves again, with inflation still hot and oil above $100.",
    "triggers": [
@@ -94,17 +94,80 @@
    "resolvedOn": null
   },
   {
+   "id": "fa4953d1a0",
+   "question": "Will Gadi Eisenkot's Yashar win the most Knesset seats in Israel's Oct 27, 2026 election?",
+   "domain": "Geopolitics",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 55.0,
+   "probHigh": 70.0,
+   "midpoint": 62.5,
+   "horizon": "2026-10-30",
+   "staleAfter": "2026-10-28",
+   "lastReviewed": "2026-10-25",
+   "created": "2026-10-25",
+   "summary": "Israel votes on October 27, and the final polls put Gadi Eisenkot's new Yashar party two seats ahead of Netanyahu's Likud. This tracks whether Yashar actually finishes first in the Knesset, which would shape who gets the first shot at forming a government.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "exit polls (KAN/Channel 12/Channel 13 at 22:00 Israel time, Oct 27) showing Yashar ahead of Likud; high opposition turnout (80% of opposition supporters 'certain' to vote vs 75% of coalition supporters in KAN's final poll); Bennett's Together surging at Likud's expense rather than Yashar's."
+    },
+    {
+     "label": "Toward NO",
+     "text": "Likud's historical tendency to beat final polls (late right-wing consolidation); 36% of voters still undecided in the final KAN poll; a US/Israeli strike on Iran before the vote (rally-round-the-flag effect); Yashar losing votes to Together (Bennett gained 2 seats in the last KAN poll while Yashar lost 1)."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if Yashar (incl. any joint list it heads) wins the greatest number of Knesset seats in the Oct 27, 2026 election, by consensus of credible reporting, or the official Central Elections Committee results if ambiguous. Ties go to the list with more valid votes. Resolves NO if any other party (e.g. Likud) wins the most seats. Thesis invalidated if exit polls put Likud ahead of Yashar by 2+ seats.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Yashar win the most seats in the 2026 Israeli legislative election?",
+    "url": "https://polymarket.com/event/israeli-legislative-election-winner/will-yashar-win-the-most-seats-in-the-2026-israeli-legislative-election",
+    "yesPrice": 70.5,
+    "asOf": "2026-10-25T09:00:00+01:00",
+    "gapPts": -8.0,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma",
+     "date": "Oct 25 2026",
+     "note": "Yes 0.705 (bid 0.70 / ask 0.71, liquidity ~$279k, volume ~$746k), active, conditionId 0xd05da9807740aa0f5bc9e9232daabe87a21e5012c19e283abf414f1c1651118b; Likud option Yes 0.29, read Oct 25 2026 ~09:00 Rome",
+     "url": "https://polymarket.com/event/israeli-legislative-election-winner/will-yashar-win-the-most-seats-in-the-2026-israeli-legislative-election"
+    },
+    {
+     "publisher": "Anadolu Agency",
+     "date": "Oct 2026",
+     "note": "final legal polls (KAN and Channel 12): Yashar 22 seats, Likud 20, Together 14; Eisenkot camp 52 vs Netanyahu bloc 50, neither near 61; 36% undecided (KAN); Eisenkot beats Netanyahu 44–38% on PM suitability",
+     "url": "https://www.aa.com.tr/en/world/netanyahu-bloc-trailing-opposition-with-projected-50-seats-to-52-in-final-israeli-election-polls/4099160"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-25",
+     "from": null,
+     "to": [
+      55.0,
+      70.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
    "id": "8b2b3fa149",
    "question": "Will US spot Bitcoin ETFs finish October 2026 with positive aggregate net flows?",
    "domain": "Crypto",
    "status": "Active",
-   "confidence": "Medium",
-   "probLow": 70.0,
-   "probHigh": 82.0,
-   "midpoint": 76.0,
+   "confidence": "Low",
+   "probLow": 30.0,
+   "probHigh": 45.0,
+   "midpoint": 37.5,
    "horizon": "2026-10-30",
-   "staleAfter": "2026-10-27",
-   "lastReviewed": "2026-10-22",
+   "staleAfter": "2026-10-28",
+   "lastReviewed": "2026-10-25",
    "created": "2026-10-16",
    "summary": "US spot Bitcoin ETFs have seen net outflows for most of October. This asks whether a late-month turnaround pushes the monthly total back above zero, a gauge of institutional crypto demand.",
    "triggers": [
@@ -122,27 +185,27 @@
    "sources": [
     {
      "publisher": "Farside Investors BTC ETF flow table",
-     "date": "Oct 21 2026",
-     "note": "Oct 19 +$526.7M, Oct 20 +$23.2M, Oct 21 +$524.8M (IBIT +$235.0M, FBTC +$212.7M); Oct 2–21 rows sum to ≈ +$357.3M",
+     "date": "Oct 23 2026",
+     "note": "Oct 21 +$524.8M, Oct 22 −$635.6M, Oct 23 −$137.9M (IBIT −$110.3M, FBTC −$31.8M)",
      "url": "https://farside.co.uk/BTC/"
     },
     {
-     "publisher": "Alpha Finance BTC ETF tracker",
-     "date": null,
-     "note": "Oct 1 +$102.7M",
-     "url": "https://alphafinance.io/etf/bitcoin/"
+     "publisher": "CryptoWatchDesk ETF Desk",
+     "date": "Oct 24 2026",
+     "note": "October is −$313.5M for US spot BTC ETFs after 17 sessions; week of Oct 19–23 +$301.2M; IBIT +$755.2M MTD, FBTC −$588.5M MTD; BTC ~$80,755 on Kraken",
+     "url": "https://cryptowatchdesk.com/news/etf-desk-oct-23-bitcoin-etfs-138-million-outflow-week-positive-301-million"
     },
     {
-     "publisher": "CoinLab ETF flows",
-     "date": null,
-     "note": "Oct 21 +$289.84M on SoSoValue (IBIT reported 0 there, so sources differ on IBIT), 2-day inflow streak",
-     "url": "https://coinlab.info/en/indicators/etf-flows/"
+     "publisher": "Al Jazeera",
+     "date": "Oct 24 2026",
+     "note": "Trump weighing new strikes on Iran ('may do another Epic Fury'); Brent ~$117, highest since April",
+     "url": "https://www.aljazeera.com/news/2026/10/24/iran-says-wont-allow-us-warships-to-get-close-as-trump-ponders-new-attacks"
     },
     {
-     "publisher": "CoinDesk",
-     "date": "Oct 22 2026",
-     "note": "BTC gave back its run at $85k, back toward ~$82.5–83k as Tesla and Meta fail to calm AI nerves",
-     "url": "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves"
+     "publisher": "Frenzy Capital Fed Watch",
+     "date": "Oct 25 2026",
+     "note": "Oct 28 FOMC hold 92% / hike 8%; Dec hike ~76–84% priced",
+     "url": "https://www.frenzycap.com/fedwatch"
     }
    ],
    "history": [
@@ -190,6 +253,18 @@
       82.0
      ],
      "reason": "(confidence Low → Medium). Farside shows Oct 21 +$524.8M, so October MTD is now ≈ +$460M after 15 sessions (Farside Oct 2–21 + Alpha Finance Oct 1). The month now stays positive unless the 7 remaining sessions (Oct 22–30) lose more than ~$460M net. SoSoValue shows a smaller Oct 21 figure (+$289.8M), so the cushion may be thinner on other trackers. Not higher because BTC slipped back toward $82.5k on Oct 22, the Oct 28 FOMC (16% hike odds) is a two-sided risk, and single outflow days of −$250M to −$485M happened earlier this month."
+    },
+    {
+     "date": "2026-10-25",
+     "from": [
+      70.0,
+      82.0
+     ],
+     "to": [
+      30.0,
+      45.0
+     ],
+     "reason": "(confidence Medium → Low). Two straight outflow days wiped out the cushion: Oct 22 −$635.6M and Oct 23 −$137.9M (Farside), so October is now ≈ −$313.5M after 17 sessions (CryptoWatchDesk, consistent with the running Farside sum). About +$314M is needed over the 5 remaining sessions (Oct 26–30), roughly +$63M/day. BTC dipped below $80k on Saturday amid renewed US–Iran strike talk (Brent ~$117) and AI-credit stress; the Oct 28 FOMC hold is priced (92%), so a dovish surprise is the main upside path. Daily flows still swing ±$500M, so YES is far from dead."
     }
    ],
    "outcome": null,
@@ -286,7 +361,7 @@
    "midpoint": 72.0,
    "horizon": "2026-11-03",
    "staleAfter": "2026-10-27",
-   "lastReviewed": "2026-10-23",
+   "lastReviewed": "2026-10-25",
    "created": "2026-10-18",
    "summary": "The US has paused strikes on Iran ahead of the midterms while indirect talks continue. This tracks whether that pause actually holds through Election Day on Nov 3.",
    "triggers": [
@@ -300,35 +375,35 @@
     "venue": "Polymarket",
     "name": "US-Iran ceasefire continues through the midterms?",
     "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms",
-    "yesPrice": 73.5,
-    "asOf": "2026-10-23T08:51:00+02:00",
-    "gapPts": -1.5,
-    "insideBand": true
+    "yesPrice": 80.0,
+    "asOf": "2026-10-25T08:49:00+01:00",
+    "gapPts": -8.0,
+    "insideBand": false
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma",
-     "date": "Oct 23 2026",
-     "note": "Yes 0.735 (bid 0.73 / ask 0.74, last 0.73, liquidity ~$198k), active, conditionId 0x613613192c69d90cee89758c260a019368fc1f4a596b4d300c39b6235d2b643f, read Oct 23 2026 08:51 Rome",
+     "date": "Oct 25 2026",
+     "note": "Yes 0.80 (bid 0.79 / ask 0.81, last 0.80, liquidity ~$83k), active, conditionId 0x613613192c69d90cee89758c260a019368fc1f4a596b4d300c39b6235d2b643f, read Oct 25 2026 08:49 Rome",
      "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms"
     },
     {
      "publisher": "ABC News",
      "date": "Oct 2026",
-     "note": "White House: 'The United States will not be attacking Iran at any time prior to the midterm elections'; Israeli sources: US/Israel plans to renew joint strikes, 'almost certainly' after the midterms; US repositioning forces",
+     "note": "White House: 'The United States will not be attacking Iran at any time prior to the midterm elections'; Israeli sources: US/Israel plans to renew joint strikes, 'almost certainly' after the midterms",
      "url": "https://abcnews.com/Politics/us-israel-drawing-plans-resume-attacks-iran-post/story?id=137479897"
     },
     {
-     "publisher": "Al Jazeera",
+     "publisher": "India Today",
      "date": "Oct 2026",
-     "note": "IRGC claims seven tankers hit in Hormuz (unverified); warns conflict will extend to US bases if escorts continue; CENTCOM disputes mine claims, says strait open",
-     "url": "https://www.aljazeera.com/news/2026/10/22/iran-says-seven-ships-hit-in-hormuz-strait-warns-us-of-wider-response"
+     "note": "Trump (Oct 24, Florida): 'Maybe tomorrow... There's a possibility I will. There's also a possibility we'll have a nice, big, beautiful agreement'; Oct 23 rally: 'We may do another little Epic Fury'",
+     "url": "https://www.indiatoday.in/world/us-news/story/us-iran-tensions-trump-sunday-strike-diplomatic-deal-3024504-2026-10-25"
     },
     {
-     "publisher": "Hindustan Times",
+     "publisher": "CBS News live updates",
      "date": "Oct 2026",
-     "note": "US official to CNN: Iran's Konarak claim 'inaccurate ... as usual'; no independent confirmation; Gooya News F/A-18 claim unverified",
-     "url": "https://www.hindustantimes.com/world-news/us-news/us-official-denies-irans-claim-that-american-forces-targeted-konarak-naval-base-inaccurate-as-usual-101792442169949.html"
+     "note": "Amb. Barrack: strike 'absolutely' possible this weekend; DNI memo on advanced Iranian plots against US personnel; Iran: US ships never allowed in the Gulf; US has dialed back military ops in favor of economic pressure",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-oil-gas-prices-strait-of-hormuz-midterms/"
     }
    ],
    "history": [
@@ -2287,7 +2362,7 @@
    "midpoint": 11.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-10-27",
-   "lastReviewed": "2026-10-19",
+   "lastReviewed": "2026-10-25",
    "created": "2026-10-18",
    "summary": "Mojtaba Khamenei became Iran's de facto leader in March but has rarely been seen since. This asks whether he is removed, incapacitated or replaced by year end, a risk concentrated around possible renewed strikes after the US midterms.",
    "triggers": [
@@ -2504,7 +2579,7 @@
    "midpoint": 70.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-10-22",
+   "lastReviewed": "2026-10-25",
    "created": "2026-10-16",
    "summary": "Schwab announced in August plans to add SOL, AVAX and LINK to Schwab Crypto, and its CEO has since promised 'three new coins by the end of the year' without naming them. This asks whether AVAX is actually live for Schwab clients by Dec 31.",
    "triggers": [
