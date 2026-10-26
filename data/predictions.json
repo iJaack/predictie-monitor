@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-25T08:52:01+01:00",
+ "generatedAt": "2026-10-26T08:48:40+01:00",
  "timezone": "Europe/Rome",
  "counts": {
   "active": 43,
@@ -25,7 +25,7 @@
    "midpoint": 91.5,
    "horizon": "2026-10-28",
    "staleAfter": "2026-10-27",
-   "lastReviewed": "2026-10-25",
+   "lastReviewed": "2026-10-26",
    "created": "2026-10-16",
    "summary": "After hiking in September, the Fed meets again on Oct 27–28. This tracks whether it pauses at 3.75–4.00% or moves again, with inflation still hot and oil above $100.",
    "triggers": [
@@ -104,7 +104,7 @@
    "midpoint": 62.5,
    "horizon": "2026-10-30",
    "staleAfter": "2026-10-28",
-   "lastReviewed": "2026-10-25",
+   "lastReviewed": "2026-10-26",
    "created": "2026-10-25",
    "summary": "Israel votes on October 27, and the final polls put Gadi Eisenkot's new Yashar party two seats ahead of Netanyahu's Likud. This tracks whether Yashar actually finishes first in the Knesset, which would shape who gets the first shot at forming a government.",
    "triggers": [
@@ -167,7 +167,7 @@
    "midpoint": 37.5,
    "horizon": "2026-10-30",
    "staleAfter": "2026-10-28",
-   "lastReviewed": "2026-10-25",
+   "lastReviewed": "2026-10-26",
    "created": "2026-10-16",
    "summary": "US spot Bitcoin ETFs have seen net outflows for most of October. This asks whether a late-month turnaround pushes the monthly total back above zero, a gauge of institutional crypto demand.",
    "triggers": [
@@ -361,7 +361,7 @@
    "midpoint": 72.0,
    "horizon": "2026-11-03",
    "staleAfter": "2026-10-27",
-   "lastReviewed": "2026-10-25",
+   "lastReviewed": "2026-10-26",
    "created": "2026-10-18",
    "summary": "The US has paused strikes on Iran ahead of the midterms while indirect talks continue. This tracks whether that pause actually holds through Election Day on Nov 3.",
    "triggers": [
@@ -2001,23 +2001,23 @@
    "question": "Will Ethereum's Glamsterdam upgrade activate on mainnet by Dec 31, 2026?",
    "domain": "Crypto",
    "status": "Active",
-   "confidence": "Low",
-   "probLow": 55.0,
-   "probHigh": 70.0,
-   "midpoint": 62.5,
+   "confidence": "Medium",
+   "probLow": 10.0,
+   "probHigh": 22.0,
+   "midpoint": 16.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-10-30",
-   "lastReviewed": "2026-10-18",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-26",
    "created": "2026-10-18",
    "summary": "Glamsterdam is Ethereum's next major upgrade, raising capacity roughly threefold. Its final test runs Oct 26 and developers have floated Dec 1 or Dec 8 for launch; this asks whether it ships in 2026.",
    "triggers": [
     {
      "label": "Toward yes",
-     "text": "Hoodi forks cleanly on Oct 26 17:42 UTC; core devs pick Dec 1 (epoch 493,056) or Dec 8 (epoch 494,592) on the calls after Hoodi; client releases ship on time (Sepolia forked and finalized on Oct 6 as planned)."
+     "text": "core devs resolve the EIP-8037 issue quickly (drop or patch it) and reschedule Hoodi by early November with a mainnet date picked on the same call; a compressed Hoodi→mainnet gap of ~3–4 weeks landing before the holiday freeze."
     },
     {
      "label": "Toward no",
-     "text": "Hoodi finality or ePBS/builder problems (Lido asked for Dec 8 because builders need more testing); the schedule already slipped from H1 to Q3 to Q4 2026; holiday freeze pushes any slip past Dec 8 into January."
+     "text": "no new Hoodi date by ~Nov 6; EIP-8037 needs a spec change and new client releases (another full testnet cycle); ePBS/builder readiness concerns (Lido already wanted Dec 8 before the delay); holiday freeze pushes any slip into 2027; the schedule has already slipped H1→Q3→Q4 2026."
     }
    ],
    "resolution": "Resolves YES if the Glamsterdam (Amsterdam + Gloas) hard fork activates on Ethereum mainnet at or before 23:59 UTC Dec 31, 2026, as confirmed by an Ethereum Foundation blog post or the fork epoch being reached on mainnet. Resolves NO if activation is scheduled for or happens after that time, or the fork is postponed.",
@@ -2025,21 +2025,27 @@
    "sources": [
     {
      "publisher": "Ethereum Foundation blog",
+     "date": "Oct 22 2026",
+     "note": "'Glamsterdam on Hoodi Postponed': Oct 26 Hoodi activation removed (ACDE #248) to investigate EIP-8037 interactions with mainnet contracts; no replacement date; mainnet date not set",
+     "url": "https://blog.ethereum.org/2026/10/22/glamsterdam-hoodi-delay"
+    },
+    {
+     "publisher": "Ethereum Foundation blog",
      "date": "Oct 16 2026",
-     "note": "Hoodi activation Oct 26 2026 17:42:48 UTC; mainnet date not decided",
+     "note": "original Hoodi schedule Oct 26 17:42 UTC now superseded; Sepolia forked Oct 6",
      "url": "https://blog.ethereum.org/2026/10/16/glamsterdam-hoodi-announcement"
+    },
+    {
+     "publisher": "Sigma Prime",
+     "date": "Oct 23 2026",
+     "note": "Hoodi fork 'cancelled until further notice'; Lighthouse v8.3.2 disables it",
+     "url": "https://sigmaprime.io/blog/glamsterdam-hoodi/"
     },
     {
      "publisher": "ChainGate",
      "date": "Oct 16 2026",
-     "note": "ACDC #189: Dec 1 or Dec 8 mainnet proposed, conditional on Hoodi; Lido prefers Dec 8; schedule moved H1→Q3→Q4 this year",
+     "note": "ACDC #189: Dec 1 or Dec 8 mainnet had been proposed conditional on Hoodi; Lido prefers Dec 8",
      "url": "https://chaingate.dev/learn/ethereum-glamsterdam-upgrade"
-    },
-    {
-     "publisher": "ethereum.org",
-     "date": "Sep 14 2026",
-     "note": "roadmap: expected on mainnet Q4 2026, date not confirmed",
-     "url": "https://ethereum.org/roadmap/glamsterdam/"
     }
    ],
    "history": [
@@ -2051,6 +2057,18 @@
       70.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-26",
+     "from": [
+      55.0,
+      70.0
+     ],
+     "to": [
+      10.0,
+      22.0
+     ],
+     "reason": "(confidence Low → Medium). EF postponed the Oct 26 Hoodi activation on Oct 22 (ACDE #248) to investigate EIP-8037's interaction with deployed mainnet contracts; no replacement Hoodi or mainnet date. Hoodi is the last public testnet, and the Dec 1/Dec 8 mainnet candidates were conditional on it. Even a quick reschedule (mid-Nov) leaves only ~4–6 weeks to year-end, below the ~5-week Hoodi→mainnet gap seen with Fusaka, and the holiday freeze adds slip risk. Missed on the Oct 22–25 reviews because this row's Stale After (Oct 30) had not come due; caught in today's scan."
     }
    ],
    "outcome": null,
@@ -2362,7 +2380,7 @@
    "midpoint": 11.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-10-27",
-   "lastReviewed": "2026-10-25",
+   "lastReviewed": "2026-10-26",
    "created": "2026-10-18",
    "summary": "Mojtaba Khamenei became Iran's de facto leader in March but has rarely been seen since. This asks whether he is removed, incapacitated or replaced by year end, a risk concentrated around possible renewed strikes after the US midterms.",
    "triggers": [
@@ -2579,7 +2597,7 @@
    "midpoint": 70.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-10-25",
+   "lastReviewed": "2026-10-26",
    "created": "2026-10-16",
    "summary": "Schwab announced in August plans to add SOL, AVAX and LINK to Schwab Crypto, and its CEO has since promised 'three new coins by the end of the year' without naming them. This asks whether AVAX is actually live for Schwab clients by Dec 31.",
    "triggers": [
