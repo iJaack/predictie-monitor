@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-26T08:48:40+01:00",
+ "generatedAt": "2026-10-26T08:48:53+01:00",
  "timezone": "Europe/Rome",
  "counts": {
   "active": 43,
@@ -2009,7 +2009,7 @@
    "staleAfter": "2026-11-06",
    "lastReviewed": "2026-10-26",
    "created": "2026-10-18",
-   "summary": "Glamsterdam is Ethereum's next major upgrade, raising capacity roughly threefold. Its final test runs Oct 26 and developers have floated Dec 1 or Dec 8 for launch; this asks whether it ships in 2026.",
+   "summary": "Glamsterdam is Ethereum's next major upgrade, raising capacity roughly threefold. Its final public test, planned for Oct 26, was postponed with no new date, so this asks whether it can still reach mainnet in 2026.",
    "triggers": [
     {
      "label": "Toward yes",
