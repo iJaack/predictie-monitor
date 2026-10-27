@@ -1,15 +1,15 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-26T08:48:53+01:00",
+ "generatedAt": "2026-10-27T08:49:33+01:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 43,
+  "active": 44,
   "resolved": 1,
   "byDomain": {
    "Macro": 4,
    "Geopolitics": 9,
    "Crypto": 27,
-   "AI": 2,
+   "AI": 3,
    "Enterprise": 1
   }
  },
@@ -24,8 +24,8 @@
    "probHigh": 95.0,
    "midpoint": 91.5,
    "horizon": "2026-10-28",
-   "staleAfter": "2026-10-27",
-   "lastReviewed": "2026-10-26",
+   "staleAfter": "2026-10-28",
+   "lastReviewed": "2026-10-27",
    "created": "2026-10-16",
    "summary": "After hiking in September, the Fed meets again on Oct 27–28. This tracks whether it pauses at 3.75–4.00% or moves again, with inflation still hot and oil above $100.",
    "triggers": [
@@ -104,7 +104,7 @@
    "midpoint": 62.5,
    "horizon": "2026-10-30",
    "staleAfter": "2026-10-28",
-   "lastReviewed": "2026-10-26",
+   "lastReviewed": "2026-10-27",
    "created": "2026-10-25",
    "summary": "Israel votes on October 27, and the final polls put Gadi Eisenkot's new Yashar party two seats ahead of Netanyahu's Likud. This tracks whether Yashar actually finishes first in the Knesset, which would shape who gets the first shot at forming a government.",
    "triggers": [
@@ -167,7 +167,7 @@
    "midpoint": 37.5,
    "horizon": "2026-10-30",
    "staleAfter": "2026-10-28",
-   "lastReviewed": "2026-10-26",
+   "lastReviewed": "2026-10-27",
    "created": "2026-10-16",
    "summary": "US spot Bitcoin ETFs have seen net outflows for most of October. This asks whether a late-month turnaround pushes the monthly total back above zero, a gauge of institutional crypto demand.",
    "triggers": [
@@ -360,8 +360,8 @@
    "probHigh": 78.0,
    "midpoint": 72.0,
    "horizon": "2026-11-03",
-   "staleAfter": "2026-10-27",
-   "lastReviewed": "2026-10-26",
+   "staleAfter": "2026-10-29",
+   "lastReviewed": "2026-10-27",
    "created": "2026-10-18",
    "summary": "The US has paused strikes on Iran ahead of the midterms while indirect talks continue. This tracks whether that pause actually holds through Election Day on Nov 3.",
    "triggers": [
@@ -686,6 +686,81 @@
       35.0
      ],
      "reason": "The Oct 16 Reuters/Defense News report (order to throttle Starshield came from inside the White House) shows the US is willing to curb support quietly, but (a) a Starshield throttle is not intel sharing or PURL, so it doesn't count under the resolution rules, (b) it rests on anonymous officials, which also doesn't count, and (c) the on-record line is denial: Trump on Oct 16 ('it wasn't me… same as it's always been') and earlier that intel is still being shared. The administration is choosing deniable curbs over announced suspensions, so on-record confirmation by Nov 30 looks a bit less likely, even as pressure on Kyiv rises."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "dc065893f9",
+   "question": "Will Anthropic's shares be listed and open for trading on a public exchange by Nov 30, 2026?",
+   "domain": "AI",
+   "status": "Active",
+   "confidence": "Medium",
+   "probLow": 82.0,
+   "probHigh": 90.0,
+   "midpoint": 86.0,
+   "horizon": "2026-11-30",
+   "staleAfter": "2026-11-10",
+   "lastReviewed": "2026-10-27",
+   "created": "2026-10-27",
+   "summary": "Anthropic publicly filed for its IPO on Oct 26, 2026, with a roadshow reported for around Nov 9 and a Nasdaq listing under the ticker ANT. This tracks whether its shares actually start trading before the end of November.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "SEC registration declared effective; price range set in an amended S-1; public roadshow launching on schedule around Nov 9 (IFR); pricing the following week and a Nasdaq 'ANT' debut around Nov 16–20; strong book-building reports."
+    },
+    {
+     "label": "Toward NO",
+     "text": "roadshow slipping past mid-November; a sharp AI-stock or broad equity sell-off (10-year yield near 5%, Iran escalation, oil >$115); SEC comments delaying effectiveness; governance/safety pushback (NYC comptroller's call to pause the IPO) turning into investor demands; Thanksgiving-week market closure (Nov 26) compressing the window."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if Anthropic shares are listed on a public securities exchange and open for trading by 11:59 PM ET on Nov 30, 2026, per SEC filings, exchange listing confirmations or Anthropic press releases (consensus of credible reporting as fallback); resolves NO otherwise, or immediately if Anthropic is acquired by an already-public company. Thesis invalidated if the roadshow has not launched by Nov 16 or Anthropic announces a postponement.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Anthropic IPO by November 30, 2026?",
+    "url": "https://polymarket.com/event/anthropic-ipo-by/will-anthropic-ipo-by-november-30-2026",
+    "yesPrice": 89.0,
+    "asOf": "2026-10-27T08:50:00+01:00",
+    "gapPts": -3.0,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma",
+     "date": "November 30, 2026",
+     "note": "Yes 0.89 (bid 0.88 / ask 0.90, liquidity ~$16k, volume ~$524k), active, conditionId 0x5ba72dca702ddf6ac8ce0b992b521dd3b080109e39a5f022827ffda3ac8a60f6, read Oct 27 2026 ~08:50 Rome",
+     "url": "https://polymarket.com/event/anthropic-ipo-by/will-anthropic-ipo-by-november-30-2026"
+    },
+    {
+     "publisher": "Anthropic",
+     "date": "Oct 26 2026",
+     "note": "filed Form S-1 with the SEC; intends to list Class A stock on Nasdaq Global Select as 'ANT'; share count and price range not yet set",
+     "url": "https://www.anthropic.com/news/s1-sec"
+    },
+    {
+     "publisher": "IFR",
+     "date": "Oct 2026",
+     "note": "public filing Oct 26, roadshow Nov 9, pricing the following week; targeting up to $100bn at ~$2trn; NYC comptroller asked Anthropic to pause the IPO",
+     "url": "https://www.ifre.com/equities/2499407/anthropic-pushes-ahead-with-mid-november-ipo"
+    },
+    {
+     "publisher": "Cboe Insights",
+     "date": "Oct 26 2026",
+     "note": "S-1 is 335 pages; roadshow in two weeks, could go public before Thanksgiving; Q3 revenue $16.3bn; Nasdaq +0.83% on the filing",
+     "url": "https://www.cboe.com/insights/posts/anthropic-s-1-registration-dominates-leads-nasdaq-higher"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-27",
+     "from": null,
+     "to": [
+      82.0,
+      90.0
+     ],
+     "reason": "Forecast opened."
     }
    ],
    "outcome": null,
@@ -2379,8 +2454,8 @@
    "probHigh": 15.0,
    "midpoint": 11.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-10-27",
-   "lastReviewed": "2026-10-26",
+   "staleAfter": "2026-11-04",
+   "lastReviewed": "2026-10-27",
    "created": "2026-10-18",
    "summary": "Mojtaba Khamenei became Iran's de facto leader in March but has rarely been seen since. This asks whether he is removed, incapacitated or replaced by year end, a risk concentrated around possible renewed strikes after the US midterms.",
    "triggers": [
@@ -2597,7 +2672,7 @@
    "midpoint": 70.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-10-26",
+   "lastReviewed": "2026-10-27",
    "created": "2026-10-16",
    "summary": "Schwab announced in August plans to add SOL, AVAX and LINK to Schwab Crypto, and its CEO has since promised 'three new coins by the end of the year' without naming them. This asks whether AVAX is actually live for Schwab clients by Dec 31.",
    "triggers": [

@@ -42,5 +42,6 @@
   "805ac27b86": "Ethena's USDe is a synthetic dollar backed by hedged crypto positions. This asks whether it loses its $1 peg badly, below $0.98 for a full day, before year end.",
   "12fc7063da": "Aave is the largest crypto lending app, holding about $18B. This asks whether a crash cuts that below $10B on any day this year.",
   "4026328865": "NEAR has more than doubled since August on a new US ETF and rising usage. This asks whether its governance body approves cutting new token issuance from 2.5% to 1.6% a year before year end.",
-  "fa4953d1a0": "Israel votes on October 27, and the final polls put Gadi Eisenkot's new Yashar party two seats ahead of Netanyahu's Likud. This tracks whether Yashar actually finishes first in the Knesset, which would shape who gets the first shot at forming a government."
+  "fa4953d1a0": "Israel votes on October 27, and the final polls put Gadi Eisenkot's new Yashar party two seats ahead of Netanyahu's Likud. This tracks whether Yashar actually finishes first in the Knesset, which would shape who gets the first shot at forming a government.",
+  "dc065893f9": "Anthropic publicly filed for its IPO on Oct 26, 2026, with a roadshow reported for around Nov 9 and a Nasdaq listing under the ticker ANT. This tracks whether its shares actually start trading before the end of November."
 }
