@@ -1,175 +1,33 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-27T08:49:33+01:00",
+ "generatedAt": "2026-10-30T17:56:12+01:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 44,
-  "resolved": 1,
+  "active": 42,
+  "resolved": 4,
   "byDomain": {
-   "Macro": 4,
-   "Geopolitics": 9,
    "Crypto": 27,
+   "Geopolitics": 8,
    "AI": 3,
+   "Macro": 3,
    "Enterprise": 1
   }
  },
  "predictions": [
-  {
-   "id": "f0d92a8ce1",
-   "question": "Will the FOMC hold the fed funds target range at 3.75–4.00% at its Oct 27–28, 2026 meeting?",
-   "domain": "Macro",
-   "status": "Active",
-   "confidence": "High",
-   "probLow": 88.0,
-   "probHigh": 95.0,
-   "midpoint": 91.5,
-   "horizon": "2026-10-28",
-   "staleAfter": "2026-10-28",
-   "lastReviewed": "2026-10-27",
-   "created": "2026-10-16",
-   "summary": "After hiking in September, the Fed meets again on Oct 27–28. This tracks whether it pauses at 3.75–4.00% or moves again, with inflation still hot and oil above $100.",
-   "triggers": [
-    {
-     "label": "Toward hike",
-     "text": "another hot data print before the meeting (core CPI/PCE ≥0.3% m/m, strong payrolls), oil staying >$100, FedWatch October hike odds back above 50%, hawkish Fed-speak before blackout."
-    },
-    {
-     "label": "Toward hold",
-     "text": "Warsh/leadership signalling patience, energy prices rolling over, FedWatch hold odds staying ≥80%."
-    }
-   ],
-   "resolution": "Resolves NO if the Oct 28 FOMC statement announces any change to the 3.75–4.00% target range (hike or cut), or an intermeeting move happens before Oct 28. Thesis invalidated if FedWatch October hike odds rise back above 50% before the blackout.",
-   "market": null,
-   "sources": [
-    {
-     "publisher": "Frenzy Capital Fed Watch",
-     "date": "Oct 23 2026",
-     "note": "Oct 28 FOMC: hold 92% / 25bp hike 8% from fed funds futures; Kalshi hold ~94%, Polymarket hike 6%; 2026 core PCE 3.0%, CPI 3.7%",
-     "url": "https://www.frenzycap.com/fedwatch"
-    },
-    {
-     "publisher": "MacroOdds",
-     "date": "Oct 23 2026",
-     "note": "Polymarket October FOMC: hold 93.5%, hike 5.9%, cut 0.3% ($57.4M volume)",
-     "url": "https://macroodds.com/fomc/october-2026"
-    },
-    {
-     "publisher": "Federal Reserve FOMC calendar",
-     "date": "Oct 16 2026",
-     "note": "meetings Oct 27–28 and Dec 8–9",
-     "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
-    },
-    {
-     "publisher": "Federal Reserve",
-     "date": "Sept 15–16 2026",
-     "note": "unanimous 25bp hike to 3.75–4.00%",
-     "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-16",
-     "from": null,
-     "to": [
-      80.0,
-      90.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-10-23",
-     "from": [
-      80.0,
-      90.0
-     ],
-     "to": [
-      88.0,
-      95.0
-     ],
-     "reason": "(confidence Medium → High). Fed is in the pre-meeting blackout with five days to the Oct 28 decision. Futures-implied hold odds rose from ~86% a week earlier to 92% (hike 8%); Kalshi hold ~94% and Polymarket hold 93.5% agree. Hike pricing has moved to December (~82–90%). Residual NO risk = surprise hike on oil (>$110) / sticky inflation (core PCE 3.0%, CPI 3.7%). Midpoint 91.5% sits just below the futures/prediction-market consensus (92–94%). Stale After 2026-10-27 (day before decision)."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
-  {
-   "id": "fa4953d1a0",
-   "question": "Will Gadi Eisenkot's Yashar win the most Knesset seats in Israel's Oct 27, 2026 election?",
-   "domain": "Geopolitics",
-   "status": "Active",
-   "confidence": "Low",
-   "probLow": 55.0,
-   "probHigh": 70.0,
-   "midpoint": 62.5,
-   "horizon": "2026-10-30",
-   "staleAfter": "2026-10-28",
-   "lastReviewed": "2026-10-27",
-   "created": "2026-10-25",
-   "summary": "Israel votes on October 27, and the final polls put Gadi Eisenkot's new Yashar party two seats ahead of Netanyahu's Likud. This tracks whether Yashar actually finishes first in the Knesset, which would shape who gets the first shot at forming a government.",
-   "triggers": [
-    {
-     "label": "Toward YES",
-     "text": "exit polls (KAN/Channel 12/Channel 13 at 22:00 Israel time, Oct 27) showing Yashar ahead of Likud; high opposition turnout (80% of opposition supporters 'certain' to vote vs 75% of coalition supporters in KAN's final poll); Bennett's Together surging at Likud's expense rather than Yashar's."
-    },
-    {
-     "label": "Toward NO",
-     "text": "Likud's historical tendency to beat final polls (late right-wing consolidation); 36% of voters still undecided in the final KAN poll; a US/Israeli strike on Iran before the vote (rally-round-the-flag effect); Yashar losing votes to Together (Bennett gained 2 seats in the last KAN poll while Yashar lost 1)."
-    }
-   ],
-   "resolution": "Per Polymarket rules: resolves YES if Yashar (incl. any joint list it heads) wins the greatest number of Knesset seats in the Oct 27, 2026 election, by consensus of credible reporting, or the official Central Elections Committee results if ambiguous. Ties go to the list with more valid votes. Resolves NO if any other party (e.g. Likud) wins the most seats. Thesis invalidated if exit polls put Likud ahead of Yashar by 2+ seats.",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Will Yashar win the most seats in the 2026 Israeli legislative election?",
-    "url": "https://polymarket.com/event/israeli-legislative-election-winner/will-yashar-win-the-most-seats-in-the-2026-israeli-legislative-election",
-    "yesPrice": 70.5,
-    "asOf": "2026-10-25T09:00:00+01:00",
-    "gapPts": -8.0,
-    "insideBand": false
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma",
-     "date": "Oct 25 2026",
-     "note": "Yes 0.705 (bid 0.70 / ask 0.71, liquidity ~$279k, volume ~$746k), active, conditionId 0xd05da9807740aa0f5bc9e9232daabe87a21e5012c19e283abf414f1c1651118b; Likud option Yes 0.29, read Oct 25 2026 ~09:00 Rome",
-     "url": "https://polymarket.com/event/israeli-legislative-election-winner/will-yashar-win-the-most-seats-in-the-2026-israeli-legislative-election"
-    },
-    {
-     "publisher": "Anadolu Agency",
-     "date": "Oct 2026",
-     "note": "final legal polls (KAN and Channel 12): Yashar 22 seats, Likud 20, Together 14; Eisenkot camp 52 vs Netanyahu bloc 50, neither near 61; 36% undecided (KAN); Eisenkot beats Netanyahu 44–38% on PM suitability",
-     "url": "https://www.aa.com.tr/en/world/netanyahu-bloc-trailing-opposition-with-projected-50-seats-to-52-in-final-israeli-election-polls/4099160"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-25",
-     "from": null,
-     "to": [
-      55.0,
-      70.0
-     ],
-     "reason": "Forecast opened."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
   {
    "id": "8b2b3fa149",
    "question": "Will US spot Bitcoin ETFs finish October 2026 with positive aggregate net flows?",
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 30.0,
-   "probHigh": 45.0,
-   "midpoint": 37.5,
+   "probLow": 55.0,
+   "probHigh": 70.0,
+   "midpoint": 62.5,
    "horizon": "2026-10-30",
-   "staleAfter": "2026-10-28",
-   "lastReviewed": "2026-10-27",
+   "staleAfter": "2026-10-31",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-16",
-   "summary": "US spot Bitcoin ETFs have seen net outflows for most of October. This asks whether a late-month turnaround pushes the monthly total back above zero, a gauge of institutional crypto demand.",
+   "summary": "US spot Bitcoin ETFs spent most of October in net outflows, then took in money late in the month. This asks whether the monthly total ends above zero, a gauge of institutional crypto demand.",
    "triggers": [
     {
      "label": "Toward yes",
@@ -185,27 +43,27 @@
    "sources": [
     {
      "publisher": "Farside Investors BTC ETF flow table",
-     "date": "Oct 23 2026",
-     "note": "Oct 21 +$524.8M, Oct 22 −$635.6M, Oct 23 −$137.9M (IBIT −$110.3M, FBTC −$31.8M)",
-     "url": "https://farside.co.uk/BTC/"
+     "date": "Oct 30 2026",
+     "note": "Oct 26 +$110.3M, Oct 27 +$176.0M, Oct 28 +$137.3M, Oct 29 +$17.2M; Oct 30 not yet reported",
+     "url": "https://farside.co.uk/btc/"
     },
     {
-     "publisher": "CryptoWatchDesk ETF Desk",
-     "date": "Oct 24 2026",
-     "note": "October is −$313.5M for US spot BTC ETFs after 17 sessions; week of Oct 19–23 +$301.2M; IBIT +$755.2M MTD, FBTC −$588.5M MTD; BTC ~$80,755 on Kraken",
-     "url": "https://cryptowatchdesk.com/news/etf-desk-oct-23-bitcoin-etfs-138-million-outflow-week-positive-301-million"
+     "publisher": "TFTC",
+     "date": "October 2026",
+     "note": "October net +$128.3M across 21 sessions, 13 in / 8 out; biggest day Oct 22 −$635.5M",
+     "url": "https://www.tftc.io/bitcoin-etf-flows/october-2026"
     },
     {
-     "publisher": "Al Jazeera",
-     "date": "Oct 24 2026",
-     "note": "Trump weighing new strikes on Iran ('may do another Epic Fury'); Brent ~$117, highest since April",
-     "url": "https://www.aljazeera.com/news/2026/10/24/iran-says-wont-allow-us-warships-to-get-close-as-trump-ponders-new-attacks"
+     "publisher": "TokenPost",
+     "date": "Oct 30 2026",
+     "note": "Oct 29 net +$17.07M, fourth straight inflow day; IBIT +$12.8M, Grayscale BTC −$15.35M",
+     "url": "https://www.tokenpost.com/news/investing/44518"
     },
     {
-     "publisher": "Frenzy Capital Fed Watch",
-     "date": "Oct 25 2026",
-     "note": "Oct 28 FOMC hold 92% / hike 8%; Dec hike ~76–84% priced",
-     "url": "https://www.frenzycap.com/fedwatch"
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 30 2026",
+     "note": "BTC/USDT ~$77.5k, Oct 30 intraday low $76,500 after the Oct 29 Binance hack",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=61"
     }
    ],
    "history": [
@@ -265,6 +123,18 @@
       45.0
      ],
      "reason": "(confidence Medium → Low). Two straight outflow days wiped out the cushion: Oct 22 −$635.6M and Oct 23 −$137.9M (Farside), so October is now ≈ −$313.5M after 17 sessions (CryptoWatchDesk, consistent with the running Farside sum). About +$314M is needed over the 5 remaining sessions (Oct 26–30), roughly +$63M/day. BTC dipped below $80k on Saturday amid renewed US–Iran strike talk (Brent ~$117) and AI-credit stress; the Oct 28 FOMC hold is priced (92%), so a dovish surprise is the main upside path. Daily flows still swing ±$500M, so YES is far from dead."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      30.0,
+      45.0
+     ],
+     "to": [
+      55.0,
+      70.0
+     ],
+     "reason": "Three more inflow days: Oct 27 +$176.0M, Oct 28 +$137.3M, Oct 29 +$17.2M (Farside), so October is now ≈ +$128M after 21 sessions (TFTC +$128.3M; SoSoValue shows a four-day inflow streak). The month now resolves YES unless today's Oct 30 session loses more than ~$128M net. Five of 21 October sessions were outflows that large (Oct 7, 8, 14, 22, 23). Today is a risk-off day: BTC is ~$77.5k after the Oct 29 Binance hack, with an intraday low of $76,500, yet Oct 29 itself stayed slightly positive during the hack. Midpoint 62.5%. Resolve on Oct 31 once Farside/TFTC post the Oct 30 row (watch for late HODL/BTCW revisions). Stale After moved to 2026-10-31. [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -282,7 +152,7 @@
    "midpoint": 97.5,
    "horizon": "2026-10-31",
    "staleAfter": "2026-10-31",
-   "lastReviewed": "2026-10-22",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "Solana is switching to a new consensus system, Alpenglow, on Oct 21, aiming for transactions that are final in about 150 milliseconds. This asks whether the switch is live and holding by the end of October.",
    "triggers": [
@@ -351,17 +221,72 @@
    "resolvedOn": null
   },
   {
+   "id": "87ecc4007a",
+   "question": "Will Binance restore general customer withdrawals of BTC, ETH and USDT by Nov 3, 2026 (23:59 UTC)?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 60.0,
+   "probHigh": 75.0,
+   "midpoint": 67.5,
+   "horizon": "2026-11-03",
+   "staleAfter": "2026-11-02",
+   "lastReviewed": "2026-10-30",
+   "created": "2026-10-30",
+   "summary": "Binance halted withdrawals after a roughly $6.3B hack on Oct 29, the largest crypto theft on record, and says it aims to reopen them by Nov 1. This tracks whether ordinary users can withdraw BTC, ETH and USDT again by Nov 3.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "Binance announcement or status page showing BTC, ETH and USDT withdrawals re-enabled; preliminary reserve figures published before the Nov 2 proof-of-reserves report; a disclosed root cause plus a rebuilt signing and withdrawal service; deposits already working normally; Binance says it has set aside $6.34B of its own funds to cover losses."
+    },
+    {
+     "label": "Toward no",
+     "text": "more breach points found (Binance has already said there is more than one); security testing not passed by the Nov 1 target; a regulator orders a halt; a reopening limited to a few networks, whitelisted or VIP users, or tiny limits; new attacker movements tied to Binance infrastructure."
+    }
+   ],
+   "resolution": "Resolves YES if, at or before 23:59 UTC Nov 3, 2026, Binance (binance.com) has re-enabled customer withdrawals for general users of all three of: BTC on the Bitcoin network, ETH on Ethereum, and USDT on at least one of Ethereum or Tron, as shown by a Binance announcement or status page or by consensus of credible reporting. Per-user limits, queues or slower processing still count if withdrawals are actually being processed. A whitelist-only, VIP-only or single-network pilot does not count. Resolves NO otherwise. Thesis invalidated if Binance moves its target past Nov 3 or reports a new breach.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "TokenPost",
+     "date": "Oct 30 2026",
+     "note": "Teng: withdrawals return only after strict security testing of a rebuilt withdrawal service (endpoint devices, cloud, key management, signing); target to resume by Sunday Nov 1; full proof-of-reserves report Monday Nov 2; deposits normal",
+     "url": "https://www.tokenpost.com/news/business/44892"
+    },
+    {
+     "publisher": "TRM Labs",
+     "date": "Oct 29–30 2026",
+     "note": "~$6.36B drained across ten chains from 20:05 UTC Oct 29; TraderTraitor (high confidence); evidence points to a compromise of hot-wallet signing infrastructure; ~$2.7B frozen; withdrawals suspended on several networks",
+     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-30",
+     "from": null,
+     "to": [
+      60.0,
+      75.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
    "id": "d2193f324e",
    "question": "Will the US refrain from any qualifying air or missile strike on Iranian territory through Nov 3, 2026?",
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 66.0,
-   "probHigh": 78.0,
-   "midpoint": 72.0,
+   "probLow": 78.0,
+   "probHigh": 88.0,
+   "midpoint": 83.0,
    "horizon": "2026-11-03",
-   "staleAfter": "2026-10-29",
-   "lastReviewed": "2026-10-27",
+   "staleAfter": "2026-11-02",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "The US has paused strikes on Iran ahead of the midterms while indirect talks continue. This tracks whether that pause actually holds through Election Day on Nov 3.",
    "triggers": [
@@ -375,35 +300,35 @@
     "venue": "Polymarket",
     "name": "US-Iran ceasefire continues through the midterms?",
     "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms",
-    "yesPrice": 80.0,
-    "asOf": "2026-10-25T08:49:00+01:00",
-    "gapPts": -8.0,
-    "insideBand": false
+    "yesPrice": 86.5,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": -3.5,
+    "insideBand": true
    },
    "sources": [
     {
-     "publisher": "Polymarket Gamma",
-     "date": "Oct 25 2026",
-     "note": "Yes 0.80 (bid 0.79 / ask 0.81, last 0.80, liquidity ~$83k), active, conditionId 0x613613192c69d90cee89758c260a019368fc1f4a596b4d300c39b6235d2b643f, read Oct 25 2026 08:49 Rome",
+     "publisher": "Polymarket Gamma API",
+     "date": "Oct 30 2026",
+     "note": "'US-Iran ceasefire continues through the midterms?' Yes 0.865 (bid 0.86 / ask 0.87, liquidity ~$24k), active, conditionId 0x613613192c69d90cee89758c260a019368fc1f4a596b4d300c39b6235d2b643f",
      "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms"
     },
     {
-     "publisher": "ABC News",
-     "date": "Oct 2026",
-     "note": "White House: 'The United States will not be attacking Iran at any time prior to the midterm elections'; Israeli sources: US/Israel plans to renew joint strikes, 'almost certainly' after the midterms",
-     "url": "https://abcnews.com/Politics/us-israel-drawing-plans-resume-attacks-iran-post/story?id=137479897"
+     "publisher": "CNBC",
+     "date": "Oct 30 2026",
+     "note": "Iran claims four tankers hit mines in Hormuz; Houthis claim strikes on Saudi Arabia; administration weighs renewed action after the Nov 3 midterms; Adm. Cooper briefed Trump on options (WSJ); Vance letter via Qatar",
+     "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html"
     },
     {
-     "publisher": "India Today",
-     "date": "Oct 2026",
-     "note": "Trump (Oct 24, Florida): 'Maybe tomorrow... There's a possibility I will. There's also a possibility we'll have a nice, big, beautiful agreement'; Oct 23 rally: 'We may do another little Epic Fury'",
-     "url": "https://www.indiatoday.in/world/us-news/story/us-iran-tensions-trump-sunday-strike-diplomatic-deal-3024504-2026-10-25"
+     "publisher": "AP",
+     "date": "Oct 30 2026",
+     "note": "US officials told Middle East allies to prepare for potential renewed military action against Iran after the midterms; no final decision (headline/lede only; full page timed out)",
+     "url": "https://apnews.com/article/trump-iran-strikes-midterm-elections-c7df622f1e87de6035173be8fb8c4add"
     },
     {
-     "publisher": "CBS News live updates",
-     "date": "Oct 2026",
-     "note": "Amb. Barrack: strike 'absolutely' possible this weekend; DNI memo on advanced Iranian plots against US personnel; Iran: US ships never allowed in the Gulf; US has dialed back military ops in favor of economic pressure",
-     "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-oil-gas-prices-strait-of-hormuz-midterms/"
+     "publisher": "The Block",
+     "date": "Oct 29 2026",
+     "note": "Polymarket cancel-only after a compromised third-party provider drained ~$2.65M; trading resumed same day, users to be reimbursed",
+     "url": "https://www.theblock.co/news/defi/2026-10-29-polymarket-exploit-2-5-million-cancel-only-mode-432158"
     }
    ],
    "history": [
@@ -451,6 +376,18 @@
       78.0
      ],
      "reason": "Konarak: the ~3-day adjudication window has passed with no CENTCOM confirmation and no independent corroboration (US official to CNN: 'inaccurate, as usual'), so it is very unlikely to be counted as a qualifying strike. New: White House on the record to ABC News (22 Oct): 'The United States will not be attacking Iran at any time prior to the midterm elections'; Israeli sources (ABC/NYT, 22 Oct) say renewed joint strikes are planned but 'almost certainly' after the Nov 3 vote. Offsetting risk: IRGC claims seven tankers hit in Hormuz (22 Oct, unverified; CENTCOM disputes) and threatens US bases if escorts continue — an attack on US forces could force retaliation before Nov 3; US is repositioning forces in the region; Trump: 'something one way or the other that'll happen fairly soon'. Window ends Nov 3 11:59 PM ET, so a strike on election night itself is a small tail. Market Yes 0.735 (bid 0.73 / ask 0.74, liquidity ~$198k) read Oct 23 2026 08:51 Rome. Midpoint 72% is ~1.5 pts BELOW market. Stale After 2026-10-27 (Israeli election)."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      66.0,
+      78.0
+     ],
+     "to": [
+      78.0,
+      88.0
+     ],
+     "reason": "No qualifying US strike on Iranian territory through Oct 30. The signals now point after the window: AP (two diplomats) says US officials told regional allies to prepare for possible renewed military action after next week's midterms, and CNBC/WSJ report CENTCOM's Adm. Cooper briefed Trump on Iran options at the White House. Trump said Friday the war is 'going to get wrapped up soon'; Vance sent a framework letter via Qatar. Risks inside the window: Iran says four tankers struck mines on the US-backed southern Hormuz route (UKMTO confirms one tanker hit), and the Houthis claim strikes on Saudi airports/oil sites, so an attack on US forces could still trigger retaliation before Nov 3, and an election-night strike is a small tail. Polymarket briefly went cancel-only on Oct 29 after a third-party script compromise; trading resumed about an hour later and resolution is unaffected. Market Yes 0.865 (bid 0.86 / ask 0.87, liquidity ~$24k) read Oct 30; midpoint 83% is ~3.5 pts BELOW market. Stale After 2026-11-02. [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -463,12 +400,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 82.0,
-   "probHigh": 90.0,
-   "midpoint": 86.0,
+   "probLow": 88.0,
+   "probHigh": 94.0,
+   "midpoint": 91.0,
    "horizon": "2026-11-04",
    "staleAfter": "2026-11-02",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "Which party controls the House after the Nov 3 midterms. Polling averages and public forecast models currently favour the Democrats.",
    "triggers": [
@@ -486,23 +423,23 @@
     "venue": "Polymarket",
     "name": "Will the Democratic Party control the House after the 2026 Midterm elections?",
     "url": "https://polymarket.com/event/which-party-will-win-the-house-in-2026/will-the-democratic-party-control-the-house-after-the-2026-midterm-elections",
-    "yesPrice": 90.5,
-    "asOf": "2026-10-18T14:56:00+02:00",
-    "gapPts": -4.5,
-    "insideBand": false
+    "yesPrice": 93.5,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": -2.5,
+    "insideBand": true
    },
    "sources": [
     {
-     "publisher": "Polymarket",
-     "date": "Oct 18 2026",
-     "note": "rules + Yes 0.905, read via Gamma API Oct 18 2026 14:56 Rome",
+     "publisher": "Polymarket Gamma API",
+     "date": "Oct 30 2026",
+     "note": "'Will the Democratic Party control the House after the 2026 Midterm elections?' Yes 0.935 (bid 0.93 / ask 0.94, liquidity ~$7.8M)",
      "url": "https://polymarket.com/event/which-party-will-win-the-house-in-2026/will-the-democratic-party-control-the-house-after-the-2026-midterm-elections"
     },
     {
-     "publisher": "Decision Desk HQ forecast",
-     "date": "Oct 17 2026",
-     "note": "Democrats 77% House (236 seats), 56% Senate",
-     "url": "https://votes.decisiondeskhq.com/forecast/2026"
+     "publisher": "New York Magazine",
+     "date": "Oct 30 2026",
+     "note": "final polls/forecasts: FLIPR 95.1% House (240 seats), RTWH 93.9%, DDHQ 82%; Cook D+12 to +25",
+     "url": "https://nymag.com/intelligencer/article/final-midterms-polls-show-democrats-poised-to-flip-congress.html"
     },
     {
      "publisher": "Poliwave forecast",
@@ -526,6 +463,18 @@
       90.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      82.0,
+      90.0
+     ],
+     "to": [
+      88.0,
+      94.0
+     ],
+     "reason": "Final forecasts have converged upward: Silver Bulletin FLIPR 95.1% (240 seats), Race to the White House 93.9%, Decision Desk HQ 82% (its cycle high, 238 seats); Cook expects a Democratic gain of 12–25 seats. Market Yes 0.935 (liquidity ~$7.8M). Midpoint 91% sits ~2.5 pts below market for polling-error and slow-count risk. Resolution may come after Nov 3. Stale After stays 2026-11-02. [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -538,12 +487,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 52.0,
-   "probHigh": 62.0,
-   "midpoint": 57.0,
+   "probLow": 62.0,
+   "probHigh": 72.0,
+   "midpoint": 67.0,
    "horizon": "2026-11-04",
    "staleAfter": "2026-11-02",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "Which party controls the Senate after the Nov 3 midterms. The map is much tighter than the House and hinges on a handful of close races and how independents caucus.",
    "triggers": [
@@ -561,35 +510,29 @@
     "venue": "Polymarket",
     "name": "Will the Democratic Party control the Senate after the 2026 Midterm elections?",
     "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026/will-the-democratic-party-control-the-senate-after-the-2026-midterm-elections",
-    "yesPrice": 64.5,
-    "asOf": "2026-10-18T14:56:00+02:00",
-    "gapPts": -7.5,
+    "yesPrice": 72.5,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": -5.5,
     "insideBand": false
    },
    "sources": [
     {
-     "publisher": "Polymarket",
-     "date": "Oct 18 2026",
-     "note": "rules + Yes 0.645 (bid 0.64/ask 0.65), read via Gamma API Oct 18 2026 14:56 Rome",
+     "publisher": "Polymarket Gamma API",
+     "date": "Oct 30 2026",
+     "note": "'Will the Democratic Party control the Senate after the 2026 Midterm elections?' Yes 0.725 (bid 0.72 / ask 0.73, liquidity ~$3.7M)",
      "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026/will-the-democratic-party-control-the-senate-after-the-2026-midterm-elections"
+    },
+    {
+     "publisher": "New York Magazine",
+     "date": "Oct 30 2026",
+     "note": "FLIPR 77.7% Senate, RTWH 77.4%, DDHQ 62%; Silver Bulletin averages AK D+3.7, IA D+0.9, KS D+1.4, ME D+2.5, OH D+3.1, TX D+3.0, NE Osborn +0.3; Alaska certification threat",
+     "url": "https://nymag.com/intelligencer/article/final-midterms-polls-show-democrats-poised-to-flip-congress.html"
     },
     {
      "publisher": "Decision Desk HQ forecast",
      "date": "Oct 17 2026",
      "note": "Democrats 56% Senate; Iowa 51%, Ohio 53%, Maine 54%, Texas 55% toss-ups",
      "url": "https://votes.decisiondeskhq.com/forecast/2026"
-    },
-    {
-     "publisher": "Poliwave forecast",
-     "date": "Oct 18 2026",
-     "note": "Democrats 61%, Republicans 30%, 10% independents decide",
-     "url": "https://www.poliwave.com/us/fed/projection"
-    },
-    {
-     "publisher": "FutureBallot",
-     "date": "Oct 17 2026",
-     "note": "Senate 53–63% Democratic depending on 4 independents; Iowa is seat 51 at 54%",
-     "url": "https://futureballot.com/"
     },
     {
      "publisher": "Call the Map polls",
@@ -607,6 +550,18 @@
       62.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      52.0,
+      62.0
+     ],
+     "to": [
+      62.0,
+      72.0
+     ],
+     "reason": "Final forecasts: FLIPR 77.7%, Race to the White House 77.4%, Decision Desk HQ 62% (net +5). Democrats lead in seven flip races (AK, IA, KS, ME, NC, OH, TX) plus Osborn in NE, but four of the eight leads are ≤3 pts, the Washington Post all but disavowed its Kansas D+10 poll over non-response, and Alaska's governor threatens to withhold certification of a Peltola win. Market Yes 0.725 (liquidity ~$3.7M). Midpoint 67% stays ~5.5 pts BELOW market: a deliberate divergence for systematic polling error plus the Alaska certification fight. Stale After stays 2026-11-02. [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -619,12 +574,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 20.0,
-   "probHigh": 35.0,
-   "midpoint": 27.5,
+   "probLow": 10.0,
+   "probHigh": 20.0,
+   "midpoint": 15.0,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-10-30",
-   "lastReviewed": "2026-10-18",
+   "staleAfter": "2026-11-13",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-16",
    "summary": "Washington has threatened to cut intelligence sharing and PURL weapons purchases if Kyiv keeps striking Russian energy. This asks whether the US officially confirms such a cut, not just anonymous reports, by end of November.",
    "triggers": [
@@ -641,22 +596,22 @@
    "market": null,
    "sources": [
     {
+     "publisher": "Al Jazeera",
+     "date": "Oct 19 2026",
+     "note": "Rubio: 'There has been no pause' in intelligence sharing; Zelensky: sharing was interrupted then 'deblocked'",
+     "url": "https://www.aljazeera.com/news/2026/10/19/rubio-says-there-was-no-us-pause-in-intelligence-sharing-with"
+    },
+    {
+     "publisher": "Ukrainian News Agency",
+     "date": "Oct 26 2026",
+     "note": "Zelensky (Oct 24 interview): US ballistic intel flow fully restored; 2 of 3 Oslo issues resolved; Kushner again urged no refinery strikes",
+     "url": "https://ukranews.com/en/news/1183395-the-provision-of-u-s-intelligence-on-ballistics-in-ukraine-has-been-fully-restored-zelenskyy"
+    },
+    {
      "publisher": "CNN",
      "date": "Oct 11 2026",
      "note": "US warned it could suspend intel sharing and PURL purchases if Kyiv keeps hitting Russian energy; precedent: March 2025 suspension",
      "url": "https://www.cnn.com/2026/10/11/politics/ukraine-us-weapons-intelligence"
-    },
-    {
-     "publisher": "Defense News",
-     "date": "Oct 15 2026",
-     "note": "Ukrainian officials say missile warnings and Starshield access curtailed; Trump denies interruption; Zelensky ends strike pause ('We're done')",
-     "url": "https://www.defensenews.com/global/2026/10/15/ukrainian-officials-blame-pentagon-for-withholding-life-saving-intel-from-kyiv/"
-    },
-    {
-     "publisher": "Defense News",
-     "date": "Oct 16 2026",
-     "note": "two US officials + a Western official (anonymous): Starshield slowdown order came from inside the White House; senior US official: 'No such request was ever made by the president'; US officials threatened to stop missile-launch intel, Trump said Tuesday intel still shared",
-     "url": "https://www.defensenews.com/pentagon/2026/10/16/order-to-limit-starshield-for-ukraine-came-from-inside-white-house-sources-say/"
     },
     {
      "publisher": "CNBC",
@@ -686,6 +641,18 @@
       35.0
      ],
      "reason": "The Oct 16 Reuters/Defense News report (order to throttle Starshield came from inside the White House) shows the US is willing to curb support quietly, but (a) a Starshield throttle is not intel sharing or PURL, so it doesn't count under the resolution rules, (b) it rests on anonymous officials, which also doesn't count, and (c) the on-record line is denial: Trump on Oct 16 ('it wasn't me… same as it's always been') and earlier that intel is still being shared. The administration is choosing deniable curbs over announced suspensions, so on-record confirmation by Nov 30 looks a bit less likely, even as pressure on Kyiv rises."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      20.0,
+      35.0
+     ],
+     "to": [
+      10.0,
+      20.0
+     ],
+     "reason": "The on-record US line is now explicit denial plus restoration: Rubio (Oct 19) 'There has been no pause', and Zelensky said on Oct 24 that the US ballistic-missile warning flow is fully restored after the Oslo talks (Starlink speed limits also resolved; Patriots still short). An on-record confirmation of a suspension would now require a fresh rupture, e.g. renewed Ukrainian refinery strikes after Kushner again asked Kyiv to stop. 31 days left. Stale After moved to 2026-11-13. [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -698,12 +665,12 @@
    "domain": "AI",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 82.0,
-   "probHigh": 90.0,
-   "midpoint": 86.0,
+   "probLow": 76.0,
+   "probHigh": 86.0,
+   "midpoint": 81.0,
    "horizon": "2026-11-30",
    "staleAfter": "2026-11-10",
-   "lastReviewed": "2026-10-27",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-27",
    "summary": "Anthropic publicly filed for its IPO on Oct 26, 2026, with a roadshow reported for around Nov 9 and a Nasdaq listing under the ticker ANT. This tracks whether its shares actually start trading before the end of November.",
    "triggers": [
@@ -721,16 +688,16 @@
     "venue": "Polymarket",
     "name": "Will Anthropic IPO by November 30, 2026?",
     "url": "https://polymarket.com/event/anthropic-ipo-by/will-anthropic-ipo-by-november-30-2026",
-    "yesPrice": 89.0,
-    "asOf": "2026-10-27T08:50:00+01:00",
-    "gapPts": -3.0,
+    "yesPrice": 83.0,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": -2.0,
     "insideBand": true
    },
    "sources": [
     {
-     "publisher": "Polymarket Gamma",
-     "date": "November 30, 2026",
-     "note": "Yes 0.89 (bid 0.88 / ask 0.90, liquidity ~$16k, volume ~$524k), active, conditionId 0x5ba72dca702ddf6ac8ce0b992b521dd3b080109e39a5f022827ffda3ac8a60f6, read Oct 27 2026 ~08:50 Rome",
+     "publisher": "Polymarket Gamma API",
+     "date": "Oct 30 2026",
+     "note": "'Will Anthropic IPO by November 30, 2026?' Yes 0.83 (bid 0.82 / ask 0.84, liquidity ~$26k), conditionId 0x5ba72dca702ddf6ac8ce0b992b521dd3b080109e39a5f022827ffda3ac8a60f6",
      "url": "https://polymarket.com/event/anthropic-ipo-by/will-anthropic-ipo-by-november-30-2026"
     },
     {
@@ -741,15 +708,15 @@
     },
     {
      "publisher": "IFR",
-     "date": "Oct 2026",
-     "note": "public filing Oct 26, roadshow Nov 9, pricing the following week; targeting up to $100bn at ~$2trn; NYC comptroller asked Anthropic to pause the IPO",
-     "url": "https://www.ifre.com/equities/2499407/anthropic-pushes-ahead-with-mid-november-ipo"
+     "date": "Oct 29–30 2026",
+     "note": "'Anthropic takes to stormy waters': roadshow week of Nov 9, debut Nov 20, $75–100bn; supplier selloff resumed after Alphabet results; $16B data-centre HY refi shelved; a senior banker had predicted a delay a week earlier",
+     "url": "https://www.ifre.com/equities/2505731/anthropic-takes-to-stormy-waters-with-us100bn-sink-or-swim-ipo"
     },
     {
-     "publisher": "Cboe Insights",
-     "date": "Oct 26 2026",
-     "note": "S-1 is 335 pages; roadshow in two weeks, could go public before Thanksgiving; Q3 revenue $16.3bn; Nasdaq +0.83% on the filing",
-     "url": "https://www.cboe.com/insights/posts/anthropic-s-1-registration-dominates-leads-nasdaq-higher"
+     "publisher": "Yahoo Finance",
+     "date": "Oct 27 2026",
+     "note": "earliest roadshow Nov 10, earliest pricing Nov 13, earliest trade Nov 16; aiming for the week of Nov 16 (WSJ/Reuters)",
+     "url": "https://finance.yahoo.com/markets/article/anthropics-ipo-could-start-trading-as-soon-as-nov-16--heres-the-road-from-filing-to-first-trade-155405578.html"
     }
    ],
    "history": [
@@ -761,6 +728,18 @@
       90.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      82.0,
+      90.0
+     ],
+     "to": [
+      76.0,
+      86.0
+     ],
+     "reason": "The schedule still holds: IFR says the roadshow and bookbuild launch the week of Nov 9 with a Nov 20 debut, and Yahoo Finance calculates the earliest possible trade as Nov 16. But financing conditions worsened. The supplier selloff resumed after Alphabet's results (Oct 29, more than $500B wiped off), Nasdaq −2.5%, a $16B Anthropic data-centre bond refinancing was shelved, and Switch and NScale pushed their IPOs. IFR reports that a week ago a senior banker on the deal predicted a delay, and bankers concede the ~$2trn valuation may not hold. A slip past Thanksgiving week would resolve NO. Market Yes fell from 0.89 to 0.83 (liquidity ~$26k); midpoint 81% is ~2 pts below market. Stale After stays 2026-11-10 (roadshow launch). [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -773,12 +752,12 @@
    "domain": "AI",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 20.0,
-   "probHigh": 35.0,
-   "midpoint": 27.5,
+   "probLow": 8.0,
+   "probHigh": 18.0,
+   "midpoint": 13.0,
    "horizon": "2026-11-30",
    "staleAfter": "2026-11-09",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "Google just shipped Gemini 4 Argon and says the rest of the Gemini 4 family is coming. This asks whether a new public 'Pro' model lands by Nov 30.",
    "triggers": [
@@ -796,16 +775,16 @@
     "venue": "Polymarket",
     "name": "Will the next Google Gemini Pro model be released by November 30, 2026?",
     "url": "https://polymarket.com/event/next-google-gemini-pro-model-released-byptptpt/will-the-next-google-gemini-pro-model-be-released-by-november-30-2026",
-    "yesPrice": 25.0,
-    "asOf": "2026-10-18T14:56:00+02:00",
-    "gapPts": 2.5,
+    "yesPrice": 12.0,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": 1.0,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket",
      "date": "November 30, 2026",
-     "note": "rules + Yes 0.25 (bid 0.24/ask 0.26), read via Gamma API Oct 18 2026 14:56 Rome",
+     "note": "rules; Yes 0.12 (bid 0.09 / ask 0.15, liquidity ~$700) read Oct 30 2026 ~17:45 Rome",
      "url": "https://polymarket.com/event/next-google-gemini-pro-model-released-byptptpt/will-the-next-google-gemini-pro-model-be-released-by-november-30-2026"
     },
     {
@@ -813,6 +792,12 @@
      "date": "Oct 13 2026",
      "note": "Gemini 4 Argon generally available; 'just the beginning… the rest of the Gemini 4 family'; introductory pricing to Nov 30",
      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+    },
+    {
+     "publisher": "New Runtime",
+     "date": "Oct 26 2026",
+     "note": "Gemini 3.5 Pro never shipped; not in the Gemini API model list (updated Oct 22); Gemini 4 Argon is the live flagship; gemini-3.1-pro-preview remains the Pro-class ID",
+     "url": "https://newruntime.com/analysis/research-gemini-3-5-pro-never-shipped-google-moved-the-flagship-slot-to-gemini-4-argon/"
     }
    ],
    "history": [
@@ -824,6 +809,18 @@
       35.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      20.0,
+      35.0
+     ],
+     "to": [
+      8.0,
+      18.0
+     ],
+     "reason": "As of Oct 22–26 no new Pro model exists: Gemini 3.5 Pro never shipped and stays in partner testing, gemini-3.1-pro-preview is still the only Pro ID, and Google filled the flagship slot with Gemini 4 Argon (GA Oct 13), which does not count under the rules. A 'Gemini 4 Pro' inside 31 days would need a fresh launch on top of Argon's introductory pricing, which runs to Nov 30. Market Yes fell from 0.25 to 0.12 (thin). [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -902,13 +899,13 @@
    "question": "Will Zcash's NU7 network upgrade activate on mainnet by Nov 30, 2026?",
    "domain": "Crypto",
    "status": "Active",
-   "confidence": "Medium",
-   "probLow": 85.0,
-   "probHigh": 92.0,
-   "midpoint": 88.5,
+   "confidence": "High",
+   "probLow": 90.0,
+   "probHigh": 95.0,
+   "midpoint": 92.5,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-04",
-   "lastReviewed": "2026-10-22",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "Zcash's NU7 upgrade cuts block time from 75 to 25 seconds and adds a fee reserve. Developers set the mainnet date on Oct 20, with Nov 5 pencilled in; this asks whether it goes live by Nov 30.",
    "triggers": [
@@ -937,16 +934,16 @@
      "url": "https://github.com/zcash/zips/pull/1405"
     },
     {
+     "publisher": "Zcash Foundation",
+     "date": "Oct 22 2026",
+     "note": "'Zebra 7.0.0 Release': first stable release with NU7 on Mainnet; activation height 3,543,405 planned ~Nov 5; operators must upgrade before that height",
+     "url": "https://zfnd.org/zebra-7-0-0-release/"
+    },
+    {
      "publisher": "crypto.news",
      "date": "Oct 21 2026",
      "note": "block 3,543,405 expected ~Nov 5; 75s→25s blocks; Sprout funds become unspendable",
      "url": "https://crypto.news/zcash-nu7-activation-november-5-25-second-blocks/"
-    },
-    {
-     "publisher": "Zcash Foundation Zebra 'NU7 Network upgrade' milestone",
-     "date": "Oct 22 2026",
-     "note": "mainnet activation at 3543405 and the 7.0.0 release that carries it, 89% complete",
-     "url": "https://github.com/ZcashFoundation/zebra/milestone/42"
     }
    ],
    "history": [
@@ -982,6 +979,18 @@
       92.0
      ],
      "reason": "(confidence Low → Medium). Primary source now confirms: ZIP 259 lists Mainnet activation height 3,543,405 (PR #1405 merged Oct 21 20:06 UTC), expected ~Nov 5, leaving ~25 days of slack before Nov 30. Residual risk: final Zebra/zcashd 7.0.0 mainnet releases (milestone 89% done), a late bug forcing a height change past Nov 30, or exchanges/miners not upgrading in time. Stale After set to Nov 4, the day before the expected activation."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      85.0,
+      92.0
+     ],
+     "to": [
+      90.0,
+      95.0
+     ],
+     "reason": "(confidence Medium → High). The Zcash Foundation shipped Zebra 7.0.0 on Oct 22, the first stable mainnet release with NU7, activating at height 3,543,405 (~Nov 5–6), and it fixes the testnet losing-branch bug. The residual risk this row flagged (the final Zebra mainnet release) is now cleared. Left: a late consensus bug forcing a height change past Nov 30, which looks remote with ~25 days of slack. Stale After moved to 2026-11-06 (day after expected activation). [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -999,7 +1008,7 @@
    "midpoint": 54.0,
    "horizon": "2026-12-01",
    "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "AVAX trades near $10. This asks whether it is still between $8 and $12 on Dec 1, a measure of whether the market stays range-bound or breaks out either way.",
    "triggers": [
@@ -1066,7 +1075,7 @@
    "midpoint": 78.5,
    "horizon": "2026-12-09",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-16",
    "summary": "Futures price a high chance of another Fed hike in December. This tracks whether the FOMC actually raises rates at its Dec 8–9 meeting.",
    "triggers": [
@@ -1183,12 +1192,12 @@
    "domain": "Macro",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 74.0,
-   "probHigh": 86.0,
-   "midpoint": 80.0,
+   "probLow": 66.0,
+   "probHigh": 78.0,
+   "midpoint": 72.0,
    "horizon": "2026-12-17",
-   "staleAfter": "2026-10-30",
-   "lastReviewed": "2026-10-18",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "Most economists expect the ECB to hike in December with euro-area inflation near 4%. This tracks whether it delivers exactly a 25bp increase on Dec 16–17.",
    "triggers": [
@@ -1206,17 +1215,23 @@
     "venue": "Polymarket",
     "name": "Will the ECB announce a 25 bps increase at the December 2026 meeting?",
     "url": "https://polymarket.com/event/ecb-interest-rates-december-2026/will-the-ecb-announce-a-25-bps-increase-at-the-december-2026-meeting",
-    "yesPrice": 82.5,
-    "asOf": "2026-10-18T14:56:00+02:00",
-    "gapPts": -2.5,
-    "insideBand": true
+    "yesPrice": 81.0,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": -9.0,
+    "insideBand": false
    },
    "sources": [
     {
-     "publisher": "Polymarket",
-     "date": "December 2026",
-     "note": "rules + Yes 0.825 (bid 0.82/ask 0.83), read via Gamma API Oct 18 2026 14:56 Rome",
+     "publisher": "Polymarket Gamma API",
+     "date": "Oct 30 2026",
+     "note": "'Will the ECB announce a 25 bps increase at the December 2026 meeting?' Yes 0.81 (bid 0.80 / ask 0.82, liquidity ~$1.7k)",
      "url": "https://polymarket.com/event/ecb-interest-rates-december-2026/will-the-ecb-announce-a-25-bps-increase-at-the-december-2026-meeting"
+    },
+    {
+     "publisher": "CNBC",
+     "date": "Oct 29 2026",
+     "note": "ECB holds deposit rate at 2.5%; Council debated a hike; markets ~67% December hike (LSEG); Deutsche Bank expects 2.75% in December; Lagarde departure announced",
+     "url": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html"
     },
     {
      "publisher": "Reuters poll via Yahoo Finance",
@@ -1240,6 +1255,18 @@
       86.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      74.0,
+      86.0
+     ],
+     "to": [
+      66.0,
+      78.0
+     ],
+     "reason": "Oct 29: ECB held the deposit rate at 2.50% unanimously after debating a hike; Lagarde gave no pre-commitment and announced her coming departure the same day. Money markets price ~67% for a December hike (LSEG); Deutsche Bank and UBS still expect one more 25bp move ('hawkish pause'). Headline inflation 3.8% and energy inflation 18.8% keep pressure on. The thin Polymarket market (Yes 0.81, liquidity ~$1.7k) sits above both the futures pricing and my band. Stale After 2026-11-06 (after the October flash HICP). [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -1252,14 +1279,14 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 30.0,
-   "probHigh": 40.0,
-   "midpoint": 35.0,
+   "probLow": 8.0,
+   "probHigh": 16.0,
+   "midpoint": 12.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
-   "summary": "AVAX trades near $10. This asks whether it rallies to at least $13 at any point before year end.",
+   "summary": "AVAX has slipped to around $8.40. This asks whether it rallies to at least $13 at any point before year end, which would take a gain of more than 50%.",
    "triggers": [
     {
      "label": "Toward YES",
@@ -1275,41 +1302,23 @@
     "venue": "Polymarket",
     "name": "Will AVAX reach $13 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-reach-13-by-december-31-2026",
-    "yesPrice": 25.5,
-    "asOf": "2026-10-18T14:56:00+02:00",
-    "gapPts": 9.5,
+    "yesPrice": 6.0,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": 6.0,
     "insideBand": false
    },
    "sources": [
     {
      "publisher": "Polymarket",
      "date": "December 31, 2026",
-     "note": "rules + Yes 0.255 (bid 0.25/ask 0.26), read via Gamma API Oct 18 2026 14:56 Rome",
+     "note": "rules; Yes 0.06 (bid 0.04 / ask 0.08, liquidity ~$600) (read Oct 30 2026 ~17:45 Rome)",
      "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-reach-13-by-december-31-2026"
     },
     {
-     "publisher": "CoinGecko API",
-     "date": "Oct 18 2026",
-     "note": "AVAX $9.76; 90d realized vol ~80%, 180d ~69%; 365d range $5.89–$20.83",
-     "url": "https://api.coingecko.com/api/v3/coins/avalanche-2/market_chart?vs_currency=usd&days=365&interval=daily"
-    },
-    {
-     "publisher": "CoinMarketCap",
-     "date": "Oct 17 2026",
-     "note": "AVAX −3.90% to $9.88, underperforming BTC; supports $9.79 / $9.50",
-     "url": "https://coinmarketcap.com/cmc-ai/avalanche/price-analysis/"
-    },
-    {
-     "publisher": "CoinMarketCap top story",
-     "date": "Oct 16 2026",
-     "note": "AVAX +5.36% on Schwab plan to add SOL/AVAX/LINK by end-2026",
-     "url": "https://coinmarketcap.com/top-stories/6ad1a27031381a2cec7b0490/"
-    },
-    {
-     "publisher": "BSCN",
-     "date": "Oct 2026",
-     "note": "spot AVAX ETFs' $2.52M inflow on Oct 8, holdings 1.26% of supply",
-     "url": "https://bsc.news/news/avax-spot-etf-inflow-october"
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 30 2026",
+     "note": "AVAX/USDT ~$8.37; post-Oct-18 high $10.05; 30d/60d vol 66%/90%",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=AVAXUSDT&interval=1d&limit=61"
     }
    ],
    "history": [
@@ -1321,6 +1330,18 @@
       40.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      30.0,
+      40.0
+     ],
+     "to": [
+      8.0,
+      16.0
+     ],
+     "reason": "AVAX ~$8.37 needs +55% to touch $13 in ~62 days; the zero-drift touch model on 30d/60d realized vol gives 11–24%, and the band leans to the 30d end. Market Yes 0.06 (thin, bid 0.04 / ask 0.08). The old band was far too high once price fell from ~$10 to ~$8.4. [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -1333,14 +1354,14 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 28.0,
-   "probHigh": 38.0,
-   "midpoint": 33.0,
+   "probLow": 42.0,
+   "probHigh": 55.0,
+   "midpoint": 48.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
-   "summary": "AVAX trades near $10. This asks whether it drops to $7 or lower at any point before year end.",
+   "summary": "AVAX trades near $8.40 after a weak October. This asks whether it drops to $7 or lower at any point before year end.",
    "triggers": [
     {
      "label": "Toward YES",
@@ -1356,35 +1377,23 @@
     "venue": "Polymarket",
     "name": "Will AVAX dip to $7 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-dip-to-7-by-december-31-2026",
-    "yesPrice": 40.5,
-    "asOf": "2026-10-18T14:56:00+02:00",
-    "gapPts": -7.5,
+    "yesPrice": 40.0,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": 8.5,
     "insideBand": false
    },
    "sources": [
     {
      "publisher": "Polymarket",
      "date": "December 31, 2026",
-     "note": "rules + displayed Yes 0.405, bid 0.10/ask 0.71, last 0.40, read via Gamma API Oct 18 2026 14:56 Rome",
+     "note": "rules; Yes 0.40 (bid 0.09 / ask 0.71, liquidity ~$100) (read Oct 30 2026 ~17:45 Rome)",
      "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-dip-to-7-by-december-31-2026"
     },
     {
-     "publisher": "CoinGecko API",
-     "date": "Oct 18 2026",
-     "note": "AVAX $9.76; 90d realized vol ~80%; Aug 20 close $6.77",
-     "url": "https://api.coingecko.com/api/v3/coins/avalanche-2/market_chart?vs_currency=usd&days=365&interval=daily"
-    },
-    {
-     "publisher": "CoinMarketCap",
-     "date": "Oct 17 2026",
-     "note": "AVAX $9.88, technical breakdown below key MAs; break of $9.79 risks $9.50",
-     "url": "https://coinmarketcap.com/cmc-ai/avalanche/price-analysis/"
-    },
-    {
-     "publisher": "Kryptoliczby",
-     "date": "Oct 16 2026",
-     "note": "US spot AVAX ETFs: $0 flow Oct 16, AUM $56.1M, 5.77M AVAX, cumulative +$31.6M",
-     "url": "https://kryptoliczby.pl/etf-avalanche/"
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 30 2026",
+     "note": "AVAX/USDT ~$8.37; October low $8.00; 30d/60d vol 66%/90%",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=AVAXUSDT&interval=1d&limit=61"
     }
    ],
    "history": [
@@ -1396,6 +1405,18 @@
       38.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      28.0,
+      38.0
+     ],
+     "to": [
+      42.0,
+      55.0
+     ],
+     "reason": "AVAX ~$8.37 (October low $8.00, 7-day −7.6%) is 16% above the $7 line with ~62 days left. The zero-drift touch model on 30d/60d realized vol (66%/90%) gives 51–63%; the band sits below that because the 60d vol includes a spike. The market is very thin (Yes 0.40, bid 0.09 / ask 0.71), so it is not informative. [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -1407,15 +1428,15 @@
    "question": "Will Aave's TVL fall below $10B on any finalized daily datapoint by Dec 31, 2026?",
    "domain": "Crypto",
    "status": "Active",
-   "confidence": "Medium",
-   "probLow": 3.0,
-   "probHigh": 7.0,
-   "midpoint": 5.0,
+   "confidence": "Low",
+   "probLow": 5.0,
+   "probHigh": 11.0,
+   "midpoint": 8.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-15",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
-   "summary": "Aave is the largest crypto lending app, holding about $18B. This asks whether a crash cuts that below $10B on any day this year.",
+   "summary": "Aave is the largest crypto lending app. It held about $15.5B after a sharp drop on Oct 30, and this asks whether a crash cuts that below $10B on any day this year.",
    "triggers": [
     {
      "label": "Toward yes",
@@ -1431,35 +1452,35 @@
     "venue": "Polymarket",
     "name": "Will the AAVE TVL go below $10B in 2026?",
     "url": "https://polymarket.com/event/will-the-aave-tvl-go-below-10b-in-2026/will-the-aave-tvl-go-below-10b-in-2026",
-    "yesPrice": 8.0,
-    "asOf": "2026-10-18T15:12:00+02:00",
-    "gapPts": -3.0,
+    "yesPrice": 11.5,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": -3.5,
     "insideBand": false
    },
    "sources": [
     {
      "publisher": "Polymarket",
-     "date": "Oct 18 2026",
-     "note": "rules + Yes 0.08 (bid 0.07/ask 0.09), read via Gamma API Oct 18 2026 15:12 Rome",
+     "date": "Oct 30 2026",
+     "note": "rules; Yes 0.115 (bid 0.08 / ask 0.15, liquidity ~$900) read Oct 30 2026 ~17:45 Rome",
      "url": "https://polymarket.com/event/will-the-aave-tvl-go-below-10b-in-2026/will-the-aave-tvl-go-below-10b-in-2026"
     },
     {
      "publisher": "DefiLlama API",
-     "date": "Oct 18 2026",
-     "note": "Aave TVL $18.0B",
-     "url": "https://api.llama.fi/tvl/aave"
+     "date": "Oct 30 2026",
+     "note": "Aave TVL ~$15.55B (Oct 29 $17.65B)",
+     "url": "https://api.llama.fi/protocol/aave"
     },
     {
-     "publisher": "DefiLlama API",
-     "date": "Oct 18 2026",
-     "note": "Aave V3 TVL $16.97B, −2.1% 7d",
-     "url": "https://api.llama.fi/tvl/aave-v3"
+     "publisher": "TRM Labs",
+     "date": "Oct 29–30 2026",
+     "note": "~$6.36B Binance hack (TraderTraitor); attacker borrowed ~19,760 ETH on Aave against 60M USDT, after which Aave froze the affected markets; attacker holds >420k ETH, 18,270 BTC, 233M XRP, 970.5k SOL beyond freeze",
+     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
     },
     {
-     "publisher": "CoinGecko API",
-     "date": "Oct 18 2026",
-     "note": "ETH $2,413; 90d realized vol ~52%",
-     "url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=180&interval=daily"
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 30 2026",
+     "note": "ETH/USDT ~$2,231",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=ETHUSDT&interval=1d&limit=61"
     }
    ],
    "history": [
@@ -1471,6 +1492,18 @@
       7.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      3.0,
+      7.0
+     ],
+     "to": [
+      5.0,
+      11.0
+     ],
+     "reason": "(confidence Medium → Low). DefiLlama shows Aave TVL down from $17.65B (Oct 29) to ~$15.55B (Oct 30), the largest daily drop since this row opened. That follows ETH falling to ~$2,231 and Aave freezing the markets the Binance attacker used, after he borrowed ~19,760 ETH against 60M USDT (TRM). A move to <$10B needs a further ~36% fall, roughly ETH ≈ $1,450 or a big withdrawal run. Market Yes 0.115 (thin, bid 0.08 / ask 0.15). [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -1483,14 +1516,14 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 4.0,
-   "probHigh": 9.0,
-   "midpoint": 6.5,
+   "probLow": 2.0,
+   "probHigh": 5.0,
+   "midpoint": 3.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
-   "summary": "BNB trades near $722 and is one of the calmer large coins. This asks whether it can rally almost 40% to $1,000 by year end.",
+   "summary": "BNB trades near $700 after the Binance hack. This asks whether it can rally more than 40% to $1,000 by year end.",
    "triggers": [
     {
      "label": "Toward yes",
@@ -1506,35 +1539,29 @@
     "venue": "Polymarket",
     "name": "Will BNB reach $1000 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-bnb-hit-before-2027/will-bnb-reach-1000-by-december-31-2026",
-    "yesPrice": 17.5,
-    "asOf": "2026-10-18T15:12:00+02:00",
-    "gapPts": -11.0,
-    "insideBand": false
+    "yesPrice": 2.95,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": 0.5,
+    "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket",
      "date": "December 31, 2026",
-     "note": "rules + Yes 0.175 (bid 0.16/ask 0.19), read via Gamma API Oct 18 2026 15:12 Rome",
+     "note": "rules; Yes 0.0295 (bid 0.02 / ask 0.039, liquidity ~$18k) (read Oct 30 2026 ~17:45 Rome)",
      "url": "https://polymarket.com/event/what-price-will-bnb-hit-before-2027/will-bnb-reach-1000-by-december-31-2026"
     },
     {
      "publisher": "Binance klines via data-api.binance.vision",
-     "date": "Oct 18 2026",
-     "note": "BNB/USDT high since Nov 24 2025 $959.52; close ~$722.9",
-     "url": "https://data-api.binance.vision/api/v3/klines?symbol=BNBUSDT&interval=1d&startTime=1764000000000&limit=1000"
+     "date": "Oct 30 2026",
+     "note": "BNB/USDT ~$701; October low $680; 30d/60d vol 41%/42%",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=BNBUSDT&interval=1d&limit=61"
     },
     {
-     "publisher": "CoinGecko API",
-     "date": "Oct 18 2026",
-     "note": "BNB $722.24, 30d −3.5%; 30d vol ~31%, 90d ~36%",
-     "url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=180&interval=daily"
-    },
-    {
-     "publisher": "DefiLlama API",
-     "date": "Oct 18 2026",
-     "note": "BSC chain TVL ~$5.5B; PancakeSwap AMM $1.56B (−12% 7d), Venus $1.25B",
-     "url": "https://api.llama.fi/protocols"
+     "publisher": "TRM Labs",
+     "date": "Oct 29–30 2026",
+     "note": "~$6.36B Binance hack (TraderTraitor); attacker holds >420k ETH, 18,270 BTC, 233M XRP, 970.5k SOL beyond freeze",
+     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
     }
    ],
    "history": [
@@ -1546,6 +1573,18 @@
       9.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      4.0,
+      9.0
+     ],
+     "to": [
+      2.0,
+      5.0
+     ],
+     "reason": "BNB ~$701 (October low $680) needs +43% to touch $1,000; the zero-drift touch model on 30d/60d realized vol gives 3–4%. The Oct 29 Binance hack hits the BNB thesis directly; withdrawals are still suspended. Market Yes 0.03. [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -1558,14 +1597,14 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 15.0,
-   "probHigh": 23.0,
-   "midpoint": 19.0,
+   "probLow": 6.0,
+   "probHigh": 12.0,
+   "midpoint": 9.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
-   "summary": "Bitcoin trades near $82k after hot US inflation data and steady ETF outflows. This asks whether it can still reach $100k before the year ends.",
+   "summary": "Bitcoin is near $77k after a weak October and the Binance hack. This asks whether it can still reach $100k before the year ends.",
    "triggers": [
     {
      "label": "Toward yes",
@@ -1581,35 +1620,23 @@
     "venue": "Polymarket",
     "name": "Will Bitcoin reach $100,000 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-reach-100000-by-december-31-2026-571-361-361",
-    "yesPrice": 20.5,
-    "asOf": "2026-10-18T15:12:00+02:00",
-    "gapPts": -1.5,
-    "insideBand": true
+    "yesPrice": 12.5,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": -3.5,
+    "insideBand": false
    },
    "sources": [
     {
      "publisher": "Polymarket",
      "date": "December 31, 2026",
-     "note": "rules + Yes 0.205 (bid 0.2/ask 0.21), read via Gamma API Oct 18 2026 15:12 Rome",
+     "note": "rules; Yes 0.125 (bid 0.12 / ask 0.13, liquidity ~$104k) (read Oct 30 2026 ~17:45 Rome)",
      "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-reach-100000-by-december-31-2026-571-361-361"
     },
     {
-     "publisher": "CoinGabbar",
-     "date": "Oct 17 2026",
-     "note": "Sept CPI 3.7% y/y vs 3.6% est.; PPI surprise; BTC ETFs sixth outflow day of October (−$82.4M Oct 16); Hut 8-linked wallet moved 1,589 BTC to exchanges",
-     "url": "https://www.coingabbar.com/en/crypto-etf-news-today-bitcoin-ethereum-xrp-sol-outflow"
-    },
-    {
-     "publisher": "crypto.news",
-     "date": "Oct 17 2026",
-     "note": "US crypto ETFs −$610.7M Oct 12–16; BTC funds −$228.4M, ETH funds −$320.1M",
-     "url": "https://crypto.news/crypto-etfs-weekly-outflows-ethereum-bitcoin/"
-    },
-    {
      "publisher": "Binance klines via data-api.binance.vision",
-     "date": "Oct 18 2026",
-     "note": "BTC/USDT high since Nov 24 2025 $97,924, low $57,800; close ~$81.9k",
-     "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=1764000000000&limit=1000"
+     "date": "Oct 30 2026",
+     "note": "BTC/USDT ~$77.5k; October high $87,220; 30d/60d vol 29%/35%",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=61"
     }
    ],
    "history": [
@@ -1621,6 +1648,18 @@
       23.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      15.0,
+      23.0
+     ],
+     "to": [
+      6.0,
+      12.0
+     ],
+     "reason": "BTC ~$77.5k needs +29% to touch $100k in ~62 days; the zero-drift touch model on 30d/60d realized vol gives 3–8%, and the band is set a little above it for fat tails. Market Yes 0.125 (bid 0.12 / ask 0.13) sits at the top of the band. Worst October since 2014, plus the Binance hack and the tech selloff. [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -1633,14 +1672,14 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 33.0,
-   "probHigh": 43.0,
-   "midpoint": 38.0,
+   "probLow": 40.0,
+   "probHigh": 50.0,
+   "midpoint": 45.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
-   "summary": "Bitcoin trades around $80–84k. This asks whether it falls to $70,000 or lower at any point before year end.",
+   "summary": "Bitcoin fell to about $77k after the Oct 29 Binance hack. This asks whether it drops to $70,000 or lower at any point before year end.",
    "triggers": [
     {
      "label": "Toward YES",
@@ -1656,35 +1695,29 @@
     "venue": "Polymarket",
     "name": "Will Bitcoin dip to $70,000 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-dip-to-70000-by-december-31-2026-from-august-24",
-    "yesPrice": 37.5,
-    "asOf": "2026-10-18T14:56:00+02:00",
-    "gapPts": 0.5,
+    "yesPrice": 47.5,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": -2.5,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket",
      "date": "December 31, 2026",
-     "note": "rules + Yes 0.375 (bid 0.37/ask 0.38), read via Gamma API Oct 18 2026 14:56 Rome",
+     "note": "rules; Yes 0.475 (bid 0.47 / ask 0.48, liquidity ~$85k) (read Oct 30 2026 ~17:45 Rome)",
      "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-dip-to-70000-by-december-31-2026-from-august-24"
     },
     {
-     "publisher": "CoinGecko API",
-     "date": "Oct 18 2026",
-     "note": "BTC $81,890; 30d vol ~32%, 90d ~38%",
-     "url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=180&interval=daily"
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 30 2026",
+     "note": "BTC/USDT ~$77.5k; October low $76,500 (Oct 30); 30d/60d realized vol 29%/35%",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=61"
     },
     {
-     "publisher": "CoinDesk",
-     "date": "Oct 16 2026",
-     "note": "MSCI finalized non-operating-company rules; affected firms named Nov 11, effective after Nov 30 close; JPMorgan ~$2.8B MSTR outflow estimate",
-     "url": "https://www.coindesk.com/markets/2026/10/16/msci-approves-rules-that-could-eject-strategy-metaplanet-from-equity-indexes"
-    },
-    {
-     "publisher": "CNN",
-     "date": "Oct 15 2026",
-     "note": "US strike plans incl. MOAB on Iranian energy/nuclear sites before or after the midterms",
-     "url": "https://www.cnn.com/2026/10/15/politics/us-considering-mother-of-all-bombs-iran"
+     "publisher": "TRM Labs",
+     "date": "Oct 29–30 2026",
+     "note": "~$6.36B Binance hack (TraderTraitor); attacker holds >420k ETH, 18,270 BTC, 233M XRP, 970.5k SOL beyond freeze",
+     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
     }
    ],
    "history": [
@@ -1696,6 +1729,18 @@
       43.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      33.0,
+      43.0
+     ],
+     "to": [
+      40.0,
+      50.0
+     ],
+     "reason": "BTC fell to ~$77.5k after the Oct 29 Binance hack (Oct 30 low $76,500, the lowest since this row opened), 9.7% above the $70k line with ~62 days left. The zero-drift touch model on 30d/60d realized vol gives 39–49%; the attacker's 18,270 unfrozen BTC is an overhang. Market Yes 0.475 (bid 0.47 / ask 0.48), inside the band. [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -1713,7 +1758,7 @@
    "midpoint": 22.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "Chainlink, the price-feed network much of DeFi relies on, trades near $12. This asks whether it drops a third to $8 before year end.",
    "triggers": [
@@ -1782,7 +1827,7 @@
    "midpoint": 35.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "Dogecoin is at a one-month low near $0.079. This asks whether it breaks its cycle low and touches $0.06 before year end.",
    "triggers": [
@@ -1851,7 +1896,7 @@
    "midpoint": 2.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-15",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "Ethena's USDe is a synthetic dollar backed by hedged crypto positions. This asks whether it loses its $1 peg badly, below $0.98 for a full day, before year end.",
    "triggers": [
@@ -1914,15 +1959,15 @@
    "question": "Will Ethereum trade at or above $3,000 on Binance ETH/USDT (any 1-minute high) by Dec 31, 2026?",
    "domain": "Crypto",
    "status": "Active",
-   "confidence": "Low",
-   "probLow": 26.0,
-   "probHigh": 36.0,
-   "midpoint": 31.0,
+   "confidence": "Medium",
+   "probLow": 7.0,
+   "probHigh": 15.0,
+   "midpoint": 11.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
-   "summary": "The upside case for Ether: a December network upgrade and a turn in ETF flows could lift it. This asks whether it reaches $3,000 before year end.",
+   "summary": "Ether trades near $2,230 after the Binance hack, well below its October levels. This asks whether a December network upgrade or a turn in ETF flows lifts it to $3,000 before year end.",
    "triggers": [
     {
      "label": "Toward yes",
@@ -1938,35 +1983,29 @@
     "venue": "Polymarket",
     "name": "Will Ethereum reach $3,000 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-reach-3000-by-december-31-2026-from-june-8",
-    "yesPrice": 36.5,
-    "asOf": "2026-10-18T15:12:00+02:00",
-    "gapPts": -5.5,
+    "yesPrice": 18.5,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": -7.5,
     "insideBand": false
    },
    "sources": [
     {
      "publisher": "Polymarket",
      "date": "December 31, 2026",
-     "note": "rules + Yes 0.365 (bid 0.36/ask 0.37), read via Gamma API Oct 18 2026 15:12 Rome",
+     "note": "rules; Yes 0.185 (bid 0.18 / ask 0.19, liquidity ~$86k) (read Oct 30 2026 ~17:45 Rome)",
      "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-reach-3000-by-december-31-2026-from-june-8"
     },
     {
-     "publisher": "Ethereum Foundation blog",
-     "date": "Oct 16 2026",
-     "note": "Glamsterdam scheduled for Hoodi Oct 26 17:42 UTC; mainnet date not yet decided",
-     "url": "https://blog.ethereum.org/2026/10/16/glamsterdam-hoodi-announcement"
-    },
-    {
-     "publisher": "crypto.news",
-     "date": "Oct 17 2026",
-     "note": "ETH ETFs −$320.1M Oct 12–16",
-     "url": "https://crypto.news/crypto-etfs-weekly-outflows-ethereum-bitcoin/"
-    },
-    {
      "publisher": "Binance klines via data-api.binance.vision",
-     "date": "Oct 18 2026",
-     "note": "ETH/USDT high since Jun 8 2026 $2,807",
-     "url": "https://data-api.binance.vision/api/v3/klines?symbol=ETHUSDT&interval=1d&startTime=1780876800000&limit=1000"
+     "date": "Oct 30 2026",
+     "note": "ETH/USDT ~$2,231; Oct 30 low $2,174.08; 30d/60d vol 36%/41%",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=ETHUSDT&interval=1d&limit=61"
+    },
+    {
+     "publisher": "TRM Labs",
+     "date": "Oct 29–30 2026",
+     "note": "~$6.36B Binance hack (TraderTraitor); attacker holds >420k ETH, 18,270 BTC, 233M XRP, 970.5k SOL beyond freeze",
+     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
     }
    ],
    "history": [
@@ -1978,93 +2017,18 @@
       36.0
      ],
      "reason": "Forecast opened."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
-  {
-   "id": "0c2e62195a",
-   "question": "Will Ethereum trade at or below $2,250 on Binance ETH/USDT (any 1-minute low) by Dec 31, 2026?",
-   "domain": "Crypto",
-   "status": "Active",
-   "confidence": "Medium",
-   "probLow": 62.0,
-   "probHigh": 72.0,
-   "midpoint": 67.0,
-   "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-20",
-   "created": "2026-10-18",
-   "summary": "Ether sits near $2,400, at its lowest in a month, while US ether ETFs keep losing money. This asks whether it slips another ~7% to $2,250 before year end.",
-   "triggers": [
-    {
-     "label": "Toward yes",
-     "text": "ETH is ~7.8% above the line (~$2,441 on Oct 20 after a spike to $2,478); spot ETH ETFs keep bleeding (−$103M Oct 19, −$363M since Oct 14, mostly ETHA); $801M of long liquidations sit below $2,279; a hawkish Fed on Oct 28 or a December hike; Glamsterdam mainnet slipping into 2027."
     },
     {
-     "label": "Toward no",
-     "text": "ETH holds above $2,517 and squeezes shorts; ETF flows flip positive; a clean Glamsterdam Hoodi fork on Oct 26 and a December mainnet date lift sentiment; BTC reclaims $90k."
-    }
-   ],
-   "resolution": "Per Polymarket rules: resolves YES if any Binance ETH/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $2,250; earlier price action ignored (low since creation is $2,318). Otherwise NO. Re-score if ETH closes above $2,800.",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Will Ethereum dip to $2,250 by December 31, 2026?",
-    "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-dip-to-2250-by-december-31-2026",
-    "yesPrice": 59.0,
-    "asOf": "2026-10-20T18:04:00+02:00",
-    "gapPts": 8.0,
-    "insideBand": false
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API + CLOB midpoint",
-     "date": "December 31, 2026",
-     "note": "rules (any Binance ETH/USDT 1-minute Low ≤ $2,250 from creation through Dec 31 2026 23:59 ET) + Yes 0.59 (bid 0.58/ask 0.60, mid 0.585), read Oct 20 2026 18:04 Rome",
-     "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-dip-to-2250-by-december-31-2026"
-    },
-    {
-     "publisher": "Binance ETH/USDT klines via data-api.binance.vision",
-     "date": "Oct 20 2026",
-     "note": "spot $2,440.76; low since Aug 25 $2,318; 14/30/56-day realized vol ~42%/36%/41%; intraday high $2,478",
-     "url": "https://data-api.binance.vision/api/v3/klines?symbol=ETHUSDT&interval=1d&startTime=1787630400000&limit=1000"
-    },
-    {
-     "publisher": "Deribit ETH DVOL",
-     "date": "Oct 20 2026",
-     "note": "~52.8",
-     "url": "https://www.deribit.com/api/v2/public/get_volatility_index_data?currency=ETH&resolution=43200"
-    },
-    {
-     "publisher": "FinanceFeeds",
-     "date": "Oct 20 2026",
-     "note": "Ether ETFs −$103.28M Oct 19, −$362.8M since Oct 14; $801M long liquidations below $2,279, $727M shorts above $2,517",
-     "url": "https://financefeeds.com/ethereum-price-under-2400-ether-etf-outflows/"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-18",
-     "from": null,
-     "to": [
-      68.0,
-      78.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-10-20",
+     "date": "2026-10-30",
      "from": [
-      68.0,
-      78.0
+      26.0,
+      36.0
      ],
      "to": [
-      62.0,
-      72.0
+      7.0,
+      15.0
      ],
-     "reason": "ETH spiked from ~$2,385 to $2,478 on Binance between 16:00 and 17:00 Rome and sits at ~$2,441, 7.8% above the line (was 6.8%); ~72.5 days left. Touch model 61–68% at realized vol, 73–76% at implied; band centered ~67%. Still above market 0.585 (gap ~+8 pts) because Ether ETF outflows continue (−$103M on Oct 19, −$363M since Oct 14) and $801M of long liquidations sit below $2,279. Re-check if ETH holds above $2,517 (short-squeeze level) or after FOMC Oct 28."
+     "reason": "(confidence Low → Medium). ETH ~$2,231 (Oct 30 low $2,174) needs +34% to touch $3,000 in ~62 days; the zero-drift touch model on 30d/60d realized vol gives 5–8%. The band is set above that for fat tails, and below the market (Yes 0.185). Overhang: the Binance attacker holds >420k ETH. Companion row (ETH ≤$2,250) resolved YES on Oct 29. [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -2082,7 +2046,7 @@
    "midpoint": 16.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-26",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "Glamsterdam is Ethereum's next major upgrade, raising capacity roughly threefold. Its final public test, planned for Oct 26, was postponed with no new date, so this asks whether it can still reach mainnet in 2026.",
    "triggers": [
@@ -2156,14 +2120,14 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 34.0,
-   "probHigh": 44.0,
-   "midpoint": 39.0,
+   "probLow": 62.0,
+   "probHigh": 75.0,
+   "midpoint": 68.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
-   "summary": "Hyperliquid's token trades near $79, below its September high of about $97, even as new real-world-asset markets launch on the exchange. This asks whether it reaches $100 this year.",
+   "summary": "Hyperliquid's token rallied about 20% in a week to around $92, after touching about $98 on Oct 29. This asks whether it reaches $100 this year.",
    "triggers": [
     {
      "label": "Toward yes",
@@ -2179,35 +2143,23 @@
     "venue": "Polymarket",
     "name": "Will Hyperliquid reach $100 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-hyperliquid-hit-before-2027/will-hyperliquid-reach-100-by-december-31-2026",
-    "yesPrice": 39.5,
-    "asOf": "2026-10-18T15:12:00+02:00",
-    "gapPts": -0.5,
+    "yesPrice": 73.0,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": -4.5,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket",
      "date": "December 31, 2026",
-     "note": "rules + Yes 0.395 (bid 0.39/ask 0.4), read via Gamma API Oct 18 2026 15:12 Rome",
+     "note": "rules; Yes 0.73 (bid 0.70 / ask 0.76, liquidity ~$25k) (read Oct 30 2026 ~17:45 Rome)",
      "url": "https://polymarket.com/event/what-price-will-hyperliquid-hit-before-2027/will-hyperliquid-reach-100-by-december-31-2026"
     },
     {
-     "publisher": "FXStreet",
-     "date": "Oct 16 2026",
-     "note": "Ripple Prime opens 100+ RWA perp markets on Hyperliquid; HYPE rebounds to $82",
-     "url": "https://www.fxstreet.com/cryptocurrencies/news/ripple-prime-opens-100-rwa-perp-markets-on-hyperliquid-as-hype-rebounds-202610160445"
-    },
-    {
-     "publisher": "crypto.news",
-     "date": "Oct 17 2026",
-     "note": "Solana, Zcash and Hyperliquid ETF products −$62.2M combined Oct 12–16",
-     "url": "https://crypto.news/crypto-etfs-weekly-outflows-ethereum-bitcoin/"
-    },
-    {
-     "publisher": "CoinGecko API",
-     "date": "Oct 18 2026",
-     "note": "HYPE $78.59, 30d −12.3%, ATH $97.96; 30d vol ~52%, 90d ~71%",
-     "url": "https://api.coingecko.com/api/v3/coins/hyperliquid/market_chart?vs_currency=usd&days=180&interval=daily"
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 30 2026",
+     "note": "HYPE/USDT ~$92.3; October high $97.74; 7-day +19.7%; 30d/60d vol 61%/60%",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=HYPEUSDT&interval=1d&limit=61"
     }
    ],
    "history": [
@@ -2219,6 +2171,18 @@
       44.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      34.0,
+      44.0
+     ],
+     "to": [
+      62.0,
+      75.0
+     ],
+     "reason": "HYPE rallied ~20% in a week to ~$92.3 (October high $97.74), only 8.3% below the $100 line, probably helped by flows away from centralised venues after the Binance hack. The zero-drift touch model on 30d/60d realized vol gives ~75% and the market says 0.73 (bid 0.70 / ask 0.76). The band sits a little below both because momentum rallies after exchange shocks often fade. [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -2236,7 +2200,7 @@
    "midpoint": 10.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "Tanker traffic through the Strait of Hormuz has collapsed after repeated attacks on shipping. This asks whether transits recover to near-normal levels by year end.",
    "triggers": [
@@ -2306,12 +2270,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 40.0,
-   "probHigh": 55.0,
-   "midpoint": 47.5,
+   "probLow": 30.0,
+   "probHigh": 42.0,
+   "midpoint": 36.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "staleAfter": "2026-11-05",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "Israel and Iran are in an uneasy ceasefire. This asks whether neither side strikes the other's territory through year end.",
    "triggers": [
@@ -2329,29 +2293,35 @@
     "venue": "Polymarket",
     "name": "Israel x Iran ceasefire continues through December 31?",
     "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963/israel-x-iran-ceasefire-continues-through-december-31-415",
-    "yesPrice": 50.5,
-    "asOf": "2026-10-18T14:56:00+02:00",
-    "gapPts": -3.0,
+    "yesPrice": 37.0,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": -1.0,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket",
-     "date": "Oct 18 2026",
-     "note": "rules + Yes 0.505 (bid 0.50/ask 0.51) and term structure, read via Gamma API Oct 18 2026 14:53–14:56 Rome",
+     "date": "Oct 30 2026",
+     "note": "rules; Yes 0.37 (bid 0.36 / ask 0.38, liquidity ~$59k) read Oct 30 2026 ~17:45 Rome",
      "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963/israel-x-iran-ceasefire-continues-through-december-31-415"
     },
     {
-     "publisher": "Ynet News",
-     "date": "Oct 2026",
-     "note": "IDF raised alert and preparing for renewed fighting at short notice; Netanyahu reluctant before Oct 27; a new round would likely be coordinated with the US",
-     "url": "https://www.ynetnews.com/article/s1ryxf13fx"
+     "publisher": "CNBC",
+     "date": "Oct 30 2026",
+     "note": "renewed US military action weighed after the midterms; Cooper briefed Trump; Hormuz mines; Houthi strikes on Saudi Arabia",
+     "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html"
     },
     {
-     "publisher": "CNN",
-     "date": "Oct 15 2026",
-     "note": "US strike packages incl. MOAB for energy/nuclear sites; off-ramp options incl. a 'fireworks show'; talks focused on reopening Hormuz",
-     "url": "https://www.cnn.com/2026/10/15/politics/us-considering-mother-of-all-bombs-iran"
+     "publisher": "AP",
+     "date": "Oct 30 2026",
+     "note": "allies told to prepare for potential renewed action against Iran after the midterms",
+     "url": "https://apnews.com/article/trump-iran-strikes-midterm-elections-c7df622f1e87de6035173be8fb8c4add"
+    },
+    {
+     "publisher": "AP",
+     "date": "Oct 30 2026",
+     "note": "Israel final results: Netanyahu bloc 53, opposition 48, Arab-led parties 19",
+     "url": "https://apnews.com/article/israel-elections-netanyahu-results-eisenkot-arabs-3a793c0d07fdfe515390524b849d8674"
     }
    ],
    "history": [
@@ -2363,6 +2333,18 @@
       55.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      40.0,
+      55.0
+     ],
+     "to": [
+      30.0,
+      42.0
+     ],
+     "reason": "Post-election re-score (this row asked for one after Oct 27). Israel's election produced no majority (53/48/19), so Netanyahu leads a caretaker government during weeks of coalition talks. US officials have told allies to prepare for renewed military action after the Nov 3 midterms (AP), and Cooper briefed Trump on options (CNBC/WSJ). Earlier reporting has a new round coordinated with Israel. Iran and its proxies are escalating (Hormuz mines, Houthi strikes on Saudi Arabia). Offsetting: the Vance/Qatar talks track and Trump's 'wrapped up soon'. Market Yes 0.37 (liquidity ~$59k), inside the band. [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -2380,7 +2362,7 @@
    "midpoint": 91.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "MSCI finalised rules that can drop companies that are mainly bitcoin holdings from its indexes, and Strategy is on the potential-deletion list. This asks whether MSCI removes it by year end; the Nov 11 review is the key date.",
    "triggers": [
@@ -2455,7 +2437,7 @@
    "midpoint": 11.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-04",
-   "lastReviewed": "2026-10-27",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "Mojtaba Khamenei became Iran's de facto leader in March but has rarely been seen since. This asks whether he is removed, incapacitated or replaced by year end, a risk concentrated around possible renewed strikes after the US midterms.",
    "triggers": [
@@ -2603,7 +2585,7 @@
    "midpoint": 60.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-10-19",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "OpenAI's next GPT Astra release (6.1 or later) was shelved in late September over safety problems and has no new date. This asks whether it ships publicly by Dec 31.",
    "triggers": [
@@ -2672,7 +2654,7 @@
    "midpoint": 70.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-10-27",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-16",
    "summary": "Schwab announced in August plans to add SOL, AVAX and LINK to Schwab Crypto, and its CEO has since promised 'three new coins by the end of the year' without naming them. This asks whether AVAX is actually live for Schwab clients by Dec 31.",
    "triggers": [
@@ -2740,14 +2722,14 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 28.0,
-   "probHigh": 38.0,
-   "midpoint": 33.0,
+   "probLow": 34.0,
+   "probHigh": 44.0,
+   "midpoint": 39.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
-   "summary": "Solana trades near $104 ahead of its biggest-ever upgrade. This asks whether a weak market drags it down to $80 before year end.",
+   "summary": "Solana trades near $95 after a weak October. This asks whether a weak market drags it down to $80 before year end.",
    "triggers": [
     {
      "label": "Toward yes",
@@ -2763,35 +2745,29 @@
     "venue": "Polymarket",
     "name": "Will Solana dip to $80 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24",
-    "yesPrice": 30.5,
-    "asOf": "2026-10-18T15:12:00+02:00",
-    "gapPts": 2.5,
+    "yesPrice": 44.0,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": -5.0,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket",
      "date": "December 31, 2026",
-     "note": "rules + Yes 0.305 (bid 0.26/ask 0.35), read via Gamma API Oct 18 2026 15:12 Rome",
+     "note": "rules; Yes 0.44 (bid 0.42 / ask 0.46, liquidity ~$26k) (read Oct 30 2026 ~17:45 Rome)",
      "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24"
     },
     {
-     "publisher": "Solana",
-     "date": "Oct 2026",
-     "note": "Alpenglow activates on mainnet in epoch 1064, ~15:00 UTC Oct 21 2026",
-     "url": "https://solana.com/upgrades/alpenglow"
-    },
-    {
      "publisher": "Binance klines via data-api.binance.vision",
-     "date": "Oct 18 2026",
-     "note": "SOL/USDT low since Aug 25 2026 $94.95, high $124.95",
-     "url": "https://data-api.binance.vision/api/v3/klines?symbol=SOLUSDT&interval=1d&startTime=1787630400000&limit=1000"
+     "date": "Oct 30 2026",
+     "note": "SOL/USDT ~$95.1; October low $92.34; 30d/60d vol 42%/54%",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=SOLUSDT&interval=1d&limit=61"
     },
     {
-     "publisher": "CoinGecko API",
-     "date": "Oct 18 2026",
-     "note": "SOL $103.85, 30d −1.5%; 30d vol ~46%, 90d ~56%",
-     "url": "https://api.coingecko.com/api/v3/coins/solana/market_chart?vs_currency=usd&days=180&interval=daily"
+     "publisher": "TRM Labs",
+     "date": "Oct 29–30 2026",
+     "note": "~$6.36B Binance hack (TraderTraitor); attacker holds >420k ETH, 18,270 BTC, 233M XRP, 970.5k SOL beyond freeze",
+     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
     }
    ],
    "history": [
@@ -2803,6 +2779,18 @@
       38.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      28.0,
+      38.0
+     ],
+     "to": [
+      34.0,
+      44.0
+     ],
+     "reason": "SOL ~$95 (October low $92.34, 7-day −7.5%) is 16% above the $80 line; the zero-drift touch model on 30d/60d realized vol gives 32–44%. Market Yes 0.44 (bid 0.42 / ask 0.46), at the top of the band. 970.5k stolen SOL is still with the Binance attacker. [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -2820,7 +2808,7 @@
    "midpoint": 4.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-15",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "Tether's supply has stalled around $183–190B since spring, a sign of little new money entering crypto. This asks whether it jumps to $200B by year end.",
    "triggers": [
@@ -2895,7 +2883,7 @@
    "midpoint": 29.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "Uniswap's token now benefits from protocol fees that fund token burns, and briefly hit $10.94 in September. This asks whether it reaches $11 this year after falling back to about $7.",
    "triggers": [
@@ -2965,14 +2953,14 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 36.0,
-   "probHigh": 46.0,
-   "midpoint": 41.0,
+   "probLow": 30.0,
+   "probHigh": 40.0,
+   "midpoint": 35.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
-   "summary": "XRP is near $1.29, down 7% in a week, with its ETFs seeing outflows. This asks whether it falls to $1.00, a level that held as support over the summer.",
+   "summary": "XRP trades near $1.25 after a weak October. This asks whether it falls to $1.00, a level that held as support over the summer.",
    "triggers": [
     {
      "label": "Toward yes",
@@ -2988,35 +2976,29 @@
     "venue": "Polymarket",
     "name": "Will XRP dip to $1.00 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-xrp-hit-before-2027/will-xrp-dip-to-1pt00-by-december-31-2026-from-august-24",
-    "yesPrice": 30.0,
-    "asOf": "2026-10-18T15:12:00+02:00",
-    "gapPts": 11.0,
-    "insideBand": false
+    "yesPrice": 37.0,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": -2.0,
+    "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket",
      "date": "December 31, 2026",
-     "note": "rules + Yes 0.3 (bid 0.28/ask 0.32), read via Gamma API Oct 18 2026 15:12 Rome",
+     "note": "rules; Yes 0.37 (bid 0.34 / ask 0.40, liquidity ~$28k) (read Oct 30 2026 ~17:45 Rome)",
      "url": "https://polymarket.com/event/what-price-will-xrp-hit-before-2027/will-xrp-dip-to-1pt00-by-december-31-2026-from-august-24"
     },
     {
-     "publisher": "CoinGabbar",
-     "date": "Oct 17 2026",
-     "note": "BTC, ETH, XRP and SOL ETFs all posted outflows on Oct 16; XRP ETFs third outflow of October",
-     "url": "https://www.coingabbar.com/en/crypto-etf-news-today-bitcoin-ethereum-xrp-sol-outflow"
-    },
-    {
      "publisher": "Binance klines via data-api.binance.vision",
-     "date": "Oct 18 2026",
-     "note": "XRP/USDT low since Aug 25 2026 $1.2468, high $1.6581",
-     "url": "https://data-api.binance.vision/api/v3/klines?symbol=XRPUSDT&interval=1d&startTime=1787630400000&limit=1000"
+     "date": "Oct 30 2026",
+     "note": "XRP/USDT ~$1.25; October low $1.2002; 30d/60d vol 44%/60%",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=XRPUSDT&interval=1d&limit=61"
     },
     {
-     "publisher": "CoinGecko API",
-     "date": "Oct 18 2026",
-     "note": "XRP $1.29, 7d −7.0%; 30d vol ~49%, 90d ~68%",
-     "url": "https://api.coingecko.com/api/v3/coins/ripple/market_chart?vs_currency=usd&days=180&interval=daily"
+     "publisher": "TRM Labs",
+     "date": "Oct 29–30 2026",
+     "note": "~$6.36B Binance hack (TraderTraitor); attacker holds >420k ETH, 18,270 BTC, 233M XRP, 970.5k SOL beyond freeze",
+     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
     }
    ],
    "history": [
@@ -3028,6 +3010,18 @@
       46.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      36.0,
+      46.0
+     ],
+     "to": [
+      30.0,
+      40.0
+     ],
+     "reason": "XRP ~$1.25 (October low $1.20) is 20% above the $1.00 line; the zero-drift touch model on 30d/60d realized vol gives 23–37%. Upside risk to the band: the Binance attacker still holds 233M XRP, unmoved. Market Yes 0.37 (bid 0.34 / ask 0.40). [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -3040,12 +3034,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 33.0,
-   "probHigh": 45.0,
-   "midpoint": 39.0,
+   "probLow": 16.0,
+   "probHigh": 26.0,
+   "midpoint": 21.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "Zcash has become a top-10 coin but has fallen about 23% in a month amid ETF outflows. This asks whether its extreme swings take it down to $700 before year end.",
    "triggers": [
@@ -3063,35 +3057,23 @@
     "venue": "Polymarket",
     "name": "Will Zcash dip to $700 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-zcash-hit-before-2027/will-zcash-dip-to-700-by-december-31-2026",
-    "yesPrice": 25.5,
-    "asOf": "2026-10-18T15:12:00+02:00",
-    "gapPts": 13.5,
-    "insideBand": false
+    "yesPrice": 21.0,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": 0.0,
+    "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket",
      "date": "December 31, 2026",
-     "note": "rules + Yes 0.255 (bid 0.25/ask 0.26), read via Gamma API Oct 18 2026 15:12 Rome",
+     "note": "rules; Yes 0.21 (bid 0.19 / ask 0.23, liquidity ~$2.3k) (read Oct 30 2026 ~17:45 Rome)",
      "url": "https://polymarket.com/event/what-price-will-zcash-hit-before-2027/will-zcash-dip-to-700-by-december-31-2026"
     },
     {
-     "publisher": "Blockchain Reporter",
-     "date": "Oct 16 2026",
-     "note": "ZEC ~$1,234 after a 13% drop on CPI; ZCSH net outflows $17.9M that week after $30.7M and $93.6M; NU7 activation height decision Oct 20, Nov 5 tentative; Winklevoss WINK S-1 filed Oct 6",
-     "url": "https://blockchainreporter.net/zcash-news-today/"
-    },
-    {
      "publisher": "Binance klines via data-api.binance.vision",
-     "date": "Oct 18 2026",
-     "note": "ZEC/USDT low since Aug 25 2026 $758, high $1,698",
-     "url": "https://data-api.binance.vision/api/v3/klines?symbol=ZECUSDT&interval=1d&startTime=1787630400000&limit=1000"
-    },
-    {
-     "publisher": "CoinGecko API",
-     "date": "Oct 18 2026",
-     "note": "ZEC $1,121, 30d −22.6%; 30d vol ~97%, 90d ~120%",
-     "url": "https://api.coingecko.com/api/v3/coins/zcash/market_chart?vs_currency=usd&days=180&interval=daily"
+     "date": "Oct 30 2026",
+     "note": "ZEC/USDT ~$1,236; October low $1,049.01; 30d/60d vol 94%/128%",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=ZECUSDT&interval=1d&limit=61"
     }
    ],
    "history": [
@@ -3103,6 +3085,18 @@
       45.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      33.0,
+      45.0
+     ],
+     "to": [
+      16.0,
+      26.0
+     ],
+     "reason": "ZEC ~$1,236 (October low $1,049) would need a 43% drop to touch $700; the zero-drift touch model on 30d/60d realized vol (94%/128%) gives 15–28%. The NU7 upgrade (~Nov 5) is a near-term catalyst, and the stable Zebra 7.0.0 release lowers the risk of a botched upgrade. Market Yes 0.21 (bid 0.19 / ask 0.23). [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -3120,7 +3114,7 @@
    "midpoint": 6.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "This asks whether a general Russia–Ukraine ceasefire takes effect by year end and holds for at least ten days. Fighting and long-range strikes are currently intensifying.",
    "triggers": [
@@ -3189,7 +3183,7 @@
    "midpoint": 4.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-10-18",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "The Clarity Act would set the main US market-structure rules for crypto. It stalled in the Senate in September; this asks whether it still becomes law in 2026.",
    "triggers": [
@@ -3260,11 +3254,11 @@
    "status": "Active",
    "confidence": "High",
    "probLow": 1.0,
-   "probHigh": 4.0,
-   "midpoint": 2.5,
+   "probHigh": 2.0,
+   "midpoint": 1.5,
    "horizon": "2027-01-29",
-   "staleAfter": "2026-10-30",
-   "lastReviewed": "2026-10-18",
+   "staleAfter": "2026-11-25",
+   "lastReviewed": "2026-10-30",
    "created": "2026-10-18",
    "summary": "This asks whether the US meets a technical recession test in 2026: two straight quarters of negative GDP or an official NBER call. Current growth tracking is strongly positive.",
    "triggers": [
@@ -3282,17 +3276,23 @@
     "venue": "Polymarket",
     "name": "US recession by end of 2026?",
     "url": "https://polymarket.com/event/us-recession-by-end-of-2026/us-recession-by-end-of-2026",
-    "yesPrice": 6.5,
-    "asOf": "2026-10-18T14:56:00+02:00",
-    "gapPts": -4.0,
+    "yesPrice": 7.0,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": -5.5,
     "insideBand": false
    },
    "sources": [
     {
-     "publisher": "Polymarket",
-     "date": "Oct 18 2026",
-     "note": "rules + Yes 0.065 (bid 0.06/ask 0.07), read via Gamma API Oct 18 2026 14:56 Rome",
+     "publisher": "Polymarket Gamma API",
+     "date": "Oct 30 2026",
+     "note": "'US recession by end of 2026?' Yes 0.07 (bid 0.06 / ask 0.08, liquidity ~$38k)",
      "url": "https://polymarket.com/event/us-recession-by-end-of-2026/us-recession-by-end-of-2026"
+    },
+    {
+     "publisher": "BEA",
+     "date": "Oct 29 2026",
+     "note": "real GDP +3.4% SAAR (Q2 +2.2%); final sales to private domestic purchasers +4.9%; next release Nov 25",
+     "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026"
     },
     {
      "publisher": "Atlanta Fed GDPNow",
@@ -3310,6 +3310,18 @@
       4.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      1.0,
+      4.0
+     ],
+     "to": [
+      1.0,
+      2.0
+     ],
+     "reason": "BEA's Q3 advance estimate (Oct 29) shows real GDP +3.4% SAAR after +2.2% in Q2. YES now needs Q3 revised below zero AND a negative Q4 advance print, or an NBER recession call by late January; both are very unlikely. Market Yes 0.07 (bid 0.06 / ask 0.08) stays well above the band. Stale After moved to 2026-11-25 (Q3 second estimate). [Backfill run: the Oct 28–30 daily reviews did not run.]."
     }
    ],
    "outcome": null,
@@ -3318,6 +3330,247 @@
   }
  ],
  "resolved": [
+  {
+   "id": "fa4953d1a0",
+   "question": "Will Gadi Eisenkot's Yashar win the most Knesset seats in Israel's Oct 27, 2026 election?",
+   "domain": "Geopolitics",
+   "status": "Resolved-No",
+   "confidence": "Low",
+   "probLow": 55.0,
+   "probHigh": 70.0,
+   "midpoint": 62.5,
+   "horizon": "2026-10-30",
+   "staleAfter": "2026-10-28",
+   "lastReviewed": "2026-10-30",
+   "created": "2026-10-25",
+   "summary": "Final polls put Gadi Eisenkot's new Yashar party two seats ahead of Netanyahu's Likud before the Oct 27 vote. Likud finished first with 27 seats to Yashar's 21, so this resolved No.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "exit polls (KAN/Channel 12/Channel 13 at 22:00 Israel time, Oct 27) showing Yashar ahead of Likud; high opposition turnout (80% of opposition supporters 'certain' to vote vs 75% of coalition supporters in KAN's final poll); Bennett's Together surging at Likud's expense rather than Yashar's."
+    },
+    {
+     "label": "Toward NO",
+     "text": "Likud's historical tendency to beat final polls (late right-wing consolidation); 36% of voters still undecided in the final KAN poll; a US/Israeli strike on Iran before the vote (rally-round-the-flag effect); Yashar losing votes to Together (Bennett gained 2 seats in the last KAN poll while Yashar lost 1)."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if Yashar (incl. any joint list it heads) wins the greatest number of Knesset seats in the Oct 27, 2026 election, by consensus of credible reporting, or the official Central Elections Committee results if ambiguous. Ties go to the list with more valid votes. Resolves NO if any other party (e.g. Likud) wins the most seats. Thesis invalidated if exit polls put Likud ahead of Yashar by 2+ seats.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Yashar win the most seats in the 2026 Israeli legislative election?",
+    "url": "https://polymarket.com/event/israeli-legislative-election-winner/will-yashar-win-the-most-seats-in-the-2026-israeli-legislative-election",
+    "yesPrice": 0.15,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": 62.4,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Oct 30 2026",
+     "note": "'Will Yashar win the most seats in the 2026 Israeli legislative election?' Yes 0.0015 (bid 0.001 / ask 0.002), conditionId 0xd05da9807740aa0f5bc9e9232daabe87a21e5012c19e283abf414f1c1651118b",
+     "url": "https://polymarket.com/event/israeli-legislative-election-winner/will-yashar-win-the-most-seats-in-the-2026-israeli-legislative-election"
+    },
+    {
+     "publisher": "Times of Israel liveblog",
+     "date": "Oct 30 2026",
+     "note": "Central Elections Committee final count: Likud 27, Yashar 21, B'Yachad 12, Joint List 11; blocs 53/48/19; turnout 77.9%; official results to Herzog Nov 4",
+     "url": "https://www.timesofisrael.com/liveblog_entry/central-elections-committee-publishes-final-election-results-knesset-to-be-sworn-in-nov-10/"
+    },
+    {
+     "publisher": "AP",
+     "date": "Oct 30 2026",
+     "note": "final results released early Friday: Netanyahu bloc 53, opposition 48, Arab-led parties 19",
+     "url": "https://apnews.com/article/israel-elections-netanyahu-results-eisenkot-arabs-3a793c0d07fdfe515390524b849d8674"
+    },
+    {
+     "publisher": "Ynet News",
+     "date": "Oct 30 2026",
+     "note": "all votes counted: Likud 27, Yashar 21, Together 12",
+     "url": "https://www.ynetnews.com/article/lzkcj5xqa"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-25",
+     "from": null,
+     "to": [
+      55.0,
+      70.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": "No",
+   "brier": 0.3906,
+   "resolvedOn": "2026-10-30"
+  },
+  {
+   "id": "0c2e62195a",
+   "question": "Will Ethereum trade at or below $2,250 on Binance ETH/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Resolved-Yes",
+   "confidence": "Medium",
+   "probLow": 62.0,
+   "probHigh": 72.0,
+   "midpoint": 67.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-10-30",
+   "created": "2026-10-18",
+   "summary": "Ether spent October drifting lower as US ether ETFs lost money. It hit $2,250 on Oct 29 during the selloff that followed the Binance hack, so this resolved Yes.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "ETH is ~7.8% above the line (~$2,441 on Oct 20 after a spike to $2,478); spot ETH ETFs keep bleeding (−$103M Oct 19, −$363M since Oct 14, mostly ETHA); $801M of long liquidations sit below $2,279; a hawkish Fed on Oct 28 or a December hike; Glamsterdam mainnet slipping into 2027."
+    },
+    {
+     "label": "Toward no",
+     "text": "ETH holds above $2,517 and squeezes shorts; ETF flows flip positive; a clean Glamsterdam Hoodi fork on Oct 26 and a December mainnet date lift sentiment; BTC reclaims $90k."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance ETH/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $2,250; earlier price action ignored (low since creation is $2,318). Otherwise NO. Re-score if ETH closes above $2,800.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Ethereum dip to $2,250 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-dip-to-2250-by-december-31-2026",
+    "yesPrice": 59.0,
+    "asOf": "2026-10-20T18:04:00+02:00",
+    "gapPts": 8.0,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API + CLOB midpoint",
+     "date": "December 31, 2026",
+     "note": "rules (any Binance ETH/USDT 1-minute Low ≤ $2,250 from creation through Dec 31 2026 23:59 ET) + Yes 0.59 (bid 0.58/ask 0.60, mid 0.585), read Oct 20 2026 18:04 Rome",
+     "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-dip-to-2250-by-december-31-2026"
+    },
+    {
+     "publisher": "Binance ETH/USDT 1-minute klines via data-api.binance.vision",
+     "date": "Oct 30 2026",
+     "note": "first candle ≤$2,250 at 20:43 UTC Oct 29 (low $2,240.00); Oct 29 daily low $2,233.00; Oct 30 low $2,174.08",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=ETHUSDT&interval=1m&startTime=1793304000000&limit=1000"
+    },
+    {
+     "publisher": "TRM Labs",
+     "date": "Oct 29–30 2026",
+     "note": "~$6.36B drained from Binance from 20:05 UTC Oct 29, attributed to TraderTraitor (high confidence); attacker holds >420k ETH",
+     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
+    },
+    {
+     "publisher": "FinanceFeeds",
+     "date": "Oct 20 2026",
+     "note": "Ether ETFs −$103.28M Oct 19, −$362.8M since Oct 14; $801M long liquidations below $2,279, $727M shorts above $2,517",
+     "url": "https://financefeeds.com/ethereum-price-under-2400-ether-etf-outflows/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      68.0,
+      78.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-20",
+     "from": [
+      68.0,
+      78.0
+     ],
+     "to": [
+      62.0,
+      72.0
+     ],
+     "reason": "ETH spiked from ~$2,385 to $2,478 on Binance between 16:00 and 17:00 Rome and sits at ~$2,441, 7.8% above the line (was 6.8%); ~72.5 days left. Touch model 61–68% at realized vol, 73–76% at implied; band centered ~67%. Still above market 0.585 (gap ~+8 pts) because Ether ETF outflows continue (−$103M on Oct 19, −$363M since Oct 14) and $801M of long liquidations sit below $2,279. Re-check if ETH holds above $2,517 (short-squeeze level) or after FOMC Oct 28."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.1089,
+   "resolvedOn": "2026-10-29"
+  },
+  {
+   "id": "f0d92a8ce1",
+   "question": "Will the FOMC hold the fed funds target range at 3.75–4.00% at its Oct 27–28, 2026 meeting?",
+   "domain": "Macro",
+   "status": "Resolved-Yes",
+   "confidence": "High",
+   "probLow": 88.0,
+   "probHigh": 95.0,
+   "midpoint": 91.5,
+   "horizon": "2026-10-28",
+   "staleAfter": "2026-10-28",
+   "lastReviewed": "2026-10-30",
+   "created": "2026-10-16",
+   "summary": "After hiking in September, the Fed met again on Oct 27–28 with inflation still hot. It held at 3.75–4.00%, with two officials voting for another hike, so this resolved Yes.",
+   "triggers": [
+    {
+     "label": "Toward hike",
+     "text": "another hot data print before the meeting (core CPI/PCE ≥0.3% m/m, strong payrolls), oil staying >$100, FedWatch October hike odds back above 50%, hawkish Fed-speak before blackout."
+    },
+    {
+     "label": "Toward hold",
+     "text": "Warsh/leadership signalling patience, energy prices rolling over, FedWatch hold odds staying ≥80%."
+    }
+   ],
+   "resolution": "Resolves NO if the Oct 28 FOMC statement announces any change to the 3.75–4.00% target range (hike or cut), or an intermeeting move happens before Oct 28. Thesis invalidated if FedWatch October hike odds rise back above 50% before the blackout.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "Federal Reserve",
+     "date": "Oct 28 2026",
+     "note": "target range maintained at 3-3/4 to 4%, vote 10–2 (Cook, Hammack preferred +25bp)",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+    },
+    {
+     "publisher": "CNBC",
+     "date": "Oct 28 2026",
+     "note": "Fed holds at 3.75–4%; 'inflation remains elevated'; waiting for 'accumulation of more information'",
+     "url": "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html"
+    },
+    {
+     "publisher": "Frenzy Capital Fed Watch",
+     "date": "Oct 23 2026",
+     "note": "Oct 28 FOMC: hold 92% / 25bp hike 8% from fed funds futures; Kalshi hold ~94%, Polymarket hike 6%; 2026 core PCE 3.0%, CPI 3.7%",
+     "url": "https://www.frenzycap.com/fedwatch"
+    },
+    {
+     "publisher": "MacroOdds",
+     "date": "Oct 23 2026",
+     "note": "Polymarket October FOMC: hold 93.5%, hike 5.9%, cut 0.3% ($57.4M volume)",
+     "url": "https://macroodds.com/fomc/october-2026"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-16",
+     "from": null,
+     "to": [
+      80.0,
+      90.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-23",
+     "from": [
+      80.0,
+      90.0
+     ],
+     "to": [
+      88.0,
+      95.0
+     ],
+     "reason": "(confidence Medium → High). Fed is in the pre-meeting blackout with five days to the Oct 28 decision. Futures-implied hold odds rose from ~86% a week earlier to 92% (hike 8%); Kalshi hold ~94% and Polymarket hold 93.5% agree. Hike pricing has moved to December (~82–90%). Residual NO risk = surprise hike on oil (>$110) / sticky inflation (core PCE 3.0%, CPI 3.7%). Midpoint 91.5% sits just below the futures/prediction-market consensus (92–94%). Stale After 2026-10-27 (day before decision)."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.0072,
+   "resolvedOn": "2026-10-28"
+  },
   {
    "id": "05b7a22d0a",
    "question": "In its Q3 2026 results on Oct 21, 2026, will Meta raise the low end of its 2026 capex outlook above $130B?",
