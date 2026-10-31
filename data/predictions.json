@@ -1,12 +1,12 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-30T17:56:12+01:00",
+ "generatedAt": "2026-10-31T08:55:58+01:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 42,
-  "resolved": 4,
+  "active": 41,
+  "resolved": 5,
   "byDomain": {
-   "Crypto": 27,
+   "Crypto": 26,
    "Geopolitics": 8,
    "AI": 3,
    "Macro": 3,
@@ -14,133 +14,6 @@
   }
  },
  "predictions": [
-  {
-   "id": "8b2b3fa149",
-   "question": "Will US spot Bitcoin ETFs finish October 2026 with positive aggregate net flows?",
-   "domain": "Crypto",
-   "status": "Active",
-   "confidence": "Low",
-   "probLow": 55.0,
-   "probHigh": 70.0,
-   "midpoint": 62.5,
-   "horizon": "2026-10-30",
-   "staleAfter": "2026-10-31",
-   "lastReviewed": "2026-10-30",
-   "created": "2026-10-16",
-   "summary": "US spot Bitcoin ETFs spent most of October in net outflows, then took in money late in the month. This asks whether the monthly total ends above zero, a gauge of institutional crypto demand.",
-   "triggers": [
-    {
-     "label": "Toward yes",
-     "text": "BTC reclaiming $84k (where the post-CPI spike stalled) with consecutive inflow days; Oct 28 FOMC hold read as dovish; IBIT inflow streak."
-    },
-    {
-     "label": "Toward no",
-     "text": "further hot data or an October hike; BTC losing the ~$80k support; continued outflows from FBTC/ARKB; AI-credit stress spilling into risk assets."
-    }
-   ],
-   "resolution": "Resolution: month-to-date total of US spot Bitcoin ETF daily net flows for October 2026 (TFTC table, cross-check Farside/SoSoValue) after the Oct 30 session. Resolves YES if > $0. As of Oct 15 the month total was −$534.8M, so roughly +$535M is needed over the remaining sessions.",
-   "market": null,
-   "sources": [
-    {
-     "publisher": "Farside Investors BTC ETF flow table",
-     "date": "Oct 30 2026",
-     "note": "Oct 26 +$110.3M, Oct 27 +$176.0M, Oct 28 +$137.3M, Oct 29 +$17.2M; Oct 30 not yet reported",
-     "url": "https://farside.co.uk/btc/"
-    },
-    {
-     "publisher": "TFTC",
-     "date": "October 2026",
-     "note": "October net +$128.3M across 21 sessions, 13 in / 8 out; biggest day Oct 22 −$635.5M",
-     "url": "https://www.tftc.io/bitcoin-etf-flows/october-2026"
-    },
-    {
-     "publisher": "TokenPost",
-     "date": "Oct 30 2026",
-     "note": "Oct 29 net +$17.07M, fourth straight inflow day; IBIT +$12.8M, Grayscale BTC −$15.35M",
-     "url": "https://www.tokenpost.com/news/investing/44518"
-    },
-    {
-     "publisher": "Binance klines via data-api.binance.vision",
-     "date": "Oct 30 2026",
-     "note": "BTC/USDT ~$77.5k, Oct 30 intraday low $76,500 after the Oct 29 Binance hack",
-     "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=61"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-16",
-     "from": null,
-     "to": [
-      20.0,
-      35.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-10-18",
-     "from": [
-      20.0,
-      35.0
-     ],
-     "to": [
-      15.0,
-      28.0
-     ],
-     "reason": "Oct 16 added −$82.4M (Farside), so October MTD is ≈ −$615M after 12 sessions (BullishStation −$614.7M, Oct 17). About +$615M is now needed over the ~10 remaining sessions (Oct 19–30), roughly +$62M/day vs a month-to-date average of about −$51M/day, with ETH ETFs also bleeding and the 10y at 5.09%. Still possible (one Sept week was +$2.39B), mainly via a dovish Oct 28 hold."
-    },
-    {
-     "date": "2026-10-21",
-     "from": [
-      15.0,
-      28.0
-     ],
-     "to": [
-      45.0,
-      58.0
-     ],
-     "reason": "Oct 19 +$526.7M (largest day in a month, all IBIT) and Oct 20 +$23.2M take October MTD to ≈ −$64.8M after 14 sessions (Farside rows + Alpha Finance Oct 1). Only ≈ +$65M is needed over the 8 remaining sessions (Oct 21–30). FedWatch hold odds rose to ~84% (hike 16%). Daily flows swing ±$200–500M, so this is close to a coin flip with a slight lean to YES on momentum."
-    },
-    {
-     "date": "2026-10-22",
-     "from": [
-      45.0,
-      58.0
-     ],
-     "to": [
-      70.0,
-      82.0
-     ],
-     "reason": "(confidence Low → Medium). Farside shows Oct 21 +$524.8M, so October MTD is now ≈ +$460M after 15 sessions (Farside Oct 2–21 + Alpha Finance Oct 1). The month now stays positive unless the 7 remaining sessions (Oct 22–30) lose more than ~$460M net. SoSoValue shows a smaller Oct 21 figure (+$289.8M), so the cushion may be thinner on other trackers. Not higher because BTC slipped back toward $82.5k on Oct 22, the Oct 28 FOMC (16% hike odds) is a two-sided risk, and single outflow days of −$250M to −$485M happened earlier this month."
-    },
-    {
-     "date": "2026-10-25",
-     "from": [
-      70.0,
-      82.0
-     ],
-     "to": [
-      30.0,
-      45.0
-     ],
-     "reason": "(confidence Medium → Low). Two straight outflow days wiped out the cushion: Oct 22 −$635.6M and Oct 23 −$137.9M (Farside), so October is now ≈ −$313.5M after 17 sessions (CryptoWatchDesk, consistent with the running Farside sum). About +$314M is needed over the 5 remaining sessions (Oct 26–30), roughly +$63M/day. BTC dipped below $80k on Saturday amid renewed US–Iran strike talk (Brent ~$117) and AI-credit stress; the Oct 28 FOMC hold is priced (92%), so a dovish surprise is the main upside path. Daily flows still swing ±$500M, so YES is far from dead."
-    },
-    {
-     "date": "2026-10-30",
-     "from": [
-      30.0,
-      45.0
-     ],
-     "to": [
-      55.0,
-      70.0
-     ],
-     "reason": "Three more inflow days: Oct 27 +$176.0M, Oct 28 +$137.3M, Oct 29 +$17.2M (Farside), so October is now ≈ +$128M after 21 sessions (TFTC +$128.3M; SoSoValue shows a four-day inflow streak). The month now resolves YES unless today's Oct 30 session loses more than ~$128M net. Five of 21 October sessions were outflows that large (Oct 7, 8, 14, 22, 23). Today is a risk-off day: BTC is ~$77.5k after the Oct 29 Binance hack, with an intraday low of $76,500, yet Oct 29 itself stayed slightly positive during the hack. Midpoint 62.5%. Resolve on Oct 31 once Farside/TFTC post the Oct 30 row (watch for late HODL/BTCW revisions). Stale After moved to 2026-10-31. [Backfill run: the Oct 28–30 daily reviews did not run.]."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
   {
    "id": "1724c9be83",
    "question": "Will Alpenglow consensus be live on Solana mainnet-beta by Oct 31, 2026?",
@@ -152,7 +25,7 @@
    "midpoint": 97.5,
    "horizon": "2026-10-31",
    "staleAfter": "2026-10-31",
-   "lastReviewed": "2026-10-30",
+   "lastReviewed": "2026-10-31",
    "created": "2026-10-18",
    "summary": "Solana is switching to a new consensus system, Alpenglow, on Oct 21, aiming for transactions that are final in about 150 milliseconds. This asks whether the switch is live and holding by the end of October.",
    "triggers": [
@@ -231,7 +104,7 @@
    "midpoint": 67.5,
    "horizon": "2026-11-03",
    "staleAfter": "2026-11-02",
-   "lastReviewed": "2026-10-30",
+   "lastReviewed": "2026-10-31",
    "created": "2026-10-30",
    "summary": "Binance halted withdrawals after a roughly $6.3B hack on Oct 29, the largest crypto theft on record, and says it aims to reopen them by Nov 1. This tracks whether ordinary users can withdraw BTC, ETH and USDT again by Nov 3.",
    "triggers": [
@@ -286,7 +159,7 @@
    "midpoint": 83.0,
    "horizon": "2026-11-03",
    "staleAfter": "2026-11-02",
-   "lastReviewed": "2026-10-30",
+   "lastReviewed": "2026-10-31",
    "created": "2026-10-18",
    "summary": "The US has paused strikes on Iran ahead of the midterms while indirect talks continue. This tracks whether that pause actually holds through Election Day on Nov 3.",
    "triggers": [
@@ -405,7 +278,7 @@
    "midpoint": 91.0,
    "horizon": "2026-11-04",
    "staleAfter": "2026-11-02",
-   "lastReviewed": "2026-10-30",
+   "lastReviewed": "2026-10-31",
    "created": "2026-10-18",
    "summary": "Which party controls the House after the Nov 3 midterms. Polling averages and public forecast models currently favour the Democrats.",
    "triggers": [
@@ -492,7 +365,7 @@
    "midpoint": 67.0,
    "horizon": "2026-11-04",
    "staleAfter": "2026-11-02",
-   "lastReviewed": "2026-10-30",
+   "lastReviewed": "2026-10-31",
    "created": "2026-10-18",
    "summary": "Which party controls the Senate after the Nov 3 midterms. The map is much tighter than the House and hinges on a handful of close races and how independents caucus.",
    "triggers": [
@@ -2654,7 +2527,7 @@
    "midpoint": 70.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-10-30",
+   "lastReviewed": "2026-10-31",
    "created": "2026-10-16",
    "summary": "Schwab announced in August plans to add SOL, AVAX and LINK to Schwab Crypto, and its CEO has since promised 'three new coins by the end of the year' without naming them. This asks whether AVAX is actually live for Schwab clients by Dec 31.",
    "triggers": [
@@ -3330,6 +3203,133 @@
   }
  ],
  "resolved": [
+  {
+   "id": "8b2b3fa149",
+   "question": "Will US spot Bitcoin ETFs finish October 2026 with positive aggregate net flows?",
+   "domain": "Crypto",
+   "status": "Resolved-No",
+   "confidence": "Low",
+   "probLow": 55.0,
+   "probHigh": 70.0,
+   "midpoint": 62.5,
+   "horizon": "2026-10-30",
+   "staleAfter": "2026-10-31",
+   "lastReviewed": "2026-10-31",
+   "created": "2026-10-16",
+   "summary": "US spot Bitcoin ETFs spent most of October in net outflows, then took in money late in the month. This asks whether the monthly total ends above zero, a gauge of institutional crypto demand.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "BTC reclaiming $84k (where the post-CPI spike stalled) with consecutive inflow days; Oct 28 FOMC hold read as dovish; IBIT inflow streak."
+    },
+    {
+     "label": "Toward no",
+     "text": "further hot data or an October hike; BTC losing the ~$80k support; continued outflows from FBTC/ARKB; AI-credit stress spilling into risk assets."
+    }
+   ],
+   "resolution": "Resolution: month-to-date total of US spot Bitcoin ETF daily net flows for October 2026 (TFTC table, cross-check Farside/SoSoValue) after the Oct 30 session. Resolves YES if > $0. As of Oct 15 the month total was −$534.8M, so roughly +$535M is needed over the remaining sessions.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "TFTC",
+     "date": "October 2026",
+     "note": "October net +$128.3M across 21 sessions before the Oct 30 row",
+     "url": "https://www.tftc.io/bitcoin-etf-flows/october-2026"
+    },
+    {
+     "publisher": "TokenPost",
+     "date": "Oct 30–31 2026",
+     "note": "Oct 30 net outflow −$643.33M, ending four straight inflow days; IBIT −$233.70M, FBTC −$201.04M, ARKB −$129.55M",
+     "url": "https://www.tokenpost.com/news/investing/45342"
+    },
+    {
+     "publisher": "Coinmico ETF flows",
+     "date": "Oct 30 2026",
+     "note": "Oct 30 −$643.3M; last 30 days −$515.0M",
+     "url": "https://coinmico.com/etf-flows/bitcoin"
+    },
+    {
+     "publisher": "Alpha Finance",
+     "date": "Oct 30 2026",
+     "note": "Oct 30 −$643.2M, 12 of 12 funds reported",
+     "url": "https://alphafinance.io/etf/bitcoin/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-16",
+     "from": null,
+     "to": [
+      20.0,
+      35.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-18",
+     "from": [
+      20.0,
+      35.0
+     ],
+     "to": [
+      15.0,
+      28.0
+     ],
+     "reason": "Oct 16 added −$82.4M (Farside), so October MTD is ≈ −$615M after 12 sessions (BullishStation −$614.7M, Oct 17). About +$615M is now needed over the ~10 remaining sessions (Oct 19–30), roughly +$62M/day vs a month-to-date average of about −$51M/day, with ETH ETFs also bleeding and the 10y at 5.09%. Still possible (one Sept week was +$2.39B), mainly via a dovish Oct 28 hold."
+    },
+    {
+     "date": "2026-10-21",
+     "from": [
+      15.0,
+      28.0
+     ],
+     "to": [
+      45.0,
+      58.0
+     ],
+     "reason": "Oct 19 +$526.7M (largest day in a month, all IBIT) and Oct 20 +$23.2M take October MTD to ≈ −$64.8M after 14 sessions (Farside rows + Alpha Finance Oct 1). Only ≈ +$65M is needed over the 8 remaining sessions (Oct 21–30). FedWatch hold odds rose to ~84% (hike 16%). Daily flows swing ±$200–500M, so this is close to a coin flip with a slight lean to YES on momentum."
+    },
+    {
+     "date": "2026-10-22",
+     "from": [
+      45.0,
+      58.0
+     ],
+     "to": [
+      70.0,
+      82.0
+     ],
+     "reason": "(confidence Low → Medium). Farside shows Oct 21 +$524.8M, so October MTD is now ≈ +$460M after 15 sessions (Farside Oct 2–21 + Alpha Finance Oct 1). The month now stays positive unless the 7 remaining sessions (Oct 22–30) lose more than ~$460M net. SoSoValue shows a smaller Oct 21 figure (+$289.8M), so the cushion may be thinner on other trackers. Not higher because BTC slipped back toward $82.5k on Oct 22, the Oct 28 FOMC (16% hike odds) is a two-sided risk, and single outflow days of −$250M to −$485M happened earlier this month."
+    },
+    {
+     "date": "2026-10-25",
+     "from": [
+      70.0,
+      82.0
+     ],
+     "to": [
+      30.0,
+      45.0
+     ],
+     "reason": "(confidence Medium → Low). Two straight outflow days wiped out the cushion: Oct 22 −$635.6M and Oct 23 −$137.9M (Farside), so October is now ≈ −$313.5M after 17 sessions (CryptoWatchDesk, consistent with the running Farside sum). About +$314M is needed over the 5 remaining sessions (Oct 26–30), roughly +$63M/day. BTC dipped below $80k on Saturday amid renewed US–Iran strike talk (Brent ~$117) and AI-credit stress; the Oct 28 FOMC hold is priced (92%), so a dovish surprise is the main upside path. Daily flows still swing ±$500M, so YES is far from dead."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      30.0,
+      45.0
+     ],
+     "to": [
+      55.0,
+      70.0
+     ],
+     "reason": "Three more inflow days: Oct 27 +$176.0M, Oct 28 +$137.3M, Oct 29 +$17.2M (Farside), so October is now ≈ +$128M after 21 sessions (TFTC +$128.3M; SoSoValue shows a four-day inflow streak). The month now resolves YES unless today's Oct 30 session loses more than ~$128M net. Five of 21 October sessions were outflows that large (Oct 7, 8, 14, 22, 23). Today is a risk-off day: BTC is ~$77.5k after the Oct 29 Binance hack, with an intraday low of $76,500, yet Oct 29 itself stayed slightly positive during the hack. Midpoint 62.5%. Resolve on Oct 31 once Farside/TFTC post the Oct 30 row (watch for late HODL/BTCW revisions). Stale After moved to 2026-10-31. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    }
+   ],
+   "outcome": "No",
+   "brier": 0.3906,
+   "resolvedOn": "2026-10-31"
+  },
   {
    "id": "fa4953d1a0",
    "question": "Will Gadi Eisenkot's Yashar win the most Knesset seats in Israel's Oct 27, 2026 election?",
