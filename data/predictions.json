@@ -1,12 +1,12 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-31T08:55:58+01:00",
+ "generatedAt": "2026-11-01T08:53:16+01:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 41,
-  "resolved": 5,
+  "active": 40,
+  "resolved": 6,
   "byDomain": {
-   "Crypto": 26,
+   "Crypto": 25,
    "Geopolitics": 8,
    "AI": 3,
    "Macro": 3,
@@ -15,96 +15,17 @@
  },
  "predictions": [
   {
-   "id": "1724c9be83",
-   "question": "Will Alpenglow consensus be live on Solana mainnet-beta by Oct 31, 2026?",
-   "domain": "Crypto",
-   "status": "Active",
-   "confidence": "High",
-   "probLow": 96.0,
-   "probHigh": 99.0,
-   "midpoint": 97.5,
-   "horizon": "2026-10-31",
-   "staleAfter": "2026-10-31",
-   "lastReviewed": "2026-10-31",
-   "created": "2026-10-18",
-   "summary": "Solana is switching to a new consensus system, Alpenglow, on Oct 21, aiming for transactions that are final in about 150 milliseconds. This asks whether the switch is live and holding by the end of October.",
-   "triggers": [
-    {
-     "label": "Toward yes",
-     "text": "activation set for epoch 1064 (~15:00 UTC Oct 21) with migrations already completed on a community cluster, testnet (Sep 24) and devnet (Sep 25); BLS keys and the Validator Admission Ticket live on mainnet since July; 25,000+ SOL bug bounty and nine simulated migrations."
-    },
-    {
-     "label": "Toward no",
-     "text": "the switch needs 82% of stake to sign the Alpenglow genesis block; Firedancer/Frankendancer validators unsupported during migration; a failed handoff or rollback that reverts to TowerBFT."
-    }
-   ],
-   "resolution": "Resolves YES if Solana mainnet-beta is producing blocks under Alpenglow consensus (TowerBFT retired) at any time by 23:59 UTC Oct 31, 2026 and remains on it at that time, per Anza/Solana announcements or the Alpenglow genesis certificate being set. Resolves NO if activation is postponed past Oct 31 or the network reverts to TowerBFT and is still on it at that time.",
-   "market": null,
-   "sources": [
-    {
-     "publisher": "Solana",
-     "date": "Oct 22 2026",
-     "note": "live on mainnet; activated epoch 1064 Oct 21 ~13:36 UTC; genesis block slot 459,652,999 certified by 446 of 654 validators; Alpenglow consensus from slot 459,653,000",
-     "url": "https://solana.com/upgrades/alpenglow"
-    },
-    {
-     "publisher": "Anza / PR Newswire",
-     "date": "Oct 21 2026",
-     "note": "'Alpenglow is Live on Solana'",
-     "url": "https://www.prnewswire.com/news-releases/alpenglow-is-live-on-solana-the-worlds-fastest-finality-on-a-global-network-302915579.html"
-    },
-    {
-     "publisher": "CoinDesk",
-     "date": "Oct 22 2026",
-     "note": "Solana completes Alpenglow upgrade; ~900ms handoff from TowerBFT",
-     "url": "https://www.coindesk.com/tech/2026/10/22/solana-completes-alpenglow-upgrade-here-s-what-it-means-for-users"
-    },
-    {
-     "publisher": "Anza Alpenglow page",
-     "date": "Oct 22 2026",
-     "note": "mainnet-beta migration 'Completed'",
-     "url": "https://www.anza.xyz/alpenglow"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-18",
-     "from": null,
-     "to": [
-      85.0,
-      93.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-10-22",
-     "from": [
-      85.0,
-      93.0
-     ],
-     "to": [
-      96.0,
-      99.0
-     ],
-     "reason": "(confidence Medium → High). Alpenglow activated on mainnet-beta Oct 21 ~13:36 UTC (Solana, Anza, CoinDesk); TowerBFT retired after the 5,000-slot window, handoff ~900ms. Not marked resolved because the row requires the network still be on Alpenglow at 23:59 UTC Oct 31; the only residual risk is a revert to TowerBFT, which looks very unlikely. Resolve YES on Oct 31/Nov 1 if still live."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
-  {
    "id": "87ecc4007a",
    "question": "Will Binance restore general customer withdrawals of BTC, ETH and USDT by Nov 3, 2026 (23:59 UTC)?",
    "domain": "Crypto",
    "status": "Active",
-   "confidence": "Low",
-   "probLow": 60.0,
-   "probHigh": 75.0,
-   "midpoint": 67.5,
+   "confidence": "High",
+   "probLow": 88.0,
+   "probHigh": 98.0,
+   "midpoint": 93.0,
    "horizon": "2026-11-03",
    "staleAfter": "2026-11-02",
-   "lastReviewed": "2026-10-31",
+   "lastReviewed": "2026-11-01",
    "created": "2026-10-30",
    "summary": "Binance halted withdrawals after a roughly $6.3B hack on Oct 29, the largest crypto theft on record, and says it aims to reopen them by Nov 1. This tracks whether ordinary users can withdraw BTC, ETH and USDT again by Nov 3.",
    "triggers": [
@@ -121,16 +42,28 @@
    "market": null,
    "sources": [
     {
-     "publisher": "TokenPost",
-     "date": "Oct 30 2026",
-     "note": "Teng: withdrawals return only after strict security testing of a rebuilt withdrawal service (endpoint devices, cloud, key management, signing); target to resume by Sunday Nov 1; full proof-of-reserves report Monday Nov 2; deposits normal",
-     "url": "https://www.tokenpost.com/news/business/44892"
+     "publisher": "AFP",
+     "date": "Nov 1 2026",
+     "note": "Binance says it has resumed withdrawals; 'first batch network now opened in phase one of withdrawals is $BTC bitcoin network'",
+     "url": "https://www.afp.com/en/binance-says-resuming-withdrawals-after-major-hack"
     },
     {
-     "publisher": "TRM Labs",
-     "date": "Oct 29–30 2026",
-     "note": "~$6.36B drained across ten chains from 20:05 UTC Oct 29; TraderTraitor (high confidence); evidence points to a compromise of hot-wallet signing infrastructure; ~$2.7B frozen; withdrawals suspended on several networks",
-     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
+     "publisher": "Reuters via Investing.com",
+     "date": "Nov 1 2026",
+     "note": "Binance status page shortly after 06:00 GMT: planned withdrawals have begun; phase one covers 15 assets incl. bitcoin, ether, XRP, dogecoin; 95% of $6.3B replenished",
+     "url": "https://www.investing.com/news/stock-market-news/binance-to-resume-withdrawals-after-recovering-bulk-of-6-billion-in-stolen-funds-4989388"
+    },
+    {
+     "publisher": "Coinlive",
+     "date": "Nov 1 2026",
+     "note": "Binance fourth recovery update: phase one (06:00–09:00 UTC Nov 1) covers BTC; ETH network (ETH, USDT, USDC); TRX (TRX, USDT); and 12 more networks; more to follow",
+     "url": "https://www.coinlive.com/news-flash/1163324"
+    },
+    {
+     "publisher": "TokenPost",
+     "date": "Oct 30 2026",
+     "note": "Teng: withdrawals return only after strict security testing of a rebuilt withdrawal service; target Nov 1; proof-of-reserves report Nov 2",
+     "url": "https://www.tokenpost.com/news/business/44892"
     }
    ],
    "history": [
@@ -142,6 +75,18 @@
       75.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-01",
+     "from": [
+      60.0,
+      75.0
+     ],
+     "to": [
+      88.0,
+      98.0
+     ],
+     "reason": "(confidence Low → High). Rule: judgment (no Polymarket market). Binance began phase one of withdrawals on Nov 1 (window 06:00–09:00 UTC): its status page and X posts say withdrawals have begun, BTC network first (AFP, Reuters, Nov 1). Binance's fourth recovery update lists phase one as including BTC, ETH network (ETH, USDT, USDC) and TRX (TRX, USDT), with 95% of the loss replenished. Not resolved yet: the row needs all three (BTC on Bitcoin, ETH on Ethereum, USDT on Ethereum or Tron) actually processing for general users; confirm on the network-status page or credible reporting and resolve on the next run. Residual NO risk is a re-pause or a new breach before 23:59 UTC Nov 3. Midpoint 93%."
     }
    ],
    "outcome": null,
@@ -154,12 +99,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 78.0,
-   "probHigh": 88.0,
-   "midpoint": 83.0,
+   "probLow": 82.0,
+   "probHigh": 96.0,
+   "midpoint": 89.0,
    "horizon": "2026-11-03",
    "staleAfter": "2026-11-02",
-   "lastReviewed": "2026-10-31",
+   "lastReviewed": "2026-11-01",
    "created": "2026-10-18",
    "summary": "The US has paused strikes on Iran ahead of the midterms while indirect talks continue. This tracks whether that pause actually holds through Election Day on Nov 3.",
    "triggers": [
@@ -173,35 +118,35 @@
     "venue": "Polymarket",
     "name": "US-Iran ceasefire continues through the midterms?",
     "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms",
-    "yesPrice": 86.5,
-    "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": -3.5,
+    "yesPrice": 93.5,
+    "asOf": "2026-11-01T08:51:00+01:00",
+    "gapPts": -4.5,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Oct 30 2026",
-     "note": "'US-Iran ceasefire continues through the midterms?' Yes 0.865 (bid 0.86 / ask 0.87, liquidity ~$24k), active, conditionId 0x613613192c69d90cee89758c260a019368fc1f4a596b4d300c39b6235d2b643f",
+     "date": "Nov 1 2026",
+     "note": "'US-Iran ceasefire continues through the midterms?' Yes 0.935 (bid 0.93 / ask 0.94, liquidity ~$36k), active, conditionId 0x613613192c69d90cee89758c260a019368fc1f4a596b4d300c39b6235d2b643f",
      "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms"
     },
     {
+     "publisher": "Reuters via Al-Monitor",
+     "date": "Oct 31 2026",
+     "note": "Iranian negotiators in Doha talks with Qatari mediators; Rubio says Trump has not decided on new strikes and prefers diplomacy; regional states expect possible strikes after the vote",
+     "url": "https://www.al-monitor.com/originals/2026/10/iranian-envoys-meet-qatari-mediators-threat-looms-us-strikes-after-midterms"
+    },
+    {
+     "publisher": "CBS News live updates",
+     "date": "Oct 31 2026",
+     "note": "Trump: 'one or two' sites left (Pickaxe Mountain), 'not in a hurry'; Mojtaba Khamenei warns of response with no geographic limits",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-diplomacy-threat-resume-attacks/"
+    },
+    {
      "publisher": "CNBC",
-     "date": "Oct 30 2026",
-     "note": "Iran claims four tankers hit mines in Hormuz; Houthis claim strikes on Saudi Arabia; administration weighs renewed action after the Nov 3 midterms; Adm. Cooper briefed Trump on options (WSJ); Vance letter via Qatar",
-     "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html"
-    },
-    {
-     "publisher": "AP",
-     "date": "Oct 30 2026",
-     "note": "US officials told Middle East allies to prepare for potential renewed military action against Iran after the midterms; no final decision (headline/lede only; full page timed out)",
-     "url": "https://apnews.com/article/trump-iran-strikes-midterm-elections-c7df622f1e87de6035173be8fb8c4add"
-    },
-    {
-     "publisher": "The Block",
-     "date": "Oct 29 2026",
-     "note": "Polymarket cancel-only after a compromised third-party provider drained ~$2.65M; trading resumed same day, users to be reimbursed",
-     "url": "https://www.theblock.co/news/defi/2026-10-29-polymarket-exploit-2-5-million-cancel-only-mode-432158"
+     "date": "Oct 31 2026",
+     "note": "Qatar in talks with Iran to restart US negotiations; last confirmed US strikes on Iran Sept 1; allies told to prepare for possible action after Nov 3",
+     "url": "https://www.cnbc.com/2026/10/31/qatar-iran-us-talks-mediation.html"
     }
    ],
    "history": [
@@ -261,6 +206,18 @@
       88.0
      ],
      "reason": "No qualifying US strike on Iranian territory through Oct 30. The signals now point after the window: AP (two diplomats) says US officials told regional allies to prepare for possible renewed military action after next week's midterms, and CNBC/WSJ report CENTCOM's Adm. Cooper briefed Trump on Iran options at the White House. Trump said Friday the war is 'going to get wrapped up soon'; Vance sent a framework letter via Qatar. Risks inside the window: Iran says four tankers struck mines on the US-backed southern Hormuz route (UKMTO confirms one tanker hit), and the Houthis claim strikes on Saudi airports/oil sites, so an attack on US forces could still trigger retaliation before Nov 3, and an election-night strike is a small tail. Polymarket briefly went cancel-only on Oct 29 after a third-party script compromise; trading resumed about an hour later and resolution is unaffected. Market Yes 0.865 (bid 0.86 / ask 0.87, liquidity ~$24k) read Oct 30; midpoint 83% is ~3.5 pts BELOW market. Stale After 2026-11-02. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-01",
+     "from": [
+      78.0,
+      88.0
+     ],
+     "to": [
+      82.0,
+      96.0
+     ],
+     "reason": "Rule: market anchor. Polymarket Gamma Yes 0.935 (bid 0.93 / ask 0.94, liquidity ~$36k) read Nov 1 ~08:51 Rome; above 0.85 so the market is used as-is, and the old midpoint 83% sat ~10 pts below it, beyond the ~6-pt limit. New information since Oct 30 points to no strike before the vote: Rubio (Oct 31, G20 Atlanta) says Trump has made no decision and prefers a diplomatic outcome; Trump (Oct 31) says the US is 'not in a hurry'; Qatari mediators held 12+ hours of talks in Tehran Oct 30 and continued in Doha Oct 31, coordinated with Washington. Kept ~4.5 pts below market for the remaining tails: Iranian retaliation threats ('no geographic limits'), Hormuz tanker incidents, and an election-night strike before 11:59 PM ET Nov 3. Half-width 7 (horizon ~2–3 days). Midpoint 89%. Stale After stays 2026-11-02."
     }
    ],
    "outcome": null,
@@ -278,7 +235,7 @@
    "midpoint": 91.0,
    "horizon": "2026-11-04",
    "staleAfter": "2026-11-02",
-   "lastReviewed": "2026-10-31",
+   "lastReviewed": "2026-11-01",
    "created": "2026-10-18",
    "summary": "Which party controls the House after the Nov 3 midterms. Polling averages and public forecast models currently favour the Democrats.",
    "triggers": [
@@ -365,7 +322,7 @@
    "midpoint": 67.0,
    "horizon": "2026-11-04",
    "staleAfter": "2026-11-02",
-   "lastReviewed": "2026-10-31",
+   "lastReviewed": "2026-11-01",
    "created": "2026-10-18",
    "summary": "Which party controls the Senate after the Nov 3 midterms. The map is much tighter than the House and hinges on a handful of close races and how independents caucus.",
    "triggers": [
@@ -2527,7 +2484,7 @@
    "midpoint": 70.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-10-31",
+   "lastReviewed": "2026-11-01",
    "created": "2026-10-16",
    "summary": "Schwab announced in August plans to add SOL, AVAX and LINK to Schwab Crypto, and its CEO has since promised 'three new coins by the end of the year' without naming them. This asks whether AVAX is actually live for Schwab clients by Dec 31.",
    "triggers": [
@@ -3203,6 +3160,85 @@
   }
  ],
  "resolved": [
+  {
+   "id": "1724c9be83",
+   "question": "Will Alpenglow consensus be live on Solana mainnet-beta by Oct 31, 2026?",
+   "domain": "Crypto",
+   "status": "Resolved-Yes",
+   "confidence": "High",
+   "probLow": 96.0,
+   "probHigh": 99.0,
+   "midpoint": 97.5,
+   "horizon": "2026-10-31",
+   "staleAfter": "2026-10-31",
+   "lastReviewed": "2026-11-01",
+   "created": "2026-10-18",
+   "summary": "Solana is switching to a new consensus system, Alpenglow, on Oct 21, aiming for transactions that are final in about 150 milliseconds. This asks whether the switch is live and holding by the end of October.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "activation set for epoch 1064 (~15:00 UTC Oct 21) with migrations already completed on a community cluster, testnet (Sep 24) and devnet (Sep 25); BLS keys and the Validator Admission Ticket live on mainnet since July; 25,000+ SOL bug bounty and nine simulated migrations."
+    },
+    {
+     "label": "Toward no",
+     "text": "the switch needs 82% of stake to sign the Alpenglow genesis block; Firedancer/Frankendancer validators unsupported during migration; a failed handoff or rollback that reverts to TowerBFT."
+    }
+   ],
+   "resolution": "Resolves YES if Solana mainnet-beta is producing blocks under Alpenglow consensus (TowerBFT retired) at any time by 23:59 UTC Oct 31, 2026 and remains on it at that time, per Anza/Solana announcements or the Alpenglow genesis certificate being set. Resolves NO if activation is postponed past Oct 31 or the network reverts to TowerBFT and is still on it at that time.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "Solana",
+     "date": "Oct 22 2026",
+     "note": "live on mainnet; activated epoch 1064 Oct 21 ~13:36 UTC; genesis block slot 459,652,999 certified by 446 of 654 validators; Alpenglow consensus from slot 459,653,000",
+     "url": "https://solana.com/upgrades/alpenglow"
+    },
+    {
+     "publisher": "Anza / PR Newswire",
+     "date": "Oct 21 2026",
+     "note": "'Alpenglow is Live on Solana'",
+     "url": "https://www.prnewswire.com/news-releases/alpenglow-is-live-on-solana-the-worlds-fastest-finality-on-a-global-network-302915579.html"
+    },
+    {
+     "publisher": "CoinDesk",
+     "date": "Oct 22 2026",
+     "note": "Solana completes Alpenglow upgrade; ~900ms handoff from TowerBFT",
+     "url": "https://www.coindesk.com/tech/2026/10/22/solana-completes-alpenglow-upgrade-here-s-what-it-means-for-users"
+    },
+    {
+     "publisher": "Anza Alpenglow page",
+     "date": "Oct 22 2026",
+     "note": "mainnet-beta migration 'Completed'",
+     "url": "https://www.anza.xyz/alpenglow"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      85.0,
+      93.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-22",
+     "from": [
+      85.0,
+      93.0
+     ],
+     "to": [
+      96.0,
+      99.0
+     ],
+     "reason": "(confidence Medium → High). Alpenglow activated on mainnet-beta Oct 21 ~13:36 UTC (Solana, Anza, CoinDesk); TowerBFT retired after the 5,000-slot window, handoff ~900ms. Not marked resolved because the row requires the network still be on Alpenglow at 23:59 UTC Oct 31; the only residual risk is a revert to TowerBFT, which looks very unlikely. Resolve YES on Oct 31/Nov 1 if still live."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.000625,
+   "resolvedOn": "2026-11-01"
+  },
   {
    "id": "8b2b3fa149",
    "question": "Will US spot Bitcoin ETFs finish October 2026 with positive aggregate net flows?",
