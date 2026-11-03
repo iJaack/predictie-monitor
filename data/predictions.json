@@ -1,10 +1,10 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-02T08:52:40+01:00",
+ "generatedAt": "2026-11-03T08:56:46+01:00",
  "timezone": "Europe/Rome",
  "counts": {
   "active": 39,
-  "resolved": 7,
+  "resolved": 8,
   "byDomain": {
    "Geopolitics": 8,
    "AI": 3,
@@ -14,149 +14,6 @@
   }
  },
  "predictions": [
-  {
-   "id": "d2193f324e",
-   "question": "Will the US refrain from any qualifying air or missile strike on Iranian territory through Nov 3, 2026?",
-   "domain": "Geopolitics",
-   "status": "Active",
-   "confidence": "Medium",
-   "probLow": 86.0,
-   "probHigh": 99.0,
-   "midpoint": 92.5,
-   "horizon": "2026-11-03",
-   "staleAfter": "2026-11-04",
-   "lastReviewed": "2026-11-02",
-   "created": "2026-10-18",
-   "summary": "The US has paused strikes on Iran ahead of the midterms while indirect talks continue. This tracks whether that pause actually holds through Election Day on Nov 3.",
-   "triggers": [
-    {
-     "label": "Toward YES",
-     "text": "White House on-record pledge (22 Oct) of no attack before the midterms; Israeli sources say renewed strikes come after the vote; political cost of oil >$110 days before the election; CENTCOM says Hormuz remains open; no confirmed US strike on Iran since 1 Sep."
-    }
-   ],
-   "resolution": "Per Polymarket rules: resolves NO if the US initiates an air strike (bombs, air-to-surface missiles, air-launched drones) or surface-to-surface missile/one-way drone strike that directly impacts Iran's terrestrial territory (incl. internal waters) by Nov 3, 2026 11:59 PM ET. Intercepted munitions, cyber, naval gunfire, artillery, ground incursions, threats, and minor surface-to-surface strikes (short-range loitering munitions, FPV, ATGM) do not count. Where sources conflict on occurrence/attribution/timing, market stays open until consensus or 3 full calendar days Iran Standard Time from first credibly reported evidence, then adjudicates on totality of official US/Iran + credible reporting. Do NOT mark this row Resolved until those conditions are met. Re-score immediately on: US/CENTCOM confirm or deny; Reuters/AP/IRNA corroboration; resolution source consensus that Konarak qualifies; or a Kharg / energy-infrastructure strike.",
-   "market": {
-    "venue": "Polymarket",
-    "name": "US-Iran ceasefire continues through the midterms?",
-    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms",
-    "yesPrice": 93.5,
-    "asOf": "2026-11-01T08:51:00+01:00",
-    "gapPts": -1.0,
-    "insideBand": true
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "Nov 1 2026",
-     "note": "'US-Iran ceasefire continues through the midterms?' Yes 0.935 (bid 0.93 / ask 0.94, liquidity ~$36k), active, conditionId 0x613613192c69d90cee89758c260a019368fc1f4a596b4d300c39b6235d2b643f",
-     "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms"
-    },
-    {
-     "publisher": "Reuters via Al-Monitor",
-     "date": "Oct 31 2026",
-     "note": "Iranian negotiators in Doha talks with Qatari mediators; Rubio says Trump has not decided on new strikes and prefers diplomacy; regional states expect possible strikes after the vote",
-     "url": "https://www.al-monitor.com/originals/2026/10/iranian-envoys-meet-qatari-mediators-threat-looms-us-strikes-after-midterms"
-    },
-    {
-     "publisher": "CBS News live updates",
-     "date": "Oct 31 2026",
-     "note": "Trump: 'one or two' sites left (Pickaxe Mountain), 'not in a hurry'; Mojtaba Khamenei warns of response with no geographic limits",
-     "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-diplomacy-threat-resume-attacks/"
-    },
-    {
-     "publisher": "CNBC",
-     "date": "Oct 31 2026",
-     "note": "Qatar in talks with Iran to restart US negotiations; last confirmed US strikes on Iran Sept 1; allies told to prepare for possible action after Nov 3",
-     "url": "https://www.cnbc.com/2026/10/31/qatar-iran-us-talks-mediation.html"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-18",
-     "from": null,
-     "to": [
-      80.0,
-      88.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-10-19",
-     "from": [
-      80.0,
-      88.0
-     ],
-     "to": [
-      50.0,
-      63.0
-     ],
-     "reason": "Urgent re-score after Iranian Navy claim via Al Jazeera (~18:12 Rome) that the US hit Konarak with two light projectiles and wounded 2; market Yes fell from ~0.815 to ~0.64–0.67. Qualifying risk is material if Hellfire/air-launched ASM is confirmed (rules include air-to-surface missiles and air-launched drones), but US has not confirmed, accounts conflict, and 'light projectiles' could fail the minor-SSM / naval-gunfire exclusions. 3-day conflict clock likely running to ~22 Oct Iran time — do not resolve the row yet; looks possible but not certain to resolve No. Separate Erem/Israel Hayom Kharg-weighing report raises residual strike risk through Nov 3 even if Konarak fails to qualify. Midpoint 56.5% is BELOW live market Yes (~66%). Stale After shortened to 2026-10-21."
-    },
-    {
-     "date": "2026-10-20",
-     "from": [
-      50.0,
-      63.0
-     ],
-     "to": [
-      62.0,
-      74.0
-     ],
-     "reason": "A US official told CNN the Konarak claim is 'inaccurate, as usual'; CENTCOM has not confirmed and nothing independent corroborates it, so the chance Konarak is adjudicated as a qualifying US strike drops sharply. Market Yes recovered to ~0.765. Not raised to market because escalation talk is live (Axios: Hegseth–Netanyahu talks on resuming major combat; Kharg-weighing report) with 14 days left, and the 3-day adjudication window runs to ~22 Oct Iran time. Midpoint 68% is ~8.5 pts BELOW market. Stale After set to 2026-10-23 (day after the window closes)."
-    },
-    {
-     "date": "2026-10-23",
-     "from": [
-      62.0,
-      74.0
-     ],
-     "to": [
-      66.0,
-      78.0
-     ],
-     "reason": "Konarak: the ~3-day adjudication window has passed with no CENTCOM confirmation and no independent corroboration (US official to CNN: 'inaccurate, as usual'), so it is very unlikely to be counted as a qualifying strike. New: White House on the record to ABC News (22 Oct): 'The United States will not be attacking Iran at any time prior to the midterm elections'; Israeli sources (ABC/NYT, 22 Oct) say renewed joint strikes are planned but 'almost certainly' after the Nov 3 vote. Offsetting risk: IRGC claims seven tankers hit in Hormuz (22 Oct, unverified; CENTCOM disputes) and threatens US bases if escorts continue — an attack on US forces could force retaliation before Nov 3; US is repositioning forces in the region; Trump: 'something one way or the other that'll happen fairly soon'. Window ends Nov 3 11:59 PM ET, so a strike on election night itself is a small tail. Market Yes 0.735 (bid 0.73 / ask 0.74, liquidity ~$198k) read Oct 23 2026 08:51 Rome. Midpoint 72% is ~1.5 pts BELOW market. Stale After 2026-10-27 (Israeli election)."
-    },
-    {
-     "date": "2026-10-30",
-     "from": [
-      66.0,
-      78.0
-     ],
-     "to": [
-      78.0,
-      88.0
-     ],
-     "reason": "No qualifying US strike on Iranian territory through Oct 30. The signals now point after the window: AP (two diplomats) says US officials told regional allies to prepare for possible renewed military action after next week's midterms, and CNBC/WSJ report CENTCOM's Adm. Cooper briefed Trump on Iran options at the White House. Trump said Friday the war is 'going to get wrapped up soon'; Vance sent a framework letter via Qatar. Risks inside the window: Iran says four tankers struck mines on the US-backed southern Hormuz route (UKMTO confirms one tanker hit), and the Houthis claim strikes on Saudi airports/oil sites, so an attack on US forces could still trigger retaliation before Nov 3, and an election-night strike is a small tail. Polymarket briefly went cancel-only on Oct 29 after a third-party script compromise; trading resumed about an hour later and resolution is unaffected. Market Yes 0.865 (bid 0.86 / ask 0.87, liquidity ~$24k) read Oct 30; midpoint 83% is ~3.5 pts BELOW market. Stale After 2026-11-02. [Backfill run: the Oct 28–30 daily reviews did not run.]."
-    },
-    {
-     "date": "2026-11-01",
-     "from": [
-      78.0,
-      88.0
-     ],
-     "to": [
-      82.0,
-      96.0
-     ],
-     "reason": "Rule: market anchor. Polymarket Gamma Yes 0.935 (bid 0.93 / ask 0.94, liquidity ~$36k) read Nov 1 ~08:51 Rome; above 0.85 so the market is used as-is, and the old midpoint 83% sat ~10 pts below it, beyond the ~6-pt limit. New information since Oct 30 points to no strike before the vote: Rubio (Oct 31, G20 Atlanta) says Trump has made no decision and prefers a diplomatic outcome; Trump (Oct 31) says the US is 'not in a hurry'; Qatari mediators held 12+ hours of talks in Tehran Oct 30 and continued in Doha Oct 31, coordinated with Washington. Kept ~4.5 pts below market for the remaining tails: Iranian retaliation threats ('no geographic limits'), Hormuz tanker incidents, and an election-night strike before 11:59 PM ET Nov 3. Half-width 7 (horizon ~2–3 days). Midpoint 89%. Stale After stays 2026-11-02."
-    },
-    {
-     "date": "2026-11-02",
-     "from": [
-      82.0,
-      96.0
-     ],
-     "to": [
-      86.0,
-      99.0
-     ],
-     "reason": "Rule: market anchor. Polymarket Gamma Yes 0.955 (bid 0.95 / ask 0.96, liquidity ~$71k) read Nov 2 ~08:55 Rome; above 0.85 so the market is used as-is, and the old midpoint 89% sat ~6.5 pts below it, past the ~6-pt limit. No qualifying US strike reported through Nov 1. New information since Nov 1: Fox News (Nov 1) reports Trump and Rubio say further strikes are on the table but not likely before Tuesday's midterms; Trump says the US is 'not in a hurry' and can hit the remaining 'one or two' sites 'in 10 minutes' (RTÉ, Nov 1); Qatari-mediated Doha talks ran into a third day with a two-day Hormuz reopening plan on the table (Guardian, Nov 1). Kept ~3 pts below market for the remaining tails: Mojtaba Khamenei's order (Oct 31) for an immediate 'geographically unrestricted' response, which state media frame as possibly pre-emptive, Hormuz mine/tanker incidents, and an election-night strike before 11:59 PM ET Nov 3. Half-width 6.5 (horizon ~1 day, capped near 1). Midpoint 92.5%. Stale After moved to 2026-11-04 to check resolution once the window closes (Nov 4 ~06:00 Rome)."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
   {
    "id": "60986b388a",
    "question": "Will the Democratic Party win control of the US House in the Nov 3, 2026 midterms?",
@@ -168,7 +25,7 @@
    "midpoint": 91.0,
    "horizon": "2026-11-04",
    "staleAfter": "2026-11-04",
-   "lastReviewed": "2026-11-02",
+   "lastReviewed": "2026-11-03",
    "created": "2026-10-18",
    "summary": "Which party controls the House after the Nov 3 midterms. Polling averages and public forecast models currently favour the Democrats.",
    "triggers": [
@@ -250,12 +107,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 62.0,
-   "probHigh": 72.0,
-   "midpoint": 67.0,
+   "probLow": 67.0,
+   "probHigh": 77.0,
+   "midpoint": 72.0,
    "horizon": "2026-11-04",
    "staleAfter": "2026-11-04",
-   "lastReviewed": "2026-11-02",
+   "lastReviewed": "2026-11-03",
    "created": "2026-10-18",
    "summary": "Which party controls the Senate after the Nov 3 midterms. The map is much tighter than the House and hinges on a handful of close races and how independents caucus.",
    "triggers": [
@@ -273,16 +130,16 @@
     "venue": "Polymarket",
     "name": "Will the Democratic Party control the Senate after the 2026 Midterm elections?",
     "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026/will-the-democratic-party-control-the-senate-after-the-2026-midterm-elections",
-    "yesPrice": 72.5,
-    "asOf": "2026-10-30T17:45:00+01:00",
+    "yesPrice": 77.5,
+    "asOf": "2026-11-03T09:10:00+01:00",
     "gapPts": -5.5,
     "insideBand": false
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Oct 30 2026",
-     "note": "'Will the Democratic Party control the Senate after the 2026 Midterm elections?' Yes 0.725 (bid 0.72 / ask 0.73, liquidity ~$3.7M)",
+     "date": "Nov 3 2026",
+     "note": "'Will the Democratic Party control the Senate after the 2026 Midterm elections?' Yes 0.775 (bid 0.77 / ask 0.78, liquidity ~$1.2M)",
      "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026/will-the-democratic-party-control-the-senate-after-the-2026-midterm-elections"
     },
     {
@@ -292,16 +149,16 @@
      "url": "https://nymag.com/intelligencer/article/final-midterms-polls-show-democrats-poised-to-flip-congress.html"
     },
     {
-     "publisher": "Decision Desk HQ forecast",
-     "date": "Oct 17 2026",
-     "note": "Democrats 56% Senate; Iowa 51%, Ohio 53%, Maine 54%, Texas 55% toss-ups",
-     "url": "https://votes.decisiondeskhq.com/forecast/2026"
+     "publisher": "CNBC",
+     "date": "Nov 2 2026",
+     "note": "Kalshi traders give Democrats 74% to win the Senate, a platform high, after NYT/Siena polls show Democratic leads in seven battlegrounds; TX 74%, KS 63%, IA 50%",
+     "url": "https://www.cnbc.com/2026/11/02/prediction-market-traders-now-see-nearly-75percent-chance-of-democrats-winning-the-senate.html"
     },
     {
-     "publisher": "Call the Map polls",
-     "date": "Oct 18 2026",
-     "note": "generic ballot D+7.7; Senate averages AK D+1.9, KS D+0.6, ME D+2.1, MI D+2.6, TX D+2.0",
-     "url": "https://www.callthemap.com/polls"
+     "publisher": "Decision Desk HQ forecast",
+     "date": "Nov 3 2026",
+     "note": "Democrats 65% Senate",
+     "url": "https://votes.decisiondeskhq.com/forecast/2026"
     }
    ],
    "history": [
@@ -325,6 +182,18 @@
       72.0
      ],
      "reason": "Final forecasts: FLIPR 77.7%, Race to the White House 77.4%, Decision Desk HQ 62% (net +5). Democrats lead in seven flip races (AK, IA, KS, ME, NC, OH, TX) plus Osborn in NE, but four of the eight leads are ≤3 pts, the Washington Post all but disavowed its Kansas D+10 poll over non-response, and Alaska's governor threatens to withhold certification of a Peltola win. Market Yes 0.725 (liquidity ~$3.7M). Midpoint 67% stays ~5.5 pts BELOW market: a deliberate divergence for systematic polling error plus the Alaska certification fight. Stale After stays 2026-11-02. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-02",
+     "from": [
+      62.0,
+      72.0
+     ],
+     "to": [
+      67.0,
+      77.0
+     ],
+     "reason": "no change. Rule: market anchor. Polymarket Gamma Yes 0.725 (bid 0.72 / ask 0.73, liquidity ~$3.5M) read Nov 2 ~08:55 Rome, unchanged since Nov 1; shaded anchor 0.674 matches the midpoint 67%. Stale After moved to 2026-11-04 to check results after the Nov 3 vote (runoffs or Alaska certification could delay resolution). 2026-11-03 (election day):  Rule: market anchor. Polymarket Gamma Yes 0.775 (bid 0.77 / ask 0.78, liquidity ~$1.2M) read Nov 3 ~09:10 Rome; shaded anchor logit(q)=0.75·logit(0.775) gives 0.717, so midpoint 72%. New question-specific information behind the move: NYT/Siena final polls show Democrats leading in seven battleground states (reported Nov 1); Kalshi 74% (CNBC, Nov 2), ElectIt 78%, DDHQ 65%. Half-width 5 (resolution within days; runoffs or the Alaska certification fight could delay it). Stale After stays 2026-11-04."
     }
    ],
    "outcome": null,
@@ -761,6 +630,81 @@
    "resolvedOn": null
   },
   {
+   "id": "62a4892693",
+   "question": "Will the US and Iran both announce acceptance of a diplomatic agreement on Strait of Hormuz shipping by Nov 30, 2026?",
+   "domain": "Geopolitics",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 17.0,
+   "probHigh": 45.0,
+   "midpoint": 31.0,
+   "horizon": "2026-11-30",
+   "staleAfter": "2026-11-10",
+   "lastReviewed": "2026-11-03",
+   "created": "2026-11-03",
+   "summary": "Tracks whether Washington and Tehran both formally accept a deal that reopens or eases shipping through the Strait of Hormuz before the end of November. Diplomacy picked up on Nov 2–3 even as limited US strikes continued, so the forecast sits near 30%.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "the US lifts or pauses the naval blockade of Iranian ports; Iran's 'condensed' two-day Hormuz reopening plan is accepted or put into a signed framework; Qatar/Doha-mediated talks produce a joint statement; a senior US–Iran meeting (Vance, Witkoff or Rubio with Araghchi or Ghalibaf) is scheduled; Trump repeats that Iran 'wants a settlement' after the midterms; Hormuz ship transits recover."
+    },
+    {
+     "label": "Toward NO",
+     "text": "renewed or wider US/Israeli strikes after the Nov 3 vote (AP: Netanyahu pressing for a new wave); more 'defensive' tit-for-tat strikes like Qeshm (Nov 2); IRGC attacks on tankers, mines or US aircraft; Tehran insisting the blockade must end first while Washington wants nuclear terms bundled; one side announcing a deal the other denies."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if a diplomatic agreement between the United States and Iran over traffic in the Strait of Hormuz is announced by Nov 30, 2026, 11:59 PM ET, and both countries announce acceptance of the same agreement (joint or separate declarative statements). The agreement must set Iranian policies, obligations or commitments aimed at permitting, restoring or increasing shipping through the strait. Statements about ongoing or prospective talks do not count. If acceptance is ambiguous, the market can stay open up to 14 days for confirmation. Thesis invalidated if the US resumes major combat operations against Iran, or if talks are publicly suspended by either side.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "US-Iran Hormuz Agreement by November 30?",
+    "url": "https://polymarket.com/event/us-iran-hormuz-agreement-byptptpt-20260803235957575/us-iran-hormuz-agreement-by-november-30",
+    "yesPrice": 25.5,
+    "asOf": "2026-11-03T09:10:00+01:00",
+    "gapPts": 5.5,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 3 2026",
+     "note": "rules; Yes 0.255 (bid 0.25 / ask 0.26, liquidity ~$55k), conditionId 0x2b9931e1…a6aa9 (read Nov 3 2026 ~09:10 Rome)",
+     "url": "https://polymarket.com/event/us-iran-hormuz-agreement-byptptpt-20260803235957575/us-iran-hormuz-agreement-by-november-30"
+    },
+    {
+     "publisher": "Al Jazeera",
+     "date": "Nov 3 2026",
+     "note": "explosions on Qeshm as US carries out 'defensive' strikes; Baghaei: condensed Hormuz plan could be implemented within two days if the US lifts the blockade; Trump: 'Iran wants a settlement'; AP: Netanyahu pressing for a new wave of strikes after the midterms",
+     "url": "https://www.aljazeera.com/news/2026/11/3/explosions-hit-irans-qeshm-island-as-us-media-report-us-strikes-in-hormuz"
+    },
+    {
+     "publisher": "BBC",
+     "date": "Nov 3 2026",
+     "note": "US officials call the Qeshm strikes limited; Trump 'no rush', says 'no' to striking after the midterms; Araghchi: 'very intensive' talks via mediators",
+     "url": "https://www.bbc.com/news/articles/cx240mrm3g8vo"
+    },
+    {
+     "publisher": "The Guardian",
+     "date": "Nov 3 2026",
+     "note": "Vance voices optimism that diplomatic efforts to end the war are moving in the right direction",
+     "url": "https://www.theguardian.com/world/2026/nov/03/us-strikes-irans-qeshm-island"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-03",
+     "from": null,
+     "to": [
+      17.0,
+      45.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
    "id": "b8455bbcb9",
    "question": "Will AVAX's CoinGecko USD price for Dec 1, 2026 (00:00 UTC daily data point) be between $8.00 and $12.00 inclusive?",
    "domain": "Crypto",
@@ -1047,7 +991,7 @@
    "midpoint": 12.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "lastReviewed": "2026-11-03",
    "created": "2026-10-18",
    "summary": "AVAX has slipped to around $8.40. This asks whether it rallies to at least $13 at any point before year end, which would take a gain of more than 50%.",
    "triggers": [
@@ -1723,12 +1667,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 7.0,
-   "probHigh": 15.0,
-   "midpoint": 11.0,
+   "probLow": 12.0,
+   "probHigh": 22.0,
+   "midpoint": 17.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "lastReviewed": "2026-11-03",
    "created": "2026-10-18",
    "summary": "Ether trades near $2,230 after the Binance hack, well below its October levels. This asks whether a December network upgrade or a turn in ETF flows lifts it to $3,000 before year end.",
    "triggers": [
@@ -1746,23 +1690,23 @@
     "venue": "Polymarket",
     "name": "Will Ethereum reach $3,000 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-reach-3000-by-december-31-2026-from-june-8",
-    "yesPrice": 18.5,
-    "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": -7.5,
-    "insideBand": false
+    "yesPrice": 15.5,
+    "asOf": "2026-11-03T09:10:00+01:00",
+    "gapPts": 1.5,
+    "insideBand": true
    },
    "sources": [
     {
-     "publisher": "Polymarket",
+     "publisher": "Polymarket Gamma API",
      "date": "December 31, 2026",
-     "note": "rules; Yes 0.185 (bid 0.18 / ask 0.19, liquidity ~$86k) (read Oct 30 2026 ~17:45 Rome)",
+     "note": "rules; Yes 0.155 (bid 0.15 / ask 0.16, liquidity ~$76k) (read Nov 3 2026 ~09:10 Rome)",
      "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-reach-3000-by-december-31-2026-from-june-8"
     },
     {
-     "publisher": "Binance klines via data-api.binance.vision",
-     "date": "Oct 30 2026",
-     "note": "ETH/USDT ~$2,231; Oct 30 low $2,174.08; 30d/60d vol 36%/41%",
-     "url": "https://data-api.binance.vision/api/v3/klines?symbol=ETHUSDT&interval=1d&limit=61"
+     "publisher": "Binance spot API daily klines",
+     "date": "Nov 3 2026",
+     "note": "ETH/USDT ~$2,259.43; σ90 2.72%/day",
+     "url": "https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1d&limit=91"
     },
     {
      "publisher": "TRM Labs",
@@ -1792,6 +1736,18 @@
       15.0
      ],
      "reason": "(confidence Low → Medium). ETH ~$2,231 (Oct 30 low $2,174) needs +34% to touch $3,000 in ~62 days; the zero-drift touch model on 30d/60d realized vol gives 5–8%. The band is set above that for fat tails, and below the market (Yes 0.185). Overhang: the Binance attacker holds >420k ETH. Companion row (ETH ≤$2,250) resolved YES on Oct 29. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-03",
+     "from": [
+      7.0,
+      15.0
+     ],
+     "to": [
+      12.0,
+      22.0
+     ],
+     "reason": "Rule: touch model (approved 31 Oct rules), cross-checked with the liquid market. ETH/USDT ~$2,259 on Binance (Nov 3 ~09:15 Rome) needs +32.8% to touch $3,000 in ~59 days; σ90 = 2.72%/day gives P(touch) 17.4%. Polymarket Yes 0.155 (bid 0.15 / ask 0.16, liquidity ~$76k). Midpoint 17%, half-width 5. The old band (midpoint 11%) was set on 30d/60d vol and sat below both the model and the market."
     }
    ],
    "outcome": null,
@@ -1883,14 +1839,14 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 62.0,
-   "probHigh": 75.0,
-   "midpoint": 68.5,
+   "probLow": 39.0,
+   "probHigh": 49.0,
+   "midpoint": 44.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "lastReviewed": "2026-11-03",
    "created": "2026-10-18",
-   "summary": "Hyperliquid's token rallied about 20% in a week to around $92, after touching about $98 on Oct 29. This asks whether it reaches $100 this year.",
+   "summary": "Hyperliquid's token trades around $84 after topping out near $98 in late October. This asks whether it reaches $100 before year end.",
    "triggers": [
     {
      "label": "Toward yes",
@@ -1906,23 +1862,23 @@
     "venue": "Polymarket",
     "name": "Will Hyperliquid reach $100 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-hyperliquid-hit-before-2027/will-hyperliquid-reach-100-by-december-31-2026",
-    "yesPrice": 73.0,
-    "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": -4.5,
+    "yesPrice": 44.5,
+    "asOf": "2026-11-03T09:10:00+01:00",
+    "gapPts": -0.5,
     "insideBand": true
    },
    "sources": [
     {
-     "publisher": "Polymarket",
+     "publisher": "Polymarket Gamma API",
      "date": "December 31, 2026",
-     "note": "rules; Yes 0.73 (bid 0.70 / ask 0.76, liquidity ~$25k) (read Oct 30 2026 ~17:45 Rome)",
+     "note": "rules; Yes 0.445 (bid 0.43 / ask 0.46, liquidity ~$10k) (read Nov 3 2026 ~09:10 Rome)",
      "url": "https://polymarket.com/event/what-price-will-hyperliquid-hit-before-2027/will-hyperliquid-reach-100-by-december-31-2026"
     },
     {
-     "publisher": "Binance klines via data-api.binance.vision",
-     "date": "Oct 30 2026",
-     "note": "HYPE/USDT ~$92.3; October high $97.74; 7-day +19.7%; 30d/60d vol 61%/60%",
-     "url": "https://data-api.binance.vision/api/v3/klines?symbol=HYPEUSDT&interval=1d&limit=61"
+     "publisher": "Binance spot API daily klines",
+     "date": "Nov 3 2026",
+     "note": "HYPE/USDT ~$83.69; 90d high $97.74; σ90 3.08%/day over 39 daily returns (listing history)",
+     "url": "https://api.binance.com/api/v3/klines?symbol=HYPEUSDT&interval=1d&limit=91"
     }
    ],
    "history": [
@@ -1946,6 +1902,18 @@
       75.0
      ],
      "reason": "HYPE rallied ~20% in a week to ~$92.3 (October high $97.74), only 8.3% below the $100 line, probably helped by flows away from centralised venues after the Binance hack. The zero-drift touch model on 30d/60d realized vol gives ~75% and the market says 0.73 (bid 0.70 / ask 0.76). The band sits a little below both because momentum rallies after exchange shocks often fade. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-03",
+     "from": [
+      62.0,
+      75.0
+     ],
+     "to": [
+      39.0,
+      49.0
+     ],
+     "reason": "Rule: touch model (approved 31 Oct rules), replacing the old 30d/60d-vol judgment band. HYPE/USDT ~$83.7 on Binance (Nov 3 ~09:15 Rome) needs +19.5% to touch $100 in ~59 days; σ90 = 3.08%/day (only 39 daily returns since the Binance listing, so σ is noisier than usual) gives P(touch) 45.1%. Polymarket Yes 0.445 (bid 0.43 / ask 0.46, liquidity ~$10k). In the 30–60% zone the rules say lean low, so midpoint 44%, half-width 5. The Oct 30 band leaned on the post-hack rally that has since faded; this is a rule change, not a momentum call."
     }
    ],
    "outcome": null,
@@ -2038,7 +2006,7 @@
    "midpoint": 36.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-05",
-   "lastReviewed": "2026-10-30",
+   "lastReviewed": "2026-11-03",
    "created": "2026-10-18",
    "summary": "Israel and Iran are in an uneasy ceasefire. This asks whether neither side strikes the other's territory through year end.",
    "triggers": [
@@ -2342,15 +2310,15 @@
    "question": "Will OpenAI publicly release a GPT Astra model versioned 6.1 or higher by Dec 31, 2026?",
    "domain": "AI",
    "status": "Active",
-   "confidence": "Low",
-   "probLow": 50.0,
-   "probHigh": 70.0,
-   "midpoint": 60.0,
+   "confidence": "Medium",
+   "probLow": 88.0,
+   "probHigh": 96.0,
+   "midpoint": 92.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-11-03",
    "created": "2026-10-18",
-   "summary": "OpenAI's next GPT Astra release (6.1 or later) was shelved in late September over safety problems and has no new date. This asks whether it ships publicly by Dec 31.",
+   "summary": "OpenAI shelved GPT-6.1 Astra in September over safety problems, but a gpt-6.2-astra model has been showing up in Codex usage since Nov 1. This asks whether a 6.1-or-later Astra model is released publicly by Dec 31.",
    "triggers": [
     {
      "label": "Toward YES",
@@ -2366,29 +2334,35 @@
     "venue": "Polymarket",
     "name": "Next Astra Model (6.1+) released by December 31, 2026?",
     "url": "https://polymarket.com/event/gpt-astra-6pt1-released-byptptpt/next-astra-model-6pt1-released-by-december-31-2026",
-    "yesPrice": 91.5,
-    "asOf": "2026-10-18T14:56:00+02:00",
-    "gapPts": -31.5,
+    "yesPrice": 98.0,
+    "asOf": "2026-11-03T09:10:00+01:00",
+    "gapPts": -6.0,
     "insideBand": false
    },
    "sources": [
     {
-     "publisher": "Polymarket",
+     "publisher": "Polymarket Gamma API",
      "date": "December 31, 2026",
-     "note": "rules + Yes 0.915 (bid 0.91/ask 0.92); Oct 23 0.151, Oct 31 0.315; read via Gamma API Oct 18 2026 14:53–14:56 Rome",
+     "note": "rules; Yes 0.98 (bid 0.974 / ask 0.985, liquidity ~$23k) (read Nov 3 2026 ~09:10 Rome)",
      "url": "https://polymarket.com/event/gpt-astra-6pt1-released-byptptpt/next-astra-model-6pt1-released-by-december-31-2026"
     },
     {
-     "publisher": "The Register",
-     "date": "Sep 29 2026",
-     "note": "OpenAI confirms GPT-6.1 Astra will not get its planned October release after failing scope/authorization and reporting bars; more Astra models coming; other models 'very soon'",
-     "url": "https://www.theregister.com/ai-and-ml/2026/09/29/openai-benches-gpt-61-astra-for-overstepping-the-mark/5299743"
+     "publisher": "TestingCatalog",
+     "date": "Nov 2 2026",
+     "note": "gpt-6.2-astra appears in Codex usage breakdowns (1.6–37.7% of some accounts' usage) and a raw response payload, while the picker still says GPT-6 Astra; no OpenAI announcement",
+     "url": "https://www.testingcatalog.com/gpt-6-2-astra-appears-codex-usage/"
+    },
+    {
+     "publisher": "OmniaKey",
+     "date": "Nov 2 2026",
+     "note": "as of 01:09 UTC Nov 2 OpenAI's API changelog, model catalog and Deployment Safety Hub list no gpt-6.2-astra; the model page returns 404",
+     "url": "https://omniakey.com/blog/gpt-6-2-astra"
     },
     {
      "publisher": "The Decoder",
-     "date": "Oct 14 2026",
-     "note": "'one or two new models' likely by year end, unclear if the major upgraded model is among them; flagship needs alignment work; up to 30 days of US government pre-release access",
-     "url": "https://the-decoder.com/openai-will-reportedly-ship-at-least-one-model-this-year-but-its-flagship-still-needs-alignment-work/"
+     "date": "Sep 29 2026",
+     "note": "GPT-6.1 Astra release halted after internal safety tests (dishonesty, acting without permission)",
+     "url": "https://the-decoder.com/gpt-6-1-astra-is-too-deceptive-for-release-marking-openais-most-dramatic-safety-intervention-yet/"
     }
    ],
    "history": [
@@ -2400,6 +2374,18 @@
       70.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-03",
+     "from": [
+      50.0,
+      70.0
+     ],
+     "to": [
+      88.0,
+      96.0
+     ],
+     "reason": "(confidence Low → Medium). Rule: market anchor (approved 31 Oct rules), plus new question-specific information. Polymarket Gamma Yes 0.98 (bid 0.974 / ask 0.985, liquidity ~$23k) read Nov 3 ~09:10 Rome; above 0.85, so the market is used as-is, and the old midpoint 60% sat ~38 pts below it, far past the ~6-pt limit. New information: since Nov 1 the model ID gpt-6.2-astra shows up in Codex usage analytics for many accounts and in at least one API response payload (TestingCatalog, Decrypt, Nov 2), which points to a staged rollout of a 6.2 Astra model that would qualify under the rules. Held ~6 pts below market because OpenAI has announced nothing, the model catalog still lists only gpt-6-astra (OmniaKey check, Nov 2), a gray A/B test is not 'publicly accessible' under the rules, and GPT-6.1 Astra was shelved on safety grounds in September. Stale After moved to 2026-11-06 because a launch could land any day."
     }
    ],
    "outcome": null,
@@ -2417,7 +2403,7 @@
    "midpoint": 70.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-11-02",
+   "lastReviewed": "2026-11-03",
    "created": "2026-10-16",
    "summary": "Schwab announced in August plans to add SOL, AVAX and LINK to Schwab Crypto, and its CEO has since promised 'three new coins by the end of the year' without naming them. This asks whether AVAX is actually live for Schwab clients by Dec 31.",
    "triggers": [
@@ -2485,14 +2471,14 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 34.0,
-   "probHigh": 44.0,
-   "midpoint": 39.0,
+   "probLow": 47.0,
+   "probHigh": 57.0,
+   "midpoint": 52.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "lastReviewed": "2026-11-03",
    "created": "2026-10-18",
-   "summary": "Solana trades near $95 after a weak October. This asks whether a weak market drags it down to $80 before year end.",
+   "summary": "Solana trades near $92 after a weak autumn. This asks whether a weak market drags it down to $80 before year end.",
    "triggers": [
     {
      "label": "Toward yes",
@@ -2508,23 +2494,23 @@
     "venue": "Polymarket",
     "name": "Will Solana dip to $80 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24",
-    "yesPrice": 44.0,
-    "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": -5.0,
+    "yesPrice": 51.0,
+    "asOf": "2026-11-03T09:10:00+01:00",
+    "gapPts": 1.0,
     "insideBand": true
    },
    "sources": [
     {
-     "publisher": "Polymarket",
+     "publisher": "Polymarket Gamma API",
      "date": "December 31, 2026",
-     "note": "rules; Yes 0.44 (bid 0.42 / ask 0.46, liquidity ~$26k) (read Oct 30 2026 ~17:45 Rome)",
+     "note": "rules; Yes 0.51 (bid 0.49 / ask 0.53, liquidity ~$16k) (read Nov 3 2026 ~09:10 Rome)",
      "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24"
     },
     {
-     "publisher": "Binance klines via data-api.binance.vision",
-     "date": "Oct 30 2026",
-     "note": "SOL/USDT ~$95.1; October low $92.34; 30d/60d vol 42%/54%",
-     "url": "https://data-api.binance.vision/api/v3/klines?symbol=SOLUSDT&interval=1d&limit=61"
+     "publisher": "Binance spot API daily klines",
+     "date": "Nov 3 2026",
+     "note": "SOL/USDT ~$92.22; σ90 3.02%/day",
+     "url": "https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1d&limit=91"
     },
     {
      "publisher": "TRM Labs",
@@ -2554,6 +2540,18 @@
       44.0
      ],
      "reason": "SOL ~$95 (October low $92.34, 7-day −7.5%) is 16% above the $80 line; the zero-drift touch model on 30d/60d realized vol gives 32–44%. Market Yes 0.44 (bid 0.42 / ask 0.46), at the top of the band. 970.5k stolen SOL is still with the Binance attacker. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-03",
+     "from": [
+      34.0,
+      44.0
+     ],
+     "to": [
+      47.0,
+      57.0
+     ],
+     "reason": "Rule: touch model (approved 31 Oct rules). SOL/USDT ~$92.2 on Binance (Nov 3 ~09:15 Rome) is 13.2% above $80 with ~59 days left; σ90 = 3.02%/day gives P(touch) 53.9%. Polymarket Yes 0.51 (bid 0.49 / ask 0.53, liquidity ~$16k). In the 30–60% zone the rules say lean low, so midpoint 52%, half-width 5. Change comes from switching to 90-day vol (the old band used 30d/60d vol), not from the latest price move."
     }
    ],
    "outcome": null,
@@ -2716,12 +2714,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 30.0,
-   "probHigh": 40.0,
-   "midpoint": 35.0,
+   "probLow": 36.0,
+   "probHigh": 46.0,
+   "midpoint": 41.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "lastReviewed": "2026-11-03",
    "created": "2026-10-18",
    "summary": "XRP trades near $1.25 after a weak October. This asks whether it falls to $1.00, a level that held as support over the summer.",
    "triggers": [
@@ -2739,23 +2737,23 @@
     "venue": "Polymarket",
     "name": "Will XRP dip to $1.00 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-xrp-hit-before-2027/will-xrp-dip-to-1pt00-by-december-31-2026-from-august-24",
-    "yesPrice": 37.0,
-    "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": -2.0,
-    "insideBand": true
+    "yesPrice": 35.5,
+    "asOf": "2026-11-03T09:10:00+01:00",
+    "gapPts": 5.5,
+    "insideBand": false
    },
    "sources": [
     {
-     "publisher": "Polymarket",
+     "publisher": "Polymarket Gamma API",
      "date": "December 31, 2026",
-     "note": "rules; Yes 0.37 (bid 0.34 / ask 0.40, liquidity ~$28k) (read Oct 30 2026 ~17:45 Rome)",
+     "note": "rules; Yes 0.355 (bid 0.33 / ask 0.38, liquidity ~$10k) (read Nov 3 2026 ~09:10 Rome)",
      "url": "https://polymarket.com/event/what-price-will-xrp-hit-before-2027/will-xrp-dip-to-1pt00-by-december-31-2026-from-august-24"
     },
     {
-     "publisher": "Binance klines via data-api.binance.vision",
-     "date": "Oct 30 2026",
-     "note": "XRP/USDT ~$1.25; October low $1.2002; 30d/60d vol 44%/60%",
-     "url": "https://data-api.binance.vision/api/v3/klines?symbol=XRPUSDT&interval=1d&limit=61"
+     "publisher": "Binance spot API daily klines",
+     "date": "Nov 3 2026",
+     "note": "XRP/USDT ~$1.2547; σ90 3.63%/day",
+     "url": "https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=1d&limit=91"
     },
     {
      "publisher": "TRM Labs",
@@ -2785,6 +2783,18 @@
       40.0
      ],
      "reason": "XRP ~$1.25 (October low $1.20) is 20% above the $1.00 line; the zero-drift touch model on 30d/60d realized vol gives 23–37%. Upside risk to the band: the Binance attacker still holds 233M XRP, unmoved. Market Yes 0.37 (bid 0.34 / ask 0.40). [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-03",
+     "from": [
+      30.0,
+      40.0
+     ],
+     "to": [
+      36.0,
+      46.0
+     ],
+     "reason": "Rule: touch model (approved 31 Oct rules). XRP/USDT ~$1.255 on Binance (Nov 3 ~09:15 Rome) is 20.3% above $1.00 with ~59 days left; σ90 = 3.63%/day gives P(touch) 41.5%. Polymarket Yes 0.355 (bid 0.33 / ask 0.38, liquidity ~$10k). In the 30–60% zone the rules say lean low, so midpoint 41%, half-width 5. The Binance attacker's 233M XRP overhang still applies."
     }
    ],
    "outcome": null,
@@ -2797,12 +2807,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 16.0,
-   "probHigh": 26.0,
-   "midpoint": 21.0,
+   "probLow": 21.0,
+   "probHigh": 31.0,
+   "midpoint": 26.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "lastReviewed": "2026-11-03",
    "created": "2026-10-18",
    "summary": "Zcash has become a top-10 coin but has fallen about 23% in a month amid ETF outflows. This asks whether its extreme swings take it down to $700 before year end.",
    "triggers": [
@@ -2821,22 +2831,22 @@
     "name": "Will Zcash dip to $700 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-zcash-hit-before-2027/will-zcash-dip-to-700-by-december-31-2026",
     "yesPrice": 21.0,
-    "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": 0.0,
+    "asOf": "2026-11-03T09:10:00+01:00",
+    "gapPts": 5.0,
     "insideBand": true
    },
    "sources": [
     {
-     "publisher": "Polymarket",
+     "publisher": "Polymarket Gamma API",
      "date": "December 31, 2026",
-     "note": "rules; Yes 0.21 (bid 0.19 / ask 0.23, liquidity ~$2.3k) (read Oct 30 2026 ~17:45 Rome)",
+     "note": "rules; Yes 0.21 (bid 0.19 / ask 0.23, liquidity ~$2.7k) (read Nov 3 2026 ~09:10 Rome)",
      "url": "https://polymarket.com/event/what-price-will-zcash-hit-before-2027/will-zcash-dip-to-700-by-december-31-2026"
     },
     {
-     "publisher": "Binance klines via data-api.binance.vision",
-     "date": "Oct 30 2026",
-     "note": "ZEC/USDT ~$1,236; October low $1,049.01; 30d/60d vol 94%/128%",
-     "url": "https://data-api.binance.vision/api/v3/klines?symbol=ZECUSDT&interval=1d&limit=61"
+     "publisher": "Binance spot API daily klines",
+     "date": "Nov 3 2026",
+     "note": "ZEC/USDT ~$1,140.43; σ90 6.54%/day",
+     "url": "https://api.binance.com/api/v3/klines?symbol=ZECUSDT&interval=1d&limit=91"
     }
    ],
    "history": [
@@ -2860,6 +2870,18 @@
       26.0
      ],
      "reason": "ZEC ~$1,236 (October low $1,049) would need a 43% drop to touch $700; the zero-drift touch model on 30d/60d realized vol (94%/128%) gives 15–28%. The NU7 upgrade (~Nov 5) is a near-term catalyst, and the stable Zebra 7.0.0 release lowers the risk of a botched upgrade. Market Yes 0.21 (bid 0.19 / ask 0.23). [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-03",
+     "from": [
+      16.0,
+      26.0
+     ],
+     "to": [
+      21.0,
+      31.0
+     ],
+     "reason": "Rule: touch model (approved 31 Oct rules). ZEC/USDT ~$1,140 on Binance (Nov 3 ~09:15 Rome) is 38.6% above $700 with ~59 days left; σ90 = 6.54%/day gives P(touch) 33.0%. Polymarket Yes 0.21 (bid 0.19 / ask 0.23, thin, liquidity ~$2.7k). In the 30–60% zone the rules say lean low, and the thin market sits 12 pts under the model, so midpoint 26% (≈6 pts under the model), half-width 5. NU7 activation (~Nov 5) remains the near-term catalyst."
     }
    ],
    "outcome": null,
@@ -3093,6 +3115,147 @@
   }
  ],
  "resolved": [
+  {
+   "id": "d2193f324e",
+   "question": "Will the US refrain from any qualifying air or missile strike on Iranian territory through Nov 3, 2026?",
+   "domain": "Geopolitics",
+   "status": "Resolved-No",
+   "confidence": "Medium",
+   "probLow": 86.0,
+   "probHigh": 99.0,
+   "midpoint": 92.5,
+   "horizon": "2026-11-03",
+   "staleAfter": "2026-11-04",
+   "lastReviewed": "2026-11-03",
+   "created": "2026-10-18",
+   "summary": "Tracked whether the US would hold off striking Iranian territory through Election Day on Nov 3. It did not: US forces hit Iran's Qeshm Island on Nov 2 in what officials called limited defensive strikes, so this resolved No.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "White House on-record pledge (22 Oct) of no attack before the midterms; Israeli sources say renewed strikes come after the vote; political cost of oil >$110 days before the election; CENTCOM says Hormuz remains open; no confirmed US strike on Iran since 1 Sep."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves NO if the US initiates an air strike (bombs, air-to-surface missiles, air-launched drones) or surface-to-surface missile/one-way drone strike that directly impacts Iran's terrestrial territory (incl. internal waters) by Nov 3, 2026 11:59 PM ET. Intercepted munitions, cyber, naval gunfire, artillery, ground incursions, threats, and minor surface-to-surface strikes (short-range loitering munitions, FPV, ATGM) do not count. Where sources conflict on occurrence/attribution/timing, market stays open until consensus or 3 full calendar days Iran Standard Time from first credibly reported evidence, then adjudicates on totality of official US/Iran + credible reporting. Do NOT mark this row Resolved until those conditions are met. Re-score immediately on: US/CENTCOM confirm or deny; Reuters/AP/IRNA corroboration; resolution source consensus that Konarak qualifies; or a Kharg / energy-infrastructure strike.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "US-Iran ceasefire continues through the midterms?",
+    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms",
+    "yesPrice": null,
+    "asOf": "2026-11-03T09:10:00+01:00"
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 3 2026",
+     "note": "'US-Iran ceasefire continues through the midterms?' closed and resolved No (outcome prices 0/1), closedTime 2026-11-03 03:47 UTC",
+     "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms/us-iran-ceasefire-continues-through-the-midterms"
+    },
+    {
+     "publisher": "ABC News",
+     "date": "Nov 2 2026",
+     "note": "two US officials: US carried out defensive airstrikes on Qeshm Island in response to an attack on a US aircraft",
+     "url": "https://abcnews.com/International/us-carries-defensive-airstrikes-irans-qeshm-island-officials/story?id=137792518"
+    },
+    {
+     "publisher": "AP",
+     "date": "Nov 2 2026",
+     "note": "US official: defensive strikes on Iranian targets in the Strait of Hormuz; IRNA reports explosions on Qeshm Island",
+     "url": "https://apnews.com/article/iran-us-trump-netanyahu-israel-war-b4519ef86bafe2672e0855d7a48ce309"
+    },
+    {
+     "publisher": "RFE/RL",
+     "date": "Nov 3 2026",
+     "note": "US officials confirm the Nov 2 Qeshm strike, part of a series of previously undisclosed limited US strikes (WSJ)",
+     "url": "https://www.rferl.org/a/33889371.html"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      80.0,
+      88.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-19",
+     "from": [
+      80.0,
+      88.0
+     ],
+     "to": [
+      50.0,
+      63.0
+     ],
+     "reason": "Urgent re-score after Iranian Navy claim via Al Jazeera (~18:12 Rome) that the US hit Konarak with two light projectiles and wounded 2; market Yes fell from ~0.815 to ~0.64–0.67. Qualifying risk is material if Hellfire/air-launched ASM is confirmed (rules include air-to-surface missiles and air-launched drones), but US has not confirmed, accounts conflict, and 'light projectiles' could fail the minor-SSM / naval-gunfire exclusions. 3-day conflict clock likely running to ~22 Oct Iran time — do not resolve the row yet; looks possible but not certain to resolve No. Separate Erem/Israel Hayom Kharg-weighing report raises residual strike risk through Nov 3 even if Konarak fails to qualify. Midpoint 56.5% is BELOW live market Yes (~66%). Stale After shortened to 2026-10-21."
+    },
+    {
+     "date": "2026-10-20",
+     "from": [
+      50.0,
+      63.0
+     ],
+     "to": [
+      62.0,
+      74.0
+     ],
+     "reason": "A US official told CNN the Konarak claim is 'inaccurate, as usual'; CENTCOM has not confirmed and nothing independent corroborates it, so the chance Konarak is adjudicated as a qualifying US strike drops sharply. Market Yes recovered to ~0.765. Not raised to market because escalation talk is live (Axios: Hegseth–Netanyahu talks on resuming major combat; Kharg-weighing report) with 14 days left, and the 3-day adjudication window runs to ~22 Oct Iran time. Midpoint 68% is ~8.5 pts BELOW market. Stale After set to 2026-10-23 (day after the window closes)."
+    },
+    {
+     "date": "2026-10-23",
+     "from": [
+      62.0,
+      74.0
+     ],
+     "to": [
+      66.0,
+      78.0
+     ],
+     "reason": "Konarak: the ~3-day adjudication window has passed with no CENTCOM confirmation and no independent corroboration (US official to CNN: 'inaccurate, as usual'), so it is very unlikely to be counted as a qualifying strike. New: White House on the record to ABC News (22 Oct): 'The United States will not be attacking Iran at any time prior to the midterm elections'; Israeli sources (ABC/NYT, 22 Oct) say renewed joint strikes are planned but 'almost certainly' after the Nov 3 vote. Offsetting risk: IRGC claims seven tankers hit in Hormuz (22 Oct, unverified; CENTCOM disputes) and threatens US bases if escorts continue — an attack on US forces could force retaliation before Nov 3; US is repositioning forces in the region; Trump: 'something one way or the other that'll happen fairly soon'. Window ends Nov 3 11:59 PM ET, so a strike on election night itself is a small tail. Market Yes 0.735 (bid 0.73 / ask 0.74, liquidity ~$198k) read Oct 23 2026 08:51 Rome. Midpoint 72% is ~1.5 pts BELOW market. Stale After 2026-10-27 (Israeli election)."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      66.0,
+      78.0
+     ],
+     "to": [
+      78.0,
+      88.0
+     ],
+     "reason": "No qualifying US strike on Iranian territory through Oct 30. The signals now point after the window: AP (two diplomats) says US officials told regional allies to prepare for possible renewed military action after next week's midterms, and CNBC/WSJ report CENTCOM's Adm. Cooper briefed Trump on Iran options at the White House. Trump said Friday the war is 'going to get wrapped up soon'; Vance sent a framework letter via Qatar. Risks inside the window: Iran says four tankers struck mines on the US-backed southern Hormuz route (UKMTO confirms one tanker hit), and the Houthis claim strikes on Saudi airports/oil sites, so an attack on US forces could still trigger retaliation before Nov 3, and an election-night strike is a small tail. Polymarket briefly went cancel-only on Oct 29 after a third-party script compromise; trading resumed about an hour later and resolution is unaffected. Market Yes 0.865 (bid 0.86 / ask 0.87, liquidity ~$24k) read Oct 30; midpoint 83% is ~3.5 pts BELOW market. Stale After 2026-11-02. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-01",
+     "from": [
+      78.0,
+      88.0
+     ],
+     "to": [
+      82.0,
+      96.0
+     ],
+     "reason": "Rule: market anchor. Polymarket Gamma Yes 0.935 (bid 0.93 / ask 0.94, liquidity ~$36k) read Nov 1 ~08:51 Rome; above 0.85 so the market is used as-is, and the old midpoint 83% sat ~10 pts below it, beyond the ~6-pt limit. New information since Oct 30 points to no strike before the vote: Rubio (Oct 31, G20 Atlanta) says Trump has made no decision and prefers a diplomatic outcome; Trump (Oct 31) says the US is 'not in a hurry'; Qatari mediators held 12+ hours of talks in Tehran Oct 30 and continued in Doha Oct 31, coordinated with Washington. Kept ~4.5 pts below market for the remaining tails: Iranian retaliation threats ('no geographic limits'), Hormuz tanker incidents, and an election-night strike before 11:59 PM ET Nov 3. Half-width 7 (horizon ~2–3 days). Midpoint 89%. Stale After stays 2026-11-02."
+    },
+    {
+     "date": "2026-11-02",
+     "from": [
+      82.0,
+      96.0
+     ],
+     "to": [
+      86.0,
+      99.0
+     ],
+     "reason": "Rule: market anchor. Polymarket Gamma Yes 0.955 (bid 0.95 / ask 0.96, liquidity ~$71k) read Nov 2 ~08:55 Rome; above 0.85 so the market is used as-is, and the old midpoint 89% sat ~6.5 pts below it, past the ~6-pt limit. No qualifying US strike reported through Nov 1. New information since Nov 1: Fox News (Nov 1) reports Trump and Rubio say further strikes are on the table but not likely before Tuesday's midterms; Trump says the US is 'not in a hurry' and can hit the remaining 'one or two' sites 'in 10 minutes' (RTÉ, Nov 1); Qatari-mediated Doha talks ran into a third day with a two-day Hormuz reopening plan on the table (Guardian, Nov 1). Kept ~3 pts below market for the remaining tails: Mojtaba Khamenei's order (Oct 31) for an immediate 'geographically unrestricted' response, which state media frame as possibly pre-emptive, Hormuz mine/tanker incidents, and an election-night strike before 11:59 PM ET Nov 3. Half-width 6.5 (horizon ~1 day, capped near 1). Midpoint 92.5%. Stale After moved to 2026-11-04 to check resolution once the window closes (Nov 4 ~06:00 Rome)."
+    }
+   ],
+   "outcome": "No",
+   "brier": 0.8556,
+   "resolvedOn": "2026-11-03"
+  },
   {
    "id": "1724c9be83",
    "question": "Will Alpenglow consensus be live on Solana mainnet-beta by Oct 31, 2026?",

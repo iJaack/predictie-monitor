@@ -2,7 +2,7 @@
   "05b7a22d0a": "Meta reports Q3 results on Oct 21 and currently guides 2026 capex at $130–145B. This asks whether it lifts the bottom of that range, an early read on whether hyperscaler AI spending keeps accelerating as borrowing costs rise.",
   "f0d92a8ce1": "After hiking in September, the Fed met again on Oct 27–28 with inflation still hot. It held at 3.75–4.00%, with two officials voting for another hike, so this resolved Yes.",
   "8b2b3fa149": "US spot Bitcoin ETFs spent most of October in net outflows, then took in money late in the month. This asks whether the monthly total ends above zero, a gauge of institutional crypto demand.",
-  "d2193f324e": "The US has paused strikes on Iran ahead of the midterms while indirect talks continue. This tracks whether that pause actually holds through Election Day on Nov 3.",
+  "d2193f324e": "Tracked whether the US would hold off striking Iranian territory through Election Day on Nov 3. It did not: US forces hit Iran's Qeshm Island on Nov 2 in what officials called limited defensive strikes, so this resolved No.",
   "60986b388a": "Which party controls the House after the Nov 3 midterms. Polling averages and public forecast models currently favour the Democrats.",
   "0572484a66": "Which party controls the Senate after the Nov 3 midterms. The map is much tighter than the House and hinges on a handful of close races and how independents caucus.",
   "37cc34ac5c": "Washington has threatened to cut intelligence sharing and PURL weapons purchases if Kyiv keeps striking Russian energy. This asks whether the US officially confirms such a cut, not just anonymous reports, by end of November.",
@@ -22,7 +22,7 @@
   "1f08b1f816": "Israel and Iran are in an uneasy ceasefire. This asks whether neither side strikes the other's territory through year end.",
   "c325a931ae": "This asks whether a general Russia–Ukraine ceasefire takes effect by year end and holds for at least ten days. Fighting and long-range strikes are currently intensifying.",
   "79595ab700": "Tanker traffic through the Strait of Hormuz has collapsed after repeated attacks on shipping. This asks whether transits recover to near-normal levels by year end.",
-  "90aa3924c7": "OpenAI's next GPT Astra release (6.1 or later) was shelved in late September over safety problems and has no new date. This asks whether it ships publicly by Dec 31.",
+  "90aa3924c7": "OpenAI shelved GPT-6.1 Astra in September over safety problems, but a gpt-6.2-astra model has been showing up in Codex usage since Nov 1. This asks whether a 6.1-or-later Astra model is released publicly by Dec 31.",
   "2a4f6af91e": "This asks whether the US meets a technical recession test in 2026: two straight quarters of negative GDP or an official NBER call. Current growth tracking is strongly positive.",
   "1724c9be83": "Solana is switching to a new consensus system, Alpenglow, on Oct 21, aiming for transactions that are final in about 150 milliseconds. This asks whether the switch is live and holding by the end of October.",
   "51c028c075": "Zcash's NU7 upgrade cuts block time from 75 to 25 seconds and adds a fee reserve. Developers set the mainnet date on Oct 20, with Nov 5 pencilled in; this asks whether it goes live by Nov 30.",
@@ -30,9 +30,9 @@
   "0c2e62195a": "Ether spent October drifting lower as US ether ETFs lost money. It hit $2,250 on Oct 29 during the selloff that followed the Binance hack, so this resolved Yes.",
   "8b275b0b89": "Ether trades near $2,230 after the Binance hack, well below its October levels. This asks whether a December network upgrade or a turn in ETF flows lifts it to $3,000 before year end.",
   "6153be4ceb": "Glamsterdam is Ethereum's next major upgrade, raising capacity roughly threefold. Its final public test, planned for Oct 26, was postponed with no new date, so this asks whether it can still reach mainnet in 2026.",
-  "2de1662150": "Solana trades near $95 after a weak October. This asks whether a weak market drags it down to $80 before year end.",
+  "2de1662150": "Solana trades near $92 after a weak autumn. This asks whether a weak market drags it down to $80 before year end.",
   "6d1d4f12c6": "XRP trades near $1.25 after a weak October. This asks whether it falls to $1.00, a level that held as support over the summer.",
-  "ebf3dd19ab": "Hyperliquid's token rallied about 20% in a week to around $92, after touching about $98 on Oct 29. This asks whether it reaches $100 this year.",
+  "ebf3dd19ab": "Hyperliquid's token trades around $84 after topping out near $98 in late October. This asks whether it reaches $100 before year end.",
   "47ceb79370": "Zcash has become a top-10 coin but has fallen about 23% in a month amid ETF outflows. This asks whether its extreme swings take it down to $700 before year end.",
   "73aa535778": "BNB trades near $700 after the Binance hack. This asks whether it can rally more than 40% to $1,000 by year end.",
   "bf63e042f5": "Dogecoin is at a one-month low near $0.079. This asks whether it breaks its cycle low and touches $0.06 before year end.",
@@ -44,5 +44,6 @@
   "4026328865": "NEAR has more than doubled since August on a new US ETF and rising usage. This asks whether its governance body approves cutting new token issuance from 2.5% to 1.6% a year before year end.",
   "fa4953d1a0": "Final polls put Gadi Eisenkot's new Yashar party two seats ahead of Netanyahu's Likud before the Oct 27 vote. Likud finished first with 27 seats to Yashar's 21, so this resolved No.",
   "dc065893f9": "Anthropic publicly filed for its IPO on Oct 26, 2026, with a roadshow reported for around Nov 9 and a Nasdaq listing under the ticker ANT. This tracks whether its shares actually start trading before the end of November.",
-  "87ecc4007a": "Binance halted withdrawals after a roughly $6.3B hack on Oct 29, the largest crypto theft on record, and says it aims to reopen them by Nov 1. This tracks whether ordinary users can withdraw BTC, ETH and USDT again by Nov 3."
+  "87ecc4007a": "Binance halted withdrawals after a roughly $6.3B hack on Oct 29, the largest crypto theft on record, and says it aims to reopen them by Nov 1. This tracks whether ordinary users can withdraw BTC, ETH and USDT again by Nov 3.",
+  "62a4892693": "Tracks whether Washington and Tehran both formally accept a deal that reopens or eases shipping through the Strait of Hormuz before the end of November. Diplomacy picked up on Nov 2–3 even as limited US strikes continued, so the forecast sits near 30%."
 }
