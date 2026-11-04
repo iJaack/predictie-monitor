@@ -1,205 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-03T08:56:46+01:00",
+ "generatedAt": "2026-11-04T08:56:56+01:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 39,
-  "resolved": 8,
+  "active": 36,
+  "resolved": 11,
   "byDomain": {
-   "Geopolitics": 8,
+   "Geopolitics": 6,
    "AI": 3,
-   "Crypto": 24,
+   "Crypto": 23,
    "Macro": 3,
    "Enterprise": 1
   }
  },
  "predictions": [
-  {
-   "id": "60986b388a",
-   "question": "Will the Democratic Party win control of the US House in the Nov 3, 2026 midterms?",
-   "domain": "Geopolitics",
-   "status": "Active",
-   "confidence": "Medium",
-   "probLow": 88.0,
-   "probHigh": 94.0,
-   "midpoint": 91.0,
-   "horizon": "2026-11-04",
-   "staleAfter": "2026-11-04",
-   "lastReviewed": "2026-11-03",
-   "created": "2026-10-18",
-   "summary": "Which party controls the House after the Nov 3 midterms. Polling averages and public forecast models currently favour the Democrats.",
-   "triggers": [
-    {
-     "label": "Toward YES",
-     "text": "generic-ballot average holding D+7 or better; special-election environment D+9; Trump approval ~34–40%; Iran war unpopularity."
-    },
-    {
-     "label": "Toward NO",
-     "text": "late polling-error shift toward Republicans (models show R+2/R+3 error scenarios); a rally-round-the-flag event; redistricting effects in toss-ups (OH-7, NC-11, PA-8, TX-15 all near 50–55%)."
-    }
-   ],
-   "resolution": "Per Polymarket rules: resolves to the party winning a majority of voting House seats in the 2026 midterms (runoffs count; seats attributed to party elected under; independents counted with the party they caucus/announce caucusing with); if no majority, the party of the first elected Speaker of the 120th Congress. NO if Republicans control. May resolve after Nov 3 if counts are slow.",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Will the Democratic Party control the House after the 2026 Midterm elections?",
-    "url": "https://polymarket.com/event/which-party-will-win-the-house-in-2026/will-the-democratic-party-control-the-house-after-the-2026-midterm-elections",
-    "yesPrice": 93.5,
-    "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": -2.5,
-    "insideBand": true
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "Oct 30 2026",
-     "note": "'Will the Democratic Party control the House after the 2026 Midterm elections?' Yes 0.935 (bid 0.93 / ask 0.94, liquidity ~$7.8M)",
-     "url": "https://polymarket.com/event/which-party-will-win-the-house-in-2026/will-the-democratic-party-control-the-house-after-the-2026-midterm-elections"
-    },
-    {
-     "publisher": "New York Magazine",
-     "date": "Oct 30 2026",
-     "note": "final polls/forecasts: FLIPR 95.1% House (240 seats), RTWH 93.9%, DDHQ 82%; Cook D+12 to +25",
-     "url": "https://nymag.com/intelligencer/article/final-midterms-polls-show-democrats-poised-to-flip-congress.html"
-    },
-    {
-     "publisher": "Poliwave forecast",
-     "date": "Oct 18 2026",
-     "note": "Democrats 85% House (median 229), 61% Senate; generic ballot D 50.8 / R 43.3",
-     "url": "https://www.poliwave.com/us/fed/projection"
-    },
-    {
-     "publisher": "FutureBallot",
-     "date": "Oct 17 2026",
-     "note": "House 80% Democratic (232 expected); Senate 53–63% depending on independents",
-     "url": "https://futureballot.com/"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-18",
-     "from": null,
-     "to": [
-      82.0,
-      90.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-10-30",
-     "from": [
-      82.0,
-      90.0
-     ],
-     "to": [
-      88.0,
-      94.0
-     ],
-     "reason": "Final forecasts have converged upward: Silver Bulletin FLIPR 95.1% (240 seats), Race to the White House 93.9%, Decision Desk HQ 82% (its cycle high, 238 seats); Cook expects a Democratic gain of 12–25 seats. Market Yes 0.935 (liquidity ~$7.8M). Midpoint 91% sits ~2.5 pts below market for polling-error and slow-count risk. Resolution may come after Nov 3. Stale After stays 2026-11-02. [Backfill run: the Oct 28–30 daily reviews did not run.]."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
-  {
-   "id": "0572484a66",
-   "question": "Will the Democratic Party win control of the US Senate in the Nov 3, 2026 midterms?",
-   "domain": "Geopolitics",
-   "status": "Active",
-   "confidence": "Low",
-   "probLow": 67.0,
-   "probHigh": 77.0,
-   "midpoint": 72.0,
-   "horizon": "2026-11-04",
-   "staleAfter": "2026-11-04",
-   "lastReviewed": "2026-11-03",
-   "created": "2026-10-18",
-   "summary": "Which party controls the Senate after the Nov 3 midterms. The map is much tighter than the House and hinges on a handful of close races and how independents caucus.",
-   "triggers": [
-    {
-     "label": "Toward YES",
-     "text": "Democrats hold leads in Texas (D+2.0), Maine (D+2.1), Alaska (D+1.9), Michigan (D+2.6) polling averages; generic ballot D+7.7 or better."
-    },
-    {
-     "label": "Toward NO",
-     "text": "Iowa/Ohio toss-ups break Republican; independent winners (NE, SD, ID, MT) refuse to caucus with Democrats; late polling error toward Republicans; Kansas (lean R) and South Carolina hold."
-    }
-   ],
-   "resolution": "Per Polymarket rules: party with a majority of voting seats after all Nov 2026 regular and special elections (runoffs count, even after November); if 50–50, the party holding the Vice Presidency (currently Republican); independents counted with the party they formally caucus/announce caucusing with; fallback is the party of the first President pro tempore. NO if Republicans control.",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Will the Democratic Party control the Senate after the 2026 Midterm elections?",
-    "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026/will-the-democratic-party-control-the-senate-after-the-2026-midterm-elections",
-    "yesPrice": 77.5,
-    "asOf": "2026-11-03T09:10:00+01:00",
-    "gapPts": -5.5,
-    "insideBand": false
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "Nov 3 2026",
-     "note": "'Will the Democratic Party control the Senate after the 2026 Midterm elections?' Yes 0.775 (bid 0.77 / ask 0.78, liquidity ~$1.2M)",
-     "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026/will-the-democratic-party-control-the-senate-after-the-2026-midterm-elections"
-    },
-    {
-     "publisher": "New York Magazine",
-     "date": "Oct 30 2026",
-     "note": "FLIPR 77.7% Senate, RTWH 77.4%, DDHQ 62%; Silver Bulletin averages AK D+3.7, IA D+0.9, KS D+1.4, ME D+2.5, OH D+3.1, TX D+3.0, NE Osborn +0.3; Alaska certification threat",
-     "url": "https://nymag.com/intelligencer/article/final-midterms-polls-show-democrats-poised-to-flip-congress.html"
-    },
-    {
-     "publisher": "CNBC",
-     "date": "Nov 2 2026",
-     "note": "Kalshi traders give Democrats 74% to win the Senate, a platform high, after NYT/Siena polls show Democratic leads in seven battlegrounds; TX 74%, KS 63%, IA 50%",
-     "url": "https://www.cnbc.com/2026/11/02/prediction-market-traders-now-see-nearly-75percent-chance-of-democrats-winning-the-senate.html"
-    },
-    {
-     "publisher": "Decision Desk HQ forecast",
-     "date": "Nov 3 2026",
-     "note": "Democrats 65% Senate",
-     "url": "https://votes.decisiondeskhq.com/forecast/2026"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-18",
-     "from": null,
-     "to": [
-      52.0,
-      62.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-10-30",
-     "from": [
-      52.0,
-      62.0
-     ],
-     "to": [
-      62.0,
-      72.0
-     ],
-     "reason": "Final forecasts: FLIPR 77.7%, Race to the White House 77.4%, Decision Desk HQ 62% (net +5). Democrats lead in seven flip races (AK, IA, KS, ME, NC, OH, TX) plus Osborn in NE, but four of the eight leads are ≤3 pts, the Washington Post all but disavowed its Kansas D+10 poll over non-response, and Alaska's governor threatens to withhold certification of a Peltola win. Market Yes 0.725 (liquidity ~$3.7M). Midpoint 67% stays ~5.5 pts BELOW market: a deliberate divergence for systematic polling error plus the Alaska certification fight. Stale After stays 2026-11-02. [Backfill run: the Oct 28–30 daily reviews did not run.]."
-    },
-    {
-     "date": "2026-11-02",
-     "from": [
-      62.0,
-      72.0
-     ],
-     "to": [
-      67.0,
-      77.0
-     ],
-     "reason": "no change. Rule: market anchor. Polymarket Gamma Yes 0.725 (bid 0.72 / ask 0.73, liquidity ~$3.5M) read Nov 2 ~08:55 Rome, unchanged since Nov 1; shaded anchor 0.674 matches the midpoint 67%. Stale After moved to 2026-11-04 to check results after the Nov 3 vote (runoffs or Alaska certification could delay resolution). 2026-11-03 (election day):  Rule: market anchor. Polymarket Gamma Yes 0.775 (bid 0.77 / ask 0.78, liquidity ~$1.2M) read Nov 3 ~09:10 Rome; shaded anchor logit(q)=0.75·logit(0.775) gives 0.717, so midpoint 72%. New question-specific information behind the move: NYT/Siena final polls show Democrats leading in seven battleground states (reported Nov 1); Kalshi 74% (CNBC, Nov 2), ElectIt 78%, DDHQ 65%. Half-width 5 (resolution within days; runoffs or the Alaska certification fight could delay it). Stale After stays 2026-11-04."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
   {
    "id": "37cc34ac5c",
    "question": "By Nov 30, 2026, will the US government officially confirm a suspension of intelligence sharing with Ukraine or of PURL weapons purchases for Ukraine?",
@@ -537,7 +351,7 @@
    "midpoint": 92.5,
    "horizon": "2026-11-30",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "Zcash's NU7 upgrade cuts block time from 75 to 25 seconds and adds a fee reserve. Developers set the mainnet date on Oct 20, with Nov 5 pencilled in; this asks whether it goes live by Nov 30.",
    "triggers": [
@@ -781,8 +595,8 @@
    "probHigh": 85.0,
    "midpoint": 78.5,
    "horizon": "2026-12-09",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-13",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-16",
    "summary": "Futures price a high chance of another Fed hike in December. This tracks whether the FOMC actually raises rates at its Dec 8–9 meeting.",
    "triggers": [
@@ -904,7 +718,7 @@
    "midpoint": 72.0,
    "horizon": "2026-12-17",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "Most economists expect the ECB to hike in December with euro-area inflation near 4%. This tracks whether it delivers exactly a 25bp increase on Dec 16–17.",
    "triggers": [
@@ -990,8 +804,8 @@
    "probHigh": 16.0,
    "midpoint": 12.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-11-03",
+   "staleAfter": "2026-11-11",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "AVAX has slipped to around $8.40. This asks whether it rallies to at least $13 at any point before year end, which would take a gain of more than 50%.",
    "triggers": [
@@ -1065,8 +879,8 @@
    "probHigh": 55.0,
    "midpoint": 48.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-11",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "AVAX trades near $8.40 after a weak October. This asks whether it drops to $7 or lower at any point before year end.",
    "triggers": [
@@ -1227,8 +1041,8 @@
    "probHigh": 5.0,
    "midpoint": 3.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-11",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "BNB trades near $700 after the Binance hack. This asks whether it can rally more than 40% to $1,000 by year end.",
    "triggers": [
@@ -1308,8 +1122,8 @@
    "probHigh": 12.0,
    "midpoint": 9.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-11",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "Bitcoin is near $77k after a weak October and the Binance hack. This asks whether it can still reach $100k before the year ends.",
    "triggers": [
@@ -1383,8 +1197,8 @@
    "probHigh": 50.0,
    "midpoint": 45.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-11",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "Bitcoin fell to about $77k after the Oct 29 Binance hack. This asks whether it drops to $70,000 or lower at any point before year end.",
    "triggers": [
@@ -1464,8 +1278,8 @@
    "probHigh": 27.0,
    "midpoint": 22.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-11",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "Chainlink, the price-feed network much of DeFi relies on, trades near $12. This asks whether it drops a third to $8 before year end.",
    "triggers": [
@@ -1533,8 +1347,8 @@
    "probHigh": 40.0,
    "midpoint": 35.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-11",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "Dogecoin is at a one-month low near $0.079. This asks whether it breaks its cycle low and touches $0.06 before year end.",
    "triggers": [
@@ -1671,8 +1485,8 @@
    "probHigh": 22.0,
    "midpoint": 17.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-11-03",
+   "staleAfter": "2026-11-11",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "Ether trades near $2,230 after the Binance hack, well below its October levels. This asks whether a December network upgrade or a turn in ETF flows lifts it to $3,000 before year end.",
    "triggers": [
@@ -1760,12 +1574,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 10.0,
-   "probHigh": 22.0,
-   "midpoint": 16.0,
+   "probLow": 3.0,
+   "probHigh": 11.0,
+   "midpoint": 7.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-13",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "Glamsterdam is Ethereum's next major upgrade, raising capacity roughly threefold. Its final public test, planned for Oct 26, was postponed with no new date, so this asks whether it can still reach mainnet in 2026.",
    "triggers": [
@@ -1784,26 +1598,26 @@
     {
      "publisher": "Ethereum Foundation blog",
      "date": "Oct 22 2026",
-     "note": "'Glamsterdam on Hoodi Postponed': Oct 26 Hoodi activation removed (ACDE #248) to investigate EIP-8037 interactions with mainnet contracts; no replacement date; mainnet date not set",
+     "note": "'Glamsterdam on Hoodi Postponed': Oct 26 Hoodi activation removed (ACDE #248) to investigate EIP-8037; no replacement date; mainnet date not set",
      "url": "https://blog.ethereum.org/2026/10/22/glamsterdam-hoodi-delay"
     },
     {
-     "publisher": "Ethereum Foundation blog",
-     "date": "Oct 16 2026",
-     "note": "original Hoodi schedule Oct 26 17:42 UTC now superseded; Sepolia forked Oct 6",
-     "url": "https://blog.ethereum.org/2026/10/16/glamsterdam-hoodi-announcement"
+     "publisher": "RockLogic",
+     "date": "Nov 2 2026",
+     "note": "no new Hoodi/mainnet date; audits ~Nov 9; devnet for consensus-specs PR 5736 no earlier than Nov 16–20 (ACDC #190, Oct 29); expects mainnet in Q1 2027",
+     "url": "https://www.rocklogic.at/blog/glamsterdam-hoodi-delayed"
+    },
+    {
+     "publisher": "Coindaro",
+     "date": "Oct 23 2026",
+     "note": "ACDE #248 chair Ansgar Dietrichs: mainnet fork before year end 'very unlikely', likely slips into 2027; Dec 1/8/9 candidates were conditional on Hoodi",
+     "url": "https://www.coindaro.com/events/ethereum-glamsterdam-hoodi-testnet/"
     },
     {
      "publisher": "Sigma Prime",
      "date": "Oct 23 2026",
-     "note": "Hoodi fork 'cancelled until further notice'; Lighthouse v8.3.2 disables it",
+     "note": "Hoodi fork 'cancelled until further notice'",
      "url": "https://sigmaprime.io/blog/glamsterdam-hoodi/"
-    },
-    {
-     "publisher": "ChainGate",
-     "date": "Oct 16 2026",
-     "note": "ACDC #189: Dec 1 or Dec 8 mainnet had been proposed conditional on Hoodi; Lido prefers Dec 8",
-     "url": "https://chaingate.dev/learn/ethereum-glamsterdam-upgrade"
     }
    ],
    "history": [
@@ -1827,6 +1641,18 @@
       22.0
      ],
      "reason": "(confidence Low → Medium). EF postponed the Oct 26 Hoodi activation on Oct 22 (ACDE #248) to investigate EIP-8037's interaction with deployed mainnet contracts; no replacement Hoodi or mainnet date. Hoodi is the last public testnet, and the Dec 1/Dec 8 mainnet candidates were conditional on it. Even a quick reschedule (mid-Nov) leaves only ~4–6 weeks to year-end, below the ~5-week Hoodi→mainnet gap seen with Fusaka, and the holiday freeze adds slip risk. Missed on the Oct 22–25 reviews because this row's Stale After (Oct 30) had not come due; caught in today's scan."
+    },
+    {
+     "date": "2026-11-04",
+     "from": [
+      10.0,
+      22.0
+     ],
+     "to": [
+      3.0,
+      11.0
+     ],
+     "reason": "Rule: judgment (no market), on new question-specific information. As of Nov 2 there is still no Hoodi or mainnet date, and the gates before one are now dated: audit results (ChainSecurity, Dedaub) around Nov 9, a new devnet no earlier than Nov 16–20 to test the non-backwards-compatible builder-onboarding fix (consensus-specs PR 5736, merged Oct 26), then new client releases with operator notice (RockLogic, Nov 2, citing ACDC #190 on Oct 29). EIP-8037 co-author and ACDE chair Ansgar Dietrichs called a mainnet fork before year end 'very unlikely' and agreed it would most likely slip into 2027 (Coindaro, citing ACDE #248). Past Hoodi→mainnet gaps were 35–42 days, so even a late-November Hoodi fork would put mainnet in January. Residual YES path: EIP-8037 dropped, Hoodi rushed in late November and a compressed mainnet date before the holiday freeze. Half-width 4 (capped by distance to 0). Stale After 2026-11-13 (after ACDT #103 Nov 9 and ACDC #191 Nov 12)."
     }
    ],
    "outcome": null,
@@ -1839,12 +1665,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 39.0,
-   "probHigh": 49.0,
-   "midpoint": 44.0,
+   "probLow": 42.0,
+   "probHigh": 52.0,
+   "midpoint": 47.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-11-03",
+   "staleAfter": "2026-11-11",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "Hyperliquid's token trades around $84 after topping out near $98 in late October. This asks whether it reaches $100 before year end.",
    "triggers": [
@@ -1862,22 +1688,22 @@
     "venue": "Polymarket",
     "name": "Will Hyperliquid reach $100 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-hyperliquid-hit-before-2027/will-hyperliquid-reach-100-by-december-31-2026",
-    "yesPrice": 44.5,
-    "asOf": "2026-11-03T09:10:00+01:00",
-    "gapPts": -0.5,
+    "yesPrice": 51.0,
+    "asOf": "2026-11-04T08:50:00+01:00",
+    "gapPts": -4.0,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
      "date": "December 31, 2026",
-     "note": "rules; Yes 0.445 (bid 0.43 / ask 0.46, liquidity ~$10k) (read Nov 3 2026 ~09:10 Rome)",
+     "note": "rules; Yes 0.51 (bid 0.50 / ask 0.52, liquidity ~$28k) (read Nov 4 2026 ~08:50 Rome)",
      "url": "https://polymarket.com/event/what-price-will-hyperliquid-hit-before-2027/will-hyperliquid-reach-100-by-december-31-2026"
     },
     {
      "publisher": "Binance spot API daily klines",
-     "date": "Nov 3 2026",
-     "note": "HYPE/USDT ~$83.69; 90d high $97.74; σ90 3.08%/day over 39 daily returns (listing history)",
+     "date": "Nov 4 2026",
+     "note": "HYPE/USDT ~$85.27; 90d high $97.74; σ90 3.01%/day over 41 daily returns (listing history)",
      "url": "https://api.binance.com/api/v3/klines?symbol=HYPEUSDT&interval=1d&limit=91"
     }
    ],
@@ -1914,6 +1740,18 @@
       49.0
      ],
      "reason": "Rule: touch model (approved 31 Oct rules), replacing the old 30d/60d-vol judgment band. HYPE/USDT ~$83.7 on Binance (Nov 3 ~09:15 Rome) needs +19.5% to touch $100 in ~59 days; σ90 = 3.08%/day (only 39 daily returns since the Binance listing, so σ is noisier than usual) gives P(touch) 45.1%. Polymarket Yes 0.445 (bid 0.43 / ask 0.46, liquidity ~$10k). In the 30–60% zone the rules say lean low, so midpoint 44%, half-width 5. The Oct 30 band leaned on the post-hack rally that has since faded; this is a rule change, not a momentum call."
+    },
+    {
+     "date": "2026-11-04",
+     "from": [
+      39.0,
+      49.0
+     ],
+     "to": [
+      42.0,
+      52.0
+     ],
+     "reason": "Rule: market anchor cross-checked with touch model. Polymarket Gamma Yes 0.51 (bid 0.50 / ask 0.52, liquidity ~$28k) read Nov 4 ~08:50 Rome; shaded anchor logit(q)=0.75·logit(0.51) = 0.507. Touch model: HYPE/USDT ~$85.27 on Binance needs +17.3% to touch $100 in ~57.9 days; σ90 = 3.01%/day (41 daily returns since listing, noisy) → P(touch) 48.6%; lean low in the 30–60% zone. The old midpoint 44% sat 6.7 pts under the shaded anchor, past the ~6-pt limit, so it moves to 47% (≈4 pts under the anchor, ≈1.6 under the model). This keeps a lean-low tilt and does not chase the 1-day market move. Stale After 2026-11-11."
     }
    ],
    "outcome": null,
@@ -2005,8 +1843,8 @@
    "probHigh": 42.0,
    "midpoint": 36.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-05",
-   "lastReviewed": "2026-11-03",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "Israel and Iran are in an uneasy ceasefire. This asks whether neither side strikes the other's territory through year end.",
    "triggers": [
@@ -2168,7 +2006,7 @@
    "midpoint": 11.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-11-02",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "Mojtaba Khamenei became Iran's de facto leader in March but has rarely been seen since. This asks whether he is removed, incapacitated or replaced by year end, a risk concentrated around possible renewed strikes after the US midterms.",
    "triggers": [
@@ -2245,67 +2083,6 @@
    "resolvedOn": null
   },
   {
-   "id": "4026328865",
-   "question": "Will NEAR's House of Stake approve the proposal to cut maximum issuance from 2.5% to 1.6% by Dec 31, 2026?",
-   "domain": "Crypto",
-   "status": "Active",
-   "confidence": "Low",
-   "probLow": 45.0,
-   "probHigh": 62.0,
-   "midpoint": 53.5,
-   "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-18",
-   "created": "2026-10-18",
-   "summary": "NEAR has more than doubled since August on a new US ETF and rising usage. This asks whether its governance body approves cutting new token issuance from 2.5% to 1.6% a year before year end.",
-   "triggers": [
-    {
-     "label": "Toward yes",
-     "text": "a single-parameter change with a 90-day grace period; the 2025 halving (5%→2.5%) passed with 68.41% validator approval; 57% of NEAR is unstaked and benefits directly; NEAR Intents revenue already funds buybacks."
-    },
-    {
-     "label": "Toward no",
-     "text": "Supermajority track; staking yield falls from ~4.8–5.3% toward 3.1–3.4%, so validators and stakers may resist; the vote planned for the week of Oct 11 did not happen; the proposer (SVRN) is a large holder, which may draw governance pushback."
-    }
-   ],
-   "resolution": "Resolves YES if the House of Stake proposal 'Establish a 24-Month Issuance Ramp to a 1.6% Target Rate of NEAR Token Emissions' (or a successor with the same 1.6% target) is approved in a House of Stake vote by 23:59 UTC Dec 31, 2026, per House of Stake / gov.near.org. Validator adoption is not required. Resolves NO if it is rejected, withdrawn or not voted on by then.",
-   "market": null,
-   "sources": [
-    {
-     "publisher": "NEAR Governance forum",
-     "date": "Oct 7 2026",
-     "note": "HSP draft: 2.5%→1.6% over 24 months, Supermajority type, needs validator adoption after HoS vote; 2025 halving passed with 68.41%",
-     "url": "https://gov.near.org/t/hsp-xxx-establish-a-24-month-issuance-ramp-to-a-1-6-target-rate-of-near-token-emissions/42644"
-    },
-    {
-     "publisher": "CryptoCodes",
-     "date": "Oct 13 2026",
-     "note": "proposal listed as submitted, no on-chain vote yet; NRR held $81.7M on Oct 11",
-     "url": "https://www.cryptocodes.eu/news/near-protocol-etf-issuance-intents-12-october-2026"
-    },
-    {
-     "publisher": "The Motley Fool",
-     "date": "Oct 12 2026",
-     "note": "NEAR +15.8% weekend; Intents $4.8B Sept swaps; issuance vote pending; Bitwise ETF Sept 29",
-     "url": "https://www.fool.com/investing/2026/10/12/why-near-protocol-jumped-16-over-the-weekend/"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-18",
-     "from": null,
-     "to": [
-      45.0,
-      62.0
-     ],
-     "reason": "Forecast opened."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
-  {
    "id": "90aa3924c7",
    "question": "Will OpenAI publicly release a GPT Astra model versioned 6.1 or higher by Dec 31, 2026?",
    "domain": "AI",
@@ -2316,7 +2093,7 @@
    "midpoint": 92.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-11-03",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "OpenAI shelved GPT-6.1 Astra in September over safety problems, but a gpt-6.2-astra model has been showing up in Codex usage since Nov 1. This asks whether a 6.1-or-later Astra model is released publicly by Dec 31.",
    "triggers": [
@@ -2475,8 +2252,8 @@
    "probHigh": 57.0,
    "midpoint": 52.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-11-03",
+   "staleAfter": "2026-11-11",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "Solana trades near $92 after a weak autumn. This asks whether a weak market drags it down to $80 before year end.",
    "triggers": [
@@ -2643,8 +2420,8 @@
    "probHigh": 34.0,
    "midpoint": 29.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-11",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "Uniswap's token now benefits from protocol fees that fund token burns, and briefly hit $10.94 in September. This asks whether it reaches $11 this year after falling back to about $7.",
    "triggers": [
@@ -2714,12 +2491,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 36.0,
-   "probHigh": 46.0,
-   "midpoint": 41.0,
+   "probLow": 29.0,
+   "probHigh": 39.0,
+   "midpoint": 34.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-11-03",
+   "staleAfter": "2026-11-11",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "XRP trades near $1.25 after a weak October. This asks whether it falls to $1.00, a level that held as support over the summer.",
    "triggers": [
@@ -2737,22 +2514,22 @@
     "venue": "Polymarket",
     "name": "Will XRP dip to $1.00 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-xrp-hit-before-2027/will-xrp-dip-to-1pt00-by-december-31-2026-from-august-24",
-    "yesPrice": 35.5,
-    "asOf": "2026-11-03T09:10:00+01:00",
-    "gapPts": 5.5,
+    "yesPrice": 27.0,
+    "asOf": "2026-11-04T08:50:00+01:00",
+    "gapPts": 7.0,
     "insideBand": false
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
      "date": "December 31, 2026",
-     "note": "rules; Yes 0.355 (bid 0.33 / ask 0.38, liquidity ~$10k) (read Nov 3 2026 ~09:10 Rome)",
+     "note": "rules; Yes 0.27 (bid 0.25 / ask 0.29, liquidity ~$23k) (read Nov 4 2026 ~08:50 Rome)",
      "url": "https://polymarket.com/event/what-price-will-xrp-hit-before-2027/will-xrp-dip-to-1pt00-by-december-31-2026-from-august-24"
     },
     {
      "publisher": "Binance spot API daily klines",
-     "date": "Nov 3 2026",
-     "note": "XRP/USDT ~$1.2547; σ90 3.63%/day",
+     "date": "Nov 4 2026",
+     "note": "XRP/USDT ~$1.2756; σ90 3.60%/day",
      "url": "https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=1d&limit=91"
     },
     {
@@ -2795,6 +2572,18 @@
       46.0
      ],
      "reason": "Rule: touch model (approved 31 Oct rules). XRP/USDT ~$1.255 on Binance (Nov 3 ~09:15 Rome) is 20.3% above $1.00 with ~59 days left; σ90 = 3.63%/day gives P(touch) 41.5%. Polymarket Yes 0.355 (bid 0.33 / ask 0.38, liquidity ~$10k). In the 30–60% zone the rules say lean low, so midpoint 41%, half-width 5. The Binance attacker's 233M XRP overhang still applies."
+    },
+    {
+     "date": "2026-11-04",
+     "from": [
+      36.0,
+      46.0
+     ],
+     "to": [
+      29.0,
+      39.0
+     ],
+     "reason": "Rule: market anchor cross-checked with touch model. Polymarket Gamma Yes 0.27 (bid 0.25 / ask 0.29, liquidity ~$23k, now liquid) read Nov 4 ~08:50 Rome; shaded anchor logit(q)=0.75·logit(0.27) = 0.32. Touch model: XRP/USDT ~$1.2756 on Binance, 21.6% above $1.00 with ~57.9 days left, σ90 = 3.60%/day → P(touch) 37.4%; in the 30–60% zone the rules say lean low (~34%). Midpoint 34%, half-width 5. Correction, not momentum: on Nov 3 the midpoint was set equal to the model (41%) without the lean-low adjustment and sat ~8.5 pts above the shaded market anchor, beyond the ~6-pt limit; the price itself moved only +1.7%. The Binance attacker's 233M XRP overhang still applies. Stale After 2026-11-11 (MSCI list)."
     }
    ],
    "outcome": null,
@@ -2811,8 +2600,8 @@
    "probHigh": 31.0,
    "midpoint": 26.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-11-03",
+   "staleAfter": "2026-11-11",
+   "lastReviewed": "2026-11-04",
    "created": "2026-10-18",
    "summary": "Zcash has become a top-10 coin but has fallen about 23% in a month amid ETF outflows. This asks whether its extreme swings take it down to $700 before year end.",
    "triggers": [
@@ -3116,6 +2905,192 @@
  ],
  "resolved": [
   {
+   "id": "60986b388a",
+   "question": "Will the Democratic Party win control of the US House in the Nov 3, 2026 midterms?",
+   "domain": "Geopolitics",
+   "status": "Resolved-Yes",
+   "confidence": "Medium",
+   "probLow": 88.0,
+   "probHigh": 94.0,
+   "midpoint": 91.0,
+   "horizon": "2026-11-04",
+   "staleAfter": "2026-11-04",
+   "lastReviewed": "2026-11-04",
+   "created": "2026-10-18",
+   "summary": "Which party controls the House after the Nov 3 midterms. Polling averages and public forecast models currently favour the Democrats.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "generic-ballot average holding D+7 or better; special-election environment D+9; Trump approval ~34–40%; Iran war unpopularity."
+    },
+    {
+     "label": "Toward NO",
+     "text": "late polling-error shift toward Republicans (models show R+2/R+3 error scenarios); a rally-round-the-flag event; redistricting effects in toss-ups (OH-7, NC-11, PA-8, TX-15 all near 50–55%)."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves to the party winning a majority of voting House seats in the 2026 midterms (runoffs count; seats attributed to party elected under; independents counted with the party they caucus/announce caucusing with); if no majority, the party of the first elected Speaker of the 120th Congress. NO if Republicans control. May resolve after Nov 3 if counts are slow.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will the Democratic Party control the House after the 2026 Midterm elections?",
+    "url": "https://polymarket.com/event/which-party-will-win-the-house-in-2026/will-the-democratic-party-control-the-house-after-the-2026-midterm-elections",
+    "yesPrice": 99.95,
+    "asOf": "2026-11-04T08:50:00+01:00",
+    "gapPts": -9.0,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 4 2026",
+     "note": "'Will the Democratic Party control the House after the 2026 Midterm elections?' Yes 0.9995 (bid 0.999 / ask 1.00), not yet formally closed",
+     "url": "https://polymarket.com/event/which-party-will-win-the-house-in-2026/will-the-democratic-party-control-the-house-after-the-2026-midterm-elections"
+    },
+    {
+     "publisher": "AP",
+     "date": "Nov 4 2026",
+     "note": "'Determining which party will control Congress didn't take days this time': AP calls the House and Senate for the Democrats",
+     "url": "https://apnews.com/article/when-ap-calls-congress-control-9dae62cdd7d776a20a26eab6fbd9b12c"
+    },
+    {
+     "publisher": "Washington Examiner",
+     "date": "Nov 4 2026",
+     "note": "Democrats clinch 218 House seats per AP with Johnny Garcia's TX-35 win",
+     "url": "https://www.washingtonexaminer.com/news/campaigns/congressional/4784797/control-of-congress-house-majority-2026-elections/"
+    },
+    {
+     "publisher": "CBS News live results",
+     "date": "Nov 4 2026",
+     "note": "CBS projects Democrats win control of the House",
+     "url": "https://www.cbsnews.com/live-updates/house-election-results-2026/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      82.0,
+      90.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      82.0,
+      90.0
+     ],
+     "to": [
+      88.0,
+      94.0
+     ],
+     "reason": "Final forecasts have converged upward: Silver Bulletin FLIPR 95.1% (240 seats), Race to the White House 93.9%, Decision Desk HQ 82% (its cycle high, 238 seats); Cook expects a Democratic gain of 12–25 seats. Market Yes 0.935 (liquidity ~$7.8M). Midpoint 91% sits ~2.5 pts below market for polling-error and slow-count risk. Resolution may come after Nov 3. Stale After stays 2026-11-02. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.0081,
+   "resolvedOn": "2026-11-04"
+  },
+  {
+   "id": "0572484a66",
+   "question": "Will the Democratic Party win control of the US Senate in the Nov 3, 2026 midterms?",
+   "domain": "Geopolitics",
+   "status": "Resolved-Yes",
+   "confidence": "Low",
+   "probLow": 67.0,
+   "probHigh": 77.0,
+   "midpoint": 72.0,
+   "horizon": "2026-11-04",
+   "staleAfter": "2026-11-04",
+   "lastReviewed": "2026-11-04",
+   "created": "2026-10-18",
+   "summary": "Which party controls the Senate after the Nov 3 midterms. The map is much tighter than the House and hinges on a handful of close races and how independents caucus.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "Democrats hold leads in Texas (D+2.0), Maine (D+2.1), Alaska (D+1.9), Michigan (D+2.6) polling averages; generic ballot D+7.7 or better."
+    },
+    {
+     "label": "Toward NO",
+     "text": "Iowa/Ohio toss-ups break Republican; independent winners (NE, SD, ID, MT) refuse to caucus with Democrats; late polling error toward Republicans; Kansas (lean R) and South Carolina hold."
+    }
+   ],
+   "resolution": "Per Polymarket rules: party with a majority of voting seats after all Nov 2026 regular and special elections (runoffs count, even after November); if 50–50, the party holding the Vice Presidency (currently Republican); independents counted with the party they formally caucus/announce caucusing with; fallback is the party of the first President pro tempore. NO if Republicans control.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will the Democratic Party control the Senate after the 2026 Midterm elections?",
+    "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026/will-the-democratic-party-control-the-senate-after-the-2026-midterm-elections",
+    "yesPrice": 99.95,
+    "asOf": "2026-11-04T08:50:00+01:00",
+    "gapPts": -28.0,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 4 2026",
+     "note": "'Will the Democratic Party control the Senate after the 2026 Midterm elections?' Yes 0.9995 (bid 0.999 / ask 1.00), not yet formally closed",
+     "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026/will-the-democratic-party-control-the-senate-after-the-2026-midterm-elections"
+    },
+    {
+     "publisher": "CBS News",
+     "date": "Nov 3 2026",
+     "note": "CBS projects Democrats win the Senate (D 54, R 43 at the time); flips in TX, NC, SC, OH, KS, IA, ME",
+     "url": "https://www.cbsnews.com/news/senate-control-democrats-republicans-2026-midterm-elections/"
+    },
+    {
+     "publisher": "AP",
+     "date": "Nov 4 2026",
+     "note": "'Democrats win the US House and Senate as voters deliver a strong rebuke to Trump and Republicans'",
+     "url": "https://apnews.com/article/midterm-election-house-senate-democrats-republicans-trump-f126e12e05b579a327b98481c0ae2226"
+    },
+    {
+     "publisher": "Al Jazeera",
+     "date": "Nov 4 2026",
+     "note": "AP projects Democrats flip the Senate, at least 53 seats",
+     "url": "https://www.aljazeera.com/news/2026/11/4/democratic-party-flips-us-senate-in-2026-midterm-elections"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      52.0,
+      62.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      52.0,
+      62.0
+     ],
+     "to": [
+      62.0,
+      72.0
+     ],
+     "reason": "Final forecasts: FLIPR 77.7%, Race to the White House 77.4%, Decision Desk HQ 62% (net +5). Democrats lead in seven flip races (AK, IA, KS, ME, NC, OH, TX) plus Osborn in NE, but four of the eight leads are ≤3 pts, the Washington Post all but disavowed its Kansas D+10 poll over non-response, and Alaska's governor threatens to withhold certification of a Peltola win. Market Yes 0.725 (liquidity ~$3.7M). Midpoint 67% stays ~5.5 pts BELOW market: a deliberate divergence for systematic polling error plus the Alaska certification fight. Stale After stays 2026-11-02. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-02",
+     "from": [
+      62.0,
+      72.0
+     ],
+     "to": [
+      67.0,
+      77.0
+     ],
+     "reason": "no change. Rule: market anchor. Polymarket Gamma Yes 0.725 (bid 0.72 / ask 0.73, liquidity ~$3.5M) read Nov 2 ~08:55 Rome, unchanged since Nov 1; shaded anchor 0.674 matches the midpoint 67%. Stale After moved to 2026-11-04 to check results after the Nov 3 vote (runoffs or Alaska certification could delay resolution). 2026-11-03 (election day):  Rule: market anchor. Polymarket Gamma Yes 0.775 (bid 0.77 / ask 0.78, liquidity ~$1.2M) read Nov 3 ~09:10 Rome; shaded anchor logit(q)=0.75·logit(0.775) gives 0.717, so midpoint 72%. New question-specific information behind the move: NYT/Siena final polls show Democrats leading in seven battleground states (reported Nov 1); Kalshi 74% (CNBC, Nov 2), ElectIt 78%, DDHQ 65%. Half-width 5 (resolution within days; runoffs or the Alaska certification fight could delay it). Stale After stays 2026-11-04."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.0784,
+   "resolvedOn": "2026-11-04"
+  },
+  {
    "id": "d2193f324e",
    "question": "Will the US refrain from any qualifying air or missile strike on Iranian territory through Nov 3, 2026?",
    "domain": "Geopolitics",
@@ -3255,6 +3230,67 @@
    "outcome": "No",
    "brier": 0.8556,
    "resolvedOn": "2026-11-03"
+  },
+  {
+   "id": "4026328865",
+   "question": "Will NEAR's House of Stake approve the proposal to cut maximum issuance from 2.5% to 1.6% by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Resolved-Yes",
+   "confidence": "Low",
+   "probLow": 45.0,
+   "probHigh": 62.0,
+   "midpoint": 53.5,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-06",
+   "lastReviewed": "2026-11-04",
+   "created": "2026-10-18",
+   "summary": "NEAR has more than doubled since August on a new US ETF and rising usage. This asks whether its governance body approves cutting new token issuance from 2.5% to 1.6% a year before year end.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "a single-parameter change with a 90-day grace period; the 2025 halving (5%→2.5%) passed with 68.41% validator approval; 57% of NEAR is unstaked and benefits directly; NEAR Intents revenue already funds buybacks."
+    },
+    {
+     "label": "Toward no",
+     "text": "Supermajority track; staking yield falls from ~4.8–5.3% toward 3.1–3.4%, so validators and stakers may resist; the vote planned for the week of Oct 11 did not happen; the proposer (SVRN) is a large holder, which may draw governance pushback."
+    }
+   ],
+   "resolution": "Resolves YES if the House of Stake proposal 'Establish a 24-Month Issuance Ramp to a 1.6% Target Rate of NEAR Token Emissions' (or a successor with the same 1.6% target) is approved in a House of Stake vote by 23:59 UTC Dec 31, 2026, per House of Stake / gov.near.org. Validator adoption is not required. Resolves NO if it is rejected, withdrawn or not voted on by then.",
+   "market": null,
+   "sources": [
+    {
+     "publisher": "The Block",
+     "date": "Nov 3 2026",
+     "note": "NEAR House of Stake passes HSP-029 (2.5% → 1.6% max issuance over 24 months) in the ballot that closed Monday Nov 2; Security Council review, 90-day grace period and validator upgrade still to come",
+     "url": "https://www.theblock.co/news/defi/2026-11-03-near-governance-approves-proposal-to-cut-token-issuance-432378"
+    },
+    {
+     "publisher": "NEAR Governance forum",
+     "date": null,
+     "note": "HSP-029 'Establish a 24-Month Issuance Ramp to a 1.6% Target Rate of NEAR Token Emissions'",
+     "url": "https://gov.near.org/t/hsp-029-establish-a-24-month-issuance-ramp-to-a-1-6-target-rate-of-near-token-emissions/42644"
+    },
+    {
+     "publisher": "Altcoin Reporter",
+     "date": "Nov 2026",
+     "note": "issuance cut clears House of Stake vote (~3.29M veNEAR, ~99.96% of voting weight); validators decide next",
+     "url": "https://altcoinreporter.com/near-house-of-stake-approves-issuance-cut/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      45.0,
+      62.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.2162,
+   "resolvedOn": "2026-11-02"
   },
   {
    "id": "1724c9be83",
