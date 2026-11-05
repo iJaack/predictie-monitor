@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-04T08:56:56+01:00",
+ "generatedAt": "2026-11-05T09:01:23+01:00",
  "timezone": "Europe/Rome",
  "counts": {
   "active": 36,
@@ -351,7 +351,7 @@
    "midpoint": 92.5,
    "horizon": "2026-11-30",
    "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-11-04",
+   "lastReviewed": "2026-11-05",
    "created": "2026-10-18",
    "summary": "Zcash's NU7 upgrade cuts block time from 75 to 25 seconds and adds a fee reserve. Developers set the mainnet date on Oct 20, with Nov 5 pencilled in; this asks whether it goes live by Nov 30.",
    "triggers": [
@@ -717,8 +717,8 @@
    "probHigh": 78.0,
    "midpoint": 72.0,
    "horizon": "2026-12-17",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-13",
+   "lastReviewed": "2026-11-05",
    "created": "2026-10-18",
    "summary": "Most economists expect the ECB to hike in December with euro-area inflation near 4%. This tracks whether it delivers exactly a 25bp increase on Dec 16–17.",
    "triggers": [
@@ -800,12 +800,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 8.0,
-   "probHigh": 16.0,
-   "midpoint": 12.0,
+   "probLow": 10.0,
+   "probHigh": 18.0,
+   "midpoint": 14.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-11-04",
+   "lastReviewed": "2026-11-05",
    "created": "2026-10-18",
    "summary": "AVAX has slipped to around $8.40. This asks whether it rallies to at least $13 at any point before year end, which would take a gain of more than 50%.",
    "triggers": [
@@ -825,7 +825,7 @@
     "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-reach-13-by-december-31-2026",
     "yesPrice": 6.0,
     "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": 6.0,
+    "gapPts": 8.0,
     "insideBand": false
    },
    "sources": [
@@ -863,6 +863,18 @@
       16.0
      ],
      "reason": "AVAX ~$8.37 needs +55% to touch $13 in ~62 days; the zero-drift touch model on 30d/60d realized vol gives 11–24%, and the band leans to the 30d end. Market Yes 0.06 (thin, bid 0.04 / ask 0.08). The old band was far too high once price fell from ~$10 to ~$8.4. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-05",
+     "from": [
+      8.0,
+      16.0
+     ],
+     "to": [
+      10.0,
+      18.0
+     ],
+     "reason": "Rule: touch model (90d vol). AVAX/USDT ~$8.74, σ90≈4.18%/day, days≈56 → P(touch $13)≈20.8%; gap vs prior mid held overnight past the ~6-pt limit, so apply the Nov 4 pre-committed move to ~10–18. Polymarket Yes ~0.075 still too thin to anchor. Schwab AVAX still not confirmed. Stale After stays 2026-11-11. Source: Binance AVAXUSDT ticker + 91×1d klines read Nov 5."
     }
    ],
    "outcome": null,
@@ -1839,12 +1851,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 30.0,
-   "probHigh": 42.0,
-   "midpoint": 36.0,
+   "probLow": 35.0,
+   "probHigh": 47.0,
+   "midpoint": 41.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-13",
+   "lastReviewed": "2026-11-05",
    "created": "2026-10-18",
    "summary": "Israel and Iran are in an uneasy ceasefire. This asks whether neither side strikes the other's territory through year end.",
    "triggers": [
@@ -1864,7 +1876,7 @@
     "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963/israel-x-iran-ceasefire-continues-through-december-31-415",
     "yesPrice": 37.0,
     "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": -1.0,
+    "gapPts": 4.0,
     "insideBand": true
    },
    "sources": [
@@ -1914,6 +1926,18 @@
       42.0
      ],
      "reason": "Post-election re-score (this row asked for one after Oct 27). Israel's election produced no majority (53/48/19), so Netanyahu leads a caretaker government during weeks of coalition talks. US officials have told allies to prepare for renewed military action after the Nov 3 midterms (AP), and Cooper briefed Trump on options (CNBC/WSJ). Earlier reporting has a new round coordinated with Israel. Iran and its proxies are escalating (Hormuz mines, Houthi strikes on Saudi Arabia). Offsetting: the Vance/Qatar talks track and Trump's 'wrapped up soon'. Market Yes 0.37 (liquidity ~$59k), inside the band. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-05",
+     "from": [
+      30.0,
+      42.0
+     ],
+     "to": [
+      35.0,
+      47.0
+     ],
+     "reason": "Rule: market shade (0.75 logit). Polymarket Gamma Yes 0.44 (liq ~$105k) → shaded anchor ≈0.455; prior mid 36% was ~9.5 pts under (past ~6-pt limit). Mid now 41%. Qeshm remains US-only (Israel denied involvement); no Israel↔Iran qualifying strike found 4–5 Nov. Full ±15 widen deferred one review. Stale After → 2026-11-13."
     }
    ],
    "outcome": null,
@@ -2001,12 +2025,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 8.0,
-   "probHigh": 15.0,
+   "probLow": 4.0,
+   "probHigh": 19.0,
    "midpoint": 11.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-13",
+   "lastReviewed": "2026-11-05",
    "created": "2026-10-18",
    "summary": "Mojtaba Khamenei became Iran's de facto leader in March but has rarely been seen since. This asks whether he is removed, incapacitated or replaced by year end, a risk concentrated around possible renewed strikes after the US midterms.",
    "triggers": [
@@ -2076,6 +2100,18 @@
       15.0
      ],
      "reason": "Urgent re-score linked to Konarak/Kharg. Slight upward nudge only: a limited Konarak naval-base claim does not itself remove Mojtaba, but confirmed US kinetic action plus reported Kharg deliberations raise the escalation path to elite fracture. Market Yes 0.12/0.13 sits inside the new band (midpoint 11.5% slightly BELOW market Yes 12.5%). No material edge either way. Do not treat Konarak as leadership-change evidence."
+    },
+    {
+     "date": "2026-11-05",
+     "from": [
+      8.0,
+      15.0
+     ],
+     "to": [
+      4.0,
+      19.0
+     ],
+     "reason": "Polymarket Gamma Yes 0.075 (liq ~$235k) read Nov 5; post-Qeshm reporting still treats Mojtaba as SL. Stale After → 2026-11-13. Source: https://polymarket.com/event/iran-leadership-change-by-december-31-974-976-658-482-568-685-996-469-827 ; https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes."
     }
    ],
    "outcome": null,
@@ -2088,12 +2124,12 @@
    "domain": "AI",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 88.0,
-   "probHigh": 96.0,
-   "midpoint": 92.0,
+   "probLow": 90.0,
+   "probHigh": 98.0,
+   "midpoint": 94.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-06",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-13",
+   "lastReviewed": "2026-11-05",
    "created": "2026-10-18",
    "summary": "OpenAI shelved GPT-6.1 Astra in September over safety problems, but a gpt-6.2-astra model has been showing up in Codex usage since Nov 1. This asks whether a 6.1-or-later Astra model is released publicly by Dec 31.",
    "triggers": [
@@ -2113,8 +2149,8 @@
     "url": "https://polymarket.com/event/gpt-astra-6pt1-released-byptptpt/next-astra-model-6pt1-released-by-december-31-2026",
     "yesPrice": 98.0,
     "asOf": "2026-11-03T09:10:00+01:00",
-    "gapPts": -6.0,
-    "insideBand": false
+    "gapPts": -4.0,
+    "insideBand": true
    },
    "sources": [
     {
@@ -2163,6 +2199,18 @@
       96.0
      ],
      "reason": "(confidence Low → Medium). Rule: market anchor (approved 31 Oct rules), plus new question-specific information. Polymarket Gamma Yes 0.98 (bid 0.974 / ask 0.985, liquidity ~$23k) read Nov 3 ~09:10 Rome; above 0.85, so the market is used as-is, and the old midpoint 60% sat ~38 pts below it, far past the ~6-pt limit. New information: since Nov 1 the model ID gpt-6.2-astra shows up in Codex usage analytics for many accounts and in at least one API response payload (TestingCatalog, Decrypt, Nov 2), which points to a staged rollout of a 6.2 Astra model that would qualify under the rules. Held ~6 pts below market because OpenAI has announced nothing, the model catalog still lists only gpt-6-astra (OmniaKey check, Nov 2), a gray A/B test is not 'publicly accessible' under the rules, and GPT-6.1 Astra was shelved on safety grounds in September. Stale After moved to 2026-11-06 because a launch could land any day."
+    },
+    {
+     "date": "2026-11-05",
+     "from": [
+      88.0,
+      96.0
+     ],
+     "to": [
+      90.0,
+      98.0
+     ],
+     "reason": "Rule: market_as_is (p≈0.987–0.994 >0.85). Gamma Yes ~0.99 read Nov 5; prior mid 92% was ~7 pts under (past ~6-pt limit). Mid now 94%. Still no public Astra 6.1+; gpt-6.2-astra remains gray (Codex billing / analytics only), Sol/Terra do not qualify. Near-ceiling so half-width capped by distance to 1. Stale After → 2026-11-13."
     }
    ],
    "outcome": null,
