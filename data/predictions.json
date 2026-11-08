@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-07T08:53:03+01:00",
+ "generatedAt": "2026-11-08T08:53:01+01:00",
  "timezone": "Europe/Rome",
  "counts": {
   "active": 35,
@@ -111,12 +111,12 @@
    "domain": "AI",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 43.0,
-   "probHigh": 67.0,
-   "midpoint": 55.0,
+   "probLow": 60.0,
+   "probHigh": 84.0,
+   "midpoint": 72.0,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-10",
-   "lastReviewed": "2026-11-06",
+   "staleAfter": "2026-11-11",
+   "lastReviewed": "2026-11-08",
    "created": "2026-10-27",
    "summary": "Anthropic publicly filed for its IPO on Oct 26, 2026, with a roadshow reported for around Nov 9 and a Nasdaq listing under the ticker ANT. This tracks whether its shares actually start trading before the end of November.",
    "triggers": [
@@ -134,35 +134,35 @@
     "venue": "Polymarket",
     "name": "Will Anthropic IPO by November 30, 2026?",
     "url": "https://polymarket.com/event/anthropic-ipo-by/will-anthropic-ipo-by-november-30-2026",
-    "yesPrice": 55.5,
-    "asOf": "2026-11-06T08:55:00+01:00",
-    "gapPts": -0.5,
+    "yesPrice": 77.5,
+    "asOf": "2026-11-08T09:00:00+01:00",
+    "gapPts": -5.5,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 6 2026",
-     "note": "'Will Anthropic IPO by November 30, 2026?' Yes 0.555 (bid 0.55 / ask 0.56, liquidity ~$9.9k), conditionId 0x5ba72dca702ddf6ac8ce0b992b521dd3b080109e39a5f022827ffda3ac8a60f6",
+     "date": "Nov 8 2026",
+     "note": "'Will Anthropic IPO by November 30, 2026?' Yes 0.775 (bid 0.77 / ask 0.78, liquidity ~$21k)",
      "url": "https://polymarket.com/event/anthropic-ipo-by/will-anthropic-ipo-by-november-30-2026"
     },
     {
-     "publisher": "Reuters",
-     "date": "Nov 5 2026",
-     "note": "Exclusive: investors doubt the roadshow can start next week in time for a November listing; pushing for a lower valuation; a delay is possible if AI assets stay under pressure",
-     "url": "https://www.streetinsider.com/Reuters/Exclusive-AI+backlash+could+threaten+Anthropic+IPO+timing%2C+potential+investors+say/27302044.html"
+     "publisher": "Dealroom News summarising the FT",
+     "date": "Nov 6 2026",
+     "note": "Anthropic presses ahead with a pre-Thanksgiving IPO, $80–100B at $1.25–1.75T",
+     "url": "https://dealroom.co/news/170466-anthropic-presses-ahead-with-a-pre-thanksgiving-ipo-targeting-80b--100b-/"
     },
     {
-     "publisher": "WSJ via Investing.com",
-     "date": "Nov 5 2026",
-     "note": "investors skeptical of $1.5T; pricing may be nearer $1T; Anthropic executives and advisers to convene in coming days to review the IPO (adjust range or delay); target had been the week before Thanksgiving",
-     "url": "https://www.investing.com/news/stock-market-news/anthropic-faces-valuation-pushback-on-15t-ipo-following-market-rout-wsj-reports-5006085"
+     "publisher": "Quartz citing Bloomberg",
+     "date": "Nov 6 2026",
+     "note": "valuation talk falls to $1.2–1.3T; formal marketing due to begin next week",
+     "url": "https://qz.com/anthropic-ipo-valuation-expectations-fall-ai-selloff-110626"
     },
     {
-     "publisher": "Anthropic",
-     "date": "Oct 26 2026",
-     "note": "Form S-1 filed; Nasdaq 'ANT'",
-     "url": "https://www.anthropic.com/news/s1-sec"
+     "publisher": "CNBC",
+     "date": "Nov 6 2026",
+     "note": "investors see $1.5T as a stretch; roadshow expected to kick off next week",
+     "url": "https://www.cnbc.com/2026/11/06/investors-brace-for-anthropic-valuation-1point5-trillion-a-stretch.html"
     }
    ],
    "history": [
@@ -198,6 +198,18 @@
       67.0
      ],
      "reason": "(confidence Medium → Low). NEW INFORMATION: Reuters and WSJ (both Nov 5, after the Nasdaq's worst session in 19 months, -5.5%) report that investors doubt the roadshow can launch next week in time for a November listing, want a lower valuation (~$1T vs $1.5T), and that Anthropic and its advisers will meet in coming days to decide whether to adjust the range or delay. Anthropic has $146.6B cash so can afford to wait. Rule: market anchor. Polymarket Yes fell 0.83 (Oct 30) → 0.555 (liquid enough, ~$9.9k); shaded anchor logit(q)=0.75*logit(0.555) = 0.54; midpoint 55% is within ~1 pt of the anchor. Half-width widened to ~12 pts (month-ish horizon, gradual widening toward 15) because the decision is binary and imminent. Stale After stays 2026-11-10; key tell is whether the roadshow launches the week of Nov 9 (no launch by Nov 16 makes a Nov 30 listing very unlikely)."
+    },
+    {
+     "date": "2026-11-08",
+     "from": [
+      43.0,
+      67.0
+     ],
+     "to": [
+      60.0,
+      84.0
+     ],
+     "reason": "(confidence stays Low until the roadshow actually launches). NEW INFORMATION: the FT (Nov 6, via Dealroom) reports Anthropic still plans to list before Thanksgiving, raising $80–100B at $1.25–1.75T, choosing a lower price over waiting; Bloomberg (via Quartz, Nov 6) and CNBC (Nov 6) say formal marketing/roadshow is expected to start the week of Nov 9; The Information headline (Nov 6–7) says Anthropic will proceed with the roadshow next week. This reverses the Nov 5 delay risk. Rule: market anchor. Polymarket Yes 0.775 (bid 0.77 / ask 0.78, liquidity ~$21k); shaded anchor logit(q)=0.75·logit(0.775) gives 0.72, midpoint 72%. Half-width 12 (horizon ~3 weeks). Stale After moved to."
     }
    ],
    "outcome": null,
@@ -382,12 +394,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 17.0,
-   "probHigh": 45.0,
-   "midpoint": 31.0,
+   "probLow": 8.0,
+   "probHigh": 32.0,
+   "midpoint": 20.0,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-10",
-   "lastReviewed": "2026-11-03",
+   "staleAfter": "2026-11-13",
+   "lastReviewed": "2026-11-08",
    "created": "2026-11-03",
    "summary": "Tracks whether Washington and Tehran both formally accept a deal that reopens or eases shipping through the Strait of Hormuz before the end of November. Diplomacy picked up on Nov 2–3 even as limited US strikes continued, so the forecast sits near 30%.",
    "triggers": [
@@ -404,36 +416,36 @@
    "market": {
     "venue": "Polymarket",
     "name": "US-Iran Hormuz Agreement by November 30?",
-    "url": "https://polymarket.com/event/us-iran-hormuz-agreement-byptptpt-20260803235957575/us-iran-hormuz-agreement-by-november-30",
-    "yesPrice": 25.5,
-    "asOf": "2026-11-03T09:10:00+01:00",
-    "gapPts": 5.5,
+    "url": "https://polymarket.com/event/us-iran-hormuz-agreement-by-november-30",
+    "yesPrice": 16.5,
+    "asOf": "2026-11-08T09:00:00+01:00",
+    "gapPts": 3.5,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 3 2026",
-     "note": "rules; Yes 0.255 (bid 0.25 / ask 0.26, liquidity ~$55k), conditionId 0x2b9931e1…a6aa9 (read Nov 3 2026 ~09:10 Rome)",
-     "url": "https://polymarket.com/event/us-iran-hormuz-agreement-byptptpt-20260803235957575/us-iran-hormuz-agreement-by-november-30"
-    },
-    {
-     "publisher": "Al Jazeera",
-     "date": "Nov 3 2026",
-     "note": "explosions on Qeshm as US carries out 'defensive' strikes; Baghaei: condensed Hormuz plan could be implemented within two days if the US lifts the blockade; Trump: 'Iran wants a settlement'; AP: Netanyahu pressing for a new wave of strikes after the midterms",
-     "url": "https://www.aljazeera.com/news/2026/11/3/explosions-hit-irans-qeshm-island-as-us-media-report-us-strikes-in-hormuz"
-    },
-    {
-     "publisher": "BBC",
-     "date": "Nov 3 2026",
-     "note": "US officials call the Qeshm strikes limited; Trump 'no rush', says 'no' to striking after the midterms; Araghchi: 'very intensive' talks via mediators",
-     "url": "https://www.bbc.com/news/articles/cx240mrm3g8vo"
+     "date": "Nov 8 2026",
+     "note": "'US-Iran Hormuz Agreement by November 30?' Yes 0.165 (bid 0.16 / ask 0.17, liquidity ~$125k), ends Dec 1 04:59 UTC",
+     "url": "https://polymarket.com/event/us-iran-hormuz-agreement-by-november-30"
     },
     {
      "publisher": "The Guardian",
-     "date": "Nov 3 2026",
-     "note": "Vance voices optimism that diplomatic efforts to end the war are moving in the right direction",
-     "url": "https://www.theguardian.com/world/2026/nov/03/us-strikes-irans-qeshm-island"
+     "date": "Nov 7 2026",
+     "note": "Qatari plan: Hormuz could reopen in exchange for IAEA inspections; US would lift blockade and release part of $8bn frozen assets",
+     "url": "https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections"
+    },
+    {
+     "publisher": "Euronews",
+     "date": "Nov 7 2026",
+     "note": "US launches new targeted strikes on Qeshm while Trump claims progress; Iran unwilling to negotiate nuclear issues until core conditions are met",
+     "url": "https://www.euronews.com/2026/11/07/us-launches-new-targeted-strikes-on-iran-as-trump-claims-progress-in-talks-with-tehran"
+    },
+    {
+     "publisher": "Al Jazeera",
+     "date": "Nov 7 2026",
+     "note": "Qeshm and Hormuz hit; 11 ships attacked in week to Nov 6; Araghchi restates seven demands to reopen Hormuz",
+     "url": "https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation"
     }
    ],
    "history": [
@@ -445,6 +457,18 @@
       45.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-08",
+     "from": [
+      17.0,
+      45.0
+     ],
+     "to": [
+      8.0,
+      32.0
+     ],
+     "reason": "NEW INFORMATION: the US carried out new 'minor' strikes on Qeshm air defences on Nov 6–7 (Euronews, Al Jazeera); a Qatari two-day draft (US lifts blockade and releases part of frozen assets, Iran invites IAEA, Hormuz reopens on day two) is on the table but neither side has accepted it (Guardian, Nov 7), and Iran's security council says the strait stays shut until its seven conditions are met; Iran is studying the nuclear proposals. Rule: market anchor. Polymarket Yes 0.165 (bid 0.16 / ask 0.17, liquidity ~$125k), just above the 0.15 edge, so the 0.75 log-odds shading (0.23) is blended halfway toward the raw market: anchor ~0.20, midpoint 20%. Half-width 12 (horizon ~3 weeks). Stale After moved to 2026-11-13."
     }
    ],
    "outcome": null,
@@ -2193,7 +2217,7 @@
    "midpoint": 70.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-11-07",
+   "lastReviewed": "2026-11-08",
    "created": "2026-10-16",
    "summary": "Schwab announced in August plans to add SOL, AVAX and LINK to Schwab Crypto, and its CEO has since promised 'three new coins by the end of the year' without naming them. This asks whether AVAX is actually live for Schwab clients by Dec 31.",
    "triggers": [
