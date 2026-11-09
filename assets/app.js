@@ -55,7 +55,7 @@
 
   function paintChrome() {
     const meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute("content", document.documentElement.dataset.theme === "dark" ? "#07090d" : "#f2f5f6");
+    if (meta) meta.setAttribute("content", document.documentElement.dataset.theme === "dark" ? "#11100e" : "#f2f3f1");
   }
 
   function domainCounts() {
@@ -137,6 +137,30 @@
     layoutChart();
   }
 
+  // Canonical tooltip.js creates an empty role=tooltip and only fades it out.
+  // Keep hidden/empty chart tooltips out of the accessibility tree, and name
+  // the populated tooltip when shown. Leave the vendored component unchanged.
+  function fixChartTooltip(tip) {
+    if (!tip) return;
+    const sync = () => {
+      const name = Array.from(tip.childNodes, node => node.textContent).join(" ").trim().replace(/\s+/g, " ");
+      if (tip.classList.contains("on") && name) {
+        tip.setAttribute("aria-label", name);
+        tip.removeAttribute("aria-hidden");
+        tip.setAttribute("role", "tooltip");
+      } else {
+        tip.setAttribute("aria-hidden", "true");
+        tip.removeAttribute("role");
+        tip.removeAttribute("aria-label");
+      }
+    };
+    new MutationObserver(sync).observe(tip, {
+      childList: true, characterData: true, subtree: true,
+      attributes: true, attributeFilter: ["class"]
+    });
+    sync();
+  }
+
   function drawDomains(box, by, w, h) {
     const NS = "http://www.w3.org/2000/svg";
     const el = (n, a) => { const e = document.createElementNS(NS, n); Object.keys(a).forEach((k) => e.setAttribute(k, a[k])); return e; };
@@ -181,6 +205,7 @@
     if (window.JaackTip && !box.dataset.scrub) {
       box.dataset.scrub = "1";
       JaackTip.scrub(box, vals.length, (i) => `<span class="d">${esc(DOMAINS[i])}</span><br><b>${vals[i]}</b> <span class="d">active</span>`);
+      fixChartTooltip(box.querySelector(".jk-tip"));
     }
   }
 
@@ -456,6 +481,16 @@
 
   paintChrome();
   addEventListener("jaacktheme", paintChrome);
+  // Chrome inserts a space before the separately clipped suffix in canonical
+  // theme.js. Preserve the visible label and its exact ", theme" / ", tema" suffix.
+  document.addEventListener("DOMContentLoaded", () => {
+    const lang = document.documentElement.lang.startsWith("it") ? "it" : "en";
+    document.querySelectorAll(".jk-thsw button").forEach(button => {
+      const label = button.querySelector(".l");
+      const suffix = button.querySelector(".lang-" + lang);
+      if (label && suffix) button.setAttribute("aria-label", label.textContent + suffix.textContent);
+    });
+  });
   initNav();
   watchChart();
 

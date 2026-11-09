@@ -1,48 +1,41 @@
 /* Predictie on Forma.
    Shared structure — token names, type scale, spacing, glass, chapters, and
    theme.js — stays in vendor/jaack/. This file is the forecasting version:
-   a cool ground, the monitor's teal signal, teal–cyan probability bands,
-   monospace readings, and the domain colours this book already used. */
+   a cool light ground and warm dark field, the monitor's teal signal,
+   flat probability bands, monospace readings, and the existing domain colours. */
 
 :root{
   --pd-mono:ui-monospace,SFMono-Regular,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
   --pd-band-0:#0f766e;
-  --pd-band-1:#0369a1;
 }
 
 /* Light paper is cool so the teal signal does not sit on warm ivory.
    Text pairs below were checked at ≥ 4.5:1. Marks are not text. */
 html[data-theme="light"]{
-  --jk-bg:#f2f5f6;--jk-surface:#ffffff;--jk-surface-2:#e6eef1;
-  --jk-ink:#101416;--jk-ink-2:#3c494d;
-  --jk-t2:rgba(16,20,22,.70);--jk-t3:rgba(16,20,22,.64);--jk-hair:rgba(16,20,22,.12);
-  --jk-accent:#0f766e;--jk-accent-text:#0c5c56;--jk-on-accent:#fff;--jk-accent-wash:rgba(15,118,110,.12);
+  --jk-bg:#f2f3f1;--jk-surface:#ffffff;--jk-surface-2:#e7eae6;
+  --jk-ink:#121413;--jk-ink-2:#3f4744;
+  --jk-t2:rgba(18,20,19,0.72);--jk-t3:rgba(18,20,19,0.64);--jk-hair:rgba(18,20,19,.12);
+  --jk-accent:#0f766e;--jk-accent-text:#0c5c56;--jk-on-accent:#ffffff;--jk-accent-wash:rgba(15,118,110,.12);
   --jk-amb:#8a5300;--jk-ok:#1b6b30;--jk-fail:#a33a22;--jk-info:#1d5c86;
-  --jk-drop:0 24px 60px -28px rgba(8,24,28,.32),0 2px 6px -2px rgba(8,24,28,.10);
+  --jk-drop:0 24px 60px -28px rgba(18,20,19,.32),0 2px 6px -2px rgba(18,20,19,.10);
   --jk-glow:rgba(15,118,110,.20);
-  --jk-bg-1:rgba(94,234,212,.16);--jk-bg-1b:rgba(94,234,212,.06);
-  --jk-bg-2:rgba(56,189,248,.16);--jk-bg-2b:rgba(56,189,248,.06);
-  --jk-bg-3:rgba(120,150,170,.12);--jk-bg-3b:rgba(120,150,170,.05);
   --jk-c-red:#dc4545;--jk-c-blue:#3b78e0;--jk-c-orange:#e07a12;--jk-c-green:#1f9d55;--jk-c-purple:#9a62e0;--jk-c-cyan:#0e8aaa;
-  --pd-band-0:#0f766e;--pd-band-1:#0369a1;
+  --pd-band-0:#0f766e;
 }
-/* Dark field is the original monitor ground, not Forma's warm charcoal. */
+/* Warm charcoal keeps the dark field quiet; domain colours remain data marks. */
 html[data-theme="dark"]{
-  --jk-bg:#07090d;--jk-surface:#0c1118;--jk-surface-2:#121926;
-  --jk-ink:#e7eef2;--jk-ink-2:#b7c3cb;
-  --jk-t2:rgba(231,238,242,.72);--jk-t3:rgba(231,238,242,.58);--jk-hair:rgba(231,238,242,.14);
-  --jk-accent:#5eead4;--jk-accent-text:#5eead4;--jk-on-accent:#06211e;--jk-accent-wash:rgba(94,234,212,.14);
+  --jk-bg:#11100e;--jk-surface:#191714;--jk-surface-2:#231f1a;
+  --jk-ink:#ece9e2;--jk-ink-2:#c4bfb5;
+  --jk-t2:rgba(236,233,226,0.72);--jk-t3:rgba(236,233,226,0.58);--jk-hair:rgba(236,233,226,.14);
+  --jk-accent:#5fd3c3;--jk-accent-text:#7fdccf;--jk-on-accent:#11100e;--jk-accent-wash:rgba(95,211,195,.14);
   --jk-amb:#e9b44c;--jk-ok:#8fbf8a;--jk-fail:#e07a5f;--jk-info:#8fb3d9;
-  --jk-glow:rgba(94,234,212,.16);
-  --jk-bg-1:rgba(94,234,212,.10);--jk-bg-1b:rgba(94,234,212,.04);
-  --jk-bg-2:rgba(56,189,248,.10);--jk-bg-2b:rgba(56,189,248,.04);
-  --jk-bg-3:rgba(120,150,170,.08);--jk-bg-3b:rgba(120,150,170,.03);
+  --jk-glow:rgba(95,211,195,.16);
   --jk-c-red:#f87171;--jk-c-blue:#60a5fa;--jk-c-orange:#fb923c;--jk-c-green:#4ade80;--jk-c-purple:#c084fc;--jk-c-cyan:#38bdf8;
-  --pd-band-0:#5eead4;--pd-band-1:#38bdf8;
+  --pd-band-0:#5fd3c3;
 }
 
 html{scroll-padding-top:calc(84px + env(safe-area-inset-top,0px));scroll-padding-bottom:calc(108px + env(safe-area-inset-bottom,0px))}
-html:not([data-theme]){background:#f2f5f6;color:#101416}
+html:not([data-theme]){background:#f2f3f1;color:#121413}
 body{-webkit-font-smoothing:antialiased}
 
 /* Readings are measurements: counts, probabilities, gaps, Brier. Prose stays sans. */
@@ -51,30 +44,9 @@ body{-webkit-font-smoothing:antialiased}
 }
 .jk-u{font-family:var(--jk-font)}
 
-/* The wordmark dot is the live signal. A soft pulse, off when motion is reduced. */
-.jk-top .jk-mark .dot{animation:pd-live 2.4s ease-out infinite}
-@keyframes pd-live{
-  0%{text-shadow:0 0 0 currentColor}
-  70%{text-shadow:0 0 10px transparent}
-  100%{text-shadow:0 0 0 transparent}
-}
-@media (prefers-reduced-motion:reduce){.jk-top .jk-mark .dot{animation:none}}
-html.jk-rm .jk-top .jk-mark .dot{animation:none}
 .vh{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .noscript{margin:24px;font:16px/1.4 var(--jk-font,system-ui,sans-serif)}
 
-/* The shared bar lets the wordmark shrink and keeps each theme button at 36px.
-   Here the full wordmark still fits on one line at 320 and 390. */
-@media (max-width:480px){
-  .jk-top{padding:6px 6px 6px 10px;gap:6px}
-  .jk-top .jk-mark{font-size:13px;letter-spacing:-.03em}
-  .jk-top a.jk-sw{display:inline-flex;align-items:center;min-height:36px;padding:0 8px}
-}
-@media (max-width:340px){
-  .jk-top{padding:6px 4px 6px 8px;gap:4px}
-  .jk-top a.jk-sw{padding:0 6px}
-  .jk-thsw{padding:0}
-}
 @media (max-width:760px){
   .jk-dock .jk-pill button{padding:12px 14px;min-height:40px}
 }
@@ -88,7 +60,6 @@ html.jk-rm .jk-top .jk-mark .dot{animation:none}
    and from each chapter, and keep the fixed bar and dock inside the rounded
    corners and the Dynamic Island. */
 body{min-height:100dvh}
-.jk-bg{bottom:-30dvh}
 .jk-page{
   padding-left:max(var(--jk-page-x),env(safe-area-inset-left,0px));
   padding-right:max(var(--jk-page-x),env(safe-area-inset-right,0px));
@@ -104,15 +75,6 @@ body{min-height:100dvh}
   max-width:calc(100% - 16px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px));
 }
 .jk-ch,.fc,.jk-fig,.jk-aside{scroll-margin-top:calc(96px + env(safe-area-inset-top,0px));scroll-margin-bottom:calc(96px + env(safe-area-inset-bottom,0px))}
-/* Inner portrait is wide enough for the words Auto / Chiaro / Scuro. Icons stay
-   on the folded display, where the wordmark, section link and switch share one row. */
-@media (min-width:620px) and (max-width:760px){
-  .jk-thsw .i{display:none}
-  .jk-thsw .l{display:inline}
-  .jk-thsw{gap:2px;padding:2px}
-  .jk-thsw button{width:auto;min-width:36px;padding:6px 9px;flex:0 1 auto}
-}
-
 /* Two lead chapters sit side by side from 1920. A third empty track at 2560
    would be a blank column, so this page stays on two. */
 @media (min-width:2560px){
@@ -150,7 +112,7 @@ body{min-height:100dvh}
 .jk-rows.rows-soon li{display:block;padding:0}
 .rowbtn{
   display:grid;grid-template-columns:var(--jk-cols);column-gap:var(--jk-s4);align-items:baseline;
-  width:100%;min-height:40px;padding:var(--jk-row-pad) 0;border:0;background:none;color:inherit;
+  width:100%;min-height:40px;padding:var(--jk-row-pad-data) 0;border:0;background:none;color:inherit;
   font:inherit;text-align:left;cursor:pointer;
 }
 .rowbtn > span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -209,7 +171,7 @@ button.chip:focus-visible{outline:2px solid var(--jk-accent);outline-offset:2px}
 .fc-list{border-bottom:1px solid var(--jk-hair)}
 .fc-line{
   display:grid;grid-template-columns:92px 118px minmax(0,1fr) 108px 68px;column-gap:var(--jk-s4);align-items:baseline;
-  width:100%;min-height:40px;padding:var(--jk-row-pad) 0;cursor:pointer;list-style:none;color:inherit;
+  width:100%;min-height:40px;padding:var(--jk-row-pad-data) 0;cursor:pointer;list-style:none;color:inherit;
 }
 .fc-line::-webkit-details-marker{display:none}
 .fc-line::marker{content:""}
@@ -265,7 +227,7 @@ details[open] > .fc-line .chev{transform:rotate(45deg) translateY(-2px)}
 .band{display:block;width:100%;max-width:100%;min-width:0}
 .band-track{position:relative;height:28px;margin:0 2px}
 .band-track::before{content:"";position:absolute;left:0;right:0;top:10px;height:8px;border-radius:999px;background:var(--jk-hair)}
-.band-range{position:absolute;top:8px;height:12px;border-radius:6px;background:linear-gradient(90deg,var(--pd-band-0),var(--pd-band-1));box-shadow:0 0 0 1px var(--jk-ink)}
+.band-range{position:absolute;top:8px;height:12px;border-radius:6px;background:var(--pd-band-0);box-shadow:0 0 0 1px var(--jk-ink)}
 .band-mid{position:absolute;top:2px;width:2px;height:24px;margin-left:-1px;border-radius:1px;background:var(--jk-ink)}
 .band-mkt{position:absolute;top:9px;width:10px;height:10px;margin-left:-5px;background:var(--jk-bg);border:1.6px solid var(--jk-ink);transform:rotate(45deg)}
 .band-scale{display:flex;justify-content:space-between;margin:0 2px;font-size:12px;line-height:1.2;color:var(--jk-t2)}
@@ -326,6 +288,9 @@ details[open] > .fc-line .chev{transform:rotate(45deg) translateY(-2px)}
     .jk-hero:has(.jk-sec) .jk-sec .jk-cmp{grid-row:4}
   }
 }
+
+/* Insight text keeps 24px of internal space on phones too. */
+.jk-aside.jk-panel{padding:24px}
 
 /* Inner landscape: the glass note sits beside the market readings once the
    chapter is wider than a folded phone, and it stays inside the visible

@@ -1,0 +1,26 @@
+{
+  "predictie": {
+    "light": {
+      "bg": "#f2f3f1",
+      "surface": "#ffffff",
+      "ink": "#121413",
+      "ink2": "#3f4744",
+      "t2": "rgba(18,20,19,0.72)",
+      "t3": "rgba(18,20,19,0.64)",
+      "accent": "#0f766e",
+      "accentText": "#0c5c56",
+      "onAccent": "#ffffff"
+    },
+    "dark": {
+      "bg": "#11100e",
+      "surface": "#191714",
+      "ink": "#ece9e2",
+      "ink2": "#c4bfb5",
+      "t2": "rgba(236,233,226,0.72)",
+      "t3": "rgba(236,233,226,0.58)",
+      "accent": "#5fd3c3",
+      "accentText": "#7fdccf",
+      "onAccent": "#11100e"
+    }
+  }
+}
