@@ -6,17 +6,26 @@ https://predictie.jaack.me. No build step: `index.html` + `assets/` + `data/pred
 ## Design
 
 Forma is vendored in `vendor/jaack/` and left unmodified (see `VENDOR.md` for the
-package date and the zip sha256). Predictie uses the shared foundations only:
+canonical commit and file hashes). Predictie uses the shared foundations only:
 the token structure, the type scale, the spacing, and `theme.js`. Light runs
 from 07:00–18:59 on the visitor's clock, otherwise dark, with an Auto / Chiaro /
 Scuro override. `?theme=light` or `?theme=dark` previews a theme when no
 override is saved.
 
 The forecasting layer is `assets/style.css`. It keeps the monitor's teal signal
-instead of Forma's gold, cools the ground, draws probability bands teal to cyan,
-sets readings in monospace, and restores the original domain colours. `assets/app.js`
-only changes how forecasts are drawn. `data/predictions.json`, `scripts/export.py`
-and `scripts/summaries.json` are the data pipeline and stay on their own schedule.
+instead of Forma's gold, uses a cool light ground and warm dark field, draws flat
+teal probability bands, sets readings in monospace, and keeps the original domain
+colours. `assets/app.js` draws forecasts and handles chart tooltip accessibility.
+`assets/jaack-local.css` holds site-specific accessibility and narrow-header rules.
+`data/predictions.json`, `scripts/export.py` and `scripts/summaries.json` are the
+data pipeline and stay on their own schedule.
+
+## Forma v2 checks
+
+Run `python3 -m unittest discover -s tests -p '*_test.py'` and
+`node --check assets/app.js`. Tests use only the Python standard library and
+check the shipped CSS, Predictie palette contrast, and reproducible vendor bundle.
+The palette fixture and contrast checker live in `tests/forma-v2/`.
 
 ## Refreshing data
 
