@@ -1,16 +1,16 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-08T08:53:01+01:00",
+ "generatedAt": "2026-11-09T08:55:19+01:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 35,
+  "active": 36,
   "resolved": 13,
   "byDomain": {
    "Geopolitics": 6,
    "AI": 3,
    "Crypto": 22,
    "Macro": 3,
-   "Enterprise": 1
+   "Enterprise": 2
   }
  },
  "predictions": [
@@ -116,7 +116,7 @@
    "midpoint": 72.0,
    "horizon": "2026-11-30",
    "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-11-08",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-27",
    "summary": "Anthropic publicly filed for its IPO on Oct 26, 2026, with a roadshow reported for around Nov 9 and a Nasdaq listing under the ticker ANT. This tracks whether its shares actually start trading before the end of November.",
    "triggers": [
@@ -394,12 +394,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 8.0,
-   "probHigh": 32.0,
-   "midpoint": 20.0,
+   "probLow": 3.0,
+   "probHigh": 27.0,
+   "midpoint": 15.0,
    "horizon": "2026-11-30",
    "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-11-08",
+   "lastReviewed": "2026-11-09",
    "created": "2026-11-03",
    "summary": "Tracks whether Washington and Tehran both formally accept a deal that reopens or eases shipping through the Strait of Hormuz before the end of November. Diplomacy picked up on Nov 2–3 even as limited US strikes continued, so the forecast sits near 30%.",
    "triggers": [
@@ -417,35 +417,35 @@
     "venue": "Polymarket",
     "name": "US-Iran Hormuz Agreement by November 30?",
     "url": "https://polymarket.com/event/us-iran-hormuz-agreement-by-november-30",
-    "yesPrice": 16.5,
-    "asOf": "2026-11-08T09:00:00+01:00",
-    "gapPts": 3.5,
+    "yesPrice": 13.5,
+    "asOf": "2026-11-09T08:50:00+01:00",
+    "gapPts": 1.5,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 8 2026",
-     "note": "'US-Iran Hormuz Agreement by November 30?' Yes 0.165 (bid 0.16 / ask 0.17, liquidity ~$125k), ends Dec 1 04:59 UTC",
+     "date": "Nov 9 2026",
+     "note": "'US-Iran Hormuz Agreement by November 30?' Yes 0.135 (bid 0.13 / ask 0.14, liquidity ~$100k)",
      "url": "https://polymarket.com/event/us-iran-hormuz-agreement-by-november-30"
+    },
+    {
+     "publisher": "Iran International",
+     "date": "Nov 8 2026",
+     "note": "Rubio: Iran's demands 'outrageous and ridiculous', talks unproductive; Araghchi says mediators inactive since midterms; Trump gave Vance 'a few days' (JPost)",
+     "url": "https://www.iranintl.com/en/202611084536"
+    },
+    {
+     "publisher": "Reuters",
+     "date": "Nov 8 2026",
+     "note": "Trump says new strikes 'highly unlikely' if talks progress; ships hit in/near Hormuz; Rubio sees no imminent breakthrough",
+     "url": "https://www.reuters.com/3fec1b0a85a0/world/middle-east/iran-suggests-blasts-are-not-us-attacks-both-sides-report-ships-hit-2026-11-08/"
     },
     {
      "publisher": "The Guardian",
      "date": "Nov 7 2026",
-     "note": "Qatari plan: Hormuz could reopen in exchange for IAEA inspections; US would lift blockade and release part of $8bn frozen assets",
+     "note": "Qatari plan: Hormuz could reopen in exchange for IAEA inspections; US would lift blockade and release part of frozen assets",
      "url": "https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections"
-    },
-    {
-     "publisher": "Euronews",
-     "date": "Nov 7 2026",
-     "note": "US launches new targeted strikes on Qeshm while Trump claims progress; Iran unwilling to negotiate nuclear issues until core conditions are met",
-     "url": "https://www.euronews.com/2026/11/07/us-launches-new-targeted-strikes-on-iran-as-trump-claims-progress-in-talks-with-tehran"
-    },
-    {
-     "publisher": "Al Jazeera",
-     "date": "Nov 7 2026",
-     "note": "Qeshm and Hormuz hit; 11 ships attacked in week to Nov 6; Araghchi restates seven demands to reopen Hormuz",
-     "url": "https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation"
     }
    ],
    "history": [
@@ -469,6 +469,18 @@
       32.0
      ],
      "reason": "NEW INFORMATION: the US carried out new 'minor' strikes on Qeshm air defences on Nov 6–7 (Euronews, Al Jazeera); a Qatari two-day draft (US lifts blockade and releases part of frozen assets, Iran invites IAEA, Hormuz reopens on day two) is on the table but neither side has accepted it (Guardian, Nov 7), and Iran's security council says the strait stays shut until its seven conditions are met; Iran is studying the nuclear proposals. Rule: market anchor. Polymarket Yes 0.165 (bid 0.16 / ask 0.17, liquidity ~$125k), just above the 0.15 edge, so the 0.75 log-odds shading (0.23) is blended halfway toward the raw market: anchor ~0.20, midpoint 20%. Half-width 12 (horizon ~3 weeks). Stale After moved to 2026-11-13."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      8.0,
+      32.0
+     ],
+     "to": [
+      3.0,
+      27.0
+     ],
+     "reason": "NEW INFORMATION: on Nov 8 Rubio said talks 'haven't been very productive' because Iran's demands are 'outrageous and ridiculous' and he sees no breakthrough; Araghchi says mediators have been inactive since the midterms and need more time; Iran links further talks to sanctions relief, frozen assets and reparations while the US wants nuclear terms first (Iran International, Nov 8). Trump told CNN new strikes are 'highly unlikely' only if Iran signs a strong deal, and reportedly gave Vance 'a few days' to reach one; more tanker incidents in/near Hormuz (Reuters, Nov 8). Rule: market anchor. Polymarket Gamma Yes 0.135 (bid 0.13 / ask 0.14, liquidity ~$100k), below the 0.15 edge so used near as-is (~0.14); midpoint 15%. Half-width 12, capped near 0. Stale After stays 2026-11-13."
     }
    ],
    "outcome": null,
@@ -789,12 +801,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 10.0,
-   "probHigh": 18.0,
-   "midpoint": 14.0,
+   "probLow": 1.0,
+   "probHigh": 19.0,
+   "midpoint": 10.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-11-05",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-18",
    "summary": "AVAX has slipped to around $8.40. This asks whether it rallies to at least $13 at any point before year end, which would take a gain of more than 50%.",
    "triggers": [
@@ -814,8 +826,8 @@
     "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-reach-13-by-december-31-2026",
     "yesPrice": 6.0,
     "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": 8.0,
-    "insideBand": false
+    "gapPts": 4.0,
+    "insideBand": true
    },
    "sources": [
     {
@@ -864,6 +876,18 @@
       18.0
      ],
      "reason": "Rule: touch model (90d vol). AVAX/USDT ~$8.74, σ90≈4.18%/day, days≈56 → P(touch $13)≈20.8%; gap vs prior mid held overnight past the ~6-pt limit, so apply the Nov 4 pre-committed move to ~10–18. Polymarket Yes ~0.075 still too thin to anchor. Schwab AVAX still not confirmed. Stale After stays 2026-11-11. Source: Binance AVAXUSDT ticker + 91×1d klines read Nov 5."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      10.0,
+      18.0
+     ],
+     "to": [
+      1.0,
+      19.0
+     ],
+     "reason": "(Low). Rule: touch model. AVAX/USDT ~$7.86 needs +65.4% to touch $13; σ90 = 4.27%/day → P(touch) 10.5%. Polymarket Yes 0.11 thin (bid 0.10 / ask 0.12, liquidity ~$735). Midpoint 10%. Schwab AVAX still has no go-live date (checked Nov 9). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
     }
    ],
    "outcome": null,
@@ -876,12 +900,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 42.0,
-   "probHigh": 55.0,
-   "midpoint": 48.5,
+   "probLow": 53.0,
+   "probHigh": 83.0,
+   "midpoint": 68.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-18",
    "summary": "AVAX trades near $8.40 after a weak October. This asks whether it drops to $7 or lower at any point before year end.",
    "triggers": [
@@ -901,7 +925,7 @@
     "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-dip-to-7-by-december-31-2026",
     "yesPrice": 40.0,
     "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": 8.5,
+    "gapPts": 28.0,
     "insideBand": false
    },
    "sources": [
@@ -939,6 +963,18 @@
       55.0
      ],
      "reason": "AVAX ~$8.37 (October low $8.00, 7-day −7.6%) is 16% above the $7 line with ~62 days left. The zero-drift touch model on 30d/60d realized vol (66%/90%) gives 51–63%; the band sits below that because the 60d vol includes a spike. The market is very thin (Yes 0.40, bid 0.09 / ask 0.71), so it is not informative. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      42.0,
+      55.0
+     ],
+     "to": [
+      53.0,
+      83.0
+     ],
+     "reason": "(Low). Rule: touch model. AVAX/USDT ~$7.854 is 12.2% above $7; σ90 = 4.27%/day → P(touch) 71.1%; midpoint 68% (slight discount for the 90d vol still carrying the Sept–Oct spike). Polymarket Yes 0.44 unusable (bid 0.15 / ask 0.73, liquidity ~$180). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
     }
    ],
    "outcome": null,
@@ -1038,12 +1074,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 2.0,
+   "probLow": 1.0,
    "probHigh": 5.0,
-   "midpoint": 3.5,
+   "midpoint": 3.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-18",
    "summary": "BNB trades near $700 after the Binance hack. This asks whether it can rally more than 40% to $1,000 by year end.",
    "triggers": [
@@ -1063,7 +1099,7 @@
     "url": "https://polymarket.com/event/what-price-will-bnb-hit-before-2027/will-bnb-reach-1000-by-december-31-2026",
     "yesPrice": 2.95,
     "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": 0.5,
+    "gapPts": 0.0,
     "insideBand": true
    },
    "sources": [
@@ -1107,6 +1143,18 @@
       5.0
      ],
      "reason": "BNB ~$701 (October low $680) needs +43% to touch $1,000; the zero-drift touch model on 30d/60d realized vol gives 3–4%. The Oct 29 Binance hack hits the BNB thesis directly; withdrawals are still suspended. Market Yes 0.03. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      2.0,
+      5.0
+     ],
+     "to": [
+      1.0,
+      5.0
+     ],
+     "reason": "(Medium). Rule: touch model. BNB/USDT ~$676 needs +47.9% to touch $1,000; σ90 = 2.12%/day → P(touch) 1.1%; midpoint 3% keeps a fat-tail allowance. Polymarket Yes 0.041 thin (bid 0.027 / ask 0.055). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
     }
    ],
    "outcome": null,
@@ -1119,12 +1167,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 6.0,
-   "probHigh": 12.0,
-   "midpoint": 9.0,
+   "probLow": 1.0,
+   "probHigh": 11.0,
+   "midpoint": 6.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-18",
    "summary": "Bitcoin is near $77k after a weak October and the Binance hack. This asks whether it can still reach $100k before the year ends.",
    "triggers": [
@@ -1144,7 +1192,7 @@
     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-reach-100000-by-december-31-2026-571-361-361",
     "yesPrice": 12.5,
     "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": -3.5,
+    "gapPts": -6.5,
     "insideBand": false
    },
    "sources": [
@@ -1182,6 +1230,18 @@
       12.0
      ],
      "reason": "BTC ~$77.5k needs +29% to touch $100k in ~62 days; the zero-drift touch model on 30d/60d realized vol gives 3–8%, and the band is set a little above it for fat tails. Market Yes 0.125 (bid 0.12 / ask 0.13) sits at the top of the band. Worst October since 2014, plus the Binance hack and the tech selloff. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      6.0,
+      12.0
+     ],
+     "to": [
+      1.0,
+      11.0
+     ],
+     "reason": "(Medium). Rule: market anchor + touch model. BTC/USDT ~$74,024 needs +35.1% to touch $100k; σ90 = 2.14%/day → P(touch) 5.3%. Polymarket Gamma Yes 0.065 (bid 0.06 / ask 0.07, liquidity ~$108k), below 0.15 so used as-is. Midpoint 6%. Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
     }
    ],
    "outcome": null,
@@ -1194,12 +1254,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 40.0,
-   "probHigh": 50.0,
-   "midpoint": 45.0,
+   "probLow": 52.0,
+   "probHigh": 82.0,
+   "midpoint": 67.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-18",
    "summary": "Bitcoin fell to about $77k after the Oct 29 Binance hack. This asks whether it drops to $70,000 or lower at any point before year end.",
    "triggers": [
@@ -1219,8 +1279,8 @@
     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-dip-to-70000-by-december-31-2026-from-august-24",
     "yesPrice": 47.5,
     "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": -2.5,
-    "insideBand": true
+    "gapPts": 19.5,
+    "insideBand": false
    },
    "sources": [
     {
@@ -1263,6 +1323,18 @@
       50.0
      ],
      "reason": "BTC fell to ~$77.5k after the Oct 29 Binance hack (Oct 30 low $76,500, the lowest since this row opened), 9.7% above the $70k line with ~62 days left. The zero-drift touch model on 30d/60d realized vol gives 39–49%; the attacker's 18,270 unfrozen BTC is an overhang. Market Yes 0.475 (bid 0.47 / ask 0.48), inside the band. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      40.0,
+      50.0
+     ],
+     "to": [
+      52.0,
+      82.0
+     ],
+     "reason": "(Medium). Rule: market anchor + touch model. BTC/USDT ~$74,021 is 5.7% above $70k; σ90 = 2.14%/day → P(touch) 72.0%. Polymarket Gamma Yes 0.695 (bid 0.69 / ask 0.70, liquidity ~$106k) → shaded anchor 0.65. Midpoint 67% between the two. Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
     }
    ],
    "outcome": null,
@@ -1275,12 +1347,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 17.0,
-   "probHigh": 27.0,
-   "midpoint": 22.0,
+   "probLow": 18.0,
+   "probHigh": 48.0,
+   "midpoint": 33.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-18",
    "summary": "Chainlink, the price-feed network much of DeFi relies on, trades near $12. This asks whether it drops a third to $8 before year end.",
    "triggers": [
@@ -1300,7 +1372,7 @@
     "url": "https://polymarket.com/event/what-price-will-chainlink-hit-before-2027/will-chainlink-dip-to-8-by-december-31-2026-from-august-25",
     "yesPrice": 60.5,
     "asOf": "2026-10-18T15:12:00+02:00",
-    "gapPts": -38.5,
+    "gapPts": -27.5,
     "insideBand": false
    },
    "sources": [
@@ -1332,6 +1404,18 @@
       27.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      17.0,
+      27.0
+     ],
+     "to": [
+      18.0,
+      48.0
+     ],
+     "reason": "(Low). Rule: touch model. LINK/USDT ~$10.276 is 28.5% above $8; σ90 = 3.92%/day → P(touch) 38.0%; lean low in the 30–60% zone → midpoint 33%. Polymarket Yes 0.255 thin (bid 0.11 / ask 0.40). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
     }
    ],
    "outcome": null,
@@ -1344,12 +1428,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 30.0,
-   "probHigh": 40.0,
-   "midpoint": 35.0,
+   "probLow": 43.0,
+   "probHigh": 73.0,
+   "midpoint": 58.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-18",
    "summary": "Dogecoin is at a one-month low near $0.079. This asks whether it breaks its cycle low and touches $0.06 before year end.",
    "triggers": [
@@ -1369,8 +1453,8 @@
     "url": "https://polymarket.com/event/what-price-will-dogecoin-hit-before-2027/will-dogecoin-dip-to-0pt06-by-december-31-2026",
     "yesPrice": 37.0,
     "asOf": "2026-10-18T15:12:00+02:00",
-    "gapPts": -2.0,
-    "insideBand": true
+    "gapPts": 21.0,
+    "insideBand": false
    },
    "sources": [
     {
@@ -1401,6 +1485,18 @@
       40.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      30.0,
+      40.0
+     ],
+     "to": [
+      43.0,
+      73.0
+     ],
+     "reason": "(Low). Rule: touch model. DOGE/USDT ~$0.06831 is 13.9% above $0.06; σ90 = 3.58%/day → P(touch) 61.8%; leaning low toward the 30–60% zone, midpoint 58%. Polymarket Yes 0.50 too thin to anchor (bid 0.37 / ask 0.63, liquidity ~$180). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
     }
    ],
    "outcome": null,
@@ -1482,12 +1578,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 12.0,
-   "probHigh": 22.0,
-   "midpoint": 17.0,
+   "probLow": 1.0,
+   "probHigh": 21.0,
+   "midpoint": 11.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-18",
    "summary": "Ether trades near $2,230 after the Binance hack, well below its October levels. This asks whether a December network upgrade or a turn in ETF flows lifts it to $3,000 before year end.",
    "triggers": [
@@ -1507,7 +1603,7 @@
     "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-reach-3000-by-december-31-2026-from-june-8",
     "yesPrice": 15.5,
     "asOf": "2026-11-03T09:10:00+01:00",
-    "gapPts": 1.5,
+    "gapPts": -4.5,
     "insideBand": true
    },
    "sources": [
@@ -1563,6 +1659,18 @@
       22.0
      ],
      "reason": "Rule: touch model (approved 31 Oct rules), cross-checked with the liquid market. ETH/USDT ~$2,259 on Binance (Nov 3 ~09:15 Rome) needs +32.8% to touch $3,000 in ~59 days; σ90 = 2.72%/day gives P(touch) 17.4%. Polymarket Yes 0.155 (bid 0.15 / ask 0.16, liquidity ~$76k). Midpoint 17%, half-width 5. The old band (midpoint 11%) was set on 30d/60d vol and sat below both the model and the market."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      12.0,
+      22.0
+     ],
+     "to": [
+      1.0,
+      21.0
+     ],
+     "reason": "(Low). Rule: market anchor + touch model. ETH/USDT ~$2,095 needs +43.2% to touch $3,000; σ90 = 2.96%/day → P(touch) 9.6%. Polymarket Gamma Yes 0.125 (bid 0.12 / ask 0.13, liquidity ~$80k), below 0.15 so used as-is. Midpoint 11%. ETH took the larger share of the Nov 8–9 liquidations (CoinDesk). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
     }
    ],
    "outcome": null,
@@ -1666,12 +1774,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 42.0,
-   "probHigh": 52.0,
-   "midpoint": 47.0,
+   "probLow": 5.0,
+   "probHigh": 35.0,
+   "midpoint": 20.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-18",
    "summary": "Hyperliquid's token trades around $84 after topping out near $98 in late October. This asks whether it reaches $100 before year end.",
    "triggers": [
@@ -1691,8 +1799,8 @@
     "url": "https://polymarket.com/event/what-price-will-hyperliquid-hit-before-2027/will-hyperliquid-reach-100-by-december-31-2026",
     "yesPrice": 51.0,
     "asOf": "2026-11-04T08:50:00+01:00",
-    "gapPts": -4.0,
-    "insideBand": true
+    "gapPts": -31.0,
+    "insideBand": false
    },
    "sources": [
     {
@@ -1753,6 +1861,18 @@
       52.0
      ],
      "reason": "Rule: market anchor cross-checked with touch model. Polymarket Gamma Yes 0.51 (bid 0.50 / ask 0.52, liquidity ~$28k) read Nov 4 ~08:50 Rome; shaded anchor logit(q)=0.75·logit(0.51) = 0.507. Touch model: HYPE/USDT ~$85.27 on Binance needs +17.3% to touch $100 in ~57.9 days; σ90 = 3.01%/day (41 daily returns since listing, noisy) → P(touch) 48.6%; lean low in the 30–60% zone. The old midpoint 44% sat 6.7 pts under the shaded anchor, past the ~6-pt limit, so it moves to 47% (≈4 pts under the anchor, ≈1.6 under the model). This keeps a lean-low tilt and does not chase the 1-day market move. Stale After 2026-11-11."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      42.0,
+      52.0
+     ],
+     "to": [
+      5.0,
+      35.0
+     ],
+     "reason": "(Low). Rule: market anchor + touch model. HYPE/USDT ~$73.10 needs +36.8% to touch $100; σ90 = 3.21%/day (46 returns since listing, noisy) → P(touch) 17.9%. Polymarket Gamma Yes 0.185 (bid 0.18 / ask 0.19, liquidity ~$20k), just above the 0.15 edge, so the 0.75 log-odds shading (0.247) is blended halfway toward raw: anchor ~0.215. Midpoint 20%. HYPE fell >12% last week (Bitcoin.com weekly, Nov 8). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
     }
    ],
    "outcome": null,
@@ -1841,11 +1961,11 @@
    "status": "Active",
    "confidence": "Low",
    "probLow": 35.0,
-   "probHigh": 47.0,
-   "midpoint": 41.0,
+   "probHigh": 65.0,
+   "midpoint": 50.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-11-05",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-18",
    "summary": "Israel and Iran are in an uneasy ceasefire. This asks whether neither side strikes the other's territory through year end.",
    "triggers": [
@@ -1862,36 +1982,36 @@
    "market": {
     "venue": "Polymarket",
     "name": "Israel x Iran ceasefire continues through December 31?",
-    "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963/israel-x-iran-ceasefire-continues-through-december-31-415",
-    "yesPrice": 37.0,
-    "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": 4.0,
+    "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-through-december-31-415",
+    "yesPrice": 57.5,
+    "asOf": "2026-11-09T08:50:00+01:00",
+    "gapPts": -7.5,
     "insideBand": true
    },
    "sources": [
     {
-     "publisher": "Polymarket",
-     "date": "Oct 30 2026",
-     "note": "rules; Yes 0.37 (bid 0.36 / ask 0.38, liquidity ~$59k) read Oct 30 2026 ~17:45 Rome",
-     "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963/israel-x-iran-ceasefire-continues-through-december-31-415"
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 9 2026",
+     "note": "'Israel x Iran ceasefire continues through December 31?' Yes 0.575 (bid 0.57 / ask 0.58, liquidity ~$138k)",
+     "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-through-december-31-415"
     },
     {
-     "publisher": "CNBC",
-     "date": "Oct 30 2026",
-     "note": "renewed US military action weighed after the midterms; Cooper briefed Trump; Hormuz mines; Houthi strikes on Saudi Arabia",
-     "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html"
+     "publisher": "Iran International",
+     "date": "Nov 8 2026",
+     "note": "US and Israeli militaries prepared for renewed strikes but no order (JPost); Rubio says talks unproductive; Katz: 'mission is not yet complete'",
+     "url": "https://www.iranintl.com/en/202611084536"
     },
     {
-     "publisher": "AP",
-     "date": "Oct 30 2026",
-     "note": "allies told to prepare for potential renewed action against Iran after the midterms",
-     "url": "https://apnews.com/article/trump-iran-strikes-midterm-elections-c7df622f1e87de6035173be8fb8c4add"
+     "publisher": "Naharnet",
+     "date": "Nov 2026",
+     "note": "Israel says it was not involved in the reported US strikes on the Iranian island",
+     "url": "https://www.naharnet.com/stories/en/323505-israel-says-not-involved-in-reported-us-strikes-on-iranian-island"
     },
     {
-     "publisher": "AP",
-     "date": "Oct 30 2026",
-     "note": "Israel final results: Netanyahu bloc 53, opposition 48, Arab-led parties 19",
-     "url": "https://apnews.com/article/israel-elections-netanyahu-results-eisenkot-arabs-3a793c0d07fdfe515390524b849d8674"
+     "publisher": "Al Jazeera",
+     "date": "Nov 4 2026",
+     "note": "Iran says US reply to Hormuz plan 'unconvincing'; Trump confirms strikes",
+     "url": "https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes"
     }
    ],
    "history": [
@@ -1927,6 +2047,93 @@
       47.0
      ],
      "reason": "Rule: market shade (0.75 logit). Polymarket Gamma Yes 0.44 (liq ~$105k) → shaded anchor ≈0.455; prior mid 36% was ~9.5 pts under (past ~6-pt limit). Mid now 41%. Qeshm remains US-only (Israel denied involvement); no Israel↔Iran qualifying strike found 4–5 Nov. Full ±15 widen deferred one review. Stale After → 2026-11-13."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      35.0,
+      47.0
+     ],
+     "to": [
+      35.0,
+      65.0
+     ],
+     "reason": "Rule: market shade (0.75 logit) + judgment. Polymarket Gamma Yes 0.575 (bid 0.57 / ask 0.58, liquidity ~$138k) read Nov 9 ~08:50 Rome → shaded anchor 0.556; the old midpoint 41% sat ~15 pts under it, past the ~6-pt limit. Midpoint now 50%, kept ~5.5 pts under the anchor on question-specific risk: US and Israeli militaries prepared for renewed strikes over the weekend but Trump issued no order and gave Vance 'a few days' for a deal (Jerusalem Post via Iran International, Nov 8); Rubio calls talks unproductive; Israeli Defense Minister Katz says 'regarding Iran, the mission is not yet complete' (Nov 8). No Israel↔Iran qualifying strike found Nov 5–9 (Qeshm/Bandar Abbas blasts attributed by Tasnim to US forces, unverified). Full ±15 widening applied per the standing >1-month rule. Stale After stays 2026-11-13."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
+   "id": "ee63032d2a",
+   "question": "Will Jensen Huang's resignation or removal as NVIDIA CEO be officially announced by Dec 31, 2026?",
+   "domain": "Enterprise",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 1.0,
+   "probHigh": 27.0,
+   "midpoint": 14.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-09",
+   "created": "2026-11-09",
+   "summary": "Nvidia's board opened an independent investigation after reports that CEO Jensen Huang was targeted by a suspected Chinese intelligence asset. This tracks whether his resignation or removal as CEO is officially announced before the end of 2026.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "the board committee's findings say national security or company information was compromised, or that Huang misled the board; US officials (DOJ/FBI, House or Senate committees) publicly allege wrongdoing or open a formal probe of Huang; a major institutional holder or proxy adviser calls for him to step aside; further reporting ties Megaspeed's chip diversion to Huang personally; an interim CEO or 'transition' language appears."
+    },
+    {
+     "label": "Toward NO",
+     "text": "the board's 'confidence in Jensen' line is repeated after the review; the investigation closes or reports no compromise; House Republican briefings end without escalation; Huang keeps leading earnings (late Nov) and keynotes; a temporary leave or reduced duties (which does not count) is used instead of departure."
+    }
+   ],
+   "resolution": "Per Polymarket rules: YES if Huang, NVIDIA or their authorized representatives publicly and definitively announce by Dec 31, 2026 11:59 PM ET that Huang has resigned or been removed, or will resign or be removed, as NVIDIA CEO (effective within 18 months; includes stepping down to another NVIDIA role). Temporary leaves, suspensions, reduced duties, conditional statements, pending resignation offers and media reports of plans do not count. If he leaves the post by other means (e.g. death or incapacity) it resolves NO. Thesis invalidated if the board publishes findings clearing Huang before mid-December (move toward low single digits) or if US authorities charge anyone at NVIDIA (re-anchor).",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Jensen Huang announced resignation or removal by December 31?",
+    "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-by-december-31",
+    "yesPrice": 15.5,
+    "asOf": "2026-11-09T09:00:00+01:00",
+    "gapPts": -1.5,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 9 2026",
+     "note": "'Jensen Huang announced resignation or removal by December 31?' Yes 0.155 (bid 0.15 / ask 0.16, liquidity ~$25k, volume ~$142k), created Nov 8, ends Jan 1 04:59 UTC",
+     "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-by-december-31"
+    },
+    {
+     "publisher": "NVIDIA Newsroom",
+     "date": "Nov 8 2026",
+     "note": "Statement from NVIDIA Board: independent investigation by a committee of independent directors with outside counsel; no reason to believe national security or NVIDIA secrets were compromised; the Board 'has confidence in Jensen'",
+     "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
+    },
+    {
+     "publisher": "Reuters",
+     "date": "Nov 9 2026",
+     "note": "Explainer: what we know about Nvidia's probe into CEO Jensen Huang; Megaspeed link, House Republicans sought briefings",
+     "url": "https://www.streetinsider.com/Reuters/Explainer-What+we+know+about+Nvidias+probe+into+CEO+Jensen+Huang/27309700.html"
+    },
+    {
+     "publisher": "CoinDesk",
+     "date": "Nov 9 2026",
+     "note": "Bitcoin drops then pops on the Nvidia scandal and stalled Iran talks; >$1B liquidations; tokenized NVDA down ~3.5% before Monday's open",
+     "url": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-09",
+     "from": null,
+     "to": [
+      1.0,
+      27.0
+     ],
+     "reason": "Forecast opened."
     }
    ],
    "outcome": null,
@@ -1939,12 +2146,12 @@
    "domain": "Enterprise",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 88.0,
-   "probHigh": 95.0,
-   "midpoint": 91.5,
+   "probLow": 84.0,
+   "probHigh": 97.0,
+   "midpoint": 90.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-12",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-18",
    "summary": "MSCI finalised rules that can drop companies that are mainly bitcoin holdings from its indexes, and Strategy is on the potential-deletion list. This asks whether MSCI removes it by year end; the Nov 11 review is the key date.",
    "triggers": [
@@ -1964,7 +2171,7 @@
     "url": "https://polymarket.com/event/will-microstrategy-be-delisted-from-the-msci-index-by-march-31/microstrategy-delisted-from-msci-index-by-december-31",
     "yesPrice": 93.5,
     "asOf": "2026-10-18T14:56:00+02:00",
-    "gapPts": -2.0,
+    "gapPts": -3.0,
     "insideBand": true
    },
    "sources": [
@@ -2002,6 +2209,18 @@
       95.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      88.0,
+      95.0
+     ],
+     "to": [
+      84.0,
+      97.0
+     ],
+     "reason": "(Medium). Rule: judgment + market. Polymarket Gamma Yes 0.855 (bid 0.85 / ask 0.86, liquidity only ~$1.6k) read Nov 9 ~08:50 Rome; the edge-blended shaded anchor is ~0.82. Midpoint 90.5% stays ~8 pts above it on question-specific information: MSCI's Oct 15 final rules (core operating-asset screen + 4-of-5 ratio test, two-annual-period buffer for constituents) and its May-data simulation that flagged Strategy; no MSCI communication since. Band widened per the standing >1-month rule, capped by distance to 1. The affected-company list is due Nov 11 (CoinDesk Oct 16: https://www.coindesk.com/markets/2026/10/16/msci-approves-rules-that-could-eject-strategy-metaplanet-from-equity-indexes ; MSCI: https://app2.msci.com/webapp/index_ann/DocGet?format=html&lang=en&pub_key=aq0wbkjxPgo), effective after the Nov 30 close. Stale After → 2026-11-12."
     }
    ],
    "outcome": null,
@@ -2217,7 +2436,7 @@
    "midpoint": 70.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-11-08",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-16",
    "summary": "Schwab announced in August plans to add SOL, AVAX and LINK to Schwab Crypto, and its CEO has since promised 'three new coins by the end of the year' without naming them. This asks whether AVAX is actually live for Schwab clients by Dec 31.",
    "triggers": [
@@ -2285,12 +2504,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 47.0,
-   "probHigh": 57.0,
-   "midpoint": 52.0,
+   "probLow": 56.0,
+   "probHigh": 86.0,
+   "midpoint": 71.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-18",
    "summary": "Solana trades near $92 after a weak autumn. This asks whether a weak market drags it down to $80 before year end.",
    "triggers": [
@@ -2310,8 +2529,8 @@
     "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24",
     "yesPrice": 51.0,
     "asOf": "2026-11-03T09:10:00+01:00",
-    "gapPts": 1.0,
-    "insideBand": true
+    "gapPts": 20.0,
+    "insideBand": false
    },
    "sources": [
     {
@@ -2366,6 +2585,18 @@
       57.0
      ],
      "reason": "Rule: touch model (approved 31 Oct rules). SOL/USDT ~$92.2 on Binance (Nov 3 ~09:15 Rome) is 13.2% above $80 with ~59 days left; σ90 = 3.02%/day gives P(touch) 53.9%. Polymarket Yes 0.51 (bid 0.49 / ask 0.53, liquidity ~$16k). In the 30–60% zone the rules say lean low, so midpoint 52%, half-width 5. Change comes from switching to 90-day vol (the old band used 30d/60d vol), not from the latest price move."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      47.0,
+      57.0
+     ],
+     "to": [
+      56.0,
+      86.0
+     ],
+     "reason": "(Low). Rule: market anchor + touch model. SOL/USDT ~$85.66 is 7.1% above $80; σ90 = 3.11%/day → P(touch) 76.3%. Polymarket Gamma Yes 0.74 (bid 0.72 / ask 0.76, liquidity ~$18k) → shaded anchor 0.69. Midpoint 71%. Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
     }
    ],
    "outcome": null,
@@ -2453,12 +2684,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 24.0,
-   "probHigh": 34.0,
-   "midpoint": 29.0,
+   "probLow": 7.0,
+   "probHigh": 37.0,
+   "midpoint": 22.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-18",
    "summary": "Uniswap's token now benefits from protocol fees that fund token burns, and briefly hit $10.94 in September. This asks whether it reaches $11 this year after falling back to about $7.",
    "triggers": [
@@ -2478,7 +2709,7 @@
     "url": "https://polymarket.com/event/what-price-will-uniswap-hit-before-2027/will-uni-reach-11pt00-by-december-31-2026",
     "yesPrice": 31.5,
     "asOf": "2026-10-18T15:12:00+02:00",
-    "gapPts": -2.5,
+    "gapPts": -9.5,
     "insideBand": true
    },
    "sources": [
@@ -2516,6 +2747,18 @@
       34.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      24.0,
+      34.0
+     ],
+     "to": [
+      7.0,
+      37.0
+     ],
+     "reason": "(Low). Rule: market anchor + touch model. UNI/USDT ~$6.738 needs +63.3% to touch $11; σ90 = 5.74%/day → P(touch) 24.0%. Polymarket Gamma Yes 0.175 (bid 0.16 / ask 0.19, liquidity ~$4.1k), near the 0.15 edge → blended anchor ~0.21. Midpoint 22%. Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
     }
    ],
    "outcome": null,
@@ -2528,12 +2771,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 29.0,
-   "probHigh": 39.0,
-   "midpoint": 34.0,
+   "probLow": 53.0,
+   "probHigh": 83.0,
+   "midpoint": 68.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-18",
    "summary": "XRP trades near $1.25 after a weak October. This asks whether it falls to $1.00, a level that held as support over the summer.",
    "triggers": [
@@ -2553,7 +2796,7 @@
     "url": "https://polymarket.com/event/what-price-will-xrp-hit-before-2027/will-xrp-dip-to-1pt00-by-december-31-2026-from-august-24",
     "yesPrice": 27.0,
     "asOf": "2026-11-04T08:50:00+01:00",
-    "gapPts": 7.0,
+    "gapPts": 41.0,
     "insideBand": false
    },
    "sources": [
@@ -2621,6 +2864,18 @@
       39.0
      ],
      "reason": "Rule: market anchor cross-checked with touch model. Polymarket Gamma Yes 0.27 (bid 0.25 / ask 0.29, liquidity ~$23k, now liquid) read Nov 4 ~08:50 Rome; shaded anchor logit(q)=0.75·logit(0.27) = 0.32. Touch model: XRP/USDT ~$1.2756 on Binance, 21.6% above $1.00 with ~57.9 days left, σ90 = 3.60%/day → P(touch) 37.4%; in the 30–60% zone the rules say lean low (~34%). Midpoint 34%, half-width 5. Correction, not momentum: on Nov 3 the midpoint was set equal to the model (41%) without the lean-low adjustment and sat ~8.5 pts above the shaded market anchor, beyond the ~6-pt limit; the price itself moved only +1.7%. The Binance attacker's 233M XRP overhang still applies. Stale After 2026-11-11 (MSCI list)."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      29.0,
+      39.0
+     ],
+     "to": [
+      53.0,
+      83.0
+     ],
+     "reason": "(Low). Rule: market anchor + touch model. XRP/USDT ~$1.0871 is 8.7% above $1.00; σ90 = 3.74%/day → P(touch) 75.9%. Polymarket Gamma Yes 0.68 (bid 0.62 / ask 0.74, liquidity ~$17k) → shaded anchor 0.64. Midpoint 68%. The Binance attacker's XRP overhang still applies. Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
     }
    ],
    "outcome": null,
@@ -2633,12 +2888,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 21.0,
-   "probHigh": 31.0,
-   "midpoint": 26.0,
+   "probLow": 5.0,
+   "probHigh": 35.0,
+   "midpoint": 20.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-11",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-09",
    "created": "2026-10-18",
    "summary": "Zcash has become a top-10 coin but has fallen about 23% in a month amid ETF outflows. This asks whether its extreme swings take it down to $700 before year end.",
    "triggers": [
@@ -2658,7 +2913,7 @@
     "url": "https://polymarket.com/event/what-price-will-zcash-hit-before-2027/will-zcash-dip-to-700-by-december-31-2026",
     "yesPrice": 21.0,
     "asOf": "2026-11-03T09:10:00+01:00",
-    "gapPts": 5.0,
+    "gapPts": -1.0,
     "insideBand": true
    },
    "sources": [
@@ -2708,6 +2963,18 @@
       31.0
      ],
      "reason": "Rule: touch model (approved 31 Oct rules). ZEC/USDT ~$1,140 on Binance (Nov 3 ~09:15 Rome) is 38.6% above $700 with ~59 days left; σ90 = 6.54%/day gives P(touch) 33.0%. Polymarket Yes 0.21 (bid 0.19 / ask 0.23, thin, liquidity ~$2.7k). In the 30–60% zone the rules say lean low, and the thin market sits 12 pts under the model, so midpoint 26% (≈6 pts under the model), half-width 5. NU7 activation (~Nov 5) remains the near-term catalyst."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      21.0,
+      31.0
+     ],
+     "to": [
+      5.0,
+      35.0
+     ],
+     "reason": "(Low). Rule: market anchor + touch model. ZEC/USDT ~$1,195.65 is 70.8% above $700; σ90 = 6.58%/day → P(touch) 26.3%. Polymarket Gamma Yes 0.13 (bid 0.11 / ask 0.15, liquidity ~$2.8k), below 0.15 so used as-is; midpoint 20% sits ~6 pts above the anchor and ~6 under the model. ZEC outperformed last week (+3%, Bitcoin.com weekly, Nov 8). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
     }
    ],
    "outcome": null,
