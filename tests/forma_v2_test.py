@@ -37,16 +37,31 @@ class FormaV2Test(unittest.TestCase):
             with self.subTest(path=path.relative_to(ROOT)):
                 self.assertIsNone(forbidden.search(path.read_text()))
 
-    def test_page_reserves_fixed_dock_clearance(self):
+    def test_page_reserves_fixed_chrome_clearance(self):
         css = (ROOT / "assets/style.css").read_text()
+        # Inspect shipped site CSS; vendor padding alone does not clear the bars.
+        root = re.search(r":root\s*\{([^}]+)\}", css)
         page = re.search(r"\.jk-page\s*\{([^}]+)\}", css)
+        self.assertIsNotNone(root)
         self.assertIsNotNone(page)
-        # 72px covers the pill; also reserve its 16px offset and device safe area.
-        self.assertRegex(
-            page[1],
-            r"padding-bottom:\s*calc\(72px\s*\+\s*16px\s*\+\s*"
-            r"env\(safe-area-inset-bottom(?:,\s*0px)?\)\);",
-        )
+        for edge, token, min_height, min_offset in (
+            ("top", "--pd-top-clearance", 64, 10),
+            ("bottom", "--pd-dock-clearance", 48, 16),
+        ):
+            with self.subTest(edge=edge):
+                clearance = re.search(
+                    re.escape(token) + r":\s*calc\((\d+)px\s*\+\s*(\d+)px\s*\+\s*"
+                    r"env\(safe-area-inset-" + edge + r"(?:,\s*0px)?\)\s*\+\s*14px\);",
+                    root[1],
+                )
+                self.assertIsNotNone(clearance)
+                # Cover the bar/pill height and floating offset, then the 14px gap.
+                self.assertGreaterEqual(int(clearance[1]), min_height)
+                self.assertGreaterEqual(int(clearance[2]), min_offset)
+                self.assertRegex(
+                    page[1], r"padding-" + edge + r":\s*var\(" + re.escape(token) + r"\);",
+                )
+        self.assertRegex(css, r"\.jk-dock\s*\{[^}]*position:\s*fixed;")
 
     def test_predictie_palette(self):
         palette = json.loads((FIXTURES / "palettes.json").read_text())["predictie"]
