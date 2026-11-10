@@ -7,6 +7,9 @@
 :root{
   --pd-mono:ui-monospace,SFMono-Regular,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
   --pd-band-0:#0f766e;
+  /* Fixed chrome allowance + floating offset + device safe area + 14px breathing room. */
+  --pd-top-clearance:calc(72px + 10px + env(safe-area-inset-top,0px) + 14px);
+  --pd-dock-clearance:calc(72px + 16px + env(safe-area-inset-bottom,0px) + 14px);
 }
 
 /* Light paper is cool so the teal signal does not sit on warm ivory.
@@ -34,7 +37,7 @@ html[data-theme="dark"]{
   --pd-band-0:#5fd3c3;
 }
 
-html{scroll-padding-top:calc(84px + env(safe-area-inset-top,0px));scroll-padding-bottom:calc(108px + env(safe-area-inset-bottom,0px))}
+html{scroll-padding-top:var(--pd-top-clearance);scroll-padding-bottom:var(--pd-dock-clearance)}
 html:not([data-theme]){background:#f2f3f1;color:#121413}
 body{-webkit-font-smoothing:antialiased}
 
@@ -63,8 +66,8 @@ body{min-height:100dvh}
 .jk-page{
   padding-left:max(var(--jk-page-x),env(safe-area-inset-left,0px));
   padding-right:max(var(--jk-page-x),env(safe-area-inset-right,0px));
-  /* Reserve a 72px dock allowance plus its bottom offset so content can scroll clear. */
-  padding-bottom:calc(72px + 16px + env(safe-area-inset-bottom,0px));
+  padding-top:var(--pd-top-clearance);
+  padding-bottom:var(--pd-dock-clearance);
 }
 .jk-top{
   top:calc(10px + env(safe-area-inset-top,0px));
@@ -72,6 +75,7 @@ body{min-height:100dvh}
   width:min(1180px,calc(100% - 20px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)));
 }
 .jk-dock{
+  position:fixed;
   bottom:calc(16px + env(safe-area-inset-bottom,0px));
   left:calc(50% + (env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px))/2);
   max-width:calc(100% - 16px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px));
@@ -331,13 +335,28 @@ details[open] > .fc-line .chev{transform:rotate(45deg) translateY(-2px)}
   .jk-cell .jk-mid{font-size:clamp(26px,20cqi,36px)}
 }
 
-/* At 390px, reclaim vertical space above the domain chart so its axis labels
-   finish above the fixed dock on the first 844px screen. Keep the plot size. */
+/* Fit the lead chapter between the fixed bars at 390×844, including the
+   resolving heading and empty row. Keep the plot and reading sizes intact. */
 @media (max-width:390px){
-  /* Reduce the lead header-to-readings gap by 16px. */
-  #c-book .jk-hero{margin-top:var(--jk-s4)}
-  /* Reduce the readings-to-chart gap by 36px, preserving caption clearance. */
+  #c-book .jk-lede{font-size:var(--jk-fs-body);line-height:1.4}
+  #c-book .jk-hero{margin-top:var(--jk-s2)}
+  #c-book .jk-hero>.jk-hc{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    grid-template-areas:"active soon" "count total" "updated updated" "next next";
+    gap:var(--jk-s1) var(--jk-s4);align-items:end;
+  }
+  #c-book .jk-hm,#c-book .jk-sec{display:contents}
+  #c-book .jk-hm .jk-lab{grid-area:active}
+  #c-book .jk-big{grid-area:count;margin-top:0}
+  #c-book .jk-sec .jk-lab{grid-area:soon}
+  #c-book .jk-mid{grid-area:total;margin-top:0}
+  #c-book .jk-sec .jk-lab,#c-book .jk-mid{padding-left:var(--jk-s4);box-shadow:inset 1px 0 0 var(--jk-hair)}
+  #c-book .jk-hc .jk-lab{line-height:1.2}
+  #c-book .jk-cmp{margin-top:0;font-size:var(--jk-fs-note);line-height:1.4}
+  #c-book .jk-hm .jk-cmp{grid-area:updated}
+  #c-book .jk-sec .jk-cmp{grid-area:next;padding-left:0}
   #c-book .jk-fig{margin-top:var(--jk-s3)}
+  #c-book .jk-group{margin-top:var(--jk-s2)}
 }
 
 /* Folded portrait: the domain chart ends just above the chapter dock. */
