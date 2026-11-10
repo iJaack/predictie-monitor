@@ -37,6 +37,17 @@ class FormaV2Test(unittest.TestCase):
             with self.subTest(path=path.relative_to(ROOT)):
                 self.assertIsNone(forbidden.search(path.read_text()))
 
+    def test_page_reserves_fixed_dock_clearance(self):
+        css = (ROOT / "assets/style.css").read_text()
+        page = re.search(r"\.jk-page\s*\{([^}]+)\}", css)
+        self.assertIsNotNone(page)
+        # 72px covers the pill; also reserve its 16px offset and device safe area.
+        self.assertRegex(
+            page[1],
+            r"padding-bottom:\s*calc\(72px\s*\+\s*16px\s*\+\s*"
+            r"env\(safe-area-inset-bottom(?:,\s*0px)?\)\);",
+        )
+
     def test_predictie_palette(self):
         palette = json.loads((FIXTURES / "palettes.json").read_text())["predictie"]
         tokens = {"ink2": "ink-2", "accentText": "accent-text", "onAccent": "on-accent"}

@@ -63,6 +63,8 @@ body{min-height:100dvh}
 .jk-page{
   padding-left:max(var(--jk-page-x),env(safe-area-inset-left,0px));
   padding-right:max(var(--jk-page-x),env(safe-area-inset-right,0px));
+  /* Reserve a 72px dock allowance plus its bottom offset so content can scroll clear. */
+  padding-bottom:calc(72px + 16px + env(safe-area-inset-bottom,0px));
 }
 .jk-top{
   top:calc(10px + env(safe-area-inset-top,0px));
@@ -327,6 +329,15 @@ details[open] > .fc-line .chev{transform:rotate(45deg) translateY(-2px)}
 }
 @container (max-width:210px){
   .jk-cell .jk-mid{font-size:clamp(26px,20cqi,36px)}
+}
+
+/* At 390px, reclaim vertical space above the domain chart so its axis labels
+   finish above the fixed dock on the first 844px screen. Keep the plot size. */
+@media (max-width:390px){
+  /* Reduce the lead header-to-readings gap by 16px. */
+  #c-book .jk-hero{margin-top:var(--jk-s4)}
+  /* Reduce the readings-to-chart gap by 36px, preserving caption clearance. */
+  #c-book .jk-fig{margin-top:var(--jk-s3)}
 }
 
 /* Folded portrait: the domain chart ends just above the chapter dock. */
