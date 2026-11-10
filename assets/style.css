@@ -357,8 +357,10 @@ details[open] > .fc-line .chev{transform:rotate(45deg) translateY(-2px)}
   #c-book .jk-sec .jk-cmp{grid-area:next;padding-left:0}
   #c-book .jk-fig{margin-top:var(--jk-s3)}
   #c-book .jk-group{margin-top:var(--jk-s2)}
-  /* Keep the next chapter out of the first-screen dock zone. */
-  #c-book{padding-bottom:var(--pd-dock-clearance)}
+  /* Fill the first viewport so chapter two starts below the 390×844 fold.
+     Dock clearance alone after the lead block left the next heading in the
+     dock zone (~y=775). */
+  #c-book{min-height:calc(100svh - var(--pd-top-clearance));padding-bottom:var(--pd-dock-clearance)}
 }
 
 /* Folded portrait: the domain chart ends just above the chapter dock. */
