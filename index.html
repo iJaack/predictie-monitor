@@ -16,12 +16,14 @@
 <link rel="stylesheet" href="assets/style.css">
 <script src="vendor/jaack/jaack.js" defer></script>
 <script src="assets/app.js" defer></script>
+<script src="assets/menu.js" defer></script>
 </head>
 <body>
 <header class="jk-top jk-glass">
   <a class="jk-mark" href="#c-book">predictie<span class="dot">.</span><span class="dom">jaack.me</span></a>
   <span class="jk-tag">Intelligence monitor</span>
-  <nav class="jk-links" aria-label="Sections"><a class="jk-sw keep" href="#c-open">Open</a><a class="jk-sw" href="#c-resolved">Resolved</a></nav>
+  <button type="button" class="pd-menu-toggle" aria-expanded="false" aria-controls="pd-menu">Menu</button>
+  <nav class="jk-links" id="pd-menu" aria-label="Sections"><a class="jk-sw keep" href="#c-open">Open</a><a class="jk-sw" href="#c-resolved">Resolved</a></nav>
   <span data-jk-theme-switch></span>
 </header>
 
