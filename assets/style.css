@@ -2,14 +2,14 @@
    Shared structure — token names, type scale, spacing, glass, chapters, and
    theme.js — stays in vendor/jaack/. This file is the forecasting version:
    a cool light ground and warm dark field, the monitor's teal signal,
-   flat probability bands, monospace readings, and the existing domain colours. */
+   flat probability bands, monospace readings, and separated domain colours. */
 
 :root{
   --pd-mono:ui-monospace,SFMono-Regular,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
   --pd-band-0:#0f766e;
-  /* Fixed chrome allowance + floating offset + device safe area + 14px breathing room. */
-  --pd-top-clearance:calc(72px + 10px + env(safe-area-inset-top,0px) + 14px);
-  --pd-dock-clearance:calc(72px + 16px + env(safe-area-inset-bottom,0px) + 14px);
+  /* Measured chrome; vendor fallbacks retain offsets, safe areas and breathing room. */
+  --pd-top-clearance:var(--jk-top-clearance);
+  --pd-dock-clearance:var(--jk-dock-clearance);
 }
 
 /* Light paper is cool so the teal signal does not sit on warm ivory.
@@ -25,16 +25,18 @@ html[data-theme="light"]{
   --jk-c-red:#dc4545;--jk-c-blue:#3b78e0;--jk-c-orange:#e07a12;--jk-c-green:#1f9d55;--jk-c-purple:#9a62e0;--jk-c-cyan:#0e8aaa;
   --pd-band-0:#0f766e;
 }
-/* Warm charcoal keeps the dark field quiet; domain colours remain data marks. */
+/* Ombra: one warm dark, hue 60. Accent rule: light #0f766e, L raised
+   to 4.6:1 on surface-2. Colour-blind-separated series: min ΔE OK 0.120 deutan. */
 html[data-theme="dark"]{
-  --jk-bg:#11100e;--jk-surface:#191714;--jk-surface-2:#231f1a;
-  --jk-ink:#ece9e2;--jk-ink-2:#c4bfb5;
-  --jk-t2:rgba(236,233,226,0.72);--jk-t3:rgba(236,233,226,0.58);--jk-hair:rgba(236,233,226,.14);
-  --jk-accent:#5fd3c3;--jk-accent-text:#7fdccf;--jk-on-accent:#11100e;--jk-accent-wash:rgba(95,211,195,.14);
+  --jk-bg:#130e0b;--jk-surface:#1c1713;--jk-surface-2:#26201c;
+  --jk-ink:#e9e4da;--jk-ink-2:#b6b0a8;
+  --jk-t2:rgba(233,228,218,.72);--jk-t3:rgba(233,228,218,.58);
+  --jk-hair:rgba(233,228,218,.12);--jk-hair-2:rgba(233,228,218,.20);--jk-edge:rgba(233,228,218,.39);
+  --jk-accent:#61958e;--jk-accent-text:#61958e;--jk-on-accent:#130e0b;--jk-accent-wash:rgba(97,149,142,.12);--jk-focus:var(--jk-accent-text);
   --jk-amb:#e9b44c;--jk-ok:#8fbf8a;--jk-fail:#e07a5f;--jk-info:#8fb3d9;
-  --jk-glow:rgba(95,211,195,.16);
-  --jk-c-red:#f87171;--jk-c-blue:#60a5fa;--jk-c-orange:#fb923c;--jk-c-green:#4ade80;--jk-c-purple:#c084fc;--jk-c-cyan:#38bdf8;
-  --pd-band-0:#5fd3c3;
+  --jk-glow:rgba(97,149,142,.16);
+  --jk-c-red:#c57e5e;--jk-c-blue:#6db3e4;--jk-c-orange:#f9b64f;--jk-c-green:#81e7d3;--jk-c-purple:#857eb3;--jk-c-cyan:#38bdf8;
+  --pd-band-0:#61958e;
 }
 
 html{scroll-padding-top:var(--pd-top-clearance);scroll-padding-bottom:var(--pd-dock-clearance)}
@@ -305,15 +307,15 @@ details[open] > .fc-line .chev{transform:rotate(45deg) translateY(-2px)}
   .jk-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,34%);column-gap:var(--jk-s8);align-items:start}
   .jk-split>.jk-aside{
     position:sticky;
-    top:calc(env(safe-area-inset-top,0px) + var(--jk-topbar-h) + 12px);
-    max-height:calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px) - var(--jk-topbar-h) - 28px);
+    top:var(--pd-top-clearance);
+    max-height:calc(100dvh - var(--pd-top-clearance) - var(--pd-dock-clearance));
     overflow:auto;
     margin-top:var(--jk-hero-gap);
   }
 }
 @container (min-width:860px){
   .jk-split{grid-template-columns:minmax(0,1fr) minmax(300px,36%);column-gap:var(--jk-s12)}
-  .jk-split>.jk-aside{top:calc(env(safe-area-inset-top,0px) + var(--jk-topbar-h) + 12px)}
+  .jk-split>.jk-aside{top:var(--pd-top-clearance)}
 }
 
 /* Calibration cells: 2×2 on the folded portrait (just under the 440px stack),

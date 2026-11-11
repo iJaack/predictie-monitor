@@ -16,12 +16,14 @@
 <link rel="stylesheet" href="assets/style.css">
 <script src="vendor/jaack/jaack.js" defer></script>
 <script src="assets/app.js" defer></script>
+<script src="assets/menu.js" defer></script>
 </head>
 <body>
 <header class="jk-top jk-glass">
   <a class="jk-mark" href="#c-book">predictie<span class="dot">.</span><span class="dom">jaack.me</span></a>
   <span class="jk-tag">Intelligence monitor</span>
-  <nav class="jk-links" aria-label="Sections"><a class="jk-sw keep" href="#c-open">Open</a><a class="jk-sw" href="#c-resolved">Resolved</a></nav>
+  <button type="button" class="pd-menu-toggle" aria-expanded="false" aria-controls="pd-menu">Menu</button>
+  <nav class="jk-links" id="pd-menu" aria-label="Sections"><a class="jk-sw keep" href="#c-open">Open</a><a class="jk-sw" href="#c-resolved">Resolved</a></nav>
   <span data-jk-theme-switch></span>
 </header>
 
@@ -31,7 +33,6 @@
 
     <section class="jk-ch" id="c-book" aria-labelledby="t-book">
       <header class="jk-ct">
-        <span class="jk-deco" aria-hidden="true" data-n="01"></span>
         <div class="jk-eb"><b>01</b> Live · monitor</div>
         <h2 class="jk-q" id="t-book">What is live?</h2>
         <p class="jk-lede">Calibrated forecasts on the questions that move the world.</p>
@@ -40,12 +41,12 @@
         <div class="jk-hero jk-fx"><div class="jk-hc">
           <div class="jk-hm">
             <div class="jk-lab">Active forecasts</div>
-            <div class="jk-big" id="nActive"><span class="jk-na">nessun dato</span></div>
+            <div class="jk-big" id="nActive"><span class="jk-na">No data</span></div>
             <p class="jk-cmp" id="cmpActive"></p>
           </div>
           <div class="jk-sec">
             <div class="jk-lab">Resolving within 14 days</div>
-            <div class="jk-mid" id="nSoon"><span class="jk-na">nessun dato</span></div>
+            <div class="jk-mid" id="nSoon"><span class="jk-na">No data</span></div>
             <p class="jk-cmp" id="cmpSoon"></p>
           </div>
         </div></div>
@@ -62,7 +63,6 @@
 
     <section class="jk-ch" id="c-market" aria-labelledby="t-market">
       <header class="jk-ct">
-        <span class="jk-deco" aria-hidden="true" data-n="02"></span>
         <div class="jk-eb"><b>02</b> Markets · gap</div>
         <h2 class="jk-q" id="t-market">Where do we disagree?</h2>
         <p class="jk-lede">The gap is my midpoint minus the market's YES price.</p>
@@ -73,12 +73,12 @@
             <div class="jk-hero jk-fx"><div class="jk-hc">
               <div class="jk-hm">
                 <div class="jk-lab">Market-linked</div>
-                <div class="jk-big" id="nLinked"><span class="jk-na">nessun dato</span></div>
+                <div class="jk-big" id="nLinked"><span class="jk-na">No data</span></div>
                 <p class="jk-cmp" id="cmpLinked"></p>
               </div>
               <div class="jk-sec">
                 <div class="jk-lab">Widest gap · midpoint minus market</div>
-                <div class="jk-mid" id="nGap"><span class="jk-na">nessun dato</span></div>
+                <div class="jk-mid" id="nGap"><span class="jk-na">No data</span></div>
                 <p class="jk-cmp" id="cmpGap"></p>
               </div>
             </div></div>
@@ -97,22 +97,22 @@
           <div class="jk-stats">
             <div class="jk-cell">
               <div class="jk-lab">Due for review</div>
-              <div class="jk-mid" id="stDue"><span class="jk-na">nessun dato</span></div>
+              <div class="jk-mid" id="stDue"><span class="jk-na">No data</span></div>
               <p class="jk-cmp" id="stDueCmp"></p>
             </div>
             <div class="jk-cell">
               <div class="jk-lab">High confidence</div>
-              <div class="jk-mid" id="stHigh"><span class="jk-na">nessun dato</span></div>
+              <div class="jk-mid" id="stHigh"><span class="jk-na">No data</span></div>
               <p class="jk-cmp" id="stHighCmp"></p>
             </div>
             <div class="jk-cell">
               <div class="jk-lab">Mean midpoint</div>
-              <div class="jk-mid" id="stMean"><span class="jk-na">nessun dato</span></div>
+              <div class="jk-mid" id="stMean"><span class="jk-na">No data</span></div>
               <p class="jk-cmp" id="stMeanCmp"></p>
             </div>
             <div class="jk-cell">
               <div class="jk-lab">Resolved · Brier</div>
-              <div class="jk-mid" id="stBrier"><span class="jk-na">nessun dato</span></div>
+              <div class="jk-mid" id="stBrier"><span class="jk-na">No data</span></div>
               <p class="jk-cmp" id="stBrierCmp"></p>
             </div>
           </div>
@@ -124,7 +124,6 @@
 
   <section class="jk-ch jk-follow" id="c-open" aria-labelledby="t-open">
     <header class="jk-ct">
-      <span class="jk-deco" aria-hidden="true" data-n="03"></span>
       <div class="jk-eb"><b>03</b> Open · book</div>
       <h2 class="jk-q" id="t-open">What is still open?</h2>
       <p class="jk-lede">Every active forecast. Open a row for the band, the confidence and the sources.</p>
@@ -133,12 +132,12 @@
       <div class="jk-hero jk-fx"><div class="jk-hc">
         <div class="jk-hm">
           <div class="jk-lab" id="openLab">Showing</div>
-          <div class="jk-big" id="nOpen"><span class="jk-na">nessun dato</span></div>
+          <div class="jk-big" id="nOpen"><span class="jk-na">No data</span></div>
           <p class="jk-cmp" id="cmpOpen" aria-live="polite"></p>
         </div>
         <div class="jk-sec">
           <div class="jk-lab">Mean midpoint in view</div>
-          <div class="jk-mid" id="nOpenMean"><span class="jk-na">nessun dato</span></div>
+          <div class="jk-mid" id="nOpenMean"><span class="jk-na">No data</span></div>
           <p class="jk-cmp" id="cmpOpenMean"></p>
         </div>
       </div></div>
@@ -168,7 +167,6 @@
 
   <section class="jk-ch jk-follow" id="c-resolved" aria-labelledby="t-resolved">
     <header class="jk-ct">
-      <span class="jk-deco" aria-hidden="true" data-n="04"></span>
       <div class="jk-eb"><b>04</b> Resolved · Brier</div>
       <h2 class="jk-q" id="t-resolved">What has resolved?</h2>
       <p class="jk-lede">Scored with the Brier score on the midpoint. 0 is perfect and 0.25 is a coin flip.</p>
@@ -177,7 +175,7 @@
       <div class="jk-hero jk-fx"><div class="jk-hc">
         <div class="jk-hm">
           <div class="jk-lab" id="brierLab">Brier score</div>
-          <div class="jk-big" id="nBrier"><span class="jk-na">nessun dato</span></div>
+          <div class="jk-big" id="nBrier"><span class="jk-na">No data</span></div>
           <p class="jk-cmp" id="cmpBrier"></p>
         </div>
       </div></div>

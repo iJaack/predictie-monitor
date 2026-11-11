@@ -1,3 +1,64 @@
+// Measure immediately, independently of forecast loading and switch mount order.
+(() => {
+  "use strict";
+  const root = document.documentElement;
+  const bar = document.querySelector("header.jk-top");
+  const dock = document.querySelector(".jk-dock");
+  const measure = () => {
+    if (bar) root.style.setProperty("--jk-top-clearance", (Math.ceil(bar.getBoundingClientRect().bottom) + 14) + "px");
+    if (dock) root.style.setProperty("--jk-dock-clearance", (Math.ceil(window.innerHeight - dock.getBoundingClientRect().top) + 14) + "px");
+  };
+  measure();
+  if (typeof ResizeObserver === "function") {
+    const observer = new ResizeObserver(measure);
+    if (bar) observer.observe(bar);
+    if (dock) observer.observe(dock);
+  }
+  window.addEventListener("resize", measure);
+  window.addEventListener("orientationchange", measure);
+})();
+
+// Site-local English labels; keep the vendor's controls, icons and suffix nodes.
+(() => {
+  "use strict";
+  if (!document.documentElement.lang.startsWith("en")) return;
+  const watched = new WeakSet();
+  function localize() {
+    document.querySelectorAll("[data-jk-theme-switch]").forEach(host => {
+      if (watched.has(host)) return;
+      watched.add(host);
+      let observer;
+      function relabel() {
+        const group = host.querySelector(".jk-thsw");
+        if (!group) return false;
+        const theme = window.JaackTheme;
+        const labels = {
+          auto: ["Auto", `Automatic: light from ${theme.FROM} to ${theme.TO}`],
+          light: ["Light", "Light theme"],
+          dark: ["Dark", "Dark theme"]
+        };
+        group.setAttribute("aria-label", "Theme");
+        group.querySelectorAll("button[data-m]").forEach(button => {
+          const [label, title] = labels[button.dataset.m];
+          button.querySelector(".l").textContent = label;
+          button.title = title;
+          // Avoid Chrome inserting a space before the separately clipped comma.
+          const suffix = button.querySelector(".lang-en");
+          if (suffix) button.setAttribute("aria-label", label + suffix.textContent);
+        });
+        if (observer) observer.disconnect();
+        return true;
+      }
+      if (!relabel()) {
+        observer = new MutationObserver(relabel);
+        observer.observe(host, { childList: true, subtree: true });
+      }
+    });
+  }
+  localize();
+  document.addEventListener("DOMContentLoaded", localize, { once: true });
+})();
+
 (() => {
   "use strict";
   const DOMAINS = ["Geopolitics", "Macro", "Crypto", "Enterprise", "AI"];
@@ -24,7 +85,7 @@
   };
   const safeUrl = (u) => (/^https?:\/\//i.test(u || "") ? u : "#");
   const dot = (domain) => `<i class="dot mk-${DKEY[domain] || "geo"}" aria-hidden="true"></i>`;
-  const na = () => `<span class="jk-na">nessun dato</span>`;
+  const na = () => `<span class="jk-na">No data</span>`;
 
   // "today" as a Rome calendar date (YYYY-MM-DD)
   const romeToday = () => new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
@@ -55,7 +116,7 @@
 
   function paintChrome() {
     const meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute("content", document.documentElement.dataset.theme === "dark" ? "#11100e" : "#f2f3f1");
+    if (meta) meta.setAttribute("content", document.documentElement.dataset.theme === "dark" ? "#130e0b" : "#f2f3f1");
   }
 
   function domainCounts() {
@@ -318,7 +379,7 @@
     const hist = p.history || [];
     const marketLine = m && m.yesPrice != null
       ? `Market <b>${fmtP(m.yesPrice)}</b>${gap != null ? ` <span class="gap ${gapCls}">${esc(fmtPts(gap))} pts</span>` : ""} · ${m.insideBand ? "inside the band" : "outside the band"}`
-      : `<span class="jk-na">nessun dato</span> · no liquid market`;
+      : `<span class="jk-na">No data</span> · no liquid market`;
     return `<details class="fc" id="f-${esc(p.id)}">
       <summary class="fc-line">
         <span class="t"><i class="chev" aria-hidden="true"></i>${esc(fmtShort(p.horizon))}</span>
@@ -481,16 +542,6 @@
 
   paintChrome();
   addEventListener("jaacktheme", paintChrome);
-  // Chrome inserts a space before the separately clipped suffix in canonical
-  // theme.js. Preserve the visible label and its exact ", theme" / ", tema" suffix.
-  document.addEventListener("DOMContentLoaded", () => {
-    const lang = document.documentElement.lang.startsWith("it") ? "it" : "en";
-    document.querySelectorAll(".jk-thsw button").forEach(button => {
-      const label = button.querySelector(".l");
-      const suffix = button.querySelector(".lang-" + lang);
-      if (label && suffix) button.setAttribute("aria-label", label.textContent + suffix.textContent);
-    });
-  });
   initNav();
   watchChart();
 

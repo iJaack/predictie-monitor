@@ -3,15 +3,63 @@
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 html[lang|="en"] .lang-it,html[lang|="it"] .lang-en{display:none}
 
-/* These low-opacity numerals are decoration. Generated content preserves their
-   appearance without leaving text nodes for contrast checks to classify. */
-.jk-ct > .jk-deco[aria-hidden="true"]::before{content:attr(data-n)}
+/* Review measurement over the busiest content (Playwright, labels hidden,
+   every scroll step): worst-case dark label contrast 3.95 -> ~6.8 with blur.
+   Final numbers will be in the PR. */
+.jk-dock .jk-pill.flat{
+  background:var(--jk-tint-hi);
+  -webkit-backdrop-filter:blur(18px) saturate(1.8);backdrop-filter:blur(18px) saturate(1.8);
+}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .jk-dock .jk-pill.flat{background:var(--jk-surface)}
+}
 
-/* At 320/360px the full Predictie wordmark overlaps Open and compresses the
-   switch host. Keep this site's compact wordmark/link sizing; canonical
-   topbar/themeswitch sources and their button sizing remain unchanged. */
+.pd-menu-toggle{display:none}
+/* Measured link-fit width with the menu script blocked: both links fit at 505px. */
+@media (min-width:505px){
+  .jk-top .jk-links .jk-sw:not(.keep){display:inline-flex}
+}
+/* The tag reappearing at 641px clipped the mark at 641–644px. Extend its hide
+   through 644px. Measured smallest cutoff: 644.98px (645px fits). */
+@media (max-width:644.98px){.jk-top .jk-tag{display:none}}
+
+/* Keep the compact mark for the narrow bar, including the no-JS fallback. */
 @media (max-width:480px){
-  .jk-top{padding:6px 6px 6px 10px;gap:6px}
+  .jk-top{padding:6px 6px 6px 16px;gap:6px}
   .jk-top .jk-mark{font-size:13px;letter-spacing:-.03em}
   .jk-top a.jk-sw{display:inline-flex;align-items:center;min-height:36px;padding:0 8px}
+}
+
+/* Measured link-fit breakpoint with the menu script blocked. Enhancement only:
+   without .has-menu the section links retain their existing bar layout. */
+@media (max-width:504.98px){
+  .jk-top.has-menu{gap:4px}
+  .jk-top.has-menu .jk-mark,.jk-top.has-menu [data-jk-theme-switch]{flex:none}
+  .jk-top.has-menu .pd-menu-toggle{
+    display:inline-flex;align-items:center;justify-content:center;flex:none;
+    min-width:44px;min-height:44px;padding:6px;
+    border:0;border-radius:var(--jk-r-pill);background:transparent;
+    color:var(--jk-ink-2);font:600 13px/1 var(--jk-font);cursor:pointer;
+  }
+  .jk-top.has-menu .pd-menu-toggle:focus-visible{outline:2px solid var(--jk-focus);outline-offset:2px}
+  .jk-top.has-menu .jk-links{
+    position:absolute;top:calc(100% + 8px);left:0;right:0;
+    display:flex;flex-direction:column;gap:0;
+    max-width:100%;max-height:calc(100dvh - var(--pd-top-clearance) - var(--pd-dock-clearance));overflow-y:auto;
+    padding:6px;background:var(--jk-surface-2);border:1px solid var(--jk-hair-2);border-radius:14px;
+    opacity:0;visibility:hidden;pointer-events:none;transition:opacity 160ms;
+  }
+  .jk-top.has-menu.is-menu-open .jk-links,.jk-top.has-menu.is-menu-closing .jk-links{visibility:visible}
+  .jk-top.has-menu.is-menu-open .jk-links{opacity:1;pointer-events:auto}
+  .jk-top.has-menu .jk-links a.jk-sw{
+    display:inline-flex;align-items:center;width:100%;min-height:44px;padding:0 14px;
+  }
+}
+/* Leave the vendor switch targets intact; recover space from the mark at 320px. */
+@media (max-width:340px){
+  .jk-top{padding-left:16px;gap:2px}
+  .jk-top .jk-mark{font-size:11.5px}
+}
+@media (max-width:504.98px) and (prefers-reduced-motion:reduce){
+  .jk-top.has-menu .jk-links{transition:none}
 }

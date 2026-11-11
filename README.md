@@ -5,26 +5,53 @@ https://predictie.jaack.me. No build step: `index.html` + `assets/` + `data/pred
 
 ## Design
 
-Forma is vendored in `vendor/jaack/` and left unmodified (see `VENDOR.md` for the
-canonical commit and file hashes). Predictie uses the shared foundations only:
-the token structure, the type scale, the spacing, and `theme.js`. Light runs
-from 07:00–18:59 on the visitor's clock, otherwise dark, with an Auto / Chiaro /
-Scuro override. `?theme=light` or `?theme=dark` previews a theme when no
-override is saved.
+The canonical source is **iJaack/jaack-design v2.0.0**, commit
+`008ab6f2f0a30091543db16ac70f02cab041338e`, vendored unchanged in `vendor/jaack/`.
+`SOURCE` records the release; `MANIFEST.txt` covers every distributed file,
+including the unused fonts. Verify with
+`(cd vendor/jaack && shasum -a 256 -c MANIFEST.txt)`; there is no local build step.
 
-The forecasting layer is `assets/style.css`. It keeps the monitor's teal signal
-instead of Forma's gold, uses a cool light ground and warm dark field, draws flat
-teal probability bands, sets readings in monospace, and keeps the original domain
-colours. `assets/app.js` draws forecasts and handles chart tooltip accessibility.
-`assets/jaack-local.css` holds site-specific accessibility and narrow-header rules.
+Predictie uses the shared tokens, type scale, spacing, components, and `theme.js`.
+Light runs from 07:00–18:59 on the visitor's clock, otherwise dark, with an
+Auto / Light / Dark override. `?theme=light` or `?theme=dark` previews a theme
+when no override is saved. `assets/app.js` relabels the English switch after mount
+and joins each visible label with its localized theme-name suffix for exact
+accessible names such as "Light, theme". Italian labels remain untouched.
+
+The forecasting layer is `assets/style.css`: cool light paper, the warm Ombra
+dark palette, teal probability bands, monospace readings, and separated domain
+colours. `assets/jaack-local.css` holds local accessibility and header overrides;
+vendored files remain unchanged. It retains the compact wordmark below 481px
+and reduces it further at 340px to preserve the vendor switch targets.
+`assets/menu.js` moves both section links into a keyboard-accessible Menu sheet
+below 505px. That breakpoint is the measured link-fit width with the menu script
+blocked; from 505px both links remain in the bar. The tag stays hidden through
+644px to address the reported 641–644px mark clipping. Chromium checks (320–900px, light/dark, with/without
+`menu.js`) confirm the 504.98px breakpoint (both forced-visible links fit at
+505px, fail at 504px) and smallest tag cutoff of 644.98px (645px fits): no clipping
+or overlap, including the 320–504px Menu and no-JS fallback, with wordmark glyphs
+≥14.8px from the rounded end. At 390×844, the top gap is 14px and chapter two
+starts below the fold at y=1438.
+
+`assets/app.js` measures topbar and dock clearance immediately and on size changes;
+the vendor CSS fallbacks retain safe-area math. The 390×844 lead chapter minimum
+height uses this clearance to keep chapter two below the first viewport.
+The chart tooltip override also lives in `assets/app.js`: the canonical component
+creates an empty `role="tooltip"` and retains it while hidden. Predictie removes
+the role while hidden/empty and supplies a name when shown.
+
 `data/predictions.json`, `scripts/export.py` and `scripts/summaries.json` are the
 data pipeline and stay on their own schedule.
 
 ## Forma v2 checks
 
-Run `python3 -m unittest discover -s tests -p '*_test.py'` and
-`node --check assets/app.js`. Tests use only the Python standard library and
-check the shipped CSS, Predictie palette contrast, and reproducible vendor bundle.
+```sh
+python3 -m unittest discover -s tests -p '*_test.py' && node --check assets/app.js && node --check assets/menu.js && node --test tests/*.test.cjs && (cd vendor/jaack && shasum -a 256 -c MANIFEST.txt)
+```
+
+Python tests use only the standard library; JavaScript tests use Node built-ins.
+They check the site palette, contrast, clearance wiring, vendor file set and
+hashes, menu interactions, and English theme labels including late mounts.
 The palette fixture and contrast checker live in `tests/forma-v2/`.
 
 ## Refreshing data
