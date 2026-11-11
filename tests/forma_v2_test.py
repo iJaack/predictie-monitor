@@ -156,13 +156,36 @@ class FormaV2Test(unittest.TestCase):
         self.assertIn('dataset.theme === "dark" ? "#130e0b" : "#f2f3f1"',
                       (ROOT / "assets/app.js").read_text())
 
-    def test_decorative_numerals_have_no_text_nodes(self):
+    def test_chapter_eyebrows_remain_without_decorative_numerals(self):
         html = (ROOT / "index.html").read_text()
-        numerals = re.findall(
-            r'<span class="jk-deco" aria-hidden="true" data-n="(\d+)"></span>', html,
+        css = (ROOT / "assets/jaack-local.css").read_text()
+        self.assertNotIn("jk-deco", html)
+        self.assertNotIn(".jk-deco", css)
+        eyebrows = re.findall(r'<div class="jk-eb"><b>(0[1-4])</b>', html)
+        self.assertEqual(eyebrows, ["01", "02", "03", "04"])
+
+    def test_chapter_dock_blur_and_opaque_fallback(self):
+        css = (ROOT / "assets/jaack-local.css").read_text()
+        dock = re.search(r"\.jk-dock\s+\.jk-pill\.flat\s*\{([^}]+)\}", css)
+        self.assertIsNotNone(dock)
+        for declaration in (
+            "background:var(--jk-tint-hi)",
+            "-webkit-backdrop-filter:blur(18px) saturate(1.8)",
+            "backdrop-filter:blur(18px) saturate(1.8)",
+        ):
+            with self.subTest(declaration=declaration):
+                self.assertIn(declaration + ";", dock[1])
+        fallback = re.search(
+            re.escape("@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px)))")
+            + r"\s*\{\s*\.jk-dock\s+\.jk-pill\.flat\s*\{([^}]+)\}", css,
         )
-        self.assertEqual(numerals, ["01", "02", "03", "04"])
-        self.assertNotRegex(html, r'class="jk-deco"[^>]*>\s*\d')
+        self.assertIsNotNone(fallback)
+        self.assertIn("background:var(--jk-surface)", fallback[1])
+
+    def test_loading_placeholders_use_english(self):
+        for name in ("index.html", "assets/app.js"):
+            with self.subTest(file=name):
+                self.assertNotIn("nessun dato", (ROOT / name).read_text().lower())
 
 
 if __name__ == "__main__":

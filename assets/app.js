@@ -85,7 +85,7 @@
   };
   const safeUrl = (u) => (/^https?:\/\//i.test(u || "") ? u : "#");
   const dot = (domain) => `<i class="dot mk-${DKEY[domain] || "geo"}" aria-hidden="true"></i>`;
-  const na = () => `<span class="jk-na">nessun dato</span>`;
+  const na = () => `<span class="jk-na">No data</span>`;
 
   // "today" as a Rome calendar date (YYYY-MM-DD)
   const romeToday = () => new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
@@ -379,7 +379,7 @@
     const hist = p.history || [];
     const marketLine = m && m.yesPrice != null
       ? `Market <b>${fmtP(m.yesPrice)}</b>${gap != null ? ` <span class="gap ${gapCls}">${esc(fmtPts(gap))} pts</span>` : ""} · ${m.insideBand ? "inside the band" : "outside the band"}`
-      : `<span class="jk-na">nessun dato</span> · no liquid market`;
+      : `<span class="jk-na">No data</span> · no liquid market`;
     return `<details class="fc" id="f-${esc(p.id)}">
       <summary class="fc-line">
         <span class="t"><i class="chev" aria-hidden="true"></i>${esc(fmtShort(p.horizon))}</span>
