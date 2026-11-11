@@ -1,15 +1,15 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-10T08:49:15+01:00",
+ "generatedAt": "2026-11-11T08:51:54+01:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 35,
+  "active": 36,
   "resolved": 14,
   "byDomain": {
    "Geopolitics": 6,
    "AI": 3,
    "Crypto": 21,
-   "Macro": 3,
+   "Macro": 4,
    "Enterprise": 2
   }
  },
@@ -24,8 +24,8 @@
    "probHigh": 20.0,
    "midpoint": 15.0,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-18",
+   "lastReviewed": "2026-11-11",
    "created": "2026-10-16",
    "summary": "Washington has threatened to cut intelligence sharing and PURL weapons purchases if Kyiv keeps striking Russian energy. This asks whether the US officially confirms such a cut, not just anonymous reports, by end of November.",
    "triggers": [
@@ -110,13 +110,13 @@
    "question": "Will Anthropic's shares be listed and open for trading on a public exchange by Nov 30, 2026?",
    "domain": "AI",
    "status": "Active",
-   "confidence": "Medium",
-   "probLow": 86.0,
+   "confidence": "High",
+   "probLow": 93.0,
    "probHigh": 99.0,
-   "midpoint": 92.5,
+   "midpoint": 96.0,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-11-10",
+   "staleAfter": "2026-11-19",
+   "lastReviewed": "2026-11-11",
    "created": "2026-10-27",
    "summary": "Anthropic publicly filed for its IPO on Oct 26, 2026, with a roadshow reported for around Nov 9 and a Nasdaq listing under the ticker ANT. This tracks whether its shares actually start trading before the end of November.",
    "triggers": [
@@ -134,41 +134,35 @@
     "venue": "Polymarket",
     "name": "Will Anthropic IPO by November 30, 2026?",
     "url": "https://polymarket.com/event/anthropic-ipo-by/will-anthropic-ipo-by-november-30-2026",
-    "yesPrice": 94.4,
-    "asOf": "2026-11-10T08:48:00+01:00",
-    "gapPts": -1.9,
+    "yesPrice": 97.65,
+    "asOf": "2026-11-11T08:55:00+01:00",
+    "gapPts": -1.7,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 10 2026",
-     "note": "'Will Anthropic IPO by November 30, 2026?' Yes 0.944 (bid 0.941 / ask 0.947, liquidity ~$33k)",
+     "date": "Nov 11 2026",
+     "note": "'Will Anthropic IPO by November 30, 2026?' Yes 0.9765 (bid 0.974 / ask 0.979, liquidity ~$45k)",
      "url": "https://polymarket.com/event/anthropic-ipo-by/will-anthropic-ipo-by-november-30-2026"
     },
     {
-     "publisher": "Dealroom News summarising the FT",
-     "date": "Nov 6 2026",
-     "note": "Anthropic presses ahead with a pre-Thanksgiving IPO, $80–100B at $1.25–1.75T",
-     "url": "https://dealroom.co/news/170466-anthropic-presses-ahead-with-a-pre-thanksgiving-ipo-targeting-80b--100b-/"
+     "publisher": "SEC EDGAR",
+     "date": "Nov 10 2026",
+     "note": "Anthropic, PBC S-1/A No. 2: 825M Class A shares, $70.00–78.00 estimated range, Nasdaq 'ANT'",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
     },
     {
-     "publisher": "Quartz citing Bloomberg",
-     "date": "Nov 6 2026",
-     "note": "valuation talk falls to $1.2–1.3T; formal marketing due to begin next week",
-     "url": "https://qz.com/anthropic-ipo-valuation-expectations-fall-ai-selloff-110626"
+     "publisher": "Anthropic",
+     "date": "Nov 10 2026",
+     "note": "'Anthropic launches roadshow for proposed initial public offering'",
+     "url": "https://www.anthropic.com/news/roadshow-launch"
     },
     {
      "publisher": "CNBC",
-     "date": "Nov 6 2026",
-     "note": "investors see $1.5T as a stretch; roadshow expected to kick off next week",
-     "url": "https://www.cnbc.com/2026/11/06/investors-brace-for-anthropic-valuation-1point5-trillion-a-stretch.html"
-    },
-    {
-     "publisher": "Stocktwits citing Reuters and the WSJ",
-     "date": "Nov 9 2026",
-     "note": "Anthropic sent, then retracted, $70–80 x 867M-share terms; listing targeted Nov 19–20",
-     "url": "https://stocktwits.com/news-articles/markets/equity/anthropic-retracts-reported-70-80-ipo-price-range-says-pricing-update-is-coming-listing-expected-next-week/cNGud3sR970"
+     "date": "Nov 10 2026",
+     "note": "sources: pricing Nov 18, trading Nov 19; book covered at the range",
+     "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
     }
    ],
    "history": [
@@ -416,8 +410,8 @@
    "probHigh": 27.0,
    "midpoint": 15.0,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-11-09",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-11",
    "created": "2026-11-03",
    "summary": "Tracks whether Washington and Tehran both formally accept a deal that reopens or eases shipping through the Strait of Hormuz before the end of November. Diplomacy picked up on Nov 2–3 even as limited US strikes continued, so the forecast sits near 30%.",
    "triggers": [
@@ -515,8 +509,8 @@
    "probHigh": 60.0,
    "midpoint": 54.0,
    "horizon": "2026-12-01",
-   "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-11",
    "created": "2026-10-18",
    "summary": "AVAX trades near $10. This asks whether it is still between $8 and $12 on Dec 1, a measure of whether the market stays range-bound or breaks out either way.",
    "triggers": [
@@ -573,17 +567,92 @@
    "resolvedOn": null
   },
   {
+   "id": "f464f0a00b",
+   "question": "Will the FOMC raise the fed funds target range by 50bp or more at its Dec 8–9, 2026 meeting?",
+   "domain": "Macro",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 1.0,
+   "probHigh": 19.0,
+   "midpoint": 10.0,
+   "horizon": "2026-12-09",
+   "staleAfter": "2026-11-18",
+   "lastReviewed": "2026-11-11",
+   "created": "2026-11-11",
+   "summary": "After a hotter-than-expected October CPI, Fed Governor Waller said a half-point hike should be considered in December. This tracks whether the Fed actually raises rates by 50bp or more on Dec 9, rather than the expected quarter point.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "more FOMC voters beyond Waller openly backing 50bp; hot November CPI or PPI; strong November payrolls (Dec 4); inflation expectations un-anchoring in Michigan/NY Fed surveys; Fed leadership signalling a credibility-driven larger step."
+    },
+    {
+     "label": "Toward no",
+     "text": "Powell/Fed leadership pushing back on 50bp; softer November data; renewed equity/credit stress (as in the early-November tech rout); an Iran deal pulling energy prices down."
+    }
+   ],
+   "resolution": "Resolves Yes if the FOMC statement after the Dec 8–9, 2026 meeting raises the upper bound of the fed funds target range by 50bp or more versus its pre-meeting level (Polymarket rules: changes rounded up to the nearest 25bp). Resolves No on any smaller hike, hold or cut. Resolution source: FOMC statement / federalreserve.gov.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?",
+    "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632",
+    "yesPrice": 9.7,
+    "asOf": "2026-11-11T08:55:00+01:00",
+    "gapPts": 0.3,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 11 2026",
+     "note": "'Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?' Yes 0.097 (bid 0.096 / ask 0.098, liquidity ~$401k), rules checked",
+     "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632"
+    },
+    {
+     "publisher": "CNBC",
+     "date": "Nov 10 2026",
+     "note": "October CPI +0.4% m/m, core +0.3%; Waller: 50bp should be considered if core ~0.3%; FedWatch 50bp odds ~13.6%",
+     "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
+    },
+    {
+     "publisher": "CFO Dive",
+     "date": "Nov 10 2026",
+     "note": "Waller: 'Hiking only 25 basis points would put our credibility at risk'; Logan wants at least two more 25bp hikes; FedWatch 11.8% for 50bp",
+     "url": "https://www.cfodive.com/news/inflation-rises-faster-expected-boosting-odds-fed-rate-hike-waller-federal-reserve/874314/"
+    },
+    {
+     "publisher": "InvestmentNews",
+     "date": "Nov 10 2026",
+     "note": "Janus Henderson: 50bp in December 'a high bar'; FedWatch 15.3% for 50bp",
+     "url": "https://www.investmentnews.com/equities/october-cpi-comes-in-hot-raising-odds-of-a-bigger-than-expected-rate-hike/268961"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-11",
+     "from": null,
+     "to": [
+      1.0,
+      19.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
    "id": "ab9b34b2bd",
    "question": "Will the FOMC raise the fed funds target range by at least 25bp at its Dec 8–9, 2026 meeting?",
    "domain": "Macro",
    "status": "Active",
-   "confidence": "Medium",
-   "probLow": 62.0,
-   "probHigh": 80.0,
-   "midpoint": 71.0,
+   "confidence": "High",
+   "probLow": 89.0,
+   "probHigh": 99.0,
+   "midpoint": 94.0,
    "horizon": "2026-12-09",
-   "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-11-07",
+   "staleAfter": "2026-11-25",
+   "lastReviewed": "2026-11-11",
    "created": "2026-10-16",
    "summary": "Futures price a high chance of another Fed hike in December. This tracks whether the FOMC actually raises rates at its Dec 8–9 meeting.",
    "triggers": [
@@ -601,29 +670,29 @@
     "venue": "Polymarket",
     "name": null,
     "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632",
-    "yesPrice": 76.5,
-    "asOf": "2026-11-07T08:50:00+01:00",
-    "gapPts": -5.5,
-    "insideBand": true
+    "yesPrice": 85.5,
+    "asOf": "2026-11-11T08:55:00+01:00",
+    "gapPts": 8.5,
+    "insideBand": false
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 7 2026",
-     "note": "Fed December 2026 decision market: +25bp Yes 0.765, +50bp+ 0.0065, no change 0.215 (liquidity ~$776k on the +25bp leg)",
+     "date": "Nov 11 2026",
+     "note": "Fed December 2026 decision market: +25bp Yes 0.855, +50bp+ Yes 0.097, no change 0.0385",
      "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632"
     },
     {
-     "publisher": "CryptoSlate",
-     "date": "Nov 7 2026",
-     "note": "October payrolls +165k vs 65k expected, unemployment 4.1%, AHE +0.4%, prior months revised +84k; Reuters: futures December +25bp odds ~80% from ~75%; 10y ~4.88%",
-     "url": "https://cryptoslate.com/bitcoin-faces-70000-risk-as-investors-realize-2-billion-in-losses-and-us-jobs-shock-deepens-pressure/"
+     "publisher": "CNBC",
+     "date": "Nov 10 2026",
+     "note": "October CPI +0.4% m/m, core +0.3% (vs 0.3%/0.2% expected); Waller open to 50bp; FedWatch fully prices a December hike",
+     "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
     },
     {
-     "publisher": "Reuters 'Trading Day' via Investing.com",
-     "date": "Nov 5 2026",
-     "note": "after the tech rout, rates markets no longer fully price the next Fed hike until March",
-     "url": "https://www.investing.com/news/economy-news/trading-day-a-november-5-market-bonfire-5005919"
+     "publisher": "Investing.com",
+     "date": "Nov 10 2026",
+     "note": "CME FedWatch: 88.8% 25bp / 11.2% 50bp, no hold priced",
+     "url": "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
     },
     {
      "publisher": "Federal Reserve FOMC calendar",
@@ -677,12 +746,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 3.0,
-   "probHigh": 8.0,
+   "probLow": 1.0,
+   "probHigh": 10.0,
    "midpoint": 5.5,
    "horizon": "2026-12-15",
-   "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-10-18",
+   "staleAfter": "2026-11-18",
+   "lastReviewed": "2026-11-11",
    "created": "2026-10-18",
    "summary": "sAVAX is BENQI's liquid-staked AVAX token and normally trades very close to its on-chain redemption value. This measures the risk of a meaningful depeg (more than 3%) before mid-December.",
    "triggers": [
@@ -716,8 +785,8 @@
      "date": "2026-10-18",
      "from": null,
      "to": [
-      3.0,
-      8.0
+      1.0,
+      10.0
      ],
      "reason": "Forecast opened."
     }
@@ -736,8 +805,8 @@
    "probHigh": 78.0,
    "midpoint": 72.0,
    "horizon": "2026-12-17",
-   "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-11-05",
+   "staleAfter": "2026-11-18",
+   "lastReviewed": "2026-11-11",
    "created": "2026-10-18",
    "summary": "Most economists expect the ECB to hike in December with euro-area inflation near 4%. This tracks whether it delivers exactly a 25bp increase on Dec 16–17.",
    "triggers": [
@@ -1701,12 +1770,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 3.0,
-   "probHigh": 11.0,
+   "probLow": 1.0,
+   "probHigh": 13.0,
    "midpoint": 7.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-11-04",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-11",
    "created": "2026-10-18",
    "summary": "Glamsterdam is Ethereum's next major upgrade, raising capacity roughly threefold. Its final public test, planned for Oct 26, was postponed with no new date, so this asks whether it can still reach mainnet in 2026.",
    "triggers": [
@@ -1903,12 +1972,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 7.0,
-   "probHigh": 14.0,
+   "probLow": 4.0,
+   "probHigh": 17.0,
    "midpoint": 10.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-18",
+   "lastReviewed": "2026-11-11",
    "created": "2026-10-18",
    "summary": "Tanker traffic through the Strait of Hormuz has collapsed after repeated attacks on shipping. This asks whether transits recover to near-normal levels by year end.",
    "triggers": [
@@ -1962,8 +2031,8 @@
      "date": "2026-10-18",
      "from": null,
      "to": [
-      7.0,
-      14.0
+      4.0,
+      17.0
      ],
      "reason": "Forecast opened."
     }
@@ -1978,12 +2047,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 35.0,
-   "probHigh": 65.0,
-   "midpoint": 50.0,
+   "probLow": 45.0,
+   "probHigh": 75.0,
+   "midpoint": 60.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-11-09",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-11",
    "created": "2026-10-18",
    "summary": "Israel and Iran are in an uneasy ceasefire. This asks whether neither side strikes the other's territory through year end.",
    "triggers": [
@@ -2001,35 +2070,35 @@
     "venue": "Polymarket",
     "name": "Israel x Iran ceasefire continues through December 31?",
     "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-through-december-31-415",
-    "yesPrice": 57.5,
-    "asOf": "2026-11-09T08:50:00+01:00",
-    "gapPts": -7.5,
+    "yesPrice": 68.5,
+    "asOf": "2026-11-11T08:55:00+01:00",
+    "gapPts": -8.5,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 9 2026",
-     "note": "'Israel x Iran ceasefire continues through December 31?' Yes 0.575 (bid 0.57 / ask 0.58, liquidity ~$138k)",
+     "date": "Nov 11 2026",
+     "note": "'Israel x Iran ceasefire continues through December 31?' Yes 0.685 (bid 0.68 / ask 0.69, liquidity ~$210k)",
      "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-through-december-31-415"
+    },
+    {
+     "publisher": "Jerusalem Post",
+     "date": "Nov 10 2026",
+     "note": "IDF prepares defensively; a preemptive Israeli strike option was raised Nov 1 and dropped",
+     "url": "https://www.jpost.com/israel-news/defense-news/article-914434"
+    },
+    {
+     "publisher": "Times of Israel liveblog",
+     "date": "Nov 10 2026",
+     "note": "Trump: no renewed US offensive for now given 'positive momentum'; ready to strike if needed",
+     "url": "https://www.timesofisrael.com/liveblog-november-10-2026/"
     },
     {
      "publisher": "Iran International",
      "date": "Nov 8 2026",
-     "note": "US and Israeli militaries prepared for renewed strikes but no order (JPost); Rubio says talks unproductive; Katz: 'mission is not yet complete'",
+     "note": "Katz: 'mission is not yet complete'; militaries prepared for renewed strikes",
      "url": "https://www.iranintl.com/en/202611084536"
-    },
-    {
-     "publisher": "Naharnet",
-     "date": "Nov 2026",
-     "note": "Israel says it was not involved in the reported US strikes on the Iranian island",
-     "url": "https://www.naharnet.com/stories/en/323505-israel-says-not-involved-in-reported-us-strikes-on-iranian-island"
-    },
-    {
-     "publisher": "Al Jazeera",
-     "date": "Nov 4 2026",
-     "note": "Iran says US reply to Hormuz plan 'unconvincing'; Trump confirms strikes",
-     "url": "https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes"
     }
    ],
    "history": [
@@ -2164,12 +2233,12 @@
    "domain": "Enterprise",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 84.0,
+   "probLow": 73.0,
    "probHigh": 97.0,
-   "midpoint": 90.5,
+   "midpoint": 85.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-12",
-   "lastReviewed": "2026-11-10",
+   "lastReviewed": "2026-11-11",
    "created": "2026-10-18",
    "summary": "MSCI finalised rules that can drop companies that are mainly bitcoin holdings from its indexes, and Strategy is on the potential-deletion list. This asks whether MSCI removes it by year end; the Nov 11 review is the key date.",
    "triggers": [
@@ -2187,35 +2256,35 @@
     "venue": "Polymarket",
     "name": "Microstrategy delisted from MSCI index by December 31?",
     "url": "https://polymarket.com/event/will-microstrategy-be-delisted-from-the-msci-index-by-march-31/microstrategy-delisted-from-msci-index-by-december-31",
-    "yesPrice": 93.5,
-    "asOf": "2026-10-18T14:56:00+02:00",
-    "gapPts": -3.0,
+    "yesPrice": 84.5,
+    "asOf": "2026-11-11T08:55:00+01:00",
+    "gapPts": 0.5,
     "insideBand": true
    },
    "sources": [
     {
-     "publisher": "Polymarket",
-     "date": "Oct 18 2026",
-     "note": "rules + Yes 0.935 (bid 0.92/ask 0.95), read via Gamma API Oct 18 2026 14:56 Rome",
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 11 2026",
+     "note": "'Microstrategy delisted from MSCI index by December 31?' Yes 0.845 (bid 0.81 / ask 0.88, liquidity ~$5.5k)",
      "url": "https://polymarket.com/event/will-microstrategy-be-delisted-from-the-msci-index-by-march-31/microstrategy-delisted-from-msci-index-by-december-31"
     },
     {
      "publisher": "MSCI announcement",
      "date": "Oct 15 2026",
-     "note": "non-operating companies ineligible from the November 2026 Index Review, effective close Nov 30; current constituents removed only if they fail in each of the two most recent annual filing periods; final list Nov 11",
+     "note": "non-operating companies ineligible from the November 2026 Index Review, effective close Nov 30; constituents removed only if they fail in each of the two most recent annual filing periods; final list Nov 11",
      "url": "https://app2.msci.com/webapp/index_ann/DocGet?format=html&lang=en&pub_key=aq0wbkjxPgo"
     },
     {
-     "publisher": "Unchained via Yahoo Finance",
-     "date": "Oct 16 2026",
-     "note": "August test flagged Strategy, Yellow Cake, Metaplanet; current list (Sept 30 data) still puts all three in line for deletion",
-     "url": "https://finance.yahoo.com/markets/crypto/articles/strategy-metaplanet-face-exit-msci-102636581.html"
+     "publisher": "TechTimes",
+     "date": "Nov 9 2026",
+     "note": "results at 5pm ET Nov 11; two-filing test open for Strategy given FY2024 cost accounting",
+     "url": "https://www.techtimes.com/articles/330275/20261109/msci-index-removal-list-wednesday-can-delete-bitcoin-firm-strategy-after-two-failed-annual-filings.htm"
     },
     {
-     "publisher": "CoinDesk",
-     "date": "Oct 16 2026",
-     "note": "JPMorgan ~$2.8B outflow estimate; Strategy holds 848,250 BTC",
-     "url": "https://www.coindesk.com/markets/2026/10/16/msci-approves-rules-that-could-eject-strategy-metaplanet-from-equity-indexes"
+     "publisher": "Bitcoin.com News",
+     "date": "Nov 11 2026",
+     "note": "final list today, changes Nov 30; JPMorgan ~$2.8B outflow estimate; MSTR $121.07 close Nov 10",
+     "url": "https://news.bitcoin.com/finance/msci-strategy-index-decision-forced-selling/"
     }
    ],
    "history": [
@@ -2255,8 +2324,8 @@
    "probHigh": 19.0,
    "midpoint": 11.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-11-05",
+   "staleAfter": "2026-11-18",
+   "lastReviewed": "2026-11-11",
    "created": "2026-10-18",
    "summary": "Mojtaba Khamenei became Iran's de facto leader in March but has rarely been seen since. This asks whether he is removed, incapacitated or replaced by year end, a risk concentrated around possible renewed strikes after the US midterms.",
    "triggers": [
@@ -2350,12 +2419,12 @@
    "domain": "AI",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 90.0,
-   "probHigh": 98.0,
+   "probLow": 89.0,
+   "probHigh": 99.0,
    "midpoint": 94.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-11-05",
+   "staleAfter": "2026-11-18",
+   "lastReviewed": "2026-11-11",
    "created": "2026-10-18",
    "summary": "OpenAI shelved GPT-6.1 Astra in September over safety problems, but a gpt-6.2-astra model has been showing up in Codex usage since Nov 1. This asks whether a 6.1-or-later Astra model is released publicly by Dec 31.",
    "triggers": [
@@ -2932,12 +3001,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 4.0,
-   "probHigh": 9.0,
+   "probLow": 2.0,
+   "probHigh": 11.0,
    "midpoint": 6.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-18",
+   "lastReviewed": "2026-11-11",
    "created": "2026-10-18",
    "summary": "This asks whether a general Russia–Ukraine ceasefire takes effect by year end and holds for at least ten days. Fighting and long-range strikes are currently intensifying.",
    "triggers": [
@@ -2958,7 +3027,7 @@
     "yesPrice": 9.5,
     "asOf": "2026-10-18T14:56:00+02:00",
     "gapPts": -3.0,
-    "insideBand": false
+    "insideBand": true
    },
    "sources": [
     {
@@ -2985,8 +3054,8 @@
      "date": "2026-10-18",
      "from": null,
      "to": [
-      4.0,
-      9.0
+      2.0,
+      11.0
      ],
      "reason": "Forecast opened."
     }
@@ -3001,12 +3070,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 2.0,
-   "probHigh": 6.0,
+   "probLow": 1.0,
+   "probHigh": 7.0,
    "midpoint": 4.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-13",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-18",
+   "lastReviewed": "2026-11-11",
    "created": "2026-10-18",
    "summary": "The Clarity Act would set the main US market-structure rules for crypto. It stalled in the Senate in September; this asks whether it still becomes law in 2026.",
    "triggers": [
@@ -3060,8 +3129,8 @@
      "date": "2026-10-18",
      "from": null,
      "to": [
-      2.0,
-      6.0
+      1.0,
+      7.0
      ],
      "reason": "Forecast opened."
     }
