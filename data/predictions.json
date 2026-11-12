@@ -1,16 +1,16 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-11T08:51:54+01:00",
+ "generatedAt": "2026-11-12T08:54:01+01:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 36,
-  "resolved": 14,
+  "active": 35,
+  "resolved": 15,
   "byDomain": {
    "Geopolitics": 6,
    "AI": 3,
    "Crypto": 21,
    "Macro": 4,
-   "Enterprise": 2
+   "Enterprise": 1
   }
  },
  "predictions": [
@@ -238,8 +238,8 @@
    "probHigh": 15.0,
    "midpoint": 8.0,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-14",
-   "lastReviewed": "2026-11-07",
+   "staleAfter": "2026-11-19",
+   "lastReviewed": "2026-11-12",
    "created": "2026-10-18",
    "summary": "Google just shipped Gemini 4 Argon and says the rest of the Gemini 4 family is coming. This asks whether a new public 'Pro' model lands by Nov 30.",
    "triggers": [
@@ -257,23 +257,23 @@
     "venue": "Polymarket",
     "name": "Will the next Google Gemini Pro model be released by November 30, 2026?",
     "url": "https://polymarket.com/event/next-google-gemini-pro-model-released-byptptpt/will-the-next-google-gemini-pro-model-be-released-by-november-30-2026",
-    "yesPrice": 8.0,
-    "asOf": "2026-11-07T08:50:00+01:00",
-    "gapPts": 0.0,
+    "yesPrice": 6.6,
+    "asOf": "2026-11-12T09:00:00+01:00",
+    "gapPts": 1.4,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 7 2026",
-     "note": "'Will the next Google Gemini Pro model be released by November 30, 2026?': Yes 0.08 (bid 0.07 / ask 0.09, liquidity ~$1.7k)",
+     "date": "Nov 12 2026",
+     "note": "'Will the next Google Gemini Pro model be released by November 30, 2026?': Yes 0.066 (last trade 0.045)",
      "url": "https://polymarket.com/event/next-google-gemini-pro-model-released-byptptpt/will-the-next-google-gemini-pro-model-be-released-by-november-30-2026"
     },
     {
-     "publisher": "ScriptByAI Google AI timeline",
-     "date": "Nov 7 2026",
-     "note": "Gemini 4 Carbon announced Oct 28 (selected cyber defenders only), Gemini Omni 1.2 Flash GA Nov 5; no Pro release listed since Gemini 3.1 Pro",
-     "url": "https://www.scriptbyai.com/google-ai-timeline-biggest-moments/"
+     "publisher": "Dataconomy",
+     "date": "Nov 11 2026",
+     "note": "Gemini 4 Carbon broadly available (paid API, AI Ultra); not Pro-labelled",
+     "url": "https://dataconomy.com/2026/11/11/google-opens-gemini-4-carbon-to-the-public-with-lower-api/"
     },
     {
      "publisher": "Google blog",
@@ -2228,93 +2228,6 @@
    "resolvedOn": null
   },
   {
-   "id": "d090868e05",
-   "question": "Will MSCI remove Strategy (MSTR) from the MSCI World or MSCI USA Index by Dec 31, 2026?",
-   "domain": "Enterprise",
-   "status": "Active",
-   "confidence": "Medium",
-   "probLow": 73.0,
-   "probHigh": 97.0,
-   "midpoint": 85.0,
-   "horizon": "2026-12-31",
-   "staleAfter": "2026-11-12",
-   "lastReviewed": "2026-11-11",
-   "created": "2026-10-18",
-   "summary": "MSCI finalised rules that can drop companies that are mainly bitcoin holdings from its indexes, and Strategy is on the potential-deletion list. This asks whether MSCI removes it by year end; the Nov 11 review is the key date.",
-   "triggers": [
-    {
-     "label": "Toward YES",
-     "text": "MSCI's Nov 11 November Index Review list names Strategy (an official announcement alone resolves YES); MSCI's current potential-deletions list (Sept 30 2026 data) still shows Strategy, Metaplanet and Yellow Cake; August test on May 2026 data flagged the same three."
-    },
-    {
-     "label": "Toward NO",
-     "text": "Strategy passes the core 'substantial operating assets' screen or is flagged on fewer than 4 of 5 ratios; current constituents are removed only if they fail in EACH of the two most recent annual filing periods (MSCI may use interim filings); late methodology tweaks or a delay."
-    }
-   ],
-   "resolution": "Per Polymarket rules: YES if MicroStrategy/Strategy is removed from either the MSCI World Index or the MSCI USA Index (or transferred to another MSCI index) at any point by Dec 31, 2026 11:59 PM ET; an official MSCI announcement of removal/transfer suffices. Source: MSCI communications or consensus credible reporting. Otherwise NO. Re-score on Nov 11.",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Microstrategy delisted from MSCI index by December 31?",
-    "url": "https://polymarket.com/event/will-microstrategy-be-delisted-from-the-msci-index-by-march-31/microstrategy-delisted-from-msci-index-by-december-31",
-    "yesPrice": 84.5,
-    "asOf": "2026-11-11T08:55:00+01:00",
-    "gapPts": 0.5,
-    "insideBand": true
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "Nov 11 2026",
-     "note": "'Microstrategy delisted from MSCI index by December 31?' Yes 0.845 (bid 0.81 / ask 0.88, liquidity ~$5.5k)",
-     "url": "https://polymarket.com/event/will-microstrategy-be-delisted-from-the-msci-index-by-march-31/microstrategy-delisted-from-msci-index-by-december-31"
-    },
-    {
-     "publisher": "MSCI announcement",
-     "date": "Oct 15 2026",
-     "note": "non-operating companies ineligible from the November 2026 Index Review, effective close Nov 30; constituents removed only if they fail in each of the two most recent annual filing periods; final list Nov 11",
-     "url": "https://app2.msci.com/webapp/index_ann/DocGet?format=html&lang=en&pub_key=aq0wbkjxPgo"
-    },
-    {
-     "publisher": "TechTimes",
-     "date": "Nov 9 2026",
-     "note": "results at 5pm ET Nov 11; two-filing test open for Strategy given FY2024 cost accounting",
-     "url": "https://www.techtimes.com/articles/330275/20261109/msci-index-removal-list-wednesday-can-delete-bitcoin-firm-strategy-after-two-failed-annual-filings.htm"
-    },
-    {
-     "publisher": "Bitcoin.com News",
-     "date": "Nov 11 2026",
-     "note": "final list today, changes Nov 30; JPMorgan ~$2.8B outflow estimate; MSTR $121.07 close Nov 10",
-     "url": "https://news.bitcoin.com/finance/msci-strategy-index-decision-forced-selling/"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-18",
-     "from": null,
-     "to": [
-      88.0,
-      95.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-11-09",
-     "from": [
-      88.0,
-      95.0
-     ],
-     "to": [
-      84.0,
-      97.0
-     ],
-     "reason": "(Medium). Rule: judgment + market. Polymarket Gamma Yes 0.855 (bid 0.85 / ask 0.86, liquidity only ~$1.6k) read Nov 9 ~08:50 Rome; the edge-blended shaded anchor is ~0.82. Midpoint 90.5% stays ~8 pts above it on question-specific information: MSCI's Oct 15 final rules (core operating-asset screen + 4-of-5 ratio test, two-annual-period buffer for constituents) and its May-data simulation that flagged Strategy; no MSCI communication since. Band widened per the standing >1-month rule, capped by distance to 1. The affected-company list is due Nov 11 (CoinDesk Oct 16: https://www.coindesk.com/markets/2026/10/16/msci-approves-rules-that-could-eject-strategy-metaplanet-from-equity-indexes ; MSCI: https://app2.msci.com/webapp/index_ann/DocGet?format=html&lang=en&pub_key=aq0wbkjxPgo), effective after the Nov 30 close. Stale After → 2026-11-12."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
-  {
    "id": "fed4649e42",
    "question": "Will Mojtaba Khamenei cease to be Iran's de facto leader by Dec 31, 2026?",
    "domain": "Geopolitics",
@@ -3222,6 +3135,91 @@
   }
  ],
  "resolved": [
+  {
+   "id": "d090868e05",
+   "question": "Will MSCI remove Strategy (MSTR) from the MSCI World or MSCI USA Index by Dec 31, 2026?",
+   "domain": "Enterprise",
+   "status": "Resolved-Yes",
+   "confidence": "Medium",
+   "probLow": 73.0,
+   "probHigh": 97.0,
+   "midpoint": 85.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-12",
+   "lastReviewed": "2026-11-12",
+   "created": "2026-10-18",
+   "summary": "MSCI finalised rules that can drop companies that are mainly bitcoin holdings from its indexes, and Strategy is on the potential-deletion list. This asks whether MSCI removes it by year end; the Nov 11 review is the key date.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "MSCI's Nov 11 November Index Review list names Strategy (an official announcement alone resolves YES); MSCI's current potential-deletions list (Sept 30 2026 data) still shows Strategy, Metaplanet and Yellow Cake; August test on May 2026 data flagged the same three."
+    },
+    {
+     "label": "Toward NO",
+     "text": "Strategy passes the core 'substantial operating assets' screen or is flagged on fewer than 4 of 5 ratios; current constituents are removed only if they fail in EACH of the two most recent annual filing periods (MSCI may use interim filings); late methodology tweaks or a delay."
+    }
+   ],
+   "resolution": "Per Polymarket rules: YES if MicroStrategy/Strategy is removed from either the MSCI World Index or the MSCI USA Index (or transferred to another MSCI index) at any point by Dec 31, 2026 11:59 PM ET; an official MSCI announcement of removal/transfer suffices. Source: MSCI communications or consensus credible reporting. Otherwise NO. Re-score on Nov 11.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Microstrategy delisted from MSCI index by December 31?",
+    "url": "https://polymarket.com/event/will-microstrategy-be-delisted-from-the-msci-index-by-march-31/microstrategy-delisted-from-msci-index-by-december-31",
+    "yesPrice": null,
+    "asOf": "2026-11-12T09:00:00+01:00"
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 12 2026",
+     "note": "'Microstrategy delisted from MSCI index by December 31?' closed, resolved Yes",
+     "url": "https://polymarket.com/event/will-microstrategy-be-delisted-from-the-msci-index-by-march-31/microstrategy-delisted-from-msci-index-by-december-31"
+    },
+    {
+     "publisher": "MSCI",
+     "date": "Nov 11 2026",
+     "note": "November 2026 Index Review results, all changes as of close Nov 30",
+     "url": "https://app2.msci.com/webapp/index_ann/DocGet?format=html&lang=en&pub_key=t6TJpGLKQvg%3D"
+    },
+    {
+     "publisher": "Bitcoin Magazine",
+     "date": "Nov 11 2026",
+     "note": "official deletions list shows Strategy out of MSCI USA (and so World/ACWI) as of Nov 30 close",
+     "url": "https://bitcoinmagazine.com/markets/msci-removes-strategy-mstr-usa-index"
+    },
+    {
+     "publisher": "Cointelegraph",
+     "date": "Nov 12 2026",
+     "note": "MSCI final list marks 'STRATEGY A' Deleted; Metaplanet, Upexi also deleted; SharpLink on watchlist",
+     "url": "https://cointelegraph.com/news/msci-confirms-strategys-removal-from-indexes-end-november"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      88.0,
+      95.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      88.0,
+      95.0
+     ],
+     "to": [
+      84.0,
+      97.0
+     ],
+     "reason": "(Medium). Rule: judgment + market. Polymarket Gamma Yes 0.855 (bid 0.85 / ask 0.86, liquidity only ~$1.6k) read Nov 9 ~08:50 Rome; the edge-blended shaded anchor is ~0.82. Midpoint 90.5% stays ~8 pts above it on question-specific information: MSCI's Oct 15 final rules (core operating-asset screen + 4-of-5 ratio test, two-annual-period buffer for constituents) and its May-data simulation that flagged Strategy; no MSCI communication since. Band widened per the standing >1-month rule, capped by distance to 1. The affected-company list is due Nov 11 (CoinDesk Oct 16: https://www.coindesk.com/markets/2026/10/16/msci-approves-rules-that-could-eject-strategy-metaplanet-from-equity-indexes ; MSCI: https://app2.msci.com/webapp/index_ann/DocGet?format=html&lang=en&pub_key=aq0wbkjxPgo), effective after the Nov 30 close. Stale After → 2026-11-12."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.0225,
+   "resolvedOn": "2026-11-11"
+  },
   {
    "id": "62b94bc398",
    "question": "Will Schwab Crypto clients be able to buy and sell AVAX by Dec 31, 2026?",
