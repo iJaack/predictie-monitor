@@ -1,14 +1,14 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-12T08:54:01+01:00",
+ "generatedAt": "2026-11-13T08:50:31+01:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 35,
-  "resolved": 15,
+  "active": 33,
+  "resolved": 18,
   "byDomain": {
    "Geopolitics": 6,
    "AI": 3,
-   "Crypto": 21,
+   "Crypto": 19,
    "Macro": 4,
    "Enterprise": 1
   }
@@ -1074,12 +1074,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 5.0,
-   "probHigh": 11.0,
-   "midpoint": 8.0,
+   "probLow": 1.0,
+   "probHigh": 20.0,
+   "midpoint": 10.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-15",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-27",
+   "lastReviewed": "2026-11-13",
    "created": "2026-10-18",
    "summary": "Aave is the largest crypto lending app. It held about $15.5B after a sharp drop on Oct 30, and this asks whether a crash cuts that below $10B on any day this year.",
    "triggers": [
@@ -1099,8 +1099,8 @@
     "url": "https://polymarket.com/event/will-the-aave-tvl-go-below-10b-in-2026/will-the-aave-tvl-go-below-10b-in-2026",
     "yesPrice": 11.5,
     "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": -3.5,
-    "insideBand": false
+    "gapPts": -1.0,
+    "insideBand": true
    },
    "sources": [
     {
@@ -1149,6 +1149,18 @@
       11.0
      ],
      "reason": "(confidence Medium → Low). DefiLlama shows Aave TVL down from $17.65B (Oct 29) to ~$15.55B (Oct 30), the largest daily drop since this row opened. That follows ETH falling to ~$2,231 and Aave freezing the markets the Binance attacker used, after he borrowed ~19,760 ETH against 60M USDT (TRM). A move to <$10B needs a further ~36% fall, roughly ETH ≈ $1,450 or a big withdrawal run. Market Yes 0.115 (thin, bid 0.08 / ask 0.15). [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-13",
+     "from": [
+      5.0,
+      11.0
+     ],
+     "to": [
+      1.0,
+      20.0
+     ],
+     "reason": "(market anchor + >1-month widening). Polymarket Yes 0.105 (outside 15–85%, used as-is; thin book). DefiLlama Aave TVL $15.51B on Nov 13, essentially flat vs Oct 30 despite ETH falling to ~$1,942 (Binance, Nov 13); <$10B still needs a ~36% drop. Midpoint 10.5%, half-width capped by distance to 0 with 1% floor. Stale After → 2026-11-27."
     }
    ],
    "outcome": null,
@@ -1336,92 +1348,68 @@
    "resolvedOn": null
   },
   {
-   "id": "d696382907",
-   "question": "Will Bitcoin trade at or below $70,000 on Binance BTC/USDT (any 1-minute low) by Dec 31, 2026?",
+   "id": "395f69b286",
+   "question": "Will Bitcoin trade at or below $60,000 on Binance BTC/USDT (any 1-minute low) by Dec 31, 2026?",
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 52.0,
-   "probHigh": 82.0,
-   "midpoint": 67.0,
+   "probLow": 22.0,
+   "probHigh": 52.0,
+   "midpoint": 37.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-16",
-   "lastReviewed": "2026-11-09",
-   "created": "2026-10-18",
-   "summary": "Bitcoin fell to about $77k after the Oct 29 Binance hack. This asks whether it drops to $70,000 or lower at any point before year end.",
+   "staleAfter": "2026-11-20",
+   "lastReviewed": "2026-11-13",
+   "created": "2026-11-13",
+   "summary": "After Bitcoin's November 13 liquidation-driven slide below $70,000, this tracks whether the selloff extends to $60,000 on Binance before year-end. The barrier has not been touched since July; ETF outflows and Fed hike expectations are the main pressure.",
    "triggers": [
     {
-     "label": "Toward YES",
-     "text": "MSCI Nov 11 list confirms Strategy/Metaplanet deletions (JPMorgan est. ~$2.8B MSTR outflows; weaker equity-issuance window for BTC buying); Fed hikes Dec 9; renewed US/Israel strikes on Iran after Nov 3 with Brent >$110; ETF outflows continue."
+     "label": "Toward yes",
+     "text": "continued spot-ETF outflows (IBIT >$2B out over nine sessions), another leverage flush below the Nov 13 low ($67,568), a 50bp Fed hike signal before Dec 9, further Nvidia/AI-equity contagion."
     },
     {
-     "label": "Toward NO",
-     "text": "Fed pause; Hormuz reopening/oil easing; ETF inflows resume; Democrats' midterm win priced as neutral for crypto."
+     "label": "Toward no",
+     "text": "liquidation cascade exhausted (Fear & Greed at 20, extreme fear), ETF flows turning positive, a softer Nov CPI/jobs print, AI equities stabilizing after Nvidia's leadership change."
     }
    ],
-   "resolution": "Per Polymarket rules: resolves YES if any Binance BTC/USDT 1-minute candle has a Low ≤ $70,000 from market creation through Dec 31, 2026 23:59 ET; price action before market creation is ignored; only Binance BTC/USDT counts. Otherwise NO. Re-score if BTC closes below $75k or above $90k.",
+   "resolution": "Per Polymarket rules: resolves YES if any Binance BTC/USDT 1-minute candle from market creation (Jul 21, 2026) through 11:59 PM ET Dec 31, 2026 has a Low ≤ $60,000; otherwise NO. Lowest Binance print since Jul 21 is $62,275, so the barrier has not been touched.",
    "market": {
     "venue": "Polymarket",
-    "name": "Will Bitcoin dip to $70,000 by December 31, 2026?",
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-dip-to-70000-by-december-31-2026-from-august-24",
-    "yesPrice": 47.5,
-    "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": 19.5,
-    "insideBand": false
+    "name": "Will Bitcoin dip to $60,000 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027",
+    "yesPrice": 35.5,
+    "asOf": "2026-11-13T08:50:00+01:00",
+    "gapPts": 1.5,
+    "insideBand": true
    },
    "sources": [
     {
-     "publisher": "Polymarket",
-     "date": "December 31, 2026",
-     "note": "rules; Yes 0.475 (bid 0.47 / ask 0.48, liquidity ~$85k) (read Oct 30 2026 ~17:45 Rome)",
-     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-dip-to-70000-by-december-31-2026-from-august-24"
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 13 2026",
+     "note": "'Will Bitcoin dip to $60,000 by December 31, 2026?' Yes 0.355 (bid 0.35/ask 0.36, liquidity ~$121k), live, rules as above",
+     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027"
     },
     {
-     "publisher": "Binance klines via data-api.binance.vision",
-     "date": "Oct 30 2026",
-     "note": "BTC/USDT ~$77.5k; October low $76,500 (Oct 30); 30d/60d realized vol 29%/35%",
-     "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=61"
+     "publisher": "Binance BTCUSDT 1d klines",
+     "date": "Nov 13 2026",
+     "note": "spot $68,762, σ90 2.22%/day, low since Jul 21 $62,275",
+     "url": "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=91"
     },
     {
-     "publisher": "TRM Labs",
-     "date": "Oct 29–30 2026",
-     "note": "~$6.36B Binance hack (TraderTraitor); attacker holds >420k ETH, 18,270 BTC, 233M XRP, 970.5k SOL beyond freeze",
-     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
+     "publisher": "The Block",
+     "date": "Nov 13 2026",
+     "note": "BTC lowest since Aug 20, $1.47B liquidations, Nvidia CEO exit and Dec Fed hike fears",
+     "url": "https://www.theblock.co/news/markets/2026-11-13-bitcoin-tumbles-below-69000-439643"
     }
    ],
    "history": [
     {
-     "date": "2026-10-18",
+     "date": "2026-11-13",
      "from": null,
      "to": [
-      33.0,
-      43.0
+      22.0,
+      52.0
      ],
      "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-10-30",
-     "from": [
-      33.0,
-      43.0
-     ],
-     "to": [
-      40.0,
-      50.0
-     ],
-     "reason": "BTC fell to ~$77.5k after the Oct 29 Binance hack (Oct 30 low $76,500, the lowest since this row opened), 9.7% above the $70k line with ~62 days left. The zero-drift touch model on 30d/60d realized vol gives 39–49%; the attacker's 18,270 unfrozen BTC is an overhang. Market Yes 0.475 (bid 0.47 / ask 0.48), inside the band. [Backfill run: the Oct 28–30 daily reviews did not run.]."
-    },
-    {
-     "date": "2026-11-09",
-     "from": [
-      40.0,
-      50.0
-     ],
-     "to": [
-      52.0,
-      82.0
-     ],
-     "reason": "(Medium). Rule: market anchor + touch model. BTC/USDT ~$74,021 is 5.7% above $70k; σ90 = 2.14%/day → P(touch) 72.0%. Polymarket Gamma Yes 0.695 (bid 0.69 / ask 0.70, liquidity ~$106k) → shaded anchor 0.65. Midpoint 67% between the two. Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
     }
    ],
    "outcome": null,
@@ -1600,8 +1588,8 @@
    "probHigh": 3.0,
    "midpoint": 2.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-15",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-27",
+   "lastReviewed": "2026-11-13",
    "created": "2026-10-18",
    "summary": "Ethena's USDe is a synthetic dollar backed by hedged crypto positions. This asks whether it loses its $1 peg badly, below $0.98 for a full day, before year end.",
    "triggers": [
@@ -2426,122 +2414,17 @@
    "resolvedOn": null
   },
   {
-   "id": "2de1662150",
-   "question": "Will Solana trade at or below $80 on Binance SOL/USDT (any 1-minute low) by Dec 31, 2026?",
-   "domain": "Crypto",
-   "status": "Active",
-   "confidence": "Low",
-   "probLow": 56.0,
-   "probHigh": 86.0,
-   "midpoint": 71.0,
-   "horizon": "2026-12-31",
-   "staleAfter": "2026-11-16",
-   "lastReviewed": "2026-11-09",
-   "created": "2026-10-18",
-   "summary": "Solana trades near $92 after a weak autumn. This asks whether a weak market drags it down to $80 before year end.",
-   "triggers": [
-    {
-     "label": "Toward yes",
-     "text": "SOL at its 30-day low (~$104) with SOL ETF outflows; a rough Alpenglow migration on Oct 21 (outage or rollback); hawkish Fed; BTC below $75k."
-    },
-    {
-     "label": "Toward no",
-     "text": "Alpenglow goes live cleanly and 150ms finality draws flow; ETF flows turn positive; BTC above $90k."
-    }
-   ],
-   "resolution": "Per Polymarket rules: resolves YES if any Binance SOL/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $80; earlier price action ignored (low since creation is $94.95). Otherwise NO. Re-score if SOL closes above $125 or below $90.",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Will Solana dip to $80 by December 31, 2026?",
-    "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24",
-    "yesPrice": 51.0,
-    "asOf": "2026-11-03T09:10:00+01:00",
-    "gapPts": 20.0,
-    "insideBand": false
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "December 31, 2026",
-     "note": "rules; Yes 0.51 (bid 0.49 / ask 0.53, liquidity ~$16k) (read Nov 3 2026 ~09:10 Rome)",
-     "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24"
-    },
-    {
-     "publisher": "Binance spot API daily klines",
-     "date": "Nov 3 2026",
-     "note": "SOL/USDT ~$92.22; σ90 3.02%/day",
-     "url": "https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1d&limit=91"
-    },
-    {
-     "publisher": "TRM Labs",
-     "date": "Oct 29–30 2026",
-     "note": "~$6.36B Binance hack (TraderTraitor); attacker holds >420k ETH, 18,270 BTC, 233M XRP, 970.5k SOL beyond freeze",
-     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-18",
-     "from": null,
-     "to": [
-      28.0,
-      38.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-10-30",
-     "from": [
-      28.0,
-      38.0
-     ],
-     "to": [
-      34.0,
-      44.0
-     ],
-     "reason": "SOL ~$95 (October low $92.34, 7-day −7.5%) is 16% above the $80 line; the zero-drift touch model on 30d/60d realized vol gives 32–44%. Market Yes 0.44 (bid 0.42 / ask 0.46), at the top of the band. 970.5k stolen SOL is still with the Binance attacker. [Backfill run: the Oct 28–30 daily reviews did not run.]."
-    },
-    {
-     "date": "2026-11-03",
-     "from": [
-      34.0,
-      44.0
-     ],
-     "to": [
-      47.0,
-      57.0
-     ],
-     "reason": "Rule: touch model (approved 31 Oct rules). SOL/USDT ~$92.2 on Binance (Nov 3 ~09:15 Rome) is 13.2% above $80 with ~59 days left; σ90 = 3.02%/day gives P(touch) 53.9%. Polymarket Yes 0.51 (bid 0.49 / ask 0.53, liquidity ~$16k). In the 30–60% zone the rules say lean low, so midpoint 52%, half-width 5. Change comes from switching to 90-day vol (the old band used 30d/60d vol), not from the latest price move."
-    },
-    {
-     "date": "2026-11-09",
-     "from": [
-      47.0,
-      57.0
-     ],
-     "to": [
-      56.0,
-      86.0
-     ],
-     "reason": "(Low). Rule: market anchor + touch model. SOL/USDT ~$85.66 is 7.1% above $80; σ90 = 3.11%/day → P(touch) 76.3%. Polymarket Gamma Yes 0.74 (bid 0.72 / ask 0.76, liquidity ~$18k) → shaded anchor 0.69. Midpoint 71%. Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
-  {
    "id": "0b7511a83d",
    "question": "Will USDT's market cap reach $200B on any day by Dec 31, 2026?",
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 2.0,
-   "probHigh": 7.0,
-   "midpoint": 4.5,
+   "probLow": 1.0,
+   "probHigh": 6.0,
+   "midpoint": 3.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-15",
-   "lastReviewed": "2026-10-30",
+   "staleAfter": "2026-11-27",
+   "lastReviewed": "2026-11-13",
    "created": "2026-10-18",
    "summary": "Tether's supply has stalled around $183–190B since spring, a sign of little new money entering crypto. This asks whether it jumps to $200B by year end.",
    "triggers": [
@@ -2561,7 +2444,7 @@
     "url": "https://polymarket.com/event/will-usdt-market-cap-hit-by-december-31/will-usdt-market-cap-hit-200b-before-2027",
     "yesPrice": 43.0,
     "asOf": "2026-10-18T15:12:00+02:00",
-    "gapPts": -38.5,
+    "gapPts": -39.5,
     "insideBand": false
    },
    "sources": [
@@ -2599,6 +2482,18 @@
       7.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-13",
+     "from": [
+      2.0,
+      7.0
+     ],
+     "to": [
+      1.0,
+      6.0
+     ],
+     "reason": "(judgment; no usable market). USDT fell further: DefiLlama circulating $175.7B (from $183.5B on Oct 18), CoinGecko market cap $175.6B; resolution now needs +$24.4B (+14%) in 48 days during a falling-supply, risk-off regime (BTC 3-month low Nov 13). Polymarket Yes 0.2455 but liquidity only ~$2.3k, so not used as anchor. Half-width capped by distance to 0 (1% floor) under the >1-month widening rule. Stale After → 2026-11-27."
     }
    ],
    "outcome": null,
@@ -2686,123 +2581,6 @@
       37.0
      ],
      "reason": "(Low). Rule: market anchor + touch model. UNI/USDT ~$6.738 needs +63.3% to touch $11; σ90 = 5.74%/day → P(touch) 24.0%. Polymarket Gamma Yes 0.175 (bid 0.16 / ask 0.19, liquidity ~$4.1k), near the 0.15 edge → blended anchor ~0.21. Midpoint 22%. Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
-  {
-   "id": "6d1d4f12c6",
-   "question": "Will XRP trade at or below $1.00 on Binance XRP/USDT (any 1-minute low) by Dec 31, 2026?",
-   "domain": "Crypto",
-   "status": "Active",
-   "confidence": "Low",
-   "probLow": 53.0,
-   "probHigh": 83.0,
-   "midpoint": 68.0,
-   "horizon": "2026-12-31",
-   "staleAfter": "2026-11-16",
-   "lastReviewed": "2026-11-09",
-   "created": "2026-10-18",
-   "summary": "XRP trades near $1.25 after a weak October. This asks whether it falls to $1.00, a level that held as support over the summer.",
-   "triggers": [
-    {
-     "label": "Toward yes",
-     "text": "XRP at its 30-day low (~$1.29) and −7% on the week; XRP ETFs posting October outflows; 90-day realized vol ~68%; BTC below $75k."
-    },
-    {
-     "label": "Toward no",
-     "text": "XRP held ~$1.00–1.03 in July–August (90-day low $0.99 on CoinGecko); ETF flows recover; risk-on after the Fed."
-    }
-   ],
-   "resolution": "Per Polymarket rules: resolves YES if any Binance XRP/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $1.00; earlier price action ignored (low since creation is $1.2468). Otherwise NO. Re-score if XRP closes above $1.55 or below $1.10.",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Will XRP dip to $1.00 by December 31, 2026?",
-    "url": "https://polymarket.com/event/what-price-will-xrp-hit-before-2027/will-xrp-dip-to-1pt00-by-december-31-2026-from-august-24",
-    "yesPrice": 27.0,
-    "asOf": "2026-11-04T08:50:00+01:00",
-    "gapPts": 41.0,
-    "insideBand": false
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "December 31, 2026",
-     "note": "rules; Yes 0.27 (bid 0.25 / ask 0.29, liquidity ~$23k) (read Nov 4 2026 ~08:50 Rome)",
-     "url": "https://polymarket.com/event/what-price-will-xrp-hit-before-2027/will-xrp-dip-to-1pt00-by-december-31-2026-from-august-24"
-    },
-    {
-     "publisher": "Binance spot API daily klines",
-     "date": "Nov 4 2026",
-     "note": "XRP/USDT ~$1.2756; σ90 3.60%/day",
-     "url": "https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=1d&limit=91"
-    },
-    {
-     "publisher": "TRM Labs",
-     "date": "Oct 29–30 2026",
-     "note": "~$6.36B Binance hack (TraderTraitor); attacker holds >420k ETH, 18,270 BTC, 233M XRP, 970.5k SOL beyond freeze",
-     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-18",
-     "from": null,
-     "to": [
-      36.0,
-      46.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-10-30",
-     "from": [
-      36.0,
-      46.0
-     ],
-     "to": [
-      30.0,
-      40.0
-     ],
-     "reason": "XRP ~$1.25 (October low $1.20) is 20% above the $1.00 line; the zero-drift touch model on 30d/60d realized vol gives 23–37%. Upside risk to the band: the Binance attacker still holds 233M XRP, unmoved. Market Yes 0.37 (bid 0.34 / ask 0.40). [Backfill run: the Oct 28–30 daily reviews did not run.]."
-    },
-    {
-     "date": "2026-11-03",
-     "from": [
-      30.0,
-      40.0
-     ],
-     "to": [
-      36.0,
-      46.0
-     ],
-     "reason": "Rule: touch model (approved 31 Oct rules). XRP/USDT ~$1.255 on Binance (Nov 3 ~09:15 Rome) is 20.3% above $1.00 with ~59 days left; σ90 = 3.63%/day gives P(touch) 41.5%. Polymarket Yes 0.355 (bid 0.33 / ask 0.38, liquidity ~$10k). In the 30–60% zone the rules say lean low, so midpoint 41%, half-width 5. The Binance attacker's 233M XRP overhang still applies."
-    },
-    {
-     "date": "2026-11-04",
-     "from": [
-      36.0,
-      46.0
-     ],
-     "to": [
-      29.0,
-      39.0
-     ],
-     "reason": "Rule: market anchor cross-checked with touch model. Polymarket Gamma Yes 0.27 (bid 0.25 / ask 0.29, liquidity ~$23k, now liquid) read Nov 4 ~08:50 Rome; shaded anchor logit(q)=0.75·logit(0.27) = 0.32. Touch model: XRP/USDT ~$1.2756 on Binance, 21.6% above $1.00 with ~57.9 days left, σ90 = 3.60%/day → P(touch) 37.4%; in the 30–60% zone the rules say lean low (~34%). Midpoint 34%, half-width 5. Correction, not momentum: on Nov 3 the midpoint was set equal to the model (41%) without the lean-low adjustment and sat ~8.5 pts above the shaded market anchor, beyond the ~6-pt limit; the price itself moved only +1.7%. The Binance attacker's 233M XRP overhang still applies. Stale After 2026-11-11 (MSCI list)."
-    },
-    {
-     "date": "2026-11-09",
-     "from": [
-      29.0,
-      39.0
-     ],
-     "to": [
-      53.0,
-      83.0
-     ],
-     "reason": "(Low). Rule: market anchor + touch model. XRP/USDT ~$1.0871 is 8.7% above $1.00; σ90 = 3.74%/day → P(touch) 75.9%. Polymarket Gamma Yes 0.68 (bid 0.62 / ask 0.74, liquidity ~$17k) → shaded anchor 0.64. Midpoint 68%. The Binance attacker's XRP overhang still applies. Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
     }
    ],
    "outcome": null,
@@ -3135,6 +2913,321 @@
   }
  ],
  "resolved": [
+  {
+   "id": "d696382907",
+   "question": "Will Bitcoin trade at or below $70,000 on Binance BTC/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Resolved-Yes",
+   "confidence": "Medium",
+   "probLow": 52.0,
+   "probHigh": 82.0,
+   "midpoint": 67.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-13",
+   "created": "2026-10-18",
+   "summary": "Bitcoin fell to about $77k after the Oct 29 Binance hack. This asks whether it drops to $70,000 or lower at any point before year end.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "MSCI Nov 11 list confirms Strategy/Metaplanet deletions (JPMorgan est. ~$2.8B MSTR outflows; weaker equity-issuance window for BTC buying); Fed hikes Dec 9; renewed US/Israel strikes on Iran after Nov 3 with Brent >$110; ETF outflows continue."
+    },
+    {
+     "label": "Toward NO",
+     "text": "Fed pause; Hormuz reopening/oil easing; ETF inflows resume; Democrats' midterm win priced as neutral for crypto."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance BTC/USDT 1-minute candle has a Low ≤ $70,000 from market creation through Dec 31, 2026 23:59 ET; price action before market creation is ignored; only Binance BTC/USDT counts. Otherwise NO. Re-score if BTC closes below $75k or above $90k.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Bitcoin dip to $70,000 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-dip-to-70000-by-december-31-2026-from-august-24",
+    "yesPrice": 47.5,
+    "asOf": "2026-10-30T17:45:00+01:00",
+    "gapPts": 19.5,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket",
+     "date": "December 31, 2026",
+     "note": "rules; Yes 0.475 (bid 0.47 / ask 0.48, liquidity ~$85k) (read Oct 30 2026 ~17:45 Rome)",
+     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-dip-to-70000-by-december-31-2026-from-august-24"
+    },
+    {
+     "publisher": "Binance klines via data-api.binance.vision",
+     "date": "Oct 30 2026",
+     "note": "BTC/USDT ~$77.5k; October low $76,500 (Oct 30); 30d/60d realized vol 29%/35%",
+     "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=61"
+    },
+    {
+     "publisher": "TRM Labs",
+     "date": "Oct 29–30 2026",
+     "note": "~$6.36B Binance hack (TraderTraitor); attacker holds >420k ETH, 18,270 BTC, 233M XRP, 970.5k SOL beyond freeze",
+     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      33.0,
+      43.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      33.0,
+      43.0
+     ],
+     "to": [
+      40.0,
+      50.0
+     ],
+     "reason": "BTC fell to ~$77.5k after the Oct 29 Binance hack (Oct 30 low $76,500, the lowest since this row opened), 9.7% above the $70k line with ~62 days left. The zero-drift touch model on 30d/60d realized vol gives 39–49%; the attacker's 18,270 unfrozen BTC is an overhang. Market Yes 0.475 (bid 0.47 / ask 0.48), inside the band. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      40.0,
+      50.0
+     ],
+     "to": [
+      52.0,
+      82.0
+     ],
+     "reason": "(Medium). Rule: market anchor + touch model. BTC/USDT ~$74,021 is 5.7% above $70k; σ90 = 2.14%/day → P(touch) 72.0%. Polymarket Gamma Yes 0.695 (bid 0.69 / ask 0.70, liquidity ~$106k) → shaded anchor 0.65. Midpoint 67% between the two. Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.1089,
+   "resolvedOn": "2026-11-13"
+  },
+  {
+   "id": "2de1662150",
+   "question": "Will Solana trade at or below $80 on Binance SOL/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Resolved-Yes",
+   "confidence": "Low",
+   "probLow": 56.0,
+   "probHigh": 86.0,
+   "midpoint": 71.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-13",
+   "created": "2026-10-18",
+   "summary": "Solana trades near $92 after a weak autumn. This asks whether a weak market drags it down to $80 before year end.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "SOL at its 30-day low (~$104) with SOL ETF outflows; a rough Alpenglow migration on Oct 21 (outage or rollback); hawkish Fed; BTC below $75k."
+    },
+    {
+     "label": "Toward no",
+     "text": "Alpenglow goes live cleanly and 150ms finality draws flow; ETF flows turn positive; BTC above $90k."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance SOL/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $80; earlier price action ignored (low since creation is $94.95). Otherwise NO. Re-score if SOL closes above $125 or below $90.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Solana dip to $80 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24",
+    "yesPrice": 51.0,
+    "asOf": "2026-11-03T09:10:00+01:00",
+    "gapPts": 20.0,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "December 31, 2026",
+     "note": "rules; Yes 0.51 (bid 0.49 / ask 0.53, liquidity ~$16k) (read Nov 3 2026 ~09:10 Rome)",
+     "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24"
+    },
+    {
+     "publisher": "Binance spot API daily klines",
+     "date": "Nov 3 2026",
+     "note": "SOL/USDT ~$92.22; σ90 3.02%/day",
+     "url": "https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1d&limit=91"
+    },
+    {
+     "publisher": "TRM Labs",
+     "date": "Oct 29–30 2026",
+     "note": "~$6.36B Binance hack (TraderTraitor); attacker holds >420k ETH, 18,270 BTC, 233M XRP, 970.5k SOL beyond freeze",
+     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      28.0,
+      38.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      28.0,
+      38.0
+     ],
+     "to": [
+      34.0,
+      44.0
+     ],
+     "reason": "SOL ~$95 (October low $92.34, 7-day −7.5%) is 16% above the $80 line; the zero-drift touch model on 30d/60d realized vol gives 32–44%. Market Yes 0.44 (bid 0.42 / ask 0.46), at the top of the band. 970.5k stolen SOL is still with the Binance attacker. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-03",
+     "from": [
+      34.0,
+      44.0
+     ],
+     "to": [
+      47.0,
+      57.0
+     ],
+     "reason": "Rule: touch model (approved 31 Oct rules). SOL/USDT ~$92.2 on Binance (Nov 3 ~09:15 Rome) is 13.2% above $80 with ~59 days left; σ90 = 3.02%/day gives P(touch) 53.9%. Polymarket Yes 0.51 (bid 0.49 / ask 0.53, liquidity ~$16k). In the 30–60% zone the rules say lean low, so midpoint 52%, half-width 5. Change comes from switching to 90-day vol (the old band used 30d/60d vol), not from the latest price move."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      47.0,
+      57.0
+     ],
+     "to": [
+      56.0,
+      86.0
+     ],
+     "reason": "(Low). Rule: market anchor + touch model. SOL/USDT ~$85.66 is 7.1% above $80; σ90 = 3.11%/day → P(touch) 76.3%. Polymarket Gamma Yes 0.74 (bid 0.72 / ask 0.76, liquidity ~$18k) → shaded anchor 0.69. Midpoint 71%. Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.0841,
+   "resolvedOn": "2026-11-13"
+  },
+  {
+   "id": "6d1d4f12c6",
+   "question": "Will XRP trade at or below $1.00 on Binance XRP/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Resolved-Yes",
+   "confidence": "Low",
+   "probLow": 53.0,
+   "probHigh": 83.0,
+   "midpoint": 68.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-13",
+   "created": "2026-10-18",
+   "summary": "XRP trades near $1.25 after a weak October. This asks whether it falls to $1.00, a level that held as support over the summer.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "XRP at its 30-day low (~$1.29) and −7% on the week; XRP ETFs posting October outflows; 90-day realized vol ~68%; BTC below $75k."
+    },
+    {
+     "label": "Toward no",
+     "text": "XRP held ~$1.00–1.03 in July–August (90-day low $0.99 on CoinGecko); ETF flows recover; risk-on after the Fed."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance XRP/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $1.00; earlier price action ignored (low since creation is $1.2468). Otherwise NO. Re-score if XRP closes above $1.55 or below $1.10.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will XRP dip to $1.00 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-xrp-hit-before-2027/will-xrp-dip-to-1pt00-by-december-31-2026-from-august-24",
+    "yesPrice": 27.0,
+    "asOf": "2026-11-04T08:50:00+01:00",
+    "gapPts": 41.0,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "December 31, 2026",
+     "note": "rules; Yes 0.27 (bid 0.25 / ask 0.29, liquidity ~$23k) (read Nov 4 2026 ~08:50 Rome)",
+     "url": "https://polymarket.com/event/what-price-will-xrp-hit-before-2027/will-xrp-dip-to-1pt00-by-december-31-2026-from-august-24"
+    },
+    {
+     "publisher": "Binance spot API daily klines",
+     "date": "Nov 4 2026",
+     "note": "XRP/USDT ~$1.2756; σ90 3.60%/day",
+     "url": "https://api.binance.com/api/v3/klines?symbol=XRPUSDT&interval=1d&limit=91"
+    },
+    {
+     "publisher": "TRM Labs",
+     "date": "Oct 29–30 2026",
+     "note": "~$6.36B Binance hack (TraderTraitor); attacker holds >420k ETH, 18,270 BTC, 233M XRP, 970.5k SOL beyond freeze",
+     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      36.0,
+      46.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      36.0,
+      46.0
+     ],
+     "to": [
+      30.0,
+      40.0
+     ],
+     "reason": "XRP ~$1.25 (October low $1.20) is 20% above the $1.00 line; the zero-drift touch model on 30d/60d realized vol gives 23–37%. Upside risk to the band: the Binance attacker still holds 233M XRP, unmoved. Market Yes 0.37 (bid 0.34 / ask 0.40). [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-03",
+     "from": [
+      30.0,
+      40.0
+     ],
+     "to": [
+      36.0,
+      46.0
+     ],
+     "reason": "Rule: touch model (approved 31 Oct rules). XRP/USDT ~$1.255 on Binance (Nov 3 ~09:15 Rome) is 20.3% above $1.00 with ~59 days left; σ90 = 3.63%/day gives P(touch) 41.5%. Polymarket Yes 0.355 (bid 0.33 / ask 0.38, liquidity ~$10k). In the 30–60% zone the rules say lean low, so midpoint 41%, half-width 5. The Binance attacker's 233M XRP overhang still applies."
+    },
+    {
+     "date": "2026-11-04",
+     "from": [
+      36.0,
+      46.0
+     ],
+     "to": [
+      29.0,
+      39.0
+     ],
+     "reason": "Rule: market anchor cross-checked with touch model. Polymarket Gamma Yes 0.27 (bid 0.25 / ask 0.29, liquidity ~$23k, now liquid) read Nov 4 ~08:50 Rome; shaded anchor logit(q)=0.75·logit(0.27) = 0.32. Touch model: XRP/USDT ~$1.2756 on Binance, 21.6% above $1.00 with ~57.9 days left, σ90 = 3.60%/day → P(touch) 37.4%; in the 30–60% zone the rules say lean low (~34%). Midpoint 34%, half-width 5. Correction, not momentum: on Nov 3 the midpoint was set equal to the model (41%) without the lean-low adjustment and sat ~8.5 pts above the shaded market anchor, beyond the ~6-pt limit; the price itself moved only +1.7%. The Binance attacker's 233M XRP overhang still applies. Stale After 2026-11-11 (MSCI list)."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      29.0,
+      39.0
+     ],
+     "to": [
+      53.0,
+      83.0
+     ],
+     "reason": "(Low). Rule: market anchor + touch model. XRP/USDT ~$1.0871 is 8.7% above $1.00; σ90 = 3.74%/day → P(touch) 75.9%. Polymarket Gamma Yes 0.68 (bid 0.62 / ask 0.74, liquidity ~$17k) → shaded anchor 0.64. Midpoint 68%. The Binance attacker's XRP overhang still applies. Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.1024,
+   "resolvedOn": "2026-11-13"
+  },
   {
    "id": "d090868e05",
    "question": "Will MSCI remove Strategy (MSTR) from the MSCI World or MSCI USA Index by Dec 31, 2026?",

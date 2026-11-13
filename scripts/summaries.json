@@ -48,5 +48,6 @@
   "62a4892693": "Tracks whether Washington and Tehran both formally accept a deal that reopens or eases shipping through the Strait of Hormuz before the end of November. Diplomacy picked up on Nov 2–3 even as limited US strikes continued, so the forecast sits near 30%.",
   "1351421332": "Asks whether Paraguay's president Santiago Peña leaves office by 30 November 2026. It resolved Yes after the Senate removed him on 6 November and the vice-president took over.",
   "ee63032d2a": "Nvidia's board opened an independent investigation after reports that CEO Jensen Huang was targeted by a suspected Chinese intelligence asset. This tracks whether his resignation or removal as CEO is officially announced before the end of 2026.",
-  "f464f0a00b": "After a hotter-than-expected October CPI, Fed Governor Waller said a half-point hike should be considered in December. This tracks whether the Fed actually raises rates by 50bp or more on Dec 9, rather than the expected quarter point."
+  "f464f0a00b": "After a hotter-than-expected October CPI, Fed Governor Waller said a half-point hike should be considered in December. This tracks whether the Fed actually raises rates by 50bp or more on Dec 9, rather than the expected quarter point.",
+  "395f69b286": "After Bitcoin's November 13 liquidation-driven slide below $70,000, this tracks whether the selloff extends to $60,000 on Binance before year-end. The barrier has not been touched since July; ETF outflows and Fed hike expectations are the main pressure."
 }
