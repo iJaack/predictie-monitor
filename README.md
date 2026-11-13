@@ -5,8 +5,8 @@ https://predictie.jaack.me. No build step: `index.html` + `assets/` + `data/pred
 
 ## Design
 
-The canonical source is **iJaack/jaack-design v2.0.0**, commit
-`008ab6f2f0a30091543db16ac70f02cab041338e`, vendored unchanged in `vendor/jaack/`.
+The canonical source is **iJaack/jaack-design v2.1.0**, commit
+`1df06388224c77dcef92145252f0f3c27d8e4fd7`, vendored unchanged in `vendor/jaack/`.
 `SOURCE` records the release; `MANIFEST.txt` covers every distributed file,
 including the unused fonts. Verify with
 `(cd vendor/jaack && shasum -a 256 -c MANIFEST.txt)`; there is no local build step.
@@ -51,8 +51,28 @@ python3 -m unittest discover -s tests -p '*_test.py' && node --check assets/app.
 
 Python tests use only the standard library; JavaScript tests use Node built-ins.
 They check the site palette, contrast, clearance wiring, vendor file set and
-hashes, menu interactions, and English theme labels including late mounts.
+hashes, menu interactions, English theme labels including late mounts, and headline
+number changes (first paint, counts/fades, interruption, reduced motion and widths).
+They also guard against chart entry animation and deprecated easing aliases in
+repo-owned assets. The existing menu transition stays outside the figure rules.
 The palette fixture and contrast checker live in `tests/forma-v2/`.
+
+For a number-change review capture, run in the browser console after loading:
+
+```js
+window.__predictieMotion.setFigure("#nActive", "12", { unit: "active" });
+window.__predictieMotion.setFigure("#nActive", "28", { unit: "active" });
+```
+
+`setFigure(selectorOrElement, formattedNumber, options)` defaults to the `integer`
+family. Pass `family: "percent"`, `"pts"`, or `"brier"` for those formatters;
+for example `setFigure("#nGap", "−3.5", { family: "pts", unit: "pts", mark: "neg" })`
+on `window.__predictieMotion`. `unit` is plain text in a persistent `.jk-u` span;
+`mark` accepts `"pos"` or `"neg"`. Pass `null` for the non-countable No data state.
+First assignment is instant; subsequent changes use the computed `--jk-dur-2`
+and `--jk-ease-out` tokens, capped at 200ms. Both reduced-motion controls make
+changes instant. Width reservations grow with the longest formatted reading;
+chart bars, card/list values and page sections keep their existing behavior.
 
 ## Refreshing data
 
