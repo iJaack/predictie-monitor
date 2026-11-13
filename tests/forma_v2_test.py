@@ -109,7 +109,7 @@ class FormaV2Test(unittest.TestCase):
             with self.subTest(file=name):
                 self.assertEqual(hashlib.sha256((VENDOR / name).read_bytes()).hexdigest(), digest)
         self.assertEqual((VENDOR / "SOURCE").read_text().strip(),
-                         "iJaack/jaack-design v2.0.0 008ab6f2f0a30091543db16ac70f02cab041338e")
+                         "iJaack/jaack-design v2.1.0 1df06388224c77dcef92145252f0f3c27d8e4fd7")
 
     def test_vendor_uses_warm_forma_tokens(self):
         self.assertIn("--jk-bg:#130e0b", (VENDOR / "tokens.css").read_text())

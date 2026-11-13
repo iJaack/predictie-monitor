@@ -4,10 +4,11 @@ const fs = require('node:fs');
 const vm = require('node:vm');
 const source = fs.readFileSync('assets/menu.js', 'utf8');
 
-function load({ mobile = true, reduced = false } = {}) {
+function load({ mobile = true, reduced = false, duration = '0.14s' } = {}) {
   const classes = new Set();
   const listeners = {};
   const timers = new Map();
+  const delays = [];
   let document;
   function element(attrs = {}) {
     return {
@@ -38,7 +39,14 @@ function load({ mobile = true, reduced = false } = {}) {
       assert.equal(query, '(max-width: 504.98px)');
       return media;
     } },
-    setTimeout(fn, delay) { assert.equal(delay, 160); timers.set(fn, fn); return fn; },
+    getComputedStyle(node) {
+      assert.equal(node, sheet);
+      assert.ok(classes.has('is-menu-closing'), 'measure the closing state');
+      assert.ok(!classes.has('is-menu-open'), 'remove the open state before measuring');
+      assert.ok(!reduced && media.matches, 'reduced motion and desktop skip the fade');
+      return { transitionDuration: duration };
+    },
+    setTimeout(fn, delay) { delays.push(delay); timers.set(fn, fn); return fn; },
     clearTimeout(id) { timers.delete(id); }
   });
   function key(key, shiftKey = false) {
@@ -46,7 +54,7 @@ function load({ mobile = true, reduced = false } = {}) {
     listeners.keydown(event);
     return event;
   }
-  return { document, classes, button, sheet, links, media, key, listeners,
+  return { document, classes, button, sheet, links, media, key, listeners, timers, delays,
     toggle: () => button.listeners.click(), finishFade: () => { timers.forEach(fn => fn()); timers.clear(); } };
 }
 
@@ -58,6 +66,8 @@ test('Menu CSS and JavaScript share the measured breakpoint and disable reduced-
   assert.match(css, /\.pd-menu-toggle\{display:none\}/);
   assert.match(css, /\.jk-top.has-menu \.jk-links\{/);
   assert.match(css, /min-height:44px;padding:0 14px/);
+  assert.match(css, /\.jk-top.has-menu \.jk-links\{[^}]*transition:opacity var\(--jk-dur-2\) var\(--jk-ease-out\);/);
+  assert.match(css, /\.jk-top.has-menu.is-menu-closing \.jk-links\{\s*transition:opacity calc\(var\(--jk-dur-2\) \* 0\.7\) var\(--jk-ease-in\);?\s*\}/);
 });
 
 test('open exposes the sheet, updates expanded state and focuses the first link', () => {
@@ -79,6 +89,7 @@ test('button closes the sheet and returns focus after opening', () => {
   assert.equal(p.sheet.attrs['aria-hidden'], 'true');
   assert.equal(p.document.activeElement, p.button);
   assert.ok(p.classes.has('is-menu-closing'));
+  assert.deepEqual(p.delays, [140]);
   p.finishFade();
   assert.ok(!p.classes.has('is-menu-closing'));
 });
@@ -143,10 +154,28 @@ test('crossing to desktop clears hidden/inert state and returning to mobile stay
 test('reduced motion closes immediately and reopening cancels a pending fade', () => {
   const reduced = load({ reduced: true }); reduced.toggle(); reduced.toggle();
   assert.ok(!reduced.classes.has('is-menu-closing'));
+  assert.equal(reduced.timers.size, 0);
   const p = load(); p.toggle(); p.toggle(); p.toggle(); p.finishFade();
   assert.ok(p.classes.has('is-menu-open'));
   assert.ok(!p.classes.has('is-menu-closing'));
 });
+
+for (const [duration, expected] of [['140ms', 140], ['0.14s', 140], ['245ms', 245], ['0.245s', 245]]) {
+  test(`closing cleanup follows computed duration ${duration}`, () => {
+    const p = load({ duration }); p.toggle(); p.toggle();
+    assert.deepEqual(p.delays, [expected]);
+    assert.ok(p.classes.has('is-menu-closing'));
+    p.finishFade();
+    assert.ok(!p.classes.has('is-menu-closing'));
+  });
+}
+for (const duration of ['0s', '0ms']) {
+  test(`computed duration ${duration} closes without a lingering class or timer`, () => {
+    const p = load({ duration }); p.toggle(); p.toggle();
+    assert.ok(!p.classes.has('is-menu-closing'));
+    assert.equal(p.timers.size, 0);
+  });
+}
 
 test('desktop startup leaves bar links available and ignores the hidden Menu button', () => {
   const p = load({ mobile: false });

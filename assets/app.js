@@ -85,7 +85,6 @@
   };
   const safeUrl = (u) => (/^https?:\/\//i.test(u || "") ? u : "#");
   const dot = (domain) => `<i class="dot mk-${DKEY[domain] || "geo"}" aria-hidden="true"></i>`;
-  const na = () => `<span class="jk-na">No data</span>`;
 
   // "today" as a Rome calendar date (YYYY-MM-DD)
   const romeToday = () => new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
@@ -114,6 +113,131 @@
   const meanOf = (list) => (list.length ? list.reduce((s, p) => s + (+p.midpoint || 0), 0) / list.length : null);
   const reduced = () => document.documentElement.classList.contains("jk-rm") || matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  // Only chapter figures opt in. Units/marks are persistent siblings of the text.
+  const figures = new WeakMap();
+  const movingFigures = new Set();
+  const figureFormats = {
+    integer: { pattern: /^-?\d+$/, format: (n) => String(Math.round(n)) },
+    percent: { pattern: /^-?\d+(?:\.\d+)?%$/, format: fmtP },
+    pts: { pattern: /^[+−-]?\d+(?:\.\d+)?$/, format: fmtPts },
+    brier: { pattern: /^\d+\.\d{3}$/, format: (n) => n.toFixed(3) }
+  };
+  function figureNumber(text, family) {
+    return figureFormats[family]?.pattern.test(text) ? Number(text.replace("%", "").replace("−", "-")) : NaN;
+  }
+
+  // Evaluate the computed cubic-bezier token, including its x/time coordinates.
+  function figureEase(token) {
+    const points = token.match(/^cubic-bezier\(([^)]+)\)$/)?.[1].split(",").map(Number);
+    if (!points || points.length !== 4 || !points.every(Number.isFinite)) return null;
+    const [x1, y1, x2, y2] = points;
+    const at = (t, a, b) => 3 * (1 - t) ** 2 * t * a + 3 * (1 - t) * t ** 2 * b + t ** 3;
+    return (progress) => {
+      let lo = 0, hi = 1;
+      for (let i = 0; i < 24; i++) {
+        const t = (lo + hi) / 2;
+        if (at(t, x1, x2) < progress) lo = t; else hi = t;
+      }
+      return Math.max(0, Math.min(1, at((lo + hi) / 2, y1, y2)));
+    };
+  }
+
+  let watchingFigureMotion = false;
+  function watchFigureMotion() {
+    if (watchingFigureMotion) return;
+    watchingFigureMotion = true;
+    const finishReduced = () => {
+      if (reduced()) movingFigures.forEach((figure) => figure.finish());
+    };
+    matchMedia("(prefers-reduced-motion: reduce)").addEventListener("change", finishReduced);
+    new MutationObserver(finishReduced).observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+  }
+
+  // setFigure("#nActive", "12", { family: "integer", unit: "active" });
+  // Null is the non-countable No data state; other text is always inserted safely.
+  function setFigure(target, formatted, { family = "integer", unit = "", mark = "" } = {}) {
+    const host = typeof target === "string" ? $(target) : target;
+    if (!host) return;
+    watchFigureMotion();
+    const text = formatted == null ? "No data" : String(formatted);
+    mark = mark === "pos" || mark === "neg" ? mark : "";
+    let figure = figures.get(host);
+    const first = !figure;
+    if (!figure) {
+      const number = document.createElement("span");
+      const label = document.createElement("span");
+      number.appendChild(label);
+      number.style.display = "inline-block";
+      number.style.fontVariantNumeric = "tabular-nums";
+      host.replaceChildren(number);
+      figure = { number, label, width: 0, frame: 0 };
+      figures.set(host, figure);
+    }
+    if (reduced() && figure.frame) figure.finish();
+    if (!first && figure.text === text && figure.family === family && figure.unitText === unit && figure.markText === mark) return;
+    const from = figureNumber(figure.number.textContent, figure.family);
+    const to = figureNumber(text, family);
+    const countable = Number.isFinite(from) && Number.isFinite(to) && Number.isFinite(to - from) && figure.family === family;
+    if (figure.frame) cancelAnimationFrame(figure.frame);
+    movingFigures.delete(figure);
+    figure.frame = 0;
+    figure.text = text;
+    figure.family = family;
+    figure.unitText = unit;
+    figure.markText = mark;
+    // Whole-number endpoints may still produce fractional percent/point frames.
+    const step = Math.sign(to - from) / 10;
+    const betweenWidth = countable && step && (family === "percent" || family === "pts")
+      ? Math.max(figureFormats[family].format(from + step).length, figureFormats[family].format(to - step).length) : 0;
+    figure.width = Math.max(figure.width, Number.isFinite(to) ? text.length : 0, betweenWidth);
+    figure.number.style.minWidth = figure.width + "ch";
+    figure.label.className = Number.isFinite(to) ? "" : "jk-na";
+    if (unit && !figure.unit) {
+      figure.unit = document.createElement("span");
+      figure.unit.className = "jk-u";
+      host.appendChild(figure.unit);
+    }
+    if (figure.unit) {
+      figure.unit.textContent = unit;
+      figure.unit.style.display = unit ? "" : "none";
+    }
+    if (mark && !figure.mark) {
+      figure.mark = document.createElement("i");
+      figure.mark.setAttribute("aria-hidden", "true");
+      host.insertBefore(figure.mark, figure.number);
+    }
+    if (figure.mark) {
+      figure.mark.className = "jk-mark" + (mark ? " " + mark : "");
+      figure.mark.style.display = mark ? "" : "none";
+    }
+    figure.finish = () => {
+      if (figure.frame) cancelAnimationFrame(figure.frame);
+      figure.frame = 0;
+      movingFigures.delete(figure);
+      figure.label.textContent = text;
+      figure.number.style.opacity = "1";
+    };
+    if (first || reduced()) { figure.finish(); return; }
+    const tokens = getComputedStyle(host);
+    const durationToken = tokens.getPropertyValue("--jk-dur-2").trim();
+    const duration = Math.min(200, parseFloat(durationToken) * (durationToken.endsWith("ms") ? 1 : 1000));
+    const ease = figureEase(tokens.getPropertyValue("--jk-ease-out").trim());
+    if (!(duration > 0) || !ease) { figure.finish(); return; }
+    if (!countable) figure.label.textContent = text;
+    figure.number.style.opacity = countable ? "1" : "0";
+    const start = performance.now();
+    const tick = (now) => {
+      if (reduced() || now - start >= duration) { figure.finish(); return; }
+      const progress = ease(Math.max(0, (now - start) / duration));
+      if (countable) figure.label.textContent = figureFormats[family].format(from + (to - from) * progress);
+      else figure.number.style.opacity = String(progress);
+      figure.frame = requestAnimationFrame(tick);
+    };
+    movingFigures.add(figure);
+    figure.frame = requestAnimationFrame(tick);
+  }
+  window.__predictieMotion = { setFigure };
+
   function paintChrome() {
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.setAttribute("content", document.documentElement.dataset.theme === "dark" ? "#130e0b" : "#f2f3f1");
@@ -132,9 +256,9 @@
     const soon = P.filter((p) => { const d = dayDiff(p.horizon); return d != null && d >= 0 && d <= 14; })
       .sort((a, b) => (a.horizon < b.horizon ? -1 : 1));
     const mean = meanOf(P);
-    $("#nActive").innerHTML = `${P.length}<span class="jk-u">active</span>`;
+    setFigure("#nActive", String(P.length), { unit: "active" });
     $("#cmpActive").innerHTML = `updated <b>${esc(fmtStamp(DATA.generatedAt))}</b> · <b>${DATA.counts.resolved || 0}</b> resolved${mean != null ? ` · mean midpoint <b>${fmtP(mean)}</b>` : ""} · ${due ? `<b>${due}</b> due for review` : "none due for review"}`;
-    $("#nSoon").innerHTML = `${soon.length}<span class="jk-u">soon</span>`;
+    setFigure("#nSoon", String(soon.length), { unit: "soon" });
     $("#cmpSoon").innerHTML = soon[0]
       ? `next <b>${esc(fmtShort(soon[0].horizon))}</b> · ${esc(countdown(soon[0].horizon))}`
       : "none in the next 14 days";
@@ -283,37 +407,37 @@
     const widest = gaps.filter((p) => Math.abs(p.market.gapPts) === maxAbs);
     const gap = widest[0] ? widest[0].market.gapPts : null;
 
-    $("#nLinked").innerHTML = `${mk.length}<span class="jk-u">linked</span>`;
+    setFigure("#nLinked", String(mk.length), { unit: "linked" });
     $("#cmpLinked").innerHTML = `of <b>${P.length}</b> active forecasts`;
     if (gap == null) {
-      $("#nGap").innerHTML = na();
+      setFigure("#nGap", null, { family: "pts" });
       $("#cmpGap").textContent = "no linked market in the book";
     } else {
       const dir = gap > 0 ? "above the market" : gap < 0 ? "below the market" : "level with the market";
       const mark = gap > 0 ? "pos" : gap < 0 ? "neg" : "";
-      $("#nGap").innerHTML = `${mark ? `<i class="jk-mark ${mark}" aria-hidden="true"></i>` : ""}${esc(fmtPts(gap))}<span class="jk-u">pts</span>`;
+      setFigure("#nGap", fmtPts(gap), { family: "pts", unit: "pts", mark });
       $("#cmpGap").innerHTML = `${dir} · <b>${widest.length}</b> ${widest.length === 1 ? "forecast" : "forecasts"} at this gap`;
     }
 
-    $("#stDue").innerHTML = String(due);
+    setFigure("#stDue", String(due));
     $("#stDueCmp").textContent = due ? `${due} past the review date` : "all inside the review window";
-    $("#stHigh").innerHTML = `${high}<span class="jk-u">high</span>`;
+    setFigure("#stHigh", String(high), { unit: "high" });
     $("#stHighCmp").innerHTML = `<b>${med}</b> medium · <b>${low}</b> low`;
     if (mean == null) {
-      $("#stMean").innerHTML = na();
+      setFigure("#stMean", null, { family: "percent" });
       $("#stMeanCmp").textContent = "";
     } else {
-      $("#stMean").innerHTML = fmtP(mean);
+      setFigure("#stMean", fmtP(mean), { family: "percent" });
       $("#stMeanCmp").innerHTML = `across <b>${P.length}</b> open forecasts`;
     }
     const R = DATA.resolved || [];
     const scored = R.filter((r) => r.brier != null);
     if (!scored.length) {
-      $("#stBrier").innerHTML = na();
+      setFigure("#stBrier", null, { family: "brier" });
       $("#stBrierCmp").textContent = R.length ? "resolved, not scored yet" : "nothing scored yet";
     } else {
       const brier = scored.reduce((s, r) => s + Number(r.brier), 0) / scored.length;
-      $("#stBrier").innerHTML = `${brier.toFixed(3)}<span class="jk-u">Brier</span>`;
+      setFigure("#stBrier", brier.toFixed(3), { family: "brier", unit: "Brier" });
       $("#stBrierCmp").innerHTML = `<b>${scored.length}</b> scored · coin flip <b>0.25</b>`;
     }
   }
@@ -442,13 +566,13 @@
     if (state.domain !== "All") bits.push(state.domain);
     if (state.conf !== "All") bits.push(state.conf + " confidence");
     if (state.q.trim()) bits.push("matching “" + state.q.trim() + "”");
-    $("#nOpen").textContent = String(list.length);
+    setFigure("#nOpen", String(list.length));
     $("#cmpOpen").innerHTML = `of <b>${total}</b> active${bits.length ? " · " + esc(bits.join(" · ")) : ""}`;
     if (mean == null) {
-      $("#nOpenMean").innerHTML = na();
+      setFigure("#nOpenMean", null, { family: "percent" });
       $("#cmpOpenMean").textContent = "no forecasts in view";
     } else {
-      $("#nOpenMean").innerHTML = fmtP(mean);
+      setFigure("#nOpenMean", fmtP(mean), { family: "percent" });
       $("#cmpOpenMean").innerHTML = `across the <b>${list.length}</b> ${list.length === 1 ? "forecast" : "forecasts"} in view`;
     }
     $("#grid").innerHTML = list.length
@@ -461,7 +585,7 @@
     const scored = R.filter((r) => r.brier != null);
     if (!R.length) {
       $("#brierLab").textContent = "Brier score";
-      $("#nBrier").innerHTML = na();
+      setFigure("#nBrier", null, { family: "brier" });
       const n = DATA.predictions[0];
       $("#cmpBrier").innerHTML = n ? `Nothing has resolved yet. The first is due around <b>${esc(fmtDate(n.horizon))}</b>.` : "Nothing has resolved yet.";
       $("#resolvedMeta").textContent = "Resolved forecasts";
@@ -471,11 +595,11 @@
     const mean = scored.length ? scored.reduce((s, r) => s + Number(r.brier), 0) / scored.length : null;
     $("#brierLab").textContent = scored.length > 1 ? "Mean Brier" : "Brier score";
     if (mean == null) {
-      $("#nBrier").innerHTML = na();
+      setFigure("#nBrier", null, { family: "brier" });
       $("#cmpBrier").textContent = `${R.length} resolved, not scored yet`;
     } else {
       const latest = R.slice().sort((a, b) => (b.resolvedOn || "").localeCompare(a.resolvedOn || ""))[0];
-      $("#nBrier").innerHTML = `${mean.toFixed(3)}<span class="jk-u">Brier</span>`;
+      setFigure("#nBrier", mean.toFixed(3), { family: "brier", unit: "Brier" });
       $("#cmpBrier").innerHTML = `<b>${scored.length}</b> scored · coin flip is <b>0.25</b>${latest && latest.outcome ? ` · latest <b>${esc(latest.outcome)}</b>` : ""}`;
     }
     $("#resolvedMeta").textContent = `${R.length} resolved${mean != null ? ` · mean Brier ${mean.toFixed(3)}` : ""}`;
