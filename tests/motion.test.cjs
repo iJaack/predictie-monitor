@@ -290,6 +290,34 @@ function ownedAssets(dir) {
     return entry.isDirectory() ? ownedAssets(name) : /\.(css|js)$/.test(entry.name) ? [name] : [];
   });
 }
+function assertNoLiteralDurations(css, name) {
+  // Ignore comments and quoted content before inspecting declaration values.
+  const declarations = css.replace(/\/\*[\s\S]*?\*\/|"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'/g, '');
+  for (const [, value] of declarations.matchAll(/(?:^|[;{}])\s*[\w-]+\s*:\s*([^;{}]+)/g)) {
+    assert.doesNotMatch(value, /(?<![\w.-])[+-]?(?:\d*\.)?\d+(?:e[+-]?\d+)?m?s\b/i,
+      `${name} must use motion tokens instead of literal durations`);
+  }
+}
+test('all repo-owned CSS assets use tokens for durations', () => {
+  const stylesheets = ownedAssets('assets').filter(name => name.endsWith('.css'));
+  assert.ok(stylesheets.includes(path.join('assets', 'jaack-local.css')));
+  stylesheets.forEach(name => assertNoLiteralDurations(fs.readFileSync(name, 'utf8'), name));
+});
+test('literal-duration guard rejects time declarations and accepts tokens, dimensions and comments', () => {
+  for (const declaration of [
+    'transition: opacity 160ms;', 'transition: opacity 0.14s;',
+    'transition-duration: .2s;', 'transition-delay: 40ms;',
+    'animation: fade 1s ease;', 'animation-duration: 2S;', '--local-duration: 200ms;'
+  ]) {
+    assert.throws(() => assertNoLiteralDurations(`.sheet { ${declaration} }`, 'fixture'), assert.AssertionError);
+  }
+  assertNoLiteralDurations(`
+    /* transition: opacity 160ms; */
+    .sheet { min-height:44px; padding:0 14px; content:"transition: opacity 160ms;";
+      transition:opacity var(--jk-dur-2) var(--jk-ease-out); }
+    .closing { transition:opacity calc(var(--jk-dur-2) * 0.7) var(--jk-ease-in); }
+  `, 'fixture');
+});
 test('all repo-owned CSS/JS assets avoid deprecated curves; fixtures prove the guard rejects both aliases', () => {
   const assets = ownedAssets('assets'); assert.ok(assets.length > 0);
   assets.forEach(name => assertNoDeprecatedCurves(fs.readFileSync(name, 'utf8'), name));
