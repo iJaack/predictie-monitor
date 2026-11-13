@@ -1,16 +1,15 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-13T08:50:31+01:00",
+ "generatedAt": "2026-11-13T08:55:00+01:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 33,
-  "resolved": 18,
+  "active": 32,
+  "resolved": 19,
   "byDomain": {
    "Geopolitics": 6,
    "AI": 3,
    "Crypto": 19,
-   "Macro": 4,
-   "Enterprise": 1
+   "Macro": 4
   }
  },
  "predictions": [
@@ -406,22 +405,22 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 3.0,
-   "probHigh": 27.0,
-   "midpoint": 15.0,
+   "probLow": 1.0,
+   "probHigh": 17.0,
+   "midpoint": 9.0,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-16",
-   "lastReviewed": "2026-11-11",
+   "staleAfter": "2026-11-18",
+   "lastReviewed": "2026-11-13",
    "created": "2026-11-03",
-   "summary": "Tracks whether Washington and Tehran both formally accept a deal that reopens or eases shipping through the Strait of Hormuz before the end of November. Diplomacy picked up on Nov 2–3 even as limited US strikes continued, so the forecast sits near 30%.",
+   "summary": "Tracks whether Washington and Tehran both formally accept a deal that reopens or eases shipping through the Strait of Hormuz before the end of November. On Nov 12 Trump said the US does not need a deal with Iran and shut down Vice President Vance's talks.",
    "triggers": [
     {
      "label": "Toward YES",
-     "text": "the US lifts or pauses the naval blockade of Iranian ports; Iran's 'condensed' two-day Hormuz reopening plan is accepted or put into a signed framework; Qatar/Doha-mediated talks produce a joint statement; a senior US–Iran meeting (Vance, Witkoff or Rubio with Araghchi or Ghalibaf) is scheduled; Trump repeats that Iran 'wants a settlement' after the midterms; Hormuz ship transits recover."
+     "text": "a walk-back of Trump's Nov 12 'we don't need a deal' post, or Vance/Rubio being re-authorized to negotiate; the US lifts or pauses the naval blockade of Iranian ports; Qatar/Doha-mediated talks produce a joint statement; a senior US–Iran meeting (Vance, Witkoff or Rubio with Araghchi or Ghalibaf) is scheduled; Hormuz ship transits recover."
     },
     {
      "label": "Toward NO",
-     "text": "renewed or wider US/Israeli strikes after the Nov 3 vote (AP: Netanyahu pressing for a new wave); more 'defensive' tit-for-tat strikes like Qeshm (Nov 2); IRGC attacks on tankers, mines or US aircraft; Tehran insisting the blockade must end first while Washington wants nuclear terms bundled; one side announcing a deal the other denies."
+     "text": "Trump repeating that the US does not need a deal and has 'their Strait'; Vance talks remaining shut; renewed or wider US/Israeli strikes; IRGC attacks on tankers, mines or US aircraft; Tehran insisting the blockade must end first while Washington wants nuclear terms bundled; one side announcing a deal the other denies."
     }
    ],
    "resolution": "Per Polymarket rules: resolves YES if a diplomatic agreement between the United States and Iran over traffic in the Strait of Hormuz is announced by Nov 30, 2026, 11:59 PM ET, and both countries announce acceptance of the same agreement (joint or separate declarative statements). The agreement must set Iranian policies, obligations or commitments aimed at permitting, restoring or increasing shipping through the strait. Statements about ongoing or prospective talks do not count. If acceptance is ambiguous, the market can stay open up to 14 days for confirmation. Thesis invalidated if the US resumes major combat operations against Iran, or if talks are publicly suspended by either side.",
@@ -429,35 +428,35 @@
     "venue": "Polymarket",
     "name": "US-Iran Hormuz Agreement by November 30?",
     "url": "https://polymarket.com/event/us-iran-hormuz-agreement-by-november-30",
-    "yesPrice": 13.5,
-    "asOf": "2026-11-09T08:50:00+01:00",
-    "gapPts": 1.5,
+    "yesPrice": 8.5,
+    "asOf": "2026-11-13T08:52:00+01:00",
+    "gapPts": 0.5,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 9 2026",
-     "note": "'US-Iran Hormuz Agreement by November 30?' Yes 0.135 (bid 0.13 / ask 0.14, liquidity ~$100k)",
+     "date": "Nov 13 2026",
+     "note": "'US-Iran Hormuz Agreement by November 30?' Yes 0.085 (bid 0.08 / ask 0.09, liquidity ~$138k, volume ~$909k), active, ends Dec 1 04:59 UTC",
      "url": "https://polymarket.com/event/us-iran-hormuz-agreement-by-november-30"
     },
     {
-     "publisher": "Iran International",
-     "date": "Nov 8 2026",
-     "note": "Rubio: Iran's demands 'outrageous and ridiculous', talks unproductive; Araghchi says mediators inactive since midterms; Trump gave Vance 'a few days' (JPost)",
-     "url": "https://www.iranintl.com/en/202611084536"
+     "publisher": "CNBC",
+     "date": "Nov 12 2026",
+     "note": "Trump posts \"We don't need a deal with Iran. Those days have long since passed\" and \"we've got their Strait!\", and directs Vance away from Iran talks",
+     "url": "https://www.cnbc.com/2026/11/12/trump-iran-deal-hormuz-strait.html"
     },
     {
-     "publisher": "Reuters",
-     "date": "Nov 8 2026",
-     "note": "Trump says new strikes 'highly unlikely' if talks progress; ships hit in/near Hormuz; Rubio sees no imminent breakthrough",
-     "url": "https://www.reuters.com/3fec1b0a85a0/world/middle-east/iran-suggests-blasts-are-not-us-attacks-both-sides-report-ships-hit-2026-11-08/"
+     "publisher": "The Washington Post",
+     "date": "Nov 12 2026",
+     "note": "Trump closes down Vance's Iran negotiations, preferring to leave the naval blockade in place",
+     "url": "https://www.washingtonpost.com/politics/2026/11/12/trump-shuts-down-vance-iran-negotiating-efforts-says-no-deal-needed/"
     },
     {
-     "publisher": "The Guardian",
-     "date": "Nov 7 2026",
-     "note": "Qatari plan: Hormuz could reopen in exchange for IAEA inspections; US would lift blockade and release part of frozen assets",
-     "url": "https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections"
+     "publisher": "NBC News",
+     "date": "Nov 12 2026",
+     "note": "same Truth Social post; contrasts it with Trump's pre-election claim that Iran wanted a settlement as soon as possible",
+     "url": "https://www.nbcnews.com/politics/donald-trump/us-doesnt-need-peace-deal-iran-vance-corruption-trump-rcna609027"
     }
    ],
    "history": [
@@ -493,6 +492,18 @@
       27.0
      ],
      "reason": "NEW INFORMATION: on Nov 8 Rubio said talks 'haven't been very productive' because Iran's demands are 'outrageous and ridiculous' and he sees no breakthrough; Araghchi says mediators have been inactive since the midterms and need more time; Iran links further talks to sanctions relief, frozen assets and reparations while the US wants nuclear terms first (Iran International, Nov 8). Trump told CNN new strikes are 'highly unlikely' only if Iran signs a strong deal, and reportedly gave Vance 'a few days' to reach one; more tanker incidents in/near Hormuz (Reuters, Nov 8). Rule: market anchor. Polymarket Gamma Yes 0.135 (bid 0.13 / ask 0.14, liquidity ~$100k), below the 0.15 edge so used near as-is (~0.14); midpoint 15%. Half-width 12, capped near 0. Stale After stays 2026-11-13."
+    },
+    {
+     "date": "2026-11-13",
+     "from": [
+      3.0,
+      27.0
+     ],
+     "to": [
+      1.0,
+      17.0
+     ],
+     "reason": "NEW INFORMATION: on 12 Nov Trump posted \"We don't need a deal with Iran. Those days have long since passed. We've got their money, Hundreds of Billions of Dollars, and we've got their Strait!\" and directed Vice President Vance to stop Iran negotiations and focus on domestic crime and corruption (CNBC, Washington Post, NBC, 12 Nov). Rule: market anchor. Polymarket Gamma Yes 0.085 (bid 0.08 / ask 0.09, liquidity ~$138k, volume ~$909k) read Nov 13 ~08:52 Rome; market verified live (active, accepting orders, not closed, ends Dec 1 04:59 UTC = Nov 30 11:59 PM ET) and its rules still match this row; conditionId checked against Gamma. Price is below the 0.15 edge, so used as-is; midpoint 9%. Horizon ~17 days (~2.5 weeks); half-width would be ~12, but that would breach 0, so the band is 1–17 to stay centred on 9%. Midpoint is ~0.5 pts above the raw 8.5% mid (inside the 6-pt cap). The market has already moved about 5 pts since the 11 Nov review (then Yes 0.135); no extra downward judgment applied on top of the priced news. Stale After → 2026-11-18."
     }
    ],
    "outcome": null,
@@ -2141,81 +2152,6 @@
    "resolvedOn": null
   },
   {
-   "id": "ee63032d2a",
-   "question": "Will Jensen Huang's resignation or removal as NVIDIA CEO be officially announced by Dec 31, 2026?",
-   "domain": "Enterprise",
-   "status": "Active",
-   "confidence": "Low",
-   "probLow": 1.0,
-   "probHigh": 27.0,
-   "midpoint": 14.0,
-   "horizon": "2026-12-31",
-   "staleAfter": "2026-11-16",
-   "lastReviewed": "2026-11-09",
-   "created": "2026-11-09",
-   "summary": "Nvidia's board opened an independent investigation after reports that CEO Jensen Huang was targeted by a suspected Chinese intelligence asset. This tracks whether his resignation or removal as CEO is officially announced before the end of 2026.",
-   "triggers": [
-    {
-     "label": "Toward YES",
-     "text": "the board committee's findings say national security or company information was compromised, or that Huang misled the board; US officials (DOJ/FBI, House or Senate committees) publicly allege wrongdoing or open a formal probe of Huang; a major institutional holder or proxy adviser calls for him to step aside; further reporting ties Megaspeed's chip diversion to Huang personally; an interim CEO or 'transition' language appears."
-    },
-    {
-     "label": "Toward NO",
-     "text": "the board's 'confidence in Jensen' line is repeated after the review; the investigation closes or reports no compromise; House Republican briefings end without escalation; Huang keeps leading earnings (late Nov) and keynotes; a temporary leave or reduced duties (which does not count) is used instead of departure."
-    }
-   ],
-   "resolution": "Per Polymarket rules: YES if Huang, NVIDIA or their authorized representatives publicly and definitively announce by Dec 31, 2026 11:59 PM ET that Huang has resigned or been removed, or will resign or be removed, as NVIDIA CEO (effective within 18 months; includes stepping down to another NVIDIA role). Temporary leaves, suspensions, reduced duties, conditional statements, pending resignation offers and media reports of plans do not count. If he leaves the post by other means (e.g. death or incapacity) it resolves NO. Thesis invalidated if the board publishes findings clearing Huang before mid-December (move toward low single digits) or if US authorities charge anyone at NVIDIA (re-anchor).",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Jensen Huang announced resignation or removal by December 31?",
-    "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-by-december-31",
-    "yesPrice": 15.5,
-    "asOf": "2026-11-09T09:00:00+01:00",
-    "gapPts": -1.5,
-    "insideBand": true
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "Nov 9 2026",
-     "note": "'Jensen Huang announced resignation or removal by December 31?' Yes 0.155 (bid 0.15 / ask 0.16, liquidity ~$25k, volume ~$142k), created Nov 8, ends Jan 1 04:59 UTC",
-     "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-by-december-31"
-    },
-    {
-     "publisher": "NVIDIA Newsroom",
-     "date": "Nov 8 2026",
-     "note": "Statement from NVIDIA Board: independent investigation by a committee of independent directors with outside counsel; no reason to believe national security or NVIDIA secrets were compromised; the Board 'has confidence in Jensen'",
-     "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
-    },
-    {
-     "publisher": "Reuters",
-     "date": "Nov 9 2026",
-     "note": "Explainer: what we know about Nvidia's probe into CEO Jensen Huang; Megaspeed link, House Republicans sought briefings",
-     "url": "https://www.streetinsider.com/Reuters/Explainer-What+we+know+about+Nvidias+probe+into+CEO+Jensen+Huang/27309700.html"
-    },
-    {
-     "publisher": "CoinDesk",
-     "date": "Nov 9 2026",
-     "note": "Bitcoin drops then pops on the Nvidia scandal and stalled Iran talks; >$1B liquidations; tokenized NVDA down ~3.5% before Monday's open",
-     "url": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-11-09",
-     "from": null,
-     "to": [
-      1.0,
-      27.0
-     ],
-     "reason": "Forecast opened."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
-  {
    "id": "fed4649e42",
    "question": "Will Mojtaba Khamenei cease to be Iran's de facto leader by Dec 31, 2026?",
    "domain": "Geopolitics",
@@ -3007,111 +2943,6 @@
    "resolvedOn": "2026-11-13"
   },
   {
-   "id": "2de1662150",
-   "question": "Will Solana trade at or below $80 on Binance SOL/USDT (any 1-minute low) by Dec 31, 2026?",
-   "domain": "Crypto",
-   "status": "Resolved-Yes",
-   "confidence": "Low",
-   "probLow": 56.0,
-   "probHigh": 86.0,
-   "midpoint": 71.0,
-   "horizon": "2026-12-31",
-   "staleAfter": "2026-11-16",
-   "lastReviewed": "2026-11-13",
-   "created": "2026-10-18",
-   "summary": "Solana trades near $92 after a weak autumn. This asks whether a weak market drags it down to $80 before year end.",
-   "triggers": [
-    {
-     "label": "Toward yes",
-     "text": "SOL at its 30-day low (~$104) with SOL ETF outflows; a rough Alpenglow migration on Oct 21 (outage or rollback); hawkish Fed; BTC below $75k."
-    },
-    {
-     "label": "Toward no",
-     "text": "Alpenglow goes live cleanly and 150ms finality draws flow; ETF flows turn positive; BTC above $90k."
-    }
-   ],
-   "resolution": "Per Polymarket rules: resolves YES if any Binance SOL/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $80; earlier price action ignored (low since creation is $94.95). Otherwise NO. Re-score if SOL closes above $125 or below $90.",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Will Solana dip to $80 by December 31, 2026?",
-    "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24",
-    "yesPrice": 51.0,
-    "asOf": "2026-11-03T09:10:00+01:00",
-    "gapPts": 20.0,
-    "insideBand": false
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "December 31, 2026",
-     "note": "rules; Yes 0.51 (bid 0.49 / ask 0.53, liquidity ~$16k) (read Nov 3 2026 ~09:10 Rome)",
-     "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24"
-    },
-    {
-     "publisher": "Binance spot API daily klines",
-     "date": "Nov 3 2026",
-     "note": "SOL/USDT ~$92.22; σ90 3.02%/day",
-     "url": "https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1d&limit=91"
-    },
-    {
-     "publisher": "TRM Labs",
-     "date": "Oct 29–30 2026",
-     "note": "~$6.36B Binance hack (TraderTraitor); attacker holds >420k ETH, 18,270 BTC, 233M XRP, 970.5k SOL beyond freeze",
-     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-18",
-     "from": null,
-     "to": [
-      28.0,
-      38.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-10-30",
-     "from": [
-      28.0,
-      38.0
-     ],
-     "to": [
-      34.0,
-      44.0
-     ],
-     "reason": "SOL ~$95 (October low $92.34, 7-day −7.5%) is 16% above the $80 line; the zero-drift touch model on 30d/60d realized vol gives 32–44%. Market Yes 0.44 (bid 0.42 / ask 0.46), at the top of the band. 970.5k stolen SOL is still with the Binance attacker. [Backfill run: the Oct 28–30 daily reviews did not run.]."
-    },
-    {
-     "date": "2026-11-03",
-     "from": [
-      34.0,
-      44.0
-     ],
-     "to": [
-      47.0,
-      57.0
-     ],
-     "reason": "Rule: touch model (approved 31 Oct rules). SOL/USDT ~$92.2 on Binance (Nov 3 ~09:15 Rome) is 13.2% above $80 with ~59 days left; σ90 = 3.02%/day gives P(touch) 53.9%. Polymarket Yes 0.51 (bid 0.49 / ask 0.53, liquidity ~$16k). In the 30–60% zone the rules say lean low, so midpoint 52%, half-width 5. Change comes from switching to 90-day vol (the old band used 30d/60d vol), not from the latest price move."
-    },
-    {
-     "date": "2026-11-09",
-     "from": [
-      47.0,
-      57.0
-     ],
-     "to": [
-      56.0,
-      86.0
-     ],
-     "reason": "(Low). Rule: market anchor + touch model. SOL/USDT ~$85.66 is 7.1% above $80; σ90 = 3.11%/day → P(touch) 76.3%. Polymarket Gamma Yes 0.74 (bid 0.72 / ask 0.76, liquidity ~$18k) → shaded anchor 0.69. Midpoint 71%. Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
-    }
-   ],
-   "outcome": "Yes",
-   "brier": 0.0841,
-   "resolvedOn": "2026-11-13"
-  },
-  {
    "id": "6d1d4f12c6",
    "question": "Will XRP trade at or below $1.00 on Binance XRP/USDT (any 1-minute low) by Dec 31, 2026?",
    "domain": "Crypto",
@@ -3227,6 +3058,184 @@
    "outcome": "Yes",
    "brier": 0.1024,
    "resolvedOn": "2026-11-13"
+  },
+  {
+   "id": "2de1662150",
+   "question": "Will Solana trade at or below $80 on Binance SOL/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Resolved-Yes",
+   "confidence": "Low",
+   "probLow": 56.0,
+   "probHigh": 86.0,
+   "midpoint": 71.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-13",
+   "created": "2026-10-18",
+   "summary": "Solana trades near $92 after a weak autumn. This asks whether a weak market drags it down to $80 before year end.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "SOL at its 30-day low (~$104) with SOL ETF outflows; a rough Alpenglow migration on Oct 21 (outage or rollback); hawkish Fed; BTC below $75k."
+    },
+    {
+     "label": "Toward no",
+     "text": "Alpenglow goes live cleanly and 150ms finality draws flow; ETF flows turn positive; BTC above $90k."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance SOL/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $80; earlier price action ignored (low since creation is $94.95). Otherwise NO. Re-score if SOL closes above $125 or below $90.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Solana dip to $80 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24",
+    "yesPrice": 51.0,
+    "asOf": "2026-11-03T09:10:00+01:00",
+    "gapPts": 20.0,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "December 31, 2026",
+     "note": "rules; Yes 0.51 (bid 0.49 / ask 0.53, liquidity ~$16k) (read Nov 3 2026 ~09:10 Rome)",
+     "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24"
+    },
+    {
+     "publisher": "Binance spot API daily klines",
+     "date": "Nov 3 2026",
+     "note": "SOL/USDT ~$92.22; σ90 3.02%/day",
+     "url": "https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1d&limit=91"
+    },
+    {
+     "publisher": "TRM Labs",
+     "date": "Oct 29–30 2026",
+     "note": "~$6.36B Binance hack (TraderTraitor); attacker holds >420k ETH, 18,270 BTC, 233M XRP, 970.5k SOL beyond freeze",
+     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      28.0,
+      38.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      28.0,
+      38.0
+     ],
+     "to": [
+      34.0,
+      44.0
+     ],
+     "reason": "SOL ~$95 (October low $92.34, 7-day −7.5%) is 16% above the $80 line; the zero-drift touch model on 30d/60d realized vol gives 32–44%. Market Yes 0.44 (bid 0.42 / ask 0.46), at the top of the band. 970.5k stolen SOL is still with the Binance attacker. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-03",
+     "from": [
+      34.0,
+      44.0
+     ],
+     "to": [
+      47.0,
+      57.0
+     ],
+     "reason": "Rule: touch model (approved 31 Oct rules). SOL/USDT ~$92.2 on Binance (Nov 3 ~09:15 Rome) is 13.2% above $80 with ~59 days left; σ90 = 3.02%/day gives P(touch) 53.9%. Polymarket Yes 0.51 (bid 0.49 / ask 0.53, liquidity ~$16k). In the 30–60% zone the rules say lean low, so midpoint 52%, half-width 5. Change comes from switching to 90-day vol (the old band used 30d/60d vol), not from the latest price move."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      47.0,
+      57.0
+     ],
+     "to": [
+      56.0,
+      86.0
+     ],
+     "reason": "(Low). Rule: market anchor + touch model. SOL/USDT ~$85.66 is 7.1% above $80; σ90 = 3.11%/day → P(touch) 76.3%. Polymarket Gamma Yes 0.74 (bid 0.72 / ask 0.76, liquidity ~$18k) → shaded anchor 0.69. Midpoint 71%. Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.0841,
+   "resolvedOn": "2026-11-13"
+  },
+  {
+   "id": "ee63032d2a",
+   "question": "Will Jensen Huang's resignation or removal as NVIDIA CEO be officially announced by Dec 31, 2026?",
+   "domain": "Enterprise",
+   "status": "Resolved-Yes",
+   "confidence": "Low",
+   "probLow": 1.0,
+   "probHigh": 27.0,
+   "midpoint": 14.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-13",
+   "created": "2026-11-09",
+   "summary": "Nvidia announced on Nov 12 that founder-CEO Jensen Huang had resigned immediately, with CFO Colette Kress named interim CEO. This asked whether that official announcement would come by Dec 31; it did, and the 1–27% band was a clear miss.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "the board committee's findings say national security or company information was compromised, or that Huang misled the board; US officials (DOJ/FBI, House or Senate committees) publicly allege wrongdoing or open a formal probe of Huang; a major institutional holder or proxy adviser calls for him to step aside; further reporting ties Megaspeed's chip diversion to Huang personally; an interim CEO or 'transition' language appears."
+    },
+    {
+     "label": "Toward NO",
+     "text": "the board's 'confidence in Jensen' line is repeated after the review; the investigation closes or reports no compromise; House Republican briefings end without escalation; Huang keeps leading earnings (late Nov) and keynotes; a temporary leave or reduced duties (which does not count) is used instead of departure."
+    }
+   ],
+   "resolution": "Per Polymarket rules: YES if Huang, NVIDIA or their authorized representatives publicly and definitively announce by Dec 31, 2026 11:59 PM ET that Huang has resigned or been removed, or will resign or be removed, as NVIDIA CEO (effective within 18 months; includes stepping down to another NVIDIA role). Temporary leaves, suspensions, reduced duties, conditional statements, pending resignation offers and media reports of plans do not count. If he leaves the post by other means (e.g. death or incapacity) it resolves NO. Thesis invalidated if the board publishes findings clearing Huang before mid-December (move toward low single digits) or if US authorities charge anyone at NVIDIA (re-anchor).",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Jensen Huang announced resignation or removal by December 31?",
+    "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-by-december-31",
+    "yesPrice": null,
+    "asOf": "2026-11-13T08:52:00+01:00"
+   },
+   "sources": [
+    {
+     "publisher": "NVIDIA Newsroom",
+     "date": "Nov 12 2026",
+     "note": "Board announces Jensen Huang has resigned as President, CEO and a member of the Board, effective immediately; Colette Kress appointed interim CEO",
+     "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+    },
+    {
+     "publisher": "NVIDIA Form 8-K",
+     "date": "Nov 12 2026",
+     "note": "Board accepted Huang's resignation as President, CEO and director; Kress appointed interim CEO; Exhibit 99.1 is the Nov 12 press release",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+    },
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 13 2026",
+     "note": "'Jensen Huang announced resignation or removal by December 31?' closed and resolved Yes (outcomePrices [1, 0], closedTime 2026-11-12 15:59:10 UTC, umaResolutionStatus resolved)",
+     "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-by-december-31"
+    },
+    {
+     "publisher": "Decrypt",
+     "date": "Nov 12 2026",
+     "note": "Jensen Huang resigns; CFO Colette Kress named interim CEO",
+     "url": "https://decrypt.co/383134/jensen-huang-resigns-as-nvidia-ceo-with-cfo-colette-kress-named-interim-chief"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-09",
+     "from": null,
+     "to": [
+      1.0,
+      27.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.7396,
+   "resolvedOn": "2026-11-12"
   },
   {
    "id": "d090868e05",
