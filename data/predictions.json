@@ -1,14 +1,14 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-14T09:03:03+01:00",
+ "generatedAt": "2026-11-15T08:50:03+01:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 33,
-  "resolved": 19,
+  "active": 31,
+  "resolved": 21,
   "byDomain": {
    "AI": 4,
    "Geopolitics": 6,
-   "Crypto": 19,
+   "Crypto": 17,
    "Macro": 4
   }
  },
@@ -609,12 +609,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 38.0,
-   "probHigh": 60.0,
-   "midpoint": 49.0,
+   "probLow": 16.0,
+   "probHigh": 38.0,
+   "midpoint": 27.0,
    "horizon": "2026-12-01",
-   "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-14",
+   "staleAfter": "2026-11-18",
+   "lastReviewed": "2026-11-15",
    "created": "2026-10-18",
    "summary": "AVAX trades near $10. This asks whether it is still between $8 and $12 on Dec 1, a measure of whether the market stays range-bound or breaks out either way.",
    "triggers": [
@@ -653,6 +653,12 @@
      "date": null,
      "note": "",
      "url": "https://api.coingecko.com/api/v3/coins/avalanche-2/market_chart?vs_currency=usd&days=180&interval=daily"
+    },
+    {
+     "publisher": "Binance spot API AVAXUSDT 91×1d klines + CoinGecko simple price",
+     "date": "Nov 15 2026",
+     "note": "spot $7.133 (CoinGecko $7.14), σ90 4.65%/day, low $6.743",
+     "url": "https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1d&limit=91"
     }
    ],
    "history": [
@@ -676,6 +682,18 @@
       60.0
      ],
      "reason": "(Low). Rule: judgment/lognormal (no market). AVAX/USDT ~$8.013 sits right at the $8 floor; σ90 = 4.39%/day over ~16.7 days to Dec 1 00:00 UTC → zero-drift P($8–12) = 49.2% (almost all of the miss is below $8). Midpoint 49%, half-width 11 (~2.5-week horizon). Move is the model's spot input after the Nov 13–14 crash, not momentum. Stale After → 2026-11-21."
+    },
+    {
+     "date": "2026-11-15",
+     "from": [
+      38.0,
+      60.0
+     ],
+     "to": [
+      16.0,
+      38.0
+     ],
+     "reason": "(Low). Rule: judgment/lognormal (no market). AVAX/USDT ~$7.133 (CoinGecko $7.14) is now 11% below the $8 floor after the Nov 14–15 liquidation leg (Binance low $6.743); σ90 = 4.65%/day over ~15.7 days to Dec 1 00:00 UTC → zero-drift P($8–12) = 26.6%. Midpoint 27%, half-width 11 (~2-week horizon). Move is the model's spot input, not momentum. Stale After → 2026-11-18."
     }
    ],
    "outcome": null,
@@ -1116,111 +1134,6 @@
    "resolvedOn": null
   },
   {
-   "id": "3b74327666",
-   "question": "Will AVAX trade at or below $7 on Binance AVAX/USDT (any 1-minute low) by Dec 31, 2026?",
-   "domain": "Crypto",
-   "status": "Active",
-   "confidence": "Low",
-   "probLow": 50.0,
-   "probHigh": 80.0,
-   "midpoint": 65.0,
-   "horizon": "2026-12-31",
-   "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-14",
-   "created": "2026-10-18",
-   "summary": "AVAX trades near $8.40 after a weak October. This asks whether it drops to $7 or lower at any point before year end.",
-   "triggers": [
-    {
-     "label": "Toward YES",
-     "text": "BTC breaks $70k (Polymarket ~37.5%); MSCI Nov 11 list triggers crypto-treasury equity selling and risk-off; Fed hike Dec 9 + ECB hike Dec 17; Schwab delays AVAX; renewed US/Israel strikes on Iran with oil spike."
-    },
-    {
-     "label": "Toward NO",
-     "text": "Schwab AVAX go-live; spot AVAX ETF inflows (cumulative +$31.6M, AUM $56.1M on Oct 16); AVAX holds the $9.50–$9.79 support zone; Aug low $6.77 already marked the cycle floor."
-    }
-   ],
-   "resolution": "Per Polymarket rules: resolves YES immediately if any Binance AVAX/USDT 1-minute candle has a Low ≤ $7.00 between market creation and Dec 31, 2026 23:59 ET. Only the Binance AVAX/USDT feed counts. Otherwise NO. Re-score if AVAX closes below $8.50 (band up sharply) or above $11.50 (band down).",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Will AVAX dip to $7 by December 31, 2026?",
-    "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-dip-to-7-by-december-31-2026",
-    "yesPrice": 48.0,
-    "asOf": "2026-11-14T08:55:00+01:00",
-    "gapPts": 17.0,
-    "insideBand": false
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "Nov 14 2026",
-     "note": "'Will AVAX dip to $7 by December 31, 2026?' Yes 0.48 (bid 0.24 / ask 0.72, liquidity ~$320), not hit",
-     "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-dip-to-7-by-december-31-2026"
-    },
-    {
-     "publisher": "Binance spot API 91×1d klines + ticker",
-     "date": "Nov 14 2026",
-     "note": "AVAX/USDT $8.011; σ90 4.39%/day; low since Oct 18 $7.773",
-     "url": "https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1d&limit=91"
-    },
-    {
-     "publisher": "Crypto Times",
-     "date": "Nov 14 2026",
-     "note": "BTC ~$67.4k after another long-liquidation wave ($1.26B/24h, 86% longs); sixth straight session of spot BTC ETF outflows (SoSoValue)",
-     "url": "https://www.cryptotimes.io/2026/11/14/bitcoin-price-today-btc-slides-to-67k-as-1-26b-crypto-liquidations-hit-longs-fed-hike-bets-rise/"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-18",
-     "from": null,
-     "to": [
-      28.0,
-      38.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-10-30",
-     "from": [
-      28.0,
-      38.0
-     ],
-     "to": [
-      42.0,
-      55.0
-     ],
-     "reason": "AVAX ~$8.37 (October low $8.00, 7-day −7.6%) is 16% above the $7 line with ~62 days left. The zero-drift touch model on 30d/60d realized vol (66%/90%) gives 51–63%; the band sits below that because the 60d vol includes a spike. The market is very thin (Yes 0.40, bid 0.09 / ask 0.71), so it is not informative. [Backfill run: the Oct 28–30 daily reviews did not run.]."
-    },
-    {
-     "date": "2026-11-09",
-     "from": [
-      42.0,
-      55.0
-     ],
-     "to": [
-      53.0,
-      83.0
-     ],
-     "reason": "(Low). Rule: touch model. AVAX/USDT ~$7.854 is 12.2% above $7; σ90 = 4.27%/day → P(touch) 71.1%; midpoint 68% (slight discount for the 90d vol still carrying the Sept–Oct spike). Polymarket Yes 0.44 unusable (bid 0.15 / ask 0.73, liquidity ~$180). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
-    },
-    {
-     "date": "2026-11-14",
-     "from": [
-      53.0,
-      83.0
-     ],
-     "to": [
-      50.0,
-      80.0
-     ],
-     "reason": "(Low). Rule: touch model. AVAX/USDT ~$8.011 is 14.4% above $7; σ90 = 4.39%/day, ~47.9 days → P(touch) 65.7%; midpoint 65%. Barrier not hit: lowest Binance print since Oct 18 is $7.773 (1-min low in the last ~16h $7.942). Polymarket Yes 0.48 unusable (bid 0.24 / ask 0.72, liquidity ~$320). Re-band is the touch model's spot/vol input after the Nov 13–14 liquidation crash (BTC low ~$66.5k on Binance), not a momentum adjustment. Stale After → 2026-11-21."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
-  {
    "id": "12fc7063da",
    "question": "Will Aave's TVL fall below $10B on any finalized daily datapoint by Dec 31, 2026?",
    "domain": "Crypto",
@@ -1523,12 +1436,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 22.0,
-   "probHigh": 52.0,
-   "midpoint": 37.0,
+   "probLow": 45.0,
+   "probHigh": 75.0,
+   "midpoint": 60.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-20",
-   "lastReviewed": "2026-11-13",
+   "staleAfter": "2026-11-18",
+   "lastReviewed": "2026-11-15",
    "created": "2026-11-13",
    "summary": "After Bitcoin's November 13 liquidation-driven slide below $70,000, this tracks whether the selloff extends to $60,000 on Binance before year-end. The barrier has not been touched since July; ETF outflows and Fed hike expectations are the main pressure.",
    "triggers": [
@@ -1548,8 +1461,8 @@
     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027",
     "yesPrice": 35.5,
     "asOf": "2026-11-13T08:50:00+01:00",
-    "gapPts": 1.5,
-    "insideBand": true
+    "gapPts": 24.5,
+    "insideBand": false
    },
    "sources": [
     {
@@ -1569,6 +1482,18 @@
      "date": "Nov 13 2026",
      "note": "BTC lowest since Aug 20, $1.47B liquidations, Nvidia CEO exit and Dec Fed hike fears",
      "url": "https://www.theblock.co/news/markets/2026-11-13-bitcoin-tumbles-below-69000-439643"
+    },
+    {
+     "publisher": "Polymarket Gamma API + Binance BTCUSDT 91×1d klines",
+     "date": "Nov 15 2026",
+     "note": "Yes 0.625 (bid 0.62/ask 0.63); spot $63,882, σ90 2.32%/day, low $62,006",
+     "url": "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=91"
+    },
+    {
+     "publisher": "Investing.com",
+     "date": "Nov 15 2026",
+     "note": "BTC four-month low $62,112, Glassnode liquidation cluster $59.5k–$62.6k, ~$3B spot ETF outflows Oct 30–Nov 13",
+     "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slides-toward-60000-as-etf-outflows-and-liquidations-intensify-5027667"
     }
    ],
    "history": [
@@ -1580,6 +1505,18 @@
       52.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-15",
+     "from": [
+      22.0,
+      52.0
+     ],
+     "to": [
+      45.0,
+      75.0
+     ],
+     "reason": "(Medium). Rule: market anchor cross-checked with touch model. Polymarket Yes 0.625 (bid 0.62 / ask 0.63, liquidity ~$106k) shaded with logit×0.75 → 0.595. Touch model: BTC/USDT ~$63,882 is 6.3% above $60k; σ90 = 2.32%/day, ~46.6 days → P(touch) 0.69. Midpoint 0.60 (within 1 pt of the anchor), half-width 15 (horizon > 1 month). New information: Binance low $62,006 on Nov 15 Asian session, Glassnode liquidation cluster $59.5k–$62.6k, ETF outflows ~$3B Oct 30–Nov 13 (Investing.com, Nov 15). Barrier not hit. Stale After → 2026-11-18."
     }
    ],
    "outcome": null,
@@ -1592,12 +1529,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 30.0,
-   "probHigh": 60.0,
-   "midpoint": 45.0,
+   "probLow": 50.0,
+   "probHigh": 80.0,
+   "midpoint": 65.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-14",
+   "staleAfter": "2026-11-18",
+   "lastReviewed": "2026-11-15",
    "created": "2026-10-18",
    "summary": "Chainlink, the price-feed network much of DeFi relies on, trades near $12. This asks whether it drops a third to $8 before year end.",
    "triggers": [
@@ -1617,7 +1554,7 @@
     "url": "https://polymarket.com/event/what-price-will-chainlink-hit-before-2027/will-chainlink-dip-to-8-by-december-31-2026-from-august-25",
     "yesPrice": 26.0,
     "asOf": "2026-11-14T08:55:00+01:00",
-    "gapPts": 19.0,
+    "gapPts": 39.0,
     "insideBand": false
    },
    "sources": [
@@ -1638,6 +1575,12 @@
      "date": "Nov 14 2026",
      "note": "BTC ~$67.4k after another long-liquidation wave ($1.26B/24h, 86% longs); sixth straight session of spot BTC ETF outflows (SoSoValue)",
      "url": "https://www.cryptotimes.io/2026/11/14/bitcoin-price-today-btc-slides-to-67k-as-1-26b-crypto-liquidations-hit-longs-fed-hike-bets-rise/"
+    },
+    {
+     "publisher": "Binance spot API LINKUSDT 91×1d klines + Polymarket Gamma",
+     "date": "Nov 15 2026",
+     "note": "spot $9.006, σ90 4.06%/day, low $8.574; Yes 0.575 (bid 0.33/ask 0.82)",
+     "url": "https://api.binance.com/api/v3/klines?symbol=LINKUSDT&interval=1d&limit=91"
     }
    ],
    "history": [
@@ -1673,99 +1616,18 @@
       60.0
      ],
      "reason": "(Low). Rule: touch model. LINK/USDT ~$9.574 is 19.7% above $8; σ90 = 3.92%/day, ~47.9 days → P(touch) 50.8%; lean low in the 30–60% zone → midpoint 45%. Barrier not hit (low since Oct 18 $9.512). Polymarket Yes 0.26 too thin to anchor (bid 0.13 / ask 0.39, liquidity ~$1.2k). Re-band is the touch model's spot/vol input after the Nov 13–14 liquidation crash (BTC low ~$66.5k on Binance), not a momentum adjustment. Stale After → 2026-11-21."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
-  {
-   "id": "bf63e042f5",
-   "question": "Will Dogecoin trade at or below $0.06 on Binance DOGE/USDT (any 1-minute low) by Dec 31, 2026?",
-   "domain": "Crypto",
-   "status": "Active",
-   "confidence": "Low",
-   "probLow": 72.0,
-   "probHigh": 98.0,
-   "midpoint": 85.0,
-   "horizon": "2026-12-31",
-   "staleAfter": "2026-11-17",
-   "lastReviewed": "2026-11-14",
-   "created": "2026-10-18",
-   "summary": "Dogecoin is at a one-month low near $0.079. This asks whether it breaks its cycle low and touches $0.06 before year end.",
-   "triggers": [
-    {
-     "label": "Toward yes",
-     "text": "DOGE at its 30-day low ($0.079) and −7% on the week; 30-day realized vol ~70%; risk-off macro."
     },
     {
-     "label": "Toward no",
-     "text": "lowest Binance print since Nov 2025 is $0.0677, so $0.06 would be a new cycle low; meme-coin rebounds tend to be sharp when BTC turns."
-    }
-   ],
-   "resolution": "Per Polymarket rules: resolves YES if any Binance DOGE/USDT 1-minute candle between Nov 24 2025 15:45 ET and Dec 31 2026 23:59 ET has a Low ≤ $0.06 (low since Nov 24 2025 is $0.06766). Otherwise NO. Re-score if DOGE closes above $0.10 or below $0.065.",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Will Dogecoin dip to $0.06 by December 31, 2026?",
-    "url": "https://polymarket.com/event/what-price-will-dogecoin-hit-before-2027/will-dogecoin-dip-to-0pt06-by-december-31-2026",
-    "yesPrice": 66.0,
-    "asOf": "2026-11-14T08:55:00+01:00",
-    "gapPts": 19.0,
-    "insideBand": false
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "Nov 14 2026",
-     "note": "'Will Dogecoin dip to $0.06 by December 31, 2026?' Yes 0.66 (bid 0.43 / ask 0.89, last 0.82, liquidity ~$280), not hit",
-     "url": "https://polymarket.com/event/what-price-will-dogecoin-hit-before-2027/will-dogecoin-dip-to-0pt06-by-december-31-2026"
-    },
-    {
-     "publisher": "Binance spot API 91×1d klines + ticker",
-     "date": "Nov 14 2026",
-     "note": "DOGE/USDT $0.06261; σ90 3.61%/day; low since Oct 18 $0.0621",
-     "url": "https://api.binance.com/api/v3/klines?symbol=DOGEUSDT&interval=1d&limit=91"
-    },
-    {
-     "publisher": "Crypto Times",
-     "date": "Nov 14 2026",
-     "note": "BTC ~$67.4k after another long-liquidation wave ($1.26B/24h, 86% longs); sixth straight session of spot BTC ETF outflows (SoSoValue)",
-     "url": "https://www.cryptotimes.io/2026/11/14/bitcoin-price-today-btc-slides-to-67k-as-1-26b-crypto-liquidations-hit-longs-fed-hike-bets-rise/"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-18",
-     "from": null,
-     "to": [
-      30.0,
-      40.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-11-09",
+     "date": "2026-11-15",
      "from": [
       30.0,
-      40.0
+      60.0
      ],
      "to": [
-      43.0,
-      73.0
+      50.0,
+      80.0
      ],
-     "reason": "(Low). Rule: touch model. DOGE/USDT ~$0.06831 is 13.9% above $0.06; σ90 = 3.58%/day → P(touch) 61.8%; leaning low toward the 30–60% zone, midpoint 58%. Polymarket Yes 0.50 too thin to anchor (bid 0.37 / ask 0.63, liquidity ~$180). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
-    },
-    {
-     "date": "2026-11-14",
-     "from": [
-      43.0,
-      73.0
-     ],
-     "to": [
-      72.0,
-      98.0
-     ],
-     "reason": "(Low). Rule: touch model. DOGE/USDT ~$0.06261 is only 4.3% above $0.06; σ90 = 3.61%/day, ~47.9 days → P(touch) 86.5%; outside the 30–60% zone, so no lean-low; midpoint 85%, half-width 13 (capped near 1). Barrier not hit: 1-min low $0.0621 (Nov 14 ~03:29 Rome), the lowest since Oct 18. Polymarket Yes 0.66 too thin to anchor (bid 0.43 / ask 0.89, last trade 0.82). Re-band is the touch model's spot/vol input after the Nov 13–14 liquidation crash (BTC low ~$66.5k on Binance), not a momentum adjustment. Close to the barrier, so re-check at each daily review; Stale After → 2026-11-17."
+     "reason": "(Low). Rule: touch model. LINK/USDT ~$9.006 is 11.8% above $8; σ90 = 4.06%/day, ~46.6 days → P(touch) 0.67; just above the 30–60% zone where the model ran high, so a small lean low → midpoint 0.65, half-width 15 (horizon > 1 month). Barrier not hit (low since Oct 18 $8.574, Nov 15). Polymarket Yes 0.575 still too thin to anchor (bid 0.33 / ask 0.82, liquidity ~$1.2k). Re-band is the model's spot input after the Nov 14–15 liquidation leg (BTC $62k), not momentum. Stale After → 2026-11-18."
     }
    ],
    "outcome": null,
@@ -3104,6 +2966,228 @@
   }
  ],
  "resolved": [
+  {
+   "id": "3b74327666",
+   "question": "Will AVAX trade at or below $7 on Binance AVAX/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Resolved-Yes",
+   "confidence": "Low",
+   "probLow": 50.0,
+   "probHigh": 80.0,
+   "midpoint": 65.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-21",
+   "lastReviewed": "2026-11-15",
+   "created": "2026-10-18",
+   "summary": "AVAX trades near $8.40 after a weak October. This asks whether it drops to $7 or lower at any point before year end.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "BTC breaks $70k (Polymarket ~37.5%); MSCI Nov 11 list triggers crypto-treasury equity selling and risk-off; Fed hike Dec 9 + ECB hike Dec 17; Schwab delays AVAX; renewed US/Israel strikes on Iran with oil spike."
+    },
+    {
+     "label": "Toward NO",
+     "text": "Schwab AVAX go-live; spot AVAX ETF inflows (cumulative +$31.6M, AUM $56.1M on Oct 16); AVAX holds the $9.50–$9.79 support zone; Aug low $6.77 already marked the cycle floor."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES immediately if any Binance AVAX/USDT 1-minute candle has a Low ≤ $7.00 between market creation and Dec 31, 2026 23:59 ET. Only the Binance AVAX/USDT feed counts. Otherwise NO. Re-score if AVAX closes below $8.50 (band up sharply) or above $11.50 (band down).",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will AVAX dip to $7 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-dip-to-7-by-december-31-2026",
+    "yesPrice": 48.0,
+    "asOf": "2026-11-14T08:55:00+01:00",
+    "gapPts": 17.0,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 14 2026",
+     "note": "'Will AVAX dip to $7 by December 31, 2026?' Yes 0.48 (bid 0.24 / ask 0.72, liquidity ~$320), not hit",
+     "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-dip-to-7-by-december-31-2026"
+    },
+    {
+     "publisher": "Binance spot API 91×1d klines + ticker",
+     "date": "Nov 14 2026",
+     "note": "AVAX/USDT $8.011; σ90 4.39%/day; low since Oct 18 $7.773",
+     "url": "https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1d&limit=91"
+    },
+    {
+     "publisher": "Crypto Times",
+     "date": "Nov 14 2026",
+     "note": "BTC ~$67.4k after another long-liquidation wave ($1.26B/24h, 86% longs); sixth straight session of spot BTC ETF outflows (SoSoValue)",
+     "url": "https://www.cryptotimes.io/2026/11/14/bitcoin-price-today-btc-slides-to-67k-as-1-26b-crypto-liquidations-hit-longs-fed-hike-bets-rise/"
+    },
+    {
+     "publisher": "Binance spot API 1h/1m klines",
+     "date": "Nov 15 2026",
+     "note": "first 1-min low ≤ $7: $6.982 at Nov 14 21:18 UTC; spot $7.133",
+     "url": "https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1h&limit=120"
+    },
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 15 2026",
+     "note": "market closed, resolved Yes (1/0)",
+     "url": "https://gamma-api.polymarket.com/markets?slug=will-avax-dip-to-7-by-december-31-2026&closed=true"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      28.0,
+      38.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      28.0,
+      38.0
+     ],
+     "to": [
+      42.0,
+      55.0
+     ],
+     "reason": "AVAX ~$8.37 (October low $8.00, 7-day −7.6%) is 16% above the $7 line with ~62 days left. The zero-drift touch model on 30d/60d realized vol (66%/90%) gives 51–63%; the band sits below that because the 60d vol includes a spike. The market is very thin (Yes 0.40, bid 0.09 / ask 0.71), so it is not informative. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      42.0,
+      55.0
+     ],
+     "to": [
+      53.0,
+      83.0
+     ],
+     "reason": "(Low). Rule: touch model. AVAX/USDT ~$7.854 is 12.2% above $7; σ90 = 4.27%/day → P(touch) 71.1%; midpoint 68% (slight discount for the 90d vol still carrying the Sept–Oct spike). Polymarket Yes 0.44 unusable (bid 0.15 / ask 0.73, liquidity ~$180). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
+    },
+    {
+     "date": "2026-11-14",
+     "from": [
+      53.0,
+      83.0
+     ],
+     "to": [
+      50.0,
+      80.0
+     ],
+     "reason": "(Low). Rule: touch model. AVAX/USDT ~$8.011 is 14.4% above $7; σ90 = 4.39%/day, ~47.9 days → P(touch) 65.7%; midpoint 65%. Barrier not hit: lowest Binance print since Oct 18 is $7.773 (1-min low in the last ~16h $7.942). Polymarket Yes 0.48 unusable (bid 0.24 / ask 0.72, liquidity ~$320). Re-band is the touch model's spot/vol input after the Nov 13–14 liquidation crash (BTC low ~$66.5k on Binance), not a momentum adjustment. Stale After → 2026-11-21."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.1225,
+   "resolvedOn": "2026-11-14"
+  },
+  {
+   "id": "bf63e042f5",
+   "question": "Will Dogecoin trade at or below $0.06 on Binance DOGE/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Resolved-Yes",
+   "confidence": "Low",
+   "probLow": 72.0,
+   "probHigh": 98.0,
+   "midpoint": 85.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-17",
+   "lastReviewed": "2026-11-15",
+   "created": "2026-10-18",
+   "summary": "Dogecoin is at a one-month low near $0.079. This asks whether it breaks its cycle low and touches $0.06 before year end.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "DOGE at its 30-day low ($0.079) and −7% on the week; 30-day realized vol ~70%; risk-off macro."
+    },
+    {
+     "label": "Toward no",
+     "text": "lowest Binance print since Nov 2025 is $0.0677, so $0.06 would be a new cycle low; meme-coin rebounds tend to be sharp when BTC turns."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance DOGE/USDT 1-minute candle between Nov 24 2025 15:45 ET and Dec 31 2026 23:59 ET has a Low ≤ $0.06 (low since Nov 24 2025 is $0.06766). Otherwise NO. Re-score if DOGE closes above $0.10 or below $0.065.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Dogecoin dip to $0.06 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-dogecoin-hit-before-2027/will-dogecoin-dip-to-0pt06-by-december-31-2026",
+    "yesPrice": 66.0,
+    "asOf": "2026-11-14T08:55:00+01:00",
+    "gapPts": 19.0,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 14 2026",
+     "note": "'Will Dogecoin dip to $0.06 by December 31, 2026?' Yes 0.66 (bid 0.43 / ask 0.89, last 0.82, liquidity ~$280), not hit",
+     "url": "https://polymarket.com/event/what-price-will-dogecoin-hit-before-2027/will-dogecoin-dip-to-0pt06-by-december-31-2026"
+    },
+    {
+     "publisher": "Binance spot API 91×1d klines + ticker",
+     "date": "Nov 14 2026",
+     "note": "DOGE/USDT $0.06261; σ90 3.61%/day; low since Oct 18 $0.0621",
+     "url": "https://api.binance.com/api/v3/klines?symbol=DOGEUSDT&interval=1d&limit=91"
+    },
+    {
+     "publisher": "Crypto Times",
+     "date": "Nov 14 2026",
+     "note": "BTC ~$67.4k after another long-liquidation wave ($1.26B/24h, 86% longs); sixth straight session of spot BTC ETF outflows (SoSoValue)",
+     "url": "https://www.cryptotimes.io/2026/11/14/bitcoin-price-today-btc-slides-to-67k-as-1-26b-crypto-liquidations-hit-longs-fed-hike-bets-rise/"
+    },
+    {
+     "publisher": "Binance spot API 1h/1m klines",
+     "date": "Nov 15 2026",
+     "note": "first 1-min low ≤ $0.06: $0.06000 at Nov 14 16:12 UTC; spot $0.05735",
+     "url": "https://api.binance.com/api/v3/klines?symbol=DOGEUSDT&interval=1h&limit=120"
+    },
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 15 2026",
+     "note": "market closed, resolved Yes (1/0)",
+     "url": "https://gamma-api.polymarket.com/markets?slug=will-dogecoin-dip-to-0pt06-by-december-31-2026&closed=true"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      30.0,
+      40.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      30.0,
+      40.0
+     ],
+     "to": [
+      43.0,
+      73.0
+     ],
+     "reason": "(Low). Rule: touch model. DOGE/USDT ~$0.06831 is 13.9% above $0.06; σ90 = 3.58%/day → P(touch) 61.8%; leaning low toward the 30–60% zone, midpoint 58%. Polymarket Yes 0.50 too thin to anchor (bid 0.37 / ask 0.63, liquidity ~$180). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
+    },
+    {
+     "date": "2026-11-14",
+     "from": [
+      43.0,
+      73.0
+     ],
+     "to": [
+      72.0,
+      98.0
+     ],
+     "reason": "(Low). Rule: touch model. DOGE/USDT ~$0.06261 is only 4.3% above $0.06; σ90 = 3.61%/day, ~47.9 days → P(touch) 86.5%; outside the 30–60% zone, so no lean-low; midpoint 85%, half-width 13 (capped near 1). Barrier not hit: 1-min low $0.0621 (Nov 14 ~03:29 Rome), the lowest since Oct 18. Polymarket Yes 0.66 too thin to anchor (bid 0.43 / ask 0.89, last trade 0.82). Re-band is the touch model's spot/vol input after the Nov 13–14 liquidation crash (BTC low ~$66.5k on Binance), not a momentum adjustment. Close to the barrier, so re-check at each daily review; Stale After → 2026-11-17."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.0225,
+   "resolvedOn": "2026-11-14"
+  },
   {
    "id": "d696382907",
    "question": "Will Bitcoin trade at or below $70,000 on Binance BTC/USDT (any 1-minute low) by Dec 31, 2026?",
