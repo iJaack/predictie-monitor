@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-15T08:50:03+01:00",
+ "generatedAt": "2026-11-16T08:58:47+01:00",
  "timezone": "Europe/Rome",
  "counts": {
   "active": 31,
@@ -19,12 +19,12 @@
    "domain": "AI",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 23.0,
-   "probHigh": 39.0,
-   "midpoint": 31.0,
+   "probLow": 29.0,
+   "probHigh": 45.0,
+   "midpoint": 37.0,
    "horizon": "2026-11-19",
    "staleAfter": "2026-11-18",
-   "lastReviewed": "2026-11-14",
+   "lastReviewed": "2026-11-16",
    "created": "2026-11-14",
    "summary": "Anthropic plans to start trading on Nasdaq around Nov 19 after setting a $70–78 price range that implies about $1.4 trillion fully diluted at the top. This asks whether its first-day closing market value will be above $1.5 trillion.",
    "triggers": [
@@ -42,35 +42,35 @@
     "venue": "Polymarket",
     "name": "Anthropic IPO closing market cap above $1.5T?",
     "url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap-above/anthropic-ipo-closing-market-cap-above-1pt5t",
-    "yesPrice": 28.85,
-    "asOf": "2026-11-14T09:00:00+01:00",
-    "gapPts": 2.1,
+    "yesPrice": 37.35,
+    "asOf": "2026-11-16T09:00:00+01:00",
+    "gapPts": -0.4,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 14 2026",
-     "note": "'Anthropic IPO closing market cap above $1.5T?' Yes 0.2885 (bid 0.279 / ask 0.298, liquidity ~$18k); active, rules = shares outstanding × first-day official close; neighbouring strikes $1.25T 0.71, $1.75T 0.13",
+     "date": "Nov 16 2026",
+     "note": "'Anthropic IPO closing market cap above $1.5T?' Yes 0.3735 (bid 0.373 / ask 0.374); rules = shares outstanding × first-day official close",
      "url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap-above/anthropic-ipo-closing-market-cap-above-1pt5t"
     },
     {
      "publisher": "TechCrunch",
      "date": "Nov 10 2026",
-     "note": "825M Class A shares at $70–78; $1.404T fully diluted at the top; $26B private Class N sale at the IPO price; trading ~Nov 19 on Nasdaq as ANT; run-rate revenue $81B",
+     "note": "825M Class A shares at $70–78; $1.404T fully diluted at the top; $26B private Class N sale at the IPO price; trading ~Nov 19 on Nasdaq as ANT",
      "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"
     },
     {
-     "publisher": "Reuters via Investing.com",
+     "publisher": "Yahoo Finance",
      "date": "Nov 12 2026",
-     "note": "IPO ~6x oversubscribed (Bloomberg); existing backers prioritised; trading expected Nov 19",
-     "url": "https://www.investing.com/news/stock-market-news/anthropics-ipo-is-about-six-times-oversubscribed-bloomberg-news-reports-5023345"
+     "note": "pricing Nov 18, trading Nov 19 as ANT; $1.3–1.45T valuation at the range",
+     "url": "https://finance.yahoo.com/technology/article/anthropic-sets-ipo-date-for-thursday-nov-19-173011206.html"
     },
     {
-     "publisher": "Investing.com",
-     "date": "Nov 14 2026",
-     "note": "BTC below $68k; Anthropic IPO cited as a liquidity drain (Xapo CEO), SpaceX IPO precedent",
-     "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slides-below-68000-as-anthropic-ipo-frenzy-drains-market-liquidity-5027106"
+     "publisher": "Lianhe Zaobao",
+     "date": "Nov 16 2026",
+     "note": "Bloomberg: ~$380B of orders, about 6x the offering; up to $64.4B IPO plus $26B placement",
+     "url": "https://www.zaobao.com.sg/en/finance/singapore/anthropic-set-record-ipo-next-week-singapore-investors-watch-closely"
     }
    ],
    "history": [
@@ -82,6 +82,18 @@
       39.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-16",
+     "from": [
+      23.0,
+      39.0
+     ],
+     "to": [
+      29.0,
+      45.0
+     ],
+     "reason": "Rule: market anchor. Polymarket Gamma Yes 0.3735 (bid 0.373 / ask 0.374) read Nov 16 ~09:00 Rome → 0.75 log-odds shaded anchor 0.404; midpoint 37% keeps the ~3-pt discount for the shares-outstanding resolution basis. New information: Bloomberg (via Lianhe Zaobao, Nov 16) reports ~$380B of orders, about 6x the offering; pricing Nov 18, Nasdaq trading Nov 19. Half-width 8 (3-day horizon). Stale After stays 2026-11-18."
     }
    ],
    "outcome": null,
@@ -98,8 +110,8 @@
    "probHigh": 20.0,
    "midpoint": 15.0,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-18",
-   "lastReviewed": "2026-11-11",
+   "staleAfter": "2026-11-23",
+   "lastReviewed": "2026-11-16",
    "created": "2026-10-16",
    "summary": "Washington has threatened to cut intelligence sharing and PURL weapons purchases if Kyiv keeps striking Russian energy. This asks whether the US officially confirms such a cut, not just anonymous reports, by end of November.",
    "triggers": [
@@ -190,7 +202,7 @@
    "midpoint": 96.0,
    "horizon": "2026-11-30",
    "staleAfter": "2026-11-19",
-   "lastReviewed": "2026-11-11",
+   "lastReviewed": "2026-11-16",
    "created": "2026-10-27",
    "summary": "Anthropic publicly filed for its IPO on Oct 26, 2026, with a roadshow reported for around Nov 9 and a Nasdaq listing under the ticker ANT. This tracks whether its shares actually start trading before the end of November.",
    "triggers": [
@@ -313,7 +325,7 @@
    "midpoint": 8.0,
    "horizon": "2026-11-30",
    "staleAfter": "2026-11-19",
-   "lastReviewed": "2026-11-12",
+   "lastReviewed": "2026-11-16",
    "created": "2026-10-18",
    "summary": "Google just shipped Gemini 4 Argon and says the rest of the Gemini 4 family is coming. This asks whether a new public 'Pro' model lands by Nov 30.",
    "triggers": [
@@ -502,8 +514,8 @@
    "probHigh": 17.0,
    "midpoint": 9.0,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-18",
-   "lastReviewed": "2026-11-13",
+   "staleAfter": "2026-11-23",
+   "lastReviewed": "2026-11-16",
    "created": "2026-11-03",
    "summary": "Tracks whether Washington and Tehran both formally accept a deal that reopens or eases shipping through the Strait of Hormuz before the end of November. On Nov 12 Trump said the US does not need a deal with Iran and shut down Vice President Vance's talks.",
    "triggers": [
@@ -613,8 +625,8 @@
    "probHigh": 38.0,
    "midpoint": 27.0,
    "horizon": "2026-12-01",
-   "staleAfter": "2026-11-18",
-   "lastReviewed": "2026-11-15",
+   "staleAfter": "2026-11-23",
+   "lastReviewed": "2026-11-16",
    "created": "2026-10-18",
    "summary": "AVAX trades near $10. This asks whether it is still between $8 and $12 on Dec 1, a measure of whether the market stays range-bound or breaks out either way.",
    "triggers": [
@@ -710,8 +722,8 @@
    "probHigh": 19.0,
    "midpoint": 10.0,
    "horizon": "2026-12-09",
-   "staleAfter": "2026-11-18",
-   "lastReviewed": "2026-11-11",
+   "staleAfter": "2026-11-23",
+   "lastReviewed": "2026-11-16",
    "created": "2026-11-11",
    "summary": "After a hotter-than-expected October CPI, Fed Governor Waller said a half-point hike should be considered in December. This tracks whether the Fed actually raises rates by 50bp or more on Dec 9, rather than the expected quarter point.",
    "triggers": [
@@ -884,8 +896,8 @@
    "probHigh": 10.0,
    "midpoint": 5.5,
    "horizon": "2026-12-15",
-   "staleAfter": "2026-11-18",
-   "lastReviewed": "2026-11-11",
+   "staleAfter": "2026-11-23",
+   "lastReviewed": "2026-11-16",
    "created": "2026-10-18",
    "summary": "sAVAX is BENQI's liquid-staked AVAX token and normally trades very close to its on-chain redemption value. This measures the risk of a meaningful depeg (more than 3%) before mid-December.",
    "triggers": [
@@ -935,12 +947,12 @@
    "domain": "Macro",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 66.0,
-   "probHigh": 78.0,
-   "midpoint": 72.0,
+   "probLow": 85.0,
+   "probHigh": 97.0,
+   "midpoint": 91.0,
    "horizon": "2026-12-17",
-   "staleAfter": "2026-11-18",
-   "lastReviewed": "2026-11-11",
+   "staleAfter": "2026-11-25",
+   "lastReviewed": "2026-11-16",
    "created": "2026-10-18",
    "summary": "Most economists expect the ECB to hike in December with euro-area inflation near 4%. This tracks whether it delivers exactly a 25bp increase on Dec 16–17.",
    "triggers": [
@@ -958,35 +970,35 @@
     "venue": "Polymarket",
     "name": "Will the ECB announce a 25 bps increase at the December 2026 meeting?",
     "url": "https://polymarket.com/event/ecb-interest-rates-december-2026/will-the-ecb-announce-a-25-bps-increase-at-the-december-2026-meeting",
-    "yesPrice": 81.0,
-    "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": -9.0,
-    "insideBand": false
+    "yesPrice": 96.8,
+    "asOf": "2026-11-16T09:00:00+01:00",
+    "gapPts": -5.8,
+    "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Oct 30 2026",
-     "note": "'Will the ECB announce a 25 bps increase at the December 2026 meeting?' Yes 0.81 (bid 0.80 / ask 0.82, liquidity ~$1.7k)",
+     "date": "Nov 16 2026",
+     "note": "'Will the ECB announce a 25 bps increase at the December 2026 meeting?' Yes 0.968 (bid 0.963 / ask 0.973, thin volume)",
      "url": "https://polymarket.com/event/ecb-interest-rates-december-2026/will-the-ecb-announce-a-25-bps-increase-at-the-december-2026-meeting"
+    },
+    {
+     "publisher": "Reuters poll via Investing.com",
+     "date": "Nov 12 2026",
+     "note": "all 71 economists expect a December hike to 2.75%; 25 of 71 see another in early 2027",
+     "url": "https://www.investing.com/news/economy-news/ecb-set-for-last-rate-hike-in-december-but-inflation-risks-keep-door-open-for-one-more-reuters-poll-5021053"
+    },
+    {
+     "publisher": "Investing.com",
+     "date": "Nov 2026",
+     "note": "Nagel 'strong case' for a December hike; Lane 'prudent indeed to hike' (Nov 10); October flash HICP 4.0%",
+     "url": "https://www.investing.com/news/economy-news/ecb-december-rate-hike-expectations-rise-as-bundesbank-chief-flags-inflation-risks-93CH-5016333"
     },
     {
      "publisher": "CNBC",
      "date": "Oct 29 2026",
-     "note": "ECB holds deposit rate at 2.5%; Council debated a hike; markets ~67% December hike (LSEG); Deutsche Bank expects 2.75% in December; Lagarde departure announced",
+     "note": "ECB holds deposit rate at 2.5%; Council debated a hike",
      "url": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html"
-    },
-    {
-     "publisher": "Reuters poll via Yahoo Finance",
-     "date": "Oct 8 2026",
-     "note": "70 of 73 see Oct 29 hold at 2.50%; 64 of 73 see a 25bp December hike; September inflation 3.8%",
-     "url": "https://finance.yahoo.com/economy/policy/articles/ecb-hike-rates-again-december-095610436.html"
-    },
-    {
-     "publisher": "Bloomberg via Business Standard",
-     "date": "Oct 17 2026",
-     "note": "officials point to December as likeliest timing, preference for quarterly pace; Brent $110 on Oct 16; unease over bond yields and French finances",
-     "url": "https://www.business-standard.com/world-news/ecb-officials-see-december-rate-hike-as-uncertainty-clouds-2027-outlook-126101700453_1.html"
     }
    ],
    "history": [
@@ -1010,6 +1022,18 @@
       78.0
      ],
      "reason": "Oct 29: ECB held the deposit rate at 2.50% unanimously after debating a hike; Lagarde gave no pre-commitment and announced her coming departure the same day. Money markets price ~67% for a December hike (LSEG); Deutsche Bank and UBS still expect one more 25bp move ('hawkish pause'). Headline inflation 3.8% and energy inflation 18.8% keep pressure on. The thin Polymarket market (Yes 0.81, liquidity ~$1.7k) sits above both the futures pricing and my band. Stale After 2026-11-06 (after the October flash HICP). [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-16",
+     "from": [
+      66.0,
+      78.0
+     ],
+     "to": [
+      85.0,
+      97.0
+     ],
+     "reason": "Rule: judgment, with the thin market as a check (Gamma Yes 0.968, bid 0.963 / ask 0.973, 24h volume ~$0.2k, read Nov 16 ~09:00 Rome). New question-specific information: all 71 economists in the Reuters poll of Nov 10–12 expect a 25bp hike to 2.75% in December; Lane called a hike 'prudent' on an unchanged information set, Nagel sees a 'strong case', and Lagarde said it would take 'significant changes' to alter the direction of travel. Remaining NO risk: a hold after weak data, or a 50bp move (the question is exactly 25bp). Midpoint 91% sits ~6 pts under the market. Stale After → 2026-11-25."
     }
    ],
    "outcome": null,
@@ -1440,8 +1464,8 @@
    "probHigh": 75.0,
    "midpoint": 60.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-18",
-   "lastReviewed": "2026-11-15",
+   "staleAfter": "2026-11-21",
+   "lastReviewed": "2026-11-16",
    "created": "2026-11-13",
    "summary": "After Bitcoin's November 13 liquidation-driven slide below $70,000, this tracks whether the selloff extends to $60,000 on Binance before year-end. The barrier has not been touched since July; ETF outflows and Fed hike expectations are the main pressure.",
    "triggers": [
@@ -1533,8 +1557,8 @@
    "probHigh": 80.0,
    "midpoint": 65.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-18",
-   "lastReviewed": "2026-11-15",
+   "staleAfter": "2026-11-21",
+   "lastReviewed": "2026-11-16",
    "created": "2026-10-18",
    "summary": "Chainlink, the price-feed network much of DeFi relies on, trades near $12. This asks whether it drops a third to $8 before year end.",
    "triggers": [
@@ -2058,12 +2082,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 4.0,
-   "probHigh": 17.0,
-   "midpoint": 10.5,
+   "probLow": 1.0,
+   "probHigh": 15.0,
+   "midpoint": 8.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-18",
-   "lastReviewed": "2026-11-11",
+   "staleAfter": "2026-11-23",
+   "lastReviewed": "2026-11-16",
    "created": "2026-10-18",
    "summary": "Tanker traffic through the Strait of Hormuz has collapsed after repeated attacks on shipping. This asks whether transits recover to near-normal levels by year end.",
    "triggers": [
@@ -2081,16 +2105,16 @@
     "venue": "Polymarket",
     "name": "Strait of Hormuz traffic returns to normal by December 31?",
     "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31/strait-of-hormuz-traffic-returns-to-normal-by-december-31",
-    "yesPrice": 12.5,
-    "asOf": "2026-10-18T14:56:00+02:00",
-    "gapPts": -2.0,
+    "yesPrice": 4.5,
+    "asOf": "2026-11-16T09:00:00+01:00",
+    "gapPts": 3.5,
     "insideBand": true
    },
    "sources": [
     {
-     "publisher": "Polymarket",
-     "date": "Oct 18 2026",
-     "note": "rules + Yes 0.125 (bid 0.12/ask 0.13), read via Gamma API Oct 18 2026 14:56 Rome",
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 16 2026",
+     "note": "'Strait of Hormuz traffic returns to normal by December 31?' Yes 0.045 (bid 0.04 / ask 0.05)",
      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
     },
     {
@@ -2106,10 +2130,10 @@
      "url": "https://www.cnn.com/2026/10/15/politics/us-considering-mother-of-all-bombs-iran"
     },
     {
-     "publisher": "Bloomberg via Business Standard",
-     "date": "Oct 17 2026",
-     "note": "Brent hit $110 on Oct 16 after Houthi strikes on Saudi Arabia",
-     "url": "https://www.business-standard.com/world-news/ecb-officials-see-december-rate-hike-as-uncertainty-clouds-2027-outlook-126101700453_1.html"
+     "publisher": "Newsquawk",
+     "date": "Nov 16 2026",
+     "note": "more tankers hit mines in and around the Strait of Hormuz; Iran drone strike on a Bahrain air base",
+     "url": "https://www.newsquawk.com/daily/5861-eu-market-open-iran-targeted-an-air-base-in-bahrain-and-more-ships-continue-to-hit-mines-in-the-strait-european-bourses-set-for-a-flat-open"
     }
    ],
    "history": [
@@ -2121,6 +2145,18 @@
       17.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-16",
+     "from": [
+      4.0,
+      17.0
+     ],
+     "to": [
+      1.0,
+      15.0
+     ],
+     "reason": "Rule: market as-is (Gamma Yes 0.045, bid 0.04 / ask 0.05, read Nov 16 ~09:00 Rome, below 0.15); midpoint 8%, ~3.5 pts above the market. New information toward NO: Iran says several more tankers hit mines in and around the strait over Nov 14–16 and the IRGC warns the southern route is mined; Iran also struck a US helicopter base in Bahrain on Nov 15 (Newsquawk, Nov 16). Stale After → 2026-11-23."
     }
    ],
    "outcome": null,
@@ -2248,8 +2284,8 @@
    "probHigh": 19.0,
    "midpoint": 11.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-18",
-   "lastReviewed": "2026-11-11",
+   "staleAfter": "2026-11-23",
+   "lastReviewed": "2026-11-16",
    "created": "2026-10-18",
    "summary": "Mojtaba Khamenei became Iran's de facto leader in March but has rarely been seen since. This asks whether he is removed, incapacitated or replaced by year end, a risk concentrated around possible renewed strikes after the US midterms.",
    "triggers": [
@@ -2347,8 +2383,8 @@
    "probHigh": 99.0,
    "midpoint": 94.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-18",
-   "lastReviewed": "2026-11-11",
+   "staleAfter": "2026-11-23",
+   "lastReviewed": "2026-11-16",
    "created": "2026-10-18",
    "summary": "OpenAI shelved GPT-6.1 Astra in September over safety problems, but a gpt-6.2-astra model has been showing up in Codex usage since Nov 1. This asks whether a 6.1-or-later Astra model is released publicly by Dec 31.",
    "triggers": [
@@ -2749,8 +2785,8 @@
    "probHigh": 11.0,
    "midpoint": 6.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-18",
-   "lastReviewed": "2026-11-11",
+   "staleAfter": "2026-11-23",
+   "lastReviewed": "2026-11-16",
    "created": "2026-10-18",
    "summary": "This asks whether a general Russia–Ukraine ceasefire takes effect by year end and holds for at least ten days. Fighting and long-range strikes are currently intensifying.",
    "triggers": [
@@ -2818,8 +2854,8 @@
    "probHigh": 7.0,
    "midpoint": 4.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-18",
-   "lastReviewed": "2026-11-11",
+   "staleAfter": "2026-11-23",
+   "lastReviewed": "2026-11-16",
    "created": "2026-10-18",
    "summary": "The Clarity Act would set the main US market-structure rules for crypto. It stalled in the Senate in September; this asks whether it still becomes law in 2026.",
    "triggers": [
@@ -3282,6 +3318,111 @@
    "resolvedOn": "2026-11-13"
   },
   {
+   "id": "2de1662150",
+   "question": "Will Solana trade at or below $80 on Binance SOL/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Resolved-Yes",
+   "confidence": "Low",
+   "probLow": 56.0,
+   "probHigh": 86.0,
+   "midpoint": 71.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-16",
+   "lastReviewed": "2026-11-13",
+   "created": "2026-10-18",
+   "summary": "Solana trades near $92 after a weak autumn. This asks whether a weak market drags it down to $80 before year end.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "SOL at its 30-day low (~$104) with SOL ETF outflows; a rough Alpenglow migration on Oct 21 (outage or rollback); hawkish Fed; BTC below $75k."
+    },
+    {
+     "label": "Toward no",
+     "text": "Alpenglow goes live cleanly and 150ms finality draws flow; ETF flows turn positive; BTC above $90k."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance SOL/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $80; earlier price action ignored (low since creation is $94.95). Otherwise NO. Re-score if SOL closes above $125 or below $90.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Solana dip to $80 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24",
+    "yesPrice": 51.0,
+    "asOf": "2026-11-03T09:10:00+01:00",
+    "gapPts": 20.0,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "December 31, 2026",
+     "note": "rules; Yes 0.51 (bid 0.49 / ask 0.53, liquidity ~$16k) (read Nov 3 2026 ~09:10 Rome)",
+     "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24"
+    },
+    {
+     "publisher": "Binance spot API daily klines",
+     "date": "Nov 3 2026",
+     "note": "SOL/USDT ~$92.22; σ90 3.02%/day",
+     "url": "https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1d&limit=91"
+    },
+    {
+     "publisher": "TRM Labs",
+     "date": "Oct 29–30 2026",
+     "note": "~$6.36B Binance hack (TraderTraitor); attacker holds >420k ETH, 18,270 BTC, 233M XRP, 970.5k SOL beyond freeze",
+     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      28.0,
+      38.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      28.0,
+      38.0
+     ],
+     "to": [
+      34.0,
+      44.0
+     ],
+     "reason": "SOL ~$95 (October low $92.34, 7-day −7.5%) is 16% above the $80 line; the zero-drift touch model on 30d/60d realized vol gives 32–44%. Market Yes 0.44 (bid 0.42 / ask 0.46), at the top of the band. 970.5k stolen SOL is still with the Binance attacker. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-03",
+     "from": [
+      34.0,
+      44.0
+     ],
+     "to": [
+      47.0,
+      57.0
+     ],
+     "reason": "Rule: touch model (approved 31 Oct rules). SOL/USDT ~$92.2 on Binance (Nov 3 ~09:15 Rome) is 13.2% above $80 with ~59 days left; σ90 = 3.02%/day gives P(touch) 53.9%. Polymarket Yes 0.51 (bid 0.49 / ask 0.53, liquidity ~$16k). In the 30–60% zone the rules say lean low, so midpoint 52%, half-width 5. Change comes from switching to 90-day vol (the old band used 30d/60d vol), not from the latest price move."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      47.0,
+      57.0
+     ],
+     "to": [
+      56.0,
+      86.0
+     ],
+     "reason": "(Low). Rule: market anchor + touch model. SOL/USDT ~$85.66 is 7.1% above $80; σ90 = 3.11%/day → P(touch) 76.3%. Polymarket Gamma Yes 0.74 (bid 0.72 / ask 0.76, liquidity ~$18k) → shaded anchor 0.69. Midpoint 71%. Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.0841,
+   "resolvedOn": "2026-11-13"
+  },
+  {
    "id": "6d1d4f12c6",
    "question": "Will XRP trade at or below $1.00 on Binance XRP/USDT (any 1-minute low) by Dec 31, 2026?",
    "domain": "Crypto",
@@ -3396,111 +3537,6 @@
    ],
    "outcome": "Yes",
    "brier": 0.1024,
-   "resolvedOn": "2026-11-13"
-  },
-  {
-   "id": "2de1662150",
-   "question": "Will Solana trade at or below $80 on Binance SOL/USDT (any 1-minute low) by Dec 31, 2026?",
-   "domain": "Crypto",
-   "status": "Resolved-Yes",
-   "confidence": "Low",
-   "probLow": 56.0,
-   "probHigh": 86.0,
-   "midpoint": 71.0,
-   "horizon": "2026-12-31",
-   "staleAfter": "2026-11-16",
-   "lastReviewed": "2026-11-13",
-   "created": "2026-10-18",
-   "summary": "Solana trades near $92 after a weak autumn. This asks whether a weak market drags it down to $80 before year end.",
-   "triggers": [
-    {
-     "label": "Toward yes",
-     "text": "SOL at its 30-day low (~$104) with SOL ETF outflows; a rough Alpenglow migration on Oct 21 (outage or rollback); hawkish Fed; BTC below $75k."
-    },
-    {
-     "label": "Toward no",
-     "text": "Alpenglow goes live cleanly and 150ms finality draws flow; ETF flows turn positive; BTC above $90k."
-    }
-   ],
-   "resolution": "Per Polymarket rules: resolves YES if any Binance SOL/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $80; earlier price action ignored (low since creation is $94.95). Otherwise NO. Re-score if SOL closes above $125 or below $90.",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Will Solana dip to $80 by December 31, 2026?",
-    "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24",
-    "yesPrice": 51.0,
-    "asOf": "2026-11-03T09:10:00+01:00",
-    "gapPts": 20.0,
-    "insideBand": false
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "December 31, 2026",
-     "note": "rules; Yes 0.51 (bid 0.49 / ask 0.53, liquidity ~$16k) (read Nov 3 2026 ~09:10 Rome)",
-     "url": "https://polymarket.com/event/what-price-will-solana-hit-before-2027/will-solana-dip-to-80-by-december-31-2026-from-august-24"
-    },
-    {
-     "publisher": "Binance spot API daily klines",
-     "date": "Nov 3 2026",
-     "note": "SOL/USDT ~$92.22; σ90 3.02%/day",
-     "url": "https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=1d&limit=91"
-    },
-    {
-     "publisher": "TRM Labs",
-     "date": "Oct 29–30 2026",
-     "note": "~$6.36B Binance hack (TraderTraitor); attacker holds >420k ETH, 18,270 BTC, 233M XRP, 970.5k SOL beyond freeze",
-     "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-18",
-     "from": null,
-     "to": [
-      28.0,
-      38.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-10-30",
-     "from": [
-      28.0,
-      38.0
-     ],
-     "to": [
-      34.0,
-      44.0
-     ],
-     "reason": "SOL ~$95 (October low $92.34, 7-day −7.5%) is 16% above the $80 line; the zero-drift touch model on 30d/60d realized vol gives 32–44%. Market Yes 0.44 (bid 0.42 / ask 0.46), at the top of the band. 970.5k stolen SOL is still with the Binance attacker. [Backfill run: the Oct 28–30 daily reviews did not run.]."
-    },
-    {
-     "date": "2026-11-03",
-     "from": [
-      34.0,
-      44.0
-     ],
-     "to": [
-      47.0,
-      57.0
-     ],
-     "reason": "Rule: touch model (approved 31 Oct rules). SOL/USDT ~$92.2 on Binance (Nov 3 ~09:15 Rome) is 13.2% above $80 with ~59 days left; σ90 = 3.02%/day gives P(touch) 53.9%. Polymarket Yes 0.51 (bid 0.49 / ask 0.53, liquidity ~$16k). In the 30–60% zone the rules say lean low, so midpoint 52%, half-width 5. Change comes from switching to 90-day vol (the old band used 30d/60d vol), not from the latest price move."
-    },
-    {
-     "date": "2026-11-09",
-     "from": [
-      47.0,
-      57.0
-     ],
-     "to": [
-      56.0,
-      86.0
-     ],
-     "reason": "(Low). Rule: market anchor + touch model. SOL/USDT ~$85.66 is 7.1% above $80; σ90 = 3.11%/day → P(touch) 76.3%. Polymarket Gamma Yes 0.74 (bid 0.72 / ask 0.76, liquidity ~$18k) → shaded anchor 0.69. Midpoint 71%. Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
-    }
-   ],
-   "outcome": "Yes",
-   "brier": 0.0841,
    "resolvedOn": "2026-11-13"
   },
   {
