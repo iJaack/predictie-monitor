@@ -465,14 +465,15 @@
   }
 
   function bandSvg(p) {
+    const hasBand = Number.isFinite(p.probLow) && Number.isFinite(p.probHigh) && p.probLow <= p.probHigh;
     const lo = +p.probLow || 0, hi = +p.probHigh || 0, mid = p.midpoint == null ? (lo + hi) / 2 : +p.midpoint;
     const mkt = p.market && p.market.yesPrice != null ? +p.market.yesPrice : null;
     const left = Math.max(0, Math.min(100, lo));
     const width = Math.max(Math.max(0, Math.min(100, hi)) - left, 0.8);
-    const label = `Band ${fmtP(lo)} to ${fmtP(hi)}, midpoint ${fmtP(mid)}${mkt != null ? `, market ${fmtP(mkt)}` : ""}`;
+    const label = `${hasBand ? `Band ${fmtP(lo)} to ${fmtP(hi)}` : "Interval unavailable"}, midpoint ${fmtP(mid)}${mkt != null ? `, market ${fmtP(mkt)}` : ""}`;
     return `<div class="band" role="img" aria-label="${esc(label)}">
       <div class="band-track">
-        <div class="band-range" style="left:${left.toFixed(2)}%;width:${width.toFixed(2)}%"></div>
+        ${hasBand ? `<div class="band-range" style="left:${left.toFixed(2)}%;width:${width.toFixed(2)}%"></div>` : ""}
         <div class="band-mid" style="left:${Math.max(0, Math.min(100, mid)).toFixed(2)}%"></div>
         ${mkt != null ? `<div class="band-mkt" style="left:${Math.max(0, Math.min(100, mkt)).toFixed(2)}%"></div>` : ""}
       </div>
@@ -510,10 +511,11 @@
         <span class="m jk-opt">${dot(p.domain)}${esc(p.domain)}</span>
         <span class="q">${esc(p.question)}</span>
         <span class="c jk-opt">${confBars(p.confidence)}</span>
-        <span class="r">${fmtP(p.midpoint)}</span>
+        <span class="r pd-row-figure" data-forecast-figure="list">${fmtP(p.midpoint)}</span>
       </summary>
       <div class="fc-body">
-        <p class="prob-line">Band <b>${fmtP(p.probLow)}–${fmtP(p.probHigh)}</b> · midpoint <b>${fmtP(p.midpoint)}</b> · ${marketLine}</p>
+        <span class="pd-detail-figure" data-forecast-figure="detail"></span>
+        <p class="prob-line">${Number.isFinite(p.probLow) && Number.isFinite(p.probHigh) ? `Band <b>${fmtP(p.probLow)}–${fmtP(p.probHigh)}</b>` : "Interval unavailable"} · midpoint <b>${fmtP(p.midpoint)}</b> · ${marketLine}</p>
         ${bandSvg(p)}
         <p class="summary">${esc(p.summary)}</p>
         <p class="meta">${confBars(p.confidence)}
@@ -531,7 +533,7 @@
           ${(p.sources || []).map((s) => `<li><span><a class="pub" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.publisher)}</a>${s.date ? `<span class="dt">${esc(s.date)}</span>` : ""}</span>${s.note ? `<span class="note">${esc(s.note)}</span>` : ""}</li>`).join("")}
         </ul></div></details>
         <details><summary>Band history <span class="cnt">${hist.length}</span></summary><div class="dbody"><ul class="hist">
-          ${hist.slice().reverse().map((h) => `<li><div class="hd"><span class="dt">${esc(fmtShort(h.date))}</span> ${h.from ? `${fmtP(h.from[0])}–${fmtP(h.from[1])} → ` : ""}<b>${fmtP(h.to[0])}–${fmtP(h.to[1])}</b></div>${h.reason ? `<div class="why">${esc(h.reason)}</div>` : ""}</li>`).join("")}
+          ${hist.slice().reverse().map((h) => `<li><div class="hd"><span class="dt">${esc(fmtShort(h.date))}</span> ${h.from ? `${fmtP(h.from[0])}–${fmtP(h.from[1])} → ` : ""}<b>${h.to ? `${fmtP(h.to[0])}–${fmtP(h.to[1])}` : "Interval unavailable"}</b></div>${h.reason ? `<div class="why">${esc(h.reason)}</div>` : ""}</li>`).join("")}
         </ul></div></details>
       </div>
     </details>`;
@@ -558,6 +560,52 @@
       (!q || (p.question + " " + (p.summary || "")).toLowerCase().includes(q))));
   }
 
+  // Keep retained figures alive across filtering/reordering so updates use the
+  // vendor's count animation and an expanded row keeps its native keyboard state.
+  const forecastRows = new Map();
+  function renderForecastFigures(list) {
+    const grid = $("#grid"), overview = $("#figureGrid");
+    if (!overview || !window.PredictieFigure) {
+      grid.innerHTML = list.length ? list.map(forecast).join("") : `<p class="jk-note empty-note">No forecasts match these filters.</p>`;
+      return;
+    }
+    const ids = new Set(list.map((p) => p.id));
+    forecastRows.forEach((entry, id) => {
+      if (ids.has(id)) return;
+      entry.row.remove(); entry.cell.remove();
+      entry.figures.forEach((figure) => figure.destroy());
+      forecastRows.delete(id);
+    });
+    grid.querySelector(".empty-note")?.remove();
+    list.forEach((p) => {
+      let entry = forecastRows.get(p.id);
+      if (!entry) {
+        const holder = document.createElement("div");
+        holder.innerHTML = forecast(p);
+        const cell = document.createElement("div");
+        cell.dataset.forecastFigure = "grid";
+        entry = { row: holder.firstElementChild, cell, figures: [] };
+        forecastRows.set(p.id, entry);
+      }
+      grid.appendChild(entry.row); overview.appendChild(entry.cell);
+    });
+    list.forEach((p) => {
+      const entry = forecastRows.get(p.id);
+      if (entry.figures.length) entry.figures.forEach((figure) => figure.update(p));
+      else {
+        const hosts = [entry.cell, ...entry.row.querySelectorAll("[data-forecast-figure]")];
+        hosts.forEach((host) => {
+          host.textContent = "";
+          entry.figures.push(window.PredictieFigure.init(host, p));
+        });
+      }
+    });
+    if (!list.length) {
+      grid.innerHTML = `<p class="jk-note empty-note">No forecasts match these filters.</p>`;
+      $("#forecastScale").textContent = "Shared scale unavailable";
+    }
+  }
+
   function renderOpen() {
     const list = visibleList();
     const total = DATA.predictions.length;
@@ -575,9 +623,7 @@
       setFigure("#nOpenMean", fmtP(mean), { family: "percent" });
       $("#cmpOpenMean").innerHTML = `across the <b>${list.length}</b> ${list.length === 1 ? "forecast" : "forecasts"} in view`;
     }
-    $("#grid").innerHTML = list.length
-      ? list.map(forecast).join("")
-      : `<p class="jk-note empty-note">No forecasts match these filters.</p>`;
+    renderForecastFigures(list);
   }
 
   function renderResolved() {

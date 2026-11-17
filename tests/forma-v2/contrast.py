@@ -36,5 +36,17 @@ for name,themes in data.items():
         for f,b in p.get('extra',[]):
             fv=p.get(f,f); bv=p.get(b,b); r=ratio(fv,bv); ok=r>=3.0; fail+=(not ok)
             out.append(f"| {name} | {theme} | {f} {fv} su {b} {bv} | segno | {r:.2f} | {'OK' if ok else 'FAIL'} |")
+        # Site-local figure band uses explicit sRGB alpha, so compositing here
+        # matches the browser exactly on each supported row ground.
+        for ground in ('bg', 'surface', 'surface2'):
+            if 'figureBand' not in p: continue
+            band=over(parse(p['figureBand']),parse(p[ground]))
+            for mark in ('figureValue', 'figureDot', 'figureLine'):
+                backgrounds=[(ground,parse(p[ground]))]
+                if mark != 'figureValue': backgrounds.append((ground+' + band',band))
+                for label,bg in backgrounds:
+                    minimum=(4.6 if ground=='surface2' else 4.5) if mark=='figureValue' else 3.0
+                    r=ratio(p[mark],bg); ok=r>=minimum; fail+=(not ok)
+                    out.append(f"| {name} | {theme} | {mark} {p[mark]} su {label} | figure | {r:.2f} | {'OK' if ok else 'FAIL'} |")
 print("| progetto | tema | coppia | tipo | rapporto | esito |\n|---|---|---|---|---|---|"); print("\n".join(out))
 print(f"\nFAIL: {fail}", file=sys.stderr); sys.exit(1 if fail else 0)
