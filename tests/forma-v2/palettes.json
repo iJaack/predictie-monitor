@@ -10,7 +10,11 @@
       "accent": "#0f766e",
       "accentText": "#0c5c56",
       "onAccent": "#ffffff",
-      "surface2": "#e7eae6"
+      "surface2": "#e7eae6",
+      "figureValue": "#0c5c56",
+      "figureDot": "#0c5c56",
+      "figureLine": "#3f4744",
+      "figureBand": "rgba(18,20,19,0.08)"
     },
     "dark": {
       "bg": "#130e0b",
@@ -22,7 +26,11 @@
       "t3": "rgba(233,228,218,0.58)",
       "accent": "#61958e",
       "accentText": "#61958e",
-      "onAccent": "#130e0b"
+      "onAccent": "#130e0b",
+      "figureValue": "#61958e",
+      "figureDot": "#61958e",
+      "figureLine": "#b6b0a8",
+      "figureBand": "rgba(233,228,218,0.08)"
     }
   }
 }

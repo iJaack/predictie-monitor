@@ -197,22 +197,6 @@ details[open] > .fc-line .q{white-space:normal;overflow:visible}
   .fc-line{grid-template-columns:76px minmax(0,1fr) auto}
   .fc-line .jk-opt{display:none}
 }
-/* Tall inner display: keep domain and confidence, on a second line, so the
-   question still has a full row. Short landscape stays one line. */
-@media (min-height:700px){
-  @container (min-width:480px) and (max-width:760px){
-    .fc-line{
-      grid-template-columns:84px minmax(0,1fr) auto;
-      grid-template-areas:"when domain mid" "question question conf";
-      row-gap:2px;align-items:center;min-height:52px;
-    }
-    .fc-line .t{grid-area:when}
-    .fc-line .m.jk-opt{grid-area:domain;display:block}
-    .fc-line .q{grid-area:question}
-    .fc-line .r{grid-area:mid;align-self:center}
-    .fc-line .c.jk-opt{grid-area:conf;display:flex;justify-content:flex-end;align-self:center}
-  }
-}
 
 .chev{
   display:inline-block;width:7px;height:7px;margin-right:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;
@@ -276,6 +260,33 @@ details[open] > .fc-line .chev{transform:rotate(45deg) translateY(-2px)}
 .jk-end a{color:inherit}
 
 .empty-note{margin:8px 0 0}
+
+/* One auto-percent group owns overview and summary figures. The
+   vendor keeps the 1/2/3/4-column breakpoints and the fixed 5:1 word-size line. */
+#figureGrid{margin:var(--jk-s5) 0 var(--jk-s8)}
+.jk-figure{--jk-figure-band:rgba(18,20,19,.08);--jk-figure-row-bg:var(--jk-bg)}
+html[data-theme="dark"] .jk-figure{--jk-figure-band:rgba(233,228,218,.08)}
+.jk-figure-value{font-family:var(--pd-mono)}
+.jk-figure-label{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fc-line{grid-template-columns:76px minmax(0,1fr) auto}
+.fc-line>.m,.fc-line>.c{display:none}
+.fc-line>.pd-row-figure{overflow:visible;white-space:normal}
+.pd-row-figure.jk-figure{flex-wrap:nowrap;align-items:center;gap:var(--jk-s2)}
+.pd-row-figure .jk-figure-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.pd-row-figure .jk-figure-history{margin-left:0}
+@media (min-width:960px){
+  .fc-line{grid-template-columns:76px 92px minmax(0,1fr) 84px auto;column-gap:var(--jk-s3)}
+  .fc-line>.m,.fc-line>.c{display:block}
+}
+@media (min-width:1280px){
+  /* v2.2.0 has no lg token; lede is the next step above body. */
+  .pd-row-figure,
+  #figureGrid .jk-figure{font-size:var(--jk-fs-lg, var(--jk-fs-lede))}
+}
+@media (max-width:599px){
+  .fc-line{grid-template-columns:76px minmax(0,1fr);row-gap:var(--jk-s1)}
+  .fc-line>.pd-row-figure{grid-column:2;justify-content:space-between}
+}
 
 /* 400–819px chapters (folded portrait through the inner portrait): the two
    readings share a row so the chart can sit above the dock. From 820px the

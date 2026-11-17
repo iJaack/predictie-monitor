@@ -65,10 +65,61 @@ class FormaV2Test(unittest.TestCase):
             self.assertIsNotNone(block, theme)
             declarations = dict(re.findall(r"(--jk-[\w-]+)\s*:\s*([^;]+);", block[1]))
             for name, expected in colors.items():
+                if name.startswith("figure"):
+                    continue  # Component bindings and band composites checked below.
                 token = "--jk-" + tokens.get(name, name)
                 with self.subTest(theme=theme, token=token):
                     self.assertIn(token, declarations)
                     self.assertEqual(normalize_color(declarations[token]), normalize_color(expected))
+
+    def test_figure_palette_bindings(self):
+        palette = json.loads((FIXTURES / "palettes.json").read_text())["predictie"]
+        vendor = (VENDOR / "components/figure.css").read_text()
+        tokens = (VENDOR / "tokens.css").read_text()
+        css = (ROOT / "assets/style.css").read_text()
+        for colors in palette.values():
+            self.assertEqual(colors["figureValue"], colors["accentText"])
+            self.assertEqual(colors["figureDot"], colors["accentText"])
+            self.assertEqual(colors["figureLine"], colors["ink2"])
+            self.assertIn(colors["figureBand"], re.sub(r"\s+", "", css).replace(",.08", ",0.08"))
+        self.assertIn("color:var(--jk-accent-text)", vendor)
+        self.assertIn("--jk-figure-mark:var(--jk-accent-text)", re.sub(r"\s+", "", tokens))
+        self.assertIn("--jk-figure-line:var(--jk-ink-2)", re.sub(r"\s+", "", tokens))
+
+    def test_figure_adapter_and_capture_wiring(self):
+        html = (ROOT / "index.html").read_text()
+        app = (ROOT / "assets/app.js").read_text()
+        self.assertIn('src="assets/forecast-figure.js"', html)
+        self.assertIn('data-jk-figure-scale="auto-percent"', html)
+        self.assertIn('class="jk-figures" id="figureGrid"', html)
+        self.assertIn('class="r pd-row-figure" data-forecast-figure="list"', app)
+        for source in (app, html, (ROOT / "assets/style.css").read_text()):
+            self.assertNotIn('pd-detail-figure', source)
+            self.assertNotIn('data-forecast-figure="detail"', source)
+        self.assertIn('entry.figures.forEach((figure) => figure.update(p))', app)
+        fixture = json.loads((ROOT / "tests/fixtures/synthetic/predictions.json").read_text())
+        self.assertIn("Synthetic", fixture["note"])
+        self.assertEqual(len(fixture["predictions"]), 11)
+        self.assertTrue(all(len(p["history"]) == 30 for p in fixture["predictions"]))
+        self.assertTrue(all(s["url"].startswith("https://example.com/") for p in fixture["predictions"] for s in p["sources"]))
+
+    def test_figure_caps_and_desktop_type(self):
+        css = (ROOT / "assets/style.css").read_text()
+        vendor = (VENDOR / "components/figure.css").read_text()
+        for declarations in re.findall(r"(?:^|[{}])\s*\.fc-line\s*\{([^}]+)\}", css):
+            self.assertNotRegex(declarations, r"\bmax-width\s*:")
+        # Overview cells inherit the same vendor cap as summary figures.
+        self.assertRegex(vendor, r"\.jk-figure\s*\{[^}]*max-width:720px")
+        for declarations in re.findall(r"(?:^|[{}])\s*(?:#figureGrid\s+)?\.jk-figure\s*\{([^}]+)\}", css):
+            for cap in re.findall(r"max-width\s*:\s*([^;}]+)", declarations):
+                self.assertEqual(cap.strip(), "720px")
+        self.assertRegex(
+            css,
+            r"@media\s*\(min-width:1280px\)\s*\{\s*(?:/\*.*?\*/\s*)?"
+            r"\.pd-row-figure\s*,\s*#figureGrid\s+\.jk-figure\s*\{\s*"
+            r"font-size:var\(--jk-fs-lg,\s*var\(--jk-fs-lede\)\)",
+        )
+        self.assertNotRegex(css, r"--jk-figure-ratio\s*:")
 
     def test_palette_contrast(self):
         result = subprocess.run(
@@ -105,11 +156,12 @@ class FormaV2Test(unittest.TestCase):
         actual = {p.relative_to(VENDOR).as_posix() for p in VENDOR.rglob("*") if p.is_file()}
         self.assertEqual(actual, set(entries) | {"MANIFEST.txt", "SOURCE"})
         self.assertTrue(any(name.startswith("fonts/") for name in entries))
+        self.assertTrue({"components/figure.css", "components/figure.js"}.issubset(entries))
         for name, digest in entries.items():
             with self.subTest(file=name):
                 self.assertEqual(hashlib.sha256((VENDOR / name).read_bytes()).hexdigest(), digest)
         self.assertEqual((VENDOR / "SOURCE").read_text().strip(),
-                         "iJaack/jaack-design v2.1.0 1df06388224c77dcef92145252f0f3c27d8e4fd7")
+                         "iJaack/jaack-design v2.2.0 ec751590c3e6c34017e572e57fed11bbf5b8adff")
 
     def test_vendor_uses_warm_forma_tokens(self):
         self.assertIn("--jk-bg:#130e0b", (VENDOR / "tokens.css").read_text())

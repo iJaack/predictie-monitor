@@ -1,0 +1,5130 @@
+{
+  "schemaVersion": 1,
+  "note": "Synthetic fixture — not real data",
+  "generatedAt": "2026-11-17T12:00:00+01:00",
+  "timezone": "Europe/Rome",
+  "counts": {
+    "active": 11,
+    "resolved": 2,
+    "byDomain": {
+      "Geopolitics": 3,
+      "Macro": 2,
+      "Crypto": 2,
+      "Enterprise": 2,
+      "AI": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "synthetic-x",
+      "question": "Mercato X",
+      "domain": "Geopolitics",
+      "status": "Active",
+      "confidence": "High",
+      "probLow": 48,
+      "probHigh": 64,
+      "midpoint": 61,
+      "horizon": "2026-11-20",
+      "staleAfter": "2026-11-25",
+      "lastReviewed": "2026-11-17",
+      "created": "2026-10-19",
+      "summary": "Synthetic forecast for interface review. No real market or source data.",
+      "triggers": [
+        {
+          "label": "Toward yes",
+          "text": "A fictional event meets the synthetic criteria."
+        }
+      ],
+      "resolution": "Resolve Yes if the fictional example event occurs.",
+      "market": null,
+      "sources": [
+        {
+          "publisher": "Example synthetic source",
+          "date": "2026-11-17",
+          "note": "Fictional source for visual testing.",
+          "url": "https://example.com/synthetic/x"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-10-19",
+          "from": null,
+          "to": [
+            36.0,
+            40.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-20",
+          "from": [
+            36.0,
+            40.0
+          ],
+          "to": [
+            36.79,
+            40.79
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-21",
+          "from": [
+            36.79,
+            40.79
+          ],
+          "to": [
+            37.59,
+            41.59
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-22",
+          "from": [
+            37.59,
+            41.59
+          ],
+          "to": [
+            38.38,
+            42.38
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-23",
+          "from": [
+            38.38,
+            42.38
+          ],
+          "to": [
+            39.17,
+            43.17
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-24",
+          "from": [
+            39.17,
+            43.17
+          ],
+          "to": [
+            39.97,
+            43.97
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-25",
+          "from": [
+            39.97,
+            43.97
+          ],
+          "to": [
+            40.76,
+            44.76
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-26",
+          "from": [
+            40.76,
+            44.76
+          ],
+          "to": [
+            41.55,
+            45.55
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-27",
+          "from": [
+            41.55,
+            45.55
+          ],
+          "to": [
+            42.34,
+            46.34
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-28",
+          "from": [
+            42.34,
+            46.34
+          ],
+          "to": [
+            43.14,
+            47.14
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-29",
+          "from": [
+            43.14,
+            47.14
+          ],
+          "to": [
+            43.93,
+            47.93
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-30",
+          "from": [
+            43.93,
+            47.93
+          ],
+          "to": [
+            44.72,
+            48.72
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-31",
+          "from": [
+            44.72,
+            48.72
+          ],
+          "to": [
+            45.52,
+            49.52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-01",
+          "from": [
+            45.52,
+            49.52
+          ],
+          "to": [
+            46.31,
+            50.31
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-02",
+          "from": [
+            46.31,
+            50.31
+          ],
+          "to": [
+            47.1,
+            51.1
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-03",
+          "from": [
+            47.1,
+            51.1
+          ],
+          "to": [
+            47.9,
+            51.9
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-04",
+          "from": [
+            47.9,
+            51.9
+          ],
+          "to": [
+            48.69,
+            52.69
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-05",
+          "from": [
+            48.69,
+            52.69
+          ],
+          "to": [
+            49.48,
+            53.48
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-06",
+          "from": [
+            49.48,
+            53.48
+          ],
+          "to": [
+            50.28,
+            54.28
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-07",
+          "from": [
+            50.28,
+            54.28
+          ],
+          "to": [
+            51.07,
+            55.07
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-08",
+          "from": [
+            51.07,
+            55.07
+          ],
+          "to": [
+            51.86,
+            55.86
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-09",
+          "from": [
+            51.86,
+            55.86
+          ],
+          "to": [
+            52.66,
+            56.66
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-10",
+          "from": [
+            52.66,
+            56.66
+          ],
+          "to": [
+            53.45,
+            57.45
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-11",
+          "from": [
+            53.45,
+            57.45
+          ],
+          "to": [
+            54.24,
+            58.24
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-12",
+          "from": [
+            54.24,
+            58.24
+          ],
+          "to": [
+            55.03,
+            59.03
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-13",
+          "from": [
+            55.03,
+            59.03
+          ],
+          "to": [
+            55.83,
+            59.83
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-14",
+          "from": [
+            55.83,
+            59.83
+          ],
+          "to": [
+            56.62,
+            60.62
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-15",
+          "from": [
+            56.62,
+            60.62
+          ],
+          "to": [
+            57.41,
+            61.41
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-16",
+          "from": [
+            57.41,
+            61.41
+          ],
+          "to": [
+            58.21,
+            62.21
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-17",
+          "from": [
+            58.21,
+            62.21
+          ],
+          "to": [
+            48,
+            64
+          ],
+          "reason": "Synthetic deterministic band revision."
+        }
+      ],
+      "outcome": null,
+      "brier": null,
+      "resolvedOn": null
+    },
+    {
+      "id": "synthetic-y",
+      "question": "Mercato Y",
+      "domain": "Macro",
+      "status": "Active",
+      "confidence": "Medium",
+      "probLow": 41,
+      "probHigh": 50,
+      "midpoint": 44,
+      "horizon": "2026-11-21",
+      "staleAfter": "2026-11-25",
+      "lastReviewed": "2026-11-17",
+      "created": "2026-10-19",
+      "summary": "Synthetic forecast for interface review. No real market or source data.",
+      "triggers": [
+        {
+          "label": "Toward yes",
+          "text": "A fictional event meets the synthetic criteria."
+        }
+      ],
+      "resolution": "Resolve Yes if the fictional example event occurs.",
+      "market": null,
+      "sources": [
+        {
+          "publisher": "Example synthetic source",
+          "date": "2026-11-17",
+          "note": "Fictional source for visual testing.",
+          "url": "https://example.com/synthetic/y"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-10-19",
+          "from": null,
+          "to": [
+            53.0,
+            57.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-20",
+          "from": [
+            53.0,
+            57.0
+          ],
+          "to": [
+            52.0,
+            56.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-21",
+          "from": [
+            52.0,
+            56.0
+          ],
+          "to": [
+            51.0,
+            55.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-22",
+          "from": [
+            51.0,
+            55.0
+          ],
+          "to": [
+            50.0,
+            54.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-23",
+          "from": [
+            50.0,
+            54.0
+          ],
+          "to": [
+            49.0,
+            53.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-24",
+          "from": [
+            49.0,
+            53.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-25",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            47.0,
+            51.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-26",
+          "from": [
+            47.0,
+            51.0
+          ],
+          "to": [
+            46.0,
+            50.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-27",
+          "from": [
+            46.0,
+            50.0
+          ],
+          "to": [
+            45.0,
+            49.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-28",
+          "from": [
+            45.0,
+            49.0
+          ],
+          "to": [
+            44.0,
+            48.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-29",
+          "from": [
+            44.0,
+            48.0
+          ],
+          "to": [
+            43.0,
+            47.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-30",
+          "from": [
+            43.0,
+            47.0
+          ],
+          "to": [
+            42.0,
+            46.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-31",
+          "from": [
+            42.0,
+            46.0
+          ],
+          "to": [
+            41.0,
+            45.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-01",
+          "from": [
+            41.0,
+            45.0
+          ],
+          "to": [
+            40.0,
+            44.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-02",
+          "from": [
+            40.0,
+            44.0
+          ],
+          "to": [
+            39.0,
+            43.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-03",
+          "from": [
+            39.0,
+            43.0
+          ],
+          "to": [
+            38.0,
+            42.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-04",
+          "from": [
+            38.0,
+            42.0
+          ],
+          "to": [
+            38.29,
+            42.29
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-05",
+          "from": [
+            38.29,
+            42.29
+          ],
+          "to": [
+            38.57,
+            42.57
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-06",
+          "from": [
+            38.57,
+            42.57
+          ],
+          "to": [
+            38.86,
+            42.86
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-07",
+          "from": [
+            38.86,
+            42.86
+          ],
+          "to": [
+            39.14,
+            43.14
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-08",
+          "from": [
+            39.14,
+            43.14
+          ],
+          "to": [
+            39.43,
+            43.43
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-09",
+          "from": [
+            39.43,
+            43.43
+          ],
+          "to": [
+            39.71,
+            43.71
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-10",
+          "from": [
+            39.71,
+            43.71
+          ],
+          "to": [
+            40.0,
+            44.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-11",
+          "from": [
+            40.0,
+            44.0
+          ],
+          "to": [
+            40.29,
+            44.29
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-12",
+          "from": [
+            40.29,
+            44.29
+          ],
+          "to": [
+            40.57,
+            44.57
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-13",
+          "from": [
+            40.57,
+            44.57
+          ],
+          "to": [
+            40.86,
+            44.86
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-14",
+          "from": [
+            40.86,
+            44.86
+          ],
+          "to": [
+            41.14,
+            45.14
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-15",
+          "from": [
+            41.14,
+            45.14
+          ],
+          "to": [
+            41.43,
+            45.43
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-16",
+          "from": [
+            41.43,
+            45.43
+          ],
+          "to": [
+            41.71,
+            45.71
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-17",
+          "from": [
+            41.71,
+            45.71
+          ],
+          "to": [
+            41,
+            50
+          ],
+          "reason": "Synthetic deterministic band revision."
+        }
+      ],
+      "outcome": null,
+      "brier": null,
+      "resolvedOn": null
+    },
+    {
+      "id": "synthetic-z",
+      "question": "Mercato Z",
+      "domain": "Crypto",
+      "status": "Active",
+      "confidence": "Low",
+      "probLow": null,
+      "probHigh": null,
+      "midpoint": 50,
+      "horizon": "2026-11-22",
+      "staleAfter": "2026-11-25",
+      "lastReviewed": "2026-11-17",
+      "created": "2026-10-19",
+      "summary": "Synthetic forecast for interface review. No real market or source data.",
+      "triggers": [
+        {
+          "label": "Toward yes",
+          "text": "A fictional event meets the synthetic criteria."
+        }
+      ],
+      "resolution": "Resolve Yes if the fictional example event occurs.",
+      "market": null,
+      "sources": [
+        {
+          "publisher": "Example synthetic source",
+          "date": "2026-11-17",
+          "note": "Fictional source for visual testing.",
+          "url": "https://example.com/synthetic/z"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-10-19",
+          "from": null,
+          "to": [
+            47,
+            51
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-20",
+          "from": [
+            47,
+            51
+          ],
+          "to": [
+            48,
+            52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-21",
+          "from": [
+            48,
+            52
+          ],
+          "to": [
+            49,
+            53
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-22",
+          "from": [
+            49,
+            53
+          ],
+          "to": [
+            47,
+            51
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-23",
+          "from": [
+            47,
+            51
+          ],
+          "to": [
+            48,
+            52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-24",
+          "from": [
+            48,
+            52
+          ],
+          "to": [
+            49,
+            53
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-25",
+          "from": [
+            49,
+            53
+          ],
+          "to": [
+            47,
+            51
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-26",
+          "from": [
+            47,
+            51
+          ],
+          "to": [
+            48,
+            52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-27",
+          "from": [
+            48,
+            52
+          ],
+          "to": [
+            49,
+            53
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-28",
+          "from": [
+            49,
+            53
+          ],
+          "to": [
+            47,
+            51
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-29",
+          "from": [
+            47,
+            51
+          ],
+          "to": [
+            48,
+            52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-30",
+          "from": [
+            48,
+            52
+          ],
+          "to": [
+            49,
+            53
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-31",
+          "from": [
+            49,
+            53
+          ],
+          "to": [
+            47,
+            51
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-01",
+          "from": [
+            47,
+            51
+          ],
+          "to": [
+            48,
+            52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-02",
+          "from": [
+            48,
+            52
+          ],
+          "to": [
+            49,
+            53
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-03",
+          "from": [
+            49,
+            53
+          ],
+          "to": [
+            47,
+            51
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-04",
+          "from": [
+            47,
+            51
+          ],
+          "to": [
+            48,
+            52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-05",
+          "from": [
+            48,
+            52
+          ],
+          "to": [
+            49,
+            53
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-06",
+          "from": [
+            49,
+            53
+          ],
+          "to": [
+            47,
+            51
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-07",
+          "from": [
+            47,
+            51
+          ],
+          "to": [
+            48,
+            52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-08",
+          "from": [
+            48,
+            52
+          ],
+          "to": [
+            49,
+            53
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-09",
+          "from": [
+            49,
+            53
+          ],
+          "to": [
+            47,
+            51
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-10",
+          "from": [
+            47,
+            51
+          ],
+          "to": [
+            48,
+            52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-11",
+          "from": [
+            48,
+            52
+          ],
+          "to": [
+            49,
+            53
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-12",
+          "from": [
+            49,
+            53
+          ],
+          "to": [
+            47,
+            51
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-13",
+          "from": [
+            47,
+            51
+          ],
+          "to": [
+            48,
+            52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-14",
+          "from": [
+            48,
+            52
+          ],
+          "to": [
+            49,
+            53
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-15",
+          "from": [
+            49,
+            53
+          ],
+          "to": [
+            47,
+            51
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-16",
+          "from": [
+            47,
+            51
+          ],
+          "to": [
+            48,
+            52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-17",
+          "from": [
+            48,
+            52
+          ],
+          "to": [
+            48,
+            52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        }
+      ],
+      "outcome": null,
+      "brier": null,
+      "resolvedOn": null
+    },
+    {
+      "id": "synthetic-a",
+      "question": "Mercato A",
+      "domain": "Enterprise",
+      "status": "Active",
+      "confidence": "High",
+      "probLow": 31,
+      "probHigh": 39,
+      "midpoint": 35,
+      "horizon": "2026-11-23",
+      "staleAfter": "2026-11-25",
+      "lastReviewed": "2026-11-17",
+      "created": "2026-10-19",
+      "summary": "Synthetic forecast for interface review. No real market or source data.",
+      "triggers": [
+        {
+          "label": "Toward yes",
+          "text": "A fictional event meets the synthetic criteria."
+        }
+      ],
+      "resolution": "Resolve Yes if the fictional example event occurs.",
+      "market": null,
+      "sources": [
+        {
+          "publisher": "Example synthetic source",
+          "date": "2026-11-17",
+          "note": "Fictional source for visual testing.",
+          "url": "https://example.com/synthetic/a"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-10-19",
+          "from": null,
+          "to": [
+            24.0,
+            28.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-20",
+          "from": [
+            24.0,
+            28.0
+          ],
+          "to": [
+            24.31,
+            28.31
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-21",
+          "from": [
+            24.31,
+            28.31
+          ],
+          "to": [
+            24.62,
+            28.62
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-22",
+          "from": [
+            24.62,
+            28.62
+          ],
+          "to": [
+            24.93,
+            28.93
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-23",
+          "from": [
+            24.93,
+            28.93
+          ],
+          "to": [
+            25.24,
+            29.24
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-24",
+          "from": [
+            25.24,
+            29.24
+          ],
+          "to": [
+            25.55,
+            29.55
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-25",
+          "from": [
+            25.55,
+            29.55
+          ],
+          "to": [
+            25.86,
+            29.86
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-26",
+          "from": [
+            25.86,
+            29.86
+          ],
+          "to": [
+            26.17,
+            30.17
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-27",
+          "from": [
+            26.17,
+            30.17
+          ],
+          "to": [
+            26.48,
+            30.48
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-28",
+          "from": [
+            26.48,
+            30.48
+          ],
+          "to": [
+            26.79,
+            30.79
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-29",
+          "from": [
+            26.79,
+            30.79
+          ],
+          "to": [
+            27.1,
+            31.1
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-30",
+          "from": [
+            27.1,
+            31.1
+          ],
+          "to": [
+            27.41,
+            31.41
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-31",
+          "from": [
+            27.41,
+            31.41
+          ],
+          "to": [
+            27.72,
+            31.72
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-01",
+          "from": [
+            27.72,
+            31.72
+          ],
+          "to": [
+            28.03,
+            32.03
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-02",
+          "from": [
+            28.03,
+            32.03
+          ],
+          "to": [
+            28.34,
+            32.34
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-03",
+          "from": [
+            28.34,
+            32.34
+          ],
+          "to": [
+            28.66,
+            32.66
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-04",
+          "from": [
+            28.66,
+            32.66
+          ],
+          "to": [
+            28.97,
+            32.97
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-05",
+          "from": [
+            28.97,
+            32.97
+          ],
+          "to": [
+            29.28,
+            33.28
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-06",
+          "from": [
+            29.28,
+            33.28
+          ],
+          "to": [
+            29.59,
+            33.59
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-07",
+          "from": [
+            29.59,
+            33.59
+          ],
+          "to": [
+            29.9,
+            33.9
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-08",
+          "from": [
+            29.9,
+            33.9
+          ],
+          "to": [
+            30.21,
+            34.21
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-09",
+          "from": [
+            30.21,
+            34.21
+          ],
+          "to": [
+            30.52,
+            34.52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-10",
+          "from": [
+            30.52,
+            34.52
+          ],
+          "to": [
+            30.83,
+            34.83
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-11",
+          "from": [
+            30.83,
+            34.83
+          ],
+          "to": [
+            31.14,
+            35.14
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-12",
+          "from": [
+            31.14,
+            35.14
+          ],
+          "to": [
+            31.45,
+            35.45
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-13",
+          "from": [
+            31.45,
+            35.45
+          ],
+          "to": [
+            31.76,
+            35.76
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-14",
+          "from": [
+            31.76,
+            35.76
+          ],
+          "to": [
+            32.07,
+            36.07
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-15",
+          "from": [
+            32.07,
+            36.07
+          ],
+          "to": [
+            32.38,
+            36.38
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-16",
+          "from": [
+            32.38,
+            36.38
+          ],
+          "to": [
+            32.69,
+            36.69
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-17",
+          "from": [
+            32.69,
+            36.69
+          ],
+          "to": [
+            31,
+            39
+          ],
+          "reason": "Synthetic deterministic band revision."
+        }
+      ],
+      "outcome": null,
+      "brier": null,
+      "resolvedOn": null
+    },
+    {
+      "id": "synthetic-b",
+      "question": "Mercato B",
+      "domain": "AI",
+      "status": "Active",
+      "confidence": "Medium",
+      "probLow": 36,
+      "probHigh": 44,
+      "midpoint": 40,
+      "horizon": "2026-11-24",
+      "staleAfter": "2026-11-25",
+      "lastReviewed": "2026-11-17",
+      "created": "2026-10-19",
+      "summary": "Synthetic forecast for interface review. No real market or source data.",
+      "triggers": [
+        {
+          "label": "Toward yes",
+          "text": "A fictional event meets the synthetic criteria."
+        }
+      ],
+      "resolution": "Resolve Yes if the fictional example event occurs.",
+      "market": null,
+      "sources": [
+        {
+          "publisher": "Example synthetic source",
+          "date": "2026-11-17",
+          "note": "Fictional source for visual testing.",
+          "url": "https://example.com/synthetic/b"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-10-19",
+          "from": null,
+          "to": [
+            32.0,
+            36.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-20",
+          "from": [
+            32.0,
+            36.0
+          ],
+          "to": [
+            32.21,
+            36.21
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-21",
+          "from": [
+            32.21,
+            36.21
+          ],
+          "to": [
+            32.41,
+            36.41
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-22",
+          "from": [
+            32.41,
+            36.41
+          ],
+          "to": [
+            32.62,
+            36.62
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-23",
+          "from": [
+            32.62,
+            36.62
+          ],
+          "to": [
+            32.83,
+            36.83
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-24",
+          "from": [
+            32.83,
+            36.83
+          ],
+          "to": [
+            33.03,
+            37.03
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-25",
+          "from": [
+            33.03,
+            37.03
+          ],
+          "to": [
+            33.24,
+            37.24
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-26",
+          "from": [
+            33.24,
+            37.24
+          ],
+          "to": [
+            33.45,
+            37.45
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-27",
+          "from": [
+            33.45,
+            37.45
+          ],
+          "to": [
+            33.66,
+            37.66
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-28",
+          "from": [
+            33.66,
+            37.66
+          ],
+          "to": [
+            33.86,
+            37.86
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-29",
+          "from": [
+            33.86,
+            37.86
+          ],
+          "to": [
+            34.07,
+            38.07
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-30",
+          "from": [
+            34.07,
+            38.07
+          ],
+          "to": [
+            34.28,
+            38.28
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-31",
+          "from": [
+            34.28,
+            38.28
+          ],
+          "to": [
+            34.48,
+            38.48
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-01",
+          "from": [
+            34.48,
+            38.48
+          ],
+          "to": [
+            34.69,
+            38.69
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-02",
+          "from": [
+            34.69,
+            38.69
+          ],
+          "to": [
+            34.9,
+            38.9
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-03",
+          "from": [
+            34.9,
+            38.9
+          ],
+          "to": [
+            35.1,
+            39.1
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-04",
+          "from": [
+            35.1,
+            39.1
+          ],
+          "to": [
+            35.31,
+            39.31
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-05",
+          "from": [
+            35.31,
+            39.31
+          ],
+          "to": [
+            35.52,
+            39.52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-06",
+          "from": [
+            35.52,
+            39.52
+          ],
+          "to": [
+            35.72,
+            39.72
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-07",
+          "from": [
+            35.72,
+            39.72
+          ],
+          "to": [
+            35.93,
+            39.93
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-08",
+          "from": [
+            35.93,
+            39.93
+          ],
+          "to": [
+            36.14,
+            40.14
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-09",
+          "from": [
+            36.14,
+            40.14
+          ],
+          "to": [
+            36.34,
+            40.34
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-10",
+          "from": [
+            36.34,
+            40.34
+          ],
+          "to": [
+            36.55,
+            40.55
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-11",
+          "from": [
+            36.55,
+            40.55
+          ],
+          "to": [
+            36.76,
+            40.76
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-12",
+          "from": [
+            36.76,
+            40.76
+          ],
+          "to": [
+            36.97,
+            40.97
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-13",
+          "from": [
+            36.97,
+            40.97
+          ],
+          "to": [
+            37.17,
+            41.17
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-14",
+          "from": [
+            37.17,
+            41.17
+          ],
+          "to": [
+            37.38,
+            41.38
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-15",
+          "from": [
+            37.38,
+            41.38
+          ],
+          "to": [
+            37.59,
+            41.59
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-16",
+          "from": [
+            37.59,
+            41.59
+          ],
+          "to": [
+            37.79,
+            41.79
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-17",
+          "from": [
+            37.79,
+            41.79
+          ],
+          "to": [
+            36,
+            44
+          ],
+          "reason": "Synthetic deterministic band revision."
+        }
+      ],
+      "outcome": null,
+      "brier": null,
+      "resolvedOn": null
+    },
+    {
+      "id": "synthetic-c",
+      "question": "Mercato C",
+      "domain": "Geopolitics",
+      "status": "Active",
+      "confidence": "Low",
+      "probLow": 41,
+      "probHigh": 49,
+      "midpoint": 45,
+      "horizon": "2026-11-25",
+      "staleAfter": "2026-11-25",
+      "lastReviewed": "2026-11-17",
+      "created": "2026-10-19",
+      "summary": "Synthetic forecast for interface review. No real market or source data.",
+      "triggers": [
+        {
+          "label": "Toward yes",
+          "text": "A fictional event meets the synthetic criteria."
+        }
+      ],
+      "resolution": "Resolve Yes if the fictional example event occurs.",
+      "market": null,
+      "sources": [
+        {
+          "publisher": "Example synthetic source",
+          "date": "2026-11-17",
+          "note": "Fictional source for visual testing.",
+          "url": "https://example.com/synthetic/c"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-10-19",
+          "from": null,
+          "to": [
+            40.0,
+            44.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-20",
+          "from": [
+            40.0,
+            44.0
+          ],
+          "to": [
+            40.1,
+            44.1
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-21",
+          "from": [
+            40.1,
+            44.1
+          ],
+          "to": [
+            40.21,
+            44.21
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-22",
+          "from": [
+            40.21,
+            44.21
+          ],
+          "to": [
+            40.31,
+            44.31
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-23",
+          "from": [
+            40.31,
+            44.31
+          ],
+          "to": [
+            40.41,
+            44.41
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-24",
+          "from": [
+            40.41,
+            44.41
+          ],
+          "to": [
+            40.52,
+            44.52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-25",
+          "from": [
+            40.52,
+            44.52
+          ],
+          "to": [
+            40.62,
+            44.62
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-26",
+          "from": [
+            40.62,
+            44.62
+          ],
+          "to": [
+            40.72,
+            44.72
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-27",
+          "from": [
+            40.72,
+            44.72
+          ],
+          "to": [
+            40.83,
+            44.83
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-28",
+          "from": [
+            40.83,
+            44.83
+          ],
+          "to": [
+            40.93,
+            44.93
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-29",
+          "from": [
+            40.93,
+            44.93
+          ],
+          "to": [
+            41.03,
+            45.03
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-30",
+          "from": [
+            41.03,
+            45.03
+          ],
+          "to": [
+            41.14,
+            45.14
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-31",
+          "from": [
+            41.14,
+            45.14
+          ],
+          "to": [
+            41.24,
+            45.24
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-01",
+          "from": [
+            41.24,
+            45.24
+          ],
+          "to": [
+            41.34,
+            45.34
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-02",
+          "from": [
+            41.34,
+            45.34
+          ],
+          "to": [
+            41.45,
+            45.45
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-03",
+          "from": [
+            41.45,
+            45.45
+          ],
+          "to": [
+            41.55,
+            45.55
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-04",
+          "from": [
+            41.55,
+            45.55
+          ],
+          "to": [
+            41.66,
+            45.66
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-05",
+          "from": [
+            41.66,
+            45.66
+          ],
+          "to": [
+            41.76,
+            45.76
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-06",
+          "from": [
+            41.76,
+            45.76
+          ],
+          "to": [
+            41.86,
+            45.86
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-07",
+          "from": [
+            41.86,
+            45.86
+          ],
+          "to": [
+            41.97,
+            45.97
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-08",
+          "from": [
+            41.97,
+            45.97
+          ],
+          "to": [
+            42.07,
+            46.07
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-09",
+          "from": [
+            42.07,
+            46.07
+          ],
+          "to": [
+            42.17,
+            46.17
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-10",
+          "from": [
+            42.17,
+            46.17
+          ],
+          "to": [
+            42.28,
+            46.28
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-11",
+          "from": [
+            42.28,
+            46.28
+          ],
+          "to": [
+            42.38,
+            46.38
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-12",
+          "from": [
+            42.38,
+            46.38
+          ],
+          "to": [
+            42.48,
+            46.48
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-13",
+          "from": [
+            42.48,
+            46.48
+          ],
+          "to": [
+            42.59,
+            46.59
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-14",
+          "from": [
+            42.59,
+            46.59
+          ],
+          "to": [
+            42.69,
+            46.69
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-15",
+          "from": [
+            42.69,
+            46.69
+          ],
+          "to": [
+            42.79,
+            46.79
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-16",
+          "from": [
+            42.79,
+            46.79
+          ],
+          "to": [
+            42.9,
+            46.9
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-17",
+          "from": [
+            42.9,
+            46.9
+          ],
+          "to": [
+            41,
+            49
+          ],
+          "reason": "Synthetic deterministic band revision."
+        }
+      ],
+      "outcome": null,
+      "brier": null,
+      "resolvedOn": null
+    },
+    {
+      "id": "synthetic-d",
+      "question": "Mercato D",
+      "domain": "Macro",
+      "status": "Active",
+      "confidence": "High",
+      "probLow": 49.98,
+      "probHigh": 50.02,
+      "midpoint": 50,
+      "horizon": "2026-11-26",
+      "staleAfter": "2026-11-25",
+      "lastReviewed": "2026-11-17",
+      "created": "2026-10-19",
+      "summary": "Synthetic forecast for interface review. No real market or source data.",
+      "triggers": [
+        {
+          "label": "Toward yes",
+          "text": "A fictional event meets the synthetic criteria."
+        }
+      ],
+      "resolution": "Resolve Yes if the fictional example event occurs.",
+      "market": null,
+      "sources": [
+        {
+          "publisher": "Example synthetic source",
+          "date": "2026-11-17",
+          "note": "Fictional source for visual testing.",
+          "url": "https://example.com/synthetic/d"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-10-19",
+          "from": null,
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-20",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-21",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-22",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-23",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-24",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-25",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-26",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-27",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-28",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-29",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-30",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-31",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-01",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-02",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-03",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-04",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-05",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-06",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-07",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-08",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-09",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-10",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-11",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-12",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-13",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-14",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-15",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-16",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            48.0,
+            52.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-17",
+          "from": [
+            48.0,
+            52.0
+          ],
+          "to": [
+            49.98,
+            50.02
+          ],
+          "reason": "Synthetic deterministic band revision."
+        }
+      ],
+      "outcome": null,
+      "brier": null,
+      "resolvedOn": null
+    },
+    {
+      "id": "synthetic-e",
+      "question": "Mercato E",
+      "domain": "Crypto",
+      "status": "Active",
+      "confidence": "Medium",
+      "probLow": 51,
+      "probHigh": 59,
+      "midpoint": 55,
+      "horizon": "2026-11-27",
+      "staleAfter": "2026-11-25",
+      "lastReviewed": "2026-11-17",
+      "created": "2026-10-19",
+      "summary": "Synthetic forecast for interface review. No real market or source data.",
+      "triggers": [
+        {
+          "label": "Toward yes",
+          "text": "A fictional event meets the synthetic criteria."
+        }
+      ],
+      "resolution": "Resolve Yes if the fictional example event occurs.",
+      "market": null,
+      "sources": [
+        {
+          "publisher": "Example synthetic source",
+          "date": "2026-11-17",
+          "note": "Fictional source for visual testing.",
+          "url": "https://example.com/synthetic/e"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-10-19",
+          "from": null,
+          "to": [
+            56.0,
+            60.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-20",
+          "from": [
+            56.0,
+            60.0
+          ],
+          "to": [
+            55.9,
+            59.9
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-21",
+          "from": [
+            55.9,
+            59.9
+          ],
+          "to": [
+            55.79,
+            59.79
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-22",
+          "from": [
+            55.79,
+            59.79
+          ],
+          "to": [
+            55.69,
+            59.69
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-23",
+          "from": [
+            55.69,
+            59.69
+          ],
+          "to": [
+            55.59,
+            59.59
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-24",
+          "from": [
+            55.59,
+            59.59
+          ],
+          "to": [
+            55.48,
+            59.48
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-25",
+          "from": [
+            55.48,
+            59.48
+          ],
+          "to": [
+            55.38,
+            59.38
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-26",
+          "from": [
+            55.38,
+            59.38
+          ],
+          "to": [
+            55.28,
+            59.28
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-27",
+          "from": [
+            55.28,
+            59.28
+          ],
+          "to": [
+            55.17,
+            59.17
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-28",
+          "from": [
+            55.17,
+            59.17
+          ],
+          "to": [
+            55.07,
+            59.07
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-29",
+          "from": [
+            55.07,
+            59.07
+          ],
+          "to": [
+            54.97,
+            58.97
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-30",
+          "from": [
+            54.97,
+            58.97
+          ],
+          "to": [
+            54.86,
+            58.86
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-31",
+          "from": [
+            54.86,
+            58.86
+          ],
+          "to": [
+            54.76,
+            58.76
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-01",
+          "from": [
+            54.76,
+            58.76
+          ],
+          "to": [
+            54.66,
+            58.66
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-02",
+          "from": [
+            54.66,
+            58.66
+          ],
+          "to": [
+            54.55,
+            58.55
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-03",
+          "from": [
+            54.55,
+            58.55
+          ],
+          "to": [
+            54.45,
+            58.45
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-04",
+          "from": [
+            54.45,
+            58.45
+          ],
+          "to": [
+            54.34,
+            58.34
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-05",
+          "from": [
+            54.34,
+            58.34
+          ],
+          "to": [
+            54.24,
+            58.24
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-06",
+          "from": [
+            54.24,
+            58.24
+          ],
+          "to": [
+            54.14,
+            58.14
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-07",
+          "from": [
+            54.14,
+            58.14
+          ],
+          "to": [
+            54.03,
+            58.03
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-08",
+          "from": [
+            54.03,
+            58.03
+          ],
+          "to": [
+            53.93,
+            57.93
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-09",
+          "from": [
+            53.93,
+            57.93
+          ],
+          "to": [
+            53.83,
+            57.83
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-10",
+          "from": [
+            53.83,
+            57.83
+          ],
+          "to": [
+            53.72,
+            57.72
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-11",
+          "from": [
+            53.72,
+            57.72
+          ],
+          "to": [
+            53.62,
+            57.62
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-12",
+          "from": [
+            53.62,
+            57.62
+          ],
+          "to": [
+            53.52,
+            57.52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-13",
+          "from": [
+            53.52,
+            57.52
+          ],
+          "to": [
+            53.41,
+            57.41
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-14",
+          "from": [
+            53.41,
+            57.41
+          ],
+          "to": [
+            53.31,
+            57.31
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-15",
+          "from": [
+            53.31,
+            57.31
+          ],
+          "to": [
+            53.21,
+            57.21
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-16",
+          "from": [
+            53.21,
+            57.21
+          ],
+          "to": [
+            53.1,
+            57.1
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-17",
+          "from": [
+            53.1,
+            57.1
+          ],
+          "to": [
+            51,
+            59
+          ],
+          "reason": "Synthetic deterministic band revision."
+        }
+      ],
+      "outcome": null,
+      "brier": null,
+      "resolvedOn": null
+    },
+    {
+      "id": "synthetic-f",
+      "question": "Mercato F",
+      "domain": "Enterprise",
+      "status": "Active",
+      "confidence": "Low",
+      "probLow": 56,
+      "probHigh": 64,
+      "midpoint": 60,
+      "horizon": "2026-11-28",
+      "staleAfter": "2026-11-25",
+      "lastReviewed": "2026-11-17",
+      "created": "2026-10-19",
+      "summary": "Synthetic forecast for interface review. No real market or source data.",
+      "triggers": [
+        {
+          "label": "Toward yes",
+          "text": "A fictional event meets the synthetic criteria."
+        }
+      ],
+      "resolution": "Resolve Yes if the fictional example event occurs.",
+      "market": null,
+      "sources": [
+        {
+          "publisher": "Example synthetic source",
+          "date": "2026-11-17",
+          "note": "Fictional source for visual testing.",
+          "url": "https://example.com/synthetic/f"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-10-19",
+          "from": null,
+          "to": [
+            64.0,
+            68.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-20",
+          "from": [
+            64.0,
+            68.0
+          ],
+          "to": [
+            63.79,
+            67.79
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-21",
+          "from": [
+            63.79,
+            67.79
+          ],
+          "to": [
+            63.59,
+            67.59
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-22",
+          "from": [
+            63.59,
+            67.59
+          ],
+          "to": [
+            63.38,
+            67.38
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-23",
+          "from": [
+            63.38,
+            67.38
+          ],
+          "to": [
+            63.17,
+            67.17
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-24",
+          "from": [
+            63.17,
+            67.17
+          ],
+          "to": [
+            62.97,
+            66.97
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-25",
+          "from": [
+            62.97,
+            66.97
+          ],
+          "to": [
+            62.76,
+            66.76
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-26",
+          "from": [
+            62.76,
+            66.76
+          ],
+          "to": [
+            62.55,
+            66.55
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-27",
+          "from": [
+            62.55,
+            66.55
+          ],
+          "to": [
+            62.34,
+            66.34
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-28",
+          "from": [
+            62.34,
+            66.34
+          ],
+          "to": [
+            62.14,
+            66.14
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-29",
+          "from": [
+            62.14,
+            66.14
+          ],
+          "to": [
+            61.93,
+            65.93
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-30",
+          "from": [
+            61.93,
+            65.93
+          ],
+          "to": [
+            61.72,
+            65.72
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-31",
+          "from": [
+            61.72,
+            65.72
+          ],
+          "to": [
+            61.52,
+            65.52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-01",
+          "from": [
+            61.52,
+            65.52
+          ],
+          "to": [
+            61.31,
+            65.31
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-02",
+          "from": [
+            61.31,
+            65.31
+          ],
+          "to": [
+            61.1,
+            65.1
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-03",
+          "from": [
+            61.1,
+            65.1
+          ],
+          "to": [
+            60.9,
+            64.9
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-04",
+          "from": [
+            60.9,
+            64.9
+          ],
+          "to": [
+            60.69,
+            64.69
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-05",
+          "from": [
+            60.69,
+            64.69
+          ],
+          "to": [
+            60.48,
+            64.48
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-06",
+          "from": [
+            60.48,
+            64.48
+          ],
+          "to": [
+            60.28,
+            64.28
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-07",
+          "from": [
+            60.28,
+            64.28
+          ],
+          "to": [
+            60.07,
+            64.07
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-08",
+          "from": [
+            60.07,
+            64.07
+          ],
+          "to": [
+            59.86,
+            63.86
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-09",
+          "from": [
+            59.86,
+            63.86
+          ],
+          "to": [
+            59.66,
+            63.66
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-10",
+          "from": [
+            59.66,
+            63.66
+          ],
+          "to": [
+            59.45,
+            63.45
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-11",
+          "from": [
+            59.45,
+            63.45
+          ],
+          "to": [
+            59.24,
+            63.24
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-12",
+          "from": [
+            59.24,
+            63.24
+          ],
+          "to": [
+            59.03,
+            63.03
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-13",
+          "from": [
+            59.03,
+            63.03
+          ],
+          "to": [
+            58.83,
+            62.83
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-14",
+          "from": [
+            58.83,
+            62.83
+          ],
+          "to": [
+            58.62,
+            62.62
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-15",
+          "from": [
+            58.62,
+            62.62
+          ],
+          "to": [
+            58.41,
+            62.41
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-16",
+          "from": [
+            58.41,
+            62.41
+          ],
+          "to": [
+            58.21,
+            62.21
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-17",
+          "from": [
+            58.21,
+            62.21
+          ],
+          "to": [
+            56,
+            64
+          ],
+          "reason": "Synthetic deterministic band revision."
+        }
+      ],
+      "outcome": null,
+      "brier": null,
+      "resolvedOn": null
+    },
+    {
+      "id": "synthetic-g",
+      "question": "Mercato G",
+      "domain": "AI",
+      "status": "Active",
+      "confidence": "High",
+      "probLow": 61,
+      "probHigh": 69,
+      "midpoint": 65,
+      "horizon": "2026-11-29",
+      "staleAfter": "2026-11-25",
+      "lastReviewed": "2026-11-17",
+      "created": "2026-10-19",
+      "summary": "Synthetic forecast for interface review. No real market or source data.",
+      "triggers": [
+        {
+          "label": "Toward yes",
+          "text": "A fictional event meets the synthetic criteria."
+        }
+      ],
+      "resolution": "Resolve Yes if the fictional example event occurs.",
+      "market": null,
+      "sources": [
+        {
+          "publisher": "Example synthetic source",
+          "date": "2026-11-17",
+          "note": "Fictional source for visual testing.",
+          "url": "https://example.com/synthetic/g"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-10-19",
+          "from": null,
+          "to": [
+            72.0,
+            76.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-20",
+          "from": [
+            72.0,
+            76.0
+          ],
+          "to": [
+            71.69,
+            75.69
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-21",
+          "from": [
+            71.69,
+            75.69
+          ],
+          "to": [
+            71.38,
+            75.38
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-22",
+          "from": [
+            71.38,
+            75.38
+          ],
+          "to": [
+            71.07,
+            75.07
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-23",
+          "from": [
+            71.07,
+            75.07
+          ],
+          "to": [
+            70.76,
+            74.76
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-24",
+          "from": [
+            70.76,
+            74.76
+          ],
+          "to": [
+            70.45,
+            74.45
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-25",
+          "from": [
+            70.45,
+            74.45
+          ],
+          "to": [
+            70.14,
+            74.14
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-26",
+          "from": [
+            70.14,
+            74.14
+          ],
+          "to": [
+            69.83,
+            73.83
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-27",
+          "from": [
+            69.83,
+            73.83
+          ],
+          "to": [
+            69.52,
+            73.52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-28",
+          "from": [
+            69.52,
+            73.52
+          ],
+          "to": [
+            69.21,
+            73.21
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-29",
+          "from": [
+            69.21,
+            73.21
+          ],
+          "to": [
+            68.9,
+            72.9
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-30",
+          "from": [
+            68.9,
+            72.9
+          ],
+          "to": [
+            68.59,
+            72.59
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-31",
+          "from": [
+            68.59,
+            72.59
+          ],
+          "to": [
+            68.28,
+            72.28
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-01",
+          "from": [
+            68.28,
+            72.28
+          ],
+          "to": [
+            67.97,
+            71.97
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-02",
+          "from": [
+            67.97,
+            71.97
+          ],
+          "to": [
+            67.66,
+            71.66
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-03",
+          "from": [
+            67.66,
+            71.66
+          ],
+          "to": [
+            67.34,
+            71.34
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-04",
+          "from": [
+            67.34,
+            71.34
+          ],
+          "to": [
+            67.03,
+            71.03
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-05",
+          "from": [
+            67.03,
+            71.03
+          ],
+          "to": [
+            66.72,
+            70.72
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-06",
+          "from": [
+            66.72,
+            70.72
+          ],
+          "to": [
+            66.41,
+            70.41
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-07",
+          "from": [
+            66.41,
+            70.41
+          ],
+          "to": [
+            66.1,
+            70.1
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-08",
+          "from": [
+            66.1,
+            70.1
+          ],
+          "to": [
+            65.79,
+            69.79
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-09",
+          "from": [
+            65.79,
+            69.79
+          ],
+          "to": [
+            65.48,
+            69.48
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-10",
+          "from": [
+            65.48,
+            69.48
+          ],
+          "to": [
+            65.17,
+            69.17
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-11",
+          "from": [
+            65.17,
+            69.17
+          ],
+          "to": [
+            64.86,
+            68.86
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-12",
+          "from": [
+            64.86,
+            68.86
+          ],
+          "to": [
+            64.55,
+            68.55
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-13",
+          "from": [
+            64.55,
+            68.55
+          ],
+          "to": [
+            64.24,
+            68.24
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-14",
+          "from": [
+            64.24,
+            68.24
+          ],
+          "to": [
+            63.93,
+            67.93
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-15",
+          "from": [
+            63.93,
+            67.93
+          ],
+          "to": [
+            63.62,
+            67.62
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-16",
+          "from": [
+            63.62,
+            67.62
+          ],
+          "to": [
+            63.31,
+            67.31
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-17",
+          "from": [
+            63.31,
+            67.31
+          ],
+          "to": [
+            61,
+            69
+          ],
+          "reason": "Synthetic deterministic band revision."
+        }
+      ],
+      "outcome": null,
+      "brier": null,
+      "resolvedOn": null
+    },
+    {
+      "id": "synthetic-h",
+      "question": "Mercato H",
+      "domain": "Geopolitics",
+      "status": "Active",
+      "confidence": "Medium",
+      "probLow": 66,
+      "probHigh": 74,
+      "midpoint": 70,
+      "horizon": "2026-11-30",
+      "staleAfter": "2026-11-25",
+      "lastReviewed": "2026-11-17",
+      "created": "2026-10-19",
+      "summary": "Synthetic forecast for interface review. No real market or source data.",
+      "triggers": [
+        {
+          "label": "Toward yes",
+          "text": "A fictional event meets the synthetic criteria."
+        }
+      ],
+      "resolution": "Resolve Yes if the fictional example event occurs.",
+      "market": null,
+      "sources": [
+        {
+          "publisher": "Example synthetic source",
+          "date": "2026-11-17",
+          "note": "Fictional source for visual testing.",
+          "url": "https://example.com/synthetic/h"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-10-19",
+          "from": null,
+          "to": [
+            80.0,
+            84.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-20",
+          "from": [
+            80.0,
+            84.0
+          ],
+          "to": [
+            79.59,
+            83.59
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-21",
+          "from": [
+            79.59,
+            83.59
+          ],
+          "to": [
+            79.17,
+            83.17
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-22",
+          "from": [
+            79.17,
+            83.17
+          ],
+          "to": [
+            78.76,
+            82.76
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-23",
+          "from": [
+            78.76,
+            82.76
+          ],
+          "to": [
+            78.34,
+            82.34
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-24",
+          "from": [
+            78.34,
+            82.34
+          ],
+          "to": [
+            77.93,
+            81.93
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-25",
+          "from": [
+            77.93,
+            81.93
+          ],
+          "to": [
+            77.52,
+            81.52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-26",
+          "from": [
+            77.52,
+            81.52
+          ],
+          "to": [
+            77.1,
+            81.1
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-27",
+          "from": [
+            77.1,
+            81.1
+          ],
+          "to": [
+            76.69,
+            80.69
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-28",
+          "from": [
+            76.69,
+            80.69
+          ],
+          "to": [
+            76.28,
+            80.28
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-29",
+          "from": [
+            76.28,
+            80.28
+          ],
+          "to": [
+            75.86,
+            79.86
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-30",
+          "from": [
+            75.86,
+            79.86
+          ],
+          "to": [
+            75.45,
+            79.45
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-31",
+          "from": [
+            75.45,
+            79.45
+          ],
+          "to": [
+            75.03,
+            79.03
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-01",
+          "from": [
+            75.03,
+            79.03
+          ],
+          "to": [
+            74.62,
+            78.62
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-02",
+          "from": [
+            74.62,
+            78.62
+          ],
+          "to": [
+            74.21,
+            78.21
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-03",
+          "from": [
+            74.21,
+            78.21
+          ],
+          "to": [
+            73.79,
+            77.79
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-04",
+          "from": [
+            73.79,
+            77.79
+          ],
+          "to": [
+            73.38,
+            77.38
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-05",
+          "from": [
+            73.38,
+            77.38
+          ],
+          "to": [
+            72.97,
+            76.97
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-06",
+          "from": [
+            72.97,
+            76.97
+          ],
+          "to": [
+            72.55,
+            76.55
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-07",
+          "from": [
+            72.55,
+            76.55
+          ],
+          "to": [
+            72.14,
+            76.14
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-08",
+          "from": [
+            72.14,
+            76.14
+          ],
+          "to": [
+            71.72,
+            75.72
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-09",
+          "from": [
+            71.72,
+            75.72
+          ],
+          "to": [
+            71.31,
+            75.31
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-10",
+          "from": [
+            71.31,
+            75.31
+          ],
+          "to": [
+            70.9,
+            74.9
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-11",
+          "from": [
+            70.9,
+            74.9
+          ],
+          "to": [
+            70.48,
+            74.48
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-12",
+          "from": [
+            70.48,
+            74.48
+          ],
+          "to": [
+            70.07,
+            74.07
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-13",
+          "from": [
+            70.07,
+            74.07
+          ],
+          "to": [
+            69.66,
+            73.66
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-14",
+          "from": [
+            69.66,
+            73.66
+          ],
+          "to": [
+            69.24,
+            73.24
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-15",
+          "from": [
+            69.24,
+            73.24
+          ],
+          "to": [
+            68.83,
+            72.83
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-16",
+          "from": [
+            68.83,
+            72.83
+          ],
+          "to": [
+            68.41,
+            72.41
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-17",
+          "from": [
+            68.41,
+            72.41
+          ],
+          "to": [
+            66,
+            74
+          ],
+          "reason": "Synthetic deterministic band revision."
+        }
+      ],
+      "outcome": null,
+      "brier": null,
+      "resolvedOn": null
+    }
+  ],
+  "resolved": [
+    {
+      "id": "synthetic-resolved-0",
+      "question": "Mercato resolved 1",
+      "domain": "Enterprise",
+      "status": "Resolved-Yes",
+      "confidence": "High",
+      "probLow": 31,
+      "probHigh": 39,
+      "midpoint": 35,
+      "horizon": "2026-11-17",
+      "staleAfter": "2026-11-25",
+      "lastReviewed": "2026-11-17",
+      "created": "2026-10-19",
+      "summary": "Synthetic forecast for interface review. No real market or source data.",
+      "triggers": [
+        {
+          "label": "Toward yes",
+          "text": "A fictional event meets the synthetic criteria."
+        }
+      ],
+      "resolution": "Resolve Yes if the fictional example event occurs.",
+      "market": null,
+      "sources": [
+        {
+          "publisher": "Example synthetic source",
+          "date": "2026-11-17",
+          "note": "Fictional source for visual testing.",
+          "url": "https://example.com/synthetic/a"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-10-19",
+          "from": null,
+          "to": [
+            24.0,
+            28.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-20",
+          "from": [
+            24.0,
+            28.0
+          ],
+          "to": [
+            24.31,
+            28.31
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-21",
+          "from": [
+            24.31,
+            28.31
+          ],
+          "to": [
+            24.62,
+            28.62
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-22",
+          "from": [
+            24.62,
+            28.62
+          ],
+          "to": [
+            24.93,
+            28.93
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-23",
+          "from": [
+            24.93,
+            28.93
+          ],
+          "to": [
+            25.24,
+            29.24
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-24",
+          "from": [
+            25.24,
+            29.24
+          ],
+          "to": [
+            25.55,
+            29.55
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-25",
+          "from": [
+            25.55,
+            29.55
+          ],
+          "to": [
+            25.86,
+            29.86
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-26",
+          "from": [
+            25.86,
+            29.86
+          ],
+          "to": [
+            26.17,
+            30.17
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-27",
+          "from": [
+            26.17,
+            30.17
+          ],
+          "to": [
+            26.48,
+            30.48
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-28",
+          "from": [
+            26.48,
+            30.48
+          ],
+          "to": [
+            26.79,
+            30.79
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-29",
+          "from": [
+            26.79,
+            30.79
+          ],
+          "to": [
+            27.1,
+            31.1
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-30",
+          "from": [
+            27.1,
+            31.1
+          ],
+          "to": [
+            27.41,
+            31.41
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-31",
+          "from": [
+            27.41,
+            31.41
+          ],
+          "to": [
+            27.72,
+            31.72
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-01",
+          "from": [
+            27.72,
+            31.72
+          ],
+          "to": [
+            28.03,
+            32.03
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-02",
+          "from": [
+            28.03,
+            32.03
+          ],
+          "to": [
+            28.34,
+            32.34
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-03",
+          "from": [
+            28.34,
+            32.34
+          ],
+          "to": [
+            28.66,
+            32.66
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-04",
+          "from": [
+            28.66,
+            32.66
+          ],
+          "to": [
+            28.97,
+            32.97
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-05",
+          "from": [
+            28.97,
+            32.97
+          ],
+          "to": [
+            29.28,
+            33.28
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-06",
+          "from": [
+            29.28,
+            33.28
+          ],
+          "to": [
+            29.59,
+            33.59
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-07",
+          "from": [
+            29.59,
+            33.59
+          ],
+          "to": [
+            29.9,
+            33.9
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-08",
+          "from": [
+            29.9,
+            33.9
+          ],
+          "to": [
+            30.21,
+            34.21
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-09",
+          "from": [
+            30.21,
+            34.21
+          ],
+          "to": [
+            30.52,
+            34.52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-10",
+          "from": [
+            30.52,
+            34.52
+          ],
+          "to": [
+            30.83,
+            34.83
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-11",
+          "from": [
+            30.83,
+            34.83
+          ],
+          "to": [
+            31.14,
+            35.14
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-12",
+          "from": [
+            31.14,
+            35.14
+          ],
+          "to": [
+            31.45,
+            35.45
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-13",
+          "from": [
+            31.45,
+            35.45
+          ],
+          "to": [
+            31.76,
+            35.76
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-14",
+          "from": [
+            31.76,
+            35.76
+          ],
+          "to": [
+            32.07,
+            36.07
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-15",
+          "from": [
+            32.07,
+            36.07
+          ],
+          "to": [
+            32.38,
+            36.38
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-16",
+          "from": [
+            32.38,
+            36.38
+          ],
+          "to": [
+            32.69,
+            36.69
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-17",
+          "from": [
+            32.69,
+            36.69
+          ],
+          "to": [
+            31,
+            39
+          ],
+          "reason": "Synthetic deterministic band revision."
+        }
+      ],
+      "outcome": "Yes",
+      "brier": 0.4225,
+      "resolvedOn": "2026-11-17"
+    },
+    {
+      "id": "synthetic-resolved-1",
+      "question": "Mercato resolved 2",
+      "domain": "AI",
+      "status": "Resolved-No",
+      "confidence": "Medium",
+      "probLow": 36,
+      "probHigh": 44,
+      "midpoint": 40,
+      "horizon": "2026-11-17",
+      "staleAfter": "2026-11-25",
+      "lastReviewed": "2026-11-17",
+      "created": "2026-10-19",
+      "summary": "Synthetic forecast for interface review. No real market or source data.",
+      "triggers": [
+        {
+          "label": "Toward yes",
+          "text": "A fictional event meets the synthetic criteria."
+        }
+      ],
+      "resolution": "Resolve Yes if the fictional example event occurs.",
+      "market": null,
+      "sources": [
+        {
+          "publisher": "Example synthetic source",
+          "date": "2026-11-17",
+          "note": "Fictional source for visual testing.",
+          "url": "https://example.com/synthetic/b"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-10-19",
+          "from": null,
+          "to": [
+            32.0,
+            36.0
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-20",
+          "from": [
+            32.0,
+            36.0
+          ],
+          "to": [
+            32.21,
+            36.21
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-21",
+          "from": [
+            32.21,
+            36.21
+          ],
+          "to": [
+            32.41,
+            36.41
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-22",
+          "from": [
+            32.41,
+            36.41
+          ],
+          "to": [
+            32.62,
+            36.62
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-23",
+          "from": [
+            32.62,
+            36.62
+          ],
+          "to": [
+            32.83,
+            36.83
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-24",
+          "from": [
+            32.83,
+            36.83
+          ],
+          "to": [
+            33.03,
+            37.03
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-25",
+          "from": [
+            33.03,
+            37.03
+          ],
+          "to": [
+            33.24,
+            37.24
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-26",
+          "from": [
+            33.24,
+            37.24
+          ],
+          "to": [
+            33.45,
+            37.45
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-27",
+          "from": [
+            33.45,
+            37.45
+          ],
+          "to": [
+            33.66,
+            37.66
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-28",
+          "from": [
+            33.66,
+            37.66
+          ],
+          "to": [
+            33.86,
+            37.86
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-29",
+          "from": [
+            33.86,
+            37.86
+          ],
+          "to": [
+            34.07,
+            38.07
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-30",
+          "from": [
+            34.07,
+            38.07
+          ],
+          "to": [
+            34.28,
+            38.28
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-10-31",
+          "from": [
+            34.28,
+            38.28
+          ],
+          "to": [
+            34.48,
+            38.48
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-01",
+          "from": [
+            34.48,
+            38.48
+          ],
+          "to": [
+            34.69,
+            38.69
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-02",
+          "from": [
+            34.69,
+            38.69
+          ],
+          "to": [
+            34.9,
+            38.9
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-03",
+          "from": [
+            34.9,
+            38.9
+          ],
+          "to": [
+            35.1,
+            39.1
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-04",
+          "from": [
+            35.1,
+            39.1
+          ],
+          "to": [
+            35.31,
+            39.31
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-05",
+          "from": [
+            35.31,
+            39.31
+          ],
+          "to": [
+            35.52,
+            39.52
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-06",
+          "from": [
+            35.52,
+            39.52
+          ],
+          "to": [
+            35.72,
+            39.72
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-07",
+          "from": [
+            35.72,
+            39.72
+          ],
+          "to": [
+            35.93,
+            39.93
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-08",
+          "from": [
+            35.93,
+            39.93
+          ],
+          "to": [
+            36.14,
+            40.14
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-09",
+          "from": [
+            36.14,
+            40.14
+          ],
+          "to": [
+            36.34,
+            40.34
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-10",
+          "from": [
+            36.34,
+            40.34
+          ],
+          "to": [
+            36.55,
+            40.55
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-11",
+          "from": [
+            36.55,
+            40.55
+          ],
+          "to": [
+            36.76,
+            40.76
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-12",
+          "from": [
+            36.76,
+            40.76
+          ],
+          "to": [
+            36.97,
+            40.97
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-13",
+          "from": [
+            36.97,
+            40.97
+          ],
+          "to": [
+            37.17,
+            41.17
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-14",
+          "from": [
+            37.17,
+            41.17
+          ],
+          "to": [
+            37.38,
+            41.38
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-15",
+          "from": [
+            37.38,
+            41.38
+          ],
+          "to": [
+            37.59,
+            41.59
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-16",
+          "from": [
+            37.59,
+            41.59
+          ],
+          "to": [
+            37.79,
+            41.79
+          ],
+          "reason": "Synthetic deterministic band revision."
+        },
+        {
+          "date": "2026-11-17",
+          "from": [
+            37.79,
+            41.79
+          ],
+          "to": [
+            36,
+            44
+          ],
+          "reason": "Synthetic deterministic band revision."
+        }
+      ],
+      "outcome": "No",
+      "brier": 0.16,
+      "resolvedOn": "2026-11-17"
+    }
+  ]
+}

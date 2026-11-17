@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="assets/jaack-local.css">
 <link rel="stylesheet" href="assets/style.css">
 <script src="vendor/jaack/jaack.js" defer></script>
+<script src="assets/forecast-figure.js" defer></script>
 <script src="assets/app.js" defer></script>
 <script src="assets/menu.js" defer></script>
 </head>
@@ -158,8 +159,10 @@
           </label>
         </div>
       </div>
-      <div class="jk-group">
+      <div class="jk-group" id="forecastFigures" data-jk-figure-scale="auto-percent" data-scale-label="forecastScale">
         <h3 class="jk-lab">Forecasts</h3>
+        <p class="jk-note" id="forecastScale">Shared scale</p>
+        <div class="jk-figures" id="figureGrid" aria-label="Forecast overview"></div>
         <div class="fc-list" id="grid"></div>
       </div>
     </div>
