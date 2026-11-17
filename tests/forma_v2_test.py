@@ -92,14 +92,34 @@ class FormaV2Test(unittest.TestCase):
         self.assertIn('src="assets/forecast-figure.js"', html)
         self.assertIn('data-jk-figure-scale="auto-percent"', html)
         self.assertIn('class="jk-figures" id="figureGrid"', html)
-        for view in ("list", "detail"):
-            self.assertIn(f'data-forecast-figure="{view}"', app)
+        self.assertIn('class="r pd-row-figure" data-forecast-figure="list"', app)
+        for source in (app, html, (ROOT / "assets/style.css").read_text()):
+            self.assertNotIn('pd-detail-figure', source)
+            self.assertNotIn('data-forecast-figure="detail"', source)
         self.assertIn('entry.figures.forEach((figure) => figure.update(p))', app)
         fixture = json.loads((ROOT / "tests/fixtures/synthetic/predictions.json").read_text())
         self.assertIn("Synthetic", fixture["note"])
         self.assertEqual(len(fixture["predictions"]), 11)
         self.assertTrue(all(len(p["history"]) == 30 for p in fixture["predictions"]))
         self.assertTrue(all(s["url"].startswith("https://example.com/") for p in fixture["predictions"] for s in p["sources"]))
+
+    def test_figure_caps_and_desktop_type(self):
+        css = (ROOT / "assets/style.css").read_text()
+        vendor = (VENDOR / "components/figure.css").read_text()
+        for declarations in re.findall(r"(?:^|[{}])\s*\.fc-line\s*\{([^}]+)\}", css):
+            self.assertNotRegex(declarations, r"\bmax-width\s*:")
+        # Overview cells inherit the same vendor cap as summary figures.
+        self.assertRegex(vendor, r"\.jk-figure\s*\{[^}]*max-width:720px")
+        for declarations in re.findall(r"(?:^|[{}])\s*(?:#figureGrid\s+)?\.jk-figure\s*\{([^}]+)\}", css):
+            for cap in re.findall(r"max-width\s*:\s*([^;}]+)", declarations):
+                self.assertEqual(cap.strip(), "720px")
+        self.assertRegex(
+            css,
+            r"@media\s*\(min-width:1280px\)\s*\{\s*(?:/\*.*?\*/\s*)?"
+            r"\.pd-row-figure\s*,\s*#figureGrid\s+\.jk-figure\s*\{\s*"
+            r"font-size:var\(--jk-fs-lg,\s*var\(--jk-fs-lede\)\)",
+        )
+        self.assertNotRegex(css, r"--jk-figure-ratio\s*:")
 
     def test_palette_contrast(self):
         result = subprocess.run(

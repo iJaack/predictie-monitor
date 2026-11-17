@@ -514,7 +514,6 @@
         <span class="r pd-row-figure" data-forecast-figure="list">${fmtP(p.midpoint)}</span>
       </summary>
       <div class="fc-body">
-        <span class="pd-detail-figure" data-forecast-figure="detail"></span>
         <p class="prob-line">${Number.isFinite(p.probLow) && Number.isFinite(p.probHigh) ? `Band <b>${fmtP(p.probLow)}–${fmtP(p.probHigh)}</b>` : "Interval unavailable"} · midpoint <b>${fmtP(p.midpoint)}</b> · ${marketLine}</p>
         ${bandSvg(p)}
         <p class="summary">${esc(p.summary)}</p>

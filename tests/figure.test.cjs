@@ -6,6 +6,18 @@ const { history, data, steps } = require('../assets/forecast-figure.js');
 const fixture = require('./fixtures/synthetic/predictions.json');
 const TODAY = '2026-11-17';
 
+test('site template keeps the summary figure and detail band without mounting a second figure', () => {
+  const app = fs.readFileSync('assets/app.js', 'utf8');
+  const html = fs.readFileSync('index.html', 'utf8');
+  assert.match(app, /class="r pd-row-figure" data-forecast-figure="list"/);
+  const template = app.match(/function forecast\(p\) \{([\s\S]*?)\n  \}/)[1];
+  const body = template.slice(template.indexOf('<div class="fc-body">'));
+  assert.ok(body.startsWith('<div class="fc-body">'));
+  assert.match(body, /\$\{bandSvg\(p\)\}/);
+  assert.doesNotMatch(body, /data-forecast-figure|class="[^"]*jk-figure/);
+  for (const source of [app, html]) assert.doesNotMatch(source, /pd-detail-figure|data-forecast-figure="detail"/);
+});
+
 // Same built-in-only fake DOM approach as the headline motion tests, extended
 // to run the actual, hash-checked vendor and the site adapter together.
 function load({ reduced = false, rm = false } = {}) {

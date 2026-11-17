@@ -44,13 +44,17 @@ the role while hidden/empty and supplies a name when shown.
 data pipeline and stay on their own schedule.
 
 `assets/forecast-figure.js` adapts `jk-figure` for the open forecast overview
-grid, each native list summary and its detail. One vendor `auto-percent` group
-includes every forecast currently in view, across all three placements. Its
+grid and each native list summary, which remains visible in open details.
+One vendor `auto-percent` group includes every forecast currently in view. Its
 domain includes daily history values and current interval bounds, adds ±5
 percentage points, rounds outward to tens and clamps to 0–100. The English
 “Shared scale …” label appears once. Filtering, searching and sorting update the
 group; retained rows keep their figure instances and native expanded state.
 The grid uses 1/2/3/4 columns at <600/600–1279/1280–2559/≥2560px.
+Figures and overview cells keep the vendor's 720px cap; list rows use the full
+width. From 1280px, both placements use `--jk-fs-lg` with `--jk-fs-lede` (20px)
+as the fallback, preserving the vendor's 5:1 ratio. Open details retain their
+0–100 band bar without mounting another figure.
 
 History spans every UTC day from `created` (or the first dated history entry)
 through today, or `resolvedOn` for a resolved forecast. Entries describe band
@@ -119,7 +123,8 @@ The script serves the static site locally and routes `data/predictions.json`
 to the synthetic fixture; the server refuses to serve production JSON. Its
 UTC clock is fixed to 17 November 2026. It writes 30 viewport PNGs (list, grid,
 open detail × 466×678, 669×951, 1280×800, 2560×1440, 3440×1440 × Light/Ombra)
-plus an indexed README and machine-readable layout/step/band/domain checks in
+plus an indexed README, machine-readable layout/step/band/domain checks, and
+`measures-r2.json` with question widths and line travel in CSS pixels in
 `output/figure-2026-11-17/`. All generated outputs are gitignored.
 
 For a number-change review capture, run in the browser console after loading:

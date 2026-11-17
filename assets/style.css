@@ -261,23 +261,27 @@ details[open] > .fc-line .chev{transform:rotate(45deg) translateY(-2px)}
 
 .empty-note{margin:8px 0 0}
 
-/* One auto-percent group owns overview, summary and detail figures. The
+/* One auto-percent group owns overview and summary figures. The
    vendor keeps the 1/2/3/4-column breakpoints and the fixed 5:1 word-size line. */
 #figureGrid{margin:var(--jk-s5) 0 var(--jk-s8)}
 .jk-figure{--jk-figure-band:rgba(18,20,19,.08);--jk-figure-row-bg:var(--jk-bg)}
 html[data-theme="dark"] .jk-figure{--jk-figure-band:rgba(233,228,218,.08)}
 .jk-figure-value{font-family:var(--pd-mono)}
 .jk-figure-label{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.fc-line{grid-template-columns:76px minmax(0,1fr) auto;max-width:720px}
+.fc-line{grid-template-columns:76px minmax(0,1fr) auto}
 .fc-line>.m,.fc-line>.c{display:none}
 .fc-line>.pd-row-figure{overflow:visible;white-space:normal}
 .pd-row-figure.jk-figure{flex-wrap:nowrap;align-items:center;gap:var(--jk-s2)}
 .pd-row-figure .jk-figure-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
 .pd-row-figure .jk-figure-history{margin-left:0}
-.pd-detail-figure{padding-block:var(--jk-row-pad-data)}
 @media (min-width:960px){
   .fc-line{grid-template-columns:76px 92px minmax(0,1fr) 84px auto;column-gap:var(--jk-s3)}
   .fc-line>.m,.fc-line>.c{display:block}
+}
+@media (min-width:1280px){
+  /* v2.2.0 has no lg token; lede is the next step above body. */
+  .pd-row-figure,
+  #figureGrid .jk-figure{font-size:var(--jk-fs-lg, var(--jk-fs-lede))}
 }
 @media (max-width:599px){
   .fc-line{grid-template-columns:76px minmax(0,1fr);row-gap:var(--jk-s1)}

@@ -39,7 +39,7 @@ const origin = `http://127.0.0.1:${server.address().port}`;
 console.log('Launching synthetic capture browser');
 const browser = await playwright.chromium.launch({ headless: true,
   ...(process.env.PLAYWRIGHT_CHANNEL ? { channel: process.env.PLAYWRIGHT_CHANNEL } : {}), timeout: 30000 });
-const captures = [], checks = [], errors = [];
+const captures = [], checks = [], errors = [], measures = [];
 const sizes = [[466, 678], [669, 951], [1280, 800], [2560, 1440], [3440, 1440]];
 
 async function settle(page) {
@@ -60,7 +60,7 @@ async function inspect(page, width, theme) {
     for (const figure of figures) {
       const rect = figure.getBoundingClientRect();
       if (rect.width && (rect.left < 0 || rect.right > innerWidth + 0.5)) problems.push('figure overflow');
-      if (rect.width && rect.width > 720.5) problems.push('row wider than 720px');
+      if (rect.width > 720.5) problems.push('figure or overview cell wider than 720px');
       if (rect.width && figure.scrollWidth > figure.clientWidth + 1) problems.push('figure content overflow');
       const line = figure.querySelector('.jk-figure-line');
       if (line && /L/.test(line.getAttribute('d'))) problems.push('slanted path');
@@ -88,13 +88,59 @@ async function inspect(page, width, theme) {
         if (Math.abs(+band.getAttribute('height') - expectedHeight) > .01 || Math.abs(+band.getAttribute('y') - expectedTop) > .01) problems.push('inconsistent shared scale');
       }
     }
+    for (const row of document.querySelectorAll('#grid .fc-line')) {
+      if (getComputedStyle(row).maxWidth !== 'none') problems.push('list row has a width cap');
+      if (Math.abs(row.getBoundingClientRect().width - row.parentElement.getBoundingClientRect().width) > 1) problems.push('list row is not full width');
+    }
+    const openRow = document.querySelector('#f-synthetic-x');
+    if (!openRow.open) problems.push('detail is not open');
+    const detailFigureDuplicated = !!openRow.querySelector('.fc-body .jk-figure,.fc-body [data-forecast-figure]');
+    if (detailFigureDuplicated) problems.push('detail duplicates figure');
+    if (openRow.querySelectorAll('summary .pd-row-figure.jk-figure').length !== 1) problems.push('missing summary figure');
     const columns = getComputedStyle(document.querySelector('#figureGrid')).gridTemplateColumns.split(' ').length;
     const expected = width < 600 ? 1 : width < 1280 ? 2 : width < 2560 ? 3 : 4;
     if (columns !== expected) problems.push(`columns ${columns}, expected ${expected}`);
     const domain = document.querySelector('#forecastFigures')._jkFigureScale;
     if (String(domain) !== '20,90') problems.push(`domain ${domain}`);
     if (document.querySelector('#forecastScale').textContent !== 'Shared scale 20–90%') problems.push('scale label');
-    return { width, theme, columns, domain, figures: figures.length, problems };
+    return { width, theme, columns, domain, figures: figures.length, detailFigureDuplicated, problems };
+  }, { width, theme });
+}
+
+async function measure(page, width, theme) {
+  return page.evaluate(({ width, theme }) => {
+    const rows = [...document.querySelectorAll('#grid .fc-line')].filter((row) => row.getBoundingClientRect().width > 0);
+    const questions = rows.map((row) => {
+      const q = row.querySelector('.q');
+      return { id: row.parentElement.id, question: q.textContent, characters: q.textContent.length,
+        computedWidthCssPx: parseFloat(getComputedStyle(q).width), widthCssPx: q.getBoundingClientRect().width };
+    });
+    const widths = questions.map((q) => q.widthCssPx);
+    const computedWidths = questions.map((q) => q.computedWidthCssPx);
+    const figures = (selector) => [...document.querySelectorAll(selector)].map((figure) => {
+      const line = figure.querySelector('.jk-figure-line');
+      let verticalTravelCssPx = null;
+      if (line) {
+        // Transform the path bounds into screen/CSS pixels, excluding stroke.
+        const box = line.getBBox(), matrix = line.getScreenCTM();
+        const ys = [[box.x, box.y], [box.x + box.width, box.y], [box.x, box.y + box.height],
+          [box.x + box.width, box.y + box.height]].map(([x, y]) => new DOMPoint(x, y).matrixTransform(matrix).y);
+        verticalTravelCssPx = Math.max(...ys) - Math.min(...ys);
+      }
+      const spark = figure.querySelector('.jk-figure-spark').getBoundingClientRect();
+      return { question: figure.querySelector('.jk-figure-label').textContent, verticalTravelCssPx,
+        fontSizeCssPx: parseFloat(getComputedStyle(figure).fontSize),
+        ratio: getComputedStyle(figure).getPropertyValue('--jk-figure-ratio').trim(),
+        sparkWidthCssPx: spark.width, sparkHeightCssPx: spark.height,
+        figureWidthCssPx: figure.getBoundingClientRect().width };
+    });
+    const openRow = document.querySelector('#f-synthetic-x');
+    return { width, theme, questions: { minWidthCssPx: Math.min(...widths), maxWidthCssPx: Math.max(...widths),
+      minComputedWidthCssPx: Math.min(...computedWidths), maxComputedWidthCssPx: Math.max(...computedWidths),
+      longQuestions: questions.filter((q) => q.characters >= 80 && q.characters <= 100), rows: questions },
+      list: figures('#grid .pd-row-figure'), grid: figures('#figureGrid .jk-figure'),
+      detailOpen: openRow.open,
+      detailFigureDuplicated: !!openRow.querySelector('.fc-body .jk-figure,.fc-body [data-forecast-figure]') };
   }, { width, theme });
 }
 
@@ -125,6 +171,30 @@ try {
         const name = `${view}-${width}-${theme}.png`;
         await page.screenshot({ path: path.join(output, name) }); captures.push(name);
       }
+      const measurement = await measure(page, width, theme);
+      assert.equal(measurement.detailOpen, true);
+      assert.equal(measurement.detailFigureDuplicated, false);
+      const group = [...measurement.list, ...measurement.grid];
+      assert.ok(group.every((figure) => figure.figureWidthCssPx <= 720.5));
+      assert.ok(group.every((figure) => figure.ratio === '5'));
+      const expectedFont = await page.evaluate((width) => {
+        const tokens = getComputedStyle(document.documentElement);
+        return parseFloat(width >= 1280
+          ? tokens.getPropertyValue('--jk-fs-lg').trim() || tokens.getPropertyValue('--jk-fs-lede')
+          : tokens.getPropertyValue('--jk-fs-body'));
+      }, width);
+      assert.ok(group.every((figure) => figure.fontSizeCssPx === expectedFont));
+      assert.ok(group.every((figure) => Math.abs(figure.sparkWidthCssPx / figure.sparkHeightCssPx - 5) < .01));
+      if (width >= 1280) {
+        assert.ok(measurement.questions.minWidthCssPx > 500, 'desktop questions must use the leftover row width');
+        for (const placement of [measurement.list, measurement.grid]) {
+          assert.ok(placement.every((figure) => Number.isFinite(figure.verticalTravelCssPx) && figure.verticalTravelCssPx >= 0));
+          // Existing list/grid fonts have different cap metrics; each placement
+          // must keep one spark size across all its synthetic forecasts.
+          assert.ok(placement.every((figure) => figure.sparkHeightCssPx === placement[0].sparkHeightCssPx));
+        }
+      }
+      measures.push(measurement);
       // Exercise the actual filter/sort path and retain the original controller.
       await page.evaluate(() => { window.__retained = document.querySelector('#f-synthetic-x .pd-row-figure')._jkFigure; });
       await page.locator('#q').fill('Mercato X'); await settle(page);
@@ -157,8 +227,15 @@ try {
   }
   assert.deepEqual(errors, []);
   await writeFile(path.join(output, 'checks.json'), JSON.stringify({ checks, errors, captures }, null, 2) + '\n');
+  await writeFile(path.join(output, 'measures-r2.json'), JSON.stringify({
+    fixture: path.relative(root, fixturePath), utcClock: '2026-11-17T12:00:00Z',
+    units: 'CSS px; path vertical travel excludes stroke and uses getScreenCTM()',
+    visibleRows: 'Rendered rows with nonzero width, including those below the viewport; detail open.',
+    longQuestions: 'Only existing fixture questions of 80–100 characters; an empty array means none present.',
+    measures
+  }, null, 2) + '\n');
   const table = sizes.map(([w, h]) => `| ${w}×${h} | ${['light', 'dark'].map((theme) => ['list', 'grid', 'detail'].map((view) => `[${view} ${theme}](${view}-${w}-${theme}.png)`).join(' · ')).join(' | ')} |`).join('\n');
-  await writeFile(path.join(output, 'README.md'), `# Figure capture pack — 17 November 2026\n\nSynthetic fixture only. UTC clock fixed at 2026-11-17, 12:00. No production JSON served or captured. Dark = Ombra.\n\nRun from the repository root:\n\n\`node tests/forma-v2/capture-figure.mjs\`\n\nUses an installed Playwright (local package, or Mac Homebrew global); override with \`PLAYWRIGHT_MODULE=/path/to/playwright\`. Install its Chromium if needed. Optional \`PLAYWRIGHT_CHANNEL=chrome\` uses installed Mac Chrome. Runtime used: \`${process.env.PLAYWRIGHT_MODULE || "local/Homebrew Playwright"}\`, channel \`${process.env.PLAYWRIGHT_CHANNEL || "bundled Chromium"}\`.\n\n| Viewport | Light | Ombra |\n|---|---|---|\n${table}\n\n## Checks\n\nAll ${checks.length} viewport/theme combinations pass: no horizontal page/figure/content overflow; native summary Enter opens detail; steps present and no L in any line path; current bands ≥2 SVG units/CSS px when visible; absent interval has no band and an English alternative; group domain 20–90 shared by list/grid/detail; no per-row domain labels; columns 1/2/3/4/4; row max 720px; marks never animate. Filtering to X gives 30–70; filtering/sorting retains its controller; empty results and reset work. Both reduced-motion controls make updates instant. Raw checks: [checks.json](checks.json).\n\n## Open points\n\nThe supplied spec file ends at §10 and lacks the named appended revision/Stage 2 sections; the user’s Stage 2 overrides govern. Mercato X/Y terminal midpoints differ from the centres of their current intervals; the terminal snapshot midpoint is authoritative. No unresolved implementation blocker. Captures use Chromium on macOS, not physical-device testing.\n`);
+  await writeFile(path.join(output, 'README.md'), `# Figure capture pack — 17 November 2026\n\nSynthetic fixture only. UTC clock fixed at 2026-11-17, 12:00. No production JSON served or captured. Dark = Ombra.\n\nRun from the repository root:\n\n\`node tests/forma-v2/capture-figure.mjs\`\n\nUses an installed Playwright (local package, or Mac Homebrew global); override with \`PLAYWRIGHT_MODULE=/path/to/playwright\`. Install its Chromium if needed. Optional \`PLAYWRIGHT_CHANNEL=chrome\` uses installed Mac Chrome. Runtime used: \`${process.env.PLAYWRIGHT_MODULE || "local/Homebrew Playwright"}\`, channel \`${process.env.PLAYWRIGHT_CHANNEL || "bundled Chromium"}\`.\n\n| Viewport | Light | Ombra |\n|---|---|---|\n${table}\n\n## Checks\n\nAll ${checks.length} viewport/theme combinations pass: no horizontal page/figure/content overflow; native summary Enter opens detail; steps present and no L in any line path; current bands ≥2 SVG units/CSS px when visible; absent interval has no band and an English alternative; group domain 20–90 shared by list/grid; summary figure remains visible in open detail without a duplicate; no per-row domain labels; columns 1/2/3/4/4; figure / overview cell max 720px; list rows use the full width; desktop figures use --jk-fs-lg with --jk-fs-lede fallback and retain the 5:1 ratio; marks never animate. Filtering to X gives 30–70; filtering/sorting retains its controller; empty results and reset work. Both reduced-motion controls make updates instant. Raw checks: [checks.json](checks.json). Question widths and screen-space path travel (CSS px): [measures-r2.json](measures-r2.json). The fixture has no 80–100 character question.\n\n## Open points\n\nThe supplied spec includes revisions 1–11; the designer’s required PR #11 changes govern the row cap, detail placement and desktop type. Mercato X/Y terminal midpoints differ from the centres of their current intervals; the terminal snapshot midpoint is authoritative. No unresolved implementation blocker. Captures use Chromium on macOS, not physical-device testing.\n`);
   console.log(`${captures.length} captures; ${checks.length} viewport/theme checks passed. ${output}`);
 } finally {
   await browser.close(); await new Promise((resolve) => server.close(resolve));
