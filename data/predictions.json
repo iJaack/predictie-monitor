@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-17T08:53:58+01:00",
+ "generatedAt": "2026-11-18T08:59:32+01:00",
  "timezone": "Europe/Rome",
  "counts": {
   "active": 31,
@@ -19,12 +19,12 @@
    "domain": "AI",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 20.0,
-   "probHigh": 34.0,
-   "midpoint": 27.0,
+   "probLow": 22.0,
+   "probHigh": 36.0,
+   "midpoint": 29.0,
    "horizon": "2026-11-19",
    "staleAfter": "2026-11-19",
-   "lastReviewed": "2026-11-17",
+   "lastReviewed": "2026-11-18",
    "created": "2026-11-14",
    "summary": "Anthropic plans to start trading on Nasdaq around Nov 19 after setting a $70–78 price range that implies about $1.4 trillion fully diluted at the top. This asks whether its first-day closing market value will be above $1.5 trillion.",
    "triggers": [
@@ -42,34 +42,34 @@
     "venue": "Polymarket",
     "name": "Anthropic IPO closing market cap above $1.5T?",
     "url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap-above/anthropic-ipo-closing-market-cap-above-1pt5t",
-    "yesPrice": 24.8,
-    "asOf": "2026-11-17T08:52:00+01:00",
+    "yesPrice": 26.75,
+    "asOf": "2026-11-18T09:00:00+01:00",
     "gapPts": 2.2,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 17 2026",
-     "note": "'Anthropic IPO closing market cap above $1.5T?' Yes 0.248 (bid 0.229 / ask 0.267); ladder: >$1.25T 0.63, >$1.75T 0.08",
+     "date": "Nov 18 2026",
+     "note": "'Anthropic IPO closing market cap above $1.5T?' Yes 0.2675 (bid 0.264 / ask 0.265); ladder: >$1.75T 0.105, >$2T 0.035",
      "url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap-above/anthropic-ipo-closing-market-cap-above-1pt5t"
     },
     {
      "publisher": "CNBC",
-     "date": "Nov 16 2026",
-     "note": "pricing evening of Nov 18, Nasdaq 'ANT' trading Nov 19; 825M Class A at $70–78; $1.405T at the range",
-     "url": "https://www.cnbc.com/2026/11/16/anthropic-ipo-date-price-range.html"
+     "date": "Nov 17 2026",
+     "note": "sources: Anthropic likely to price above the $70–78 range; books close 4 p.m. ET Nov 17; Nasdaq 'ANT' trading Nov 19",
+     "url": "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html"
     },
     {
      "publisher": "AI Tech Daily",
      "date": "Nov 13 2026",
-     "note": "no new range filed; Reuters, using shares outstanding in the filing, puts the top of the range at up to $1.02T vs ~$1.4T fully diluted",
+     "note": "Reuters, using shares outstanding in the filing, puts the top of the range at up to $1.02T vs ~$1.4T fully diluted",
      "url": "https://www.aitechdaily.com/anthropic-ipo-terms-ant-nasdaq/"
     },
     {
      "publisher": "Tenbrief",
      "date": "Nov 16 2026",
-     "note": "Rule 430A lets pricing go to $93.60 without a new amendment; valuation table on 13.09B outstanding vs ~17.98B fully diluted; above-range US IPOs averaged +50% day one",
+     "note": "Rule 430A lets pricing go to $93.60 without a new amendment; 13.09B outstanding vs ~17.98B fully diluted; above-range US IPOs averaged +50% day one",
      "url": "https://tenbrief.com/en/2026/11/16/anthropic-ipo-price-above-78/"
     }
    ],
@@ -106,6 +106,18 @@
       34.0
      ],
      "reason": "Rule: market anchor. Polymarket Gamma Yes 0.248 (bid 0.229 / ask 0.267, thinner liquidity ~$7k) read Nov 17 ~08:52 Rome → 0.75 log-odds shaded anchor ~0.30; midpoint 27% keeps the ~3-pt discount for the resolution basis. The old midpoint 37% was >6 pts off the new anchor, so the band follows it. New question-specific information: the share count behind 'market cap' is now quantified. On the filing's 13.09B shares outstanding the top of the range is only ~$1.02T (Reuters via AI Tech Daily) and even the Rule 430A ceiling of $93.60 gives ~$1.23T (Tenbrief), so if the listing page uses shares outstanding a close above ~$115 (+47% over $78) is needed; on ~18.0B fully diluted shares ~$83.4 is enough. Above-range US IPOs averaged +50% on day one (Ritter, via Tenbrief), so YES is possible on either basis but much harder on the outstanding count. Range still $70–78 (no new S-1/A); pricing Nov 18 evening, Nasdaq trading Nov 19 (CNBC, Nov 16). Half-width 7 (2-day horizon). Stale After stays 2026-11-19; resolves on the Nov 19 close."
+    },
+    {
+     "date": "2026-11-18",
+     "from": [
+      20.0,
+      34.0
+     ],
+     "to": [
+      22.0,
+      36.0
+     ],
+     "reason": "Rule: market anchor. Polymarket Gamma Yes 0.2675 (bid 0.264 / ask 0.265) read Nov 18 ~09:00 Rome → 0.75 log-odds shaded anchor ~0.32; midpoint 29% keeps the ~3-pt discount for the shares-outstanding resolution basis. New question-specific information: multiple sources told CNBC (Nov 17) that the IPO will likely price above the $70–78 range, with books closed at 4 p.m. ET Nov 17; the WSJ (via Euronews, Nov 18) says demand could push it above $80. At $80 the fully diluted value is ~$1.44T, so on that basis the ~$83.4 threshold needs only a modest first-day gain, but on the 13.09B shares-outstanding basis a close near ~$115 is still required. Cross-check: Polymarket's pricing-valuation market has $1.5–1.75T at 0.418, while its closing-cap bracket $1.5–1.75T is only 0.1455, consistent with the market also discounting the outstanding-share basis. Half-width 7 (~1-day horizon, ×0.7). Stale After stays 2026-11-19; resolves on the Nov 19 close (re-review Nov 19/20)."
     }
    ],
    "outcome": null,
@@ -209,12 +221,12 @@
    "domain": "AI",
    "status": "Active",
    "confidence": "High",
-   "probLow": 93.0,
+   "probLow": 95.0,
    "probHigh": 99.0,
-   "midpoint": 96.0,
+   "midpoint": 97.0,
    "horizon": "2026-11-30",
    "staleAfter": "2026-11-19",
-   "lastReviewed": "2026-11-17",
+   "lastReviewed": "2026-11-18",
    "created": "2026-10-27",
    "summary": "Anthropic publicly filed for its IPO on Oct 26, 2026, with a roadshow reported for around Nov 9 and a Nasdaq listing under the ticker ANT. This tracks whether its shares actually start trading before the end of November.",
    "triggers": [
@@ -232,16 +244,16 @@
     "venue": "Polymarket",
     "name": "Will Anthropic IPO by November 30, 2026?",
     "url": "https://polymarket.com/event/anthropic-ipo-by/will-anthropic-ipo-by-november-30-2026",
-    "yesPrice": 97.65,
-    "asOf": "2026-11-11T08:55:00+01:00",
-    "gapPts": -1.7,
-    "insideBand": true
+    "yesPrice": 99.55,
+    "asOf": "2026-11-18T09:00:00+01:00",
+    "gapPts": -2.5,
+    "insideBand": false
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 11 2026",
-     "note": "'Will Anthropic IPO by November 30, 2026?' Yes 0.9765 (bid 0.974 / ask 0.979, liquidity ~$45k)",
+     "date": "Nov 18 2026",
+     "note": "'Will Anthropic IPO by November 30, 2026?' Yes 0.9955 (bid 0.995 / ask 0.996)",
      "url": "https://polymarket.com/event/anthropic-ipo-by/will-anthropic-ipo-by-november-30-2026"
     },
     {
@@ -251,16 +263,16 @@
      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
     },
     {
-     "publisher": "Anthropic",
-     "date": "Nov 10 2026",
-     "note": "'Anthropic launches roadshow for proposed initial public offering'",
-     "url": "https://www.anthropic.com/news/roadshow-launch"
+     "publisher": "CNBC",
+     "date": "Nov 17 2026",
+     "note": "books close 4 p.m. ET Nov 17; likely to price above range; trading Nov 19",
+     "url": "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html"
     },
     {
-     "publisher": "CNBC",
-     "date": "Nov 10 2026",
-     "note": "sources: pricing Nov 18, trading Nov 19; book covered at the range",
-     "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
+     "publisher": "Euronews",
+     "date": "Nov 18 2026",
+     "note": "final offer price expected Wednesday (ET), Nasdaq trading Thursday under ANT",
+     "url": "https://www.euronews.com/2026/11/18/anthropics-ipo-price-is-due-today-what-should-investors-know"
     }
    ],
    "history": [
@@ -320,6 +332,18 @@
       99.0
      ],
      "reason": ", confidence Low → Medium. Rule: market anchor (price above 0.85, used as-is). Polymarket Gamma Yes 0.944 (bid 0.941 / ask 0.947, liquidity ~$33k) read Nov 10 ~08:48 Rome. NEW INFORMATION: late Nov 9 Anthropic emailed bankers a prospectus with ~867M shares at $70–80 (up to $69.3B), then retracted the pricing as inaccurate and said an update would follow (Reuters via Stocktwits, Nov 9); the WSJ reports investor meetings this week and a Nasdaq 'ANT' debut targeted for Nov 19–20. Midpoint 92.5% sits ~2 pts below the market because no price-range S-1/A is on EDGAR yet (latest is the Nov 2 amendment) and a delay remains possible. Half-width capped by distance to 1. Stale After →."
+    },
+    {
+     "date": "2026-11-18",
+     "from": [
+      93.0,
+      99.0
+     ],
+     "to": [
+      95.0,
+      99.0
+     ],
+     "reason": "Rule: market anchor (price above 0.85, used as-is). Polymarket Gamma Yes 0.9955 (bid 0.995 / ask 0.996) read Nov 18 ~09:00 Rome; sibling markets 'listed on Nasdaq' 0.988 and 'IPO by Dec 31' 0.9975. New information: the order book closed at 4 p.m. ET Nov 17 with pricing likely above range (CNBC, Nov 17), and final pricing is due today (Nov 18 ET) with Nasdaq 'ANT' trading expected Nov 19 (Euronews, Nov 18). Midpoint 97% sits ~2.5 pts under the market for residual last-minute postponement or market-shock risk; half-width capped by distance to 1. Stale After stays 2026-11-19 — resolve YES at the next review if ANT opens for trading."
     }
    ],
    "outcome": null,
@@ -1878,8 +1902,8 @@
    "probHigh": 8.0,
    "midpoint": 4.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-20",
-   "lastReviewed": "2026-11-14",
+   "staleAfter": "2026-11-21",
+   "lastReviewed": "2026-11-18",
    "created": "2026-10-18",
    "summary": "Glamsterdam is Ethereum's next major upgrade, raising capacity roughly threefold. Its final public test, planned for Oct 26, was postponed with no new date, so this asks whether it can still reach mainnet in 2026.",
    "triggers": [
@@ -2197,8 +2221,8 @@
    "probHigh": 75.0,
    "midpoint": 60.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-20",
-   "lastReviewed": "2026-11-14",
+   "staleAfter": "2026-11-24",
+   "lastReviewed": "2026-11-18",
    "created": "2026-10-18",
    "summary": "Israel and Iran are in an uneasy ceasefire. This asks whether neither side strikes the other's territory through year end.",
    "triggers": [
