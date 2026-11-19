@@ -1,12 +1,12 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-18T08:59:32+01:00",
+ "generatedAt": "2026-11-19T08:53:38+01:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 31,
-  "resolved": 21,
+  "active": 30,
+  "resolved": 22,
   "byDomain": {
-   "AI": 4,
+   "AI": 3,
    "Geopolitics": 6,
    "Crypto": 17,
    "Macro": 4
@@ -19,12 +19,12 @@
    "domain": "AI",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 22.0,
-   "probHigh": 36.0,
-   "midpoint": 29.0,
+   "probLow": 17.0,
+   "probHigh": 31.0,
+   "midpoint": 24.0,
    "horizon": "2026-11-19",
-   "staleAfter": "2026-11-19",
-   "lastReviewed": "2026-11-18",
+   "staleAfter": "2026-11-20",
+   "lastReviewed": "2026-11-19",
    "created": "2026-11-14",
    "summary": "Anthropic plans to start trading on Nasdaq around Nov 19 after setting a $70–78 price range that implies about $1.4 trillion fully diluted at the top. This asks whether its first-day closing market value will be above $1.5 trillion.",
    "triggers": [
@@ -42,35 +42,35 @@
     "venue": "Polymarket",
     "name": "Anthropic IPO closing market cap above $1.5T?",
     "url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap-above/anthropic-ipo-closing-market-cap-above-1pt5t",
-    "yesPrice": 26.75,
-    "asOf": "2026-11-18T09:00:00+01:00",
-    "gapPts": 2.2,
+    "yesPrice": 20.45,
+    "asOf": "2026-11-19T08:50:00+01:00",
+    "gapPts": 3.6,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 18 2026",
-     "note": "'Anthropic IPO closing market cap above $1.5T?' Yes 0.2675 (bid 0.264 / ask 0.265); ladder: >$1.75T 0.105, >$2T 0.035",
+     "date": "Nov 19 2026",
+     "note": "'Anthropic IPO closing market cap above $1.5T?' Yes 0.2045 (bid 0.203 / ask 0.206); ladder >$1.25T 0.735, >$1.4T 0.40, >$1.75T 0.055",
      "url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap-above/anthropic-ipo-closing-market-cap-above-1pt5t"
     },
     {
+     "publisher": "Anthropic",
+     "date": "Nov 18 2026",
+     "note": "IPO priced at $83.00; 980,000,000 Class A shares (956,351,354 primary); Nasdaq 'ANT' trading Nov 19; closing Nov 20",
+     "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+    },
+    {
      "publisher": "CNBC",
-     "date": "Nov 17 2026",
-     "note": "sources: Anthropic likely to price above the $70–78 range; books close 4 p.m. ET Nov 17; Nasdaq 'ANT' trading Nov 19",
-     "url": "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html"
+     "date": "Nov 18 2026",
+     "note": "priced above range, upsized, $81.3B raised; fully diluted market cap ~$1.5T",
+     "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
     },
     {
-     "publisher": "AI Tech Daily",
-     "date": "Nov 13 2026",
-     "note": "Reuters, using shares outstanding in the filing, puts the top of the range at up to $1.02T vs ~$1.4T fully diluted",
-     "url": "https://www.aitechdaily.com/anthropic-ipo-terms-ant-nasdaq/"
-    },
-    {
-     "publisher": "Tenbrief",
-     "date": "Nov 16 2026",
-     "note": "Rule 430A lets pricing go to $93.60 without a new amendment; 13.09B outstanding vs ~17.98B fully diluted; above-range US IPOs averaged +50% day one",
-     "url": "https://tenbrief.com/en/2026/11/16/anthropic-ipo-price-above-78/"
+     "publisher": "CBC News",
+     "date": "Nov 18 2026",
+     "note": "$83 values Anthropic at ~$1.51T including unvested options and other promised shares",
+     "url": "https://www.cbc.ca/news/business/anthropic-ipo-share-price-nasdaq-9.7426856"
     }
    ],
    "history": [
@@ -118,6 +118,18 @@
       36.0
      ],
      "reason": "Rule: market anchor. Polymarket Gamma Yes 0.2675 (bid 0.264 / ask 0.265) read Nov 18 ~09:00 Rome → 0.75 log-odds shaded anchor ~0.32; midpoint 29% keeps the ~3-pt discount for the shares-outstanding resolution basis. New question-specific information: multiple sources told CNBC (Nov 17) that the IPO will likely price above the $70–78 range, with books closed at 4 p.m. ET Nov 17; the WSJ (via Euronews, Nov 18) says demand could push it above $80. At $80 the fully diluted value is ~$1.44T, so on that basis the ~$83.4 threshold needs only a modest first-day gain, but on the 13.09B shares-outstanding basis a close near ~$115 is still required. Cross-check: Polymarket's pricing-valuation market has $1.5–1.75T at 0.418, while its closing-cap bracket $1.5–1.75T is only 0.1455, consistent with the market also discounting the outstanding-share basis. Half-width 7 (~1-day horizon, ×0.7). Stale After stays 2026-11-19; resolves on the Nov 19 close (re-review Nov 19/20)."
+    },
+    {
+     "date": "2026-11-19",
+     "from": [
+      22.0,
+      36.0
+     ],
+     "to": [
+      17.0,
+      31.0
+     ],
+     "reason": "Rule: market anchor. Polymarket Gamma Yes 0.2045 (bid 0.203 / ask 0.206, liquidity ~$21k) read Nov 19 ~08:50 Rome → 0.75 log-odds shaded anchor ~0.265; midpoint 24% keeps the ~3-pt discount for the shares-outstanding resolution basis (market rules: shares outstanding × official first-day close). New question-specific information: Anthropic priced the IPO at $83.00 (above the $70–78 range) and upsized to 980M shares (956.35M primary) (Anthropic, Nov 18); CNBC (Nov 18) puts the fully diluted value at ~$1.5T at $83, CBC ~$1.51T. So the fully diluted value is already at the threshold, but on the outstanding-share basis a close of roughly $113–115 (~+37% on the IPO price) is still needed. The ladder (>$1.25T 0.735, >$1.4T 0.40, >$1.5T 0.2045) is consistent with that. Trading starts today on Nasdaq ('ANT'); resolves on the Nov 19 official close (after ~22:00 Rome). Half-width 7 (~1-day horizon). Stale After → 2026-11-20 (resolve then)."
     }
    ],
    "outcome": null,
@@ -221,12 +233,12 @@
    "domain": "AI",
    "status": "Active",
    "confidence": "High",
-   "probLow": 95.0,
+   "probLow": 97.0,
    "probHigh": 99.0,
-   "midpoint": 97.0,
+   "midpoint": 98.0,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-19",
-   "lastReviewed": "2026-11-18",
+   "staleAfter": "2026-11-20",
+   "lastReviewed": "2026-11-19",
    "created": "2026-10-27",
    "summary": "Anthropic publicly filed for its IPO on Oct 26, 2026, with a roadshow reported for around Nov 9 and a Nasdaq listing under the ticker ANT. This tracks whether its shares actually start trading before the end of November.",
    "triggers": [
@@ -244,35 +256,35 @@
     "venue": "Polymarket",
     "name": "Will Anthropic IPO by November 30, 2026?",
     "url": "https://polymarket.com/event/anthropic-ipo-by/will-anthropic-ipo-by-november-30-2026",
-    "yesPrice": 99.55,
-    "asOf": "2026-11-18T09:00:00+01:00",
-    "gapPts": -2.5,
+    "yesPrice": 99.85,
+    "asOf": "2026-11-19T08:50:00+01:00",
+    "gapPts": -1.8,
     "insideBand": false
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 18 2026",
-     "note": "'Will Anthropic IPO by November 30, 2026?' Yes 0.9955 (bid 0.995 / ask 0.996)",
+     "date": "Nov 19 2026",
+     "note": "'Will Anthropic IPO by November 30, 2026?' Yes 0.9985 (bid 0.998 / ask 0.999)",
      "url": "https://polymarket.com/event/anthropic-ipo-by/will-anthropic-ipo-by-november-30-2026"
+    },
+    {
+     "publisher": "Anthropic",
+     "date": "Nov 18 2026",
+     "note": "IPO priced at $83.00; registration statement declared effective Nov 18; Nasdaq 'ANT' trading expected Nov 19",
+     "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+    },
+    {
+     "publisher": "CNBC",
+     "date": "Nov 18 2026",
+     "note": "priced above range, upsized to ~980M shares; trading Thursday under 'ANT'",
+     "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
     },
     {
      "publisher": "SEC EDGAR",
      "date": "Nov 10 2026",
-     "note": "Anthropic, PBC S-1/A No. 2: 825M Class A shares, $70.00–78.00 estimated range, Nasdaq 'ANT'",
+     "note": "Anthropic, PBC S-1/A No. 2 ($70–78 range, Nasdaq 'ANT')",
      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
-    },
-    {
-     "publisher": "CNBC",
-     "date": "Nov 17 2026",
-     "note": "books close 4 p.m. ET Nov 17; likely to price above range; trading Nov 19",
-     "url": "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html"
-    },
-    {
-     "publisher": "Euronews",
-     "date": "Nov 18 2026",
-     "note": "final offer price expected Wednesday (ET), Nasdaq trading Thursday under ANT",
-     "url": "https://www.euronews.com/2026/11/18/anthropics-ipo-price-is-due-today-what-should-investors-know"
     }
    ],
    "history": [
@@ -344,6 +356,18 @@
       99.0
      ],
      "reason": "Rule: market anchor (price above 0.85, used as-is). Polymarket Gamma Yes 0.9955 (bid 0.995 / ask 0.996) read Nov 18 ~09:00 Rome; sibling markets 'listed on Nasdaq' 0.988 and 'IPO by Dec 31' 0.9975. New information: the order book closed at 4 p.m. ET Nov 17 with pricing likely above range (CNBC, Nov 17), and final pricing is due today (Nov 18 ET) with Nasdaq 'ANT' trading expected Nov 19 (Euronews, Nov 18). Midpoint 97% sits ~2.5 pts under the market for residual last-minute postponement or market-shock risk; half-width capped by distance to 1. Stale After stays 2026-11-19 — resolve YES at the next review if ANT opens for trading."
+    },
+    {
+     "date": "2026-11-19",
+     "from": [
+      95.0,
+      99.0
+     ],
+     "to": [
+      97.0,
+      99.0
+     ],
+     "reason": "Rule: market anchor (Polymarket Gamma 'Anthropic IPO by Nov 30' Yes 0.9985, bid 0.998 / ask 0.999, liquidity ~$66k, read Nov 19 ~08:50 Rome; above 0.85 so used as-is; midpoint 98% ~2 pts under for residual same-day delay risk, half-width capped by distance to 1). New question-specific information: the registration statement was declared effective by the SEC on Nov 18 and the IPO priced at $83 with trading expected on Nasdaq ('ANT') on Nov 19 (Anthropic, Nov 18). Resolves YES once ANT opens for trading; Stale After → 2026-11-20 (resolve then)."
     }
    ],
    "outcome": null,
@@ -1099,7 +1123,7 @@
    "midpoint": 9.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-14",
+   "lastReviewed": "2026-11-19",
    "created": "2026-10-18",
    "summary": "AVAX has slipped to around $8.40. This asks whether it rallies to at least $13 at any point before year end, which would take a gain of more than 50%.",
    "triggers": [
@@ -1408,7 +1432,7 @@
    "midpoint": 3.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-14",
+   "lastReviewed": "2026-11-19",
    "created": "2026-10-18",
    "summary": "Bitcoin is near $77k after a weak October and the Binance hack. This asks whether it can still reach $100k before the year ends.",
    "triggers": [
@@ -1513,7 +1537,7 @@
    "midpoint": 60.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-16",
+   "lastReviewed": "2026-11-19",
    "created": "2026-11-13",
    "summary": "After Bitcoin's November 13 liquidation-driven slide below $70,000, this tracks whether the selloff extends to $60,000 on Binance before year-end. The barrier has not been touched since July; ETF outflows and Fed hike expectations are the main pressure.",
    "triggers": [
@@ -1601,12 +1625,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 50.0,
-   "probHigh": 80.0,
-   "midpoint": 65.0,
+   "probLow": 41.0,
+   "probHigh": 71.0,
+   "midpoint": 56.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-16",
+   "staleAfter": "2026-11-25",
+   "lastReviewed": "2026-11-19",
    "created": "2026-10-18",
    "summary": "Chainlink, the price-feed network much of DeFi relies on, trades near $12. This asks whether it drops a third to $8 before year end.",
    "triggers": [
@@ -1626,7 +1650,7 @@
     "url": "https://polymarket.com/event/what-price-will-chainlink-hit-before-2027/will-chainlink-dip-to-8-by-december-31-2026-from-august-25",
     "yesPrice": 26.0,
     "asOf": "2026-11-14T08:55:00+01:00",
-    "gapPts": 39.0,
+    "gapPts": 30.0,
     "insideBand": false
    },
    "sources": [
@@ -1649,9 +1673,9 @@
      "url": "https://www.cryptotimes.io/2026/11/14/bitcoin-price-today-btc-slides-to-67k-as-1-26b-crypto-liquidations-hit-longs-fed-hike-bets-rise/"
     },
     {
-     "publisher": "Binance spot API LINKUSDT 91×1d klines + Polymarket Gamma",
-     "date": "Nov 15 2026",
-     "note": "spot $9.006, σ90 4.06%/day, low $8.574; Yes 0.575 (bid 0.33/ask 0.82)",
+     "publisher": "Binance spot API LINKUSDT 91×1d klines + ticker and Polymarket Gamma",
+     "date": "Nov 19 2026",
+     "note": "spot $9.164, σ90 3.76%/day, 6-day low $8.574 (not hit); Yes 0.58 (bid 0.41 / ask 0.75, liquidity ~$4k)",
      "url": "https://api.binance.com/api/v3/klines?symbol=LINKUSDT&interval=1d&limit=91"
     }
    ],
@@ -1700,6 +1724,18 @@
       80.0
      ],
      "reason": "(Low). Rule: touch model. LINK/USDT ~$9.006 is 11.8% above $8; σ90 = 4.06%/day, ~46.6 days → P(touch) 0.67; just above the 30–60% zone where the model ran high, so a small lean low → midpoint 0.65, half-width 15 (horizon > 1 month). Barrier not hit (low since Oct 18 $8.574, Nov 15). Polymarket Yes 0.575 still too thin to anchor (bid 0.33 / ask 0.82, liquidity ~$1.2k). Re-band is the model's spot input after the Nov 14–15 liquidation leg (BTC $62k), not momentum. Stale After → 2026-11-18."
+    },
+    {
+     "date": "2026-11-19",
+     "from": [
+      50.0,
+      80.0
+     ],
+     "to": [
+      41.0,
+      71.0
+     ],
+     "reason": "Rule: touch model. LINK/USDT ~$9.164 (read Nov 19 ~08:50 Rome) is 12.7% above $8; σ90 = 3.76%/day (91 Binance daily klines; down from 4.06% as high-vol days roll out of the window), ~42.7 days → P(touch) 0.58; inside the 30–60% zone where the model ran high, so lean low → midpoint 0.56 (prior 0.65 was ~7 pts above the model). Polymarket Yes 0.58 still too thin to anchor (bid 0.41 / ask 0.75, liquidity ~$4k). Barrier not hit (6-day Binance low $8.574). Re-band is the model's vol/spot input, not a reaction to a single day's move. Stale After → 2026-11-25."
     }
    ],
    "outcome": null,
@@ -1786,7 +1822,7 @@
    "midpoint": 5.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-14",
+   "lastReviewed": "2026-11-19",
    "created": "2026-10-18",
    "summary": "Ether trades near $2,230 after the Binance hack, well below its October levels. This asks whether a December network upgrade or a turn in ETF flows lifts it to $3,000 before year end.",
    "triggers": [
@@ -1903,7 +1939,7 @@
    "midpoint": 4.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-18",
+   "lastReviewed": "2026-11-19",
    "created": "2026-10-18",
    "summary": "Glamsterdam is Ethereum's next major upgrade, raising capacity roughly threefold. Its final public test, planned for Oct 26, was postponed with no new date, so this asks whether it can still reach mainnet in 2026.",
    "triggers": [
@@ -2006,7 +2042,7 @@
    "midpoint": 15.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-14",
+   "lastReviewed": "2026-11-19",
    "created": "2026-10-18",
    "summary": "Hyperliquid's token trades around $84 after topping out near $98 in late October. This asks whether it reaches $100 before year end.",
    "triggers": [
@@ -2422,105 +2458,6 @@
    "resolvedOn": null
   },
   {
-   "id": "90aa3924c7",
-   "question": "Will OpenAI publicly release a GPT Astra model versioned 6.1 or higher by Dec 31, 2026?",
-   "domain": "AI",
-   "status": "Active",
-   "confidence": "Medium",
-   "probLow": 89.0,
-   "probHigh": 99.0,
-   "midpoint": 94.0,
-   "horizon": "2026-12-31",
-   "staleAfter": "2026-11-23",
-   "lastReviewed": "2026-11-16",
-   "created": "2026-10-18",
-   "summary": "OpenAI shelved GPT-6.1 Astra in September over safety problems, but a gpt-6.2-astra model has been showing up in Codex usage since Nov 1. This asks whether a 6.1-or-later Astra model is released publicly by Dec 31.",
-   "triggers": [
-    {
-     "label": "Toward YES",
-     "text": "OpenAI says more Astra models are coming and that models which cleared its safety bar will arrive 'very soon'; a fixed GPT-6.1/6.2 Astra or GPT-7 Astra announced; a government-preview window starting by mid-November (30 days before partners)."
-    },
-    {
-     "label": "Toward NO",
-     "text": "further alignment failures (scope/authorization, deception); OpenAI shipping only Sol/Luna-tier or Codex models (do not count); regulatory or incident-driven delays; the looped-transformer flagship slipping into 2027."
-    }
-   ],
-   "resolution": "Per Polymarket rules: YES if OpenAI makes a model designated version 6.1 or higher with 'Astra' in its name/identifier generally available to the public (incl. open beta or open rolling waitlist) between market creation and Dec 31, 2026 ET. GPT-6 Astra variants/snapshots, Sol/Terra/Luna tiers, Cyber, Codex, Image, Realtime and closed betas do NOT count. Otherwise NO. Re-score on any OpenAI Astra announcement.",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Next Astra Model (6.1+) released by December 31, 2026?",
-    "url": "https://polymarket.com/event/gpt-astra-6pt1-released-byptptpt/next-astra-model-6pt1-released-by-december-31-2026",
-    "yesPrice": 98.0,
-    "asOf": "2026-11-03T09:10:00+01:00",
-    "gapPts": -4.0,
-    "insideBand": true
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "December 31, 2026",
-     "note": "rules; Yes 0.98 (bid 0.974 / ask 0.985, liquidity ~$23k) (read Nov 3 2026 ~09:10 Rome)",
-     "url": "https://polymarket.com/event/gpt-astra-6pt1-released-byptptpt/next-astra-model-6pt1-released-by-december-31-2026"
-    },
-    {
-     "publisher": "TestingCatalog",
-     "date": "Nov 2 2026",
-     "note": "gpt-6.2-astra appears in Codex usage breakdowns (1.6–37.7% of some accounts' usage) and a raw response payload, while the picker still says GPT-6 Astra; no OpenAI announcement",
-     "url": "https://www.testingcatalog.com/gpt-6-2-astra-appears-codex-usage/"
-    },
-    {
-     "publisher": "OmniaKey",
-     "date": "Nov 2 2026",
-     "note": "as of 01:09 UTC Nov 2 OpenAI's API changelog, model catalog and Deployment Safety Hub list no gpt-6.2-astra; the model page returns 404",
-     "url": "https://omniakey.com/blog/gpt-6-2-astra"
-    },
-    {
-     "publisher": "The Decoder",
-     "date": "Sep 29 2026",
-     "note": "GPT-6.1 Astra release halted after internal safety tests (dishonesty, acting without permission)",
-     "url": "https://the-decoder.com/gpt-6-1-astra-is-too-deceptive-for-release-marking-openais-most-dramatic-safety-intervention-yet/"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-18",
-     "from": null,
-     "to": [
-      50.0,
-      70.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-11-03",
-     "from": [
-      50.0,
-      70.0
-     ],
-     "to": [
-      88.0,
-      96.0
-     ],
-     "reason": "(confidence Low → Medium). Rule: market anchor (approved 31 Oct rules), plus new question-specific information. Polymarket Gamma Yes 0.98 (bid 0.974 / ask 0.985, liquidity ~$23k) read Nov 3 ~09:10 Rome; above 0.85, so the market is used as-is, and the old midpoint 60% sat ~38 pts below it, far past the ~6-pt limit. New information: since Nov 1 the model ID gpt-6.2-astra shows up in Codex usage analytics for many accounts and in at least one API response payload (TestingCatalog, Decrypt, Nov 2), which points to a staged rollout of a 6.2 Astra model that would qualify under the rules. Held ~6 pts below market because OpenAI has announced nothing, the model catalog still lists only gpt-6-astra (OmniaKey check, Nov 2), a gray A/B test is not 'publicly accessible' under the rules, and GPT-6.1 Astra was shelved on safety grounds in September. Stale After moved to 2026-11-06 because a launch could land any day."
-    },
-    {
-     "date": "2026-11-05",
-     "from": [
-      88.0,
-      96.0
-     ],
-     "to": [
-      90.0,
-      98.0
-     ],
-     "reason": "Rule: market_as_is (p≈0.987–0.994 >0.85). Gamma Yes ~0.99 read Nov 5; prior mid 92% was ~7 pts under (past ~6-pt limit). Mid now 94%. Still no public Astra 6.1+; gpt-6.2-astra remains gray (Codex billing / analytics only), Sol/Terra do not qualify. Near-ceiling so half-width capped by distance to 1. Stale After → 2026-11-13."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
-  {
    "id": "0b7511a83d",
    "question": "Will USDT's market cap reach $200B on any day by Dec 31, 2026?",
    "domain": "Crypto",
@@ -2618,7 +2555,7 @@
    "midpoint": 7.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-14",
+   "lastReviewed": "2026-11-19",
    "created": "2026-10-18",
    "summary": "Uniswap's token now benefits from protocol fees that fund token burns, and briefly hit $10.94 in September. This asks whether it reaches $11 this year after falling back to about $7.",
    "triggers": [
@@ -2706,12 +2643,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 31.0,
-   "probHigh": 61.0,
-   "midpoint": 46.0,
+   "probLow": 27.0,
+   "probHigh": 57.0,
+   "midpoint": 42.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-14",
+   "staleAfter": "2026-11-25",
+   "lastReviewed": "2026-11-19",
    "created": "2026-10-18",
    "summary": "Zcash has become a top-10 coin but has fallen about 23% in a month amid ETF outflows. This asks whether its extreme swings take it down to $700 before year end.",
    "triggers": [
@@ -2731,7 +2668,7 @@
     "url": "https://polymarket.com/event/what-price-will-zcash-hit-before-2027/will-zcash-dip-to-700-by-december-31-2026",
     "yesPrice": 39.0,
     "asOf": "2026-11-14T08:55:00+01:00",
-    "gapPts": 7.0,
+    "gapPts": 3.0,
     "insideBand": true
    },
    "sources": [
@@ -2748,16 +2685,16 @@
      "url": "https://api.binance.com/api/v3/klines?symbol=ZECUSDT&interval=1d&limit=91"
     },
     {
-     "publisher": "Crypto Times",
-     "date": "Nov 14 2026",
-     "note": "BTC ~$67.4k after another long-liquidation wave ($1.26B/24h, 86% longs); sixth straight session of spot BTC ETF outflows (SoSoValue)",
-     "url": "https://www.cryptotimes.io/2026/11/14/bitcoin-price-today-btc-slides-to-67k-as-1-26b-crypto-liquidations-hit-longs-fed-hike-bets-rise/"
+     "publisher": "Binance spot API ZECUSDT 91×1d klines + ticker",
+     "date": "Nov 19 2026",
+     "note": "spot $939.84, σ90 6.30%/day, 6-day low $801.52 (not hit)",
+     "url": "https://api.binance.com/api/v3/klines?symbol=ZECUSDT&interval=1d&limit=91"
     },
     {
-     "publisher": "TokenPost",
-     "date": "Nov 13 2026",
-     "note": "altcoin spot ETFs: Zcash funds −$9.88M on Nov 12",
-     "url": "https://www.tokenpost.com/news/investing/56252"
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 19 2026",
+     "note": "'Will Zcash dip to $700 by December 31, 2026?' Yes 0.345 (bid 0.32 / ask 0.37, liquidity ~$15k), live",
+     "url": "https://polymarket.com/event/what-price-will-zcash-hit-before-2027/will-zcash-dip-to-700-by-december-31-2026"
     }
    ],
    "history": [
@@ -2817,6 +2754,18 @@
       61.0
      ],
      "reason": "(Low). Rule: market anchor + touch model. Polymarket Gamma Yes 0.39 (bid 0.38 / ask 0.40, liquidity ~$11k) → 0.75 log-odds shading 0.417. ZEC/USDT ~$911.84 is 23.3% above $700 (was 70.8% above on Nov 9); σ90 = 6.79%/day, ~47.9 days → P(touch) 57.4%; lean low in the 30–60% zone. Midpoint 46% (≈4 pts above the anchor, within the limit). Barrier not hit (low since Oct 18 $880.5). ZEC spot ETFs had −$9.88M outflow on Nov 12 (TokenPost). Re-band is the touch model's spot/vol input after the Nov 13–14 liquidation crash (BTC low ~$66.5k on Binance), not a momentum adjustment. Stale After → 2026-11-21."
+    },
+    {
+     "date": "2026-11-19",
+     "from": [
+      31.0,
+      61.0
+     ],
+     "to": [
+      27.0,
+      57.0
+     ],
+     "reason": "Rule: market anchor + touch model. Polymarket Gamma Yes 0.345 (bid 0.32 / ask 0.37, liquidity ~$15k) read Nov 19 ~08:50 Rome → 0.75 log-odds shading 0.382. Touch model: ZEC/USDT ~$939.84 is 25.5% above $700; σ90 = 6.30%/day, ~42.7 days → P(touch) 0.47; lean low in the 30–60% zone. Midpoint 42% (≈4 pts above the anchor; prior 46% was ~8 pts above, past the ~6-pt limit). Barrier not hit (6-day Binance low $801.52). Stale After → 2026-11-25."
     }
    ],
    "outcome": null,
@@ -3050,6 +2999,103 @@
   }
  ],
  "resolved": [
+  {
+   "id": "90aa3924c7",
+   "question": "Will OpenAI publicly release a GPT Astra model versioned 6.1 or higher by Dec 31, 2026?",
+   "domain": "AI",
+   "status": "Resolved-Yes",
+   "confidence": "Medium",
+   "probLow": 89.0,
+   "probHigh": 99.0,
+   "midpoint": 94.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-23",
+   "lastReviewed": "2026-11-19",
+   "created": "2026-10-18",
+   "summary": "OpenAI shelved GPT-6.1 Astra in September over safety problems, but a gpt-6.2-astra model has been showing up in Codex usage since Nov 1. This asks whether a 6.1-or-later Astra model is released publicly by Dec 31.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "OpenAI says more Astra models are coming and that models which cleared its safety bar will arrive 'very soon'; a fixed GPT-6.1/6.2 Astra or GPT-7 Astra announced; a government-preview window starting by mid-November (30 days before partners)."
+    },
+    {
+     "label": "Toward NO",
+     "text": "further alignment failures (scope/authorization, deception); OpenAI shipping only Sol/Luna-tier or Codex models (do not count); regulatory or incident-driven delays; the looped-transformer flagship slipping into 2027."
+    }
+   ],
+   "resolution": "Per Polymarket rules: YES if OpenAI makes a model designated version 6.1 or higher with 'Astra' in its name/identifier generally available to the public (incl. open beta or open rolling waitlist) between market creation and Dec 31, 2026 ET. GPT-6 Astra variants/snapshots, Sol/Terra/Luna tiers, Cyber, Codex, Image, Realtime and closed betas do NOT count. Otherwise NO. Re-score on any OpenAI Astra announcement.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Next Astra Model (6.1+) released by December 31, 2026?",
+    "url": "https://polymarket.com/event/gpt-astra-6pt1-released-byptptpt/next-astra-model-6pt1-released-by-december-31-2026",
+    "yesPrice": null,
+    "asOf": "2026-11-19T09:00:00+01:00"
+   },
+   "sources": [
+    {
+     "publisher": "OpenAI",
+     "date": "Nov 17 2026",
+     "note": "'Introducing GPT-6.2 Astra and Sol': GPT-6.2 Astra is the new frontier model; API price 20% below GPT-6 Astra",
+     "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/"
+    },
+    {
+     "publisher": "The Verge",
+     "date": "Nov 17 2026",
+     "note": "OpenAI releases its updated GPT-6.2 Astra model",
+     "url": "https://www.theverge.com/tech/1035483/openai-releases-its-updated-gpt-6-2-astra-model"
+    },
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 19 2026",
+     "note": "'Next Astra Model (6.1+) released by December 31, 2026?' closed, resolved Yes",
+     "url": "https://polymarket.com/event/gpt-astra-6pt1-released-byptptpt/next-astra-model-6pt1-released-by-december-31-2026"
+    },
+    {
+     "publisher": "The Morning Build",
+     "date": "Nov 18 2026",
+     "note": "GPT-6.2 Astra and Sol available to Plus, Pro, Enterprise, Edu and via the OpenAI API",
+     "url": "https://themorningbuild.com/digest/2026-11-18/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      50.0,
+      70.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-03",
+     "from": [
+      50.0,
+      70.0
+     ],
+     "to": [
+      88.0,
+      96.0
+     ],
+     "reason": "(confidence Low → Medium). Rule: market anchor (approved 31 Oct rules), plus new question-specific information. Polymarket Gamma Yes 0.98 (bid 0.974 / ask 0.985, liquidity ~$23k) read Nov 3 ~09:10 Rome; above 0.85, so the market is used as-is, and the old midpoint 60% sat ~38 pts below it, far past the ~6-pt limit. New information: since Nov 1 the model ID gpt-6.2-astra shows up in Codex usage analytics for many accounts and in at least one API response payload (TestingCatalog, Decrypt, Nov 2), which points to a staged rollout of a 6.2 Astra model that would qualify under the rules. Held ~6 pts below market because OpenAI has announced nothing, the model catalog still lists only gpt-6-astra (OmniaKey check, Nov 2), a gray A/B test is not 'publicly accessible' under the rules, and GPT-6.1 Astra was shelved on safety grounds in September. Stale After moved to 2026-11-06 because a launch could land any day."
+    },
+    {
+     "date": "2026-11-05",
+     "from": [
+      88.0,
+      96.0
+     ],
+     "to": [
+      90.0,
+      98.0
+     ],
+     "reason": "Rule: market_as_is (p≈0.987–0.994 >0.85). Gamma Yes ~0.99 read Nov 5; prior mid 92% was ~7 pts under (past ~6-pt limit). Mid now 94%. Still no public Astra 6.1+; gpt-6.2-astra remains gray (Codex billing / analytics only), Sol/Terra do not qualify. Near-ceiling so half-width capped by distance to 1. Stale After → 2026-11-13."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.0036,
+   "resolvedOn": "2026-11-17"
+  },
   {
    "id": "3b74327666",
    "question": "Will AVAX trade at or below $7 on Binance AVAX/USDT (any 1-minute low) by Dec 31, 2026?",
