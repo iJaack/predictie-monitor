@@ -1,141 +1,18 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-19T08:53:38+01:00",
+ "generatedAt": "2026-11-20T08:56:13+01:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 30,
-  "resolved": 22,
+  "active": 28,
+  "resolved": 24,
   "byDomain": {
-   "AI": 3,
    "Geopolitics": 6,
+   "AI": 1,
    "Crypto": 17,
    "Macro": 4
   }
  },
  "predictions": [
-  {
-   "id": "38d53490c3",
-   "question": "Will Anthropic's market cap at the close of its first trading day be above $1.5T?",
-   "domain": "AI",
-   "status": "Active",
-   "confidence": "Low",
-   "probLow": 17.0,
-   "probHigh": 31.0,
-   "midpoint": 24.0,
-   "horizon": "2026-11-19",
-   "staleAfter": "2026-11-20",
-   "lastReviewed": "2026-11-19",
-   "created": "2026-11-14",
-   "summary": "Anthropic plans to start trading on Nasdaq around Nov 19 after setting a $70–78 price range that implies about $1.4 trillion fully diluted at the top. This asks whether its first-day closing market value will be above $1.5 trillion.",
-   "triggers": [
-    {
-     "label": "Toward yes",
-     "text": "pricing above the $70–78 range (underwriters reportedly weighing it on ~6x demand); a first-day pop of roughly 7%+ over a $78 price (≈$83+ per share on the ~18.0B fully diluted shares implied by $1.404T at $78); strong Nvidia Q3 results on Nov 17 lifting the AI complex; risk-on rebound in US tech."
-    },
-    {
-     "label": "Toward no",
-     "text": "pricing at or below the midpoint ($74); further AI/semis sell-off after the Nvidia CEO exit; 10y yield pushing higher above ~5.2%; the market cap figure on the listing page using basic Class A+other outstanding shares (lower than fully diluted), which raises the per-share price needed for $1.5T; a delay in pricing/trading beyond Nov 19."
-    }
-   ],
-   "resolution": "Resolves per Polymarket 'Anthropic IPO closing market cap above $1.5T?': YES if Anthropic's official market capitalization at the close of its first trading day (shares outstanding × official closing price, per the primary exchange's listing page or another reliable source if not displayed) is above $1.5T; otherwise NO. Abbreviated sessions use that session's official close. If no IPO by Dec 31, 2027, NO. Internal horizon set to Nov 19, 2026 (expected first trade, Nasdaq: ANT); if trading slips, Horizon moves with it and the row is re-reviewed.",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Anthropic IPO closing market cap above $1.5T?",
-    "url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap-above/anthropic-ipo-closing-market-cap-above-1pt5t",
-    "yesPrice": 20.45,
-    "asOf": "2026-11-19T08:50:00+01:00",
-    "gapPts": 3.6,
-    "insideBand": true
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "Nov 19 2026",
-     "note": "'Anthropic IPO closing market cap above $1.5T?' Yes 0.2045 (bid 0.203 / ask 0.206); ladder >$1.25T 0.735, >$1.4T 0.40, >$1.75T 0.055",
-     "url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap-above/anthropic-ipo-closing-market-cap-above-1pt5t"
-    },
-    {
-     "publisher": "Anthropic",
-     "date": "Nov 18 2026",
-     "note": "IPO priced at $83.00; 980,000,000 Class A shares (956,351,354 primary); Nasdaq 'ANT' trading Nov 19; closing Nov 20",
-     "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
-    },
-    {
-     "publisher": "CNBC",
-     "date": "Nov 18 2026",
-     "note": "priced above range, upsized, $81.3B raised; fully diluted market cap ~$1.5T",
-     "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
-    },
-    {
-     "publisher": "CBC News",
-     "date": "Nov 18 2026",
-     "note": "$83 values Anthropic at ~$1.51T including unvested options and other promised shares",
-     "url": "https://www.cbc.ca/news/business/anthropic-ipo-share-price-nasdaq-9.7426856"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-11-14",
-     "from": null,
-     "to": [
-      23.0,
-      39.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-11-16",
-     "from": [
-      23.0,
-      39.0
-     ],
-     "to": [
-      29.0,
-      45.0
-     ],
-     "reason": "Rule: market anchor. Polymarket Gamma Yes 0.3735 (bid 0.373 / ask 0.374) read Nov 16 ~09:00 Rome → 0.75 log-odds shaded anchor 0.404; midpoint 37% keeps the ~3-pt discount for the shares-outstanding resolution basis. New information: Bloomberg (via Lianhe Zaobao, Nov 16) reports ~$380B of orders, about 6x the offering; pricing Nov 18, Nasdaq trading Nov 19. Half-width 8 (3-day horizon). Stale After stays 2026-11-18."
-    },
-    {
-     "date": "2026-11-17",
-     "from": [
-      29.0,
-      45.0
-     ],
-     "to": [
-      20.0,
-      34.0
-     ],
-     "reason": "Rule: market anchor. Polymarket Gamma Yes 0.248 (bid 0.229 / ask 0.267, thinner liquidity ~$7k) read Nov 17 ~08:52 Rome → 0.75 log-odds shaded anchor ~0.30; midpoint 27% keeps the ~3-pt discount for the resolution basis. The old midpoint 37% was >6 pts off the new anchor, so the band follows it. New question-specific information: the share count behind 'market cap' is now quantified. On the filing's 13.09B shares outstanding the top of the range is only ~$1.02T (Reuters via AI Tech Daily) and even the Rule 430A ceiling of $93.60 gives ~$1.23T (Tenbrief), so if the listing page uses shares outstanding a close above ~$115 (+47% over $78) is needed; on ~18.0B fully diluted shares ~$83.4 is enough. Above-range US IPOs averaged +50% on day one (Ritter, via Tenbrief), so YES is possible on either basis but much harder on the outstanding count. Range still $70–78 (no new S-1/A); pricing Nov 18 evening, Nasdaq trading Nov 19 (CNBC, Nov 16). Half-width 7 (2-day horizon). Stale After stays 2026-11-19; resolves on the Nov 19 close."
-    },
-    {
-     "date": "2026-11-18",
-     "from": [
-      20.0,
-      34.0
-     ],
-     "to": [
-      22.0,
-      36.0
-     ],
-     "reason": "Rule: market anchor. Polymarket Gamma Yes 0.2675 (bid 0.264 / ask 0.265) read Nov 18 ~09:00 Rome → 0.75 log-odds shaded anchor ~0.32; midpoint 29% keeps the ~3-pt discount for the shares-outstanding resolution basis. New question-specific information: multiple sources told CNBC (Nov 17) that the IPO will likely price above the $70–78 range, with books closed at 4 p.m. ET Nov 17; the WSJ (via Euronews, Nov 18) says demand could push it above $80. At $80 the fully diluted value is ~$1.44T, so on that basis the ~$83.4 threshold needs only a modest first-day gain, but on the 13.09B shares-outstanding basis a close near ~$115 is still required. Cross-check: Polymarket's pricing-valuation market has $1.5–1.75T at 0.418, while its closing-cap bracket $1.5–1.75T is only 0.1455, consistent with the market also discounting the outstanding-share basis. Half-width 7 (~1-day horizon, ×0.7). Stale After stays 2026-11-19; resolves on the Nov 19 close (re-review Nov 19/20)."
-    },
-    {
-     "date": "2026-11-19",
-     "from": [
-      22.0,
-      36.0
-     ],
-     "to": [
-      17.0,
-      31.0
-     ],
-     "reason": "Rule: market anchor. Polymarket Gamma Yes 0.2045 (bid 0.203 / ask 0.206, liquidity ~$21k) read Nov 19 ~08:50 Rome → 0.75 log-odds shaded anchor ~0.265; midpoint 24% keeps the ~3-pt discount for the shares-outstanding resolution basis (market rules: shares outstanding × official first-day close). New question-specific information: Anthropic priced the IPO at $83.00 (above the $70–78 range) and upsized to 980M shares (956.35M primary) (Anthropic, Nov 18); CNBC (Nov 18) puts the fully diluted value at ~$1.5T at $83, CBC ~$1.51T. So the fully diluted value is already at the threshold, but on the outstanding-share basis a close of roughly $113–115 (~+37% on the IPO price) is still needed. The ladder (>$1.25T 0.735, >$1.4T 0.40, >$1.5T 0.2045) is consistent with that. Trading starts today on Nasdaq ('ANT'); resolves on the Nov 19 official close (after ~22:00 Rome). Half-width 7 (~1-day horizon). Stale After → 2026-11-20 (resolve then)."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
   {
    "id": "37cc34ac5c",
    "question": "By Nov 30, 2026, will the US government officially confirm a suspension of intelligence sharing with Ukraine or of PURL weapons purchases for Ukraine?",
@@ -221,153 +98,6 @@
       20.0
      ],
      "reason": "The on-record US line is now explicit denial plus restoration: Rubio (Oct 19) 'There has been no pause', and Zelensky said on Oct 24 that the US ballistic-missile warning flow is fully restored after the Oslo talks (Starlink speed limits also resolved; Patriots still short). An on-record confirmation of a suspension would now require a fresh rupture, e.g. renewed Ukrainian refinery strikes after Kushner again asked Kyiv to stop. 31 days left. Stale After moved to 2026-11-13. [Backfill run: the Oct 28–30 daily reviews did not run.]."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
-  {
-   "id": "dc065893f9",
-   "question": "Will Anthropic's shares be listed and open for trading on a public exchange by Nov 30, 2026?",
-   "domain": "AI",
-   "status": "Active",
-   "confidence": "High",
-   "probLow": 97.0,
-   "probHigh": 99.0,
-   "midpoint": 98.0,
-   "horizon": "2026-11-30",
-   "staleAfter": "2026-11-20",
-   "lastReviewed": "2026-11-19",
-   "created": "2026-10-27",
-   "summary": "Anthropic publicly filed for its IPO on Oct 26, 2026, with a roadshow reported for around Nov 9 and a Nasdaq listing under the ticker ANT. This tracks whether its shares actually start trading before the end of November.",
-   "triggers": [
-    {
-     "label": "Toward YES",
-     "text": "SEC registration declared effective; price range set in an amended S-1; public roadshow launching on schedule around Nov 9 (IFR); pricing the following week and a Nasdaq 'ANT' debut around Nov 16–20; strong book-building reports."
-    },
-    {
-     "label": "Toward NO",
-     "text": "roadshow slipping past mid-November; a sharp AI-stock or broad equity sell-off (10-year yield near 5%, Iran escalation, oil >$115); SEC comments delaying effectiveness; governance/safety pushback (NYC comptroller's call to pause the IPO) turning into investor demands; Thanksgiving-week market closure (Nov 26) compressing the window."
-    }
-   ],
-   "resolution": "Per Polymarket rules: resolves YES if Anthropic shares are listed on a public securities exchange and open for trading by 11:59 PM ET on Nov 30, 2026, per SEC filings, exchange listing confirmations or Anthropic press releases (consensus of credible reporting as fallback); resolves NO otherwise, or immediately if Anthropic is acquired by an already-public company. Thesis invalidated if the roadshow has not launched by Nov 16 or Anthropic announces a postponement.",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Will Anthropic IPO by November 30, 2026?",
-    "url": "https://polymarket.com/event/anthropic-ipo-by/will-anthropic-ipo-by-november-30-2026",
-    "yesPrice": 99.85,
-    "asOf": "2026-11-19T08:50:00+01:00",
-    "gapPts": -1.8,
-    "insideBand": false
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "Nov 19 2026",
-     "note": "'Will Anthropic IPO by November 30, 2026?' Yes 0.9985 (bid 0.998 / ask 0.999)",
-     "url": "https://polymarket.com/event/anthropic-ipo-by/will-anthropic-ipo-by-november-30-2026"
-    },
-    {
-     "publisher": "Anthropic",
-     "date": "Nov 18 2026",
-     "note": "IPO priced at $83.00; registration statement declared effective Nov 18; Nasdaq 'ANT' trading expected Nov 19",
-     "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
-    },
-    {
-     "publisher": "CNBC",
-     "date": "Nov 18 2026",
-     "note": "priced above range, upsized to ~980M shares; trading Thursday under 'ANT'",
-     "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
-    },
-    {
-     "publisher": "SEC EDGAR",
-     "date": "Nov 10 2026",
-     "note": "Anthropic, PBC S-1/A No. 2 ($70–78 range, Nasdaq 'ANT')",
-     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-27",
-     "from": null,
-     "to": [
-      82.0,
-      90.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-10-30",
-     "from": [
-      82.0,
-      90.0
-     ],
-     "to": [
-      76.0,
-      86.0
-     ],
-     "reason": "The schedule still holds: IFR says the roadshow and bookbuild launch the week of Nov 9 with a Nov 20 debut, and Yahoo Finance calculates the earliest possible trade as Nov 16. But financing conditions worsened: supplier selloff after Alphabet results, a $16B Anthropic data-centre bond refinancing shelved, and a senior banker had predicted a delay. A slip past Thanksgiving week would resolve NO. Market Yes 0.83; midpoint 81% ~2 pts below market. Stale After stays 2026-11-10 (roadshow launch). [Backfill run: the Oct 28–30 daily reviews did not run.]."
-    },
-    {
-     "date": "2026-11-06",
-     "from": [
-      76.0,
-      86.0
-     ],
-     "to": [
-      43.0,
-      67.0
-     ],
-     "reason": "(confidence Medium → Low). NEW INFORMATION: Reuters and WSJ (both Nov 5, after the Nasdaq's worst session in 19 months, -5.5%) report that investors doubt the roadshow can launch next week in time for a November listing, want a lower valuation (~$1T vs $1.5T), and that Anthropic and its advisers will meet in coming days to decide whether to adjust the range or delay. Anthropic has $146.6B cash so can afford to wait. Rule: market anchor. Polymarket Yes fell 0.83 (Oct 30) → 0.555 (liquid enough, ~$9.9k); shaded anchor logit(q)=0.75*logit(0.555) = 0.54; midpoint 55% is within ~1 pt of the anchor. Half-width widened to ~12 pts (month-ish horizon, gradual widening toward 15) because the decision is binary and imminent. Stale After stays 2026-11-10; key tell is whether the roadshow launches the week of Nov 9 (no launch by Nov 16 makes a Nov 30 listing very unlikely)."
-    },
-    {
-     "date": "2026-11-08",
-     "from": [
-      43.0,
-      67.0
-     ],
-     "to": [
-      60.0,
-      84.0
-     ],
-     "reason": "(confidence stays Low until the roadshow actually launches). NEW INFORMATION: the FT (Nov 6, via Dealroom) reports Anthropic still plans to list before Thanksgiving, raising $80–100B at $1.25–1.75T, choosing a lower price over waiting; Bloomberg (via Quartz, Nov 6) and CNBC (Nov 6) say formal marketing/roadshow is expected to start the week of Nov 9; The Information headline (Nov 6–7) says Anthropic will proceed with the roadshow next week. This reverses the Nov 5 delay risk. Rule: market anchor. Polymarket Yes 0.775 (bid 0.77 / ask 0.78, liquidity ~$21k); shaded anchor logit(q)=0.75·logit(0.775) gives 0.72, midpoint 72%. Half-width 12 (horizon ~3 weeks). Stale After moved to."
-    },
-    {
-     "date": "2026-11-10",
-     "from": [
-      60.0,
-      84.0
-     ],
-     "to": [
-      86.0,
-      99.0
-     ],
-     "reason": ", confidence Low → Medium. Rule: market anchor (price above 0.85, used as-is). Polymarket Gamma Yes 0.944 (bid 0.941 / ask 0.947, liquidity ~$33k) read Nov 10 ~08:48 Rome. NEW INFORMATION: late Nov 9 Anthropic emailed bankers a prospectus with ~867M shares at $70–80 (up to $69.3B), then retracted the pricing as inaccurate and said an update would follow (Reuters via Stocktwits, Nov 9); the WSJ reports investor meetings this week and a Nasdaq 'ANT' debut targeted for Nov 19–20. Midpoint 92.5% sits ~2 pts below the market because no price-range S-1/A is on EDGAR yet (latest is the Nov 2 amendment) and a delay remains possible. Half-width capped by distance to 1. Stale After →."
-    },
-    {
-     "date": "2026-11-18",
-     "from": [
-      93.0,
-      99.0
-     ],
-     "to": [
-      95.0,
-      99.0
-     ],
-     "reason": "Rule: market anchor (price above 0.85, used as-is). Polymarket Gamma Yes 0.9955 (bid 0.995 / ask 0.996) read Nov 18 ~09:00 Rome; sibling markets 'listed on Nasdaq' 0.988 and 'IPO by Dec 31' 0.9975. New information: the order book closed at 4 p.m. ET Nov 17 with pricing likely above range (CNBC, Nov 17), and final pricing is due today (Nov 18 ET) with Nasdaq 'ANT' trading expected Nov 19 (Euronews, Nov 18). Midpoint 97% sits ~2.5 pts under the market for residual last-minute postponement or market-shock risk; half-width capped by distance to 1. Stale After stays 2026-11-19 — resolve YES at the next review if ANT opens for trading."
-    },
-    {
-     "date": "2026-11-19",
-     "from": [
-      95.0,
-      99.0
-     ],
-     "to": [
-      97.0,
-      99.0
-     ],
-     "reason": "Rule: market anchor (Polymarket Gamma 'Anthropic IPO by Nov 30' Yes 0.9985, bid 0.998 / ask 0.999, liquidity ~$66k, read Nov 19 ~08:50 Rome; above 0.85 so used as-is; midpoint 98% ~2 pts under for residual same-day delay risk, half-width capped by distance to 1). New question-specific information: the registration statement was declared effective by the SEC on Nov 18 and the IPO priced at $83 with trading expected on Nasdaq ('ANT') on Nov 19 (Anthropic, Nov 18). Resolves YES once ANT opens for trading; Stale After → 2026-11-20 (resolve then)."
     }
    ],
    "outcome": null,
@@ -1119,11 +849,11 @@
    "status": "Active",
    "confidence": "Low",
    "probLow": 1.0,
-   "probHigh": 17.0,
-   "midpoint": 9.0,
+   "probHigh": 9.0,
+   "midpoint": 5.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-19",
+   "staleAfter": "2026-11-27",
+   "lastReviewed": "2026-11-20",
    "created": "2026-10-18",
    "summary": "AVAX has slipped to around $8.40. This asks whether it rallies to at least $13 at any point before year end, which would take a gain of more than 50%.",
    "triggers": [
@@ -1141,29 +871,29 @@
     "venue": "Polymarket",
     "name": "Will AVAX reach $13 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-reach-13-by-december-31-2026",
-    "yesPrice": 7.5,
-    "asOf": "2026-11-14T08:55:00+01:00",
-    "gapPts": 1.5,
+    "yesPrice": 5.5,
+    "asOf": "2026-11-20T08:50:00+01:00",
+    "gapPts": -0.5,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 14 2026",
-     "note": "'Will AVAX reach $13 by December 31, 2026?' Yes 0.075 (bid 0.05 / ask 0.10, liquidity ~$8.9k)",
+     "date": "Nov 20 2026",
+     "note": "'Will AVAX reach $13 by December 31, 2026?' Yes 0.055 (bid 0.05 / ask 0.06, liquidity ~$8.8k)",
      "url": "https://polymarket.com/event/what-price-will-avalanche-hit-before-2027/will-avax-reach-13-by-december-31-2026"
     },
     {
      "publisher": "Binance spot API 91×1d klines + ticker",
-     "date": "Nov 14 2026",
-     "note": "AVAX/USDT $8.02; σ90 4.39%/day; high since Oct 18 $10.054",
+     "date": "Nov 20 2026",
+     "note": "AVAX/USDT $6.92; σ90 4.49%/day; high since Oct 18 $10.054",
      "url": "https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1d&limit=91"
     },
     {
-     "publisher": "Crypto Times",
-     "date": "Nov 14 2026",
-     "note": "BTC ~$67.4k after another long-liquidation wave ($1.26B/24h, 86% longs); sixth straight session of spot BTC ETF outflows (SoSoValue)",
-     "url": "https://www.cryptotimes.io/2026/11/14/bitcoin-price-today-btc-slides-to-67k-as-1-26b-crypto-liquidations-hit-longs-fed-hike-bets-rise/"
+     "publisher": "CoinDesk",
+     "date": "Nov 19 2026",
+     "note": "BTC fell to ~$61,300, lowest since early July, after Anthropic's Nasdaq debut; >$600M crypto liquidations in 24h; Nasdaq futures below 200-day average",
+     "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt"
     }
    ],
    "history": [
@@ -1223,6 +953,18 @@
       17.0
      ],
      "reason": "(Low). Rule: touch model + market. AVAX/USDT ~$8.02 needs +62.1% to touch $13; σ90 = 4.39%/day, ~47.9 days → P(touch) 11.1%. Polymarket Yes 0.075 (bid 0.05 / ask 0.10, liquidity ~$8.9k). Midpoint 9%. Schwab AVAX trading has been live since Nov 9 (row resolved Yes) with no visible flow effect. High since Oct 18 $10.054. Re-band is the touch model's spot/vol input after the Nov 13–14 liquidation crash (BTC low ~$66.5k on Binance), not a momentum adjustment. Stale After → 2026-11-21."
+    },
+    {
+     "date": "2026-11-20",
+     "from": [
+      1.0,
+      17.0
+     ],
+     "to": [
+      1.0,
+      9.0
+     ],
+     "reason": "Rule: touch model + market. Polymarket Gamma Yes 0.055 (bid 0.05 / ask 0.06, liquidity ~$8.8k; thin). AVAX/USDT ~$6.92 needs +87.8% to touch $13; σ90 = 4.49%/day, ~41.7 days → P(touch) 3.0%. Midpoint 5% (on the market, ~2 pts over the model); half-width capped by distance to 0. Schwab AVAX trading live since Nov 9 with no visible flow effect. Re-band is the touch model's spot/time input (spot −14% since Nov 14), not momentum. Stale After → 2026-11-27."
     }
    ],
    "outcome": null,
@@ -1431,8 +1173,8 @@
    "probHigh": 5.0,
    "midpoint": 3.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-19",
+   "staleAfter": "2026-11-27",
+   "lastReviewed": "2026-11-20",
    "created": "2026-10-18",
    "summary": "Bitcoin is near $77k after a weak October and the Binance hack. This asks whether it can still reach $100k before the year ends.",
    "triggers": [
@@ -1532,12 +1274,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Medium",
-   "probLow": 45.0,
-   "probHigh": 75.0,
-   "midpoint": 60.0,
+   "probLow": 62.0,
+   "probHigh": 92.0,
+   "midpoint": 77.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-19",
+   "staleAfter": "2026-11-23",
+   "lastReviewed": "2026-11-20",
    "created": "2026-11-13",
    "summary": "After Bitcoin's November 13 liquidation-driven slide below $70,000, this tracks whether the selloff extends to $60,000 on Binance before year-end. The barrier has not been touched since July; ETF outflows and Fed hike expectations are the main pressure.",
    "triggers": [
@@ -1555,40 +1297,34 @@
     "venue": "Polymarket",
     "name": "Will Bitcoin dip to $60,000 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027",
-    "yesPrice": 35.5,
-    "asOf": "2026-11-13T08:50:00+01:00",
-    "gapPts": 24.5,
-    "insideBand": false
+    "yesPrice": 81.5,
+    "asOf": "2026-11-20T08:50:00+01:00",
+    "gapPts": -4.5,
+    "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 13 2026",
-     "note": "'Will Bitcoin dip to $60,000 by December 31, 2026?' Yes 0.355 (bid 0.35/ask 0.36, liquidity ~$121k), live, rules as above",
+     "date": "Nov 20 2026",
+     "note": "'Will Bitcoin dip to $60,000 by December 31, 2026?' Yes 0.815 (bid 0.81 / ask 0.82, liquidity ~$124k), live",
      "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027"
     },
     {
-     "publisher": "Binance BTCUSDT 1d klines",
-     "date": "Nov 13 2026",
-     "note": "spot $68,762, σ90 2.22%/day, low since Jul 21 $62,275",
+     "publisher": "Binance BTCUSDT 91×1d klines + ticker",
+     "date": "Nov 20 2026",
+     "note": "spot $61,928, σ90 2.02%/day, 26h low $61,290.58 (barrier not hit)",
      "url": "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=91"
     },
     {
-     "publisher": "The Block",
-     "date": "Nov 13 2026",
-     "note": "BTC lowest since Aug 20, $1.47B liquidations, Nvidia CEO exit and Dec Fed hike fears",
-     "url": "https://www.theblock.co/news/markets/2026-11-13-bitcoin-tumbles-below-69000-439643"
-    },
-    {
-     "publisher": "Polymarket Gamma API + Binance BTCUSDT 91×1d klines",
-     "date": "Nov 15 2026",
-     "note": "Yes 0.625 (bid 0.62/ask 0.63); spot $63,882, σ90 2.32%/day, low $62,006",
-     "url": "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=91"
+     "publisher": "CoinDesk",
+     "date": "Nov 19 2026",
+     "note": "BTC fell to ~$61,300, lowest since early July, after Anthropic's Nasdaq debut; >$600M crypto liquidations in 24h; Nasdaq futures below 200-day average",
+     "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt"
     },
     {
      "publisher": "Investing.com",
      "date": "Nov 15 2026",
-     "note": "BTC four-month low $62,112, Glassnode liquidation cluster $59.5k–$62.6k, ~$3B spot ETF outflows Oct 30–Nov 13",
+     "note": "Glassnode liquidation cluster $59.5k–$62.6k, ~$3B spot ETF outflows Oct 30–Nov 13",
      "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slides-toward-60000-as-etf-outflows-and-liquidations-intensify-5027667"
     }
    ],
@@ -1613,6 +1349,18 @@
       75.0
      ],
      "reason": "(Medium). Rule: market anchor cross-checked with touch model. Polymarket Yes 0.625 (bid 0.62 / ask 0.63, liquidity ~$106k) shaded with logit×0.75 → 0.595. Touch model: BTC/USDT ~$63,882 is 6.3% above $60k; σ90 = 2.32%/day, ~46.6 days → P(touch) 0.69. Midpoint 0.60 (within 1 pt of the anchor), half-width 15 (horizon > 1 month). New information: Binance low $62,006 on Nov 15 Asian session, Glassnode liquidation cluster $59.5k–$62.6k, ETF outflows ~$3B Oct 30–Nov 13 (Investing.com, Nov 15). Barrier not hit. Stale After → 2026-11-18."
+    },
+    {
+     "date": "2026-11-20",
+     "from": [
+      45.0,
+      75.0
+     ],
+     "to": [
+      62.0,
+      92.0
+     ],
+     "reason": "Rule: market anchor cross-checked with touch model. Polymarket Gamma Yes 0.815 (bid 0.81 / ask 0.82, liquidity ~$124k) read Nov 20 ~08:50 Rome; 0.75 log-odds shading gives 0.75, blended slightly toward the market near the 0.85 edge → anchor ~0.76. Touch model: BTC/USDT ~$61,928 is only 3.1% above $60k; σ90 = 2.02%/day, ~41.7 days → P(touch) 0.81 (above the 30–60% zone, so no low lean). Midpoint 0.77, half-width 15 (horizon > 1 month; upper edge 0.92 fits under the cap). The old midpoint 0.60 was ~16 pts under the anchor, beyond the ~6-pt limit. New information: BTC fell to ~$61,300 late Nov 19, the lowest since early July, after Anthropic's IPO, with >$600M liquidations and Nasdaq futures below their 200-day average (CoinDesk, Nov 19); Binance 26h low $61,290.58, barrier not hit. This is the touch model's spot input, not a momentum adjustment. Stale After → 2026-11-23 (barrier close)."
     }
    ],
    "outcome": null,
@@ -1818,11 +1566,11 @@
    "status": "Active",
    "confidence": "Medium",
    "probLow": 1.0,
-   "probHigh": 9.0,
-   "midpoint": 5.0,
+   "probHigh": 5.0,
+   "midpoint": 3.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-19",
+   "staleAfter": "2026-11-27",
+   "lastReviewed": "2026-11-20",
    "created": "2026-10-18",
    "summary": "Ether trades near $2,230 after the Binance hack, well below its October levels. This asks whether a December network upgrade or a turn in ETF flows lifts it to $3,000 before year end.",
    "triggers": [
@@ -1840,29 +1588,29 @@
     "venue": "Polymarket",
     "name": "Will Ethereum reach $3,000 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-reach-3000-by-december-31-2026-from-june-8",
-    "yesPrice": 5.5,
-    "asOf": "2026-11-14T08:55:00+01:00",
-    "gapPts": -0.5,
+    "yesPrice": 2.85,
+    "asOf": "2026-11-20T08:50:00+01:00",
+    "gapPts": 0.1,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 14 2026",
-     "note": "'Will Ethereum reach $3,000 by December 31, 2026?' Yes 0.055 (bid 0.05 / ask 0.06, liquidity ~$75k)",
+     "date": "Nov 20 2026",
+     "note": "'Will Ethereum reach $3,000 by December 31, 2026?' Yes 0.0285 (bid 0.027 / ask 0.03, liquidity ~$88k)",
      "url": "https://polymarket.com/event/what-price-will-ethereum-hit-before-2027/will-ethereum-reach-3000-by-december-31-2026-from-june-8"
     },
     {
      "publisher": "Binance spot API 91×1d klines + ticker",
-     "date": "Nov 14 2026",
-     "note": "ETH/USDT $1,899.81; σ90 3.04%/day; high since Oct 18 $2,526.62",
+     "date": "Nov 20 2026",
+     "note": "ETH/USDT $1,753; σ90 2.50%/day; high since Oct 18 $2,526.62",
      "url": "https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1d&limit=91"
     },
     {
-     "publisher": "Crypto Times",
-     "date": "Nov 14 2026",
-     "note": "BTC ~$67.4k after another long-liquidation wave ($1.26B/24h, 86% longs); sixth straight session of spot BTC ETF outflows (SoSoValue)",
-     "url": "https://www.cryptotimes.io/2026/11/14/bitcoin-price-today-btc-slides-to-67k-as-1-26b-crypto-liquidations-hit-longs-fed-hike-bets-rise/"
+     "publisher": "CoinDesk",
+     "date": "Nov 19 2026",
+     "note": "BTC fell to ~$61,300, lowest since early July, after Anthropic's Nasdaq debut; >$600M crypto liquidations in 24h; Nasdaq futures below 200-day average",
+     "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt"
     }
    ],
    "history": [
@@ -1922,6 +1670,18 @@
       9.0
      ],
      "reason": "(Low). Rule: market anchor + touch model. Polymarket Gamma Yes 0.055 (bid 0.05 / ask 0.06, liquidity ~$75k), below 0.15 so used as-is. ETH/USDT ~$1,899.81 needs +57.9% to touch $3,000; σ90 = 3.04%/day → P(touch) 3.0%. Midpoint 5%, half-width capped by distance to 0. High since Oct 18 $2,526.62. Re-band is the touch model's spot/vol input after the Nov 13–14 liquidation crash (BTC low ~$66.5k on Binance), not a momentum adjustment. Stale After → 2026-11-21."
+    },
+    {
+     "date": "2026-11-20",
+     "from": [
+      1.0,
+      9.0
+     ],
+     "to": [
+      1.0,
+      5.0
+     ],
+     "reason": "(confidence Low → Medium). Rule: market anchor + touch model. Polymarket Gamma Yes 0.0285 (bid 0.027 / ask 0.03, liquidity ~$88k), below 0.15 so used as-is. ETH/USDT ~$1,753 needs +71.1% to touch $3,000; σ90 = 2.50%/day, ~41.7 days → P(touch) 0.1%. Midpoint 3% (on the market; model lower, fat tails kept); half-width capped by distance to 0. Re-band is the touch model's spot/time input (spot −8% since Nov 14), not momentum. Stale After → 2026-11-27."
     }
    ],
    "outcome": null,
@@ -1933,13 +1693,13 @@
    "question": "Will Ethereum's Glamsterdam upgrade activate on mainnet by Dec 31, 2026?",
    "domain": "Crypto",
    "status": "Active",
-   "confidence": "Medium",
+   "confidence": "High",
    "probLow": 1.0,
-   "probHigh": 8.0,
-   "midpoint": 4.5,
+   "probHigh": 3.0,
+   "midpoint": 2.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-19",
+   "staleAfter": "2026-11-27",
+   "lastReviewed": "2026-11-20",
    "created": "2026-10-18",
    "summary": "Glamsterdam is Ethereum's next major upgrade, raising capacity roughly threefold. Its final public test, planned for Oct 26, was postponed with no new date, so this asks whether it can still reach mainnet in 2026.",
    "triggers": [
@@ -1956,28 +1716,28 @@
    "market": null,
    "sources": [
     {
-     "publisher": "Ethereum Foundation blog",
-     "date": "Oct 22 2026",
-     "note": "'Glamsterdam on Hoodi Postponed': Oct 26 Hoodi activation removed (ACDE #248) to investigate EIP-8037; no replacement date; mainnet date not set",
-     "url": "https://blog.ethereum.org/2026/10/22/glamsterdam-hoodi-delay"
+     "publisher": "Coindaro",
+     "date": "Nov 19 2026",
+     "note": "ACDE #249: Hoodi pencilled for Dec 16–17, go/no-go at ACDC #192 Nov 26; mid-January earliest mainnet, late Jan/early Feb 'more realistic'",
+     "url": "https://www.coindaro.com/glamsterdam-eip-8037-hoodi-fork-pencilled-december-acde-249/"
+    },
+    {
+     "publisher": "Ethereum Magicians",
+     "date": "Nov 19 2026",
+     "note": "ACDE #249 call summary: most affected projects ready by mid-January if spec unchanged; Hoodi pencilled week of Dec 14",
+     "url": "https://ethereum-magicians.org/t/all-core-devs-execution-acde-249-november-19-2026/30071"
     },
     {
      "publisher": "Ethereum Foundation blog",
      "date": "Nov 6 2026",
-     "note": "EIP-8037/8038: Hoodi not forked until issues resolved; wait for audit findings; ACDT Nov 16 findings, ACDE Nov 19 discussion, no decision pre-committed",
+     "note": "EIP-8037/8038: Hoodi not forked until issues resolved",
      "url": "https://blog.ethereum.org/2026/11/06/glamsterdam-8037-8038"
     },
     {
-     "publisher": "RockLogic",
-     "date": "Nov 2 2026",
-     "note": "no new Hoodi/mainnet date; expects mainnet in Q1 2027",
-     "url": "https://www.rocklogic.at/blog/glamsterdam-hoodi-delayed"
-    },
-    {
-     "publisher": "Coindaro",
-     "date": "Oct 23 2026",
-     "note": "ACDE #248 chair Ansgar Dietrichs: mainnet fork before year end 'very unlikely'",
-     "url": "https://www.coindaro.com/events/ethereum-glamsterdam-hoodi-testnet/"
+     "publisher": "Ethereum Foundation blog",
+     "date": "Oct 22 2026",
+     "note": "'Glamsterdam on Hoodi Postponed'",
+     "url": "https://blog.ethereum.org/2026/10/22/glamsterdam-hoodi-delay"
     }
    ],
    "history": [
@@ -2025,6 +1785,18 @@
       8.0
      ],
      "reason": "(Medium). Rule: judgment (no market). NEW INFORMATION: the EF's Nov 9 update to its EIP-8037/8038 post says ACD should wait until the Dedaub/ChainSecurity audit findings are public and reviewed before deciding whether to revise the specs or when to schedule Hoodi; findings are presented on ACDT Nov 16 and discussed on ACDE Nov 19 with 'no decision pre-committed'; spec revisions are being prototyped. So no Hoodi date can come before Nov 19, and with the historic 35–42-day Hoodi→mainnet gap a 2026 mainnet fork would need an unprecedented compressed schedule. Midpoint 4.5%, capped near 0. Stale After → 2026-11-20 (after ACDE Nov 19)."
+    },
+    {
+     "date": "2026-11-20",
+     "from": [
+      1.0,
+      8.0
+     ],
+     "to": [
+      1.0,
+      3.0
+     ],
+     "reason": "(confidence Medium → High). Rule: judgment (no market). New question-specific information from ACDE #249 (Nov 19): developers only pencilled the Hoodi testnet fork for Dec 16–17, with the go/no-go at ACDC #192 on Nov 26; the EF's outreach to 50+ affected projects puts mid-January 2027 as the earliest viable mainnet date even with the spec unchanged, and the chair called late January/early February more realistic (Coindaro, Nov 19; Ethereum Magicians summary, Nov 19). Hoodi→mainnet has historically taken 35–42 days, so a 2026 mainnet activation would need a Hoodi fork in mid-December followed by a ~2-week mainnet — contrary to the stated plan. Midpoint 2%, capped near 0. Stale After → 2026-11-27 (after ACDC #192)."
     }
    ],
    "outcome": null,
@@ -2038,11 +1810,11 @@
    "status": "Active",
    "confidence": "Low",
    "probLow": 1.0,
-   "probHigh": 29.0,
-   "midpoint": 15.0,
+   "probHigh": 19.0,
+   "midpoint": 10.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-19",
+   "staleAfter": "2026-11-27",
+   "lastReviewed": "2026-11-20",
    "created": "2026-10-18",
    "summary": "Hyperliquid's token trades around $84 after topping out near $98 in late October. This asks whether it reaches $100 before year end.",
    "triggers": [
@@ -2060,29 +1832,29 @@
     "venue": "Polymarket",
     "name": "Will Hyperliquid reach $100 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-hyperliquid-hit-before-2027/will-hyperliquid-reach-100-by-december-31-2026",
-    "yesPrice": 15.5,
-    "asOf": "2026-11-14T08:55:00+01:00",
-    "gapPts": -0.5,
+    "yesPrice": 11.0,
+    "asOf": "2026-11-20T08:50:00+01:00",
+    "gapPts": -1.0,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 14 2026",
-     "note": "'Will Hyperliquid reach $100 by December 31, 2026?' Yes 0.155 (bid 0.15 / ask 0.16, liquidity ~$36k)",
+     "date": "Nov 20 2026",
+     "note": "'Will Hyperliquid reach $100 by December 31, 2026?' Yes 0.11 (bid 0.10 / ask 0.12, liquidity ~$57k)",
      "url": "https://polymarket.com/event/what-price-will-hyperliquid-hit-before-2027/will-hyperliquid-reach-100-by-december-31-2026"
     },
     {
      "publisher": "Binance spot API 91×1d klines + ticker",
-     "date": "Nov 14 2026",
-     "note": "HYPE/USDT $69.74; σ90 3.11%/day; high since Oct 18 $97.74",
+     "date": "Nov 20 2026",
+     "note": "HYPE/USDT $66.07; σ90 3.40%/day; high since Oct 18 $97.74",
      "url": "https://api.binance.com/api/v3/klines?symbol=HYPEUSDT&interval=1d&limit=91"
     },
     {
-     "publisher": "Crypto Times",
-     "date": "Nov 14 2026",
-     "note": "BTC ~$67.4k after another long-liquidation wave ($1.26B/24h, 86% longs); sixth straight session of spot BTC ETF outflows (SoSoValue)",
-     "url": "https://www.cryptotimes.io/2026/11/14/bitcoin-price-today-btc-slides-to-67k-as-1-26b-crypto-liquidations-hit-longs-fed-hike-bets-rise/"
+     "publisher": "CoinDesk",
+     "date": "Nov 19 2026",
+     "note": "BTC fell to ~$61,300, lowest since early July, after Anthropic's Nasdaq debut; >$600M crypto liquidations in 24h; Nasdaq futures below 200-day average",
+     "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt"
     }
    ],
    "history": [
@@ -2154,6 +1926,18 @@
       29.0
      ],
      "reason": "(Low). Rule: market anchor + touch model. Polymarket Gamma Yes 0.155 (bid 0.15 / ask 0.16, liquidity ~$36k), at the 0.15 edge: 0.75 log-odds shading gives 0.219, blended halfway → anchor ~0.19. HYPE/USDT ~$69.74 needs +43.4% to touch $100; σ90 = 3.11%/day → P(touch) 9.4%. Midpoint 15% (≈4 pts under the anchor, within the limit; tilted toward the model). High since Oct 18 $97.74 (not hit). Re-band is the touch model's spot/vol input after the Nov 13–14 liquidation crash (BTC low ~$66.5k on Binance), not a momentum adjustment. Stale After → 2026-11-21."
+    },
+    {
+     "date": "2026-11-20",
+     "from": [
+      1.0,
+      29.0
+     ],
+     "to": [
+      1.0,
+      19.0
+     ],
+     "reason": "Rule: market anchor + touch model. Polymarket Gamma Yes 0.11 (bid 0.10 / ask 0.12, liquidity ~$57k), below 0.15 so used as-is. HYPE/USDT ~$66.07 needs +51.4% to touch $100; σ90 = 3.40%/day, ~41.7 days → P(touch) 5.9%. Midpoint 10% (1 pt under the anchor, tilted toward the model); half-width capped by distance to 0. 26h range $64.54–$70.30; high since Oct 18 $97.74 (not hit). Re-band is the touch model's spot/time input (fewer days left, lower spot), not momentum. Stale After → 2026-11-27."
     }
    ],
    "outcome": null,
@@ -2551,11 +2335,11 @@
    "status": "Active",
    "confidence": "Low",
    "probLow": 1.0,
-   "probHigh": 13.0,
-   "midpoint": 7.0,
+   "probHigh": 7.0,
+   "midpoint": 4.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-21",
-   "lastReviewed": "2026-11-19",
+   "staleAfter": "2026-11-27",
+   "lastReviewed": "2026-11-20",
    "created": "2026-10-18",
    "summary": "Uniswap's token now benefits from protocol fees that fund token burns, and briefly hit $10.94 in September. This asks whether it reaches $11 this year after falling back to about $7.",
    "triggers": [
@@ -2573,29 +2357,29 @@
     "venue": "Polymarket",
     "name": "Will UNI reach $11.00 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-uniswap-hit-before-2027/will-uni-reach-11pt00-by-december-31-2026",
-    "yesPrice": 6.0,
-    "asOf": "2026-11-14T08:55:00+01:00",
-    "gapPts": 1.0,
+    "yesPrice": 4.5,
+    "asOf": "2026-11-20T08:50:00+01:00",
+    "gapPts": -0.5,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 14 2026",
-     "note": "'Will UNI reach $11.00 by December 31, 2026?' Yes 0.06 (bid 0.05 / ask 0.07, liquidity ~$11k)",
+     "date": "Nov 20 2026",
+     "note": "'Will UNI reach $11.00 by December 31, 2026?' Yes 0.045 (bid 0.03 / ask 0.06, liquidity ~$11k)",
      "url": "https://polymarket.com/event/what-price-will-uniswap-hit-before-2027/will-uni-reach-11pt00-by-december-31-2026"
     },
     {
      "publisher": "Binance spot API 91×1d klines + ticker",
-     "date": "Nov 14 2026",
-     "note": "UNI/USDT $5.513; σ90 5.77%/day; high since Oct 18 $7.82",
+     "date": "Nov 20 2026",
+     "note": "UNI/USDT $4.877; σ90 5.90%/day; high since Oct 18 $7.82",
      "url": "https://api.binance.com/api/v3/klines?symbol=UNIUSDT&interval=1d&limit=91"
     },
     {
-     "publisher": "Crypto Times",
-     "date": "Nov 14 2026",
-     "note": "BTC ~$67.4k after another long-liquidation wave ($1.26B/24h, 86% longs); sixth straight session of spot BTC ETF outflows (SoSoValue)",
-     "url": "https://www.cryptotimes.io/2026/11/14/bitcoin-price-today-btc-slides-to-67k-as-1-26b-crypto-liquidations-hit-longs-fed-hike-bets-rise/"
+     "publisher": "CoinDesk",
+     "date": "Nov 19 2026",
+     "note": "BTC fell to ~$61,300, lowest since early July, after Anthropic's Nasdaq debut; >$600M crypto liquidations in 24h; Nasdaq futures below 200-day average",
+     "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt"
     }
    ],
    "history": [
@@ -2631,6 +2415,18 @@
       13.0
      ],
      "reason": "(Low). Rule: market anchor + touch model. Polymarket Gamma Yes 0.06 (bid 0.05 / ask 0.07, liquidity ~$11k), below 0.15 so used as-is. UNI/USDT ~$5.513 needs +99.5% to touch $11; σ90 = 5.77%/day → P(touch) 8.4%. Midpoint 7%, half-width capped by distance to 0. High since Oct 18 $7.82. Re-band is the touch model's spot/vol input after the Nov 13–14 liquidation crash (BTC low ~$66.5k on Binance), not a momentum adjustment. Stale After → 2026-11-21."
+    },
+    {
+     "date": "2026-11-20",
+     "from": [
+      1.0,
+      13.0
+     ],
+     "to": [
+      1.0,
+      7.0
+     ],
+     "reason": "Rule: market anchor + touch model. Polymarket Gamma Yes 0.045 (bid 0.03 / ask 0.06, liquidity ~$11k), below 0.15 so used as-is. UNI/USDT ~$4.877 needs +125.5% to touch $11; σ90 = 5.90%/day, ~41.7 days → P(touch) 3.3%. Midpoint 4%; half-width capped by distance to 0. Re-band is the touch model's spot/time input (spot −11% since Nov 14), not momentum. Stale After → 2026-11-27."
     }
    ],
    "outcome": null,
@@ -2999,6 +2795,272 @@
   }
  ],
  "resolved": [
+  {
+   "id": "38d53490c3",
+   "question": "Will Anthropic's market cap at the close of its first trading day be above $1.5T?",
+   "domain": "AI",
+   "status": "Resolved-No",
+   "confidence": "Low",
+   "probLow": 17.0,
+   "probHigh": 31.0,
+   "midpoint": 24.0,
+   "horizon": "2026-11-19",
+   "staleAfter": "2026-11-20",
+   "lastReviewed": "2026-11-20",
+   "created": "2026-11-14",
+   "summary": "Anthropic plans to start trading on Nasdaq around Nov 19 after setting a $70–78 price range that implies about $1.4 trillion fully diluted at the top. This asks whether its first-day closing market value will be above $1.5 trillion.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "pricing above the $70–78 range (underwriters reportedly weighing it on ~6x demand); a first-day pop of roughly 7%+ over a $78 price (≈$83+ per share on the ~18.0B fully diluted shares implied by $1.404T at $78); strong Nvidia Q3 results on Nov 17 lifting the AI complex; risk-on rebound in US tech."
+    },
+    {
+     "label": "Toward no",
+     "text": "pricing at or below the midpoint ($74); further AI/semis sell-off after the Nvidia CEO exit; 10y yield pushing higher above ~5.2%; the market cap figure on the listing page using basic Class A+other outstanding shares (lower than fully diluted), which raises the per-share price needed for $1.5T; a delay in pricing/trading beyond Nov 19."
+    }
+   ],
+   "resolution": "Resolves per Polymarket 'Anthropic IPO closing market cap above $1.5T?': YES if Anthropic's official market capitalization at the close of its first trading day (shares outstanding × official closing price, per the primary exchange's listing page or another reliable source if not displayed) is above $1.5T; otherwise NO. Abbreviated sessions use that session's official close. If no IPO by Dec 31, 2027, NO. Internal horizon set to Nov 19, 2026 (expected first trade, Nasdaq: ANT); if trading slips, Horizon moves with it and the row is re-reviewed.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Anthropic IPO closing market cap above $1.5T?",
+    "url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap-above/anthropic-ipo-closing-market-cap-above-1pt5t",
+    "yesPrice": null,
+    "asOf": "2026-11-20T08:50:00+01:00"
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 20 2026",
+     "note": "'Anthropic IPO closing market cap above $1.5T?' closed, outcome prices [Yes 0, No 1], UMA status resolved (conditionId 0xde3642…3958)",
+     "url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap-above/anthropic-ipo-closing-market-cap-above-1pt5t"
+    },
+    {
+     "publisher": "EventMarkets",
+     "date": "Nov 19 2026",
+     "note": "Nasdaq ANT listing page: closed $97.17 (Nov 19 4:00 PM ET), market cap $1,271,631,975,862; rules = shares outstanding × first-day close",
+     "url": "https://eventmarkets.ai/anthropic-closes-its-first-nasdaq-day-at-97-17-as-polymarkets-closing-cap-markets-go-to-resolution/"
+    },
+    {
+     "publisher": "CNBC",
+     "date": "Nov 19 2026",
+     "note": "ANT closed $97.17 (+17%), opened $111.50; ~$1.8T fully diluted",
+     "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html"
+    },
+    {
+     "publisher": "Anthropic",
+     "date": "Nov 18 2026",
+     "note": "IPO priced at $83.00; 980,000,000 Class A shares",
+     "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-14",
+     "from": null,
+     "to": [
+      23.0,
+      39.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-16",
+     "from": [
+      23.0,
+      39.0
+     ],
+     "to": [
+      29.0,
+      45.0
+     ],
+     "reason": "Rule: market anchor. Polymarket Gamma Yes 0.3735 (bid 0.373 / ask 0.374) read Nov 16 ~09:00 Rome → 0.75 log-odds shaded anchor 0.404; midpoint 37% keeps the ~3-pt discount for the shares-outstanding resolution basis. New information: Bloomberg (via Lianhe Zaobao, Nov 16) reports ~$380B of orders, about 6x the offering; pricing Nov 18, Nasdaq trading Nov 19. Half-width 8 (3-day horizon). Stale After stays 2026-11-18."
+    },
+    {
+     "date": "2026-11-17",
+     "from": [
+      29.0,
+      45.0
+     ],
+     "to": [
+      20.0,
+      34.0
+     ],
+     "reason": "Rule: market anchor. Polymarket Gamma Yes 0.248 (bid 0.229 / ask 0.267, thinner liquidity ~$7k) read Nov 17 ~08:52 Rome → 0.75 log-odds shaded anchor ~0.30; midpoint 27% keeps the ~3-pt discount for the resolution basis. The old midpoint 37% was >6 pts off the new anchor, so the band follows it. New question-specific information: the share count behind 'market cap' is now quantified. On the filing's 13.09B shares outstanding the top of the range is only ~$1.02T (Reuters via AI Tech Daily) and even the Rule 430A ceiling of $93.60 gives ~$1.23T (Tenbrief), so if the listing page uses shares outstanding a close above ~$115 (+47% over $78) is needed; on ~18.0B fully diluted shares ~$83.4 is enough. Above-range US IPOs averaged +50% on day one (Ritter, via Tenbrief), so YES is possible on either basis but much harder on the outstanding count. Range still $70–78 (no new S-1/A); pricing Nov 18 evening, Nasdaq trading Nov 19 (CNBC, Nov 16). Half-width 7 (2-day horizon). Stale After stays 2026-11-19; resolves on the Nov 19 close."
+    },
+    {
+     "date": "2026-11-18",
+     "from": [
+      20.0,
+      34.0
+     ],
+     "to": [
+      22.0,
+      36.0
+     ],
+     "reason": "Rule: market anchor. Polymarket Gamma Yes 0.2675 (bid 0.264 / ask 0.265) read Nov 18 ~09:00 Rome → 0.75 log-odds shaded anchor ~0.32; midpoint 29% keeps the ~3-pt discount for the shares-outstanding resolution basis. New question-specific information: multiple sources told CNBC (Nov 17) that the IPO will likely price above the $70–78 range, with books closed at 4 p.m. ET Nov 17; the WSJ (via Euronews, Nov 18) says demand could push it above $80. At $80 the fully diluted value is ~$1.44T, so on that basis the ~$83.4 threshold needs only a modest first-day gain, but on the 13.09B shares-outstanding basis a close near ~$115 is still required. Cross-check: Polymarket's pricing-valuation market has $1.5–1.75T at 0.418, while its closing-cap bracket $1.5–1.75T is only 0.1455, consistent with the market also discounting the outstanding-share basis. Half-width 7 (~1-day horizon, ×0.7). Stale After stays 2026-11-19; resolves on the Nov 19 close (re-review Nov 19/20)."
+    },
+    {
+     "date": "2026-11-19",
+     "from": [
+      22.0,
+      36.0
+     ],
+     "to": [
+      17.0,
+      31.0
+     ],
+     "reason": "Rule: market anchor. Polymarket Gamma Yes 0.2045 (bid 0.203 / ask 0.206, liquidity ~$21k) read Nov 19 ~08:50 Rome → 0.75 log-odds shaded anchor ~0.265; midpoint 24% keeps the ~3-pt discount for the shares-outstanding resolution basis (market rules: shares outstanding × official first-day close). New question-specific information: Anthropic priced the IPO at $83.00 (above the $70–78 range) and upsized to 980M shares (956.35M primary) (Anthropic, Nov 18); CNBC (Nov 18) puts the fully diluted value at ~$1.5T at $83, CBC ~$1.51T. So the fully diluted value is already at the threshold, but on the outstanding-share basis a close of roughly $113–115 (~+37% on the IPO price) is still needed. The ladder (>$1.25T 0.735, >$1.4T 0.40, >$1.5T 0.2045) is consistent with that. Trading starts today on Nasdaq ('ANT'); resolves on the Nov 19 official close (after ~22:00 Rome). Half-width 7 (~1-day horizon). Stale After → 2026-11-20 (resolve then)."
+    }
+   ],
+   "outcome": "No",
+   "brier": 0.0576,
+   "resolvedOn": "2026-11-19"
+  },
+  {
+   "id": "dc065893f9",
+   "question": "Will Anthropic's shares be listed and open for trading on a public exchange by Nov 30, 2026?",
+   "domain": "AI",
+   "status": "Resolved-Yes",
+   "confidence": "High",
+   "probLow": 97.0,
+   "probHigh": 99.0,
+   "midpoint": 98.0,
+   "horizon": "2026-11-30",
+   "staleAfter": "2026-11-20",
+   "lastReviewed": "2026-11-20",
+   "created": "2026-10-27",
+   "summary": "Anthropic publicly filed for its IPO on Oct 26, 2026, with a roadshow reported for around Nov 9 and a Nasdaq listing under the ticker ANT. This tracks whether its shares actually start trading before the end of November.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "SEC registration declared effective; price range set in an amended S-1; public roadshow launching on schedule around Nov 9 (IFR); pricing the following week and a Nasdaq 'ANT' debut around Nov 16–20; strong book-building reports."
+    },
+    {
+     "label": "Toward NO",
+     "text": "roadshow slipping past mid-November; a sharp AI-stock or broad equity sell-off (10-year yield near 5%, Iran escalation, oil >$115); SEC comments delaying effectiveness; governance/safety pushback (NYC comptroller's call to pause the IPO) turning into investor demands; Thanksgiving-week market closure (Nov 26) compressing the window."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if Anthropic shares are listed on a public securities exchange and open for trading by 11:59 PM ET on Nov 30, 2026, per SEC filings, exchange listing confirmations or Anthropic press releases (consensus of credible reporting as fallback); resolves NO otherwise, or immediately if Anthropic is acquired by an already-public company. Thesis invalidated if the roadshow has not launched by Nov 16 or Anthropic announces a postponement.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Anthropic IPO by November 30, 2026?",
+    "url": "https://polymarket.com/event/anthropic-ipo-by/will-anthropic-ipo-by-november-30-2026",
+    "yesPrice": null,
+    "asOf": "2026-11-20T08:50:00+01:00"
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 20 2026",
+     "note": "'Will Anthropic IPO by November 30, 2026?' closed, outcome prices [Yes 1, No 0], UMA status resolved",
+     "url": "https://polymarket.com/event/anthropic-ipo-by/will-anthropic-ipo-by-november-30-2026"
+    },
+    {
+     "publisher": "CNBC",
+     "date": "Nov 19 2026",
+     "note": "ANT debuted on Nasdaq Nov 19, opened $111.50, closed $97.17",
+     "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html"
+    },
+    {
+     "publisher": "EventMarkets",
+     "date": "Nov 19 2026",
+     "note": "Nasdaq ANT listing page: 'Closed at Nov 19, 2026 4:00 PM ET', ~847M shares traded",
+     "url": "https://eventmarkets.ai/anthropic-closes-its-first-nasdaq-day-at-97-17-as-polymarkets-closing-cap-markets-go-to-resolution/"
+    },
+    {
+     "publisher": "Anthropic",
+     "date": "Nov 18 2026",
+     "note": "IPO priced at $83.00; Nasdaq 'ANT' trading Nov 19",
+     "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-27",
+     "from": null,
+     "to": [
+      82.0,
+      90.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      82.0,
+      90.0
+     ],
+     "to": [
+      76.0,
+      86.0
+     ],
+     "reason": "The schedule still holds: IFR says the roadshow and bookbuild launch the week of Nov 9 with a Nov 20 debut, and Yahoo Finance calculates the earliest possible trade as Nov 16. But financing conditions worsened: supplier selloff after Alphabet results, a $16B Anthropic data-centre bond refinancing shelved, and a senior banker had predicted a delay. A slip past Thanksgiving week would resolve NO. Market Yes 0.83; midpoint 81% ~2 pts below market. Stale After stays 2026-11-10 (roadshow launch). [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-06",
+     "from": [
+      76.0,
+      86.0
+     ],
+     "to": [
+      43.0,
+      67.0
+     ],
+     "reason": "(confidence Medium → Low). NEW INFORMATION: Reuters and WSJ (both Nov 5, after the Nasdaq's worst session in 19 months, -5.5%) report that investors doubt the roadshow can launch next week in time for a November listing, want a lower valuation (~$1T vs $1.5T), and that Anthropic and its advisers will meet in coming days to decide whether to adjust the range or delay. Anthropic has $146.6B cash so can afford to wait. Rule: market anchor. Polymarket Yes fell 0.83 (Oct 30) → 0.555 (liquid enough, ~$9.9k); shaded anchor logit(q)=0.75*logit(0.555) = 0.54; midpoint 55% is within ~1 pt of the anchor. Half-width widened to ~12 pts (month-ish horizon, gradual widening toward 15) because the decision is binary and imminent. Stale After stays 2026-11-10; key tell is whether the roadshow launches the week of Nov 9 (no launch by Nov 16 makes a Nov 30 listing very unlikely)."
+    },
+    {
+     "date": "2026-11-08",
+     "from": [
+      43.0,
+      67.0
+     ],
+     "to": [
+      60.0,
+      84.0
+     ],
+     "reason": "(confidence stays Low until the roadshow actually launches). NEW INFORMATION: the FT (Nov 6, via Dealroom) reports Anthropic still plans to list before Thanksgiving, raising $80–100B at $1.25–1.75T, choosing a lower price over waiting; Bloomberg (via Quartz, Nov 6) and CNBC (Nov 6) say formal marketing/roadshow is expected to start the week of Nov 9; The Information headline (Nov 6–7) says Anthropic will proceed with the roadshow next week. This reverses the Nov 5 delay risk. Rule: market anchor. Polymarket Yes 0.775 (bid 0.77 / ask 0.78, liquidity ~$21k); shaded anchor logit(q)=0.75·logit(0.775) gives 0.72, midpoint 72%. Half-width 12 (horizon ~3 weeks). Stale After moved to."
+    },
+    {
+     "date": "2026-11-10",
+     "from": [
+      60.0,
+      84.0
+     ],
+     "to": [
+      86.0,
+      99.0
+     ],
+     "reason": ", confidence Low → Medium. Rule: market anchor (price above 0.85, used as-is). Polymarket Gamma Yes 0.944 (bid 0.941 / ask 0.947, liquidity ~$33k) read Nov 10 ~08:48 Rome. NEW INFORMATION: late Nov 9 Anthropic emailed bankers a prospectus with ~867M shares at $70–80 (up to $69.3B), then retracted the pricing as inaccurate and said an update would follow (Reuters via Stocktwits, Nov 9); the WSJ reports investor meetings this week and a Nasdaq 'ANT' debut targeted for Nov 19–20. Midpoint 92.5% sits ~2 pts below the market because no price-range S-1/A is on EDGAR yet (latest is the Nov 2 amendment) and a delay remains possible. Half-width capped by distance to 1. Stale After →."
+    },
+    {
+     "date": "2026-11-18",
+     "from": [
+      93.0,
+      99.0
+     ],
+     "to": [
+      95.0,
+      99.0
+     ],
+     "reason": "Rule: market anchor (price above 0.85, used as-is). Polymarket Gamma Yes 0.9955 (bid 0.995 / ask 0.996) read Nov 18 ~09:00 Rome; sibling markets 'listed on Nasdaq' 0.988 and 'IPO by Dec 31' 0.9975. New information: the order book closed at 4 p.m. ET Nov 17 with pricing likely above range (CNBC, Nov 17), and final pricing is due today (Nov 18 ET) with Nasdaq 'ANT' trading expected Nov 19 (Euronews, Nov 18). Midpoint 97% sits ~2.5 pts under the market for residual last-minute postponement or market-shock risk; half-width capped by distance to 1. Stale After stays 2026-11-19 — resolve YES at the next review if ANT opens for trading."
+    },
+    {
+     "date": "2026-11-19",
+     "from": [
+      95.0,
+      99.0
+     ],
+     "to": [
+      97.0,
+      99.0
+     ],
+     "reason": "Rule: market anchor (Polymarket Gamma 'Anthropic IPO by Nov 30' Yes 0.9985, bid 0.998 / ask 0.999, liquidity ~$66k, read Nov 19 ~08:50 Rome; above 0.85 so used as-is; midpoint 98% ~2 pts under for residual same-day delay risk, half-width capped by distance to 1). New question-specific information: the registration statement was declared effective by the SEC on Nov 18 and the IPO priced at $83 with trading expected on Nasdaq ('ANT') on Nov 19 (Anthropic, Nov 18). Resolves YES once ANT opens for trading; Stale After → 2026-11-20 (resolve then)."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.0004,
+   "resolvedOn": "2026-11-19"
+  },
   {
    "id": "90aa3924c7",
    "question": "Will OpenAI publicly release a GPT Astra model versioned 6.1 or higher by Dec 31, 2026?",
