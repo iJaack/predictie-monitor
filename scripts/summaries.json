@@ -33,10 +33,10 @@
   "2de1662150": "Solana trades near $92 after a weak autumn. This asks whether a weak market drags it down to $80 before year end.",
   "6d1d4f12c6": "XRP trades near $1.25 after a weak October. This asks whether it falls to $1.00, a level that held as support over the summer.",
   "ebf3dd19ab": "Hyperliquid's token trades around $84 after topping out near $98 in late October. This asks whether it reaches $100 before year end.",
-  "47ceb79370": "Zcash has become a top-10 coin but has fallen about 23% in a month amid ETF outflows. This asks whether its extreme swings take it down to $700 before year end.",
+  "47ceb79370": "This asked whether Zcash's extreme swings would take it down to $700 on Binance before year end. It fell to about $680 on Nov 21, so the forecast resolved Yes from a 27–57% band, a weak call.",
   "73aa535778": "BNB trades near $700 after the Binance hack. This asks whether it can rally more than 40% to $1,000 by year end.",
   "bf63e042f5": "Dogecoin is at a one-month low near $0.079. This asks whether it breaks its cycle low and touches $0.06 before year end.",
-  "272c656e88": "Chainlink, the price-feed network much of DeFi relies on, trades near $12. This asks whether it drops a third to $8 before year end.",
+  "272c656e88": "This asked whether Chainlink would drop to $8 on Binance before year end. It touched $8 on Nov 21 during a crypto-wide sell-off, so the forecast resolved Yes from a 41–71% band.",
   "e8609ae5a6": "Uniswap's token now benefits from protocol fees that fund token burns, and briefly hit $10.94 in September. This asks whether it reaches $11 this year after falling back to about $7.",
   "0b7511a83d": "Tether's supply has stalled around $183–190B since spring, a sign of little new money entering crypto. This asks whether it jumps to $200B by year end.",
   "805ac27b86": "Ethena's USDe is a synthetic dollar backed by hedged crypto positions. This asks whether it loses its $1 peg badly, below $0.98 for a full day, before year end.",
@@ -49,6 +49,7 @@
   "1351421332": "Asks whether Paraguay's president Santiago Peña leaves office by 30 November 2026. It resolved Yes after the Senate removed him on 6 November and the vice-president took over.",
   "ee63032d2a": "Nvidia announced on Nov 12 that founder-CEO Jensen Huang had resigned immediately, with CFO Colette Kress named interim CEO. This asked whether that official announcement would come by Dec 31; it did, and the 1–27% band was a clear miss.",
   "f464f0a00b": "After a hotter-than-expected October CPI, Fed Governor Waller said a half-point hike should be considered in December. This tracks whether the Fed actually raises rates by 50bp or more on Dec 9, rather than the expected quarter point.",
-  "395f69b286": "After Bitcoin's November 13 liquidation-driven slide below $70,000, this tracks whether the selloff extends to $60,000 on Binance before year-end. The barrier has not been touched since July; ETF outflows and Fed hike expectations are the main pressure.",
-  "38d53490c3": "Anthropic plans to start trading on Nasdaq around Nov 19 after setting a $70–78 price range that implies about $1.4 trillion fully diluted at the top. This asks whether its first-day closing market value will be above $1.5 trillion."
+  "395f69b286": "This asked whether Bitcoin's November slide would reach $60,000 on Binance before year-end. It did on Nov 20, amid a sell-off in AI stocks and record ETF outflows, and the 62–92% band resolved Yes.",
+  "38d53490c3": "Anthropic plans to start trading on Nasdaq around Nov 19 after setting a $70–78 price range that implies about $1.4 trillion fully diluted at the top. This asks whether its first-day closing market value will be above $1.5 trillion.",
+  "7ce60dadda": "Bitcoin broke below $60,000 on Nov 20 and hit $55,130 on Nov 21. This asks whether it falls to $50,000 or lower on Binance before the end of 2026."
 }

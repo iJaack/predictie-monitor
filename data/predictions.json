@@ -1,14 +1,14 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-20T08:56:13+01:00",
+ "generatedAt": "2026-11-21T08:55:35+01:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 28,
-  "resolved": 24,
+  "active": 26,
+  "resolved": 27,
   "byDomain": {
    "Geopolitics": 6,
    "AI": 1,
-   "Crypto": 17,
+   "Crypto": 15,
    "Macro": 4
   }
  },
@@ -19,12 +19,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 10.0,
-   "probHigh": 20.0,
-   "midpoint": 15.0,
+   "probLow": 3.0,
+   "probHigh": 17.0,
+   "midpoint": 10.0,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-23",
-   "lastReviewed": "2026-11-16",
+   "staleAfter": "2026-11-27",
+   "lastReviewed": "2026-11-21",
    "created": "2026-10-16",
    "summary": "Washington has threatened to cut intelligence sharing and PURL weapons purchases if Kyiv keeps striking Russian energy. This asks whether the US officially confirms such a cut, not just anonymous reports, by end of November.",
    "triggers": [
@@ -98,6 +98,18 @@
       20.0
      ],
      "reason": "The on-record US line is now explicit denial plus restoration: Rubio (Oct 19) 'There has been no pause', and Zelensky said on Oct 24 that the US ballistic-missile warning flow is fully restored after the Oslo talks (Starlink speed limits also resolved; Patriots still short). An on-record confirmation of a suspension would now require a fresh rupture, e.g. renewed Ukrainian refinery strikes after Kushner again asked Kyiv to stop. 31 days left. Stale After moved to 2026-11-13. [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-21",
+     "from": [
+      10.0,
+      20.0
+     ],
+     "to": [
+      3.0,
+      17.0
+     ],
+     "reason": "Rule: judgment (no liquid market). Nine days left and still no on-record US confirmation of a suspension; the last on-record US line remains denial/restoration (Rubio Oct 19; Zelensky Oct 20/24 on restored early-warning intel). Poland's Nov 13 decision to stop funding its own PURL contributions (Tusk via Interfax-Ukraine) is a European funding move, not a US suspension, so it does not count. Midpoint 10% (down 5 for the shrinking window with no fresh rupture); half-width 7 for a ~1–1.5-week horizon. Stale After → 2026-11-27."
     }
    ],
    "outcome": null,
@@ -222,11 +234,11 @@
    "status": "Active",
    "confidence": "Medium",
    "probLow": 1.0,
-   "probHigh": 7.0,
-   "midpoint": 4.0,
+   "probHigh": 4.0,
+   "midpoint": 2.5,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-23",
-   "lastReviewed": "2026-11-14",
+   "staleAfter": "2026-11-27",
+   "lastReviewed": "2026-11-21",
    "created": "2026-10-18",
    "summary": "US spot AVAX ETFs have drawn about $31.6M in cumulative net inflows since launch, with most days flat. This asks whether demand picks up enough to add another ~$5M by end of November.",
    "triggers": [
@@ -245,7 +257,7 @@
     {
      "publisher": "CryptoETF.today",
      "date": null,
-     "note": "cumulative +$30.4M; Nov 12 +$227k (BAVA); Nov 13 $0; 30-session net +$1.5M; avg entry $9.25 vs close $7.99",
+     "note": "cumulative +$30.4M; Nov 13–20 all zero; 30-session net −$1.0M; avg entry $9.25 vs AVAX $6.32",
      "url": "https://cryptoetf.today/en/avalanche-etf-flows"
     },
     {
@@ -300,6 +312,18 @@
       7.0
      ],
      "reason": "(Medium). Rule: judgment (no market). NEW INFORMATION: cumulative net inflow is still +$30.4M as of Nov 13 (CryptoETF.today, 3 of 3 funds reported); the only inflow since Nov 5 was +$227k into BAVA on Nov 12, three days after Schwab Crypto opened AVAX trading (Nov 9), so the Schwab spillover path has not shown up. Reaching $36.6M needs ≈+$6.2M in about 11 sessions (Nov 16–30, Thanksgiving closed), i.e. ~4× the last 30-session net (+$1.5M). AVAX ~$8.01 is 13.7% under the ETF holders' average entry ($9.25). Note: TokenPost's Nov 13 table shows a lower SoSoValue cumulative figure ($13.18M), which would put YES even further away; the band uses the higher +$30.4M series. Midpoint 4%. Stale After → 2026-11-23."
+    },
+    {
+     "date": "2026-11-21",
+     "from": [
+      1.0,
+      7.0
+     ],
+     "to": [
+      1.0,
+      4.0
+     ],
+     "reason": "Rule: judgment (no market). New information: cumulative net inflow still +$30.4M through Nov 20 data (CryptoETF.today, published Nov 21 05:49 UTC; 3 of 3 funds, five straight zero-flow sessions); reaching $36.6M needs ≈+$6.2M in the 6 remaining sessions (Nov 23–25, 27, 30), versus a 30-session net of −$1.0M and a largest single inflow of +$230K in the last 30 sessions. AVAX closed $6.35 on Nov 20, ~32% under ETF holders' average entry ($9.25), in a risk-off tape. Midpoint 2.5%, capped near 0. Stale After → 2026-11-27."
     }
    ],
    "outcome": null,
@@ -313,11 +337,11 @@
    "status": "Active",
    "confidence": "Low",
    "probLow": 1.0,
-   "probHigh": 17.0,
-   "midpoint": 9.0,
+   "probHigh": 5.0,
+   "midpoint": 3.0,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-23",
-   "lastReviewed": "2026-11-16",
+   "staleAfter": "2026-11-26",
+   "lastReviewed": "2026-11-21",
    "created": "2026-11-03",
    "summary": "Tracks whether Washington and Tehran both formally accept a deal that reopens or eases shipping through the Strait of Hormuz before the end of November. On Nov 12 Trump said the US does not need a deal with Iran and shut down Vice President Vance's talks.",
    "triggers": [
@@ -335,17 +359,23 @@
     "venue": "Polymarket",
     "name": "US-Iran Hormuz Agreement by November 30?",
     "url": "https://polymarket.com/event/us-iran-hormuz-agreement-by-november-30",
-    "yesPrice": 8.5,
-    "asOf": "2026-11-13T08:52:00+01:00",
-    "gapPts": 0.5,
+    "yesPrice": 2.65,
+    "asOf": "2026-11-21T08:50:00+01:00",
+    "gapPts": 0.4,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 13 2026",
-     "note": "'US-Iran Hormuz Agreement by November 30?' Yes 0.085 (bid 0.08 / ask 0.09, liquidity ~$138k, volume ~$909k), active, ends Dec 1 04:59 UTC",
+     "date": "Nov 21 2026",
+     "note": "'US-Iran Hormuz Agreement by November 30?' Yes 0.0265 (bid 0.026 / ask 0.027, liquidity ~$40k), live",
      "url": "https://polymarket.com/event/us-iran-hormuz-agreement-by-november-30"
+    },
+    {
+     "publisher": "Pakistan Today",
+     "date": "Nov 20 2026",
+     "note": "Shehbaz: Pakistan pressing US and Iran to resume talks; Iran offers to reopen Hormuz within two days if the US eases sanctions, releases assets and ends the blockade; Washington yet to respond",
+     "url": "https://www.pakistantoday.com.pk/2026/11/20/pakistan-pressing-us-iran-to-resume-talks-to-end-middle-east-conflict-pm"
     },
     {
      "publisher": "CNBC",
@@ -358,12 +388,6 @@
      "date": "Nov 12 2026",
      "note": "Trump closes down Vance's Iran negotiations, preferring to leave the naval blockade in place",
      "url": "https://www.washingtonpost.com/politics/2026/11/12/trump-shuts-down-vance-iran-negotiating-efforts-says-no-deal-needed/"
-    },
-    {
-     "publisher": "NBC News",
-     "date": "Nov 12 2026",
-     "note": "same Truth Social post; contrasts it with Trump's pre-election claim that Iran wanted a settlement as soon as possible",
-     "url": "https://www.nbcnews.com/politics/donald-trump/us-doesnt-need-peace-deal-iran-vance-corruption-trump-rcna609027"
     }
    ],
    "history": [
@@ -411,6 +435,18 @@
       17.0
      ],
      "reason": "NEW INFORMATION: on 12 Nov Trump posted \"We don't need a deal with Iran. Those days have long since passed. We've got their money, Hundreds of Billions of Dollars, and we've got their Strait!\" and directed Vice President Vance to stop Iran negotiations and focus on domestic crime and corruption (CNBC, Washington Post, NBC, 12 Nov). Rule: market anchor. Polymarket Gamma Yes 0.085 (bid 0.08 / ask 0.09, liquidity ~$138k, volume ~$909k) read Nov 13 ~08:52 Rome; market verified live (active, accepting orders, not closed, ends Dec 1 04:59 UTC = Nov 30 11:59 PM ET) and its rules still match this row; conditionId checked against Gamma. Price is below the 0.15 edge, so used as-is; midpoint 9%. Horizon ~17 days (~2.5 weeks); half-width would be ~12, but that would breach 0, so the band is 1–17 to stay centred on 9%. Midpoint is ~0.5 pts above the raw 8.5% mid (inside the 6-pt cap). The market has already moved about 5 pts since the 11 Nov review (then Yes 0.135); no extra downward judgment applied on top of the priced news. Stale After → 2026-11-18."
+    },
+    {
+     "date": "2026-11-21",
+     "from": [
+      1.0,
+      17.0
+     ],
+     "to": [
+      1.0,
+      5.0
+     ],
+     "reason": "Rule: market anchor (below 0.15, used as-is). Polymarket Gamma Yes 0.0265 (bid 0.026 / ask 0.027, liquidity ~$40k) read Nov 21 ~08:50 Rome; market live, rules unchanged. New information: Iran's latest proposal requires the US to end hostilities, lift oil sanctions, end the naval blockade and release frozen assets before Tehran reopens the strait, and Washington has not responded; Pakistan and Qatar are still trying to bring both sides back to the table (Pakistan Today, Nov 20). No agreement text exists with 9 days left. Midpoint 3% (≈0.5 pt above the market); half-width capped by distance to 0. Stale After → 2026-11-26."
     }
    ],
    "outcome": null,
@@ -422,13 +458,13 @@
    "question": "Will AVAX's CoinGecko USD price for Dec 1, 2026 (00:00 UTC daily data point) be between $8.00 and $12.00 inclusive?",
    "domain": "Crypto",
    "status": "Active",
-   "confidence": "Low",
-   "probLow": 16.0,
-   "probHigh": 38.0,
-   "midpoint": 27.0,
+   "confidence": "Medium",
+   "probLow": 1.0,
+   "probHigh": 9.0,
+   "midpoint": 5.0,
    "horizon": "2026-12-01",
-   "staleAfter": "2026-11-23",
-   "lastReviewed": "2026-11-16",
+   "staleAfter": "2026-11-26",
+   "lastReviewed": "2026-11-21",
    "created": "2026-10-18",
    "summary": "AVAX trades near $10. This asks whether it is still between $8 and $12 on Dec 1, a measure of whether the market stays range-bound or breaks out either way.",
    "triggers": [
@@ -446,33 +482,21 @@
    "sources": [
     {
      "publisher": "Binance spot API 91×1d klines + ticker",
-     "date": "Nov 14 2026",
-     "note": "AVAX/USDT $8.013; σ90 4.39%/day",
+     "date": "Nov 21 2026",
+     "note": "AVAX/USDT $6.271; σ90 4.56%/day; Nov 21 low $6.015",
      "url": "https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1d&limit=91"
     },
     {
      "publisher": "CryptoETF.today",
      "date": null,
-     "note": "AVAX close $8.01 (13 Nov); ETF holders' average entry $9.25",
+     "note": "AVAX close $6.35 (Nov 20); ETF holders' average entry $9.25",
      "url": "https://cryptoetf.today/en/avalanche-etf-flows"
     },
     {
-     "publisher": "Crypto Times",
-     "date": "Nov 14 2026",
-     "note": "BTC ~$67.4k after another long-liquidation wave ($1.26B/24h, 86% longs); sixth straight session of spot BTC ETF outflows (SoSoValue)",
-     "url": "https://www.cryptotimes.io/2026/11/14/bitcoin-price-today-btc-slides-to-67k-as-1-26b-crypto-liquidations-hit-longs-fed-hike-bets-rise/"
-    },
-    {
-     "publisher": "CoinGecko API",
-     "date": null,
-     "note": "",
-     "url": "https://api.coingecko.com/api/v3/coins/avalanche-2/market_chart?vs_currency=usd&days=180&interval=daily"
-    },
-    {
-     "publisher": "Binance spot API AVAXUSDT 91×1d klines + CoinGecko simple price",
-     "date": "Nov 15 2026",
-     "note": "spot $7.133 (CoinGecko $7.14), σ90 4.65%/day, low $6.743",
-     "url": "https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1d&limit=91"
+     "publisher": "CoinGecko simple price API",
+     "date": "Nov 21 2026",
+     "note": "avalanche-2 $6.27",
+     "url": "https://api.coingecko.com/api/v3/simple/price?ids=avalanche-2&vs_currencies=usd"
     }
    ],
    "history": [
@@ -508,6 +532,18 @@
       38.0
      ],
      "reason": "(Low). Rule: judgment/lognormal (no market). AVAX/USDT ~$7.133 (CoinGecko $7.14) is now 11% below the $8 floor after the Nov 14–15 liquidation leg (Binance low $6.743); σ90 = 4.65%/day over ~15.7 days to Dec 1 00:00 UTC → zero-drift P($8–12) = 26.6%. Midpoint 27%, half-width 11 (~2-week horizon). Move is the model's spot input, not momentum. Stale After → 2026-11-18."
+    },
+    {
+     "date": "2026-11-21",
+     "from": [
+      16.0,
+      38.0
+     ],
+     "to": [
+      1.0,
+      9.0
+     ],
+     "reason": "(confidence Low → Medium). Rule: judgment/lognormal (no market). AVAX/USDT ~$6.27 (CoinGecko $6.27) read Nov 21 ~08:50 Rome is now 22% below the $8 floor after the Nov 20–21 crypto-wide liquidation leg (Binance low $6.015); σ90 = 4.56%/day over ~9.7 days to Dec 1 00:00 UTC → zero-drift P($8–12) = 4.3%. Midpoint 5% (≈1 pt over the model for fat tails); half-width capped by distance to 0. The move is the model's spot input, not momentum. Stale After → 2026-11-26."
     }
    ],
    "outcome": null,
@@ -521,11 +557,11 @@
    "status": "Active",
    "confidence": "Low",
    "probLow": 1.0,
-   "probHigh": 19.0,
-   "midpoint": 10.0,
+   "probHigh": 5.0,
+   "midpoint": 3.0,
    "horizon": "2026-12-09",
-   "staleAfter": "2026-11-23",
-   "lastReviewed": "2026-11-16",
+   "staleAfter": "2026-12-05",
+   "lastReviewed": "2026-11-21",
    "created": "2026-11-11",
    "summary": "After a hotter-than-expected October CPI, Fed Governor Waller said a half-point hike should be considered in December. This tracks whether the Fed actually raises rates by 50bp or more on Dec 9, rather than the expected quarter point.",
    "triggers": [
@@ -541,37 +577,31 @@
    "resolution": "Resolves Yes if the FOMC statement after the Dec 8–9, 2026 meeting raises the upper bound of the fed funds target range by 50bp or more versus its pre-meeting level (Polymarket rules: changes rounded up to the nearest 25bp). Resolves No on any smaller hike, hold or cut. Resolution source: FOMC statement / federalreserve.gov.",
    "market": {
     "venue": "Polymarket",
-    "name": "Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?",
+    "name": "Fed decision in December",
     "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632",
-    "yesPrice": 9.7,
-    "asOf": "2026-11-11T08:55:00+01:00",
-    "gapPts": 0.3,
+    "yesPrice": 1.95,
+    "asOf": "2026-11-21T08:50:00+01:00",
+    "gapPts": 1.1,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 11 2026",
-     "note": "'Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?' Yes 0.097 (bid 0.096 / ask 0.098, liquidity ~$401k), rules checked",
+     "date": "Nov 21 2026",
+     "note": "'Fed decision in December' 50+ bps increase Yes 0.0195 (bid 0.019 / ask 0.020, liquidity ~$700k), live",
      "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632"
     },
     {
-     "publisher": "CNBC",
-     "date": "Nov 10 2026",
-     "note": "October CPI +0.4% m/m, core +0.3%; Waller: 50bp should be considered if core ~0.3%; FedWatch 50bp odds ~13.6%",
-     "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
+     "publisher": "NBD",
+     "date": "Nov 20 2026",
+     "note": "December 25bp hike 96.4%, 50bp 3.6%",
+     "url": "https://www.nbd.com.cn/articles/2026-11-20/4653283.html"
     },
     {
-     "publisher": "CFO Dive",
-     "date": "Nov 10 2026",
-     "note": "Waller: 'Hiking only 25 basis points would put our credibility at risk'; Logan wants at least two more 25bp hikes; FedWatch 11.8% for 50bp",
-     "url": "https://www.cfodive.com/news/inflation-rises-faster-expected-boosting-odds-fed-rate-hike-waller-federal-reserve/874314/"
-    },
-    {
-     "publisher": "InvestmentNews",
-     "date": "Nov 10 2026",
-     "note": "Janus Henderson: 50bp in December 'a high bar'; FedWatch 15.3% for 50bp",
-     "url": "https://www.investmentnews.com/equities/october-cpi-comes-in-hot-raising-odds-of-a-bigger-than-expected-rate-hike/268961"
+     "publisher": "CoinDesk",
+     "date": "Nov 20 2026",
+     "note": "Waller floated a 50bp hike earlier in the week; risk-off selloff across AI stocks and crypto",
+     "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play"
     }
    ],
    "history": [
@@ -583,6 +613,18 @@
       19.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-21",
+     "from": [
+      1.0,
+      19.0
+     ],
+     "to": [
+      1.0,
+      5.0
+     ],
+     "reason": "Rule: market anchor (below 0.15, used as-is). Polymarket Gamma Yes 0.0195 (bid 0.019 / ask 0.020, liquidity ~$700k) read Nov 21 ~08:50 Rome; market live, rules unchanged. New information: even after Waller floated a 50bp move (CNBC, Nov 18) and the Oct minutes showed nearly all participants open to further hikes, CME FedWatch on Nov 20 priced 96.4% for 25bp and only 3.6% for 50bp in December (NBD/CME, Nov 20); the Nov 20 risk-off (Nasdaq 100 −5.5%, BTC < $60k) also argues against an outsized move. Midpoint 3% (≈1 pt above the market, near CME); half-width capped by distance to 0. Stale After → 2026-12-05 (after the Dec 4 jobs report)."
     }
    ],
    "outcome": null,
@@ -698,8 +740,8 @@
    "probHigh": 10.0,
    "midpoint": 5.5,
    "horizon": "2026-12-15",
-   "staleAfter": "2026-11-23",
-   "lastReviewed": "2026-11-16",
+   "staleAfter": "2026-11-30",
+   "lastReviewed": "2026-11-21",
    "created": "2026-10-18",
    "summary": "sAVAX is BENQI's liquid-staked AVAX token and normally trades very close to its on-chain redemption value. This measures the risk of a meaningful depeg (more than 3%) before mid-December.",
    "triggers": [
@@ -1075,13 +1117,13 @@
    "question": "Will BNB trade at or above $1,000 on Binance BNB/USDT (any 1-minute high) by Dec 31, 2026?",
    "domain": "Crypto",
    "status": "Active",
-   "confidence": "Medium",
+   "confidence": "High",
    "probLow": 1.0,
-   "probHigh": 5.0,
-   "midpoint": 3.0,
+   "probHigh": 2.0,
+   "midpoint": 1.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-23",
-   "lastReviewed": "2026-11-14",
+   "staleAfter": "2026-12-05",
+   "lastReviewed": "2026-11-21",
    "created": "2026-10-18",
    "summary": "BNB trades near $700 after the Binance hack. This asks whether it can rally more than 40% to $1,000 by year end.",
    "triggers": [
@@ -1097,19 +1139,25 @@
    "resolution": "Per Polymarket rules: resolves YES if any Binance BNB/USDT 1-minute candle between Nov 24 2025 16:10 ET and Dec 31 2026 23:59 ET has a High ≥ $1,000. Otherwise NO. Re-score if BNB closes above $850.",
    "market": {
     "venue": "Polymarket",
-    "name": "Will BNB reach $1000 by December 31, 2026?",
+    "name": "Will BNB reach $1,000 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-bnb-hit-before-2027/will-bnb-reach-1000-by-december-31-2026",
-    "yesPrice": 2.95,
-    "asOf": "2026-10-30T17:45:00+01:00",
-    "gapPts": 0.0,
-    "insideBand": true
+    "yesPrice": 0.8,
+    "asOf": "2026-11-21T08:50:00+01:00",
+    "gapPts": 0.7,
+    "insideBand": false
    },
    "sources": [
     {
-     "publisher": "Polymarket",
-     "date": "December 31, 2026",
-     "note": "rules; Yes 0.0295 (bid 0.02 / ask 0.039, liquidity ~$18k) (read Oct 30 2026 ~17:45 Rome)",
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 21 2026",
+     "note": "'Will BNB reach $1,000 by December 31, 2026?' Yes 0.008 (bid 0.007 / ask 0.009, liquidity ~$21k), live",
      "url": "https://polymarket.com/event/what-price-will-bnb-hit-before-2027/will-bnb-reach-1000-by-december-31-2026"
+    },
+    {
+     "publisher": "Binance BNBUSDT 91×1d klines + ticker",
+     "date": "Nov 21 2026",
+     "note": "spot $524.5, σ90 2.37%/day, Nov 21 low $503.75",
+     "url": "https://api.binance.com/api/v3/klines?symbol=BNBUSDT&interval=1d&limit=91"
     },
     {
      "publisher": "Binance klines via data-api.binance.vision",
@@ -1157,6 +1205,18 @@
       5.0
      ],
      "reason": "(Medium). Rule: touch model. BNB/USDT ~$676 needs +47.9% to touch $1,000; σ90 = 2.12%/day → P(touch) 1.1%; midpoint 3% keeps a fat-tail allowance. Polymarket Yes 0.041 thin (bid 0.027 / ask 0.055). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
+    },
+    {
+     "date": "2026-11-21",
+     "from": [
+      1.0,
+      5.0
+     ],
+     "to": [
+      1.0,
+      2.0
+     ],
+     "reason": "(confidence Medium → High). Rule: market anchor + touch model. Polymarket Gamma Yes 0.008 (bid 0.007 / ask 0.009, liquidity ~$21k) read Nov 21 ~08:50 Rome, below 0.15 so used as-is. BNB/USDT ~$524.5 (Nov 21 low $503.75) needs +90.7% to touch $1,000; σ90 = 2.37%/day, ~40.9 days → P(touch) ≈0.0%. Midpoint 1.5% (≈0.7 pt above the market, fat-tail allowance); half-width capped by distance to 0 (>1-month widening not applicable this close to 0). Re-band is the touch model's spot/time input, not momentum. Stale After → 2026-12-05."
     }
    ],
    "outcome": null,
@@ -1269,221 +1329,74 @@
    "resolvedOn": null
   },
   {
-   "id": "395f69b286",
-   "question": "Will Bitcoin trade at or below $60,000 on Binance BTC/USDT (any 1-minute low) by Dec 31, 2026?",
+   "id": "7ce60dadda",
+   "question": "Will Bitcoin trade at or below $50,000 on Binance BTC/USDT (any 1-minute low) by Dec 31, 2026?",
    "domain": "Crypto",
    "status": "Active",
-   "confidence": "Medium",
-   "probLow": 62.0,
-   "probHigh": 92.0,
-   "midpoint": 77.0,
+   "confidence": "Low",
+   "probLow": 25.0,
+   "probHigh": 55.0,
+   "midpoint": 40.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-23",
-   "lastReviewed": "2026-11-20",
-   "created": "2026-11-13",
-   "summary": "After Bitcoin's November 13 liquidation-driven slide below $70,000, this tracks whether the selloff extends to $60,000 on Binance before year-end. The barrier has not been touched since July; ETF outflows and Fed hike expectations are the main pressure.",
+   "staleAfter": "2026-11-28",
+   "lastReviewed": "2026-11-21",
+   "created": "2026-11-21",
+   "summary": "Bitcoin broke below $60,000 on Nov 20 and hit $55,130 on Nov 21. This asks whether it falls to $50,000 or lower on Binance before the end of 2026.",
    "triggers": [
     {
      "label": "Toward yes",
-     "text": "continued spot-ETF outflows (IBIT >$2B out over nine sessions), another leverage flush below the Nov 13 low ($67,568), a 50bp Fed hike signal before Dec 9, further Nvidia/AI-equity contagion."
+     "text": "AI-equity rout deepening after Anthropic's debut (Nasdaq 100 −5.5% on Nov 20), continued spot-ETF outflows (IBIT record −$541M on Nov 19), a break of the $55,130 Nov 21 low and the $57,700 summer low turning into resistance, a hawkish Dec 9 FOMC (hike plus higher dots) or a 50bp signal, another leveraged liquidation wave, Binance-hack coins being sold."
     },
     {
      "label": "Toward no",
-     "text": "liquidation cascade exhausted (Fear & Greed at 20, extreme fear), ETF flows turning positive, a softer Nov CPI/jobs print, AI equities stabilizing after Nvidia's leadership change."
+     "text": "liquidations and sellers exhausted (Fear & Greed at 9, extreme fear), ETF flows turning positive, AI/tech stocks stabilizing, softer Nov jobs/CPI data, BTC reclaiming $60k–$62k."
     }
    ],
-   "resolution": "Per Polymarket rules: resolves YES if any Binance BTC/USDT 1-minute candle from market creation (Jul 21, 2026) through 11:59 PM ET Dec 31, 2026 has a Low ≤ $60,000; otherwise NO. Lowest Binance print since Jul 21 is $62,275, so the barrier has not been touched.",
+   "resolution": "Per Polymarket rules: resolves YES immediately if any Binance BTC/USDT 1-minute candle between Nov 24, 2025 14:00 ET and Dec 31, 2026 23:59 ET has a final Low ≤ $50,000; only the Binance BTC/USDT pair counts. Otherwise NO. Lowest Binance print in the window so far is $55,130 (Nov 21, 2026). Re-score if BTC closes below $53k or above $66k.",
    "market": {
     "venue": "Polymarket",
-    "name": "Will Bitcoin dip to $60,000 by December 31, 2026?",
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027",
-    "yesPrice": 81.5,
-    "asOf": "2026-11-20T08:50:00+01:00",
-    "gapPts": -4.5,
+    "name": "Will Bitcoin dip to $50,000 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-dip-to-50000-by-december-31-2026-454-325-222-878-949-487-451-853-523-111",
+    "yesPrice": 43.0,
+    "asOf": "2026-11-21T08:50:00+01:00",
+    "gapPts": -3.0,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 20 2026",
-     "note": "'Will Bitcoin dip to $60,000 by December 31, 2026?' Yes 0.815 (bid 0.81 / ask 0.82, liquidity ~$124k), live",
-     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027"
+     "date": "Nov 21 2026",
+     "note": "'Will Bitcoin dip to $50,000 by December 31, 2026?' Yes 0.43 (bid 0.425 / ask 0.434, liquidity ~$115k), live; resolves on any Binance BTC/USDT 1m Low ≤ $50,000 from Nov 24 2025 to Dec 31 2026 23:59 ET",
+     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-dip-to-50000-by-december-31-2026-454-325-222-878-949-487-451-853-523-111"
     },
     {
      "publisher": "Binance BTCUSDT 91×1d klines + ticker",
-     "date": "Nov 20 2026",
-     "note": "spot $61,928, σ90 2.02%/day, 26h low $61,290.58 (barrier not hit)",
+     "date": "Nov 21 2026",
+     "note": "spot $57,863, σ90 2.08%/day; low since Nov 24 2025 $55,130 (Nov 21)",
      "url": "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=91"
     },
     {
      "publisher": "CoinDesk",
-     "date": "Nov 19 2026",
-     "note": "BTC fell to ~$61,300, lowest since early July, after Anthropic's Nasdaq debut; >$600M crypto liquidations in 24h; Nasdaq futures below 200-day average",
-     "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt"
+     "date": "Nov 20 2026",
+     "note": "BTC below $59,000, erasing the Aug–Sep rebound, near the $57,700 summer low; ~$1.5B liquidations; Delphi warns Fed hikes could deepen the selloff",
+     "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play"
     },
     {
-     "publisher": "Investing.com",
-     "date": "Nov 15 2026",
-     "note": "Glassnode liquidation cluster $59.5k–$62.6k, ~$3B spot ETF outflows Oct 30–Nov 13",
-     "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slides-toward-60000-as-etf-outflows-and-liquidations-intensify-5027667"
+     "publisher": "Cointelegraph",
+     "date": "Nov 20 2026",
+     "note": "BTC below $60k for the first time since July; Nasdaq −5.28%; IBIT −$541.1M on Nov 19 (Farside); CoinShares sees $60k–$90k range, temporary break",
+     "url": "https://cointelegraph.com/markets/bitcoin-falls-below-60k-for-first-time-since-july-amid-broader-market-selloff"
     }
    ],
    "history": [
     {
-     "date": "2026-11-13",
+     "date": "2026-11-21",
      "from": null,
      "to": [
-      22.0,
-      52.0
+      25.0,
+      55.0
      ],
      "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-11-15",
-     "from": [
-      22.0,
-      52.0
-     ],
-     "to": [
-      45.0,
-      75.0
-     ],
-     "reason": "(Medium). Rule: market anchor cross-checked with touch model. Polymarket Yes 0.625 (bid 0.62 / ask 0.63, liquidity ~$106k) shaded with logit×0.75 → 0.595. Touch model: BTC/USDT ~$63,882 is 6.3% above $60k; σ90 = 2.32%/day, ~46.6 days → P(touch) 0.69. Midpoint 0.60 (within 1 pt of the anchor), half-width 15 (horizon > 1 month). New information: Binance low $62,006 on Nov 15 Asian session, Glassnode liquidation cluster $59.5k–$62.6k, ETF outflows ~$3B Oct 30–Nov 13 (Investing.com, Nov 15). Barrier not hit. Stale After → 2026-11-18."
-    },
-    {
-     "date": "2026-11-20",
-     "from": [
-      45.0,
-      75.0
-     ],
-     "to": [
-      62.0,
-      92.0
-     ],
-     "reason": "Rule: market anchor cross-checked with touch model. Polymarket Gamma Yes 0.815 (bid 0.81 / ask 0.82, liquidity ~$124k) read Nov 20 ~08:50 Rome; 0.75 log-odds shading gives 0.75, blended slightly toward the market near the 0.85 edge → anchor ~0.76. Touch model: BTC/USDT ~$61,928 is only 3.1% above $60k; σ90 = 2.02%/day, ~41.7 days → P(touch) 0.81 (above the 30–60% zone, so no low lean). Midpoint 0.77, half-width 15 (horizon > 1 month; upper edge 0.92 fits under the cap). The old midpoint 0.60 was ~16 pts under the anchor, beyond the ~6-pt limit. New information: BTC fell to ~$61,300 late Nov 19, the lowest since early July, after Anthropic's IPO, with >$600M liquidations and Nasdaq futures below their 200-day average (CoinDesk, Nov 19); Binance 26h low $61,290.58, barrier not hit. This is the touch model's spot input, not a momentum adjustment. Stale After → 2026-11-23 (barrier close)."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
-  {
-   "id": "272c656e88",
-   "question": "Will Chainlink (LINK) trade at or below $8 on Binance LINK/USDT (any 1-minute low) by Dec 31, 2026?",
-   "domain": "Crypto",
-   "status": "Active",
-   "confidence": "Low",
-   "probLow": 41.0,
-   "probHigh": 71.0,
-   "midpoint": 56.0,
-   "horizon": "2026-12-31",
-   "staleAfter": "2026-11-25",
-   "lastReviewed": "2026-11-19",
-   "created": "2026-10-18",
-   "summary": "Chainlink, the price-feed network much of DeFi relies on, trades near $12. This asks whether it drops a third to $8 before year end.",
-   "triggers": [
-    {
-     "label": "Toward yes",
-     "text": "LINK at its 30-day low ($12.0) after failing at $15.4 in late September; 30/90-day vol ~70%; risk-off macro."
-    },
-    {
-     "label": "Toward no",
-     "text": "needs −33% from here; low since market creation is $10.62; oracle/CCIP usage tied to tokenization keeps a bid."
-    }
-   ],
-   "resolution": "Per Polymarket rules: resolves YES if any Binance LINK/USDT 1-minute candle between market creation (Aug 25 2026) and Dec 31 2026 23:59 ET has a Low ≤ $8. Otherwise NO. Re-score if LINK closes below $9.5 or above $15.",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Will Chainlink dip to $8 by December 31, 2026?",
-    "url": "https://polymarket.com/event/what-price-will-chainlink-hit-before-2027/will-chainlink-dip-to-8-by-december-31-2026-from-august-25",
-    "yesPrice": 26.0,
-    "asOf": "2026-11-14T08:55:00+01:00",
-    "gapPts": 30.0,
-    "insideBand": false
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "Nov 14 2026",
-     "note": "'Will Chainlink dip to $8 by December 31, 2026?' Yes 0.26 (bid 0.13 / ask 0.39, liquidity ~$1.2k), not hit",
-     "url": "https://polymarket.com/event/what-price-will-chainlink-hit-before-2027/will-chainlink-dip-to-8-by-december-31-2026-from-august-25"
-    },
-    {
-     "publisher": "Binance spot API 91×1d klines + ticker",
-     "date": "Nov 14 2026",
-     "note": "LINK/USDT $9.574; σ90 3.92%/day; low since Oct 18 $9.512",
-     "url": "https://api.binance.com/api/v3/klines?symbol=LINKUSDT&interval=1d&limit=91"
-    },
-    {
-     "publisher": "Crypto Times",
-     "date": "Nov 14 2026",
-     "note": "BTC ~$67.4k after another long-liquidation wave ($1.26B/24h, 86% longs); sixth straight session of spot BTC ETF outflows (SoSoValue)",
-     "url": "https://www.cryptotimes.io/2026/11/14/bitcoin-price-today-btc-slides-to-67k-as-1-26b-crypto-liquidations-hit-longs-fed-hike-bets-rise/"
-    },
-    {
-     "publisher": "Binance spot API LINKUSDT 91×1d klines + ticker and Polymarket Gamma",
-     "date": "Nov 19 2026",
-     "note": "spot $9.164, σ90 3.76%/day, 6-day low $8.574 (not hit); Yes 0.58 (bid 0.41 / ask 0.75, liquidity ~$4k)",
-     "url": "https://api.binance.com/api/v3/klines?symbol=LINKUSDT&interval=1d&limit=91"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-18",
-     "from": null,
-     "to": [
-      17.0,
-      27.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-11-09",
-     "from": [
-      17.0,
-      27.0
-     ],
-     "to": [
-      18.0,
-      48.0
-     ],
-     "reason": "(Low). Rule: touch model. LINK/USDT ~$10.276 is 28.5% above $8; σ90 = 3.92%/day → P(touch) 38.0%; lean low in the 30–60% zone → midpoint 33%. Polymarket Yes 0.255 thin (bid 0.11 / ask 0.40). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
-    },
-    {
-     "date": "2026-11-14",
-     "from": [
-      18.0,
-      48.0
-     ],
-     "to": [
-      30.0,
-      60.0
-     ],
-     "reason": "(Low). Rule: touch model. LINK/USDT ~$9.574 is 19.7% above $8; σ90 = 3.92%/day, ~47.9 days → P(touch) 50.8%; lean low in the 30–60% zone → midpoint 45%. Barrier not hit (low since Oct 18 $9.512). Polymarket Yes 0.26 too thin to anchor (bid 0.13 / ask 0.39, liquidity ~$1.2k). Re-band is the touch model's spot/vol input after the Nov 13–14 liquidation crash (BTC low ~$66.5k on Binance), not a momentum adjustment. Stale After → 2026-11-21."
-    },
-    {
-     "date": "2026-11-15",
-     "from": [
-      30.0,
-      60.0
-     ],
-     "to": [
-      50.0,
-      80.0
-     ],
-     "reason": "(Low). Rule: touch model. LINK/USDT ~$9.006 is 11.8% above $8; σ90 = 4.06%/day, ~46.6 days → P(touch) 0.67; just above the 30–60% zone where the model ran high, so a small lean low → midpoint 0.65, half-width 15 (horizon > 1 month). Barrier not hit (low since Oct 18 $8.574, Nov 15). Polymarket Yes 0.575 still too thin to anchor (bid 0.33 / ask 0.82, liquidity ~$1.2k). Re-band is the model's spot input after the Nov 14–15 liquidation leg (BTC $62k), not momentum. Stale After → 2026-11-18."
-    },
-    {
-     "date": "2026-11-19",
-     "from": [
-      50.0,
-      80.0
-     ],
-     "to": [
-      41.0,
-      71.0
-     ],
-     "reason": "Rule: touch model. LINK/USDT ~$9.164 (read Nov 19 ~08:50 Rome) is 12.7% above $8; σ90 = 3.76%/day (91 Binance daily klines; down from 4.06% as high-vol days roll out of the window), ~42.7 days → P(touch) 0.58; inside the 30–60% zone where the model ran high, so lean low → midpoint 0.56 (prior 0.65 was ~7 pts above the model). Polymarket Yes 0.58 still too thin to anchor (bid 0.41 / ask 0.75, liquidity ~$4k). Barrier not hit (6-day Binance low $8.574). Re-band is the model's vol/spot input, not a reaction to a single day's move. Stale After → 2026-11-25."
     }
    ],
    "outcome": null,
@@ -1810,11 +1723,11 @@
    "status": "Active",
    "confidence": "Low",
    "probLow": 1.0,
-   "probHigh": 19.0,
-   "midpoint": 10.0,
+   "probHigh": 13.0,
+   "midpoint": 7.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-27",
-   "lastReviewed": "2026-11-20",
+   "lastReviewed": "2026-11-21",
    "created": "2026-10-18",
    "summary": "Hyperliquid's token trades around $84 after topping out near $98 in late October. This asks whether it reaches $100 before year end.",
    "triggers": [
@@ -1832,22 +1745,22 @@
     "venue": "Polymarket",
     "name": "Will Hyperliquid reach $100 by December 31, 2026?",
     "url": "https://polymarket.com/event/what-price-will-hyperliquid-hit-before-2027/will-hyperliquid-reach-100-by-december-31-2026",
-    "yesPrice": 11.0,
-    "asOf": "2026-11-20T08:50:00+01:00",
-    "gapPts": -1.0,
+    "yesPrice": 7.5,
+    "asOf": "2026-11-21T08:50:00+01:00",
+    "gapPts": -0.5,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 20 2026",
-     "note": "'Will Hyperliquid reach $100 by December 31, 2026?' Yes 0.11 (bid 0.10 / ask 0.12, liquidity ~$57k)",
+     "date": "Nov 21 2026",
+     "note": "'Will Hyperliquid reach $100 by December 31, 2026?' Yes 0.075 (bid 0.07 / ask 0.08, liquidity ~$61k), live",
      "url": "https://polymarket.com/event/what-price-will-hyperliquid-hit-before-2027/will-hyperliquid-reach-100-by-december-31-2026"
     },
     {
-     "publisher": "Binance spot API 91×1d klines + ticker",
-     "date": "Nov 20 2026",
-     "note": "HYPE/USDT $66.07; σ90 3.40%/day; high since Oct 18 $97.74",
+     "publisher": "Binance HYPEUSDT 91×1d klines + ticker",
+     "date": "Nov 21 2026",
+     "note": "spot $58.35, σ90 3.58%/day, Nov 20 close $61.07, Nov 21 low $55.80; high since listing $95.25 (not hit)",
      "url": "https://api.binance.com/api/v3/klines?symbol=HYPEUSDT&interval=1d&limit=91"
     },
     {
@@ -1938,6 +1851,18 @@
       19.0
      ],
      "reason": "Rule: market anchor + touch model. Polymarket Gamma Yes 0.11 (bid 0.10 / ask 0.12, liquidity ~$57k), below 0.15 so used as-is. HYPE/USDT ~$66.07 needs +51.4% to touch $100; σ90 = 3.40%/day, ~41.7 days → P(touch) 5.9%. Midpoint 10% (1 pt under the anchor, tilted toward the model); half-width capped by distance to 0. 26h range $64.54–$70.30; high since Oct 18 $97.74 (not hit). Re-band is the touch model's spot/time input (fewer days left, lower spot), not momentum. Stale After → 2026-11-27."
+    },
+    {
+     "date": "2026-11-21",
+     "from": [
+      1.0,
+      19.0
+     ],
+     "to": [
+      1.0,
+      13.0
+     ],
+     "reason": "Rule: market anchor + touch model; re-score trigger fired (HYPE closed $61.07 on Nov 20, below $65). Polymarket Gamma Yes 0.075 (bid 0.07 / ask 0.08, liquidity ~$61k) read Nov 21 ~08:50 Rome, below 0.15 so used as-is. HYPE/USDT ~$58.35 (Nov 21 low $55.80) needs +71.4% to touch $100; σ90 = 3.58%/day, ~40.9 days → P(touch) 1.9%. Midpoint 7% (≈0.5 pt under the market, tilted toward the model); half-width capped by distance to 0. Re-band is the touch model's spot input under the row's own trigger, not momentum. Stale After stays 2026-11-27."
     }
    ],
    "outcome": null,
@@ -1951,11 +1876,11 @@
    "status": "Active",
    "confidence": "Low",
    "probLow": 1.0,
-   "probHigh": 15.0,
-   "midpoint": 8.0,
+   "probHigh": 6.0,
+   "midpoint": 3.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-23",
-   "lastReviewed": "2026-11-16",
+   "staleAfter": "2026-11-30",
+   "lastReviewed": "2026-11-21",
    "created": "2026-10-18",
    "summary": "Tanker traffic through the Strait of Hormuz has collapsed after repeated attacks on shipping. This asks whether transits recover to near-normal levels by year end.",
    "triggers": [
@@ -1972,24 +1897,24 @@
    "market": {
     "venue": "Polymarket",
     "name": "Strait of Hormuz traffic returns to normal by December 31?",
-    "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31/strait-of-hormuz-traffic-returns-to-normal-by-december-31",
-    "yesPrice": 4.5,
-    "asOf": "2026-11-16T09:00:00+01:00",
-    "gapPts": 3.5,
+    "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31",
+    "yesPrice": 2.95,
+    "asOf": "2026-11-21T08:50:00+01:00",
+    "gapPts": 0.5,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 16 2026",
-     "note": "'Strait of Hormuz traffic returns to normal by December 31?' Yes 0.045 (bid 0.04 / ask 0.05)",
-     "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
+     "date": "Nov 21 2026",
+     "note": "'Strait of Hormuz traffic returns to normal by December 31?' Yes 0.0295 (bid 0.029 / ask 0.030, liquidity ~$282k), live",
+     "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
     },
     {
-     "publisher": "hormuz.data-tracking.net",
-     "date": "October 2026",
-     "note": "386 AIS-detected crossings, 21.4/day, ~1.32M bbl/d oil (~7% of pre-war ~20M); busiest day Oct 13 with 33",
-     "url": "https://hormuz.data-tracking.net/stats/2026-10"
+     "publisher": "Pakistan Today",
+     "date": "Nov 20 2026",
+     "note": "Iran's reopening offer conditional on US sanctions relief, asset release and end of blockade; no US response",
+     "url": "https://www.pakistantoday.com.pk/2026/11/20/pakistan-pressing-us-iran-to-resume-talks-to-end-middle-east-conflict-pm"
     },
     {
      "publisher": "CNN",
@@ -2025,6 +1950,18 @@
       15.0
      ],
      "reason": "Rule: market as-is (Gamma Yes 0.045, bid 0.04 / ask 0.05, read Nov 16 ~09:00 Rome, below 0.15); midpoint 8%, ~3.5 pts above the market. New information toward NO: Iran says several more tankers hit mines in and around the strait over Nov 14–16 and the IRGC warns the southern route is mined; Iran also struck a US helicopter base in Bahrain on Nov 15 (Newsquawk, Nov 16). Stale After → 2026-11-23."
+    },
+    {
+     "date": "2026-11-21",
+     "from": [
+      1.0,
+      15.0
+     ],
+     "to": [
+      1.0,
+      6.0
+     ],
+     "reason": "Rule: market as-is (Gamma Yes 0.0295, bid 0.029 / ask 0.030, liquidity ~$282k, read Nov 21 ~08:50 Rome, below 0.15). New information toward NO: the IRGC said on Nov 19 the strait stays closed until Tehran's seven conditions (incl. lifting the US naval blockade) are met (Pakistan Times, Nov 19), and the US has not answered Iran's latest proposal (Pakistan Today, Nov 20); the Iran–Oman corridor understanding still needs formal approval. Prior midpoint 8% was ~5 pts above a market that has halved; midpoint now 3.5%. >1-month horizon: ±15 widening capped by distance to 0. Stale After → 2026-11-30."
     }
    ],
    "outcome": null,
@@ -2152,8 +2089,8 @@
    "probHigh": 19.0,
    "midpoint": 11.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-23",
-   "lastReviewed": "2026-11-16",
+   "staleAfter": "2026-11-30",
+   "lastReviewed": "2026-11-21",
    "created": "2026-10-18",
    "summary": "Mojtaba Khamenei became Iran's de facto leader in March but has rarely been seen since. This asks whether he is removed, incapacitated or replaced by year end, a risk concentrated around possible renewed strikes after the US midterms.",
    "triggers": [
@@ -2434,141 +2371,6 @@
    "resolvedOn": null
   },
   {
-   "id": "47ceb79370",
-   "question": "Will Zcash (ZEC) trade at or below $700 on Binance ZEC/USDT (any 1-minute low) by Dec 31, 2026?",
-   "domain": "Crypto",
-   "status": "Active",
-   "confidence": "Low",
-   "probLow": 27.0,
-   "probHigh": 57.0,
-   "midpoint": 42.0,
-   "horizon": "2026-12-31",
-   "staleAfter": "2026-11-25",
-   "lastReviewed": "2026-11-19",
-   "created": "2026-10-18",
-   "summary": "Zcash has become a top-10 coin but has fallen about 23% in a month amid ETF outflows. This asks whether its extreme swings take it down to $700 before year end.",
-   "triggers": [
-    {
-     "label": "Toward yes",
-     "text": "ZEC −22.6% over 30 days in a descending channel from the $1,697 Sept 27 peak; Grayscale ZCSH outflows (~$124M over the two weeks before Oct 12–16); 90-day realized vol ~120%; NU7 delayed or Sprout funds stranded."
-    },
-    {
-     "label": "Toward no",
-     "text": "NU7 activation (tentative Nov 5) and Zcon late October; a cheaper Winklevoss ETF (WINK, 0.25%) moving toward effectiveness; ZCSH flows turning positive."
-    }
-   ],
-   "resolution": "Per Polymarket rules: resolves YES if any Binance ZEC/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $700; earlier price action ignored (low since creation is $758, set before the September rally). Otherwise NO. Re-score if ZEC closes above $1,500 or below $850.",
-   "market": {
-    "venue": "Polymarket",
-    "name": "Will Zcash dip to $700 by December 31, 2026?",
-    "url": "https://polymarket.com/event/what-price-will-zcash-hit-before-2027/will-zcash-dip-to-700-by-december-31-2026",
-    "yesPrice": 39.0,
-    "asOf": "2026-11-14T08:55:00+01:00",
-    "gapPts": 3.0,
-    "insideBand": true
-   },
-   "sources": [
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "Nov 14 2026",
-     "note": "'Will Zcash dip to $700 by December 31, 2026?' Yes 0.39 (bid 0.38 / ask 0.40, liquidity ~$11k), not hit",
-     "url": "https://polymarket.com/event/what-price-will-zcash-hit-before-2027/will-zcash-dip-to-700-by-december-31-2026"
-    },
-    {
-     "publisher": "Binance spot API 91×1d klines + ticker",
-     "date": "Nov 14 2026",
-     "note": "ZEC/USDT $911.84; σ90 6.79%/day; low since Oct 18 $880.5",
-     "url": "https://api.binance.com/api/v3/klines?symbol=ZECUSDT&interval=1d&limit=91"
-    },
-    {
-     "publisher": "Binance spot API ZECUSDT 91×1d klines + ticker",
-     "date": "Nov 19 2026",
-     "note": "spot $939.84, σ90 6.30%/day, 6-day low $801.52 (not hit)",
-     "url": "https://api.binance.com/api/v3/klines?symbol=ZECUSDT&interval=1d&limit=91"
-    },
-    {
-     "publisher": "Polymarket Gamma API",
-     "date": "Nov 19 2026",
-     "note": "'Will Zcash dip to $700 by December 31, 2026?' Yes 0.345 (bid 0.32 / ask 0.37, liquidity ~$15k), live",
-     "url": "https://polymarket.com/event/what-price-will-zcash-hit-before-2027/will-zcash-dip-to-700-by-december-31-2026"
-    }
-   ],
-   "history": [
-    {
-     "date": "2026-10-18",
-     "from": null,
-     "to": [
-      33.0,
-      45.0
-     ],
-     "reason": "Forecast opened."
-    },
-    {
-     "date": "2026-10-30",
-     "from": [
-      33.0,
-      45.0
-     ],
-     "to": [
-      16.0,
-      26.0
-     ],
-     "reason": "ZEC ~$1,236 (October low $1,049) would need a 43% drop to touch $700; the zero-drift touch model on 30d/60d realized vol (94%/128%) gives 15–28%. The NU7 upgrade (~Nov 5) is a near-term catalyst, and the stable Zebra 7.0.0 release lowers the risk of a botched upgrade. Market Yes 0.21 (bid 0.19 / ask 0.23). [Backfill run: the Oct 28–30 daily reviews did not run.]."
-    },
-    {
-     "date": "2026-11-03",
-     "from": [
-      16.0,
-      26.0
-     ],
-     "to": [
-      21.0,
-      31.0
-     ],
-     "reason": "Rule: touch model (approved 31 Oct rules). ZEC/USDT ~$1,140 on Binance (Nov 3 ~09:15 Rome) is 38.6% above $700 with ~59 days left; σ90 = 6.54%/day gives P(touch) 33.0%. Polymarket Yes 0.21 (bid 0.19 / ask 0.23, thin, liquidity ~$2.7k). In the 30–60% zone the rules say lean low, and the thin market sits 12 pts under the model, so midpoint 26% (≈6 pts under the model), half-width 5. NU7 activation (~Nov 5) remains the near-term catalyst."
-    },
-    {
-     "date": "2026-11-09",
-     "from": [
-      21.0,
-      31.0
-     ],
-     "to": [
-      5.0,
-      35.0
-     ],
-     "reason": "(Low). Rule: market anchor + touch model. ZEC/USDT ~$1,195.65 is 70.8% above $700; σ90 = 6.58%/day → P(touch) 26.3%. Polymarket Gamma Yes 0.13 (bid 0.11 / ask 0.15, liquidity ~$2.8k), below 0.15 so used as-is; midpoint 20% sits ~6 pts above the anchor and ~6 under the model. ZEC outperformed last week (+3%, Bitcoin.com weekly, Nov 8). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
-    },
-    {
-     "date": "2026-11-14",
-     "from": [
-      5.0,
-      35.0
-     ],
-     "to": [
-      31.0,
-      61.0
-     ],
-     "reason": "(Low). Rule: market anchor + touch model. Polymarket Gamma Yes 0.39 (bid 0.38 / ask 0.40, liquidity ~$11k) → 0.75 log-odds shading 0.417. ZEC/USDT ~$911.84 is 23.3% above $700 (was 70.8% above on Nov 9); σ90 = 6.79%/day, ~47.9 days → P(touch) 57.4%; lean low in the 30–60% zone. Midpoint 46% (≈4 pts above the anchor, within the limit). Barrier not hit (low since Oct 18 $880.5). ZEC spot ETFs had −$9.88M outflow on Nov 12 (TokenPost). Re-band is the touch model's spot/vol input after the Nov 13–14 liquidation crash (BTC low ~$66.5k on Binance), not a momentum adjustment. Stale After → 2026-11-21."
-    },
-    {
-     "date": "2026-11-19",
-     "from": [
-      31.0,
-      61.0
-     ],
-     "to": [
-      27.0,
-      57.0
-     ],
-     "reason": "Rule: market anchor + touch model. Polymarket Gamma Yes 0.345 (bid 0.32 / ask 0.37, liquidity ~$15k) read Nov 19 ~08:50 Rome → 0.75 log-odds shading 0.382. Touch model: ZEC/USDT ~$939.84 is 25.5% above $700; σ90 = 6.30%/day, ~42.7 days → P(touch) 0.47; lean low in the 30–60% zone. Midpoint 42% (≈4 pts above the anchor; prior 46% was ~8 pts above, past the ~6-pt limit). Barrier not hit (6-day Binance low $801.52). Stale After → 2026-11-25."
-    }
-   ],
-   "outcome": null,
-   "brier": null,
-   "resolvedOn": null
-  },
-  {
    "id": "c325a931ae",
    "question": "Will a general Russia–Ukraine ceasefire take effect by Dec 31, 2026 and hold at least 10 days?",
    "domain": "Geopolitics",
@@ -2578,8 +2380,8 @@
    "probHigh": 11.0,
    "midpoint": 6.5,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-23",
-   "lastReviewed": "2026-11-16",
+   "staleAfter": "2026-11-30",
+   "lastReviewed": "2026-11-21",
    "created": "2026-10-18",
    "summary": "This asks whether a general Russia–Ukraine ceasefire takes effect by year end and holds for at least ten days. Fighting and long-range strikes are currently intensifying.",
    "triggers": [
@@ -2647,8 +2449,8 @@
    "probHigh": 7.0,
    "midpoint": 4.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-23",
-   "lastReviewed": "2026-11-16",
+   "staleAfter": "2026-11-30",
+   "lastReviewed": "2026-11-21",
    "created": "2026-10-18",
    "summary": "The Clarity Act would set the main US market-structure rules for crypto. It stalled in the Senate in September; this asks whether it still becomes law in 2026.",
    "triggers": [
@@ -2795,6 +2597,347 @@
   }
  ],
  "resolved": [
+  {
+   "id": "272c656e88",
+   "question": "Will Chainlink (LINK) trade at or below $8 on Binance LINK/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Resolved-Yes",
+   "confidence": "Low",
+   "probLow": 41.0,
+   "probHigh": 71.0,
+   "midpoint": 56.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-25",
+   "lastReviewed": "2026-11-21",
+   "created": "2026-10-18",
+   "summary": "This asked whether Chainlink would drop to $8 on Binance before year end. It touched $8 on Nov 21 during a crypto-wide sell-off, so the forecast resolved Yes from a 41–71% band.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "LINK at its 30-day low ($12.0) after failing at $15.4 in late September; 30/90-day vol ~70%; risk-off macro."
+    },
+    {
+     "label": "Toward no",
+     "text": "needs −33% from here; low since market creation is $10.62; oracle/CCIP usage tied to tokenization keeps a bid."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance LINK/USDT 1-minute candle between market creation (Aug 25 2026) and Dec 31 2026 23:59 ET has a Low ≤ $8. Otherwise NO. Re-score if LINK closes below $9.5 or above $15.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Chainlink dip to $8 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-chainlink-hit-before-2027/will-chainlink-dip-to-8-by-december-31-2026-from-august-25",
+    "yesPrice": null,
+    "asOf": "2026-11-21T08:50:00+01:00"
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 21 2026",
+     "note": "'Will Chainlink dip to $8 by December 31, 2026?' closed, resolved Yes",
+     "url": "https://polymarket.com/event/what-price-will-chainlink-hit-before-2027/will-chainlink-dip-to-8-by-december-31-2026-from-august-25"
+    },
+    {
+     "publisher": "Binance LINKUSDT 1m klines",
+     "date": "Nov 21 2026",
+     "note": "first candle with Low ≤ $8: Nov 21 04:08 UTC, Low $8.000; daily low Nov 21 $7.972",
+     "url": "https://api.binance.com/api/v3/klines?symbol=LINKUSDT&interval=1m"
+    },
+    {
+     "publisher": "CoinDesk",
+     "date": "Nov 20 2026",
+     "note": "crypto-wide selloff, ~$1.5B liquidations as AI trade unravels",
+     "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      17.0,
+      27.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      17.0,
+      27.0
+     ],
+     "to": [
+      18.0,
+      48.0
+     ],
+     "reason": "(Low). Rule: touch model. LINK/USDT ~$10.276 is 28.5% above $8; σ90 = 3.92%/day → P(touch) 38.0%; lean low in the 30–60% zone → midpoint 33%. Polymarket Yes 0.255 thin (bid 0.11 / ask 0.40). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
+    },
+    {
+     "date": "2026-11-14",
+     "from": [
+      18.0,
+      48.0
+     ],
+     "to": [
+      30.0,
+      60.0
+     ],
+     "reason": "(Low). Rule: touch model. LINK/USDT ~$9.574 is 19.7% above $8; σ90 = 3.92%/day, ~47.9 days → P(touch) 50.8%; lean low in the 30–60% zone → midpoint 45%. Barrier not hit (low since Oct 18 $9.512). Polymarket Yes 0.26 too thin to anchor (bid 0.13 / ask 0.39, liquidity ~$1.2k). Re-band is the touch model's spot/vol input after the Nov 13–14 liquidation crash (BTC low ~$66.5k on Binance), not a momentum adjustment. Stale After → 2026-11-21."
+    },
+    {
+     "date": "2026-11-15",
+     "from": [
+      30.0,
+      60.0
+     ],
+     "to": [
+      50.0,
+      80.0
+     ],
+     "reason": "(Low). Rule: touch model. LINK/USDT ~$9.006 is 11.8% above $8; σ90 = 4.06%/day, ~46.6 days → P(touch) 0.67; just above the 30–60% zone where the model ran high, so a small lean low → midpoint 0.65, half-width 15 (horizon > 1 month). Barrier not hit (low since Oct 18 $8.574, Nov 15). Polymarket Yes 0.575 still too thin to anchor (bid 0.33 / ask 0.82, liquidity ~$1.2k). Re-band is the model's spot input after the Nov 14–15 liquidation leg (BTC $62k), not momentum. Stale After → 2026-11-18."
+    },
+    {
+     "date": "2026-11-19",
+     "from": [
+      50.0,
+      80.0
+     ],
+     "to": [
+      41.0,
+      71.0
+     ],
+     "reason": "Rule: touch model. LINK/USDT ~$9.164 (read Nov 19 ~08:50 Rome) is 12.7% above $8; σ90 = 3.76%/day (91 Binance daily klines; down from 4.06% as high-vol days roll out of the window), ~42.7 days → P(touch) 0.58; inside the 30–60% zone where the model ran high, so lean low → midpoint 0.56 (prior 0.65 was ~7 pts above the model). Polymarket Yes 0.58 still too thin to anchor (bid 0.41 / ask 0.75, liquidity ~$4k). Barrier not hit (6-day Binance low $8.574). Re-band is the model's vol/spot input, not a reaction to a single day's move. Stale After → 2026-11-25."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.1936,
+   "resolvedOn": "2026-11-21"
+  },
+  {
+   "id": "47ceb79370",
+   "question": "Will Zcash (ZEC) trade at or below $700 on Binance ZEC/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Resolved-Yes",
+   "confidence": "Low",
+   "probLow": 27.0,
+   "probHigh": 57.0,
+   "midpoint": 42.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-25",
+   "lastReviewed": "2026-11-21",
+   "created": "2026-10-18",
+   "summary": "This asked whether Zcash's extreme swings would take it down to $700 on Binance before year end. It fell to about $680 on Nov 21, so the forecast resolved Yes from a 27–57% band, a weak call.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "ZEC −22.6% over 30 days in a descending channel from the $1,697 Sept 27 peak; Grayscale ZCSH outflows (~$124M over the two weeks before Oct 12–16); 90-day realized vol ~120%; NU7 delayed or Sprout funds stranded."
+    },
+    {
+     "label": "Toward no",
+     "text": "NU7 activation (tentative Nov 5) and Zcon late October; a cheaper Winklevoss ETF (WINK, 0.25%) moving toward effectiveness; ZCSH flows turning positive."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance ZEC/USDT 1-minute candle from market creation (Aug 25 2026) through Dec 31 2026 23:59 ET has a Low ≤ $700; earlier price action ignored (low since creation is $758, set before the September rally). Otherwise NO. Re-score if ZEC closes above $1,500 or below $850.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Zcash dip to $700 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-zcash-hit-before-2027/will-zcash-dip-to-700-by-december-31-2026",
+    "yesPrice": 99.95,
+    "asOf": "2026-11-21T08:50:00+01:00",
+    "gapPts": -58.0,
+    "insideBand": false
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 21 2026",
+     "note": "'Will Zcash dip to $700 by December 31, 2026?' Yes 0.9995, UMA resolution proposed",
+     "url": "https://polymarket.com/event/what-price-will-zcash-hit-before-2027/will-zcash-dip-to-700-by-december-31-2026"
+    },
+    {
+     "publisher": "Binance ZECUSDT 1m klines",
+     "date": "Nov 21 2026",
+     "note": "first candle with Low ≤ $700: Nov 21 03:30 UTC, Low $690.87; daily low Nov 21 $679.48",
+     "url": "https://api.binance.com/api/v3/klines?symbol=ZECUSDT&interval=1m"
+    },
+    {
+     "publisher": "CoinDesk",
+     "date": "Nov 20 2026",
+     "note": "zcash plunged 14% in the Nov 20 selloff",
+     "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-18",
+     "from": null,
+     "to": [
+      33.0,
+      45.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-10-30",
+     "from": [
+      33.0,
+      45.0
+     ],
+     "to": [
+      16.0,
+      26.0
+     ],
+     "reason": "ZEC ~$1,236 (October low $1,049) would need a 43% drop to touch $700; the zero-drift touch model on 30d/60d realized vol (94%/128%) gives 15–28%. The NU7 upgrade (~Nov 5) is a near-term catalyst, and the stable Zebra 7.0.0 release lowers the risk of a botched upgrade. Market Yes 0.21 (bid 0.19 / ask 0.23). [Backfill run: the Oct 28–30 daily reviews did not run.]."
+    },
+    {
+     "date": "2026-11-03",
+     "from": [
+      16.0,
+      26.0
+     ],
+     "to": [
+      21.0,
+      31.0
+     ],
+     "reason": "Rule: touch model (approved 31 Oct rules). ZEC/USDT ~$1,140 on Binance (Nov 3 ~09:15 Rome) is 38.6% above $700 with ~59 days left; σ90 = 6.54%/day gives P(touch) 33.0%. Polymarket Yes 0.21 (bid 0.19 / ask 0.23, thin, liquidity ~$2.7k). In the 30–60% zone the rules say lean low, and the thin market sits 12 pts under the model, so midpoint 26% (≈6 pts under the model), half-width 5. NU7 activation (~Nov 5) remains the near-term catalyst."
+    },
+    {
+     "date": "2026-11-09",
+     "from": [
+      21.0,
+      31.0
+     ],
+     "to": [
+      5.0,
+      35.0
+     ],
+     "reason": "(Low). Rule: market anchor + touch model. ZEC/USDT ~$1,195.65 is 70.8% above $700; σ90 = 6.58%/day → P(touch) 26.3%. Polymarket Gamma Yes 0.13 (bid 0.11 / ask 0.15, liquidity ~$2.8k), below 0.15 so used as-is; midpoint 20% sits ~6 pts above the anchor and ~6 under the model. ZEC outperformed last week (+3%, Bitcoin.com weekly, Nov 8). Binance AVAX/USDT etc. 91×1d klines + ticker read Nov 9 ~08:50 Rome, ~52.9 days left; Polymarket Gamma read Nov 9 ~08:50 Rome. Half-width widened toward ±15 per the standing >1-month rule (capped by distance to 0/1). Move driven by the touch model's spot input after a 5-day sustained slide (BTC lowest since Aug on Nov 8; CoinDesk Nov 9: https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility), not a momentum adjustment. Stale After → 2026-11-16."
+    },
+    {
+     "date": "2026-11-14",
+     "from": [
+      5.0,
+      35.0
+     ],
+     "to": [
+      31.0,
+      61.0
+     ],
+     "reason": "(Low). Rule: market anchor + touch model. Polymarket Gamma Yes 0.39 (bid 0.38 / ask 0.40, liquidity ~$11k) → 0.75 log-odds shading 0.417. ZEC/USDT ~$911.84 is 23.3% above $700 (was 70.8% above on Nov 9); σ90 = 6.79%/day, ~47.9 days → P(touch) 57.4%; lean low in the 30–60% zone. Midpoint 46% (≈4 pts above the anchor, within the limit). Barrier not hit (low since Oct 18 $880.5). ZEC spot ETFs had −$9.88M outflow on Nov 12 (TokenPost). Re-band is the touch model's spot/vol input after the Nov 13–14 liquidation crash (BTC low ~$66.5k on Binance), not a momentum adjustment. Stale After → 2026-11-21."
+    },
+    {
+     "date": "2026-11-19",
+     "from": [
+      31.0,
+      61.0
+     ],
+     "to": [
+      27.0,
+      57.0
+     ],
+     "reason": "Rule: market anchor + touch model. Polymarket Gamma Yes 0.345 (bid 0.32 / ask 0.37, liquidity ~$15k) read Nov 19 ~08:50 Rome → 0.75 log-odds shading 0.382. Touch model: ZEC/USDT ~$939.84 is 25.5% above $700; σ90 = 6.30%/day, ~42.7 days → P(touch) 0.47; lean low in the 30–60% zone. Midpoint 42% (≈4 pts above the anchor; prior 46% was ~8 pts above, past the ~6-pt limit). Barrier not hit (6-day Binance low $801.52). Stale After → 2026-11-25."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.3364,
+   "resolvedOn": "2026-11-21"
+  },
+  {
+   "id": "395f69b286",
+   "question": "Will Bitcoin trade at or below $60,000 on Binance BTC/USDT (any 1-minute low) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Resolved-Yes",
+   "confidence": "Medium",
+   "probLow": 62.0,
+   "probHigh": 92.0,
+   "midpoint": 77.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-23",
+   "lastReviewed": "2026-11-21",
+   "created": "2026-11-13",
+   "summary": "This asked whether Bitcoin's November slide would reach $60,000 on Binance before year-end. It did on Nov 20, amid a sell-off in AI stocks and record ETF outflows, and the 62–92% band resolved Yes.",
+   "triggers": [
+    {
+     "label": "Toward yes",
+     "text": "continued spot-ETF outflows (IBIT >$2B out over nine sessions), another leverage flush below the Nov 13 low ($67,568), a 50bp Fed hike signal before Dec 9, further Nvidia/AI-equity contagion."
+    },
+    {
+     "label": "Toward no",
+     "text": "liquidation cascade exhausted (Fear & Greed at 20, extreme fear), ETF flows turning positive, a softer Nov CPI/jobs print, AI equities stabilizing after Nvidia's leadership change."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES if any Binance BTC/USDT 1-minute candle from market creation (Jul 21, 2026) through 11:59 PM ET Dec 31, 2026 has a Low ≤ $60,000; otherwise NO. Lowest Binance print since Jul 21 is $62,275, so the barrier has not been touched.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "Will Bitcoin dip to $60,000 by December 31, 2026?",
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027",
+    "yesPrice": null,
+    "asOf": "2026-11-21T08:50:00+01:00"
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 21 2026",
+     "note": "'Will Bitcoin dip to $60,000 by December 31, 2026?' closed, resolved Yes (outcome prices 1/0)",
+     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027"
+    },
+    {
+     "publisher": "Binance BTCUSDT 1m klines",
+     "date": "Nov 21 2026",
+     "note": "first candle with Low ≤ $60,000: Nov 20 15:41 UTC, Low $60,000.00; daily lows Nov 20 $57,778.35, Nov 21 $55,130.00",
+     "url": "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1m"
+    },
+    {
+     "publisher": "CoinDesk",
+     "date": "Nov 20 2026",
+     "note": "BTC below $59,000, ~2% from the $57,700 summer low; Anthropic −10%, ~$1.5B liquidations",
+     "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play"
+    },
+    {
+     "publisher": "Cointelegraph",
+     "date": "Nov 20 2026",
+     "note": "BTC below $60k for first time since July; IBIT −$541.1M on Nov 19 (Farside)",
+     "url": "https://cointelegraph.com/markets/bitcoin-falls-below-60k-for-first-time-since-july-amid-broader-market-selloff"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-13",
+     "from": null,
+     "to": [
+      22.0,
+      52.0
+     ],
+     "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-15",
+     "from": [
+      22.0,
+      52.0
+     ],
+     "to": [
+      45.0,
+      75.0
+     ],
+     "reason": "(Medium). Rule: market anchor cross-checked with touch model. Polymarket Yes 0.625 (bid 0.62 / ask 0.63, liquidity ~$106k) shaded with logit×0.75 → 0.595. Touch model: BTC/USDT ~$63,882 is 6.3% above $60k; σ90 = 2.32%/day, ~46.6 days → P(touch) 0.69. Midpoint 0.60 (within 1 pt of the anchor), half-width 15 (horizon > 1 month). New information: Binance low $62,006 on Nov 15 Asian session, Glassnode liquidation cluster $59.5k–$62.6k, ETF outflows ~$3B Oct 30–Nov 13 (Investing.com, Nov 15). Barrier not hit. Stale After → 2026-11-18."
+    },
+    {
+     "date": "2026-11-20",
+     "from": [
+      45.0,
+      75.0
+     ],
+     "to": [
+      62.0,
+      92.0
+     ],
+     "reason": "Rule: market anchor cross-checked with touch model. Polymarket Gamma Yes 0.815 (bid 0.81 / ask 0.82, liquidity ~$124k) read Nov 20 ~08:50 Rome; 0.75 log-odds shading gives 0.75, blended slightly toward the market near the 0.85 edge → anchor ~0.76. Touch model: BTC/USDT ~$61,928 is only 3.1% above $60k; σ90 = 2.02%/day, ~41.7 days → P(touch) 0.81 (above the 30–60% zone, so no low lean). Midpoint 0.77, half-width 15 (horizon > 1 month; upper edge 0.92 fits under the cap). The old midpoint 0.60 was ~16 pts under the anchor, beyond the ~6-pt limit. New information: BTC fell to ~$61,300 late Nov 19, the lowest since early July, after Anthropic's IPO, with >$600M liquidations and Nasdaq futures below their 200-day average (CoinDesk, Nov 19); Binance 26h low $61,290.58, barrier not hit. This is the touch model's spot input, not a momentum adjustment. Stale After → 2026-11-23 (barrier close)."
+    }
+   ],
+   "outcome": "Yes",
+   "brier": 0.0529,
+   "resolvedOn": "2026-11-20"
+  },
   {
    "id": "38d53490c3",
    "question": "Will Anthropic's market cap at the close of its first trading day be above $1.5T?",
