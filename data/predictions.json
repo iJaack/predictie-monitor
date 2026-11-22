@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-21T08:55:35+01:00",
+ "generatedAt": "2026-11-22T08:52:38+01:00",
  "timezone": "Europe/Rome",
  "counts": {
   "active": 26,
@@ -121,13 +121,13 @@
    "question": "Will Google publicly release its next Gemini 'Pro' model by Nov 30, 2026?",
    "domain": "AI",
    "status": "Active",
-   "confidence": "Low",
+   "confidence": "Medium",
    "probLow": 1.0,
-   "probHigh": 9.0,
-   "midpoint": 5.0,
+   "probHigh": 4.0,
+   "midpoint": 2.5,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-24",
-   "lastReviewed": "2026-11-17",
+   "staleAfter": "2026-11-28",
+   "lastReviewed": "2026-11-22",
    "created": "2026-10-18",
    "summary": "Google just shipped Gemini 4 Argon and says the rest of the Gemini 4 family is coming. This asks whether a new public 'Pro' model lands by Nov 30.",
    "triggers": [
@@ -145,35 +145,35 @@
     "venue": "Polymarket",
     "name": "Will the next Google Gemini Pro model be released by November 30, 2026?",
     "url": "https://polymarket.com/event/next-google-gemini-pro-model-released-byptptpt/will-the-next-google-gemini-pro-model-be-released-by-november-30-2026",
-    "yesPrice": 4.15,
-    "asOf": "2026-11-17T08:52:00+01:00",
-    "gapPts": 0.8,
+    "yesPrice": 1.65,
+    "asOf": "2026-11-22T08:50:00+01:00",
+    "gapPts": 0.9,
     "insideBand": true
    },
    "sources": [
     {
      "publisher": "Polymarket Gamma API",
-     "date": "Nov 17 2026",
-     "note": "'Will the next Google Gemini Pro model be released by November 30, 2026?': Yes 0.0415 (bid 0.024 / ask 0.059)",
+     "date": "Nov 22 2026",
+     "note": "'Will the next Google Gemini Pro model be released by November 30, 2026?': Yes 0.0165 (bid 0.005 / ask 0.028, liquidity ~$3.8k)",
      "url": "https://polymarket.com/event/next-google-gemini-pro-model-released-byptptpt/will-the-next-google-gemini-pro-model-be-released-by-november-30-2026"
     },
     {
      "publisher": "Google blog",
+     "date": "Nov 18 2026",
+     "note": "Gemini 4 Neon launched in the Gemini API, Gemini for business, Antigravity and the Gemini app (Pro/Ultra subscribers); no Pro-labelled model",
+     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+    },
+    {
+     "publisher": "9to5Google",
+     "date": "Nov 18 2026",
+     "note": "Neon replaces Gemini 3.1 Pro and Argon in the Gemini app; picker is Hydrogen / Neon / Carbon",
+     "url": "https://9to5google.com/2026/11/18/gemini-4-neon-announcement/"
+    },
+    {
+     "publisher": "Google blog",
      "date": "Nov 12 2026",
-     "note": "Gemini 4 Hydrogen launched for all tiers; Carbon and Argon remain the frontier models; no Pro label",
+     "note": "Gemini 4 Hydrogen launched for all tiers; no Pro label",
      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
-    },
-    {
-     "publisher": "Google blog",
-     "date": "Nov 10 2026",
-     "note": "Gemini 4 Carbon available to paying developers and AI Ultra; introductory pricing to Nov 30",
-     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
-    },
-    {
-     "publisher": "Google blog",
-     "date": "Oct 13 2026",
-     "note": "Gemini 4 Argon generally available; 'the rest of the Gemini 4 family'; introductory pricing to Nov 30",
-     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
     }
    ],
    "history": [
@@ -221,6 +221,18 @@
       9.0
      ],
      "reason": "Rule: market anchor (below 0.15, used as-is). Polymarket Gamma Yes 0.0415 (bid 0.024 / ask 0.059, liquidity ~$1.6k, thin) read Nov 17 ~08:52 Rome. New information: Google launched Gemini 4 Hydrogen on Nov 12 (post updated Nov 16) as its fast everyday model alongside Carbon and Argon; it is not Pro-labelled, and the Gemini 4 lineup now has three named non-Pro models, which makes a separate 'Pro' label before Nov 30 less likely. Still no Pro model or public Pro preview. Midpoint 5 (~1 pt above the market for the Nov 30 intro-pricing refresh); half-width capped by distance to 0. Stale After → 2026-11-24."
+    },
+    {
+     "date": "2026-11-22",
+     "from": [
+      1.0,
+      9.0
+     ],
+     "to": [
+      1.0,
+      4.0
+     ],
+     "reason": "(confidence Low → Medium). Rule: market anchor (below 0.15, used as-is). Polymarket Gamma Yes 0.0165 (bid 0.005 / ask 0.028, last 0.012, liquidity ~$3.8k, thin), read Nov 22 ~08:50 Rome. New question-specific information toward NO: Google launched Gemini 4 Neon on Nov 18 (Google blog, Nov 18) as the model between Carbon and Hydrogen, and it replaces Gemini 3.1 Pro and Argon in the Gemini app picker (9to5Google, Nov 18). The Gemini 4 family now has four named models (Argon, Carbon, Neon, Hydrogen) and none is labelled Pro, so a Pro-labelled release in the last 8 days looks very unlikely. Midpoint 2.5%, ~1 pt above the market; ~1-week half-width capped by distance to 0. Stale After → 2026-11-28."
     }
    ],
    "outcome": null,
@@ -1978,8 +1990,8 @@
    "probHigh": 75.0,
    "midpoint": 60.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-24",
-   "lastReviewed": "2026-11-18",
+   "staleAfter": "2026-11-28",
+   "lastReviewed": "2026-11-22",
    "created": "2026-10-18",
    "summary": "Israel and Iran are in an uneasy ceasefire. This asks whether neither side strikes the other's territory through year end.",
    "triggers": [
