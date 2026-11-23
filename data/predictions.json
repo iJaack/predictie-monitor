@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-22T08:52:38+01:00",
+ "generatedAt": "2026-11-23T08:49:45+01:00",
  "timezone": "Europe/Rome",
  "counts": {
   "active": 26,
@@ -654,7 +654,7 @@
    "midpoint": 94.0,
    "horizon": "2026-12-09",
    "staleAfter": "2026-11-25",
-   "lastReviewed": "2026-11-11",
+   "lastReviewed": "2026-11-23",
    "created": "2026-10-16",
    "summary": "Futures price a high chance of another Fed hike in December. This tracks whether the FOMC actually raises rates at its Dec 8–9 meeting.",
    "triggers": [
@@ -808,7 +808,7 @@
    "midpoint": 91.0,
    "horizon": "2026-12-17",
    "staleAfter": "2026-11-25",
-   "lastReviewed": "2026-11-16",
+   "lastReviewed": "2026-11-23",
    "created": "2026-10-18",
    "summary": "Most economists expect the ECB to hike in December with euro-area inflation near 4%. This tracks whether it delivers exactly a 25bp increase on Dec 16–17.",
    "triggers": [
@@ -2537,7 +2537,7 @@
    "midpoint": 1.5,
    "horizon": "2027-01-29",
    "staleAfter": "2026-11-25",
-   "lastReviewed": "2026-10-30",
+   "lastReviewed": "2026-11-23",
    "created": "2026-10-18",
    "summary": "This asks whether the US meets a technical recession test in 2026: two straight quarters of negative GDP or an official NBER call. Current growth tracking is strongly positive.",
    "triggers": [
