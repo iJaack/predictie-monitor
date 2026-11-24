@@ -1,14 +1,14 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-23T08:49:45+01:00",
+ "generatedAt": "2026-11-24T08:53:27+01:00",
  "timezone": "Europe/Rome",
  "counts": {
-  "active": 26,
+  "active": 27,
   "resolved": 27,
   "byDomain": {
    "Geopolitics": 6,
    "AI": 1,
-   "Crypto": 15,
+   "Crypto": 16,
    "Macro": 4
   }
  },
@@ -353,7 +353,7 @@
    "midpoint": 3.0,
    "horizon": "2026-11-30",
    "staleAfter": "2026-11-26",
-   "lastReviewed": "2026-11-21",
+   "lastReviewed": "2026-11-24",
    "created": "2026-11-03",
    "summary": "Tracks whether Washington and Tehran both formally accept a deal that reopens or eases shipping through the Strait of Hormuz before the end of November. On Nov 12 Trump said the US does not need a deal with Iran and shut down Vice President Vance's talks.",
    "triggers": [
@@ -476,7 +476,7 @@
    "midpoint": 5.0,
    "horizon": "2026-12-01",
    "staleAfter": "2026-11-26",
-   "lastReviewed": "2026-11-21",
+   "lastReviewed": "2026-11-24",
    "created": "2026-10-18",
    "summary": "AVAX trades near $10. This asks whether it is still between $8 and $12 on Dec 1, a measure of whether the market stays range-bound or breaks out either way.",
    "triggers": [
@@ -654,7 +654,7 @@
    "midpoint": 94.0,
    "horizon": "2026-12-09",
    "staleAfter": "2026-11-25",
-   "lastReviewed": "2026-11-23",
+   "lastReviewed": "2026-11-24",
    "created": "2026-10-16",
    "summary": "Futures price a high chance of another Fed hike in December. This tracks whether the FOMC actually raises rates at its Dec 8–9 meeting.",
    "triggers": [
@@ -808,7 +808,7 @@
    "midpoint": 91.0,
    "horizon": "2026-12-17",
    "staleAfter": "2026-11-25",
-   "lastReviewed": "2026-11-23",
+   "lastReviewed": "2026-11-24",
    "created": "2026-10-18",
    "summary": "Most economists expect the ECB to hike in December with euro-area inflation near 4%. This tracks whether it delivers exactly a 25bp increase on Dec 16–17.",
    "triggers": [
@@ -2191,6 +2191,81 @@
    "resolvedOn": null
   },
   {
+   "id": "7411785dae",
+   "question": "Will Sky's USDS depeg (all Pyth 1-minute USDS-USD candle highs below $0.98 for a full 24 hours) by Dec 31, 2026?",
+   "domain": "Crypto",
+   "status": "Active",
+   "confidence": "Low",
+   "probLow": 1.0,
+   "probHigh": 7.0,
+   "midpoint": 4.0,
+   "horizon": "2026-12-31",
+   "staleAfter": "2026-11-30",
+   "lastReviewed": "2026-11-24",
+   "created": "2026-11-24",
+   "summary": "Sky's USDS stablecoin has come under stress after a lending-pool freeze and Korean exchange warnings, but it still trades at $1. This asks whether it falls below 98 cents for a full day before the end of 2026.",
+   "triggers": [
+    {
+     "label": "Toward YES",
+     "text": "stUSDS withdrawals stay frozen and the governance fix (rate cut to 10%, pause on new borrowing, reserve buys of stUSDS) fails or is delayed; Rune Christensen cannot repay the ~77M USDS he still owes; the USDC buffer in the PSM runs out after more redemptions; DAXA or more exchanges follow Upbit/Bithumb/Coinone; more reports tie the PSM to illicit flows; a large holder dumps USDS on DEXs and it trades below $0.99 for hours."
+    },
+    {
+     "label": "Toward NO",
+     "text": "the governance proposal passes and stUSDS withdrawals reopen; the founder's loans are repaid through OTC SKY sales; USDS supply settles and the PSM keeps 1:1 USDC redemptions working; Korean exchanges lift the caution label in their 21–24 Dec review."
+    }
+   ],
+   "resolution": "Per Polymarket rules: resolves YES at once if every Pyth 1-minute USDS-USD candle for any 24-hour period has a 'High' below $0.98000, for candles between 27 Oct 2025 15:00 ET and 31 Dec 2026 23:59 ET (a 24-hour period that starts on 31 Dec counts). Source: TradingView PYTH:USDSUSD 1m candles; if Pyth data is missing, a consensus of credible sources may be used. Otherwise NO. A stUSDS (staked pool share) discount or frozen withdrawals do not count; only the USDS price does.",
+   "market": {
+    "venue": "Polymarket",
+    "name": "USDS depeg by December 31?",
+    "url": "https://polymarket.com/event/stablecoins-depeg-before-2027",
+    "yesPrice": 3.75,
+    "asOf": "2026-11-24T09:05:00+01:00",
+    "gapPts": 0.2,
+    "insideBand": true
+   },
+   "sources": [
+    {
+     "publisher": "Polymarket Gamma API",
+     "date": "Nov 24 2026",
+     "note": "'USDS depeg by December 31?' (event 'Stablecoins depeg before 2027?') Yes 0.0375 (bid 0.022 / ask 0.053, liquidity ~$1k, volume ~$1.9k); live, accepting orders, ends Jan 1 2027 05:00 UTC; rules match this row",
+     "url": "https://polymarket.com/event/stablecoins-depeg-before-2027"
+    },
+    {
+     "publisher": "The Block",
+     "date": "Nov 23 2026",
+     "note": "Sky's ~$159M stUSDS pool at 99.99% utilisation with $0 available to withdraw, deposit rate >50%; Christensen still owes ~77M USDS and may sell SKY to institutions; governance proposal to cut rates to 10%, pause borrowing and buy stUSDS with reserves; Upbit, Bithumb and Coinone halted SKY/USDS deposits; USDS near $1",
+     "url": "https://www.theblock.co/news/defi/2026-11-23-sky-cofounder-weighs-sky-sale-repay-77-million-stusds-pool-runs-dry-445373"
+    },
+    {
+     "publisher": "Crypto Briefing",
+     "date": "Nov 23 2026",
+     "note": "Upbit and Bithumb label SKY and USDS trading-caution assets, review ends ~21–24 Dec; USDS supply fell >30% to ~$3.2B after the Nov 19 report tying ~$518M of PSM flows to illicit activity",
+     "url": "https://cryptobriefing.com/upbit-bithumb-flag-sky-usds-caution/"
+    },
+    {
+     "publisher": "The Block",
+     "date": "Nov 24 2026",
+     "note": "recap of the stUSDS freeze and Korean exchange actions",
+     "url": "https://www.theblock.co/newsletters/the-daily/2026-11-24-doj-binance-hack-strategy-bitcoin-more-crypto-news-445430"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-24",
+     "from": null,
+     "to": [
+      1.0,
+      7.0
+     ],
+     "reason": "Forecast opened."
+    }
+   ],
+   "outcome": null,
+   "brier": null,
+   "resolvedOn": null
+  },
+  {
    "id": "0b7511a83d",
    "question": "Will USDT's market cap reach $200B on any day by Dec 31, 2026?",
    "domain": "Crypto",
@@ -2537,7 +2612,7 @@
    "midpoint": 1.5,
    "horizon": "2027-01-29",
    "staleAfter": "2026-11-25",
-   "lastReviewed": "2026-11-23",
+   "lastReviewed": "2026-11-24",
    "created": "2026-10-18",
    "summary": "This asks whether the US meets a technical recession test in 2026: two straight quarters of negative GDP or an official NBER call. Current growth tracking is strongly positive.",
    "triggers": [
