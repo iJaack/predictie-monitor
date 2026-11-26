@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-25T08:51:55+01:00",
+ "generatedAt": "2026-11-26T08:57:23+01:00",
  "timezone": "Europe/Rome",
  "counts": {
   "active": 27,
@@ -24,7 +24,7 @@
    "midpoint": 10.0,
    "horizon": "2026-11-30",
    "staleAfter": "2026-11-27",
-   "lastReviewed": "2026-11-25",
+   "lastReviewed": "2026-11-26",
    "created": "2026-10-16",
    "summary": "Washington has threatened to cut intelligence sharing and PURL weapons purchases if Kyiv keeps striking Russian energy. This asks whether the US officially confirms such a cut, not just anonymous reports, by end of November.",
    "triggers": [
@@ -127,7 +127,7 @@
    "midpoint": 2.5,
    "horizon": "2026-11-30",
    "staleAfter": "2026-11-28",
-   "lastReviewed": "2026-11-22",
+   "lastReviewed": "2026-11-26",
    "created": "2026-10-18",
    "summary": "Google just shipped Gemini 4 Argon and says the rest of the Gemini 4 family is coming. This asks whether a new public 'Pro' model lands by Nov 30.",
    "triggers": [
@@ -250,7 +250,7 @@
    "midpoint": 2.5,
    "horizon": "2026-11-30",
    "staleAfter": "2026-11-27",
-   "lastReviewed": "2026-11-25",
+   "lastReviewed": "2026-11-26",
    "created": "2026-10-18",
    "summary": "US spot AVAX ETFs have drawn about $31.6M in cumulative net inflows since launch, with most days flat. This asks whether demand picks up enough to add another ~$5M by end of November.",
    "triggers": [
@@ -352,8 +352,8 @@
    "probHigh": 5.0,
    "midpoint": 3.0,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-26",
-   "lastReviewed": "2026-11-25",
+   "staleAfter": "2026-11-28",
+   "lastReviewed": "2026-11-26",
    "created": "2026-11-03",
    "summary": "Tracks whether Washington and Tehran both formally accept a deal that reopens or eases shipping through the Strait of Hormuz before the end of November. On Nov 12 Trump said the US does not need a deal with Iran and shut down Vice President Vance's talks.",
    "triggers": [
@@ -475,8 +475,8 @@
    "probHigh": 9.0,
    "midpoint": 5.0,
    "horizon": "2026-12-01",
-   "staleAfter": "2026-11-26",
-   "lastReviewed": "2026-11-25",
+   "staleAfter": "2026-11-28",
+   "lastReviewed": "2026-11-26",
    "created": "2026-10-18",
    "summary": "AVAX trades near $10. This asks whether it is still between $8 and $12 on Dec 1, a measure of whether the market stays range-bound or breaks out either way.",
    "triggers": [
@@ -654,7 +654,7 @@
    "midpoint": 94.0,
    "horizon": "2026-12-09",
    "staleAfter": "2026-11-27",
-   "lastReviewed": "2026-11-25",
+   "lastReviewed": "2026-11-26",
    "created": "2026-10-16",
    "summary": "Futures price a high chance of another Fed hike in December. This tracks whether the FOMC actually raises rates at its Dec 8–9 meeting.",
    "triggers": [
@@ -907,7 +907,7 @@
    "midpoint": 5.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-27",
-   "lastReviewed": "2026-11-25",
+   "lastReviewed": "2026-11-26",
    "created": "2026-10-18",
    "summary": "AVAX has slipped to around $8.40. This asks whether it rallies to at least $13 at any point before year end, which would take a gain of more than 50%.",
    "triggers": [
@@ -1036,7 +1036,7 @@
    "midpoint": 10.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-27",
-   "lastReviewed": "2026-11-25",
+   "lastReviewed": "2026-11-26",
    "created": "2026-10-18",
    "summary": "Aave is the largest crypto lending app. It held about $15.5B after a sharp drop on Oct 30, and this asks whether a crash cuts that below $10B on any day this year.",
    "triggers": [
@@ -1246,7 +1246,7 @@
    "midpoint": 3.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-27",
-   "lastReviewed": "2026-11-25",
+   "lastReviewed": "2026-11-26",
    "created": "2026-10-18",
    "summary": "Bitcoin is near $77k after a weak October and the Binance hack. This asks whether it can still reach $100k before the year ends.",
    "triggers": [
@@ -1346,12 +1346,12 @@
    "domain": "Crypto",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 25.0,
-   "probHigh": 55.0,
-   "midpoint": 40.0,
+   "probLow": 15.0,
+   "probHigh": 45.0,
+   "midpoint": 30.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-28",
-   "lastReviewed": "2026-11-21",
+   "staleAfter": "2026-11-30",
+   "lastReviewed": "2026-11-26",
    "created": "2026-11-21",
    "summary": "Bitcoin broke below $60,000 on Nov 20 and hit $55,130 on Nov 21. This asks whether it falls to $50,000 or lower on Binance before the end of 2026.",
    "triggers": [
@@ -1371,7 +1371,7 @@
     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-dip-to-50000-by-december-31-2026-454-325-222-878-949-487-451-853-523-111",
     "yesPrice": 43.0,
     "asOf": "2026-11-21T08:50:00+01:00",
-    "gapPts": -3.0,
+    "gapPts": -13.0,
     "insideBand": true
    },
    "sources": [
@@ -1409,6 +1409,18 @@
       55.0
      ],
      "reason": "Forecast opened."
+    },
+    {
+     "date": "2026-11-26",
+     "from": [
+      25.0,
+      55.0
+     ],
+     "to": [
+      15.0,
+      45.0
+     ],
+     "reason": "(Low). Rule: market anchor cross-checked with touch model. Polymarket Gamma 'Will Bitcoin dip to $50,000 by December 31, 2026?' Yes 0.266 (bid 0.26 / ask 0.272, 24h vol ~$86k) read Nov 26 ~08:58 Rome → 0.75 log-odds shading → anchor 0.318. Touch model: BTC/USDT ~$60,572 is 21% above $50k; σ90 = 2.08%/day (91 Binance daily klines), ~34.7 days → P(touch) 0.12; in this range the model is not in its high-running zone. Old midpoint 0.40 sat ~8 pts above the anchor, beyond the ~6-pt limit; new midpoint 0.30 is ~2 pts under the anchor, tilted toward the model. Half-width 15 (horizon > 1 month). Not a momentum move: the anchor rule required it. 7-day Binance low $55,130 (Nov 21), barrier untouched. Stale After → 2026-11-30."
     }
    ],
    "outcome": null,
@@ -1426,7 +1438,7 @@
    "midpoint": 2.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-27",
-   "lastReviewed": "2026-11-25",
+   "lastReviewed": "2026-11-26",
    "created": "2026-10-18",
    "summary": "Ethena's USDe is a synthetic dollar backed by hedged crypto positions. This asks whether it loses its $1 peg badly, below $0.98 for a full day, before year end.",
    "triggers": [
@@ -1495,7 +1507,7 @@
    "midpoint": 3.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-27",
-   "lastReviewed": "2026-11-25",
+   "lastReviewed": "2026-11-26",
    "created": "2026-10-18",
    "summary": "Ether trades near $2,230 after the Binance hack, well below its October levels. This asks whether a December network upgrade or a turn in ETF flows lifts it to $3,000 before year end.",
    "triggers": [
@@ -1624,7 +1636,7 @@
    "midpoint": 2.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-27",
-   "lastReviewed": "2026-11-25",
+   "lastReviewed": "2026-11-26",
    "created": "2026-10-18",
    "summary": "Glamsterdam is Ethereum's next major upgrade, raising capacity roughly threefold. Its final public test, planned for Oct 26, was postponed with no new date, so this asks whether it can still reach mainnet in 2026.",
    "triggers": [
@@ -1739,7 +1751,7 @@
    "midpoint": 7.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-27",
-   "lastReviewed": "2026-11-25",
+   "lastReviewed": "2026-11-26",
    "created": "2026-10-18",
    "summary": "Hyperliquid's token trades around $84 after topping out near $98 in late October. This asks whether it reaches $100 before year end.",
    "triggers": [
@@ -1986,12 +1998,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 45.0,
-   "probHigh": 75.0,
-   "midpoint": 60.0,
+   "probLow": 50.0,
+   "probHigh": 80.0,
+   "midpoint": 65.0,
    "horizon": "2026-12-31",
-   "staleAfter": "2026-11-28",
-   "lastReviewed": "2026-11-22",
+   "staleAfter": "2026-12-01",
+   "lastReviewed": "2026-11-26",
    "created": "2026-10-18",
    "summary": "Israel and Iran are in an uneasy ceasefire. This asks whether neither side strikes the other's territory through year end.",
    "triggers": [
@@ -2011,7 +2023,7 @@
     "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-through-december-31-415",
     "yesPrice": 68.5,
     "asOf": "2026-11-11T08:55:00+01:00",
-    "gapPts": -8.5,
+    "gapPts": -3.5,
     "insideBand": true
    },
    "sources": [
@@ -2085,6 +2097,18 @@
       65.0
      ],
      "reason": "Rule: market shade (0.75 logit) + judgment. Polymarket Gamma Yes 0.575 (bid 0.57 / ask 0.58, liquidity ~$138k) read Nov 9 ~08:50 Rome → shaded anchor 0.556; the old midpoint 41% sat ~15 pts under it, past the ~6-pt limit. Midpoint now 50%, kept ~5.5 pts under the anchor on question-specific risk: US and Israeli militaries prepared for renewed strikes over the weekend but Trump issued no order and gave Vance 'a few days' for a deal (Jerusalem Post via Iran International, Nov 8); Rubio calls talks unproductive; Israeli Defense Minister Katz says 'regarding Iran, the mission is not yet complete' (Nov 8). No Israel↔Iran qualifying strike found Nov 5–9 (Qeshm/Bandar Abbas blasts attributed by Tasnim to US forces, unverified). Full ±15 widening applied per the standing >1-month rule. Stale After stays 2026-11-13."
+    },
+    {
+     "date": "2026-11-26",
+     "from": [
+      45.0,
+      75.0
+     ],
+     "to": [
+      50.0,
+      80.0
+     ],
+     "reason": "(Low). Rule: market anchor. Polymarket Gamma 'Israel x Iran ceasefire continues through December 31?' Yes 0.735 (bid 0.73 / ask 0.74, 24h vol ~$71k) read Nov 26 ~08:58 Rome → shaded anchor ~0.68; old midpoint 0.60 sat ~8 pts under it, beyond the ~6-pt limit, so the midpoint moves to 0.65 (~3 pts under the anchor, keeping a tilt for the reported Israeli and US strike planning). No qualifying Israel↔Iran strike found Nov 22–26 (Israeli strikes reported were in Gaza; US envoy confirmed direct US–Iran talks Nov 26). Half-width 15 (horizon > 1 month). Stale After → 2026-12-01."
     }
    ],
    "outcome": null,
@@ -2276,7 +2300,7 @@
    "midpoint": 3.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-27",
-   "lastReviewed": "2026-11-25",
+   "lastReviewed": "2026-11-26",
    "created": "2026-10-18",
    "summary": "Tether's supply has stalled around $183–190B since spring, a sign of little new money entering crypto. This asks whether it jumps to $200B by year end.",
    "triggers": [
@@ -2363,7 +2387,7 @@
    "midpoint": 4.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-27",
-   "lastReviewed": "2026-11-25",
+   "lastReviewed": "2026-11-26",
    "created": "2026-10-18",
    "summary": "Uniswap's token now benefits from protocol fees that fund token burns, and briefly hit $10.94 in September. This asks whether it reaches $11 this year after falling back to about $7.",
    "triggers": [
