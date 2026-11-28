@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-27T08:47:54+01:00",
+ "generatedAt": "2026-11-28T08:54:00+01:00",
  "timezone": "Europe/Rome",
  "counts": {
   "active": 27,
@@ -19,12 +19,12 @@
    "domain": "Geopolitics",
    "status": "Active",
    "confidence": "Low",
-   "probLow": 3.0,
-   "probHigh": 17.0,
-   "midpoint": 10.0,
+   "probLow": 1.0,
+   "probHigh": 7.0,
+   "midpoint": 4.0,
    "horizon": "2026-11-30",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-11-27",
+   "lastReviewed": "2026-11-28",
    "created": "2026-10-16",
    "summary": "Washington has threatened to cut intelligence sharing and PURL weapons purchases if Kyiv keeps striking Russian energy. This asks whether the US officially confirms such a cut, not just anonymous reports, by end of November.",
    "triggers": [
@@ -110,6 +110,18 @@
       17.0
      ],
      "reason": "Rule: judgment (no liquid market). Nine days left and still no on-record US confirmation of a suspension; the last on-record US line remains denial/restoration (Rubio Oct 19; Zelensky Oct 20/24 on restored early-warning intel). Poland's Nov 13 decision to stop funding its own PURL contributions (Tusk via Interfax-Ukraine) is a European funding move, not a US suspension, so it does not count. Midpoint 10% (down 5 for the shrinking window with no fresh rupture); half-width 7 for a ~1–1.5-week horizon. Stale After → 2026-11-27."
+    },
+    {
+     "date": "2026-11-28",
+     "from": [
+      3.0,
+      17.0
+     ],
+     "to": [
+      1.0,
+      7.0
+     ],
+     "reason": "Rule: judgment (no liquid market). Two days left and still no on-record US confirmation of a suspension of intelligence sharing or PURL purchases; the 27–28 Nov news scan (X news search on intelligence sharing / PURL) shows only peace-deal rhetoric (Putin claiming the EU blocks a US–Russia deal) and continued strikes, no US rupture. Midpoint 4% for the shrinking window; half-width capped by the distance to 0. Stale After stays 2026-11-30 (resolution)."
     }
    ],
    "outcome": null,
@@ -126,8 +138,8 @@
    "probHigh": 4.0,
    "midpoint": 2.5,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-28",
-   "lastReviewed": "2026-11-27",
+   "staleAfter": "2026-11-30",
+   "lastReviewed": "2026-11-28",
    "created": "2026-10-18",
    "summary": "Google just shipped Gemini 4 Argon and says the rest of the Gemini 4 family is coming. This asks whether a new public 'Pro' model lands by Nov 30.",
    "triggers": [
@@ -250,7 +262,7 @@
    "midpoint": 2.5,
    "horizon": "2026-11-30",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-11-27",
+   "lastReviewed": "2026-11-28",
    "created": "2026-10-18",
    "summary": "US spot AVAX ETFs have drawn about $31.6M in cumulative net inflows since launch, with most days flat. This asks whether demand picks up enough to add another ~$5M by end of November.",
    "triggers": [
@@ -352,8 +364,8 @@
    "probHigh": 5.0,
    "midpoint": 3.0,
    "horizon": "2026-11-30",
-   "staleAfter": "2026-11-28",
-   "lastReviewed": "2026-11-27",
+   "staleAfter": "2026-11-30",
+   "lastReviewed": "2026-11-28",
    "created": "2026-11-03",
    "summary": "Tracks whether Washington and Tehran both formally accept a deal that reopens or eases shipping through the Strait of Hormuz before the end of November. On Nov 12 Trump said the US does not need a deal with Iran and shut down Vice President Vance's talks.",
    "triggers": [
@@ -472,11 +484,11 @@
    "status": "Active",
    "confidence": "Medium",
    "probLow": 1.0,
-   "probHigh": 9.0,
-   "midpoint": 5.0,
+   "probHigh": 3.0,
+   "midpoint": 2.0,
    "horizon": "2026-12-01",
-   "staleAfter": "2026-11-28",
-   "lastReviewed": "2026-11-27",
+   "staleAfter": "2026-12-01",
+   "lastReviewed": "2026-11-28",
    "created": "2026-10-18",
    "summary": "AVAX trades near $10. This asks whether it is still between $8 and $12 on Dec 1, a measure of whether the market stays range-bound or breaks out either way.",
    "triggers": [
@@ -556,6 +568,18 @@
       9.0
      ],
      "reason": "(confidence Low → Medium). Rule: judgment/lognormal (no market). AVAX/USDT ~$6.27 (CoinGecko $6.27) read Nov 21 ~08:50 Rome is now 22% below the $8 floor after the Nov 20–21 crypto-wide liquidation leg (Binance low $6.015); σ90 = 4.56%/day over ~9.7 days to Dec 1 00:00 UTC → zero-drift P($8–12) = 4.3%. Midpoint 5% (≈1 pt over the model for fat tails); half-width capped by distance to 0. The move is the model's spot input, not momentum. Stale After → 2026-11-26."
+    },
+    {
+     "date": "2026-11-28",
+     "from": [
+      1.0,
+      9.0
+     ],
+     "to": [
+      1.0,
+      3.0
+     ],
+     "reason": "Rule: judgment/lognormal (no market). Binance AVAX/USDT spot $6.541 (daily klines read 28 Nov ~08:55 Rome, https://api.binance.com/api/v3/klines?symbol=AVAXUSDT&interval=1d&limit=91), σ90 = 4.51%/day over ~3.6 days to Dec 1 00:00 UTC → zero-drift P(≥$8) ≈ 0.9%; needs +22% in under 4 days. Midpoint 2% (≈1 pt over the model for fat tails), capped near 0. Spot is the model input, not momentum. Stale After → 2026-12-01 (resolution)."
     }
    ],
    "outcome": null,
@@ -753,7 +777,7 @@
    "midpoint": 5.5,
    "horizon": "2026-12-15",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-11-21",
+   "lastReviewed": "2026-11-28",
    "created": "2026-10-18",
    "summary": "sAVAX is BENQI's liquid-staked AVAX token and normally trades very close to its on-chain redemption value. This measures the risk of a meaningful depeg (more than 3%) before mid-December.",
    "triggers": [
@@ -1351,7 +1375,7 @@
    "midpoint": 30.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-11-26",
+   "lastReviewed": "2026-11-28",
    "created": "2026-11-21",
    "summary": "Bitcoin broke below $60,000 on Nov 20 and hit $55,130 on Nov 21. This asks whether it falls to $50,000 or lower on Binance before the end of 2026.",
    "triggers": [
@@ -1904,7 +1928,7 @@
    "midpoint": 3.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-11-21",
+   "lastReviewed": "2026-11-28",
    "created": "2026-10-18",
    "summary": "Tanker traffic through the Strait of Hormuz has collapsed after repeated attacks on shipping. This asks whether transits recover to near-normal levels by year end.",
    "triggers": [
@@ -2126,7 +2150,7 @@
    "midpoint": 11.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-11-21",
+   "lastReviewed": "2026-11-28",
    "created": "2026-10-18",
    "summary": "Mojtaba Khamenei became Iran's de facto leader in March but has rarely been seen since. This asks whether he is removed, incapacitated or replaced by year end, a risk concentrated around possible renewed strikes after the US midterms.",
    "triggers": [
@@ -2225,7 +2249,7 @@
    "midpoint": 4.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-11-24",
+   "lastReviewed": "2026-11-28",
    "created": "2026-11-24",
    "summary": "Sky's USDS stablecoin has come under stress after a lending-pool freeze and Korean exchange warnings, but it still trades at $1. This asks whether it falls below 98 cents for a full day before the end of 2026.",
    "triggers": [
@@ -2492,7 +2516,7 @@
    "midpoint": 6.5,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-11-21",
+   "lastReviewed": "2026-11-28",
    "created": "2026-10-18",
    "summary": "This asks whether a general Russia–Ukraine ceasefire takes effect by year end and holds for at least ten days. Fighting and long-range strikes are currently intensifying.",
    "triggers": [
@@ -2561,7 +2585,7 @@
    "midpoint": 4.0,
    "horizon": "2026-12-31",
    "staleAfter": "2026-11-30",
-   "lastReviewed": "2026-11-21",
+   "lastReviewed": "2026-11-28",
    "created": "2026-10-18",
    "summary": "The Clarity Act would set the main US market-structure rules for crypto. It stalled in the Senate in September; this asks whether it still becomes law in 2026.",
    "triggers": [
